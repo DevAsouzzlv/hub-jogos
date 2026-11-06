@@ -1,0 +1,63 @@
+/**
+ * HUB DE JOGOS - ANIMAÇÕES CSS
+ */
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(8px);
+  }
+  60% {
+    transform: scale(1.03) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes pulseHighlight {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes shakeAlert {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+@keyframes floatingBadge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.pop-in {
+  animation: popIn 0.32s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.shake {
+  animation: shakeAlert 0.4s ease-in-out;
+}
+
+.pulse {
+  animation: pulseHighlight 1.5s infinite ease-in-out;
+}
+
+.floating {
+  animation: floatingBadge 2s infinite ease-in-out;
+}
+
+/* Transições suaves de botões e cartões */
+button {
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.15s ease !important;
+}
+
+button:active {
+  transform: translate(2px, 2px) scale(0.98) !important;
+  box-shadow: 1px 1px 0 var(--ink) !important;
+}
