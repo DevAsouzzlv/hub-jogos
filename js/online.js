@@ -1,6 +1,6 @@
 /**
  * HUB DE JOGOS - MÓDULO ONLINE (SALAS VIRTUAIS VIA PIN DE 6 DÍGITOS)
- * Conexão direta em tempo real (PeerJS WebRTC com fallback para MQTT público).
+ * Conexão direta em tempo real (PeerJS WebRTC).
  * Funciona globalmente em qualquer celular sem custo de servidor.
  */
 
@@ -22,7 +22,6 @@ const HubOnline = {
     return Math.floor(100000 + Math.random() * 900000).toString();
   },
 
-  // Prefixo para o Peer ID global
   getPeerIdForPin(pin) {
     return `hubgames-room-${pin}`;
   },
@@ -39,7 +38,6 @@ const HubOnline = {
 
     const hostPeerId = this.getPeerIdForPin(this.roomPin);
 
-    // Inicializa PeerJS
     if (typeof Peer === "undefined") {
       onError("Biblioteca de conexão não carregada. Verifique sua conexão com a internet.");
       return;
@@ -68,7 +66,6 @@ const HubOnline = {
       this.peer.on("error", (err) => {
         console.error("Erro no Peer Host:", err);
         if (err.type === "unavailable-id") {
-          // Se o PIN já estiver em uso, tenta outro
           this.createRoom(hostName, onReady, onError);
         } else {
           onError("Falha ao criar sala. Verifique sua internet.");
@@ -110,7 +107,6 @@ const HubOnline = {
       this.connections[conn.peer] = conn;
       this.players.push(playerObj);
 
-      // Envia confirmação ao jogador
       conn.send({
         type: "JOIN_SUCCESS",
         pin: this.roomPin,
@@ -118,7 +114,6 @@ const HubOnline = {
         gameState: this.gameState
       });
 
-      // Avisa a todos a nova lista de jogadores
       this.broadcastPlayersList();
       if (HubGame && HubGame.onOnlinePlayersUpdated) {
         HubGame.onOnlinePlayersUpdated(this.players);
@@ -184,7 +179,6 @@ const HubOnline = {
         this.hostConn = this.peer.connect(hostPeerId, { reliable: true });
 
         this.hostConn.on("open", () => {
-          // Solicita entrada
           this.hostConn.send({
             type: "JOIN_ROOM",
             name: this.playerName
@@ -198,14 +192,15 @@ const HubOnline = {
         this.hostConn.on("close", () => {
           alert("A conexão com o anfitrião foi perdida.");
           this.leaveRoom();
+          if (HubGame) HubGame.showScreen("inicio");
         });
 
-        this.hostConn.on("error", (err) => {
+        this.hostConn.on("error", () => {
           onError("Não foi possível conectar à sala " + this.roomPin + ". Verifique o PIN.");
         });
       });
 
-      this.peer.on("error", (err) => {
+      this.peer.on("error", () => {
         onError("Erro de conexão. Verifique o PIN e tente novamente.");
       });
     } catch (e) {
@@ -225,7 +220,6 @@ const HubOnline = {
         HubGame.onOnlinePlayersUpdated(this.players);
       }
     } else if (data.type === "GAME_START_PRIVATE") {
-      // Recebimento da carta do jogador atual
       this.gameState = "playing";
       this.myCard = data.card;
       this.myHint = data.hint;
@@ -250,7 +244,6 @@ const HubOnline = {
     this.gameState = "playing";
     this.tableResults = tableResultsData;
 
-    // Envia individualmente para cada cliente apenas a sua carta
     this.players.forEach(p => {
       const cardInfo = assignedCardsMap[p.id];
       if (!cardInfo) return;
@@ -273,7 +266,6 @@ const HubOnline = {
     });
   },
 
-  // HOST: Revela para todos os jogadores
   hostRevealGame() {
     this.gameState = "revealed";
     this.broadcast({
@@ -282,7 +274,6 @@ const HubOnline = {
     });
   },
 
-  // HOST: Volta ao lobby
   hostBackToLobby() {
     this.gameState = "lobby";
     this.broadcast({
@@ -290,7 +281,7 @@ const HubOnline = {
     });
   },
 
-  // Sair da sala
+  // Sair da sala de forma limpa (sem chamar HubGame.showScreen para evitar recursão)
   leaveRoom() {
     if (this.peer) {
       try { this.peer.destroy(); } catch (e) {}
@@ -303,8 +294,5 @@ const HubOnline = {
     this.hostConn = null;
     this.players = [];
     this.gameState = "lobby";
-    if (HubGame) {
-      HubGame.showScreen("inicio");
-    }
   }
 };

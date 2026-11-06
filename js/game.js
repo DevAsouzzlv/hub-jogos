@@ -262,10 +262,8 @@ const HubGame = {
       </div>
     `;
 
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-      this.elements.card.style.background = "";
-    });
+    this.elements.card.innerHTML = html;
+    this.elements.card.style.background = "";
   },
 
   // ================= MENU ONLINE ================= //
