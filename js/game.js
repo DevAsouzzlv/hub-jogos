@@ -1,13 +1,21 @@
 /**
- * HUB DE JOGOS - LÓGICA PRINCIPAL DO JOGO
- * Gerenciamento de estado, sorteios, modos (Duplas, Impostor, Mímica),
- * pilha de telas para Botão Voltar em todos os estágios.
+ * HUB DE JOGOS - LÓGICA PRINCIPAL (OFFLINE & ONLINE)
+ * Suporte a:
+ * - Modo Offline (Passa celular) e Modo Online (PIN de 6 dígitos)
+ * - Tipo de Dica do Impostor: "word" (palavra única difícil) ou "phrase" (frase curta enigmática)
+ * - Dicas concisas sem frases compridas desnecessárias
+ * - Botão de Voltar em todas as etapas
  */
 
-// Estado global do jogo
 const HubGame = {
-  modo: "duplas", // "duplas" | "impostor" | "mimica"
+  // Configurações
+  gameEnvironment: "offline", // "offline" | "online"
+  modo: "duplas",             // "duplas" | "impostor" | "mimica"
   tema: null,
+  hintType: "word",           // "word" (1 palavra sutil) | "phrase" (frase curta enigmática)
+  usaDica: true,
+
+  // Estado da rodada Offline
   cartas: [],
   indiceAtual: 0,
   visivel: false,
@@ -18,33 +26,22 @@ const HubGame = {
   ultInicia: "",
   ultImp: [],
   dicasI: [],
-  dica: "",
-  usaDica: true,
   numImpostoresCustom: null,
   numImpostoresOutros: 1,
 
-  // Jogadores por modo
+  // Jogadores locais (Offline)
   jogadoresDuplas: ["Arthur", "Vitor", "João Pedro", "Coro", "Bia", "Ana Vitória", "Vinícius", "Gustavo"],
   jogadoresImpostor: ["Arthur", "Vitor", "João Pedro", "Coro", "Bia"],
   jogadoresMimica: ["Arthur", "Vitor", "João Pedro", "Coro", "Bia"],
 
-  // Dados da Mímica
-  mm: {
-    placar: [],
-    vez: 0,
-    palavra: "",
-    t: 60,
-    timer: null,
-    usados: []
-  },
+  // Estado Mímica
+  mm: { placar: [], vez: 0, palavra: "", t: 60, timer: null, usados: [] },
   mmDif: [],
   mmPal: [],
 
-  // Pilha de histórico de navegação para o Botão Voltar
+  // Navegação
   historyStack: [],
   currentScreen: "inicio",
-
-  // Elementos do DOM
   elements: {},
 
   init() {
@@ -83,6 +80,11 @@ const HubGame = {
       const mi = JSON.parse(localStorage.getItem("hub_nomes_mimica"));
       if (mi && mi.length >= 3) this.jogadoresMimica = mi;
     } catch (e) {}
+
+    try {
+      const ht = localStorage.getItem("hub_hint_type");
+      if (ht) this.hintType = ht;
+    } catch (e) {}
   },
 
   saveData() {
@@ -90,11 +92,14 @@ const HubGame = {
       localStorage.setItem("hub_nomes_duplas", JSON.stringify(this.jogadoresDuplas));
       localStorage.setItem("hub_nomes_impostor", JSON.stringify(this.jogadoresImpostor));
       localStorage.setItem("hub_nomes_mimica", JSON.stringify(this.jogadoresMimica));
+      localStorage.setItem("hub_hint_type", this.hintType);
     } catch (e) {}
   },
 
-  // Retorna lista ativa de jogadores
   getPlayers() {
+    if (this.gameEnvironment === "online") {
+      return HubOnline.players.map(p => p.name);
+    }
     if (this.modo === "impostor") return this.jogadoresImpostor;
     if (this.modo === "mimica") return this.jogadoresMimica;
     return this.jogadoresDuplas;
@@ -107,9 +112,8 @@ const HubGame = {
     this.saveData();
   },
 
-  // Cálculo de impostores no modo duplas
   getDuplasImpCount() {
-    const N = this.jogadoresDuplas.length;
+    const N = this.getPlayers().length;
     const defaultImp = (N % 2 === 0) ? 2 : 1;
     let v = this.numImpostoresCustom;
     if (v == null || (v % 2) !== (N % 2) || v < defaultImp || v > N - 4) {
@@ -118,14 +122,12 @@ const HubGame = {
     return v;
   },
 
-  // Cálculo de impostores para modo Impostor ou Mímica
   getOtherImpCount() {
     const N = this.getPlayers().length;
     const max = Math.max(1, Math.ceil(N / 2) - 1);
     return Math.min(this.numImpostoresOutros, max);
   },
 
-  // Random criptográfico seguro
   randomInt(n) {
     try {
       const b = new Uint32Array(1);
@@ -148,7 +150,6 @@ const HubGame = {
   },
 
   // ================= NAVEGAÇÃO E BOTÃO VOLTAR ================= //
-
   showScreen(screenName, skipHistory = false) {
     if (!skipHistory && this.currentScreen && this.currentScreen !== screenName) {
       this.historyStack.push(this.currentScreen);
@@ -156,7 +157,6 @@ const HubGame = {
     this.currentScreen = screenName;
     this.updateVoltarButtonVisibility();
 
-    // Limpa timers ativos ao mudar de tela
     if (this.mm.timer) {
       clearInterval(this.mm.timer);
       this.mm.timer = null;
@@ -165,6 +165,21 @@ const HubGame = {
     switch (screenName) {
       case "inicio":
         this.renderInicio();
+        break;
+      case "online_menu":
+        this.renderOnlineMenu();
+        break;
+      case "online_criar":
+        this.renderOnlineCriar();
+        break;
+      case "online_entrar":
+        this.renderOnlineEntrar();
+        break;
+      case "online_lobby":
+        this.renderOnlineLobby();
+        break;
+      case "online_jogo_client":
+        this.renderOnlineJogoClient();
         break;
       case "jogadores":
         this.renderJogadores();
@@ -178,31 +193,30 @@ const HubGame = {
       case "jogo":
         this.renderJogo();
         break;
-      case "mimica_jogo":
-        this.renderMimicaVez();
-        break;
-      case "mimica_placar":
-        this.renderMimicaPlacar();
-        break;
     }
   },
 
   goBack() {
+    // Se estiver em jogo online
+    if (HubOnline.isOnline && (this.currentScreen === "online_lobby" || this.currentScreen === "online_jogo_client")) {
+      if (confirm("Deseja sair da sala online?")) {
+        HubOnline.leaveRoom();
+        this.showScreen("inicio", true);
+      }
+      return;
+    }
+
+    // Se estiver em jogo offline
     if (this.currentScreen === "jogo") {
-      if (confirm("Deseja interromper a partida atual e voltar à escolha de temas?")) {
+      if (confirm("Deseja interromper a partida atual e voltar aos temas?")) {
         this.showScreen("temas", true);
       }
       return;
     }
 
-    if (this.currentScreen === "mimica_jogo" || this.currentScreen === "mimica_placar") {
-      this.showScreen("temas", true);
-      return;
-    }
-
     if (this.historyStack.length > 0) {
-      const prevScreen = this.historyStack.pop();
-      this.showScreen(prevScreen, true);
+      const prev = this.historyStack.pop();
+      this.showScreen(prev, true);
     } else {
       this.showScreen("inicio", true);
     }
@@ -210,11 +224,7 @@ const HubGame = {
 
   updateVoltarButtonVisibility() {
     if (!this.elements.voltarBtn) return;
-    if (this.currentScreen === "inicio") {
-      this.elements.voltarBtn.style.display = "none";
-    } else {
-      this.elements.voltarBtn.style.display = "inline-flex";
-    }
+    this.elements.voltarBtn.style.display = (this.currentScreen === "inicio") ? "none" : "inline-flex";
   },
 
   hideActionButtons() {
@@ -225,32 +235,276 @@ const HubGame = {
     this.elements.trocarBtn.style.display = "none";
   },
 
-  // ================= TELAS ================= //
-
-  // TELA 1: Escolha do Modo
+  // ================= TELA INICIAL (OFFLINE OU ONLINE) ================= //
   renderInicio() {
     this.historyStack = [];
-    this.elements.subText.textContent = "Escolha um modo de jogo para começar";
+    HubOnline.leaveRoom();
+    this.elements.subText.textContent = "Como vocês vão jogar hoje?";
     this.hideActionButtons();
 
     const html = `
-      <div class="who" style="margin-bottom: 14px">Escolha o modo de jogo</div>
+      <div class="who" style="margin-bottom: 12px">Escolha como jogar</div>
       <div class="grid" style="grid-template-columns: 1fr; gap: 12px">
-        <button class="modo pop-in" data-action="set-modo" data-value="duplas" style="animation-delay: 0.05s">
+        <button class="modo pop-in" data-action="choose-env" data-val="offline" style="background: var(--p);">
+          <span class="em">📱</span>
+          <div>
+            <b>Modo Offline (Mesmo celular)</b>
+            <small>Passe o celular de mão em mão · Sem internet necessária</small>
+          </div>
+        </button>
+        <button class="modo pop-in" data-action="choose-env" data-val="online" style="background: var(--b); animation-delay: 0.1s">
+          <span class="em">🌐</span>
+          <div>
+            <b>Modo Online (Salas Virtuais)</b>
+            <small>Cada um no seu celular com PIN de 6 dígitos · Jogue com amigos de qualquer lugar!</small>
+          </div>
+        </button>
+      </div>
+    `;
+
+    GameAnimations.flipCard(this.elements.card, () => {
+      this.elements.card.innerHTML = html;
+      this.elements.card.style.background = "";
+    });
+  },
+
+  // ================= MENU ONLINE ================= //
+  renderOnlineMenu() {
+    this.elements.subText.textContent = "Crie uma sala ou entre com um código PIN";
+    this.hideActionButtons();
+
+    const html = `
+      <div class="who" style="margin-bottom: 14px">Salas Virtuais Online</div>
+      <div class="grid" style="grid-template-columns: 1fr; gap: 10px;">
+        <button class="btn-confirm" data-action="go-online-criar">➕ Criar Nova Sala</button>
+        <button class="sec" data-action="go-online-entrar">🔢 Entrar com PIN de 6 dígitos</button>
+      </div>
+    `;
+
+    GameAnimations.flipCard(this.elements.card, () => {
+      this.elements.card.innerHTML = html;
+      this.elements.card.style.background = "";
+    });
+  },
+
+  renderOnlineCriar() {
+    this.elements.subText.textContent = "Digite seu nome para criar a sala";
+    this.hideActionButtons();
+
+    const html = `
+      <div class="who" style="margin-bottom: 10px">Criar Sala</div>
+      <input class="nm" id="online-host-name" maxlength="18" placeholder="Seu apelido no jogo" value="Anfitrião">
+      <div style="margin-top: 14px;">
+        <button class="btn-confirm" data-action="confirm-create-room">Criar Sala e Gerar PIN ➔</button>
+      </div>
+    `;
+
+    GameAnimations.flipCard(this.elements.card, () => {
+      this.elements.card.innerHTML = html;
+    });
+  },
+
+  renderOnlineEntrar() {
+    this.elements.subText.textContent = "Digite o PIN de 6 dígitos fornecido pelo anfitrião";
+    this.hideActionButtons();
+
+    const html = `
+      <div class="who" style="margin-bottom: 10px">Entrar em uma Sala</div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <input class="nm pin-input" id="online-pin-input" type="tel" maxlength="6" placeholder="000000" style="font-size: 1.8rem; text-align: center; letter-spacing: 6px;">
+        <input class="nm" id="online-player-name" maxlength="18" placeholder="Seu apelido">
+        <button class="btn-confirm" data-action="confirm-join-room" style="margin-top: 6px;">Conectar à Sala ➔</button>
+      </div>
+    `;
+
+    GameAnimations.flipCard(this.elements.card, () => {
+      this.elements.card.innerHTML = html;
+    });
+  },
+
+  renderOnlineLobby() {
+    this.hideActionButtons();
+    const isHost = HubOnline.isHost;
+    const pin = HubOnline.roomPin;
+    const players = HubOnline.players;
+
+    this.elements.subText.textContent = isHost 
+      ? "Compartilhe o PIN com seus amigos para eles entrarem!" 
+      : "Aguardando o anfitrião iniciar a partida...";
+
+    let html = `
+      <div class="pin-display-box">
+        <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">PIN DA SALA</div>
+        <div class="pin-digits">${pin}</div>
+        <small style="opacity: 0.8;">Amigos entram digitando este código</small>
+      </div>
+
+      <div class="who" style="margin: 12px 0 6px;">Jogadores Conectados (${players.length})</div>
+      <div class="online-players-list">
+    `;
+
+    players.forEach(p => {
+      html += `
+        <div class="online-player-badge">
+          <span>${p.isHost ? '👑' : '🎮'} <b>${p.name}</b></span>
+          <span class="online-status-dot"></span>
+        </div>
+      `;
+    });
+
+    html += `</div>`;
+
+    if (isHost) {
+      const minPlayers = this.modo === "duplas" ? 6 : 3;
+      const canStart = players.length >= minPlayers;
+
+      html += `
+        <div class="grid" style="grid-template-columns: 1fr; gap: 8px; margin-top: 14px;">
+          <button class="sec" data-action="online-change-mode">⚙️ Modo: ${this.modo.toUpperCase()}</button>
+          <button class="btn-confirm" data-action="online-host-choose-theme" ${!canStart ? 'disabled' : ''}>
+            ${canStart ? 'Escolher Tema & Iniciar Partida ➔' : `Mínimo de ${minPlayers} jogadores`}
+          </button>
+        </div>
+      `;
+    }
+
+    GameAnimations.flipCard(this.elements.card, () => {
+      this.elements.card.innerHTML = html;
+    });
+  },
+
+  // Celular do Jogador no Modo Online (Client)
+  renderOnlineJogoClient() {
+    this.hideActionButtons();
+    const card = this.elements.card;
+    const cardWord = HubOnline.myCard;
+    const hint = HubOnline.myHint;
+    const isImp = cardWord === "IMPOSTOR";
+
+    if (HubOnline.gameState === "revealed") {
+      this.mostrarTabelaRevelacaoOnline();
+      return;
+    }
+
+    if (!this.visivel) {
+      card.style.background = "";
+      card.innerHTML = `
+        <div class="who-badge">Sua Carta Online</div>
+        <div class="who" style="margin: 8px 0 12px;">${HubOnline.playerName}</div>
+        <p style="margin: 8px 0 14px;">Toque no botão abaixo para ver sua palavra secreta.</p>
+        <button class="btn-confirm" data-action="online-toggle-word">👁️ Ver Minha Palavra</button>
+      `;
+    } else {
+      if (isImp) {
+        card.style.background = "#FFD1DC";
+      } else {
+        card.style.background = "";
+      }
+
+      let hintHtml = "";
+      if (isImp && hint) {
+        hintHtml = `<div class="impostor-hint-badge">💡 Dica secreta: <b>${hint}</b></div>`;
+      }
+
+      card.innerHTML = `
+        <div class="who-badge">Sua Carta Online</div>
+        <div class="word ${isImp ? 'imp' : ''} pop-in">${cardWord}</div>
+        ${hintHtml}
+        <button class="sec" data-action="online-toggle-word" style="margin-top: 14px;">🙈 Esconder Palavra</button>
+      `;
+    }
+
+    if (HubOnline.isHost) {
+      card.innerHTML += `
+        <div style="margin-top: 14px; border-top: 2px dashed var(--ink); padding-top: 10px;">
+          <button class="btn-confirm" data-action="online-host-reveal">📢 Revelar Resultado para Todos</button>
+        </div>
+      `;
+    }
+  },
+
+  mostrarTabelaRevelacaoOnline() {
+    GameAnimations.launchConfetti();
+    const card = this.elements.card;
+    card.style.background = "";
+
+    const t = HubOnline.tableResults;
+    if (!t) return;
+
+    let html = `
+      <div class="who" style="margin-bottom: 10px">Partida Encerrada!</div>
+      <table>
+        <tr><th>Jogador</th><th>Carta</th></tr>
+    `;
+
+    t.forEach(row => {
+      html += `
+        <tr class="${row.card === 'IMPOSTOR' ? 'imp' : ''}">
+          <td>${row.name}</td>
+          <td><b>${row.card}</b></td>
+        </tr>
+      `;
+    });
+
+    html += `</table>`;
+
+    if (HubOnline.isHost) {
+      html += `
+        <button class="btn-confirm" data-action="online-host-back-lobby" style="margin-top: 10px;">
+          🔄 Voltar ao Lobby para Nova Rodada
+        </button>
+      `;
+    } else {
+      html += `<p style="margin-top: 10px; font-weight: 700;">Aguardando anfitrião voltar ao lobby...</p>`;
+    }
+
+    card.innerHTML = html;
+  },
+
+  // Callbacks disparados pelo HubOnline
+  onOnlinePlayersUpdated(players) {
+    if (this.currentScreen === "online_lobby") {
+      this.renderOnlineLobby();
+    }
+  },
+
+  onOnlineGameStarted(data) {
+    this.visivel = false;
+    this.showScreen("online_jogo_client");
+  },
+
+  onOnlineGameRevealed(data) {
+    HubOnline.tableResults = data.table;
+    this.renderOnlineJogoClient();
+  },
+
+  onOnlineBackToLobby() {
+    this.showScreen("online_lobby");
+  },
+
+  // ================= MODO OFFLINE: ESCOLHA DE MODO ================= //
+  renderModoOffline() {
+    this.elements.subText.textContent = "Escolha as regras da rodada";
+    this.hideActionButtons();
+
+    const html = `
+      <div class="who" style="margin-bottom: 12px">Escolha o modo de jogo</div>
+      <div class="grid" style="grid-template-columns: 1fr; gap: 12px">
+        <button class="modo pop-in" data-action="set-modo" data-value="duplas" style="background: var(--p);">
           <span class="em">👯</span>
           <div>
             <b>Duplas & Impostores</b>
             <small>6 a 20 jogadores · Forme pares secretos e caçe os farsantes</small>
           </div>
         </button>
-        <button class="modo pop-in" data-action="set-modo" data-value="impostor" style="animation-delay: 0.12s">
+        <button class="modo pop-in" data-action="set-modo" data-value="impostor" style="background: var(--b);">
           <span class="em">🕵️</span>
           <div>
             <b>Modo Impostor</b>
             <small>3 a 20 jogadores · Todos sabem a palavra, menos os espiões!</small>
           </div>
         </button>
-        <button class="modo pop-in" data-action="set-modo" data-value="mimica" style="animation-delay: 0.19s">
+        <button class="modo pop-in" data-action="set-modo" data-value="mimica" style="background: var(--g);">
           <span class="em">🤫</span>
           <div>
             <b>Mímica Secreta</b>
@@ -266,16 +520,15 @@ const HubGame = {
     });
   },
 
-  // TELA 2: Configuração de Jogadores
+  // ================= JOGADORES & CONFIGURAÇÃO DA DICA ================= //
   renderJogadores() {
-    this.elements.subText.textContent = `Configurando jogadores do modo ${this.modo.toUpperCase()}`;
+    this.elements.subText.textContent = `Configurando jogadores (${this.modo.toUpperCase()})`;
     this.hideActionButtons();
 
     const players = this.getPlayers();
-    const minPlayers = this.modo === "duplas" ? 6 : 3;
 
     let html = `
-      <div class="who" style="margin-bottom: 12px">Quem vai jogar? (${players.length})</div>
+      <div class="who" style="margin-bottom: 10px">Quem vai jogar? (${players.length})</div>
       <div class="players-list-scroll">
     `;
 
@@ -283,14 +536,14 @@ const HubGame = {
       html += `
         <div class="player-input-row">
           <input class="nm" maxlength="20" placeholder="Jogador ${idx + 1}" value="${p}" data-index="${idx}">
-          <button class="sec btn-remove" data-action="rem-player" data-index="${idx}" title="Remover jogador">✕</button>
+          <button class="sec btn-remove" data-action="rem-player" data-index="${idx}">✕</button>
         </div>
       `;
     });
 
     html += `</div>`;
 
-    // Configurações específicas por modo
+    // Duplas
     if (this.modo === "duplas") {
       const impCount = this.getDuplasImpCount();
       const numDuplas = (players.length - impCount) / 2;
@@ -307,13 +560,22 @@ const HubGame = {
       `;
     }
 
+    // Configuração do Tipo de Dica (Palavra difícil vs Frase curta)
     if (this.modo !== "mimica") {
       html += `
         <div class="opt">
-          <span>💡 Dica para o impostor</span>
+          <span>💡 Dica do impostor</span>
           <div class="seg">
-            <button class="${this.usaDica ? 'on' : ''}" data-action="toggle-dica" data-val="1">Com Dica</button>
-            <button class="${!this.usaDica ? 'on' : ''}" data-action="toggle-dica" data-val="0">Sem Dica</button>
+            <button class="${this.usaDica ? 'on' : ''}" data-action="toggle-dica" data-val="1">Com</button>
+            <button class="${!this.usaDica ? 'on' : ''}" data-action="toggle-dica" data-val="0">Sem</button>
+          </div>
+        </div>
+
+        <div class="opt" style="${!this.usaDica ? 'opacity: 0.4; pointer-events: none;' : ''}">
+          <span>📝 Estilo da dica</span>
+          <div class="seg">
+            <button class="${this.hintType === 'word' ? 'on' : ''}" data-action="set-hint-type" data-val="word" title="Apenas 1 palavra sutil e difícil">Palavra</button>
+            <button class="${this.hintType === 'phrase' ? 'on' : ''}" data-action="set-hint-type" data-val="phrase" title="Uma frase curta e enigmática">Frase</button>
           </div>
         </div>
       `;
@@ -350,7 +612,6 @@ const HubGame = {
     });
   },
 
-  // Lê nomes digitados nos inputs
   readPlayerInputs() {
     const inputs = document.querySelectorAll(".nm");
     const updated = [];
@@ -361,9 +622,9 @@ const HubGame = {
     this.setPlayers(updated);
   },
 
-  // TELA 3: Escolha do Tema
+  // ================= ESCOLHA DO TEMA ================= //
   renderTemas() {
-    this.elements.subText.textContent = "Escolha um tema ou abra os filtros de palavras";
+    this.elements.subText.textContent = "Escolha um tema ou abra o filtro de heróis";
     this.hideActionButtons();
 
     let html = `
@@ -371,28 +632,44 @@ const HubGame = {
       <div class="grid theme-grid">
     `;
 
-    Object.keys(TEMAS_CONFIG).forEach(t => {
-      const cfg = TEMAS_CONFIG[t];
-      const isHerois = t === "Super-herói";
-      
+    const icones = {
+      "Super-herói": "🦸", "Famosos": "⭐", "Comida": "🍕", "Objeto": "🔧",
+      "Lugar": "📍", "Animal": "🐾", "Profissão": "💼", "Jogos & Games": "🎮",
+      "Filmes & Séries": "🎬", "Animes & Desenhos": "📺", "Esportes": "⚽", "Misto": "🎲"
+    };
+
+    Object.keys(TEMAS).forEach(t => {
+      const isHero = t === "Super-herói";
       html += `
         <div class="theme-btn-wrapper">
-          <button class="tema" data-action="select-tema" data-tema="${t}" style="border-left: 8px solid ${cfg.color};">
-            <span class="theme-icon">${cfg.icon}</span>
+          <button class="tema" data-action="select-tema" data-tema="${t}">
+            <span class="theme-icon">${icones[t] || "🎯"}</span>
             <span class="theme-name">${t}</span>
           </button>
-          ${isHerois ? `<button class="btn-filter-shortcut" data-action="open-hero-filter" title="Filtrar universos Marvel, DC, Animes">⚙️ Filtro</button>` : ''}
+          ${isHero ? `<button class="btn-filter-shortcut" data-action="open-hero-filter" title="Filtrar Marvel, DC, Animes">⚙️ Filtro</button>` : ''}
         </div>
       `;
     });
 
     html += `
-      </div>
-      <div class="menu-bottom-actions">
-        <button class="sec" data-action="nav-jogadores">👥 Editar jogadores (${this.getPlayers().length})</button>
-        <button class="sec" data-action="nav-modo">🔄 Trocar modo (${this.modo})</button>
+      <div class="theme-btn-wrapper">
+        <button class="tema" data-action="select-tema" data-tema="Misto">
+          <span class="theme-icon">🎲</span>
+          <span class="theme-name">Misto</span>
+        </button>
       </div>
     `;
+
+    html += `</div>`;
+
+    if (this.gameEnvironment === "offline") {
+      html += `
+        <div class="menu-bottom-actions">
+          <button class="sec" data-action="nav-jogadores">👥 Jogadores (${this.getPlayers().length})</button>
+          <button class="sec" data-action="nav-modo">🔄 Modo (${this.modo})</button>
+        </div>
+      `;
+    }
 
     GameAnimations.flipCard(this.elements.card, () => {
       this.elements.card.innerHTML = html;
@@ -400,9 +677,9 @@ const HubGame = {
     });
   },
 
-  // TELA 4: FILTRO ESPECIAL DE SUPER-HERÓIS (Marvel, DC, Animes, Outros)
+  // ================= FILTRO DE SUPER-HERÓIS ================= //
   renderFiltroHerois() {
-    this.elements.subText.textContent = "Personalize quais heróis entrarão no sorteio";
+    this.elements.subText.textContent = "Escolha quais universos entram no jogo";
     this.hideActionButtons();
 
     const f = GameFilters.heroes;
@@ -410,7 +687,7 @@ const HubGame = {
 
     const html = `
       <div class="who" style="margin-bottom: 6px">Filtro de Super-heróis</div>
-      <p style="margin-bottom: 14px; font-size: 0.95rem;">Selecione os universos que você quer no jogo:</p>
+      <p style="margin-bottom: 12px; font-size: 0.9rem;">Marque os universos que deseja incluir:</p>
 
       <div class="filter-options-box">
         <label class="filter-chip ${f.marvel ? 'active' : ''}">
@@ -418,7 +695,7 @@ const HubGame = {
           <span class="chip-badge">🔴</span>
           <div class="chip-info">
             <b>Marvel</b>
-            <small>Vingadores, X-Men, Homem-Aranha</small>
+            <small>Vingadores, X-Men, Homem-Aranha, etc.</small>
           </div>
         </label>
 
@@ -427,7 +704,7 @@ const HubGame = {
           <span class="chip-badge">🔵</span>
           <div class="chip-info">
             <b>DC Comics</b>
-            <small>Batman, Superman, Liga da Justiça</small>
+            <small>Batman, Superman, Liga da Justiça, etc.</small>
           </div>
         </label>
 
@@ -436,7 +713,7 @@ const HubGame = {
           <span class="chip-badge">🟢</span>
           <div class="chip-info">
             <b>Animes & Shonen</b>
-            <small>Goku, Naruto, Luffy, Gojo, Saitama</small>
+            <small>Goku, Naruto, Luffy, Gojo, etc.</small>
           </div>
         </label>
 
@@ -445,7 +722,7 @@ const HubGame = {
           <span class="chip-badge">🟡</span>
           <div class="chip-info">
             <b>Clássicos & Outros</b>
-            <small>Tartarugas Ninja, Ben 10, Incríveis</small>
+            <small>Tartarugas Ninja, Ben 10, Incríveis, etc.</small>
           </div>
         </label>
       </div>
@@ -466,10 +743,15 @@ const HubGame = {
     });
   },
 
-  // ================= SORTEIO E PARTIDA ================= //
-
+  // ================= SORTEIO ================= //
   iniciarPartida(temaEscolhido) {
     this.tema = temaEscolhido;
+
+    if (this.gameEnvironment === "online") {
+      this.iniciarPartidaOnline();
+      return;
+    }
+
     if (this.modo === "mimica") {
       this.sortearMimica();
     } else {
@@ -493,17 +775,11 @@ const HubGame = {
     const sorteadas = this.shuffle(livres).slice(0, npar);
     this.usados = this.usados.concat(this.modo === "impostor" ? [sorteadas[0]] : sorteadas);
 
-    // Quem começa (evita repetir o anterior)
     let candidatos = players.filter(p => p !== this.ultInicia);
     if (!candidatos.length) candidatos = players.slice();
     this.inicia = candidatos[this.randomInt(candidatos.length)];
     this.ultInicia = this.inicia;
 
-    // Dica genérica de categoria
-    const hintsList = HINTS[this.tema] || HINTS["Misto"];
-    this.dica = hintsList[this.randomInt(hintsList.length)];
-
-    // Monta cartas
     let arr = [];
     if (this.modo === "impostor") {
       for (let q = 0; q < N - nimp; q++) arr.push(sorteadas[0]);
@@ -512,7 +788,6 @@ const HubGame = {
     }
     for (let q2 = 0; q2 < nimp; q2++) arr.push("IMPOSTOR");
 
-    // Embaralha e tenta evitar dar impostor para quem acabou de ser
     let shuffled = this.shuffle(arr);
     for (let attempt = 0; attempt < 30; attempt++) {
       let repetido = false;
@@ -531,14 +806,14 @@ const HubGame = {
       if (c === "IMPOSTOR") this.ultImp.push(players[idx]);
     });
 
-    // Pistas individuais para impostores
+    // Pista: utiliza getHintForWord com o hintType configurado ("word" ou "phrase")
     this.dicasI = [];
     let wi = 0;
     const sortWords = this.shuffle(sorteadas.slice());
     this.cartas.forEach((c, idx) => {
       if (c === "IMPOSTOR") {
         const wordKey = sortWords[wi % sortWords.length];
-        this.dicasI[idx] = HW[wordKey] || this.dica;
+        this.dicasI[idx] = getHintForWord(wordKey, this.hintType);
         wi++;
       }
     });
@@ -607,7 +882,54 @@ const HubGame = {
     this.showScreen("jogo");
   },
 
-  // RENDERIZAÇÃO DA RODADA
+  // Sorteio Online (distribuição privada entre os celulares)
+  iniciarPartidaOnline() {
+    const pool = GameFilters.getWordsForTheme(this.tema);
+    const players = HubOnline.players;
+    const N = players.length;
+    const nimp = (this.modo === "impostor") ? this.getOtherImpCount() : this.getDuplasImpCount();
+    const npar = (this.modo === "impostor") ? 1 : (N - nimp) / 2;
+
+    let livres = pool.filter(w => this.usados.indexOf(w) < 0);
+    if (livres.length < npar) {
+      this.usados = [];
+      livres = pool.slice();
+    }
+
+    const sorteadas = this.shuffle(livres).slice(0, npar);
+    this.usados = this.usados.concat(this.modo === "impostor" ? [sorteadas[0]] : sorteadas);
+
+    let cand = players.map(p => p.name);
+    const starts = cand[this.randomInt(cand.length)];
+
+    let arr = [];
+    if (this.modo === "impostor") {
+      for (let q = 0; q < N - nimp; q++) arr.push(sorteadas[0]);
+    } else {
+      sorteadas.forEach(w => arr.push(w, w));
+    }
+    for (let q2 = 0; q2 < nimp; q2++) arr.push("IMPOSTOR");
+
+    let shuffledCards = this.shuffle(arr);
+    const assignedMap = {};
+    const tableResults = [];
+
+    players.forEach((p, idx) => {
+      const card = shuffledCards[idx];
+      let hint = null;
+      if (card === "IMPOSTOR" && this.usaDica) {
+        hint = getHintForWord(sorteadas[0], this.hintType);
+      }
+      assignedMap[p.id] = { card: card, hint: hint };
+      tableResults.push({ name: p.name, card: card });
+    });
+
+    HubOnline.hostDistributeCards(assignedMap, starts, this.tema, tableResults);
+    this.visivel = false;
+    this.showScreen("online_jogo_client");
+  },
+
+  // ================= RENDERIZAÇÃO DA RODADA OFFLINE ================= //
   renderJogo() {
     const players = this.getPlayers();
     const card = this.elements.card;
@@ -621,24 +943,24 @@ const HubGame = {
     trocarBtn.style.display = "none";
     revelarBtn.style.display = "none";
 
-    // FIM DA VISUALIZAÇÃO: TODOS JÁ VIRAM!
+    // Todos viram
     if (this.indiceAtual >= players.length) {
       GameAnimations.launchConfetti();
       card.style.background = "";
-      
+
       let instrucao = "";
       if (this.modo === "mimica") {
         instrucao = "Façam a mímica da sua palavra, um de cada vez, e descubram quem recebeu a palavra diferente!";
       } else if (this.modo === "impostor") {
-        instrucao = "Agora façam perguntas e deem pistas para descobrir quem é o impostor!";
+        instrucao = "Agora deem dicas e descubram quem é o impostor!";
       } else {
-        instrucao = "Dêem pistas sutis para achar sua dupla sem entregar o jogo para os impostores!";
+        instrucao = "Agora deem dicas e achem sua dupla!";
       }
 
       card.innerHTML = `
         <div class="who success-title">🎉 Todos já viram!</div>
-        <p style="margin: 10px 0 16px; font-size: 1.05rem;">${instrucao}</p>
-        <div style="color: var(--mut); font-size: 0.95rem; font-weight: 700;">QUEM COMEÇA:</div>
+        <p style="margin: 8px 0 14px">${instrucao}</p>
+        <div style="color: var(--mut); font-size: 0.9rem">Quem começa:</div>
         <div class="word starter-word pop-in">${this.inicia}</div>
       `;
 
@@ -650,7 +972,6 @@ const HubGame = {
       return;
     }
 
-    // VEZ DO JOGADOR ATUAL
     mainBtn.style.display = "block";
     proxBtn.style.display = "block";
     proxBtn.disabled = !this.visto;
@@ -661,13 +982,12 @@ const HubGame = {
     if (!this.visivel) {
       card.style.background = "";
       card.innerHTML = `
-        <div class="who-badge">Vez de:</div>
-        <div class="who" style="font-size: 1.6rem; margin: 4px 0 8px;">${jogadorNome}</div>
+        <div class="who">${jogadorNome}</div>
         <p style="margin: 8px 0 0">
-          ${this.visto ? '✅ Palavra visualizada! Agora passe o celular para a próxima pessoa.' : '🔒 Apenas você deve olhar a tela!'}
+          ${this.visto ? 'Pronto! Agora passe para a próxima pessoa.' : 'Só você deve olhar a tela'}
         </p>
       `;
-      mainBtn.textContent = `👁️ Ver palavra de ${jogadorNome}`;
+      mainBtn.textContent = `Ver palavra de ${jogadorNome}`;
     } else {
       const isImp = this.cartas[this.indiceAtual] === "IMPOSTOR";
       if (isImp) {
@@ -680,20 +1000,24 @@ const HubGame = {
 
       let extraDicaHtml = "";
       if (isImp && this.usaDica) {
-        const hintText = this.dicasI[this.indiceAtual] || this.dica;
-        extraDicaHtml = `<div class="impostor-hint-badge">💡 Dica secreta: <b>${hintText}</b></div>`;
+        const hintText = this.dicasI[this.indiceAtual];
+        extraDicaHtml = `
+          <div class="impostor-hint-badge">
+            Dica: <b>${hintText}</b>
+          </div>
+        `;
       }
 
       card.innerHTML = `
-        <div class="who" style="margin-bottom: 6px">${jogadorNome}</div>
+        <div class="who" style="margin-bottom: 10px">${jogadorNome}</div>
         <div class="word ${isImp ? 'imp' : ''} pop-in">${this.cartas[this.indiceAtual]}</div>
         ${extraDicaHtml}
       `;
-      mainBtn.textContent = "🙈 Esconder palavra";
+      mainBtn.textContent = "Esconder palavra";
     }
   },
 
-  // REVELAR RESULTADOS DA RODADA
+  // ================= REVELAR RESULTADOS OFFLINE ================= //
   mostrarTabelaRevelacao() {
     GameAnimations.launchConfetti();
     const card = this.elements.card;
@@ -701,7 +1025,6 @@ const HubGame = {
 
     if (this.modo === "mimica") {
       card.innerHTML = `
-        <div class="who" style="margin-bottom: 10px">Resultado da Mímica</div>
         <table>
           <tr><th>Impostor(es)</th><th>Palavra dele</th><th>Palavra do grupo</th></tr>
           <tr class="imp">
@@ -710,43 +1033,34 @@ const HubGame = {
             <td>${this.mmPal[0]}</td>
           </tr>
         </table>
-        <div class="table-actions">
-          <button class="sec" data-action="restart-same">Jogar novamente</button>
-          <button class="btn-confirm" data-action="back-to-themes">Trocar tema</button>
-        </div>
       `;
       return;
     }
 
     if (this.modo === "impostor") {
       const ids = [];
-      let palavraGrupo = "";
+      let palavra = "";
       this.cartas.forEach((c, k) => {
         if (c === "IMPOSTOR") ids.push(k);
-        else if (!palavraGrupo) palavraGrupo = c;
+        else if (!palavra) palavra = c;
       });
 
       let dicasTxt = "";
       if (this.usaDica) {
-        dicasTxt = `<div class="dicas-resultado">💡 <b>Dicas do impostor:</b> ` +
-          ids.map(k => `${this.jogadoresImpostor[k]}: <i>${this.dicasI[k] || this.dica}</i>`).join(' · ') +
+        dicasTxt = `<div class="dicas-resultado">Dica${ids.length > 1 ? 's' : ''}: ` +
+          ids.map(k => `${this.jogadoresImpostor[k]}: ${this.dicasI[k]}`).join(' · ') +
           `</div>`;
       }
 
       card.innerHTML = `
-        <div class="who" style="margin-bottom: 10px">Quem eram os Impostores?</div>
         <table>
-          <tr><th>Impostor${ids.length > 1 ? 'es' : ''}</th><th>Palavra Secreta</th></tr>
+          <tr><th>Impostor${ids.length > 1 ? 'es' : ''}</th><th>Palavra</th></tr>
           <tr class="imp">
             <td>${ids.map(k => this.jogadoresImpostor[k]).join(' e ')}</td>
-            <td>${palavraGrupo}</td>
+            <td>${palavra}</td>
           </tr>
         </table>
         ${dicasTxt}
-        <div class="table-actions">
-          <button class="sec" data-action="restart-same">Jogar novamente</button>
-          <button class="btn-confirm" data-action="back-to-themes">Trocar tema</button>
-        </div>
       `;
       return;
     }
@@ -760,7 +1074,7 @@ const HubGame = {
       const pNome = this.jogadoresDuplas[k];
       if (c === "IMPOSTOR") {
         imp.push(pNome);
-        dd.push(`${pNome}: ${this.dicasI[k] || this.dica}`);
+        dd.push(`${pNome}: ${this.dicasI[k]}`);
       } else {
         if (!grupos[c]) grupos[c] = [];
         grupos[c].push(pNome);
@@ -768,14 +1082,13 @@ const HubGame = {
     });
 
     let html = `
-      <div class="who" style="margin-bottom: 10px">Duplas e Impostores Revelados!</div>
       <table>
-        <tr><th>#</th><th>Dupla</th><th>Palavra</th></tr>
+        <tr><th>Dupla</th><th>Pessoas</th><th>Palavra</th></tr>
     `;
 
     let n = 1;
     Object.keys(grupos).forEach(w => {
-      html += `<tr><td>${n}</td><td>${grupos[w].join(' e ')}</td><td><b>${w}</b></td></tr>`;
+      html += `<tr><td>${n}</td><td>${grupos[w].join(' e ')}</td><td>${w}</td></tr>`;
       n++;
     });
 
@@ -789,150 +1102,18 @@ const HubGame = {
     `;
 
     if (this.usaDica && dd.length) {
-      html += `<div class="dicas-resultado">💡 <b>Dica(s) do impostor:</b> ${dd.join(' · ')}</div>`;
+      html += `<div class="dicas-resultado">Dica${dd.length > 1 ? 's' : ''} do impostor: ${dd.join(' · ')}</div>`;
     }
-
-    html += `
-      <div class="table-actions">
-        <button class="sec" data-action="restart-same">Jogar novamente</button>
-        <button class="btn-confirm" data-action="back-to-themes">Trocar tema</button>
-      </div>
-    `;
 
     card.innerHTML = html;
   },
 
-  // ================= MÍMICA CRONÔMETRO ================= //
-  iniciarMimicaCronometro() {
-    this.mm.placar = this.getPlayers().map(() => 0);
-    this.mm.vez = 0;
-    this.mm.usados = [];
-    this.showScreen("mimica_jogo");
-  },
-
-  renderMimicaVez() {
-    if (this.mm.timer) clearInterval(this.mm.timer);
-    this.hideActionButtons();
-    const jogador = this.getPlayers()[this.mm.vez];
-
-    const html = `
-      <div class="who">Vez da mímica</div>
-      <div class="word" style="margin: 10px 0;">${jogador}</div>
-      <p style="margin: 10px 0 16px">Apenas quem fará a mímica deve olhar a palavra agora.</p>
-      <div class="grid" style="grid-template-columns: 1fr; gap: 10px;">
-        <button class="btn-confirm" data-action="mm-start-word">👁️ Mostrar palavra & Iniciar (60s)</button>
-        <button class="sec" data-action="mm-view-score">📊 Ver Placar</button>
-      </div>
-    `;
-
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-      this.elements.card.style.background = "";
-    });
-  },
-
-  sortearPalavraMimica() {
-    const pool = GameFilters.getWordsForTheme(this.tema);
-    let l = pool.filter(w => this.mm.usados.indexOf(w) < 0);
-    if (!l.length) {
-      this.mm.usados = [];
-      l = pool.slice();
-    }
-    const w = l[this.randomInt(l.length)];
-    this.mm.usados.push(w);
-    this.mm.palavra = w;
-  },
-
-  iniciarTempoMimica() {
-    this.sortearPalavraMimica();
-    this.mm.t = 60;
-
-    const html = `
-      <div id="tempo" class="who timer-display">60s</div>
-      <div id="mmw" class="word" style="margin: 12px 0;">${this.mm.palavra}</div>
-      <div class="grid" style="grid-template-columns: 1fr; gap: 10px; margin-top: 16px">
-        <button class="btn-confirm" data-action="mm-success">✅ Acertaram (+1 ponto)</button>
-        <button class="sec" data-action="mm-pass">🔄 Pular palavra</button>
-      </div>
-    `;
-
-    this.elements.card.innerHTML = html;
-
-    clearInterval(this.mm.timer);
-    this.mm.timer = setInterval(() => {
-      this.mm.t--;
-      const el = document.getElementById("tempo");
-      if (el) {
-        el.textContent = `${this.mm.t}s`;
-        if (this.mm.t <= 10) el.classList.add("danger");
-      }
-      if (this.mm.t <= 0) {
-        clearInterval(this.mm.timer);
-        this.fimTempoMimica(false);
-      }
-    }, 1000);
-  },
-
-  fimTempoMimica(acertou) {
-    clearInterval(this.mm.timer);
-    if (acertou) {
-      this.mm.placar[this.mm.vez]++;
-      GameAnimations.launchConfetti();
-    }
-
-    const html = `
-      <div class="who ${acertou ? 'success-title' : 'danger-title'}">
-        ${acertou ? '🎉 Acertaram! +1 ponto' : '⏰ Tempo esgotado!'}
-      </div>
-      <p style="margin: 10px 0 16px; font-size: 1.1rem;">A palavra era: <b>${this.mm.palavra}</b></p>
-      <div class="grid" style="grid-template-columns: 1fr; gap: 10px;">
-        <button class="btn-confirm" data-action="mm-next-player">Próxima pessoa ➔</button>
-        <button class="sec" data-action="mm-view-score">Ver placar</button>
-      </div>
-    `;
-
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-    });
-  },
-
-  renderMimicaPlacar() {
-    clearInterval(this.mm.timer);
-    const players = this.getPlayers();
-    const sortedIdx = players.map((_, k) => k).sort((a, b) => this.mm.placar[b] - this.mm.placar[a]);
-
-    let html = `
-      <div class="who" style="margin-bottom: 10px">🏆 Placar de Mímica</div>
-      <table>
-        <tr><th>#</th><th>Jogador</th><th>Pontos</th></tr>
-    `;
-
-    sortedIdx.forEach((k, pos) => {
-      html += `<tr><td>${pos + 1}º</td><td>${players[k]}</td><td><b>${this.mm.placar[k]}</b></td></tr>`;
-    });
-
-    html += `
-      </table>
-      <div class="grid" style="grid-template-columns: 1fr; gap: 8px; margin-top: 14px;">
-        <button class="btn-confirm" data-action="mm-continue">Continuar rodada</button>
-        <button class="sec" data-action="back-to-themes">Trocar tema</button>
-        <button class="sec" data-action="mm-reset">Zerar pontuação</button>
-      </div>
-    `;
-
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-    });
-  },
-
-  // ================= EVENT HANDLERS ================= //
+  // ================= EVENT HANDLERS GLOBAIS ================= //
   bindGlobalEvents() {
-    // Botão Voltar Fixo
     if (this.elements.voltarBtn) {
       this.elements.voltarBtn.addEventListener("click", () => this.goBack());
     }
 
-    // Botão Principal (Ver/Esconder Palavra)
     this.elements.mainBtn.addEventListener("click", () => {
       if (GameAnimations.flipping) return;
       if (!this.visivel) {
@@ -944,7 +1125,6 @@ const HubGame = {
       GameAnimations.flipCard(this.elements.card, () => this.renderJogo());
     });
 
-    // Próxima Pessoa
     this.elements.proxBtn.addEventListener("click", () => {
       if (GameAnimations.flipping || !this.visto || this.visivel) return;
       this.indiceAtual++;
@@ -953,17 +1133,14 @@ const HubGame = {
       GameAnimations.flipCard(this.elements.card, () => this.renderJogo());
     });
 
-    // Sortear de novo
     this.elements.againBtn.addEventListener("click", () => {
       if (this.tema) this.iniciarPartida(this.tema);
     });
 
-    // Trocar Tema
     this.elements.trocarBtn.addEventListener("click", () => {
       this.showScreen("temas");
     });
 
-    // Revelar Duplas e Impostores
     this.elements.revelarBtn.addEventListener("click", () => {
       GameAnimations.flipCard(this.elements.card, () => {
         this.mostrarTabelaRevelacao();
@@ -971,20 +1148,89 @@ const HubGame = {
       });
     });
 
-    // Delegação de cliques no Card
+    // Delegação de cliques
     this.elements.card.addEventListener("click", (e) => {
       const target = e.target.closest("[data-action]") || e.target;
       const action = target.getAttribute ? target.getAttribute("data-action") : null;
       if (!action) return;
 
       switch (action) {
-        // Seleção de modo
+        case "choose-env":
+          const env = target.getAttribute("data-val");
+          this.gameEnvironment = env;
+          if (env === "online") {
+            this.showScreen("online_menu");
+          } else {
+            this.renderModoOffline();
+          }
+          break;
+
+        case "go-online-criar":
+          this.showScreen("online_criar");
+          break;
+
+        case "go-online-entrar":
+          this.showScreen("online_entrar");
+          break;
+
+        case "confirm-create-room":
+          const hostName = document.getElementById("online-host-name").value;
+          HubOnline.createRoom(
+            hostName,
+            (pin) => {
+              this.showScreen("online_lobby");
+            },
+            (err) => alert(err)
+          );
+          break;
+
+        case "confirm-join-room":
+          const pinVal = document.getElementById("online-pin-input").value;
+          const pNameVal = document.getElementById("online-player-name").value;
+          if (!pinVal || pinVal.length < 6) {
+            alert("Digite o PIN de 6 dígitos completo.");
+            return;
+          }
+          HubOnline.joinRoom(
+            pinVal,
+            pNameVal,
+            () => {
+              this.showScreen("online_lobby");
+            },
+            (err) => alert(err)
+          );
+          break;
+
+        case "online-change-mode":
+          const modos = ["duplas", "impostor", "mimica"];
+          const nextModo = modos[(modos.indexOf(this.modo) + 1) % modos.length];
+          this.modo = nextModo;
+          this.renderOnlineLobby();
+          break;
+
+        case "online-host-choose-theme":
+          this.showScreen("temas");
+          break;
+
+        case "online-toggle-word":
+          this.visivel = !this.visivel;
+          GameAnimations.flipCard(this.elements.card, () => this.renderOnlineJogoClient());
+          break;
+
+        case "online-host-reveal":
+          HubOnline.hostRevealGame();
+          break;
+
+        case "online-host-back-lobby":
+          HubOnline.hostBackToLobby();
+          this.showScreen("online_lobby");
+          break;
+
         case "set-modo":
           this.modo = target.getAttribute("data-value");
           this.showScreen("jogadores");
           break;
 
-        // Configuração de jogadores
         case "add-player":
           this.readPlayerInputs();
           const pList = this.getPlayers();
@@ -1011,7 +1257,7 @@ const HubGame = {
           this.readPlayerInputs();
           const delta = parseInt(target.getAttribute("data-delta"), 10);
           const curr = this.getDuplasImpCount();
-          const N = this.jogadoresDuplas.length;
+          const N = this.getPlayers().length;
           const minAllowed = (N % 2 === 0) ? 2 : 1;
           let nextVal = curr + 2 * delta;
           if (nextVal >= minAllowed && nextVal <= N - 4) {
@@ -1026,6 +1272,13 @@ const HubGame = {
           this.renderJogadores();
           break;
 
+        case "set-hint-type":
+          this.readPlayerInputs();
+          this.hintType = target.getAttribute("data-val"); // "word" ou "phrase"
+          this.saveData();
+          this.renderJogadores();
+          break;
+
         case "set-other-imp":
           this.readPlayerInputs();
           this.numImpostoresOutros = parseInt(target.getAttribute("data-val"), 10);
@@ -1037,7 +1290,6 @@ const HubGame = {
           this.showScreen("temas");
           break;
 
-        // Navegação a partir de Temas
         case "select-tema":
           const tName = target.getAttribute("data-tema");
           this.iniciarPartida(tName);
@@ -1052,10 +1304,9 @@ const HubGame = {
           break;
 
         case "nav-modo":
-          this.showScreen("inicio");
+          this.renderModoOffline();
           break;
 
-        // Filtro de Heróis
         case "filter-all":
           GameFilters.selectAllHeroes();
           this.renderFiltroHerois();
@@ -1064,51 +1315,9 @@ const HubGame = {
         case "filter-play":
           this.iniciarPartida("Super-herói");
           break;
-
-        // Ações de fim de partida / tabela
-        case "restart-same":
-          if (this.tema) this.iniciarPartida(this.tema);
-          break;
-
-        case "back-to-themes":
-          this.showScreen("temas");
-          break;
-
-        // Ações de Mímica
-        case "mm-start-word":
-          this.iniciarTempoMimica();
-          break;
-
-        case "mm-pass":
-          this.sortearPalavraMimica();
-          const mmwEl = document.getElementById("mmw");
-          if (mmwEl) mmwEl.textContent = this.mm.palavra;
-          break;
-
-        case "mm-success":
-          this.fimTempoMimica(true);
-          break;
-
-        case "mm-next-player":
-          this.mm.vez = (this.mm.vez + 1) % this.getPlayers().length;
-          this.renderMimicaVez();
-          break;
-
-        case "mm-view-score":
-          this.renderMimicaPlacar();
-          break;
-
-        case "mm-continue":
-          this.renderMimicaVez();
-          break;
-
-        case "mm-reset":
-          this.iniciarMimicaCronometro();
-          break;
       }
     });
 
-    // Checkbox de universos de heróis
     this.elements.card.addEventListener("change", (e) => {
       if (e.target.matches("[data-universe]")) {
         const uni = e.target.getAttribute("data-universe");
@@ -1119,7 +1328,6 @@ const HubGame = {
   }
 };
 
-// Inicia quando o DOM carregar
 document.addEventListener("DOMContentLoaded", () => {
   HubGame.init();
 });

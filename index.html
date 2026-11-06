@@ -13,20 +13,23 @@
   <!-- Folhas de Estilo Modulares -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
+
+  <!-- PeerJS para Salas Virtuais Online via PIN -->
+  <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
 </head>
 <body>
   <div class="box">
-    <!-- Barra Superior de Navegação -->
+    <!-- Barra Superior de Navegação com Botão Voltar -->
     <header class="top-nav" id="top-nav">
       <button class="btn-voltar" id="btn-voltar" style="display: none;" title="Voltar à tela anterior">
         <span>←</span> Voltar
       </button>
-      <div class="brand-badge">Hub Games v2.0</div>
+      <div class="brand-badge">Hub Games v2.1</div>
     </header>
 
     <!-- Título Principal -->
     <h1>🎭 Hub de Jogos</h1>
-    <p id="sub">Escolha um jogo e chame a galera</p>
+    <p id="sub">Escolha como jogar e chame a galera</p>
 
     <!-- Cartão Interativo com Flip 3D -->
     <main class="card" id="card" aria-live="polite"></main>
@@ -45,6 +48,7 @@
   <script src="js/data.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/animations.js"></script>
+  <script src="js/online.js"></script>
   <script src="js/game.js"></script>
 </body>
 </html>
