@@ -247,14 +247,14 @@ const HubGame = {
     const html = `
       <div class="who" style="margin-bottom: 12px">Escolha como jogar</div>
       <div class="grid" style="grid-template-columns: 1fr; gap: 12px">
-        <button class="modo pop-in" data-action="choose-env" data-val="offline" style="background: var(--p);">
+        <button class="modo" data-action="choose-env" data-val="offline" style="background: var(--p);">
           <span class="em">📱</span>
           <div>
             <b>Modo Offline (Mesmo celular)</b>
             <small>Passe o celular de mão em mão · Sem internet necessária</small>
           </div>
         </button>
-        <button class="modo pop-in" data-action="choose-env" data-val="online" style="background: var(--b); animation-delay: 0.1s">
+        <button class="modo" data-action="choose-env" data-val="online" style="background: var(--b);">
           <span class="em">🌐</span>
           <div>
             <b>Modo Online (Salas Virtuais)</b>
@@ -281,10 +281,8 @@ const HubGame = {
       </div>
     `;
 
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-      this.elements.card.style.background = "";
-    });
+    this.elements.card.innerHTML = html;
+    this.elements.card.style.background = "";
   },
 
   renderOnlineCriar() {
@@ -299,9 +297,8 @@ const HubGame = {
       </div>
     `;
 
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-    });
+    this.elements.card.innerHTML = html;
+    this.elements.card.style.background = "";
   },
 
   renderOnlineEntrar() {
@@ -317,9 +314,8 @@ const HubGame = {
       </div>
     `;
 
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-    });
+    this.elements.card.innerHTML = html;
+    this.elements.card.style.background = "";
   },
 
   renderOnlineLobby() {
@@ -368,9 +364,8 @@ const HubGame = {
       `;
     }
 
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-    });
+    this.elements.card.innerHTML = html;
+    this.elements.card.style.background = "";
   },
 
   // Celular do Jogador no Modo Online (Client)
@@ -408,7 +403,7 @@ const HubGame = {
 
       card.innerHTML = `
         <div class="who-badge">Sua Carta Online</div>
-        <div class="word ${isImp ? 'imp' : ''} pop-in">${cardWord}</div>
+        <div class="word ${isImp ? 'imp' : ''}">${cardWord}</div>
         ${hintHtml}
         <button class="sec" data-action="online-toggle-word" style="margin-top: 14px;">🙈 Esconder Palavra</button>
       `;
@@ -424,7 +419,6 @@ const HubGame = {
   },
 
   mostrarTabelaRevelacaoOnline() {
-    GameAnimations.launchConfetti();
     const card = this.elements.card;
     card.style.background = "";
 
@@ -490,21 +484,21 @@ const HubGame = {
     const html = `
       <div class="who" style="margin-bottom: 12px">Escolha o modo de jogo</div>
       <div class="grid" style="grid-template-columns: 1fr; gap: 12px">
-        <button class="modo pop-in" data-action="set-modo" data-value="duplas" style="background: var(--p);">
+        <button class="modo" data-action="set-modo" data-value="duplas" style="background: var(--p);">
           <span class="em">👯</span>
           <div>
             <b>Duplas & Impostores</b>
             <small>6 a 20 jogadores · Forme pares secretos e caçe os farsantes</small>
           </div>
         </button>
-        <button class="modo pop-in" data-action="set-modo" data-value="impostor" style="background: var(--b);">
+        <button class="modo" data-action="set-modo" data-value="impostor" style="background: var(--b);">
           <span class="em">🕵️</span>
           <div>
             <b>Modo Impostor</b>
             <small>3 a 20 jogadores · Todos sabem a palavra, menos os espiões!</small>
           </div>
         </button>
-        <button class="modo pop-in" data-action="set-modo" data-value="mimica" style="background: var(--g);">
+        <button class="modo" data-action="set-modo" data-value="mimica" style="background: var(--g);">
           <span class="em">🤫</span>
           <div>
             <b>Mímica Secreta</b>
@@ -514,10 +508,8 @@ const HubGame = {
       </div>
     `;
 
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-      this.elements.card.style.background = "";
-    });
+    this.elements.card.innerHTML = html;
+    this.elements.card.style.background = "";
   },
 
   // ================= JOGADORES & CONFIGURAÇÃO DA DICA ================= //
@@ -606,10 +598,8 @@ const HubGame = {
       </div>
     `;
 
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-      this.elements.card.style.background = "";
-    });
+    this.elements.card.innerHTML = html;
+    this.elements.card.style.background = "";
   },
 
   readPlayerInputs() {
@@ -668,10 +658,8 @@ const HubGame = {
       `;
     }
 
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-      this.elements.card.style.background = "";
-    });
+    this.elements.card.innerHTML = html;
+    this.elements.card.style.background = "";
   },
 
   // ================= FILTRO DE QUALQUER TEMA ================= //
@@ -725,10 +713,8 @@ const HubGame = {
       </div>
     `;
 
-    GameAnimations.flipCard(this.elements.card, () => {
-      this.elements.card.innerHTML = html;
-      this.elements.card.style.background = "";
-    });
+    this.elements.card.innerHTML = html;
+    this.elements.card.style.background = "";
   },
 
   // ================= SORTEIO ================= //
@@ -933,7 +919,6 @@ const HubGame = {
 
     // Todos viram
     if (this.indiceAtual >= players.length) {
-      GameAnimations.launchConfetti();
       card.style.background = "";
 
       let instrucao = "";
@@ -946,10 +931,10 @@ const HubGame = {
       }
 
       card.innerHTML = `
-        <div class="who success-title">🎉 Todos já viram!</div>
+        <div class="who success-title">Todos já viram!</div>
         <p style="margin: 8px 0 14px">${instrucao}</p>
         <div style="color: var(--mut); font-size: 0.9rem">Quem começa:</div>
-        <div class="word starter-word pop-in">${this.inicia}</div>
+        <div class="word starter-word">${this.inicia}</div>
       `;
 
       proxBtn.style.display = "none";
@@ -979,8 +964,6 @@ const HubGame = {
     } else {
       const isImp = this.cartas[this.indiceAtual] === "IMPOSTOR";
       if (isImp) {
-        GameAnimations.playSound("impostor");
-        GameAnimations.vibrate([100, 50, 100]);
         card.style.background = "#FFD1DC";
       } else {
         card.style.background = "";
@@ -998,7 +981,7 @@ const HubGame = {
 
       card.innerHTML = `
         <div class="who" style="margin-bottom: 10px">${jogadorNome}</div>
-        <div class="word ${isImp ? 'imp' : ''} pop-in">${this.cartas[this.indiceAtual]}</div>
+        <div class="word ${isImp ? 'imp' : ''}">${this.cartas[this.indiceAtual]}</div>
         ${extraDicaHtml}
       `;
       mainBtn.textContent = "Esconder palavra";
@@ -1007,7 +990,6 @@ const HubGame = {
 
   // ================= REVELAR RESULTADOS OFFLINE ================= //
   mostrarTabelaRevelacao() {
-    GameAnimations.launchConfetti();
     const card = this.elements.card;
     card.style.background = "";
 
@@ -1103,22 +1085,21 @@ const HubGame = {
     }
 
     this.elements.mainBtn.addEventListener("click", () => {
-      if (GameAnimations.flipping) return;
       if (!this.visivel) {
         this.visivel = true;
       } else {
         this.visivel = false;
         this.visto = true;
       }
-      GameAnimations.flipCard(this.elements.card, () => this.renderJogo());
+      this.renderJogo();
     });
 
     this.elements.proxBtn.addEventListener("click", () => {
-      if (GameAnimations.flipping || !this.visto || this.visivel) return;
+      if (!this.visto || this.visivel) return;
       this.indiceAtual++;
       this.visto = false;
       this.visivel = false;
-      GameAnimations.flipCard(this.elements.card, () => this.renderJogo());
+      this.renderJogo();
     });
 
     this.elements.againBtn.addEventListener("click", () => {
@@ -1130,10 +1111,8 @@ const HubGame = {
     });
 
     this.elements.revelarBtn.addEventListener("click", () => {
-      GameAnimations.flipCard(this.elements.card, () => {
-        this.mostrarTabelaRevelacao();
-        this.elements.revelarBtn.style.display = "none";
-      });
+      this.mostrarTabelaRevelacao();
+      this.elements.revelarBtn.style.display = "none";
     });
 
     // Delegação de cliques
@@ -1202,7 +1181,7 @@ const HubGame = {
 
         case "online-toggle-word":
           this.visivel = !this.visivel;
-          GameAnimations.flipCard(this.elements.card, () => this.renderOnlineJogoClient());
+          this.renderOnlineJogoClient();
           break;
 
         case "online-host-reveal":
