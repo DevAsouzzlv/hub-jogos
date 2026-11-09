@@ -435,12 +435,15 @@ input.nm:focus {
   box-shadow: 0 0 6px var(--success);
 }
 
-/* Filtros de Super-heróis */
+/* Filtros de Categorias */
 .filter-options-box {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 12px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 4px;
 }
 
 .filter-chip {

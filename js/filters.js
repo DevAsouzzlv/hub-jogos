@@ -1,111 +1,144 @@
 /**
- * HUB DE JOGOS - MÓDULO DE FILTROS
- * Permite filtrar subcategorias (ex: Marvel, DC, Animes em Super-heróis)
+ * HUB DE JOGOS - MÓDULO DE FILTROS UNIVERSAL
+ * Permite filtrar subcategorias em TODOS os temas do jogo.
+ * Salva automaticamente as preferências no localStorage.
  */
 
 const GameFilters = {
-  // Configuração padrão dos filtros de heróis
-  heroes: {
-    marvel: true,
-    dc: true,
-    anime: true,
-    outros: true
-  },
+  // Estado dos filtros: { [themeName]: { [subKey]: boolean } }
+  filtersState: {},
 
-  // Inicializa filtros a partir do localStorage
   init() {
+    // 1. Inicializa todas as subcategorias de todos os temas como true por padrão
+    Object.keys(THEME_DATABASE).forEach(themeName => {
+      this.filtersState[themeName] = {};
+      const subs = THEME_DATABASE[themeName].subcategories;
+      Object.keys(subs).forEach(subKey => {
+        this.filtersState[themeName][subKey] = true;
+      });
+    });
+
+    // 2. Carrega configurações salvas do localStorage
     try {
-      const saved = localStorage.getItem("hub_game_heroes_filter");
+      const saved = localStorage.getItem("hub_game_all_filters");
       if (saved) {
-        this.heroes = Object.assign(this.heroes, JSON.parse(saved));
+        const parsed = JSON.parse(saved);
+        Object.keys(parsed).forEach(tName => {
+          if (this.filtersState[tName]) {
+            Object.assign(this.filtersState[tName], parsed[tName]);
+          }
+        });
+      } else {
+        // Migração do formato legado de heróis se existir
+        const legacyHeroes = localStorage.getItem("hub_game_heroes_filter");
+        if (legacyHeroes && this.filtersState["Super-herói"]) {
+          Object.assign(this.filtersState["Super-herói"], JSON.parse(legacyHeroes));
+        }
       }
     } catch (e) {
-      console.warn("Não foi possível carregar filtros salvos:", e);
+      console.warn("Não foi possível carregar os filtros salvos:", e);
     }
   },
 
-  // Salva no localStorage
   save() {
     try {
-      localStorage.setItem("hub_game_heroes_filter", JSON.stringify(this.heroes));
+      localStorage.setItem("hub_game_all_filters", JSON.stringify(this.filtersState));
     } catch (e) {
-      console.warn("Não foi possível salvar filtros:", e);
+      console.warn("Não foi possível salvar os filtros:", e);
     }
   },
 
-  // Alterna um filtro específico
-  toggleHeroFilter(universe) {
-    if (this.heroes.hasOwnProperty(universe)) {
-      // Impede desmarcar todos (deve haver pelo menos 1 selecionado)
-      const activeCount = Object.values(this.heroes).filter(Boolean).length;
-      if (activeCount === 1 && this.heroes[universe]) {
-        return false; // Não deixa desmarcar o último
-      }
-      this.heroes[universe] = !this.heroes[universe];
-      this.save();
-      return true;
+  // Alterna o status de uma subcategoria
+  toggleFilter(themeName, subKey) {
+    if (!this.filtersState[themeName] || !this.filtersState[themeName].hasOwnProperty(subKey)) {
+      return false;
     }
-    return false;
-  },
 
-  // Seleciona todos os universos
-  selectAllHeroes() {
-    Object.keys(this.heroes).forEach(u => this.heroes[u] = true);
+    const currentThemeFilters = this.filtersState[themeName];
+    const activeCount = Object.values(currentThemeFilters).filter(Boolean).length;
+
+    // Impede desmarcar a última subcategoria ativa do tema
+    if (activeCount === 1 && currentThemeFilters[subKey]) {
+      return false;
+    }
+
+    currentThemeFilters[subKey] = !currentThemeFilters[subKey];
     this.save();
+    return true;
   },
 
-  // Retorna a lista de heróis filtrada
-  getFilteredHeroes() {
-    return HEROES_DATABASE.filter(h => this.heroes[h.universe]).map(h => h.name);
-  },
-
-  // Retorna pares de mímica filtrados para super-heróis
-  getFilteredHeroPairs() {
-    const validNames = new Set(this.getFilteredHeroes());
-    const rawPairs = PARES["Super-herói"] || [];
-    return rawPairs.filter(pair => {
-      const parts = pair.split("|");
-      return validNames.has(parts[0]) && validNames.has(parts[1]);
-    });
-  },
-
-  // Retorna as palavras para qualquer tema considerando filtros ativos
-  getWordsForTheme(themeName) {
-    if (themeName === "Super-herói") {
-      return this.getFilteredHeroes();
-    }
-    if (themeName === "Misto") {
-      let pool = [];
-      Object.keys(TEMAS).forEach(t => {
-        if (t === "Super-herói") {
-          pool = pool.concat(this.getFilteredHeroes());
-        } else {
-          pool = pool.concat(TEMAS[t]);
-        }
+  // Seleciona todas as subcategorias de um tema
+  selectAll(themeName) {
+    if (this.filtersState[themeName]) {
+      Object.keys(this.filtersState[themeName]).forEach(subKey => {
+        this.filtersState[themeName][subKey] = true;
       });
-      return pool;
+      this.save();
     }
-    return TEMAS[themeName] || [];
   },
 
-  // Retorna pares para qualquer tema considerando filtros
-  getPairsForTheme(themeName) {
-    if (themeName === "Super-herói") {
-      return this.getFilteredHeroPairs();
+  // Verifica se uma subcategoria está ativa
+  isSubActive(themeName, subKey) {
+    if (this.filtersState[themeName] && this.filtersState[themeName].hasOwnProperty(subKey)) {
+      return this.filtersState[themeName][subKey];
     }
+    return true;
+  },
+
+  // Retorna as palavras ativas de um tema conforme os filtros selecionados
+  getWordsForTheme(themeName) {
+    if (themeName === "Misto") {
+      let mixedPool = [];
+      Object.keys(THEME_DATABASE).forEach(tName => {
+        mixedPool = mixedPool.concat(this.getWordsForTheme(tName));
+      });
+      return mixedPool;
+    }
+
+    const themeObj = THEME_DATABASE[themeName];
+    if (!themeObj) return [];
+
+    const currentFilters = this.filtersState[themeName] || {};
+    return themeObj.items
+      .filter(it => currentFilters[it.sub] !== false)
+      .map(it => it.name);
+  },
+
+  // Retorna os pares de mímica válidos considerando as palavras ativas
+  getPairsForTheme(themeName) {
+    const validWords = new Set(this.getWordsForTheme(themeName));
+    const rawPairs = PARES[themeName] || [];
+
     if (themeName === "Misto") {
       let allPairs = [];
       Object.keys(PARES).forEach(t => {
-        if (t === "Super-herói") {
-          allPairs = allPairs.concat(this.getFilteredHeroPairs());
-        } else {
-          allPairs = allPairs.concat(PARES[t]);
-        }
+        allPairs = allPairs.concat(PARES[t]);
       });
-      return allPairs;
+      return allPairs.filter(pair => {
+        const parts = pair.split("|");
+        return validWords.has(parts[0]) && validWords.has(parts[1]);
+      });
     }
-    return PARES[themeName] || [];
+
+    return rawPairs.filter(pair => {
+      const parts = pair.split("|");
+      return validWords.has(parts[0]) && validWords.has(parts[1]);
+    });
+  },
+
+  // Retorna a contagem de palavras ativas para um tema
+  getActiveWordsCount(themeName) {
+    return this.getWordsForTheme(themeName).length;
+  },
+
+  // Retorna as subcategorias de um tema
+  getSubcategories(themeName) {
+    if (THEME_DATABASE[themeName]) {
+      return THEME_DATABASE[themeName].subcategories;
+    }
+    return {};
   }
 };
 
+// Inicializa automaticamente
 GameFilters.init();

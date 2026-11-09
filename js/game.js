@@ -12,6 +12,7 @@ const HubGame = {
   gameEnvironment: "offline", // "offline" | "online"
   modo: "duplas",             // "duplas" | "impostor" | "mimica"
   tema: null,
+  filtroTemaAtual: "Super-herói",
   hintType: "word",           // "word" (1 palavra sutil) | "phrase" (frase curta enigmática)
   usaDica: true,
 
@@ -187,8 +188,9 @@ const HubGame = {
       case "temas":
         this.renderTemas();
         break;
+      case "filtro_tema":
       case "filtro_herois":
-        this.renderFiltroHerois();
+        this.renderFiltroTema();
         break;
       case "jogo":
         this.renderJogo();
@@ -622,7 +624,7 @@ const HubGame = {
 
   // ================= ESCOLHA DO TEMA ================= //
   renderTemas() {
-    this.elements.subText.textContent = "Escolha um tema ou abra o filtro de heróis";
+    this.elements.subText.textContent = "Escolha um tema ou abra o filtro de categorias";
     this.hideActionButtons();
 
     let html = `
@@ -630,30 +632,27 @@ const HubGame = {
       <div class="grid theme-grid">
     `;
 
-    const icones = {
-      "Super-herói": "🦸", "Famosos": "⭐", "Comida": "🍕", "Objeto": "🔧",
-      "Lugar": "📍", "Animal": "🐾", "Profissão": "💼", "Jogos & Games": "🎮",
-      "Filmes & Séries": "🎬", "Animes & Desenhos": "📺", "Esportes": "⚽", "Misto": "🎲"
-    };
-
-    Object.keys(TEMAS).forEach(t => {
-      const isHero = t === "Super-herói";
+    Object.keys(THEME_DATABASE).forEach(t => {
+      const themeObj = THEME_DATABASE[t];
+      const count = GameFilters.getActiveWordsCount(t);
       html += `
         <div class="theme-btn-wrapper">
-          <button class="tema" data-action="select-tema" data-tema="${t}">
-            <span class="theme-icon">${icones[t] || "🎯"}</span>
+          <button class="tema" data-action="select-tema" data-tema="${t}" style="border-left: 8px solid ${themeObj.color};">
+            <span class="theme-icon">${themeObj.icon || "🎯"}</span>
             <span class="theme-name">${t}</span>
+            <small style="font-size: 0.72rem; opacity: 0.7; font-weight: 700;">${count} palavras</small>
           </button>
-          ${isHero ? `<button class="btn-filter-shortcut" data-action="open-hero-filter" title="Filtrar Marvel, DC, Animes">⚙️ Filtro</button>` : ''}
+          <button class="btn-filter-shortcut" data-action="open-theme-filter" data-theme="${t}" title="Filtrar categorias de ${t}">⚙️ Filtro</button>
         </div>
       `;
     });
 
     html += `
       <div class="theme-btn-wrapper">
-        <button class="tema" data-action="select-tema" data-tema="Misto">
+        <button class="tema" data-action="select-tema" data-tema="Misto" style="border-left: 8px solid var(--ink); background: var(--ink); color: #fff;">
           <span class="theme-icon">🎲</span>
           <span class="theme-name">Misto</span>
+          <small style="font-size: 0.72rem; opacity: 0.8; font-weight: 700;">Todos os temas ativos</small>
         </button>
       </div>
     `;
@@ -675,63 +674,54 @@ const HubGame = {
     });
   },
 
-  // ================= FILTRO DE SUPER-HERÓIS ================= //
-  renderFiltroHerois() {
-    this.elements.subText.textContent = "Escolha quais universos entram no jogo";
+  // ================= FILTRO DE QUALQUER TEMA ================= //
+  renderFiltroTema() {
+    const tema = this.filtroTemaAtual || "Super-herói";
+    const themeObj = THEME_DATABASE[tema];
+    if (!themeObj) {
+      this.showScreen("temas");
+      return;
+    }
+
+    this.elements.subText.textContent = `Personalize as categorias de ${tema}`;
     this.hideActionButtons();
 
-    const f = GameFilters.heroes;
-    const heroCount = GameFilters.getFilteredHeroes().length;
+    const subcategories = themeObj.subcategories || {};
+    const totalActive = GameFilters.getActiveWordsCount(tema);
+
+    let chipsHtml = "";
+    Object.keys(subcategories).forEach(subKey => {
+      const sub = subcategories[subKey];
+      const isActive = GameFilters.isSubActive(tema, subKey);
+      const subItemsCount = themeObj.items.filter(it => it.sub === subKey).length;
+
+      chipsHtml += `
+        <label class="filter-chip ${isActive ? 'active' : ''}">
+          <input type="checkbox" data-filter-theme="${tema}" data-filter-sub="${subKey}" ${isActive ? 'checked' : ''}>
+          <span class="chip-badge">${sub.icon || "🎯"}</span>
+          <div class="chip-info">
+            <b>${sub.label} <small>(${subItemsCount})</small></b>
+            <small>${sub.desc}</small>
+          </div>
+        </label>
+      `;
+    });
 
     const html = `
-      <div class="who" style="margin-bottom: 6px">Filtro de Super-heróis</div>
-      <p style="margin-bottom: 12px; font-size: 0.9rem;">Marque os universos que deseja incluir:</p>
+      <div class="who" style="margin-bottom: 6px">${themeObj.icon || "🎯"} Filtro: ${tema}</div>
+      <p style="margin-bottom: 12px; font-size: 0.9rem;">Escolha quais grupos você deseja no sorteio:</p>
 
       <div class="filter-options-box">
-        <label class="filter-chip ${f.marvel ? 'active' : ''}">
-          <input type="checkbox" data-universe="marvel" ${f.marvel ? 'checked' : ''}>
-          <span class="chip-badge">🔴</span>
-          <div class="chip-info">
-            <b>Marvel</b>
-            <small>Vingadores, X-Men, Homem-Aranha, etc.</small>
-          </div>
-        </label>
-
-        <label class="filter-chip ${f.dc ? 'active' : ''}">
-          <input type="checkbox" data-universe="dc" ${f.dc ? 'checked' : ''}>
-          <span class="chip-badge">🔵</span>
-          <div class="chip-info">
-            <b>DC Comics</b>
-            <small>Batman, Superman, Liga da Justiça, etc.</small>
-          </div>
-        </label>
-
-        <label class="filter-chip ${f.anime ? 'active' : ''}">
-          <input type="checkbox" data-universe="anime" ${f.anime ? 'checked' : ''}>
-          <span class="chip-badge">🟢</span>
-          <div class="chip-info">
-            <b>Animes & Shonen</b>
-            <small>Goku, Naruto, Luffy, Gojo, etc.</small>
-          </div>
-        </label>
-
-        <label class="filter-chip ${f.outros ? 'active' : ''}">
-          <input type="checkbox" data-universe="outros" ${f.outros ? 'checked' : ''}>
-          <span class="chip-badge">🟡</span>
-          <div class="chip-info">
-            <b>Clássicos & Outros</b>
-            <small>Tartarugas Ninja, Ben 10, Incríveis, etc.</small>
-          </div>
-        </label>
+        ${chipsHtml}
       </div>
 
       <div class="filter-count-badge">
-        🎯 <b>${heroCount}</b> heróis ativos no sorteio
+        🎯 <b>${totalActive}</b> palavras ativas no sorteio
       </div>
 
       <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px">
-        <button class="sec" data-action="filter-all">Marcar Todos</button>
-        <button class="btn-confirm" data-action="filter-play">Jogar com Filtro ➔</button>
+        <button class="sec" data-action="filter-all-theme">Marcar Todas</button>
+        <button class="btn-confirm" data-action="filter-play-theme">Jogar com Filtro ➔</button>
       </div>
     `;
 
@@ -1293,8 +1283,14 @@ const HubGame = {
           this.iniciarPartida(tName);
           break;
 
+        case "open-theme-filter":
+          this.filtroTemaAtual = target.getAttribute("data-theme");
+          this.showScreen("filtro_tema");
+          break;
+
         case "open-hero-filter":
-          this.showScreen("filtro_herois");
+          this.filtroTemaAtual = "Super-herói";
+          this.showScreen("filtro_tema");
           break;
 
         case "nav-jogadores":
@@ -1305,22 +1301,36 @@ const HubGame = {
           this.renderModoOffline();
           break;
 
+        case "filter-all-theme":
+          GameFilters.selectAll(this.filtroTemaAtual);
+          this.renderFiltroTema();
+          break;
+
+        case "filter-play-theme":
+          this.iniciarPartida(this.filtroTemaAtual);
+          break;
+
         case "filter-all":
-          GameFilters.selectAllHeroes();
-          this.renderFiltroHerois();
+          GameFilters.selectAll(this.filtroTemaAtual || "Super-herói");
+          this.renderFiltroTema();
           break;
 
         case "filter-play":
-          this.iniciarPartida("Super-herói");
+          this.iniciarPartida(this.filtroTemaAtual || "Super-herói");
           break;
       }
     });
 
     this.elements.card.addEventListener("change", (e) => {
-      if (e.target.matches("[data-universe]")) {
+      if (e.target.matches("[data-filter-theme][data-filter-sub]")) {
+        const t = e.target.getAttribute("data-filter-theme");
+        const s = e.target.getAttribute("data-filter-sub");
+        GameFilters.toggleFilter(t, s);
+        this.renderFiltroTema();
+      } else if (e.target.matches("[data-universe]")) {
         const uni = e.target.getAttribute("data-universe");
-        GameFilters.toggleHeroFilter(uni);
-        this.renderFiltroHerois();
+        GameFilters.toggleFilter("Super-herói", uni);
+        this.renderFiltroTema();
       }
     });
   }
