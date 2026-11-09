@@ -24,16 +24,19 @@ const GameFilters = {
       if (saved) {
         const parsed = JSON.parse(saved);
         Object.keys(parsed).forEach(tName => {
-          if (this.filtersState[tName]) {
-            Object.assign(this.filtersState[tName], parsed[tName]);
+          if (this.filtersState[tName] && parsed[tName]) {
+            Object.keys(parsed[tName]).forEach(subKey => {
+              if (this.filtersState[tName].hasOwnProperty(subKey)) {
+                this.filtersState[tName][subKey] = Boolean(parsed[tName][subKey]);
+              }
+            });
+            // Se nenhuma subcategoria válida ficou ativa, reativa todas por segurança
+            const hasActive = Object.values(this.filtersState[tName]).some(Boolean);
+            if (!hasActive) {
+              this.selectAll(tName);
+            }
           }
         });
-      } else {
-        // Migração do formato legado de heróis se existir
-        const legacyHeroes = localStorage.getItem("hub_game_heroes_filter");
-        if (legacyHeroes && this.filtersState["Super-herói"]) {
-          Object.assign(this.filtersState["Super-herói"], JSON.parse(legacyHeroes));
-        }
       }
     } catch (e) {
       console.warn("Não foi possível carregar os filtros salvos:", e);

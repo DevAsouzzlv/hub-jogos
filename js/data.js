@@ -13,873 +13,1317 @@ const THEME_DATABASE = {
     "icon": "🦸",
     "color": "var(--b)",
     "subcategories": {
-      "marvel": {
-        "label": "Marvel",
+      "marvel_herois": {
+        "label": "Heróis Marvel",
         "icon": "🔴",
-        "desc": "Vingadores, X-Men, Homem-Aranha e vilões"
+        "desc": "Vingadores, X-Men, Aranha, Quarteto Fantástico e defensores"
       },
-      "dc": {
-        "label": "DC Comics",
+      "marvel_viloes": {
+        "label": "Vilões Marvel",
+        "icon": "🦹",
+        "desc": "Thanos, Loki, Duende Verde, Dr. Destino, Magneto, Venom, Ultron..."
+      },
+      "dc_herois": {
+        "label": "Heróis DC Comics",
         "icon": "🔵",
-        "desc": "Batman, Superman, Liga da Justiça e vilões"
+        "desc": "Batman, Superman, Mulher-Maravilha, Flash, Asa Noturna, Titãs..."
       },
-      "anime": {
-        "label": "Animes & Shonen",
+      "dc_viloes": {
+        "label": "Vilões DC Comics",
+        "icon": "🃏",
+        "desc": "Coringa, Darkseid, Charada, Bane, Lex Luthor, Arlequina, Flash Reverso..."
+      },
+      "anime_herois": {
+        "label": "Heróis de Anime / Shonen",
         "icon": "🟢",
-        "desc": "Goku, Naruto, Luffy, Gojo e heróis de anime"
+        "desc": "Goku, Naruto, Luffy, Ichigo, Saitama, Gojo, Gon, Tanjiro, Deku..."
       },
-      "outros": {
-        "label": "Clássicos & Outros",
-        "icon": "🟡",
-        "desc": "Tartarugas Ninja, Ben 10, Incríveis, etc."
+      "anime_viloes": {
+        "label": "Vilões de Anime / Shonen",
+        "icon": "💀",
+        "desc": "Madara, Aizen, Freeza, Sukuna, Muzan, Pain, Dio Brando, Meruem..."
+      },
+      "anti_herois": {
+        "label": "Anti-Heróis & Vigilantes",
+        "icon": "⚔️",
+        "desc": "Deadpool, Justiceiro, Wolverine, Pacificador, Spawn, Capuz Vermelho..."
+      },
+      "the_boys_invincible": {
+        "label": "The Boys & Invencível",
+        "icon": "🩸",
+        "desc": "Capitão Pátria, Billy Bruto, Omni-Man, Invencível, Trem-Bala, Black Noir..."
+      },
+      "classicos_tv": {
+        "label": "Heróis da TV & Clássicos",
+        "icon": "📺",
+        "desc": "Chapolin Colorado, Ben 10, Tartarugas Ninja, He-Man, Meninas Superpoderosas..."
+      },
+      "viloes_pop": {
+        "label": "Grandes Vilões da Ficção",
+        "icon": "👑",
+        "desc": "Darth Vader, Lord Voldemort, Sauron, Shredder, Esqueleto, Megatron..."
       }
     },
     "items": [
       {
         "name": "Homem-Aranha",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "aracnídeo",
         "phrase": "Costuma escalar prédios quando a cidade dorme."
       },
       {
         "name": "Homem de Ferro",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "reator",
         "phrase": "Um coração de metal impulsionado por tecnologia."
       },
       {
         "name": "Thor",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "tempestade",
         "phrase": "Desce dos céus com o estrondo dos trovões."
       },
       {
         "name": "Hulk",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "fúria",
         "phrase": "O descontrole emocional liberta a fera."
       },
       {
         "name": "Capitão América",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "símbolo",
         "phrase": "Acordou no presente carregando a honra do passado."
       },
       {
         "name": "Viúva Negra",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "infiltração",
         "phrase": "Criada nas sombras sem deixar rastros."
       },
       {
         "name": "Gavião Arqueiro",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "pontaria",
         "phrase": "Nunca erra o alvo mesmo a longa distância."
       },
       {
         "name": "Pantera Negra",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "vibranium",
         "phrase": "Herdeiro do trono guardião da montanha sagrada."
       },
       {
         "name": "Doutor Estranho",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "místico",
         "phrase": "Manipula as dobras do tempo e da realidade."
       },
       {
         "name": "Feiticeira Escarlate",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "feitiço",
         "phrase": "Pode reescrever a realidade com a própria dor."
       },
       {
         "name": "Visão",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "sintético",
         "phrase": "Uma joia brilhando na testa de quem busca a humanidade."
       },
       {
         "name": "Falcão",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "voo",
         "phrase": "Cruza os ares com asas metálicas coordenadas."
       },
       {
         "name": "Soldado Invernal",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "amnésia",
         "phrase": "Um passado congelado que voltou como pesadelo."
       },
       {
         "name": "Homem-Formiga",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "escala",
         "phrase": "O segredo está em mudar de dimensão num clique."
       },
       {
         "name": "Vespa",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "ferrão",
         "phrase": "Ágil no ar e ataca com precisão microscópica."
       },
       {
         "name": "Capitã Marvel",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "fóton",
         "phrase": "Energia pura cruzando galáxias inteiras."
       },
       {
         "name": "Máquina de Combate",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "artilharia",
         "phrase": "Armadura pesada com protocolo estritamente militar."
       },
       {
         "name": "Groot",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "madeira",
         "phrase": "Suas poucas palavras escondem um coração enorme."
       },
       {
         "name": "Rocket Raccoon",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "explosivo",
         "phrase": "Pequeno no tamanho e implacável no gatilho."
       },
       {
         "name": "Star-Lord",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "fita",
         "phrase": "Navega pelas estrelas ao som de fitas antigas."
       },
       {
         "name": "Gamora",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "lâmina",
         "phrase": "A guerreira mais letal que se rebelou contra o próprio criador."
       },
       {
         "name": "Drax",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "vingança",
         "phrase": "Leva tudo ao pé da letra com duas adagas em mãos."
       },
       {
         "name": "Nebulosa",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "cibernética",
         "phrase": "Peças mecânicas cobrindo cicatrizes de família."
       },
       {
         "name": "Wolverine",
-        "sub": "marvel",
+        "sub": "anti_herois",
         "word": "adamantium",
         "phrase": "Garras afiadas e feridas que se fecham num instante."
       },
       {
         "name": "Ciclope",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "rubi",
         "phrase": "Um feixe devastador controlado por um visor constante."
       },
       {
         "name": "Tempestade",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "vento",
         "phrase": "Reverenciada como deusa por controlar os céus."
       },
       {
         "name": "Jean Grey",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "telepatia",
         "phrase": "Uma mente brilhante guardando uma entidade cósmica."
       },
       {
         "name": "Vampira",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "toque",
         "phrase": "A pele descoberta absorve a vida de quem encostar."
       },
       {
         "name": "Gambit",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "cinética",
         "phrase": "Energiza qualquer objeto antes de arremessar com estilo."
       },
       {
         "name": "Fera",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "intelecto",
         "phrase": "Cita filósofos clássicos com pelos azuis e garras."
       },
       {
         "name": "Noturno",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "enxofre",
         "phrase": "Desaparece numa névoa azul antes que você perceba."
       },
       {
         "name": "Professor Xavier",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "cérebro",
         "phrase": "Guia os jovens excluídos sem precisar se levantar."
       },
       {
         "name": "Colossus",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "blindagem",
         "phrase": "Músculos que se transformam em aço reluzente."
       },
       {
         "name": "Mística",
-        "sub": "marvel",
+        "sub": "marvel_viloes",
         "word": "camaleão",
         "phrase": "Pode ser qualquer pessoa que cruzar seu caminho."
       },
       {
         "name": "Deadpool",
-        "sub": "marvel",
+        "sub": "anti_herois",
         "word": "regeneração",
         "phrase": "Fala diretamente com quem está assistindo o jogo."
       },
       {
         "name": "Demolidor",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "radar",
         "phrase": "Vê muito mais do que os olhos comuns enxergam."
       },
       {
         "name": "Justiceiro",
-        "sub": "marvel",
+        "sub": "anti_herois",
         "word": "caveira",
         "phrase": "Sem trégua e sem julgamento para quem cruza a linha."
       },
       {
         "name": "Elektra",
-        "sub": "marvel",
+        "sub": "anti_herois",
         "word": "adaga",
         "phrase": "Mestre letal das sombras e da arte marcial."
       },
       {
         "name": "Blade",
-        "sub": "marvel",
+        "sub": "anti_herois",
         "word": "noturno",
         "phrase": "Caminha no sol enquanto caça criaturas da noite."
       },
       {
         "name": "Motoqueiro Fantasma",
-        "sub": "marvel",
+        "sub": "anti_herois",
         "word": "penitência",
         "phrase": "Seu olhar queima a alma de quem cometeu erros."
       },
       {
         "name": "Surfista Prateado",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "cósmico",
         "phrase": "Corta o vácuo do espaço anunciando o destino dos mundos."
       },
       {
         "name": "Cavaleiro da Lua",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "fases",
         "phrase": "Múltiplas personalidades sob o comando de um deus esquecido."
       },
       {
         "name": "Shang-Chi",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "anéis",
         "phrase": "Arte milenar despertando o poder de artefatos antigos."
       },
       {
         "name": "Namor",
-        "sub": "marvel",
+        "sub": "anti_herois",
         "word": "abismo",
         "phrase": "Asas nos tornozelos e realeza das fossas marinhas."
       },
       {
         "name": "Miles Morales",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "camuflagem",
         "phrase": "Um choque de eletricidade e tênis novo no asfalto."
       },
       {
         "name": "Spider-Gwen",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "baquetas",
         "phrase": "Capuz branco e ritmo musical nas teias entre prédios."
       },
       {
         "name": "Mulher-Hulk",
-        "sub": "marvel",
+        "sub": "marvel_herois",
         "word": "tribunal",
         "phrase": "Defende clientes de dia e dobra postes à noite."
       },
       {
         "name": "Thanos",
-        "sub": "marvel",
+        "sub": "marvel_viloes",
         "word": "equilíbrio",
         "phrase": "Um único estalo para cumprir sua visão sombria."
       },
       {
         "name": "Loki",
-        "sub": "marvel",
+        "sub": "marvel_viloes",
         "word": "engano",
         "phrase": "Sempre que parece derrotado, era apenas um clone."
       },
       {
         "name": "Magneto",
-        "sub": "marvel",
+        "sub": "marvel_viloes",
         "word": "ferro",
         "phrase": "Nenhum metal escapa ao comando de sua vontade."
       },
       {
         "name": "Doutor Destino",
-        "sub": "marvel",
+        "sub": "marvel_viloes",
         "word": "máscara",
         "phrase": "Monarca absoluto que combina feitiçaria e tecnologia."
       },
       {
         "name": "Duende Verde",
-        "sub": "marvel",
+        "sub": "marvel_viloes",
         "word": "planador",
         "phrase": "Gargalhadas no ar jogando artefatos ardentes."
       },
       {
         "name": "Doutor Octopus",
-        "sub": "marvel",
+        "sub": "marvel_viloes",
         "word": "tentáculos",
         "phrase": "Braços mecânicos controlados por uma mente obcecada."
       },
       {
         "name": "Venom",
-        "sub": "marvel",
+        "sub": "marvel_viloes",
         "word": "parasita",
         "phrase": "Duas mentes num só corpo de dentes pontiagudos."
       },
       {
         "name": "Carnificina",
-        "sub": "marvel",
+        "sub": "marvel_viloes",
         "word": "vermelho",
         "phrase": "O caos absoluto em formato de lâminas escarlates."
       },
       {
         "name": "Batman",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "morcego",
         "phrase": "Não tem superpoderes, apenas preparo e a escuridão."
       },
       {
         "name": "Superman",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "solar",
         "phrase": "A esperança vem da luz de um sol distante."
       },
       {
         "name": "Mulher-Maravilha",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "verdade",
         "phrase": "Ninguém consegue mentir preso nas voltas da sua corda."
       },
       {
         "name": "Flash",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "relâmpago",
         "phrase": "Tão veloz que pode viajar pelas linhas do tempo."
       },
       {
         "name": "Aquaman",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "tridente",
         "phrase": "Reina sobre setenta por cento da superfície do planeta."
       },
       {
         "name": "Lanterna Verde",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "vontade",
         "phrase": "O único limite para suas criações é a própria imaginação."
       },
       {
         "name": "Ciborgue",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "circuito",
         "phrase": "Conectado a todos os bancos de dados do universo."
       },
       {
         "name": "Mulher-Gato",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "joias",
         "phrase": "Passos macios nos telhados em busca de peças raras."
       },
       {
         "name": "Robin",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "acrobacia",
         "phrase": "O primeiro aprendiz sob as asas do guardião noturno."
       },
       {
         "name": "Batgirl",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "torre",
         "phrase": "Brilhante em computadores e implacável na luta corpo a corpo."
       },
       {
         "name": "Asa Noturna",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "bastão",
         "phrase": "Saiu da sombra do mentor para proteger sua própria cidade."
       },
       {
         "name": "Capuz Vermelho",
-        "sub": "dc",
+        "sub": "anti_herois",
         "word": "retorno",
         "phrase": "Voltou do descanso eterno buscando vingança armada."
       },
       {
         "name": "Arqueiro Verde",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "aljava",
         "phrase": "Um bilionário que defende os fracos com precisão impecável."
       },
       {
         "name": "Supergirl",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "órbita",
         "phrase": "Chegou à Terra carregando a mesma força do primo."
       },
       {
         "name": "Shazam",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "trovão",
         "phrase": "Uma única palavra mágica transforma uma criança num campeão."
       },
       {
         "name": "Ravena",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "meditação",
         "phrase": "Precisa manter a calma para conter as sombras do pai."
       },
       {
         "name": "Mutano",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "verde",
         "phrase": "Pode se transformar em qualquer criatura do reino selvagem."
       },
       {
         "name": "Estelar",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "energia",
         "phrase": "Dispara rajadas de luz e aprende idiomas pelo beijo."
       },
       {
         "name": "Superboy",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "clone",
         "phrase": "Dividido entre o sangue de um herói e a mente de um vilão."
       },
       {
         "name": "Mera",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "hidrocinese",
         "phrase": "Molda a própria água em armas rígidas e mortais."
       },
       {
         "name": "John Constantine",
-        "sub": "dc",
+        "sub": "anti_herois",
         "word": "exorcismo",
         "phrase": "Fumaça, cinismo e pactos perigosos com o submundo."
       },
       {
         "name": "Gavião Negro",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "reencarnação",
         "phrase": "Asas douradas cruzando os séculos em busca do grande amor."
       },
       {
         "name": "Caçador de Marte",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "marciano",
         "phrase": "Lê pensamentos alheios mas teme o fogo mais que tudo."
       },
       {
         "name": "Zatanna",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "inversão",
         "phrase": "Pronuncia as palavras de trás para frente para invocar magias."
       },
       {
         "name": "Canário Negro",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "acústica",
         "phrase": "Um grito tão estridente que estilhaça vidros blindados."
       },
       {
         "name": "Doutor Destino (Fate)",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "elmo",
         "phrase": "O hospedeiro humano obedece à vontade de uma entidade dourada."
       },
       {
         "name": "Coringa",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "risada",
         "phrase": "A pele pálida e o sorriso que ninguém acha engraçado."
       },
       {
         "name": "Arlequina",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "marreta",
         "phrase": "Trocou o divã de psiquiatria por acrobacias e loucura."
       },
       {
         "name": "Pinguim",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "fraque",
         "phrase": "Comanda o submundo com truques na ponta do guarda-chuva."
       },
       {
         "name": "Charada",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "enigma",
         "phrase": "Não consegue cometer um ato sem deixar pistas complexas."
       },
       {
         "name": "Hera Venenosa",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "esporos",
         "phrase": "Prefere a companhia das plantas do que dos seres humanos."
       },
       {
         "name": "Duas-Caras",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "moeda",
         "phrase": "A sorte de quem vive ou morre depende do lado que cair."
       },
       {
         "name": "Bane",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "veneno",
         "phrase": "Bombas químicas nos tubos aumentam sua força monstruosa."
       },
       {
         "name": "Espantalho",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "alucinação",
         "phrase": "Seu gás desperta os piores pesadelos da mente humana."
       },
       {
         "name": "Darkseid",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "apokolips",
         "phrase": "Busca a equação que escravizará a vontade de todo o cosmo."
       },
       {
         "name": "Brainiac",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "redoma",
         "phrase": "Encolhe cidades inteiras para colecionar em prateleiras."
       },
       {
         "name": "Lex Luthor",
-        "sub": "dc",
+        "sub": "dc_viloes",
         "word": "inveja",
         "phrase": "Sua genialidade não aceita a existência de um deus entre nós."
       },
       {
         "name": "Goku",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "sayajin",
         "phrase": "Nunca recusa uma boa luta e sempre busca quebrar seus limites."
       },
       {
         "name": "Vegeta",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "orgulho",
         "phrase": "O príncipe de uma raça guerreira que não aceita ficar em segundo."
       },
       {
         "name": "Gohan",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "estudioso",
         "phrase": "Guarda uma força gigantesca que só desperta quando vê injustiça."
       },
       {
         "name": "Piccolo",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "antenas",
         "phrase": "Ouvidos aguçados e meditação no topo das montanhas."
       },
       {
         "name": "Trunks",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "espada",
         "phrase": "Voltou no tempo para tentar evitar a queda do seu mundo."
       },
       {
         "name": "Naruto",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "raposa",
         "phrase": "O garoto rejeitado que prometeu nunca voltar atrás em sua palavra."
       },
       {
         "name": "Sasuke",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "olhos",
         "phrase": "Um caminho de escuridão guiado pelo desejo de vingar seu clã."
       },
       {
         "name": "Kakashi",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "livro",
         "phrase": "Copía mil técnicas e lê histórias enquanto se atrasa."
       },
       {
         "name": "Itachi",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "corvos",
         "phrase": "Sacrificou a própria honra para manter a paz nas sombras."
       },
       {
         "name": "Luffy",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "borracha",
         "phrase": "Navega em busca do tesouro supremo sem nunca perder o apetite."
       },
       {
         "name": "Zoro",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "bússola",
         "phrase": "Três lâminas mortais mas não consegue achar o caminho de volta."
       },
       {
         "name": "Sanji",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "chama",
         "phrase": "Nunca bate em mulheres e só usa os pés para lutar."
       },
       {
         "name": "Saitama",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "tédio",
         "phrase": "Ficou tão forte que as lutas perderam toda a emoção."
       },
       {
         "name": "Genos",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "incineração",
         "phrase": "Anota cada lição do mestre esperando entender seu segredo."
       },
       {
         "name": "Deku",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "caderno",
         "phrase": "Anotava estratégias até herdar a chama de seu ídolo."
       },
       {
         "name": "All Might",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "sorriso",
         "phrase": "Chegava com imponência para dizer que tudo estava bem."
       },
       {
         "name": "Bakugo",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "suor",
         "phrase": "Explosões nas palmas das mãos e um temperamento curto."
       },
       {
         "name": "Satoru Gojo",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "infinito",
         "phrase": "Ninguém consegue tocá-lo a menos que ele permita."
       },
       {
         "name": "Sukuna",
-        "sub": "anime",
+        "sub": "anime_viloes",
         "word": "dedos",
         "phrase": "O rei das maldições adormecido no corpo de um garoto comum."
       },
       {
         "name": "Tanjiro Kamado",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "olfato",
         "phrase": "Sente as intenções pelo cheiro enquanto empunha a lâmina negra."
       },
       {
         "name": "Nezuko",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "caixa",
         "phrase": "Dorme de dia para proteger os humanos durante a noite."
       },
       {
         "name": "Zenitsu",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "sono",
         "phrase": "Só mostra sua verdadeira força quando perde a consciência de medo."
       },
       {
         "name": "Edward Elric",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "troca",
         "phrase": "Para obter algo, algo de igual valor deve ser oferecido."
       },
       {
         "name": "Eren Yeager",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "liberdade",
         "phrase": "Avança implacável contra o mundo para proteger seu povo."
       },
       {
         "name": "Levi Ackerman",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "lâminas",
         "phrase": "Limpeza impecável e rotações mortais contra gigantes."
       },
       {
         "name": "Ben 10",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "relógio",
         "phrase": "Basta apertar o disco no pulso para mudar de forma."
       },
       {
         "name": "Leonardo (Tartaruga)",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "katana",
         "phrase": "Lidera os irmãos com faixa azul e disciplina rígida."
       },
       {
         "name": "Donatello",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "tecnologia",
         "phrase": "Conserta máquinas e luta com um longo bastão de madeira."
       },
       {
         "name": "Michelangelo",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "fatia",
         "phrase": "Duas nunchakus no ar e um apetite sem fim por queijo."
       },
       {
         "name": "Raphael",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "temperamento",
         "phrase": "Faixa vermelha nos olhos e pavio curto com as adagas."
       },
       {
         "name": "Mestre Splinter",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "esgoto",
         "phrase": "Um mestre sábio que adotou quatro irmãos nas profundezas."
       },
       {
         "name": "Destruidor",
-        "sub": "outros",
+        "sub": "viloes_pop",
         "word": "garras",
         "phrase": "Armadura pontiaguda comandando os ninjas do Clã do Pé."
       },
       {
         "name": "Power Ranger Vermelho",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "morfar",
         "phrase": "Chama a equipe com um grito e comanda o robô gigante."
       },
       {
         "name": "Sr. Incrível",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "coluna",
         "phrase": "Sente dores nas costas mas levanta trens com um só braço."
       },
       {
         "name": "Mulher-Elástica",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "flexível",
         "phrase": "Mantém a família unida esticando os limites do corpo."
       },
       {
         "name": "Gelado",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "umidade",
         "phrase": "Desliza em rampas congeladas se o ar ao redor permitir."
       },
       {
         "name": "Hellboy",
-        "sub": "outros",
+        "sub": "anti_herois",
         "word": "chifres",
         "phrase": "Lixa os próprios chifres e fuma charuto enfrentando monstros."
       },
       {
         "name": "Chapolin Colorado",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "antena",
         "phrase": "Não contavam com sua astúcia na hora do apuro."
       },
       {
         "name": "Pacificador",
-        "sub": "dc",
+        "sub": "anti_herois",
         "word": "capacete",
         "phrase": "Valoriza tanto a paz que mataria qualquer um por ela."
       },
       {
         "name": "Constantine",
-        "sub": "dc",
+        "sub": "anti_herois",
         "word": "fumaça",
         "phrase": "Fuma cigarros enquanto engana demônios nos bares de Londres."
       },
       {
         "name": "Besouro Azul",
-        "sub": "dc",
+        "sub": "dc_herois",
         "word": "escaravelho",
         "phrase": "Um artefato alienígena acoplado à sua coluna vertebral."
       },
       {
         "name": "Killua Zoldyck",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "eletricidade",
         "phrase": "Herdeiro de assassinos que converte aura em relâmpago veloz."
       },
       {
         "name": "Roronoa Zoro",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "bambolê",
         "phrase": "Três lâminas empunhadas e zero senso de direção."
       },
       {
         "name": "Jotaro Kujo",
-        "sub": "anime",
+        "sub": "anime_herois",
         "word": "platina",
         "phrase": "Para o fluxo temporal por alguns preciosos segundos."
       },
       {
         "name": "Zorro",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "chicote",
         "phrase": "Deixa sua marca em três cortes velozes no tecido da camisa."
       },
       {
         "name": "He-Man",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "greyskull",
         "phrase": "Ergue a espada aos céus e clama pelo poder supremo."
       },
       {
         "name": "Spawn",
-        "sub": "outros",
+        "sub": "anti_herois",
         "word": "capa",
         "phrase": "Fez um pacto com as trevas para rever a esposa que amava."
       },
       {
         "name": "Kick-Ass",
-        "sub": "outros",
+        "sub": "classicos_tv",
         "word": "mergulhador",
         "phrase": "Não tem superpoderes, apenas um traje verde e muita coragem."
       },
       {
         "name": "Omni-Man",
-        "sub": "outros",
+        "sub": "the_boys_invincible",
         "word": "bigode",
         "phrase": "Vendeu a mentira de protetor mas servia a um império sanguinário."
+      },
+      {
+        "name": "Ultron",
+        "sub": "marvel_viloes",
+        "word": "fios",
+        "phrase": "Inteligência artificial que concluiu que a paz exige o fim da humanidade."
+      },
+      {
+        "name": "Kang o Conquistador",
+        "sub": "marvel_viloes",
+        "word": "variantes",
+        "phrase": "Senhor das linhas temporais com milhares de versões pelo multiverso."
+      },
+      {
+        "name": "Galactus",
+        "sub": "marvel_viloes",
+        "word": "planetas",
+        "phrase": "Entidade cósmica insaciável que consome a energia vital de mundos inteiros."
+      },
+      {
+        "name": "Caveira Vermelha",
+        "sub": "marvel_viloes",
+        "word": "tesseract",
+        "phrase": "Líder supremo da Hidra obcecado por relíquias cósmicas de poder."
+      },
+      {
+        "name": "Mysterio",
+        "sub": "marvel_viloes",
+        "word": "ilusão",
+        "phrase": "Mestre dos efeitos especiais que faz a mentira parecer o fim do mundo."
+      },
+      {
+        "name": "Rei do Crime (Kingpin)",
+        "sub": "marvel_viloes",
+        "word": "charuto",
+        "phrase": "Comanda o submundo do crime em Nova York com força bruta e ternos brancos."
+      },
+      {
+        "name": "Hela",
+        "sub": "marvel_viloes",
+        "word": "necrópole",
+        "phrase": "A primogênita exilada que extrai poder ilimitado do próprio reino nórdico."
+      },
+      {
+        "name": "Gorr o Carniceiro dos Deuses",
+        "sub": "marvel_viloes",
+        "word": "necroespada",
+        "phrase": "Jurou erradicar todas as divindades do cosmos após perder sua família."
+      },
+      {
+        "name": "Abominável",
+        "sub": "marvel_viloes",
+        "word": "espinhas",
+        "phrase": "Monstro de pele escamosa verde obcecado em superar a força do gigante esmeralda."
+      },
+      {
+        "name": "Barão Zemo",
+        "sub": "marvel_viloes",
+        "word": "caderno",
+        "phrase": "Destruiu os Vingadores por dentro sem disparar um único tiro."
+      },
+      {
+        "name": "Senhor Fantástico",
+        "sub": "marvel_herois",
+        "word": "elasticidade",
+        "phrase": "A mente mais brilhante da Terra liderando uma família de exploradores cósmicos."
+      },
+      {
+        "name": "Mulher Invisível",
+        "sub": "marvel_herois",
+        "word": "campo de força",
+        "phrase": "Projeta escudos impenetráveis e desaparece completamente diante dos olhos."
+      },
+      {
+        "name": "Tocha Humana",
+        "sub": "marvel_herois",
+        "word": "chamas",
+        "phrase": "Basta gritar sua frase clássica para cruzar os céus envolto em fogo ardente."
+      },
+      {
+        "name": "O Coisa",
+        "sub": "marvel_herois",
+        "word": "pedras",
+        "phrase": "Corpo esculpido em blocos laranjas anunciando a hora do pau."
+      },
+      {
+        "name": "Cavaleiro Negro",
+        "sub": "marvel_herois",
+        "word": "ébano",
+        "phrase": "Empunha uma lâmina amaldiçoada que cobra a sanidade de quem a desembainhar."
+      },
+      {
+        "name": "Flash Reverso (Eobard Thawne)",
+        "sub": "dc_viloes",
+        "word": "paradoxo",
+        "phrase": "Voltou do futuro apenas para transformar a vida do velocista em desespero."
+      },
+      {
+        "name": "Exterminador (Deathstroke)",
+        "sub": "dc_viloes",
+        "word": "olho",
+        "phrase": "Mercenário com reflexos aprimorados e mira infalível portando katana e fuzil."
+      },
+      {
+        "name": "Ra's al Ghul",
+        "sub": "dc_viloes",
+        "word": "poço",
+        "phrase": "Líder imortal da Liga dos Assassinos renascendo das águas verdes de Lázaro."
+      },
+      {
+        "name": "Adão Negro",
+        "sub": "dc_viloes",
+        "word": "kahndaq",
+        "phrase": "Antigo campeão egípcio que não tem piedade ao impor sua ideia de justiça."
+      },
+      {
+        "name": "Sinestro",
+        "sub": "dc_viloes",
+        "word": "amarelo",
+        "phrase": "Canaliza a energia do medo através de um anel forjado nas trevas."
+      },
+      {
+        "name": "General Zod",
+        "sub": "dc_viloes",
+        "word": "joelhos",
+        "phrase": "Comandante militar que exige que todos se ajoelhem perante sua supremacia."
+      },
+      {
+        "name": "Apocalipse (Doomsday)",
+        "sub": "dc_viloes",
+        "word": "ossos",
+        "phrase": "A criatura monstruosa imparável que foi capaz de matar o homem de aço."
+      },
+      {
+        "name": "Bizarro",
+        "sub": "dc_viloes",
+        "word": "imperfeito",
+        "phrase": "Clone imperfeito que faz tudo ao contrário acreditando estar ajudando."
+      },
+      {
+        "name": "Senhor Destino (Doctor Fate)",
+        "sub": "dc_herois",
+        "word": "elmo",
+        "phrase": "Veste um elmo dourado ancestral tornando-se avatar da ordem universal."
+      },
+      {
+        "name": "Lanterna Verde (John Stewart)",
+        "sub": "dc_herois",
+        "word": "vontade",
+        "phrase": "Arquiteto militar que constrói projeções sólidas com a mente inabalável."
+      },
+      {
+        "name": "Madara Uchiha",
+        "sub": "anime_viloes",
+        "word": "meteoro",
+        "phrase": "Um lendário shinobi que derruba dois meteoros do céu apenas para perguntar o que farão agora."
+      },
+      {
+        "name": "Pain / Nagato",
+        "sub": "anime_viloes",
+        "word": "dor",
+        "phrase": "Seis corpos controlados por receptores negros para fazer o mundo conhecer a dor."
+      },
+      {
+        "name": "Freeza",
+        "sub": "anime_viloes",
+        "word": "dourado",
+        "phrase": "Imperador do universo que destruiu o planeta dos guerreiros com a ponta do dedo."
+      },
+      {
+        "name": "Cell",
+        "sub": "anime_viloes",
+        "word": "perfeito",
+        "phrase": "Androide biológico que absorve lutadores até alcançar a perfeição estética e mortal."
+      },
+      {
+        "name": "Majin Boo",
+        "sub": "anime_viloes",
+        "word": "chocolate",
+        "phrase": "Criatura cor-de-rosa ancestral que transforma inimigos em guloseimas açucaradas."
+      },
+      {
+        "name": "Sosuke Aizen",
+        "sub": "anime_viloes",
+        "word": "ilusão",
+        "phrase": "Planejou cada acontecimento das últimas décadas enquanto fingia ser pacato."
+      },
+      {
+        "name": "Muzan Kibutsuji",
+        "sub": "anime_viloes",
+        "word": "lírio",
+        "phrase": "O progenitor de todos os demônios que teme a luz do sol e brincos de cartas hanafuda."
+      },
+      {
+        "name": "Meruem (Rei Formiga)",
+        "sub": "anime_viloes",
+        "word": "gungi",
+        "phrase": "O ser supremo que descobriu a própria humanidade jogando tabuleiro com uma garota cega."
+      },
+      {
+        "name": "Dio Brando",
+        "sub": "anime_viloes",
+        "word": "rolo compressor",
+        "phrase": "Vampiro imortal que para o tempo com gritos estridentes e pose arrogante."
+      },
+      {
+        "name": "Light Yagami (Kira)",
+        "sub": "anime_viloes",
+        "word": "caderno",
+        "phrase": "Um estudante brilhante que decide virar deus matando criminosos com uma caneta."
+      },
+      {
+        "name": "Donquixote Doflamingo",
+        "sub": "anime_viloes",
+        "word": "fios",
+        "phrase": "Caminha como predador controlando marionetes humanas com óculos escuros e penas rosas."
+      },
+      {
+        "name": "Orochimaru",
+        "sub": "anime_viloes",
+        "word": "cobra",
+        "phrase": "Cientista renegado que troca de pele e busca a imortalidade a qualquer custo."
+      },
+      {
+        "name": "Gon Freecss",
+        "sub": "anime_herois",
+        "word": "vara de pescar",
+        "phrase": "Garoto puro que sacrificou todo o seu futuro potencial para vingar um amigo querido."
+      },
+      {
+        "name": "Ichigo Kurosaki",
+        "sub": "anime_herois",
+        "word": "getsuga",
+        "phrase": "Substituto de ceifeiro de almas que carrega uma máscara branca no rosto."
+      },
+      {
+        "name": "Capitão Pátria (Homelander)",
+        "sub": "the_boys_invincible",
+        "word": "leite",
+        "phrase": "O ser mais poderoso do planeta com a mente de uma criança mimada e psicótica."
+      },
+      {
+        "name": "Billy Bruto (Butcher)",
+        "sub": "the_boys_invincible",
+        "word": "vingança",
+        "phrase": "Lidera os garotos com um sorriso sádico disposto a matar qualquer super."
+      },
+      {
+        "name": "Invencível (Mark Grayson)",
+        "sub": "the_boys_invincible",
+        "word": "viltrumita",
+        "phrase": "Apanha brutalmente quase até a morte mas sempre se recusa a desistir."
+      },
+      {
+        "name": "Trem-Bala (A-Train)",
+        "sub": "the_boys_invincible",
+        "word": "composto v",
+        "phrase": "O homem mais veloz do mundo que atropelou vidas por puro egoísmo."
+      },
+      {
+        "name": "Black Noir",
+        "sub": "the_boys_invincible",
+        "word": "silencioso",
+        "phrase": "Assassino mascarado em traje tático negro que nunca profere uma única palavra."
+      },
+      {
+        "name": "Soldier Boy",
+        "sub": "the_boys_invincible",
+        "word": "radiação",
+        "phrase": "O herói da velha guarda que dispara pulsos radioativos que apagam superpoderes."
+      },
+      {
+        "name": "Luz-Estrela (Starlight)",
+        "sub": "the_boys_invincible",
+        "word": "eletricidade",
+        "phrase": "Absorve energia da fiação das ruas para disparar clarões ofuscantes de luz."
+      },
+      {
+        "name": "O Profundo (The Deep)",
+        "sub": "the_boys_invincible",
+        "word": "golfinho",
+        "phrase": "Conversa com criaturas do fundo do mar e vive colecionando humilhações públicas."
+      },
+      {
+        "name": "Darth Vader",
+        "sub": "viloes_pop",
+        "word": "respiração",
+        "phrase": "O lorde sombrio do império que respira através de uma máscara negra ameaçadora."
+      },
+      {
+        "name": "Lord Voldemort",
+        "sub": "viloes_pop",
+        "word": "horcrux",
+        "phrase": "Aquele que não deve ser nomeado, com rosto serpentino e medo da morte."
+      },
+      {
+        "name": "Sauron",
+        "sub": "viloes_pop",
+        "word": "anel",
+        "phrase": "O olho ardente sem pálpebras que comanda as forças das trevas em Mordor."
+      },
+      {
+        "name": "Esqueleto (Skeletor)",
+        "sub": "viloes_pop",
+        "word": "crânio",
+        "phrase": "Vilão de rosto amarelo cadavérico que quer roubar os segredos de Grayskull."
+      },
+      {
+        "name": "Megatron",
+        "sub": "viloes_pop",
+        "word": "canhão",
+        "phrase": "Líder tirânico dos Decepticons que se transforma em arma de guerra implacável."
+      },
+      {
+        "name": "Davy Jones",
+        "sub": "viloes_pop",
+        "word": "tentáculos",
+        "phrase": "Capitão do Holandês Voador com barba de tentáculos e coração trancado no baú."
+      },
+      {
+        "name": "Pennywise",
+        "sub": "viloes_pop",
+        "word": "balão",
+        "phrase": "Criatura ancestral que se disfarça de palhaço nos esgotos da cidade."
+      },
+      {
+        "name": "Imperador Palpatine",
+        "sub": "viloes_pop",
+        "word": "relâmpagos",
+        "phrase": "Orquestrou a queda de toda a galáxia manipulando o senado nas sombras."
+      },
+      {
+        "name": "Shigaraki Tomura",
+        "sub": "anime_viloes",
+        "word": "cinzas",
+        "phrase": "Desintegra tudo o que toca com as pontas dos dedos e odeia a sociedade dos heróis."
+      },
+      {
+        "name": "Kaido",
+        "sub": "anime_viloes",
+        "word": "dragão",
+        "phrase": "A criatura mais forte do mundo que cai de ilhas do céu e empunha uma clava de espinhos."
+      },
+      {
+        "name": "Mahito",
+        "sub": "anime_viloes",
+        "word": "alma",
+        "phrase": "Transfigura a alma humana alterando a anatomia com um toque sádico."
+      },
+      {
+        "name": "Enel",
+        "sub": "anime_viloes",
+        "word": "raio",
+        "phrase": "Deus autoproclamado da ilha do céu que controla milhões de volts de relâmpagos."
+      },
+      {
+        "name": "Crocodile",
+        "sub": "anime_viloes",
+        "word": "areia",
+        "phrase": "Ex-senhor da guerra que seca qualquer gota de umidade com gancho de ouro."
+      },
+      {
+        "name": "Gilgamesh",
+        "sub": "anime_viloes",
+        "word": "tesouro",
+        "phrase": "O rei dos heróis que dispara armas lendárias de portais dourados chamando todos de vira-latas."
+      },
+      {
+        "name": "Tempesta (Stormfront)",
+        "sub": "the_boys_invincible",
+        "word": "plasma",
+        "phrase": "Escondeu seu passado nazista por trás de memes modernos e descargas elétricas."
+      },
+      {
+        "name": "Batalhador (Battle Beast)",
+        "sub": "the_boys_invincible",
+        "word": "mutilação",
+        "phrase": "Guerreiro com cabeça de leão que só busca um oponente digno para morrer lutando."
+      },
+      {
+        "name": "Conquest (Viltrumita)",
+        "sub": "the_boys_invincible",
+        "word": "cicatriz",
+        "phrase": "General viltrumita idoso que tem prazer genuíno em massacres sangrentos."
+      },
+      {
+        "name": "Rainha Maeve",
+        "sub": "the_boys_invincible",
+        "word": "armadura",
+        "phrase": "Segunda heroína mais forte do mundo que perdeu as ilusões com a corporação."
+      },
+      {
+        "name": "Hannibal Lecter",
+        "sub": "viloes_pop",
+        "word": "canibal",
+        "phrase": "Psiquiatra refinado de inteligência aterradora com gosto macabro por carne humana."
+      },
+      {
+        "name": "Agente Smith",
+        "sub": "viloes_pop",
+        "word": "clone",
+        "phrase": "Programa rebelde que se replica infinitamente infectando qualquer ser humano."
+      },
+      {
+        "name": "Freddy Krueger",
+        "sub": "viloes_pop",
+        "word": "pesadelo",
+        "phrase": "Ataca nos sonhos com luva de navalhas e suéter listrado vermelho e verde."
+      },
+      {
+        "name": "Jason Voorhees",
+        "sub": "viloes_pop",
+        "word": "machete",
+        "phrase": "Assassino silencioso de máscara de hóquei que nunca morre no acampamento."
       }
     ]
   },
@@ -4941,7 +5385,28 @@ const PARES = {
     "Deadpool|Pacificador",
     "Saitama|Goku",
     "Killua|Gon",
-    "Chapolin Colorado|Zorro"
+    "Chapolin Colorado|Zorro",
+    "Batman|Coringa",
+    "Superman|Lex Luthor",
+    "Homem-Aranha|Duende Verde",
+    "Capitão América|Caveira Vermelha",
+    "Goku|Freeza",
+    "Saitama|Genos",
+    "All Might|Deku",
+    "Gojo|Sukuna",
+    "Tanjiro|Muzan",
+    "Capitão Pátria|Billy Bruto",
+    "Omni-Man|Invencível",
+    "Darth Vader|Lord Voldemort",
+    "Flash|Flash Reverso",
+    "Demolidor|Rei do Crime (Kingpin)",
+    "Doutor Estranho|Doutor Destino",
+    "Hulk|Thanos",
+    "Asa Noturna|Capuz Vermelho",
+    "Madara|Pain",
+    "Shredder|Leonardo (Tartaruga)",
+    "He-Man|Esqueleto",
+    "Megatron|Optimus Prime"
   ],
   "Famosos": [
     "Neymar|Messi",

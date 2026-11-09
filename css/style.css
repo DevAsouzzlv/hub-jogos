@@ -441,9 +441,10 @@ input.nm:focus {
   flex-direction: column;
   gap: 8px;
   margin-bottom: 12px;
-  max-height: 250px;
+  max-height: clamp(260px, 48vh, 360px);
   overflow-y: auto;
-  padding-right: 4px;
+  padding-right: 6px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .filter-chip {
