@@ -780,15 +780,18 @@ const HubGame = {
       if (c === "IMPOSTOR") this.ultImp.push(players[idx]);
     });
 
-    // Pista: utiliza getHintForWord com o hintType configurado ("word" ou "phrase")
+    // Dicas dos impostores: CADA IMPOSTOR RECEBE UMA DICA DIFERENTE E INDIVIDUAL!
     this.dicasI = [];
-    let wi = 0;
+    const usedHintsThisRound = [];
+    let impIndex = 0;
     const sortWords = this.shuffle(sorteadas.slice());
     this.cartas.forEach((c, idx) => {
       if (c === "IMPOSTOR") {
-        const wordKey = sortWords[wi % sortWords.length];
-        this.dicasI[idx] = getHintForWord(wordKey, this.hintType);
-        wi++;
+        const wordKey = (this.modo === "impostor") ? sorteadas[0] : sortWords[impIndex % sortWords.length];
+        const uniqueHint = getHintForWord(wordKey, this.hintType, impIndex, usedHintsThisRound);
+        this.dicasI[idx] = uniqueHint;
+        usedHintsThisRound.push(uniqueHint);
+        impIndex++;
       }
     });
 
@@ -888,11 +891,15 @@ const HubGame = {
     const assignedMap = {};
     const tableResults = [];
 
+    let impIndexOnline = 0;
+    const usedHintsOnline = [];
     players.forEach((p, idx) => {
       const card = shuffledCards[idx];
       let hint = null;
       if (card === "IMPOSTOR" && this.usaDica) {
-        hint = getHintForWord(sorteadas[0], this.hintType);
+        hint = getHintForWord(sorteadas[0], this.hintType, impIndexOnline, usedHintsOnline);
+        usedHintsOnline.push(hint);
+        impIndexOnline++;
       }
       assignedMap[p.id] = { card: card, hint: hint };
       tableResults.push({ name: p.name, card: card });
