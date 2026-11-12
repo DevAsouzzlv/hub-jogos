@@ -1,12 +1,7 @@
 /**
- * HUB DE JOGOS - BANCO DE DADOS GIGANTE E CATEGORIZADO
- * Todos os temas possuem subcategorias para filtros personalizados.
- * Cada item possui:
- * - name: Nome da palavra/personagem
- * - sub: Subcategoria para filtragem
- * - words: Lista de 3 a 4 dicas curtas e desafiadoras (1 dica única para CADA impostor)
- * - phrases: Lista de 2 a 3 frases curtas e enigmáticas (1 frase única para CADA impostor)
- * - word / phrase: Fallbacks de compatibilidade
+ * BANCO DE DADOS COMPLETO DO HUB DE JOGOS
+ * Suporte a todos os 11 temas com subcategorias filtráveis e mais de 2.200 palavras.
+ * Cada palavra contém dicas individuais distintas (palavras e frases) para cada impostor da rodada.
  */
 
 const THEME_DATABASE = {
@@ -5165,6 +5160,1894 @@ const THEME_DATABASE = {
         ],
         "word": "balão",
         "phrase": "Atrai crianças para bueiros escuros prometendo que todos vão flutuar."
+      },
+      {
+        "name": "Homem-Coisa (Man-Thing)",
+        "sub": "marvel_herois",
+        "word": "pântano",
+        "phrase": "Tudo o que conhece o medo queima ao seu toque no pântano.",
+        "words": [
+          "pântano",
+          "queimadura",
+          "medo",
+          "lodo"
+        ],
+        "phrases": [
+          "Tudo o que conhece o medo queima ao seu toque no pântano.",
+          "Guardião do nexo de todas as realidades da Marvel."
+        ]
+      },
+      {
+        "name": "Capitão Britânia",
+        "sub": "marvel_herois",
+        "word": "amuleto",
+        "phrase": "Recebeu seus poderes das mãos do próprio Mago Merlin.",
+        "words": [
+          "amuleto",
+          "inglaterra",
+          "magia",
+          "espadão"
+        ],
+        "phrases": [
+          "Recebeu seus poderes das mãos do próprio Mago Merlin.",
+          "Campeão místico do multiverso britânico."
+        ]
+      },
+      {
+        "name": "Hércules (Marvel)",
+        "sub": "marvel_herois",
+        "word": "olimpo",
+        "phrase": "Príncipe do Olimpo que adora um bom banquete e uma boa briga.",
+        "words": [
+          "olimpo",
+          "clava",
+          "força",
+          "semideus"
+        ],
+        "phrases": [
+          "Príncipe do Olimpo que adora um bom banquete e uma boa briga.",
+          "Rival amigável do deus do trovão com força titânica."
+        ]
+      },
+      {
+        "name": "Gaviã Arqueira (Kate Bishop)",
+        "sub": "marvel_herois",
+        "word": "flecha",
+        "phrase": "Membro brilhante dos Jovens Vingadores com mira tão afiada quanto seu mentor.",
+        "words": [
+          "flecha",
+          "aljava",
+          "jovem",
+          "mira"
+        ],
+        "phrases": [
+          "Membro brilhante dos Jovens Vingadores com mira tão afiada quanto seu mentor.",
+          "Herdeira do arco que não perde o sarcasmo em batalha."
+        ]
+      },
+      {
+        "name": "Patriota (Elijah Bradley)",
+        "sub": "marvel_herois",
+        "word": "escudo",
+        "phrase": "Neto do verdadeiro primeiro Capitão América negro.",
+        "words": [
+          "escudo",
+          "soro",
+          "legado",
+          "herança"
+        ],
+        "phrases": [
+          "Neto do verdadeiro primeiro Capitão América negro.",
+          "Luta pela justiça inspirado no legado de sacrifício da família."
+        ]
+      },
+      {
+        "name": "Estatura (Cassie Lang)",
+        "sub": "marvel_herois",
+        "word": "gigante",
+        "phrase": "Filha do herói que aprendeu a crescer dezenas de metros.",
+        "words": [
+          "gigante",
+          "partículas",
+          "crescimento",
+          "filha"
+        ],
+        "phrases": [
+          "Filha do herói que aprendeu a crescer dezenas de metros.",
+          "Muda de escala corporal em resposta às próprias emoções."
+        ]
+      },
+      {
+        "name": "Coração de Ferro (Riri Williams)",
+        "sub": "marvel_herois",
+        "word": "armadura",
+        "phrase": "Construiu sua própria armadura mecânica avançada no dormitório universitário.",
+        "words": [
+          "armadura",
+          "gênio",
+          "mit",
+          "computador"
+        ],
+        "phrases": [
+          "Construiu sua própria armadura mecânica avançada no dormitório universitário.",
+          "Jovem prodígio que recebeu a bênção do milionário de armadura."
+        ]
+      },
+      {
+        "name": "Miss Marvel (Kamala Khan)",
+        "sub": "marvel_herois",
+        "word": "bracelete",
+        "phrase": "Adolescente de Jersey que estica e expande membros com luz cristalina.",
+        "words": [
+          "bracelete",
+          "mãos",
+          "luz",
+          "fã"
+        ],
+        "phrases": [
+          "Adolescente de Jersey que estica e expande membros com luz cristalina.",
+          "Superfã dos Vingadores que virou heroína da sua comunidade."
+        ]
+      },
+      {
+        "name": "Cavaleiro Negro (Dane Whitman)",
+        "sub": "marvel_herois",
+        "word": "ébano",
+        "phrase": "Empunha a Espada de Ébano que cobra a sanidade de quem a desembainhar.",
+        "words": [
+          "ébano",
+          "amaldiçoada",
+          "espada",
+          "cavalo"
+        ],
+        "phrases": [
+          "Empunha a Espada de Ébano que cobra a sanidade de quem a desembainhar.",
+          "Guerreiro medieval moderno montado em seu cavalo alado."
+        ]
+      },
+      {
+        "name": "Gárgula Cinzento",
+        "sub": "marvel_herois",
+        "word": "pedra",
+        "phrase": "Cientista que transformou a própria pele em granito impenetrável.",
+        "words": [
+          "pedra",
+          "toque",
+          "química",
+          "estátua"
+        ],
+        "phrases": [
+          "Cientista que transformou a própria pele em granito impenetrável.",
+          "Pode transformar qualquer matéria orgânica em pedra ao encostar."
+        ]
+      },
+      {
+        "name": "Agente Americano (John Walker)",
+        "sub": "marvel_herois",
+        "word": "escudo negro",
+        "phrase": "Soldado condecorado que tentou assumir o manto do maior símbolo americano.",
+        "words": [
+          "escudo negro",
+          "militar",
+          "fúria",
+          "patriota"
+        ],
+        "phrases": [
+          "Soldado condecorado que tentou assumir o manto do maior símbolo americano.",
+          "Age com métodos muito mais brutais e questionáveis."
+        ]
+      },
+      {
+        "name": "Homem-Molecular",
+        "sub": "marvel_herois",
+        "word": "moléculas",
+        "phrase": "Pode reorganizar a matéria de universos inteiros no nível atômico.",
+        "words": [
+          "moléculas",
+          "matéria",
+          "reconstrução",
+          "varinha"
+        ],
+        "phrases": [
+          "Pode reorganizar a matéria de universos inteiros no nível atômico.",
+          "Chave cósmica secreta das Guerras Secretas."
+        ]
+      },
+      {
+        "name": "Sentinela (Sentry)",
+        "sub": "marvel_herois",
+        "word": "mil sóis",
+        "phrase": "Possui o poder de um milhão de sóis explodindo ao mesmo tempo.",
+        "words": [
+          "mil sóis",
+          "vazio",
+          "solar",
+          "mente"
+        ],
+        "phrases": [
+          "Possui o poder de um milhão de sóis explodindo ao mesmo tempo.",
+          "Esconde dentro de si uma entidade sombria aterradora chamada Vácuo."
+        ]
+      },
+      {
+        "name": "Mulher-Aranha (Jessica Drew)",
+        "sub": "marvel_herois",
+        "word": "veneno",
+        "phrase": "Dispara rajadas bioelétricas venenosas e plana entre os edifícios.",
+        "words": [
+          "veneno",
+          "feromônio",
+          "voo",
+          "espiã"
+        ],
+        "phrases": [
+          "Dispara rajadas bioelétricas venenosas e plana entre os edifícios.",
+          "Ex-agente da Hidra que virou heroína vingadora."
+        ]
+      },
+      {
+        "name": "Guardião Vermelho (Alexei Shostakov)",
+        "sub": "marvel_herois",
+        "word": "soviético",
+        "phrase": "A resposta soviética ao herói americano do escudo.",
+        "words": [
+          "soviético",
+          "escudo",
+          "urss",
+          "soldado"
+        ],
+        "phrases": [
+          "A resposta soviética ao herói americano do escudo.",
+          "Lutador condecorado que adora se gabar das batalhas do passado."
+        ]
+      },
+      {
+        "name": "Aniquilador",
+        "sub": "marvel_viloes",
+        "word": "zona negativa",
+        "phrase": "Comanda a Onda de Aniquilação que devora sistemas estelares inteiros.",
+        "words": [
+          "zona negativa",
+          "inseto",
+          "onda",
+          "haste"
+        ],
+        "phrases": [
+          "Comanda a Onda de Aniquilação que devora sistemas estelares inteiros.",
+          "Lorde supremo insetóide da Zona Negativa."
+        ]
+      },
+      {
+        "name": "Treinador (Taskmaster)",
+        "sub": "marvel_viloes",
+        "word": "memória",
+        "phrase": "Copia instantaneamente qualquer estilo de luta só de olhar uma vez.",
+        "words": [
+          "memória",
+          "cópia",
+          "reflexo",
+          "escudo"
+        ],
+        "phrases": [
+          "Copia instantaneamente qualquer estilo de luta só de olhar uma vez.",
+          "Treina soldados mercenários empunhando espada e escudo."
+        ]
+      },
+      {
+        "name": "Kraven o Caçador",
+        "sub": "marvel_viloes",
+        "word": "leão",
+        "phrase": "Considera o herói aracnídeo a presa definitiva da sua vida.",
+        "words": [
+          "leão",
+          "lança",
+          "selva",
+          "última caçada"
+        ],
+        "phrases": [
+          "Considera o herói aracnídeo a presa definitiva da sua vida.",
+          "Veste colete de pele de leão e usa poções que aguçam os sentidos."
+        ]
+      },
+      {
+        "name": "Camaleão (Dmitri Smerdyakov)",
+        "sub": "marvel_viloes",
+        "word": "máscaras",
+        "phrase": "O primeiro vilão do homem-aranha, mestre dos disfarces perfeitos.",
+        "words": [
+          "máscaras",
+          "disfarce",
+          "rosto",
+          "espião"
+        ],
+        "phrases": [
+          "O primeiro vilão do homem-aranha, mestre dos disfarces perfeitos.",
+          "Pode assumir a identidade de qualquer pessoa do planeta."
+        ]
+      },
+      {
+        "name": "Escorpião (Mac Gargan)",
+        "sub": "marvel_viloes",
+        "word": "ferrão",
+        "phrase": "Traje blindado verde equipado com uma cauda mecânica que dispara ácido.",
+        "words": [
+          "ferrão",
+          "armadura",
+          "veneno",
+          "verde"
+        ],
+        "phrases": [
+          "Traje blindado verde equipado com uma cauda mecânica que dispara ácido.",
+          "Financiado por um editor de jornal ranzinza para caçar a aranha."
+        ]
+      },
+      {
+        "name": "Chacal (Miles Warren)",
+        "sub": "marvel_viloes",
+        "word": "clones",
+        "phrase": "Geneticista obcecado que criou incontáveis clones do herói aracnídeo.",
+        "words": [
+          "clones",
+          "genética",
+          "obsessão",
+          "laboratório"
+        ],
+        "phrases": [
+          "Geneticista obcecado que criou incontáveis clones do herói aracnídeo.",
+          "Arquiteto da caótica Saga do Clone nos quadrinhos."
+        ]
+      },
+      {
+        "name": "Alto Evolucionário",
+        "sub": "marvel_viloes",
+        "word": "evolução",
+        "phrase": "Cientista louco que acelera a evolução de animais criando novas espécies.",
+        "words": [
+          "evolução",
+          "perfeição",
+          "genética",
+          "espécies"
+        ],
+        "phrases": [
+          "Cientista louco que acelera a evolução de animais criando novas espécies.",
+          "Não suporta nada que considere biologicamente imperfeito."
+        ]
+      },
+      {
+        "name": "Senhor Sinistro",
+        "sub": "marvel_viloes",
+        "word": "dna",
+        "phrase": "Cientista vitoriano obcecado pela linhagem genética dos Summers e Grey.",
+        "words": [
+          "dna",
+          "mutantes",
+          "clonagem",
+          "diamante"
+        ],
+        "phrases": [
+          "Cientista vitoriano obcecado pela linhagem genética dos Summers e Grey.",
+          "Carrega um losango vermelho na testa e sorriso manipulador."
+        ]
+      },
+      {
+        "name": "Fanático (Juggernaut)",
+        "sub": "marvel_viloes",
+        "word": "cyttorak",
+        "phrase": "Uma vez que começa a correr, nenhuma força no universo pode pará-lo.",
+        "words": [
+          "cyttorak",
+          "imparável",
+          "elmo",
+          "colisão"
+        ],
+        "phrases": [
+          "Uma vez que começa a correr, nenhuma força no universo pode pará-lo.",
+          "Irmastro do líder cadeirante que extrai força de uma gema mágica."
+        ]
+      },
+      {
+        "name": "Mojo",
+        "sub": "marvel_viloes",
+        "word": "audiência",
+        "phrase": "Criatura grotesca sem ossos que governa uma dimensão obcecada por audiência de TV.",
+        "words": [
+          "audiência",
+          "televisão",
+          "mojoverso",
+          "arenas"
+        ],
+        "phrases": [
+          "Criatura grotesca sem ossos que governa uma dimensão obcecada por audiência de TV.",
+          "Força heróis a lutarem em arenas para elevar os índices dos programas."
+        ]
+      },
+      {
+        "name": "Conde Nefária",
+        "sub": "marvel_viloes",
+        "word": "iônico",
+        "phrase": "Líder da Maggia que se impregnou de energia iônica pura.",
+        "words": [
+          "iônico",
+          "energia",
+          "máfia",
+          "aristocrata"
+        ],
+        "phrases": [
+          "Líder da Maggia que se impregnou de energia iônica pura.",
+          "Mais forte que os Vingadores inteiros reunidos no combate corpo a corpo."
+        ]
+      },
+      {
+        "name": "Homem-Púrpura (Kilgrave)",
+        "sub": "marvel_viloes",
+        "word": "feromônios",
+        "phrase": "Basta dar uma ordem em voz alta para qualquer humano obedecer sem resistir.",
+        "words": [
+          "feromônios",
+          "controle mental",
+          "voz",
+          "roxo"
+        ],
+        "phrases": [
+          "Basta dar uma ordem em voz alta para qualquer humano obedecer sem resistir.",
+          "O pior pesadelo psicológico da investigadora particular de jaqueta de couro."
+        ]
+      },
+      {
+        "name": "Questão (Vic Sage)",
+        "sub": "dc_herois",
+        "word": "sem rosto",
+        "phrase": "Usa uma máscara de pseudoderme que deixa seu rosto totalmente liso.",
+        "words": [
+          "sem rosto",
+          "conspiração",
+          "pele",
+          "gás"
+        ],
+        "phrases": [
+          "Usa uma máscara de pseudoderme que deixa seu rosto totalmente liso.",
+          "Investigador paranoico que conecta todas as teorias conspiratórias."
+        ]
+      },
+      {
+        "name": "Homem-Hora (Hourman)",
+        "sub": "dc_herois",
+        "word": "miraclo",
+        "phrase": "Toma uma pílula que lhe concede superpoderes por exatamente uma hora.",
+        "words": [
+          "miraclo",
+          "sessenta minutos",
+          "ampulheta",
+          "cronômetro"
+        ],
+        "phrases": [
+          "Toma uma pílula que lhe concede superpoderes por exatamente uma hora.",
+          "Carrega uma ampulheta no peito contando os minutos da sua força."
+        ]
+      },
+      {
+        "name": "Dr. Meia-Noite",
+        "sub": "dc_herois",
+        "word": "coruja",
+        "phrase": "Cego na luz do dia mas com visão perfeita na escuridão absoluta.",
+        "words": [
+          "coruja",
+          "cegueira",
+          "noite",
+          "médico"
+        ],
+        "phrases": [
+          "Cego na luz do dia mas com visão perfeita na escuridão absoluta.",
+          "Luta acompanhado de uma coruja treinada chamada Hooty."
+        ]
+      },
+      {
+        "name": "Sr. Destino (Kent Nelson)",
+        "sub": "dc_herois",
+        "word": "elmo",
+        "phrase": "O maior feiticeiro da Terra guiado pelo espírito ancestral do Elmo de Nabu.",
+        "words": [
+          "elmo",
+          "nabu",
+          "ordem",
+          "ouro"
+        ],
+        "phrases": [
+          "O maior feiticeiro da Terra guiado pelo espírito ancestral do Elmo de Nabu.",
+          "Desenha ankhs egípcios dourados no ar para repelir demônios."
+        ]
+      },
+      {
+        "name": "Homem-Gavião (Carter Hall)",
+        "sub": "dc_herois",
+        "word": "reencarnação",
+        "phrase": "Guerreiro egípcio condenado a reencarnar infinitamente com sua amada.",
+        "words": [
+          "reencarnação",
+          "metal enésimo",
+          "asas",
+          "maça"
+        ],
+        "phrases": [
+          "Guerreiro egípcio condenado a reencarnar infinitamente com sua amada.",
+          "Desce dos céus com asas de metal enésimo e maça de espinhos."
+        ]
+      },
+      {
+        "name": "Mulher-Gavião (Kendra Saunders)",
+        "sub": "dc_herois",
+        "word": "penas",
+        "phrase": "Guerreira alada impetuosa que não hesita em partir para o combate direto.",
+        "words": [
+          "penas",
+          "thanagar",
+          "guerreira",
+          "maça"
+        ],
+        "phrases": [
+          "Guerreira alada impetuosa que não hesita em partir para o combate direto.",
+          "Conectada ao planeta Thanagar e aos mistérios da reencarnação."
+        ]
+      },
+      {
+        "name": "Tempest (Garth)",
+        "sub": "dc_herois",
+        "word": "atlântida",
+        "phrase": "Antigo Aqualad que dominou a magia ancestral dos oceanos.",
+        "words": [
+          "atlântida",
+          "magia aquática",
+          "olhos roxos",
+          "águas"
+        ],
+        "phrases": [
+          "Antigo Aqualad que dominou a magia ancestral dos oceanos.",
+          "Manipula água fervente e gelo nos abismos do mar."
+        ]
+      },
+      {
+        "name": "Donna Troy",
+        "sub": "dc_herois",
+        "word": "laço de prata",
+        "phrase": "Irmã de alma da princesa guerreira com laço prateado da persuasão.",
+        "words": [
+          "laço de prata",
+          "amazona",
+          "espelho",
+          "titãs"
+        ],
+        "phrases": [
+          "Irmã de alma da princesa guerreira com laço prateado da persuasão.",
+          "Coração emocional que sempre uniu os Jovens Titãs."
+        ]
+      },
+      {
+        "name": "Moça-Gavião",
+        "sub": "dc_herois",
+        "word": "lança",
+        "phrase": "Guerreira leal armada com armas mágicas que anulam feitiçarias.",
+        "words": [
+          "lança",
+          "asas",
+          "metal",
+          "combate"
+        ],
+        "phrases": [
+          "Guerreira leal armada com armas mágicas que anulam feitiçarias.",
+          "Rasga os céus protegendo o legado dos homens-pássaro."
+        ]
+      },
+      {
+        "name": "Fogo (Beatriz da Costa)",
+        "sub": "dc_herois",
+        "word": "chamas verdes",
+        "phrase": "Heroína brasileira que se transforma em labaredas de fogo verde vivo.",
+        "words": [
+          "chamas verdes",
+          "brasil",
+          "modelo",
+          "fogo"
+        ],
+        "phrases": [
+          "Heroína brasileira que se transforma em labaredas de fogo verde vivo.",
+          "Membro ilustre da Liga da Justiça Internacional ao lado de Gelo."
+        ]
+      },
+      {
+        "name": "Gelo (Tora Olafsdotter)",
+        "sub": "dc_herois",
+        "word": "neve",
+        "phrase": "Princesa nórdica dócil que comanda nevascas e temperaturas glaciais.",
+        "words": [
+          "neve",
+          "noruega",
+          "congelar",
+          "calma"
+        ],
+        "phrases": [
+          "Princesa nórdica dócil que comanda nevascas e temperaturas glaciais.",
+          "A metade doce e serena da famosa dupla da Liga."
+        ]
+      },
+      {
+        "name": "Eléktron (Ray Palmer)",
+        "sub": "dc_herois",
+        "word": "subatômico",
+        "phrase": "Físico que usa fragmentos de estrela anã branca para encolher aos níveis atômicos.",
+        "words": [
+          "subatômico",
+          "estrela anã",
+          "cinto",
+          "física"
+        ],
+        "phrases": [
+          "Físico que usa fragmentos de estrela anã branca para encolher aos níveis atômicos.",
+          "Pode viajar pelos fios de telefone direto até o ouvido do inimigo."
+        ]
+      },
+      {
+        "name": "Desafiador (Deadman)",
+        "sub": "dc_herois",
+        "word": "fantasma",
+        "phrase": "Trapezista assassinado que virou espírito invisível e possui corpos vivos.",
+        "words": [
+          "fantasma",
+          "possessão",
+          "trapézio",
+          "vermelho"
+        ],
+        "phrases": [
+          "Trapezista assassinado que virou espírito invisível e possui corpos vivos.",
+          "Vaga pela Terra ajudando pessoas sob as ordens da deusa Rama Kushna."
+        ]
+      },
+      {
+        "name": "Monstro do Pântano (Swamp Thing)",
+        "sub": "dc_herois",
+        "word": "verde",
+        "phrase": "Avatar de todo o reino vegetal da Terra conectado ao Parlamento das Árvores.",
+        "words": [
+          "verde",
+          "vegetação",
+          "lodo",
+          "natureza"
+        ],
+        "phrases": [
+          "Avatar de todo o reino vegetal da Terra conectado ao Parlamento das Árvores.",
+          "Pode brotar de qualquer planta do planeta num instante."
+        ]
+      },
+      {
+        "name": "Kid Flash (Wally West)",
+        "sub": "dc_herois",
+        "word": "força de aceleração",
+        "phrase": "O protegido veloz que superou seu mentor virando o homem mais rápido do mundo.",
+        "words": [
+          "força de aceleração",
+          "velocista",
+          "raio",
+          "uniforme amarelo"
+        ],
+        "phrases": [
+          "O protegido veloz que superou seu mentor virando o homem mais rápido do mundo.",
+          "Cruza continentes em segundos conectado à Força de Aceleração."
+        ]
+      },
+      {
+        "name": "Exterminador (Slade Wilson)",
+        "sub": "dc_viloes",
+        "word": "olho único",
+        "phrase": "Usa noventa por cento da capacidade cerebral para antecipar qualquer golpe.",
+        "words": [
+          "olho único",
+          "espada",
+          "mercenário",
+          "soro"
+        ],
+        "phrases": [
+          "Usa noventa por cento da capacidade cerebral para antecipar qualquer golpe.",
+          "O mercenário mais letal do mundo e arqui-inimigo dos Novos Titãs."
+        ]
+      },
+      {
+        "name": "Adão Negro (Black Adam)",
+        "sub": "dc_viloes",
+        "word": "shazam",
+        "phrase": "Grita a palavra mágica e invoca a fúria dos deuses egípcios antigos.",
+        "words": [
+          "shazam",
+          "raio",
+          "kahndaq",
+          "impiedoso"
+        ],
+        "phrases": [
+          "Grita a palavra mágica e invoca a fúria dos deuses egípcios antigos.",
+          "Governa sua terra natal sem nenhuma tolerância para fraquezas."
+        ]
+      },
+      {
+        "name": "Atrocitus",
+        "sub": "dc_viloes",
+        "word": "raiva",
+        "phrase": "Cospe sangue de plasma fervente movido pelo ódio à morte de seu setor espacial.",
+        "words": [
+          "raiva",
+          "vermelho",
+          "plasma",
+          "ódio"
+        ],
+        "phrases": [
+          "Cospe sangue de plasma fervente movido pelo ódio à morte de seu setor espacial.",
+          "Líder supremo dos Lanternas Vermelhos alimentados pela fúria."
+        ]
+      },
+      {
+        "name": "Solomon Grundy",
+        "sub": "dc_viloes",
+        "word": "zumbi",
+        "phrase": "Nascido numa segunda-feira e enterrado no pântano da matança.",
+        "words": [
+          "zumbi",
+          "segunda-feira",
+          "pântano",
+          "gigante"
+        ],
+        "phrases": [
+          "Nascido numa segunda-feira e enterrado no pântano da matança.",
+          "Monstro colossal reanimado que nunca morre de verdade."
+        ]
+      },
+      {
+        "name": "Vandal Savage",
+        "sub": "dc_viloes",
+        "word": "meteoro",
+        "phrase": "Homem das cavernas banhado na radiação de um meteoro há cinquenta mil anos.",
+        "words": [
+          "meteoro",
+          "imortal",
+          "homem das cavernas",
+          "eras"
+        ],
+        "phrases": [
+          "Homem das cavernas banhado na radiação de um meteoro há cinquenta mil anos.",
+          "Testemunhou e influenciou todas as grandes guerras da história da Terra."
+        ]
+      },
+      {
+        "name": "Talia al Ghul",
+        "sub": "dc_viloes",
+        "word": "herdeira",
+        "phrase": "Filha do demônio dividida entre a lealdade ao pai e o amor pelo cavaleiro das trevas.",
+        "words": [
+          "herdeira",
+          "espada",
+          "mãe",
+          "aliança"
+        ],
+        "phrases": [
+          "Filha do demônio dividida entre a lealdade ao pai e o amor pelo cavaleiro das trevas.",
+          "Mãe do jovem prodígio agressivo treinado como assassino de elite."
+        ]
+      },
+      {
+        "name": "Homem-Brinquedo (Toyman)",
+        "sub": "dc_viloes",
+        "word": "brinquedos",
+        "phrase": "Cria bonecos de corda e trenzinhos em miniatura recheados de explosivos.",
+        "words": [
+          "brinquedos",
+          "corda",
+          "robôs",
+          "armadilhas"
+        ],
+        "phrases": [
+          "Cria bonecos de corda e trenzinhos em miniatura recheados de explosivos.",
+          "Mente infantilizada e rancorosa que aterroriza Metrópolis."
+        ]
+      },
+      {
+        "name": "Metallo",
+        "sub": "dc_viloes",
+        "word": "criptonita verde",
+        "phrase": "Ciborgue com esqueleto de metal alimentado por um coração verde radioativo.",
+        "words": [
+          "criptonita verde",
+          "coração",
+          "esqueleto",
+          "ciborgue"
+        ],
+        "phrases": [
+          "Ciborgue com esqueleto de metal alimentado por um coração verde radioativo.",
+          "Abre a placa do peito para enfraquecer o homem de aço instantaneamente."
+        ]
+      },
+      {
+        "name": "Kurapika",
+        "sub": "anime_herois",
+        "word": "correntes",
+        "phrase": "O último sobrevivente do clã dos olhos que brilham em vermelho flamejante.",
+        "words": [
+          "correntes",
+          "olhos escarlates",
+          "kurta",
+          "vingança"
+        ],
+        "phrases": [
+          "O último sobrevivente do clã dos olhos que brilham em vermelho flamejante.",
+          "Carrega correntes nos cinco dedos com votos de morte para seus inimigos."
+        ]
+      },
+      {
+        "name": "Leorio Paradinight",
+        "sub": "anime_herois",
+        "word": "maleta",
+        "phrase": "Veste terno formal e quer enriquecer apenas para tratar doentes sem cobrar nada.",
+        "words": [
+          "maleta",
+          "médico",
+          "óculos escuros",
+          "soco"
+        ],
+        "phrases": [
+          "Veste terno formal e quer enriquecer apenas para tratar doentes sem cobrar nada.",
+          "Desfere socos à distância através de portais de aura no ar."
+        ]
+      },
+      {
+        "name": "Rukia Kuchiki",
+        "sub": "anime_herois",
+        "word": "sode no shirayuki",
+        "phrase": "Shinigami nobre que entregou seus poderes na noite de um ataque sombrio.",
+        "words": [
+          "sode no shirayuki",
+          "gelo",
+          "nobre",
+          "coelho"
+        ],
+        "phrases": [
+          "Shinigami nobre que entregou seus poderes na noite de um ataque sombrio.",
+          "Empunha a mais bela espada de gelo pura de toda a Sociedade das Almas."
+        ]
+      },
+      {
+        "name": "Renji Abarai",
+        "sub": "anime_herois",
+        "word": "zabimaru",
+        "phrase": "Tenente do esquadrão com cabelo vermelho comprido e espada articulada de osso.",
+        "words": [
+          "zabimaru",
+          "tatuagens",
+          "serpente",
+          "vermelho"
+        ],
+        "phrases": [
+          "Tenente do esquadrão com cabelo vermelho comprido e espada articulada de osso.",
+          "Sua arma se estende feito uma cobra denteada golpeando à distância."
+        ]
+      },
+      {
+        "name": "Byakuya Kuchiki",
+        "sub": "anime_herois",
+        "word": "senbonzakura",
+        "phrase": "Capitão aristocrata cuja lâmina se dispersa em milhares de pétalas cortantes de cerejeira.",
+        "words": [
+          "senbonzakura",
+          "pétalas",
+          "nobreza",
+          "lâminas"
+        ],
+        "phrases": [
+          "Capitão aristocrata cuja lâmina se dispersa em milhares de pétalas cortantes de cerejeira.",
+          "Coloca a lei e a honra acima de qualquer laço familiar."
+        ]
+      },
+      {
+        "name": "Shoto Aizawa (Eraser Head)",
+        "sub": "anime_herois",
+        "word": "olhar",
+        "phrase": "Professor ranzinza que dorme num saco amarelo nas salas de aula.",
+        "words": [
+          "olhar",
+          "cachecol",
+          "apagador",
+          "olhos secos"
+        ],
+        "phrases": [
+          "Professor ranzinza que dorme num saco amarelo nas salas de aula.",
+          "Apaga os superpoderes de qualquer um apenas mantendo os olhos abertos sem piscar."
+        ]
+      },
+      {
+        "name": "Mirio Togata (Lemillion)",
+        "sub": "anime_herois",
+        "word": "intangível",
+        "phrase": "Atravessa paredes e o próprio solo caindo e voltando com um sorriso enorme.",
+        "words": [
+          "intangível",
+          "sorriso",
+          "resgate",
+          "permeação"
+        ],
+        "phrases": [
+          "Atravessa paredes e o próprio solo caindo e voltando com um sorriso enorme.",
+          "Jurou salvar um milhão de pessoas mesmo perdendo seus dons numa luta."
+        ]
+      },
+      {
+        "name": "Endeavor (Enji Todoroki)",
+        "sub": "anime_herois",
+        "word": "chamas do inferno",
+        "phrase": "O herói mais poderoso que assumiu o topo após a aposentadoria do símbolo da paz.",
+        "words": [
+          "chamas do inferno",
+          "barba de fogo",
+          "número um",
+          "redenção"
+        ],
+        "phrases": [
+          "O herói mais poderoso que assumiu o topo após a aposentadoria do símbolo da paz.",
+          "Rosto coberto por labaredas ardentes tentando reparar os erros com a família."
+        ]
+      },
+      {
+        "name": "Hawks (Keigo Takami)",
+        "sub": "anime_herois",
+        "word": "penas vermelhas",
+        "phrase": "Herói com grandes asas vermelhas que controla cada pena de forma independente.",
+        "words": [
+          "penas vermelhas",
+          "asas",
+          "espião",
+          "velocidade"
+        ],
+        "phrases": [
+          "Herói com grandes asas vermelhas que controla cada pena de forma independente.",
+          "Age nas sombras em missões perigosas de infiltração nos grupos de vilões."
+        ]
+      },
+      {
+        "name": "Mash Burnedead",
+        "sub": "anime_herois",
+        "word": "creme",
+        "phrase": "Nasceu sem nenhuma gota de magia num mundo onde não ter é crime de morte.",
+        "words": [
+          "creme",
+          "músculo",
+          "sem magia",
+          "marretada"
+        ],
+        "phrases": [
+          "Nasceu sem nenhuma gota de magia num mundo onde não ter é crime de morte.",
+          "Resolve qualquer feitiço apelativo na base da pura musculação e come profiteroles."
+        ]
+      },
+      {
+        "name": "Denji (Chainsaw Man)",
+        "sub": "anime_herois",
+        "word": "motosserra",
+        "phrase": "Puxa a cordinha no peito e transforma braços e cabeça em serras giratórias.",
+        "words": [
+          "motosserra",
+          "pochita",
+          "torrada",
+          "sangue"
+        ],
+        "phrases": [
+          "Puxa a cordinha no peito e transforma braços e cabeça em serras giratórias.",
+          "Seu maior sonho na vida era comer pão com geleia e abraçar uma garota."
+        ]
+      },
+      {
+        "name": "Aki Hayakawa",
+        "sub": "anime_herois",
+        "word": "cigarro",
+        "phrase": "Caçador sério que perdeu a família e invoca a cabeça de uma raposa gigante.",
+        "words": [
+          "cigarro",
+          "raposa",
+          "maldição",
+          "espada"
+        ],
+        "phrases": [
+          "Caçador sério que perdeu a família e invoca a cabeça de uma raposa gigante.",
+          "Usa uma espada que encurta sua própria vida a cada golpe desferido."
+        ]
+      },
+      {
+        "name": "Kars (JoJo)",
+        "sub": "anime_viloes",
+        "word": "pedra vermelha",
+        "phrase": "O homem do pilar que conquistou a máscara de pedra e a imunidade ao sol.",
+        "words": [
+          "pedra vermelha",
+          "forma de vida suprema",
+          "máscara",
+          "espaço"
+        ],
+        "phrases": [
+          "O homem do pilar que conquistou a máscara de pedra e a imunidade ao sol.",
+          "Acabou congelado no vácuo do espaço vagando sem poder morrer."
+        ]
+      },
+      {
+        "name": "Yoshikage Kira",
+        "sub": "anime_viloes",
+        "word": "mãos",
+        "phrase": "Só queria viver uma vida pacata colecionando mãos femininas em piqueniques.",
+        "words": [
+          "mãos",
+          "vida tranquila",
+          "explosão",
+          "unhas"
+        ],
+        "phrases": [
+          "Só queria viver uma vida pacata colecionando mãos femininas em piqueniques.",
+          "Seu stand transforma qualquer objeto em uma bomba de contato instantânea."
+        ]
+      },
+      {
+        "name": "Diavolo (JoJo)",
+        "sub": "anime_viloes",
+        "word": "apagar o tempo",
+        "phrase": "Chefe paranoico da máfia italiana que apaga alguns segundos da linha do tempo.",
+        "words": [
+          "apagar o tempo",
+          "dupla personalidade",
+          "chefe",
+          "máscara"
+        ],
+        "phrases": [
+          "Chefe paranoico da máfia italiana que apaga alguns segundos da linha do tempo.",
+          "Condenado a um ciclo de mortes infinitas que nunca chegam ao fim."
+        ]
+      },
+      {
+        "name": "Enrico Pucci",
+        "sub": "anime_viloes",
+        "word": "gravidade",
+        "phrase": "Padre fiel às memórias do lorde vampiro que acelerou o tempo até o fim do universo.",
+        "words": [
+          "gravidade",
+          "padre",
+          "acelerar",
+          "disco"
+        ],
+        "phrases": [
+          "Padre fiel às memórias do lorde vampiro que acelerou o tempo até o fim do universo.",
+          "Rouba stands e memórias das pessoas gravando em discos brilhantes."
+        ]
+      },
+      {
+        "name": "Akaza (Demon Slayer)",
+        "sub": "anime_viloes",
+        "word": "bússola",
+        "phrase": "A terceira lua superior que respeita a força e se recusa a matar mulheres.",
+        "words": [
+          "bússola",
+          "socos",
+          "artes marciais",
+          "lua superior"
+        ],
+        "phrases": [
+          "A terceira lua superior que respeita a força e se recusa a matar mulheres.",
+          "Luta usando técnicas de artes marciais com uma bússola mágica no chão."
+        ]
+      },
+      {
+        "name": "Doma (Demon Slayer)",
+        "sub": "anime_viloes",
+        "word": "leques",
+        "phrase": "A segunda lua superior que lidera um culto falso devorando suas devotas.",
+        "words": [
+          "leques",
+          "gelo",
+          "culto",
+          "sem emoção"
+        ],
+        "phrases": [
+          "A segunda lua superior que lidera um culto falso devorando suas devotas.",
+          "Gera nevascas com leques de lótus de gelo sem sentir nenhuma emoção real."
+        ]
+      },
+      {
+        "name": "Kokushibo",
+        "sub": "anime_viloes",
+        "word": "seis olhos",
+        "phrase": "A primeira lua superior com seis olhos no rosto e respiração da lua.",
+        "words": [
+          "seis olhos",
+          "espada de carne",
+          "lua",
+          "irmão"
+        ],
+        "phrases": [
+          "A primeira lua superior com seis olhos no rosto e respiração da lua.",
+          "Consumido pela inveja secular do irmão gêmeo que nasceu com o dom solar."
+        ]
+      },
+      {
+        "name": "Overhaul (Kai Chisaki)",
+        "sub": "anime_viloes",
+        "word": "máscara de bico",
+        "phrase": "Líder da Yakuza com fobia obsessiva por sujeira que desmonta matéria com as mãos.",
+        "words": [
+          "máscara de bico",
+          "desmontar",
+          "germes",
+          "balas"
+        ],
+        "phrases": [
+          "Líder da Yakuza com fobia obsessiva por sujeira que desmonta matéria com as mãos.",
+          "Criou balas que apagam os superpoderes usando o sangue de uma garotinha."
+        ]
+      },
+      {
+        "name": "All For One",
+        "sub": "anime_viloes",
+        "word": "roubo de dons",
+        "phrase": "O governante das trevas que rouba habilidades alheias e as combina livremente.",
+        "words": [
+          "roubo de dons",
+          "máscara respirador",
+          "irmão",
+          "império"
+        ],
+        "phrases": [
+          "O governante das trevas que rouba habilidades alheias e as combina livremente.",
+          "Comanda tudo das sombras há mais de um século com respirador artificial."
+        ]
+      },
+      {
+        "name": "Dabi (Toya Todoroki)",
+        "sub": "anime_viloes",
+        "word": "chamas azuis",
+        "phrase": "Suas chamas ardem em azul escaldante queimando a própria carne com grampos.",
+        "words": [
+          "chamas azuis",
+          "cicatrizes",
+          "grampos",
+          "dança"
+        ],
+        "phrases": [
+          "Suas chamas ardem em azul escaldante queimando a própria carne com grampos.",
+          "Revelou seus laços familiares ao vivo na TV desmoralizando os heróis."
+        ]
+      },
+      {
+        "name": "Toga Himiko",
+        "sub": "anime_viloes",
+        "word": "sangue",
+        "phrase": "Bebe o sangue de quem acha fofo para se transformar perfeitamente na pessoa.",
+        "words": [
+          "sangue",
+          "canudos",
+          "transformação",
+          "amor"
+        ],
+        "phrases": [
+          "Bebe o sangue de quem acha fofo para se transformar perfeitamente na pessoa.",
+          "Anda com canudos e seringas nos bolsos de colegial com olhar psicótico."
+        ]
+      },
+      {
+        "name": "Makima (Chainsaw Man)",
+        "sub": "anime_viloes",
+        "word": "controle",
+        "phrase": "O demônio do controle com olhos concêntricos que faz qualquer um beijar seus pés.",
+        "words": [
+          "controle",
+          "olhos circulares",
+          "cães",
+          "bang"
+        ],
+        "phrases": [
+          "O demônio do controle com olhos concêntricos que faz qualquer um beijar seus pés.",
+          "Basta apontar o dedo indicador e falar 'bang' para esmagar alvos à distância."
+        ]
+      },
+      {
+        "name": "Garou (One Punch Man)",
+        "sub": "anime_viloes",
+        "word": "caçador de heróis",
+        "phrase": "Discípulo rebelde do mestre das artes marciais que quer ser o monstro supremo.",
+        "words": [
+          "caçador de heróis",
+          "monstro",
+          "artes marciais",
+          "cósmico"
+        ],
+        "phrases": [
+          "Discípulo rebelde do mestre das artes marciais que quer ser o monstro supremo.",
+          "Evolui no meio da batalha até copiar o fluxo de energia do cosmos."
+        ]
+      },
+      {
+        "name": "Boros (One Punch Man)",
+        "sub": "anime_viloes",
+        "word": "armadura restritiva",
+        "phrase": "Viajou vinte anos pelo espaço atrás de um oponente que pudesse animar seu coração.",
+        "words": [
+          "armadura restritiva",
+          "estrela cadente",
+          "canhão",
+          "tédio"
+        ],
+        "phrases": [
+          "Viajou vinte anos pelo espaço atrás de um oponente que pudesse animar seu coração.",
+          "Seu ataque final podia queimar a crosta inteira do planeta Terra."
+        ]
+      },
+      {
+        "name": "V de Vingança",
+        "sub": "anti_herois",
+        "word": "guy fawkes",
+        "phrase": "Lembrai-vos do cinco de novembro com máscara sorridente de bochechas coradas.",
+        "words": [
+          "guy fawkes",
+          "cinco de novembro",
+          "máscara",
+          "revolução"
+        ],
+        "phrases": [
+          "Lembrai-vos do cinco de novembro com máscara sorridente de bochechas coradas.",
+          "Explodiu o parlamento opressor ao som de música clássica nas ruas."
+        ]
+      },
+      {
+        "name": "Juiz Dredd",
+        "sub": "anti_herois",
+        "word": "eu sou a lei",
+        "phrase": "Juiz, jurado e executor imediato nos becos violentos da megalópole futurista.",
+        "words": [
+          "eu sou a lei",
+          "capacete",
+          "mega-city",
+          "juiz"
+        ],
+        "phrases": [
+          "Juiz, jurado e executor imediato nos becos violentos da megalópole futurista.",
+          "Nunca tira o capacete com o visor escuro nas patrulhas de motocicleta."
+        ]
+      },
+      {
+        "name": "Jonah Hex",
+        "sub": "anti_herois",
+        "word": "rosto queimado",
+        "phrase": "Caçador de recompensas do velho oeste com metade do rosto desfigurado por ferro quente.",
+        "words": [
+          "rosto queimado",
+          "faroeste",
+          "revolver",
+          "confederado"
+        ],
+        "phrases": [
+          "Caçador de recompensas do velho oeste com metade do rosto desfigurado por ferro quente.",
+          "Mira mortal no saque rápido que conversa com cadáveres recém-enterrados."
+        ]
+      },
+      {
+        "name": "Etrigan, o Demônio",
+        "sub": "anti_herois",
+        "word": "rimas",
+        "phrase": "Basta recitar o poema que o homem se vai e a fera surge do inferno rimando.",
+        "words": [
+          "rimas",
+          "fogo infernal",
+          "jason blood",
+          "poema"
+        ],
+        "phrases": [
+          "Basta recitar o poema que o homem se vai e a fera surge do inferno rimando.",
+          "Cavalheiro britânico imortal ligado à alma de um demônio chifrudo."
+        ]
+      },
+      {
+        "name": "Hit-Girl (Mindy McCready)",
+        "sub": "anti_herois",
+        "word": "peruca roxa",
+        "phrase": "Garotinha treinada pelo próprio pai com armas de fogo e espadas afiadas.",
+        "words": [
+          "peruca roxa",
+          "duas espadas",
+          "treinamento",
+          "menina"
+        ],
+        "phrases": [
+          "Garotinha treinada pelo próprio pai com armas de fogo e espadas afiadas.",
+          "Corta capangas com extrema violência vestindo capa e peruca roxa."
+        ]
+      },
+      {
+        "name": "Big Daddy",
+        "sub": "anti_herois",
+        "word": "vigilante",
+        "phrase": "Policial incriminado que treinou a filha para ser a assassina perfeita de mafiosos.",
+        "words": [
+          "vigilante",
+          "armação",
+          "vingança",
+          "fantasia"
+        ],
+        "phrases": [
+          "Policial incriminado que treinou a filha para ser a assassina perfeita de mafiosos.",
+          "Veste uma armadura artesanal muito parecida com a do homem-morcego."
+        ]
+      },
+      {
+        "name": "Marv (Sin City)",
+        "sub": "anti_herois",
+        "word": "remédio",
+        "phrase": "Grandão com cara amassada que toma pílulas para esquecer as alucinações.",
+        "words": [
+          "remédio",
+          "sobretudo",
+          "cicatrizes",
+          "gladys"
+        ],
+        "phrases": [
+          "Grandão com cara amassada que toma pílulas para esquecer as alucinações.",
+          "Revirou a cidade do pecado de ponta a cabeça para vingar a morte de Goldie."
+        ]
+      },
+      {
+        "name": "Dwight McCarthy (Sin City)",
+        "sub": "anti_herois",
+        "word": "outro rosto",
+        "phrase": "Mudou de fisionomia após uma cirurgia clandestina para salvar garotas na noite.",
+        "words": [
+          "outro rosto",
+          "cidade velha",
+          "canivete",
+          "tênis"
+        ],
+        "phrases": [
+          "Mudou de fisionomia após uma cirurgia clandestina para salvar garotas na noite.",
+          "Protetor das damas perigosas nos becos chuvosos da Cidade Velha."
+        ]
+      },
+      {
+        "name": "Crow (Eric Draven)",
+        "sub": "anti_herois",
+        "word": "corvo",
+        "phrase": "Voltou dos mortos guiado por um pássaro negro para vingar sua noiva assassinada.",
+        "words": [
+          "corvo",
+          "maquiagem",
+          "ressurreição",
+          "guitarra"
+        ],
+        "phrases": [
+          "Voltou dos mortos guiado por um pássaro negro para vingar sua noiva assassinada.",
+          "Não chove o tempo todo, mas o amor verdadeiro é para sempre."
+        ]
+      },
+      {
+        "name": "Guts (Berserk)",
+        "sub": "anti_herois",
+        "word": "dragonslayer",
+        "phrase": "O espadachim negro que empunha um bloco bruto de ferro maior que um homem.",
+        "words": [
+          "dragonslayer",
+          "braço mecânico",
+          "marca do sacrifício",
+          "fúria"
+        ],
+        "phrases": [
+          "O espadachim negro que empunha um bloco bruto de ferro maior que um homem.",
+          "Luta diariamente contra hordas de apóstolos demoníacos impulsionado pelo ódio."
+        ]
+      },
+      {
+        "name": "Alucard (Hellsing)",
+        "sub": "anti_herois",
+        "word": "pistolas de prata",
+        "phrase": "O conde vampiro primordial a serviço da igreja protestante caçando ghouls.",
+        "words": [
+          "pistolas de prata",
+          "chapéu vermelho",
+          "vampiro original",
+          "selos"
+        ],
+        "phrases": [
+          "O conde vampiro primordial a serviço da igreja protestante caçando ghouls.",
+          "Libera seus selos de restrição revelando milhares de almas devoradas."
+        ]
+      },
+      {
+        "name": "Revy (Black Lagoon)",
+        "sub": "anti_herois",
+        "word": "duas cutlasses",
+        "phrase": "Pistoleira implacável com duas berettas modificadas e boca suja nos mares da Ásia.",
+        "words": [
+          "duas cutlasses",
+          "mercenária",
+          "porto",
+          "tatuagem"
+        ],
+        "phrases": [
+          "Pistoleira implacável com duas berettas modificadas e boca suja nos mares da Ásia.",
+          "Não acredita em heróis, apenas no dinheiro da recompensa e em pólvora."
+        ]
+      },
+      {
+        "name": "Mana Sábia (Sister Sage)",
+        "sub": "the_boys_invincible",
+        "word": "lobotomia",
+        "phrase": "A pessoa mais brilhante do mundo que faz lobotomias para poder descansar a mente.",
+        "words": [
+          "lobotomia",
+          "a pessoa mais inteligente",
+          "cérebro",
+          "regeneração"
+        ],
+        "phrases": [
+          "A pessoa mais brilhante do mundo que faz lobotomias para poder descansar a mente.",
+          "A conselheira maquiavélica que orquestra golpes de estado na torre."
+        ]
+      },
+      {
+        "name": "Translúcido (Translucent)",
+        "sub": "the_boys_invincible",
+        "word": "pele de carbono",
+        "phrase": "Sua pele refrata a luz ficando invisível e dura como diamante bruto.",
+        "words": [
+          "pele de carbono",
+          "invisível",
+          "vidro",
+          "banheiro"
+        ],
+        "phrases": [
+          "Sua pele refrata a luz ficando invisível e dura como diamante bruto.",
+          "Foi capturado pelos rapazes com um explosivo colocado onde o sol não bate."
+        ]
+      },
+      {
+        "name": "Lamplighter (Facho de Luz)",
+        "sub": "the_boys_invincible",
+        "word": "isqueiro",
+        "phrase": "Controla o fogo mas não consegue gerá-lo, dependendo do seu isqueiro de bolso.",
+        "words": [
+          "isqueiro",
+          "fogo",
+          "estátua",
+          "cinzas"
+        ],
+        "phrases": [
+          "Controla o fogo mas não consegue gerá-lo, dependendo do seu isqueiro de bolso.",
+          "Acabou trabalhando como queimador de corpos nas instalações psiquiátricas."
+        ]
+      },
+      {
+        "name": "Popclaw",
+        "sub": "the_boys_invincible",
+        "word": "garras no pulso",
+        "phrase": "Atriz falida que esconde duas garras retráteis afiadas nos pulsos.",
+        "words": [
+          "garras no pulso",
+          "atriz",
+          "composto",
+          "namorada"
+        ],
+        "phrases": [
+          "Atriz falida que esconde duas garras retráteis afiadas nos pulsos.",
+          "Perdeu o controle após uma dose pesada da droga azul."
+        ]
+      },
+      {
+        "name": "Rex Splode",
+        "sub": "the_boys_invincible",
+        "word": "energia cinética",
+        "phrase": "Carrega qualquer objeto com energia cinética explosiva atirando moedas detonadoras.",
+        "words": [
+          "energia cinética",
+          "moedas",
+          "explosão",
+          "óculos"
+        ],
+        "phrases": [
+          "Carrega qualquer objeto com energia cinética explosiva atirando moedas detonadoras.",
+          "Um herói boca-dura que provou seu valor enfrentando guerreiros do espaço."
+        ]
+      },
+      {
+        "name": "Dupli-Kate",
+        "sub": "the_boys_invincible",
+        "word": "clones",
+        "phrase": "Cria dezenas de clones de si mesma em segundos para cercar os adversários.",
+        "words": [
+          "clones",
+          "irmão",
+          "números",
+          "multidão"
+        ],
+        "phrases": [
+          "Cria dezenas de clones de si mesma em segundos para cercar os adversários.",
+          "Sente a dor física de cada cópia que é abatida no campo de combate."
+        ]
+      },
+      {
+        "name": "Encolhedora (Shrinking Rae)",
+        "sub": "the_boys_invincible",
+        "word": "miniaturização",
+        "phrase": "Encolhe ao tamanho de um inseto para invadir instalações secretas de defesa.",
+        "words": [
+          "miniaturização",
+          "ouvido",
+          "estômago",
+          "infiltração"
+        ],
+        "phrases": [
+          "Encolhe ao tamanho de um inseto para invadir instalações secretas de defesa.",
+          "Quase foi mastigada viva dentro da barriga de um vilão colossal."
+        ]
+      },
+      {
+        "name": "Monstro Girl (Monster Girl)",
+        "sub": "the_boys_invincible",
+        "word": "ogro",
+        "phrase": "Toda vez que vira um monstro gigante invencível, rejuvenesce na forma humana.",
+        "words": [
+          "ogro",
+          "rejuvenescimento",
+          "maldição",
+          "porrada"
+        ],
+        "phrases": [
+          "Toda vez que vira um monstro gigante invencível, rejuvenesce na forma humana.",
+          "Tem vinte e quatro anos com aparência de uma garotinha de doze."
+        ]
+      },
+      {
+        "name": "Allen o Alien",
+        "sub": "the_boys_invincible",
+        "word": "um olho",
+        "phrase": "Guerreiro alienígena corpulento com um só olho que viaja testando campeões planetários.",
+        "words": [
+          "um olho",
+          "unopa",
+          "regeneração",
+          "coalizão"
+        ],
+        "phrases": [
+          "Guerreiro alienígena corpulento com um só olho que viaja testando campeões planetários.",
+          "Toda vez que quase morre espancado, volta duas vezes mais forte."
+        ]
+      },
+      {
+        "name": "Titã (Titan)",
+        "sub": "the_boys_invincible",
+        "word": "rochas",
+        "phrase": "Cobre o corpo inteiro com placas de pedras maciças virando um escudo vivo.",
+        "words": [
+          "rochas",
+          "armadura de pedra",
+          "máfia",
+          "submundo"
+        ],
+        "phrases": [
+          "Cobre o corpo inteiro com placas de pedras maciças virando um escudo vivo.",
+          "Usou o herói iniciante para dar um golpe e tomar o controle do crime na cidade."
+        ]
+      },
+      {
+        "name": "Space Ghost",
+        "sub": "classicos_tv",
+        "word": "braceletes de força",
+        "phrase": "Herói cósmico veterano com raios nos braceletes que virou apresentador de entrevistas.",
+        "words": [
+          "braceletes de força",
+          "fantasma",
+          "talk show",
+          "nave"
+        ],
+        "phrases": [
+          "Herói cósmico veterano com raios nos braceletes que virou apresentador de entrevistas.",
+          "Comanda um programa bizarro conversando com seus próprios inimigos."
+        ]
+      },
+      {
+        "name": "Homem-Pássaro (Birdman)",
+        "sub": "classicos_tv",
+        "word": "solar",
+        "phrase": "Recarrega suas asas abrindo o peito em direção aos raios do astro-rei.",
+        "words": [
+          "solar",
+          "escudo de asas",
+          "advogado",
+          "falcão"
+        ],
+        "phrases": [
+          "Recarrega suas asas abrindo o peito em direção aos raios do astro-rei.",
+          "Acabou trabalhando como advogado estressado defendendo personagens de desenho."
+        ]
+      },
+      {
+        "name": "Capitão Planeta",
+        "sub": "classicos_tv",
+        "word": "anel",
+        "phrase": "O poder é de vocês quando cinco anéis mágicos se unem nos céus.",
+        "words": [
+          "anel",
+          "poluição",
+          "terra fogo vento",
+          "coração"
+        ],
+        "phrases": [
+          "O poder é de vocês quando cinco anéis mágicos se unem nos céus.",
+          "Fica totalmente fraco e sem forças se cair numa poça de lodo poluente."
+        ]
+      },
+      {
+        "name": "Freakazoid",
+        "sub": "classicos_tv",
+        "word": "internet",
+        "phrase": "Um garoto sugado por um bug no chip do computador ganhando superloucura.",
+        "words": [
+          "internet",
+          "hospício",
+          "loucura",
+          "computador"
+        ],
+        "phrases": [
+          "Um garoto sugado por um bug no chip do computador ganhando superloucura.",
+          "Corre pelo chão fazendo barulho de motor e adora piadas sem sentido."
+        ]
+      },
+      {
+        "name": "Capitão Caverna",
+        "sub": "classicos_tv",
+        "word": "porrete",
+        "phrase": "Grita seu nome a plenos pulmões voando com um porrete de madeira nas mãos.",
+        "words": [
+          "porrete",
+          "grito",
+          "pêlos",
+          "voar"
+        ],
+        "phrases": [
+          "Grita seu nome a plenos pulmões voando com um porrete de madeira nas mãos.",
+          "Esconde ferramentas, bichinhos e quinquilharias dentro de sua pelagem comprida."
+        ]
+      },
+      {
+        "name": "Tutubarão (Jabberjaw)",
+        "sub": "classicos_tv",
+        "word": "tambor",
+        "phrase": "Um grande tubarão branco que toca bateria numa banda subaquática de jovens.",
+        "words": [
+          "tambor",
+          "fundo do mar",
+          "medroso",
+          "bateria"
+        ],
+        "phrases": [
+          "Um grande tubarão branco que toca bateria numa banda subaquática de jovens.",
+          "Não ganha nenhum respeito de ninguém e foge apavorado de qualquer vilão."
+        ]
+      },
+      {
+        "name": "Formiga Atômica",
+        "sub": "classicos_tv",
+        "word": "ferro",
+        "phrase": "Pequeno inseto que levanta pontes e navios com a ponta de um dedo.",
+        "words": [
+          "ferro",
+          "capacete",
+          "musculação",
+          "peso"
+        ],
+        "phrases": [
+          "Pequeno inseto que levanta pontes e navios com a ponta de um dedo.",
+          "Tem sua própria academia subterrânea levantando halteres de toneladas."
+        ]
+      },
+      {
+        "name": "Homem-Cueca",
+        "sub": "classicos_tv",
+        "word": "capa",
+        "phrase": "Basta estalar os dedos para o rabugento diretor da escola virar o herói das histórias.",
+        "words": [
+          "capa",
+          "diretor",
+          "tra-la-la",
+          "estalado"
+        ],
+        "phrases": [
+          "Basta estalar os dedos para o rabugento diretor da escola virar o herói das histórias.",
+          "Veste apenas uma capa vermelha e roupa íntima cantando 'tra-la-la'."
+        ]
+      },
+      {
+        "name": "Defensores da Terra (Flash Gordon)",
+        "sub": "classicos_tv",
+        "word": "ming",
+        "phrase": "O atleta da Terra arremessado no planeta Mongo combatendo o imperador tirano.",
+        "words": [
+          "ming",
+          "foguete",
+          "ray gun",
+          "galáxia"
+        ],
+        "phrases": [
+          "O atleta da Terra arremessado no planeta Mongo combatendo o imperador tirano.",
+          "Acompanhado do Fantasma que anda e de Mandrake o mágico."
+        ]
+      },
+      {
+        "name": "Mighty Mouse (Super-Mouse)",
+        "sub": "classicos_tv",
+        "word": "queijo",
+        "phrase": "O pequeno camundongo voando aos céus cantando feito um tenor de ópera clássica.",
+        "words": [
+          "queijo",
+          "ópera",
+          "capa",
+          "camundongo"
+        ],
+        "phrases": [
+          "O pequeno camundongo voando aos céus cantando feito um tenor de ópera clássica.",
+          "Salva ratinhos indefesos das garras dos gatos malvados da cidade."
+        ]
+      },
+      {
+        "name": "Jafar (Aladdin)",
+        "sub": "viloes_pop",
+        "word": "cajado de cobra",
+        "phrase": "Vizir traiçoeiro que hipnotiza o sultão com seu cajado de naja dourada.",
+        "words": [
+          "cajado de cobra",
+          "gênio",
+          "sultão",
+          "papagaio"
+        ],
+        "phrases": [
+          "Vizir traiçoeiro que hipnotiza o sultão com seu cajado de naja dourada.",
+          "Desejou virar o ser mais poderoso do cosmos e acabou trancado na lâmpada."
+        ]
+      },
+      {
+        "name": "Scar (O Rei Leão)",
+        "sub": "viloes_pop",
+        "word": "cicatriz",
+        "phrase": "Irmão invejoso que armou a debandada de gnus para derrubar o rei no abismo.",
+        "words": [
+          "cicatriz",
+          "penhasco",
+          "hienas",
+          "estejam preparados"
+        ],
+        "phrases": [
+          "Irmão invejoso que armou a debandada de gnus para derrubar o rei no abismo.",
+          "Canta com as hienas planejando o golpe para governar a savana na miséria."
+        ]
+      },
+      {
+        "name": "Úrsula (A Pequena Sereia)",
+        "sub": "viloes_pop",
+        "word": "tentáculos",
+        "phrase": "A bruxa do mar que cobra caro por desejos roubando vozes em conchas.",
+        "words": [
+          "tentáculos",
+          "voz",
+          "contrato",
+          "enguias"
+        ],
+        "phrases": [
+          "A bruxa do mar que cobra caro por desejos roubando vozes em conchas.",
+          "Acompanhada por duas enguias escorregadias pelas águas escuras."
+        ]
+      },
+      {
+        "name": "Malévola",
+        "sub": "viloes_pop",
+        "word": "chifres",
+        "phrase": "Não foi convidada para a festa de batismo e lançou uma maldição de cem anos de sono.",
+        "words": [
+          "chifres",
+          "dragão",
+          "roca",
+          "fuso"
+        ],
+        "phrases": [
+          "Não foi convidada para a festa de batismo e lançou uma maldição de cem anos de sono.",
+          "Transforma-se em um colossal dragão negro que cospe labaredas verdes."
+        ]
+      },
+      {
+        "name": "Hades (Disney)",
+        "sub": "viloes_pop",
+        "word": "cabelo azul",
+        "phrase": "O lorde do submundo com cabelo de fogo azul que fica vermelho quando perde a paciência.",
+        "words": [
+          "cabelo azul",
+          "submundo",
+          "pacto",
+          "fogo vermelho"
+        ],
+        "phrases": [
+          "O lorde do submundo com cabelo de fogo azul que fica vermelho quando perde a paciência.",
+          "Planejou soltar os Titãs do tártaro para destronar os deuses do Olimpo."
+        ]
+      },
+      {
+        "name": "Doutor Facilier (A Princesa e o Sapo)",
+        "sub": "viloes_pop",
+        "word": "sombra viva",
+        "phrase": "O homem da sombra que faz acordos mágicos com espíritos do outro mundo.",
+        "words": [
+          "sombra viva",
+          "cartas",
+          "amigos do outro lado",
+          "vudu"
+        ],
+        "phrases": [
+          "O homem da sombra que faz acordos mágicos com espíritos do outro mundo.",
+          "As dívidas com o além sempre cobram um preço fatal na hora certa."
+        ]
+      },
+      {
+        "name": "Capitão Gancho",
+        "sub": "viloes_pop",
+        "word": "crocodilo",
+        "phrase": "Pirata elegante de casaca vermelha que perdeu a mão para um réptil no lago.",
+        "words": [
+          "crocodilo",
+          "relógio",
+          "ferro",
+          "terra do nunca"
+        ],
+        "phrases": [
+          "Pirata elegante de casaca vermelha que perdeu a mão para um réptil no lago.",
+          "Entra em pânico histérico toda vez que escuta o 'tique-taque' se aproximando."
+        ]
+      },
+      {
+        "name": "Cruella de Vil",
+        "sub": "viloes_pop",
+        "word": "casaco de pele",
+        "phrase": "Mente cruel e obcecada por moda que quer transformar filhotes em casacos finos.",
+        "words": [
+          "casaco de pele",
+          "carro clássico",
+          "fumaça",
+          "manchas"
+        ],
+        "phrases": [
+          "Mente cruel e obcecada por moda que quer transformar filhotes em casacos finos.",
+          "Dirige seu carro esporte na contramão soltando fumaça verde pelo bocal."
+        ]
+      },
+      {
+        "name": "Hans Landa (Bastardos Inglórios)",
+        "sub": "viloes_pop",
+        "word": "cachimbo",
+        "phrase": "Investigador extremamente polido e charmoso com faro impecável para fugitivos.",
+        "words": [
+          "cachimbo",
+          "leite",
+          "investigação",
+          "caçador"
+        ],
+        "phrases": [
+          "Investigador extremamente polido e charmoso com faro impecável para fugitivos.",
+          "Pede um copo de leite fresco enquanto desmonta qualquer disfarce na mesa."
+        ]
+      },
+      {
+        "name": "Anton Chigurh (Onde os Fracos Não Têm Vez)",
+        "sub": "viloes_pop",
+        "word": "moeda",
+        "phrase": "Assassino implacável que deixa a vida de suas vítimas a critério de cara ou coroa.",
+        "words": [
+          "moeda",
+          "bujão de ar",
+          "cabelo tigela",
+          "destino"
+        ],
+        "phrases": [
+          "Assassino implacável que deixa a vida de suas vítimas a critério de cara ou coroa.",
+          "Carrega um cilindro de ar comprimido para estourar fechaduras e vidas."
+        ]
       }
     ]
   },
@@ -6961,6 +8844,1638 @@ const THEME_DATABASE = {
         ],
         "word": "experiência",
         "phrase": "Ensina física e química construindo submarinos caseiros na oficina."
+      },
+      {
+        "name": "Milton Nascimento",
+        "sub": "brasileiros",
+        "word": "clube da esquina",
+        "phrase": "A voz celestial de Minas Gerais que compôs o Clube da Esquina.",
+        "words": [
+          "clube da esquina",
+          "travessia",
+          "minas",
+          "voz"
+        ],
+        "phrases": [
+          "A voz celestial de Minas Gerais que compôs o Clube da Esquina.",
+          "Suas melodias ecoam como preces pelas montanhas brasileiras."
+        ]
+      },
+      {
+        "name": "Gilberto Gil",
+        "sub": "brasileiros",
+        "word": "expresso 2222",
+        "phrase": "Mestre da MPB que misturou afoxé com rock e foi Ministro da Cultura.",
+        "words": [
+          "expresso 2222",
+          "ministro",
+          "reggae",
+          "violão"
+        ],
+        "phrases": [
+          "Mestre da MPB que misturou afoxé com rock e foi Ministro da Cultura.",
+          "Compositor iluminado que canta a fé e a tecnologia com a mesma poesia."
+        ]
+      },
+      {
+        "name": "Elis Regina",
+        "sub": "brasileiros",
+        "word": "pimentinha",
+        "phrase": "A maior intérprete vocal da história brasileira cantando com o corpo todo.",
+        "words": [
+          "pimentinha",
+          "bêbado e equilibrista",
+          "voz",
+          "interpretação"
+        ],
+        "phrases": [
+          "A maior intérprete vocal da história brasileira cantando com o corpo todo.",
+          "Sua versão de 'O Bêbado e a Equilibrista' virou o hino da anistia."
+        ]
+      },
+      {
+        "name": "Gal Costa",
+        "sub": "brasileiros",
+        "word": "voz de cristal",
+        "phrase": "Sua afinação pura e aguda duelava com guitarras distorcidas no palco.",
+        "words": [
+          "voz de cristal",
+          "chuva de prata",
+          "tropicália",
+          "cabelos"
+        ],
+        "phrases": [
+          "Sua afinação pura e aguda duelava com guitarras distorcidas no palco.",
+          "Voz do sol da Bahia com interpretações inesquecíveis da MPB."
+        ]
+      },
+      {
+        "name": "Maria Bethânia",
+        "sub": "brasileiros",
+        "word": "poesia falada",
+        "phrase": "Entra no palco descalça declamando poesias que calam plateias inteiras.",
+        "words": [
+          "poesia falada",
+          "pés descalços",
+          "abelha rainha",
+          "dramaturgia"
+        ],
+        "phrases": [
+          "Entra no palco descalça declamando poesias que calam plateias inteiras.",
+          "A abelha rainha com tom grave e interpretação quase teatral."
+        ]
+      },
+      {
+        "name": "Djavan",
+        "sub": "brasileiros",
+        "word": "alagoas",
+        "phrase": "Mestre dos acordes sofisticados e letras com metáforas de cores vivas.",
+        "words": [
+          "alagoas",
+          "acordes",
+          "samurai",
+          "poesia"
+        ],
+        "phrases": [
+          "Mestre dos acordes sofisticados e letras com metáforas de cores vivas.",
+          "O alagoano que transformou o oceano e o amor em grandes sucessos."
+        ]
+      },
+      {
+        "name": "Lulu Santos",
+        "sub": "brasileiros",
+        "word": "hitmaker",
+        "phrase": "O maior fabricante de sucessos pop do rádio brasileiro das últimas décadas.",
+        "words": [
+          "hitmaker",
+          "óculos coloridos",
+          "praia",
+          "pop rock"
+        ],
+        "phrases": [
+          "O maior fabricante de sucessos pop do rádio brasileiro das últimas décadas.",
+          "Cantou que a vida vem em ondas como um mar num eterno vai e vem."
+        ]
+      },
+      {
+        "name": "Nando Reis",
+        "sub": "brasileiros",
+        "word": "ruivo",
+        "phrase": "O ruivo que compôs hinos do rock e baladas para sua grande amiga Cássia.",
+        "words": [
+          "ruivo",
+          "titãs",
+          "all star",
+          "violão"
+        ],
+        "phrases": [
+          "O ruivo que compôs hinos do rock e baladas para sua grande amiga Cássia.",
+          "Canta com sinceridade sobre cartas de amor e sapatos de cano alto."
+        ]
+      },
+      {
+        "name": "Cássia Eller",
+        "sub": "brasileiros",
+        "word": "malandragem",
+        "phrase": "Voz rasgada poderosa cantando descalça sem ligar para convenções sociais.",
+        "words": [
+          "malandragem",
+          "voz rouca",
+          "acústico",
+          "rebelde"
+        ],
+        "phrases": [
+          "Voz rasgada poderosa cantando descalça sem ligar para convenções sociais.",
+          "Sua apresentação no Rock in Rio e seu acústico entraram para a história."
+        ]
+      },
+      {
+        "name": "Chorão (Charlie Brown Jr)",
+        "sub": "brasileiros",
+        "word": "skate",
+        "phrase": "O poeta do skate que rimava sobre os dias de luta e os dias de glória.",
+        "words": [
+          "skate",
+          "santos",
+          "poeta da rua",
+          "boné"
+        ],
+        "phrases": [
+          "O poeta do skate que rimava sobre os dias de luta e os dias de glória.",
+          "Voz de uma geração de jovens que andavam de skate na orla de Santos."
+        ]
+      },
+      {
+        "name": "Mano Brown",
+        "sub": "brasileiros",
+        "word": "racionais",
+        "phrase": "A voz mais respeitada e firme do rap nacional vinda da periferia de São Paulo.",
+        "words": [
+          "racionais",
+          "capão redondo",
+          "diário de um detento",
+          "rap"
+        ],
+        "phrases": [
+          "A voz mais respeitada e firme do rap nacional vinda da periferia de São Paulo.",
+          "Suas letras são crônicas sociais afiadas sobre a realidade brasileira."
+        ]
+      },
+      {
+        "name": "Emicida",
+        "sub": "brasileiros",
+        "word": "amarElo",
+        "phrase": "Começou vencendo batalhas de rima na estação Santa Cruz e lotou o Theatro Municipal.",
+        "words": [
+          "amarElo",
+          "batalha de rima",
+          "literatura",
+          "lab fantasma"
+        ],
+        "phrases": [
+          "Começou vencendo batalhas de rima na estação Santa Cruz e lotou o Theatro Municipal.",
+          "Provou que tudo o que a gente tem é nós e nada mais."
+        ]
+      },
+      {
+        "name": "Baco Exu do Blues",
+        "sub": "brasileiros",
+        "word": "blues",
+        "phrase": "Mistura ritmos baianos com poesia crua sobre vulnerabilidade e negritude.",
+        "words": [
+          "blues",
+          "salvador",
+          "pele",
+          "afeto"
+        ],
+        "phrases": [
+          "Mistura ritmos baianos com poesia crua sobre vulnerabilidade e negritude.",
+          "Cantou que o amor é um privilégio de quem não tem medo de se desarmar."
+        ]
+      },
+      {
+        "name": "Criolo",
+        "sub": "brasileiros",
+        "word": "não existe amor em sp",
+        "phrase": "O professor da zona sul que alertou que os labirintos de SP exigem coração.",
+        "words": [
+          "não existe amor em sp",
+          "grajaú",
+          "samba",
+          "voz"
+        ],
+        "phrases": [
+          "O professor da zona sul que alertou que os labirintos de SP exigem coração.",
+          "Transita do rap combativo ao samba clássico com maestria pura."
+        ]
+      },
+      {
+        "name": "Gloria Pires",
+        "sub": "brasileiros",
+        "word": "gêmeas",
+        "phrase": "Deu vida às gêmeas mais famosas da teledramaturgia em praias cariocas.",
+        "words": [
+          "gêmeas",
+          "ruth e raquel",
+          "atriz",
+          "vilã"
+        ],
+        "phrases": [
+          "Deu vida às gêmeas mais famosas da teledramaturgia em praias cariocas.",
+          "Uma das atrizes mais respeitadas com décadas de papéis principais na TV."
+        ]
+      },
+      {
+        "name": "Tony Ramos",
+        "sub": "brasileiros",
+        "word": "barba",
+        "phrase": "O galã maduro mais querido do Brasil que nunca se envolve em polêmicas.",
+        "words": [
+          "barba",
+          "ética",
+          "novelas",
+          "respeito"
+        ],
+        "phrases": [
+          "O galã maduro mais querido do Brasil que nunca se envolve em polêmicas.",
+          "Sempre escalado para viver homens íntegros e patriarcas de família."
+        ]
+      },
+      {
+        "name": "Cauã Reymond",
+        "sub": "brasileiros",
+        "word": "galã",
+        "phrase": "Ficou marcado pelo papel do jogador de futebol enganado na casa do lixão.",
+        "words": [
+          "galã",
+          "jorginho",
+          "avenida brasil",
+          "surfe"
+        ],
+        "phrases": [
+          "Ficou marcado pelo papel do jogador de futebol enganado na casa do lixão.",
+          "Estrela das novelas das nove e praticante assíduo de artes marciais."
+        ]
+      },
+      {
+        "name": "Juliana Paes",
+        "sub": "brasileiros",
+        "word": "bibi perigosa",
+        "phrase": "Fez história como a boleira batalhadora e a esposa apaixonada pelo chefão do morro.",
+        "words": [
+          "bibi perigosa",
+          "índia",
+          "maria da paz",
+          "bolo"
+        ],
+        "phrases": [
+          "Fez história como a boleira batalhadora e a esposa apaixonada pelo chefão do morro.",
+          "Atriz de carisma magnético protagonista de grandes audiências."
+        ]
+      },
+      {
+        "name": "Taís Araújo",
+        "sub": "brasileiros",
+        "word": "xica da silva",
+        "phrase": "Fez história como a primeira mulher negra a protagonizar uma novela das oito.",
+        "words": [
+          "xica da silva",
+          "protagonista",
+          "helena",
+          "teatro"
+        ],
+        "phrases": [
+          "Fez história como a primeira mulher negra a protagonizar uma novela das oito.",
+          "Atriz engajada premiada com trajetória marcante na TV e cinema."
+        ]
+      },
+      {
+        "name": "Susana Vieira",
+        "sub": "brasileiros",
+        "word": "paciência",
+        "phrase": "Dona da maior autoestima da TV nacional que não tem paciência com novatos.",
+        "words": [
+          "paciência",
+          "autoestima",
+          "sem paciência para quem tá começando",
+          "microfone"
+        ],
+        "phrases": [
+          "Dona da maior autoestima da TV nacional que não tem paciência com novatos.",
+          "Marcou gerações com vilãs ricas e declarações sem filtro no palco."
+        ]
+      },
+      {
+        "name": "Jô Soares",
+        "sub": "brasileiros",
+        "word": "caneca",
+        "phrase": "Entrevistou milhares de pessoas ao lado do sexteto musical com sua caneca de chá.",
+        "words": [
+          "caneca",
+          "beijo do gordo",
+          "talk show",
+          "entrevistador"
+        ],
+        "phrases": [
+          "Entrevistou milhares de pessoas ao lado do sexteto musical com sua caneca de chá.",
+          "Humorista e escritor genial que se despedia com um carinhoso beijo."
+        ]
+      },
+      {
+        "name": "Chacrinha",
+        "sub": "brasileiros",
+        "word": "buzina",
+        "phrase": "O velho guerreiro que não veio para explicar, veio para confundir.",
+        "words": [
+          "buzina",
+          "bacalhau",
+          "abacaxi",
+          "velho guerreiro"
+        ],
+        "phrases": [
+          "O velho guerreiro que não veio para explicar, veio para confundir.",
+          "Jogava bacalhau na plateia e buzinava calouros desafinados no domingo."
+        ]
+      },
+      {
+        "name": "Hebe Camargo",
+        "sub": "brasileiros",
+        "word": "gracinha",
+        "phrase": "A rainha da televisão brasileira que recebia convidados no famoso sofá branco.",
+        "words": [
+          "gracinha",
+          "sofá",
+          "selinho",
+          "joias"
+        ],
+        "phrases": [
+          "A rainha da televisão brasileira que recebia convidados no famoso sofá branco.",
+          "Distribuía selinhos em artistas e chamava todo mundo de gracinha."
+        ]
+      },
+      {
+        "name": "Fátima Bernardes",
+        "sub": "brasileiros",
+        "word": "jornal nacional",
+        "phrase": "Apresentou o maior telejornal da TV por mais de uma década ao lado do marido.",
+        "words": [
+          "jornal nacional",
+          "encontro",
+          "dança",
+          "copa de 2002"
+        ],
+        "phrases": [
+          "Apresentou o maior telejornal da TV por mais de uma década ao lado do marido.",
+          "Pegou na taça do penta no ônibus dos jogadores e virou apresentadora de entretenimento."
+        ]
+      },
+      {
+        "name": "William Bonner",
+        "sub": "brasileiros",
+        "word": "boa noite",
+        "phrase": "O rosto e a voz mais conhecidos do jornalismo brasileiro no horário nobre.",
+        "words": [
+          "boa noite",
+          "bancada",
+          "jornal",
+          "editor"
+        ],
+        "phrases": [
+          "O rosto e a voz mais conhecidos do jornalismo brasileiro no horário nobre.",
+          "Seu 'boa noite' na abertura dita o encerramento do dia de milhões de lares."
+        ]
+      },
+      {
+        "name": "Serginho Groisman",
+        "sub": "brasileiros",
+        "word": "fala garoto",
+        "phrase": "Comanda o programa jovem da madrugada de sábado com arena em formato de círculo.",
+        "words": [
+          "fala garoto",
+          "altas horas",
+          "plateia em arena",
+          "microfone"
+        ],
+        "phrases": [
+          "Comanda o programa jovem da madrugada de sábado com arena em formato de círculo.",
+          "Ouve dúvidas íntimas de adolescentes com simpatia e respeito."
+        ]
+      },
+      {
+        "name": "Galvão Bueno",
+        "sub": "brasileiros",
+        "word": "olha o que ele fez",
+        "phrase": "A voz oficial das maiores conquistas do esporte brasileiro na televisão.",
+        "words": [
+          "olha o que ele fez",
+          "haja coração",
+          "tetra",
+          "narração"
+        ],
+        "phrases": [
+          "A voz oficial das maiores conquistas do esporte brasileiro na televisão.",
+          "Gritou 'é tetra' abraçado a Pelé e fez o país inteiro chorar com Senna."
+        ]
+      },
+      {
+        "name": "Tom Hanks",
+        "sub": "internacionais",
+        "word": "náufrago",
+        "phrase": "A vida é como uma caixa de chocolates e você nunca sabe o que vai encontrar.",
+        "words": [
+          "náufrago",
+          "caixa de chocolates",
+          "wilson",
+          "aeroporto"
+        ],
+        "phrases": [
+          "A vida é como uma caixa de chocolates e você nunca sabe o que vai encontrar.",
+          "Conversava com uma bola de vôlei para não enlouquecer numa ilha deserta."
+        ]
+      },
+      {
+        "name": "Al Pacino",
+        "sub": "internacionais",
+        "word": "scarface",
+        "phrase": "Diga olá para meu amiguinho em tiroteios de mansões mafiosas.",
+        "words": [
+          "scarface",
+          "poderoso chefão",
+          "perfume de mulher",
+          "grito"
+        ],
+        "phrases": [
+          "Diga olá para meu amiguinho em tiroteios de mansões mafiosas.",
+          "Dança tango de olhos vendados com uma atuação visceral premiada."
+        ]
+      },
+      {
+        "name": "Robert De Niro",
+        "sub": "internacionais",
+        "word": "tá falando comigo",
+        "phrase": "Apontava a arma para o espelho perguntando se estava falando com ele.",
+        "words": [
+          "tá falando comigo",
+          "touro indomável",
+          "táxi",
+          "máfia"
+        ],
+        "phrases": [
+          "Apontava a arma para o espelho perguntando se estava falando com ele.",
+          "Engordou trinta quilos para viver um pugilista decadente no cinema."
+        ]
+      },
+      {
+        "name": "Samuel L. Jackson",
+        "sub": "internacionais",
+        "word": "pulp fiction",
+        "phrase": "Recita passagens bíblicas fictícias antes de apertar o gatilho na sala.",
+        "words": [
+          "pulp fiction",
+          "hambúrguer",
+          "olho cego",
+          "bíblia"
+        ],
+        "phrases": [
+          "Recita passagens bíblicas fictícias antes de apertar o gatilho na sala.",
+          "O chefe da agência secreta com tapa-olho que reuniu os heróis mais fortes."
+        ]
+      },
+      {
+        "name": "Denzel Washington",
+        "sub": "internacionais",
+        "word": "dia de treinamento",
+        "phrase": "King Kong não tem nada contra ele em patrulhas corruptas de Los Angeles.",
+        "words": [
+          "dia de treinamento",
+          "protetor",
+          "relógio",
+          "justiça"
+        ],
+        "phrases": [
+          "King Kong não tem nada contra ele em patrulhas corruptas de Los Angeles.",
+          "Calcula exatamente dezesseis segundos no cronômetro antes de limpar a sala de bandidos."
+        ]
+      },
+      {
+        "name": "Christian Bale",
+        "sub": "internacionais",
+        "word": "transformação",
+        "phrase": "Muda radicalmente de peso para cada papel: do esqueleto humano ao homem-morcego.",
+        "words": [
+          "transformação",
+          "morcego",
+          "magro",
+          "psicopata americano"
+        ],
+        "phrases": [
+          "Muda radicalmente de peso para cada papel: do esqueleto humano ao homem-morcego.",
+          "Compara cartões de visita com olhar obsessivo e machadinha nas mãos."
+        ]
+      },
+      {
+        "name": "Scarlett Johansson",
+        "sub": "internacionais",
+        "word": "viúva negra",
+        "phrase": "Apaixonou um homem solitário interpretando apenas a voz de um sistema operacional.",
+        "words": [
+          "viúva negra",
+          "voz do sistema",
+          "loira",
+          "casamento"
+        ],
+        "phrases": [
+          "Apaixonou um homem solitário interpretando apenas a voz de um sistema operacional.",
+          "A espiã russa mais letal que se jogou do penhasco pelo bem do universo."
+        ]
+      },
+      {
+        "name": "Emma Stone",
+        "sub": "internacionais",
+        "word": "la la land",
+        "phrase": "Dançou ao entardecer com vestido amarelo sonhando em ser estrela de Hollywood.",
+        "words": [
+          "la la land",
+          "olhos grandes",
+          "pobres criaturas",
+          "dança"
+        ],
+        "phrases": [
+          "Dançou ao entardecer com vestido amarelo sonhando em ser estrela de Hollywood.",
+          "Venceu dois prêmios de melhor atriz com papéis corajosos e excêntricos."
+        ]
+      },
+      {
+        "name": "Natalie Portman",
+        "sub": "internacionais",
+        "word": "cisne negro",
+        "phrase": "Enlouqueceu em frente ao espelho tentando atingir a perfeição nos passos de balé.",
+        "words": [
+          "cisne negro",
+          "león o profissional",
+          "harvard",
+          "bailarina"
+        ],
+        "phrases": [
+          "Enlouqueceu em frente ao espelho tentando atingir a perfeição nos passos de balé.",
+          "Formada em psicologia numa das universidades mais prestigiadas do mundo."
+        ]
+      },
+      {
+        "name": "Anne Hathaway",
+        "sub": "internacionais",
+        "word": "diário de uma princesa",
+        "phrase": "Descobriu na adolescência que era herdeira do trono de um pequeno país europeu.",
+        "words": [
+          "diário de uma princesa",
+          "estagiária",
+          "mulher-gato",
+          "cabelo curto"
+        ],
+        "phrases": [
+          "Descobriu na adolescência que era herdeira do trono de um pequeno país europeu.",
+          "Sofreu humilhações na redação da revista de moda mais disputada do mundo."
+        ]
+      },
+      {
+        "name": "Jennifer Lawrence",
+        "sub": "internacionais",
+        "word": "jogos vorazes",
+        "phrase": "O tordo que se voluntariou como tributo para salvar a irmã mais nova.",
+        "words": [
+          "jogos vorazes",
+          "tordo",
+          "arco e flecha",
+          "queda"
+        ],
+        "phrases": [
+          "O tordo que se voluntariou como tributo para salvar a irmã mais nova.",
+          "Famosa pelas quedas engraçadas nas escadarias da entrega do Oscar."
+        ]
+      },
+      {
+        "name": "Ariana Grande",
+        "sub": "internacionais",
+        "word": "rabo de cavalo",
+        "phrase": "Alcança notas agudíssimas de apito com seu característico rabo de cavalo alto.",
+        "words": [
+          "rabo de cavalo",
+          "alcance vocal",
+          "agudos",
+          "sete anéis"
+        ],
+        "phrases": [
+          "Alcança notas agudíssimas de apito com seu característico rabo de cavalo alto.",
+          "Estrela pop que começou na TV adolescente e conquistou estádios mundiais."
+        ]
+      },
+      {
+        "name": "Dua Lipa",
+        "sub": "internacionais",
+        "word": "passinho",
+        "phrase": "Trouxe a música de discoteca dos anos oitenta de volta às paradas globais.",
+        "words": [
+          "passinho",
+          "levitating",
+          "disco pop",
+          "regras"
+        ],
+        "phrases": [
+          "Trouxe a música de discoteca dos anos oitenta de volta às paradas globais.",
+          "Coreografias marcantes que viraram febre em todas as pistas de dança."
+        ]
+      },
+      {
+        "name": "The Weeknd",
+        "sub": "internacionais",
+        "word": "terno vermelho",
+        "phrase": "Passou uma era inteira usando terno vermelho e maquiagem de rosto machucado.",
+        "words": [
+          "terno vermelho",
+          "nariz quebrado",
+          "blinding lights",
+          "cabelo"
+        ],
+        "phrases": [
+          "Passou uma era inteira usando terno vermelho e maquiagem de rosto machucado.",
+          "Dono da música mais ouvida de todos os tempos nas plataformas digitais."
+        ]
+      },
+      {
+        "name": "Post Malone",
+        "sub": "internacionais",
+        "word": "tatuagens no rosto",
+        "phrase": "Mistura rap, rock e música country com dezenas de desenhos tatuados no rosto.",
+        "words": [
+          "tatuagens no rosto",
+          "violão",
+          "cerveja",
+          "crocs"
+        ],
+        "phrases": [
+          "Mistura rap, rock e música country com dezenas de desenhos tatuados no rosto.",
+          "Conhecido pelo carisma humilde e sorriso fácil nos bastidores dos festivais."
+        ]
+      },
+      {
+        "name": "Eminem",
+        "sub": "internacionais",
+        "word": "rap god",
+        "phrase": "O rapper de Detroit que rima centenas de palavras em frações de segundos.",
+        "words": [
+          "rap god",
+          "detroit",
+          "8 mile",
+          "rimas rápidas"
+        ],
+        "phrases": [
+          "O rapper de Detroit que rima centenas de palavras em frações de segundos.",
+          "Cuspiu fogo nos microfones contando a história da sua vida humilde."
+        ]
+      },
+      {
+        "name": "Snoop Dogg",
+        "sub": "internacionais",
+        "word": "fumaça",
+        "phrase": "A personificação do estilo descontraído da costa oeste com trancinhas no cabelo.",
+        "words": [
+          "fumaça",
+          "costa oeste",
+          "olimpíadas",
+          "óculos escuros"
+        ],
+        "phrases": [
+          "A personificação do estilo descontraído da costa oeste com trancinhas no cabelo.",
+          "Virou a maior atração dos Jogos Olímpicos assistindo a todas as modalidades."
+        ]
+      },
+      {
+        "name": "Kobe Bryant",
+        "sub": "atletas",
+        "word": "mamba mentality",
+        "phrase": "Treinava às quatro da manhã com a mentalidade obsessiva de nunca aceitar a derrota.",
+        "words": [
+          "mamba mentality",
+          "oitenta e um pontos",
+          "lakers",
+          "camisa vinte e quatro"
+        ],
+        "phrases": [
+          "Treinava às quatro da manhã com a mentalidade obsessiva de nunca aceitar a derrota.",
+          "Marcou oitenta e um pontos em uma única partida mágica de basquete."
+        ]
+      },
+      {
+        "name": "Shaquille O'Neal",
+        "sub": "atletas",
+        "word": "tabelas quebradas",
+        "phrase": "Quebrou tabelas inteiras de vidro com o peso de suas enterradas brutais.",
+        "words": [
+          "tabelas quebradas",
+          "gigante",
+          "pivô",
+          "lance livre"
+        ],
+        "phrases": [
+          "Quebrou tabelas inteiras de vidro com o peso de suas enterradas brutais.",
+          "O pivô mais dominante e engraçado que as quadras da NBA já viram."
+        ]
+      },
+      {
+        "name": "Diego Maradona",
+        "sub": "atletas",
+        "word": "mão de deus",
+        "phrase": "Fez o gol mais bonito da história das Copas driblando a Inglaterra inteira.",
+        "words": [
+          "mão de deus",
+          "gol do século",
+          "canhota",
+          "argentina"
+        ],
+        "phrases": [
+          "Fez o gol mais bonito da história das Copas driblando a Inglaterra inteira.",
+          "Idolatrado como um deus em seu país com sua canhota mágica."
+        ]
+      },
+      {
+        "name": "Zinedine Zidane",
+        "sub": "atletas",
+        "word": "cabeçada",
+        "phrase": "Tratava a bola como uma dama executando roletas e voleios antológicos em finais.",
+        "words": [
+          "cabeçada",
+          "roleta",
+          "voleio",
+          "elegância"
+        ],
+        "phrases": [
+          "Tratava a bola como uma dama executando roletas e voleios antológicos em finais.",
+          "Despediu-se dos gramados com uma cabeçada dramática no peito do zagueiro."
+        ]
+      },
+      {
+        "name": "Neymar Jr",
+        "sub": "atletas",
+        "word": "moicano",
+        "phrase": "Surgiu na Vila Belmiro com moicano espetado driblando defensores com alegria.",
+        "words": [
+          "moicano",
+          "ousadia e alegria",
+          "dribles",
+          "santos"
+        ],
+        "phrases": [
+          "Surgiu na Vila Belmiro com moicano espetado driblando defensores com alegria.",
+          "O maior artilheiro da história da seleção brasileira em jogos oficiais."
+        ]
+      },
+      {
+        "name": "Kaka",
+        "sub": "atletas",
+        "word": "melhor do mundo",
+        "phrase": "O último ser humano a vencer a Bola de Ouro antes da era de dois gigantes.",
+        "words": [
+          "melhor do mundo",
+          "elegante",
+          "milan",
+          "arrancada"
+        ],
+        "phrases": [
+          "O último ser humano a vencer a Bola de Ouro antes da era de dois gigantes.",
+          "Passadas largas e arrancadas velozes com comemoração apontando para o céu."
+        ]
+      },
+      {
+        "name": "Max Verstappen",
+        "sub": "atletas",
+        "word": "holanda",
+        "phrase": "O jovem holandês que quebrou todos os recordes de vitórias consecutivas na pista.",
+        "words": [
+          "holanda",
+          "laranja",
+          "red bull",
+          "domínio"
+        ],
+        "phrases": [
+          "O jovem holandês que quebrou todos os recordes de vitórias consecutivas na pista.",
+          "A torcida veste laranja e canta seu nome a cada curva acelerada."
+        ]
+      },
+      {
+        "name": "Ítalo Ferreira",
+        "sub": "atletas",
+        "word": "baía formosa",
+        "phrase": "O primeiro campeão olímpico da história do surfe no Japão mesmo com prancha partida.",
+        "words": [
+          "baía formosa",
+          "primeiro ouro",
+          "prancha quebrada",
+          "energia"
+        ],
+        "phrases": [
+          "O primeiro campeão olímpico da história do surfe no Japão mesmo com prancha partida.",
+          "Sai da água correndo e comemora com pulos na areia."
+        ]
+      },
+      {
+        "name": "Mike Tyson",
+        "sub": "atletas",
+        "word": "nocaute",
+        "phrase": "Derrubava gigantes no primeiro minuto de luta com fúria aterradora nos ringues.",
+        "words": [
+          "nocaute",
+          "tatuagem na cara",
+          "pombos",
+          "ferocidade"
+        ],
+        "phrases": [
+          "Derrubava gigantes no primeiro minuto de luta com fúria aterradora nos ringues.",
+          "O campeão mundial peso-pesado mais jovem da história do boxe."
+        ]
+      },
+      {
+        "name": "Muhammad Ali",
+        "sub": "atletas",
+        "word": "voe como borboleta",
+        "phrase": "Flutua como borboleta e pica como abelha nos combates mais famosos do século.",
+        "words": [
+          "voe como borboleta",
+          "ferrão de abelha",
+          "poeta",
+          "recusa"
+        ],
+        "phrases": [
+          "Flutua como borboleta e pica como abelha nos combates mais famosos do século.",
+          "Recusou ir à guerra e virou símbolo eterno de direitos civis no mundo."
+        ]
+      },
+      {
+        "name": "Anderson Silva",
+        "sub": "atletas",
+        "word": "aranha",
+        "phrase": "O maior campeão dos médios que desviava de socos com a guarda baixa na cara do rival.",
+        "words": [
+          "aranha",
+          "chute no queixo",
+          "guarda baixa",
+          "esquiva"
+        ],
+        "phrases": [
+          "O maior campeão dos médios que desviava de socos com a guarda baixa na cara do rival.",
+          "Acertou um chute frontal milimétrico que virou a cena mais clássica do octógono."
+        ]
+      },
+      {
+        "name": "PewDiePie",
+        "sub": "internet",
+        "word": "suécia",
+        "phrase": "O criador que liderou o número de inscritos por quase uma década no quarto simples.",
+        "words": [
+          "suécia",
+          "brofist",
+          "games",
+          "pioneiro"
+        ],
+        "phrases": [
+          "O criador que liderou o número de inscritos por quase uma década no quarto simples.",
+          "Pioneiro dos vídeos comentando jogos de susto com muito humor."
+        ]
+      },
+      {
+        "name": "Speed (IShowSpeed)",
+        "sub": "internet",
+        "word": "latidos",
+        "phrase": "Grita e dá cambalhotas no quarto fanático pelo seu ídolo do futebol.",
+        "words": [
+          "latidos",
+          "cr7",
+          "pulos",
+          "caos"
+        ],
+        "phrases": [
+          "Grita e dá cambalhotas no quarto fanático pelo seu ídolo do futebol.",
+          "Viaja o mundo arrastando milhares de fãs histéricos por onde passa."
+        ]
+      },
+      {
+        "name": "Kai Cenat",
+        "sub": "internet",
+        "word": "maratona",
+        "phrase": "Transmite semanas seguidas sem desligar a câmera recebendo astros do rap no quarto.",
+        "words": [
+          "maratona",
+          "quarto",
+          "celebridades",
+          "streamer do ano"
+        ],
+        "phrases": [
+          "Transmite semanas seguidas sem desligar a câmera recebendo astros do rap no quarto.",
+          "Eleito o criador de transmissões ao vivo mais influente dos Estados Unidos."
+        ]
+      },
+      {
+        "name": "Jovem Nerd (Alexandre Ottoni)",
+        "sub": "internet",
+        "word": "nerdcast",
+        "phrase": "Pioneiro dos podcasts brasileiros ensinando história e cultura pop há duas décadas.",
+        "words": [
+          "nerdcast",
+          "lama",
+          "podcast",
+          "orlando"
+        ],
+        "phrases": [
+          "Pioneiro dos podcasts brasileiros ensinando história e cultura pop há duas décadas.",
+          "Criou um império nerd que lançou livros, jogos e quadrinhos de sucesso."
+        ]
+      },
+      {
+        "name": "Azaghal (Deive Pazos)",
+        "sub": "internet",
+        "word": "anão",
+        "phrase": "O sócio ranzinza que reclama de tudo mas tem o coração enorme.",
+        "words": [
+          "anão",
+          "mau humor",
+          "jabá",
+          "nerdcast"
+        ],
+        "phrases": [
+          "O sócio ranzinza que reclama de tudo mas tem o coração enorme.",
+          "Suas opiniões ácidas e histórias do passado são as mais aguardadas do episódio."
+        ]
+      },
+      {
+        "name": "Iberê Thenório",
+        "sub": "internet",
+        "word": "manual do mundo",
+        "phrase": "Ensina física e química montando engenhocas e submarinos caseiros.",
+        "words": [
+          "manual do mundo",
+          "experiências",
+          "garagem",
+          "submarino"
+        ],
+        "phrases": [
+          "Ensina física e química montando engenhocas e submarinos caseiros.",
+          "Despertou a curiosidade científica de milhões de crianças e adultos no país."
+        ]
+      },
+      {
+        "name": "Pirulla",
+        "sub": "internet",
+        "word": "paleontologia",
+        "phrase": "Biólogo que grava vídeos de uma hora explicando evolução e ciência sem cortes.",
+        "words": [
+          "paleontologia",
+          "vídeo longo",
+          "dinossauros",
+          "evolução"
+        ],
+        "phrases": [
+          "Biólogo que grava vídeos de uma hora explicando evolução e ciência sem cortes.",
+          "Defende o pensamento crítico com linguagem direta e didática."
+        ]
+      },
+      {
+        "name": "Atila Iamarino",
+        "sub": "internet",
+        "word": "virologia",
+        "phrase": "Biólogo e pesquisador que explicou a ciência da pandemia para o público em geral.",
+        "words": [
+          "virologia",
+          "nerdologia",
+          "ciência",
+          "dados"
+        ],
+        "phrases": [
+          "Biólogo e pesquisador que explicou a ciência da pandemia para o público em geral.",
+          "Apresentou o maior canal educativo de divulgação científica da TV e internet."
+        ]
+      },
+      {
+        "name": "Igor 3K",
+        "sub": "internet",
+        "word": "flow",
+        "phrase": "Conduz entrevistas longas de três a quatro horas com políticos, comediantes e atletas.",
+        "words": [
+          "flow",
+          "três horas de conversa",
+          "entrevistador",
+          "estúdio"
+        ],
+        "phrases": [
+          "Conduz entrevistas longas de três a quatro horas com políticos, comediantes e atletas.",
+          "Manteve de pé o maior estúdio de mesacasts da internet após crises."
+        ]
+      },
+      {
+        "name": "Diogo Defante",
+        "sub": "internet",
+        "word": "repórter doidão",
+        "phrase": "Invade matérias de rua fazendo perguntas absurdas e comendo comida dos outros.",
+        "words": [
+          "repórter doidão",
+          "sem noção",
+          "rua",
+          "copa do catar"
+        ],
+        "phrases": [
+          "Invade matérias de rua fazendo perguntas absurdas e comendo comida dos outros.",
+          "Foi para o Catar cobrir a Copa e quase foi preso por dançar com moradores."
+        ]
+      },
+      {
+        "name": "Chico Moedas",
+        "sub": "internet",
+        "word": "cigarro",
+        "phrase": "Ficou famoso nas lives de amigos e virou tema de uma canção romântica nacional.",
+        "words": [
+          "cigarro",
+          "aquário",
+          "bar",
+          "música"
+        ],
+        "phrases": [
+          "Ficou famoso nas lives de amigos e virou tema de uma canção romântica nacional.",
+          "Figura mansa que causou comoção nas redes sociais após um término polêmico."
+        ]
+      },
+      {
+        "name": "Carlinhos Maia",
+        "sub": "internet",
+        "word": "vila",
+        "phrase": "Transformou os vizinhos da sua rua simples em personagens acompanhados por milhões.",
+        "words": [
+          "vila",
+          "alagoas",
+          "vizinhos",
+          "instagram"
+        ],
+        "phrases": [
+          "Transformou os vizinhos da sua rua simples em personagens acompanhados por milhões.",
+          "Um dos perfis com maior número de visualizações diárias do planeta."
+        ]
+      },
+      {
+        "name": "Selena Gomez",
+        "sub": "internacionais",
+        "word": "feitiço",
+        "phrase": "Começou como bruxinha em série infantil e se consolidou como cantora e empresária de beleza.",
+        "words": [
+          "feitiço",
+          "cozinha",
+          "podcast-crime",
+          "maquiagem"
+        ],
+        "phrases": [
+          "Começou como bruxinha em série infantil e se consolidou como cantora e empresária de beleza.",
+          "Estrela e produtora de série cômica investigativa de crimes em edifício nova-iorquino."
+        ]
+      },
+      {
+        "name": "Harry Styles",
+        "sub": "internacionais",
+        "word": "melancia",
+        "phrase": "Ex-membro de famosa boyband britânica que conquistou o topo das paradas em carreira solo.",
+        "words": [
+          "melancia",
+          "boa-pluma",
+          "boyband",
+          "estilo-fluido"
+        ],
+        "phrases": [
+          "Ex-membro de famosa boyband britânica que conquistou o topo das paradas em carreira solo.",
+          "Conhecido por figurinos ousados com plumas e canções que celebram o sabor de açúcar de melancia."
+        ]
+      },
+      {
+        "name": "Pabllo Vittar",
+        "sub": "brasileiros",
+        "word": "drag-queen",
+        "phrase": "A drag queen mais seguida do planeta com alcance vocal agudo estrondoso e hits carnavalescos.",
+        "words": [
+          "drag-queen",
+          "agudo-falsete",
+          "ko",
+          "palco-mundo"
+        ],
+        "phrases": [
+          "A drag queen mais seguida do planeta com alcance vocal agudo estrondoso e hits carnavalescos.",
+          "Quebrou barreiras históricas no pop brasileiro apresentando-se em festivais mundiais."
+        ]
+      },
+      {
+        "name": "Jão",
+        "sub": "brasileiros",
+        "word": "pop-interior",
+        "phrase": "Cantor paulista que conquistou legiões de fãs jovens esgotando estádios com pop confessional.",
+        "words": [
+          "pop-interior",
+          "estádios-turnê",
+          "dragão-cenário",
+          "letras-amor"
+        ],
+        "phrases": [
+          "Cantor paulista que conquistou legiões de fãs jovens esgotando estádios com pop confessional.",
+          "Apresenta shows monumentais com estruturas de dragões e navios no centro do gramado."
+        ]
+      },
+      {
+        "name": "Gloria Groove",
+        "sub": "brasileiros",
+        "word": "lady-leste",
+        "phrase": "Artista multifacetada que combina rap acelerado, R&B e pop performático com visual impecável.",
+        "words": [
+          "lady-leste",
+          "versatilidade",
+          "vermelho",
+          "dubladora"
+        ],
+        "phrases": [
+          "Artista multifacetada que combina rap acelerado, R&B e pop performático com visual impecável.",
+          "Dona de sucessos bombásticos e carreira pregressa como dubladora e cantora mirim."
+        ]
+      },
+      {
+        "name": "Liniker",
+        "sub": "brasileiros",
+        "word": "soul-brasileiro",
+        "phrase": "Cantora e compositora de voz aveludada e profunda premiada internacionalmente por sua elegância.",
+        "words": [
+          "soul-brasileiro",
+          "grammy-latino",
+          "caju",
+          "voz-aveludada"
+        ],
+        "phrases": [
+          "Cantora e compositora de voz aveludada e profunda premiada internacionalmente por sua elegância.",
+          "Revolucionou a música preta contemporânea com arranjos refinados de soul e romantismo."
+        ]
+      },
+      {
+        "name": "Rodrigo Santoro",
+        "sub": "brasileiros",
+        "word": "xerxes-ouro",
+        "phrase": "Um dos primeiros atores brasileiros contemporâneos a consolidar carreira sólida nos estúdios americanos.",
+        "words": [
+          "xerxes-ouro",
+          "hollywood-brasileiro",
+          "carandiru",
+          "voz-grave"
+        ],
+        "phrases": [
+          "Um dos primeiros atores brasileiros contemporâneos a consolidar carreira sólida nos estúdios americanos.",
+          "Ficou irreconhecível como o rei persa de três metros coberto de joias no cinema épico."
+        ]
+      },
+      {
+        "name": "Alice Braga",
+        "sub": "brasileiros",
+        "word": "eu-sou-a-lenda",
+        "phrase": "Atriz brasileira com dezenas de filmes internacionais atuando ao lado dos maiores astros mundiais.",
+        "words": [
+          "eu-sou-a-lenda",
+          "cidade-de-deus",
+          "estrela-internacional",
+          "ficção"
+        ],
+        "phrases": [
+          "Atriz brasileira com dezenas de filmes internacionais atuando ao lado dos maiores astros mundiais.",
+          "Estrelou sucessos de ação pós-apocalípticos e séries dramáticas de sucesso."
+        ]
+      },
+      {
+        "name": "Sandy Leah",
+        "sub": "brasileiros",
+        "word": "quatro-estações",
+        "phrase": "Cantora de voz doce e cristalina que arrastou multidões desde a infância ao lado do irmão.",
+        "words": [
+          "quatro-estações",
+          "imortal",
+          "dupla-irmão",
+          "voz-cristalina"
+        ],
+        "phrases": [
+          "Cantora de voz doce e cristalina que arrastou multidões desde a infância ao lado do irmão.",
+          "Turnê comemorativa histórica que lotou estádios em todo o país quebrando recordes de público."
+        ]
+      },
+      {
+        "name": "Junior Lima",
+        "sub": "brasileiros",
+        "word": "baterista",
+        "phrase": "Músico versátil e baterista talentoso que construiu carreira respeitada na produção e no pop.",
+        "words": [
+          "baterista",
+          "produtor-musical",
+          "solo-pop",
+          "irmão"
+        ],
+        "phrases": [
+          "Músico versátil e baterista talentoso que construiu carreira respeitada na produção e no pop.",
+          "Dividiu palcos desde criança antes de explorar projetos eletrônicos e lançamentos autorais."
+        ]
+      },
+      {
+        "name": "Zeca Pagodinho",
+        "sub": "brasileiros",
+        "word": "deixa-a-vida-me-levar",
+        "phrase": "O mais querido cronista do samba brasileiro famoso pela simplicidade e amor à cerveja gelada.",
+        "words": [
+          "deixa-a-vida-me-levar",
+          "cervejinha",
+          "xerém",
+          "samba-raiz"
+        ],
+        "phrases": [
+          "O mais querido cronista do samba brasileiro famoso pela simplicidade e amor à cerveja gelada.",
+          "Ícone do partido-alto que prefere a tranquilidade do subúrbio ao glamour das grandes festas."
+        ]
+      },
+      {
+        "name": "Alcione (Marrom)",
+        "sub": "brasileiros",
+        "word": "trompete",
+        "phrase": "A dama do samba brasileiro com voz grave inconfundível e afinação perfeita no trompete.",
+        "words": [
+          "trompete",
+          "samba-mulher",
+          "voz-grave-potente",
+          "mangueira"
+        ],
+        "phrases": [
+          "A dama do samba brasileiro com voz grave inconfundível e afinação perfeita no trompete.",
+          "Rainha dos palcos que canta desilusões amorosas e paixões inflamadas com emoção visceral."
+        ]
+      },
+      {
+        "name": "Martinho da Vila",
+        "sub": "brasileiros",
+        "word": "devagar-devagarinho",
+        "phrase": "Mestre da cadência lenta e do samba descontraído ligado historicamente à azul e branco de Noel.",
+        "words": [
+          "devagar-devagarinho",
+          "vila-isabel",
+          "samba-cadenciado",
+          "partido-alto"
+        ],
+        "phrases": [
+          "Mestre da cadência lenta e do samba descontraído ligado historicamente à azul e branco de Noel.",
+          "Cantor e escritor que transforma o cotidiano carioca em poesia cantada com sorriso calmo."
+        ]
+      },
+      {
+        "name": "Milton Nascimento (Bituca)",
+        "sub": "brasileiros",
+        "word": "clube-da-esquina",
+        "phrase": "Uma das vozes mais sagradas e reverenciadas da história da música mundial nascido em Minas.",
+        "words": [
+          "clube-da-esquina",
+          "minas-gerais",
+          "voz-divina",
+          "travessia"
+        ],
+        "phrases": [
+          "Uma das vozes mais sagradas e reverenciadas da história da música mundial nascido em Minas.",
+          "Autor de harmonias inesquecíveis que uniram violões mineiros a arranjos universais."
+        ]
+      },
+      {
+        "name": "Marina Sena",
+        "sub": "brasileiros",
+        "word": "por-supuesto",
+        "phrase": "Revelação pop brasileira com sotaque mineiro charmoso e timbre agudo característico.",
+        "words": [
+          "por-supuesto",
+          "pop-mineiro",
+          "voz-estridente",
+          "carnaval"
+        ],
+        "phrases": [
+          "Revelação pop brasileira com sotaque mineiro charmoso e timbre agudo característico.",
+          "Alcançou o topo das paradas globais de streaming com canções sensuais e dançantes."
+        ]
+      },
+      {
+        "name": "Matuê",
+        "sub": "brasileiros",
+        "word": "trap-nacional",
+        "phrase": "Pioneiro e maior fenômeno do trap brasileiro que quebrou recordes históricos de audições no lançamento.",
+        "words": [
+          "trap-nacional",
+          "30praum",
+          "anos-luz",
+          "fortaleza"
+        ],
+        "phrases": [
+          "Pioneiro e maior fenômeno do trap brasileiro que quebrou recordes históricos de audições no lançamento.",
+          "Empresário musical e cantor de Fortaleza com produções psicodélicas e batidas graves."
+        ]
+      },
+      {
+        "name": "Filipe Ret",
+        "sub": "brasileiros",
+        "word": "vivaz",
+        "phrase": "Um dos nomes mais consistentes do rap do Rio de Janeiro com letras sobre ambição e conquistas.",
+        "words": [
+          "vivaz",
+          "rap-rj",
+          "meu-mundo",
+          "palco-festival"
+        ],
+        "phrases": [
+          "Um dos nomes mais consistentes do rap do Rio de Janeiro com letras sobre ambição e conquistas.",
+          "Lota casas de show cantando rimas marcantes sobre a vivência urbana e a busca pelo sucesso."
+        ]
+      },
+      {
+        "name": "Coldplay (Chris Martin)",
+        "sub": "internacionais",
+        "word": "pulseiras-luz",
+        "phrase": "Banda britânica que transforma shows de estádio em um mar de luzes sincronizadas e confetes biodegradáveis.",
+        "words": [
+          "pulseiras-luz",
+          "yellow",
+          "piano-pintado",
+          "estádios-cores"
+        ],
+        "phrases": [
+          "Banda britânica que transforma shows de estádio em um mar de luzes sincronizadas e confetes biodegradáveis.",
+          "Vocalista que canta ao piano pintado celebrando a alegria e hinos sobre estrelas brilhantes."
+        ]
+      },
+      {
+        "name": "The Weeknd (Abel)",
+        "sub": "internacionais",
+        "word": "blinding-lights",
+        "phrase": "Astro canadense que dominou as paradas da década com sonoridade retrô e faixas dançantes aceleradas.",
+        "words": [
+          "blinding-lights",
+          "jaqueta-vermelha",
+          "sintetizadores-80",
+          "r&b"
+        ],
+        "phrases": [
+          "Astro canadense que dominou as paradas da década com sonoridade retrô e faixas dançantes aceleradas.",
+          "Personagem com jaqueta vermelha e rosto enfaixado em apresentações históricas de estádio."
+        ]
+      },
+      {
+        "name": "Gretchen",
+        "sub": "brasileiros",
+        "word": "rainha-dos-memes",
+        "phrase": "A eterna rainha do rebolado que virou patrimônio mundial dos memes e gifs na internet.",
+        "words": [
+          "rainha-dos-memes",
+          "conga-conga",
+          "rebolado",
+          "reality"
+        ],
+        "phrases": [
+          "A eterna rainha do rebolado que virou patrimônio mundial dos memes e gifs na internet.",
+          "Protagonizou dezenas de memes expressivos adotados por artistas do mundo inteiro."
+        ]
+      },
+      {
+        "name": "Casimiro Miguel (Cazé)",
+        "sub": "internet",
+        "word": "meteu-essa",
+        "phrase": "O maior fenômeno das transmissões esportivas e reacts da internet brasileira contemporânea.",
+        "words": [
+          "meteu-essa",
+          "cazétv",
+          "reacts-comida",
+          "vasco"
+        ],
+        "phrases": [
+          "O maior fenômeno das transmissões esportivas e reacts da internet brasileira contemporânea.",
+          "Transmite Copas do Mundo e Olimpíadas com carisma inigualável, bordões e lanches nas lives."
+        ]
+      },
+      {
+        "name": "Ary Fontoura",
+        "sub": "brasileiros",
+        "word": "vovô-fitness",
+        "phrase": "Ator veterano com personagens inesquecíveis que se reinventou como fenômeno bem-humorado nas redes.",
+        "words": [
+          "vovô-fitness",
+          "novelas-clássicas",
+          "bolo-laranja",
+          "alegria-internet"
+        ],
+        "phrases": [
+          "Ator veterano com personagens inesquecíveis que se reinventou como fenômeno bem-humorado nas redes.",
+          "Grava vídeos fofos e engraçados fazendo exercícios em casa e cozinhando com astral contagiante."
+        ]
+      },
+      {
+        "name": "Sandra Annenberg",
+        "sub": "brasileiros",
+        "word": "que-deselegante",
+        "phrase": "Jornalista querida pelo público por sua empatia ao noticiar e pelo clássico bordão sobre deselegância.",
+        "words": [
+          "que-deselegante",
+          "jornal-hoje",
+          "globo-repórter",
+          "empatia"
+        ],
+        "phrases": [
+          "Jornalista querida pelo público por sua empatia ao noticiar e pelo clássico bordão sobre deselegância.",
+          "Apresenta grandes reportagens e documentários com sensibilidade e sorriso acolhedor."
+        ]
+      },
+      {
+        "name": "Tadeu Schmidt",
+        "sub": "brasileiros",
+        "word": "eliminação-discurso",
+        "phrase": "Criador dos cavalinhos animados do futebol de domingo que assumiu o comando do maior reality show do país.",
+        "words": [
+          "eliminação-discurso",
+          "cavalinhos-fantástico",
+          "big-brother",
+          "humor"
+        ],
+        "phrases": [
+          "Criador dos cavalinhos animados do futebol de domingo que assumiu o comando do maior reality show do país.",
+          "Escreve e declama discursos enigmáticos e poéticos nas noites de eliminação do programa."
+        ]
+      },
+      {
+        "name": "Tiago Leifert",
+        "sub": "brasileiros",
+        "word": "globo-esporte-sapatênis",
+        "phrase": "Revolucionou a linguagem do jornalismo esportivo na televisão com linguagem jovem e descontraída.",
+        "words": [
+          "globo-esporte-sapatênis",
+          "videogames-futebol",
+          "apresentador-dinâmico",
+          "tiagol"
+        ],
+        "phrases": [
+          "Revolucionou a linguagem do jornalismo esportivo na televisão com linguagem jovem e descontraída.",
+          "Comandou o The Voice e edições históricas do Big Brother Brasil com agilidade e conexão com a web."
+        ]
+      },
+      {
+        "name": "Celso Portiolli",
+        "sub": "brasileiros",
+        "word": "domingo-legal",
+        "phrase": "Apresentador carismático das manhãs de domingo conhecido pelas tortadas na cara no Passa ou Repassa.",
+        "words": [
+          "domingo-legal",
+          "torta-na-cara",
+          "passa-ou-repassa",
+          "onze-setembro-meme"
+        ],
+        "phrases": [
+          "Apresentador carismático das manhãs de domingo conhecido pelas tortadas na cara no Passa ou Repassa.",
+          "Alvo do mais persistente e inofensivo meme da internet brasileira sobre eventos internacionais."
+        ]
+      },
+      {
+        "name": "Sabrina Sato",
+        "sub": "brasileiros",
+        "word": "pânico-tv",
+        "phrase": "Apresentadora com sotaque caipira marcante famosa pela simpatia e figurinos esculturais de carnaval.",
+        "words": [
+          "pânico-tv",
+          "risada-sotaque",
+          "fantasia-carnaval",
+          "moda-ousada"
+        ],
+        "phrases": [
+          "Apresentadora com sotaque caipira marcante famosa pela simpatia e figurinos esculturais de carnaval.",
+          "Deixou sua marca no humor de rua e se tornou uma das maiores referências de estilo e publicidade."
+        ]
+      },
+      {
+        "name": "Rodrigo Faro",
+        "sub": "brasileiros",
+        "word": "dança-gatinho",
+        "phrase": "Comandante das tardes de domingo famoso pelas imitações de artistas e os efeitos sonoros do namoro na TV.",
+        "words": [
+          "dança-gatinho",
+          "vai-dar-namoro",
+          "ele-gosta",
+          "apresentador-domingo"
+        ],
+        "phrases": [
+          "Comandante das tardes de domingo famoso pelas imitações de artistas e os efeitos sonoros do namoro na TV.",
+          "Bailou vestido de astros pop a cada beijo no palco nos quadros mais virais do entretenimento."
+        ]
+      },
+      {
+        "name": "Pedro Bial",
+        "sub": "brasileiros",
+        "word": "filtro-solar",
+        "phrase": "Jornalista e escritor famoso pela cobertura da queda do muro e pela poesia de seus discursos.",
+        "words": [
+          "filtro-solar",
+          "discurso-eliminação",
+          "conversa-com-bial",
+          "berlim-muro"
+        ],
+        "phrases": [
+          "Jornalista e escritor famoso pela cobertura da queda do muro e pela poesia de seus discursos.",
+          "Comanda entrevistas profundas na madrugada e marcou gerações recomendando o uso de filtro solar."
+        ]
+      },
+      {
+        "name": "Evaristo Costa",
+        "sub": "brasileiros",
+        "word": "jornal-hoje-antigo",
+        "phrase": "Jornalista carismático que conquistou as redes sociais com respostas espirituosas aos seguidores.",
+        "words": [
+          "jornal-hoje-antigo",
+          "memes-twitter",
+          "gravata-tarde",
+          "inglaterra"
+        ],
+        "phrases": [
+          "Jornalista carismático que conquistou as redes sociais com respostas espirituosas aos seguidores.",
+          "Apresentou telejornais vespertinos com simpatia antes de se mudar para a Europa como influencer."
+        ]
+      },
+      {
+        "name": "Ratinho (Carlos Massa)",
+        "sub": "brasileiros",
+        "word": "cacetete-madeira",
+        "phrase": "Apresentador popular de auditório famoso por resolver testes de paternidade sob gritaria cômica.",
+        "words": [
+          "cacetete-madeira",
+          "exame-dna",
+          "auditório-povo",
+          "massa"
+        ],
+        "phrases": [
+          "Apresentador popular de auditório famoso por resolver testes de paternidade sob gritaria cômica.",
+          "Maneja um pequeno bastão de madeira comandando atrações folclóricas e reportagens sensacionalistas."
+        ]
+      },
+      {
+        "name": "Otaviano Costa",
+        "sub": "brasileiros",
+        "word": "vídeo-show",
+        "phrase": "Comunicador versátil conhecido pelo ritmo acelerado, bom humor constante e talento ao piano.",
+        "words": [
+          "vídeo-show",
+          "humor-rádio",
+          "apresentador-alegre",
+          "piano"
+        ],
+        "phrases": [
+          "Comunicador versátil conhecido pelo ritmo acelerado, bom humor constante e talento ao piano.",
+          "Comandou o Vídeo Show e programas de auditório e rádio com imitações e brincadeiras."
+        ]
+      },
+      {
+        "name": "Luciana Gimenez",
+        "sub": "brasileiros",
+        "word": "superpop",
+        "phrase": "Apresentadora das noites da TV com estilo desinibido e debates que geraram polêmicas históricas.",
+        "words": [
+          "superpop",
+          "debates-polêmicos",
+          "modelo-apresentadora",
+          "noite-tv"
+        ],
+        "phrases": [
+          "Apresentadora das noites da TV com estilo desinibido e debates que geraram polêmicas históricas.",
+          "Comanda programas de auditório há mais de duas décadas entrevistando personalidades inusitadas."
+        ]
+      },
+      {
+        "name": "Cátia Fonseca",
+        "sub": "brasileiros",
+        "word": "mulheres-gazeta",
+        "phrase": "Apresentadora vespertina querida do público que mistura receitas saborosas e fofocas dos famosos.",
+        "words": [
+          "mulheres-gazeta",
+          "melhor-da-tarde",
+          "culinária-fofocas",
+          "simpatia"
+        ],
+        "phrases": [
+          "Apresentadora vespertina querida do público que mistura receitas saborosas e fofocas dos famosos.",
+          "Comanda bancadas com culinária ao vivo e bate-papo descontraído com os telespectadores."
+        ]
+      },
+      {
+        "name": "Sonia Abrão",
+        "sub": "brasileiros",
+        "word": "a-tarde-é-sua",
+        "phrase": "Jornalista veterana e rainha das fofocas vespertinas com sua tradicional roda de comentaristas.",
+        "words": [
+          "a-tarde-é-sua",
+          "fofoca-famosos",
+          "tapete-vermelho",
+          "roda-fofoca"
+        ],
+        "phrases": [
+          "Jornalista veterana e rainha das fofocas vespertinas com sua tradicional roda de comentaristas.",
+          "Analisa os bastidores da televisão e a vida dos artistas com opiniões contundentes."
+        ]
       }
     ]
   },
@@ -8570,6 +12085,1766 @@ const THEME_DATABASE = {
         ],
         "word": "milho branco",
         "phrase": "Grãos de milho branco cozidos lentamente em leite de coco açucarado."
+      },
+      {
+        "name": "X-Salada",
+        "sub": "lanches",
+        "word": "alface",
+        "phrase": "O lanche clássico das lanchonetes com alface fresca e maionese temperada.",
+        "words": [
+          "alface",
+          "tomate",
+          "maionese",
+          "hambúrguer"
+        ],
+        "phrases": [
+          "O lanche clássico das lanchonetes com alface fresca e maionese temperada.",
+          "O ponto de equilíbrio tradicional entre hambúrguer de carne e salada crocante."
+        ]
+      },
+      {
+        "name": "X-Bacon",
+        "sub": "lanches",
+        "word": "fatias crocantes",
+        "phrase": "Fatias crocantes e douradas de carne suína defumada sobre o hambúrguer.",
+        "words": [
+          "fatias crocantes",
+          "porco",
+          "gordura",
+          "queijo derretido"
+        ],
+        "phrases": [
+          "Fatias crocantes e douradas de carne suína defumada sobre o hambúrguer.",
+          "Aquece o coração de quem ama lanches bem calóricos nas madrugadas."
+        ]
+      },
+      {
+        "name": "X-Egg",
+        "sub": "lanches",
+        "word": "gema",
+        "phrase": "Um ovo frito na chapa com gema macia estourando a cada mordida.",
+        "words": [
+          "gema",
+          "frito na chapa",
+          "ovo",
+          "clássico"
+        ],
+        "phrases": [
+          "Um ovo frito na chapa com gema macia estourando a cada mordida.",
+          "O toque caseiro obrigatório em qualquer podrão de esquina."
+        ]
+      },
+      {
+        "name": "Bauru Tradicional",
+        "sub": "lanches",
+        "word": "roast beef",
+        "phrase": "Criado no interior paulista com rosbife fininho e queijos derretidos na água.",
+        "words": [
+          "roast beef",
+          "picles",
+          "tomate",
+          "queijo fundido"
+        ],
+        "phrases": [
+          "Criado no interior paulista com rosbife fininho e queijos derretidos na água.",
+          "Patrimônio cultural com pão francês sem miolo e rodelas de picles."
+        ]
+      },
+      {
+        "name": "Hambúrguer Smash",
+        "sub": "lanches",
+        "word": "crostinha",
+        "phrase": "Prensado com força na chapa de ferro até criar uma crosta escura irresistível.",
+        "words": [
+          "crostinha",
+          "prensado",
+          "chapa quente",
+          "cebola"
+        ],
+        "phrases": [
+          "Prensado com força na chapa de ferro até criar uma crosta escura irresistível.",
+          "Simples, ultrafino e servido em pão de batata macio."
+        ]
+      },
+      {
+        "name": "Kebab de Cordeiro",
+        "sub": "lanches",
+        "word": "pão folha",
+        "phrase": "Fatias finas de carneiro assadas no espeto vertical e enroladas no pão folha.",
+        "words": [
+          "pão folha",
+          "iogurte",
+          "espeto giratório",
+          "hortelã"
+        ],
+        "phrases": [
+          "Fatias finas de carneiro assadas no espeto vertical e enroladas no pão folha.",
+          "Molho de iogurte com alho e hortelã perfumando cada mordida."
+        ]
+      },
+      {
+        "name": "Sanduíche de Pernil",
+        "sub": "lanches",
+        "word": "estádio",
+        "phrase": "O cheiro característico que invade os arredores dos estádios em dias de jogo.",
+        "words": [
+          "estádio",
+          "vinagrete",
+          "desfiado",
+          "pão francês"
+        ],
+        "phrases": [
+          "O cheiro característico que invade os arredores dos estádios em dias de jogo.",
+          "Pernil assado desfiado com muito vinagrete e pimenta no pão d'água."
+        ]
+      },
+      {
+        "name": "Hot Dog de Pote",
+        "sub": "lanches",
+        "word": "camadas",
+        "phrase": "Versão moderna servida em pote plástico transparente para comer de colher.",
+        "words": [
+          "camadas",
+          "colher",
+          "salsicha",
+          "purê"
+        ],
+        "phrases": [
+          "Versão moderna servida em pote plástico transparente para comer de colher.",
+          "Camadas generosas de purê, milho, vinagrete e batata palha."
+        ]
+      },
+      {
+        "name": "Enroladinho de Salsicha",
+        "sub": "lanches",
+        "word": "massa folhada",
+        "phrase": "Salsicha envolvida em massa dourada frita servida nos aniversários.",
+        "words": [
+          "massa folhada",
+          "frito",
+          "festa infantil",
+          "mostarda"
+        ],
+        "phrases": [
+          "Salsicha envolvida em massa dourada frita servida nos aniversários.",
+          "Merendeiras das escolas serviam com suco de uva gelado."
+        ]
+      },
+      {
+        "name": "Coxinha com Catupiry",
+        "sub": "lanches",
+        "word": "gota",
+        "phrase": "O salgado mais amado do Brasil com recheio cremoso e casca estaladiça.",
+        "words": [
+          "gota",
+          "requeijão",
+          "frango desfiado",
+          "crocante"
+        ],
+        "phrases": [
+          "O salgado mais amado do Brasil com recheio cremoso e casca estaladiça.",
+          "A disputa clássica de começar a comer pela pontinha ou pela base."
+        ]
+      },
+      {
+        "name": "Kibe Frito com Hortelã",
+        "sub": "lanches",
+        "word": "trigo",
+        "phrase": "Massa escura de trigo para quibe com carne bem temperada e folhas frescas.",
+        "words": [
+          "trigo",
+          "carne moída",
+          "árabe",
+          "azeite"
+        ],
+        "phrases": [
+          "Massa escura de trigo para quibe com carne bem temperada e folhas frescas.",
+          "Servido fumegante com um gomo de limão para espremer na hora."
+        ]
+      },
+      {
+        "name": "Rissole de Presunto e Queijo",
+        "sub": "lanches",
+        "word": "meia-lua",
+        "phrase": "Formato clássico de meia-lua com recheio que estica ao morder quente.",
+        "words": [
+          "meia-lua",
+          "empanado",
+          "recheio puxando",
+          "boteco"
+        ],
+        "phrases": [
+          "Formato clássico de meia-lua com recheio que estica ao morder quente.",
+          "Fica na estufa de vidro ao lado da coxinha chamando a atenção."
+        ]
+      },
+      {
+        "name": "Esfiha Fechada de Carne",
+        "sub": "lanches",
+        "word": "triângulo",
+        "phrase": "Massa macia dobrada em formato triangular assada no forno a lenha.",
+        "words": [
+          "triângulo",
+          "limão",
+          "forno",
+          "cebola"
+        ],
+        "phrases": [
+          "Massa macia dobrada em formato triangular assada no forno a lenha.",
+          "Recheio úmido de carne moída com suco de limão e especiarias."
+        ]
+      },
+      {
+        "name": "Folhado de Palmito",
+        "sub": "lanches",
+        "word": "camadas finas",
+        "phrase": "Massa levinha que solta centenas de folhinhas crocantes na camisa.",
+        "words": [
+          "camadas finas",
+          "creme",
+          "vegetariano",
+          "padaria"
+        ],
+        "phrases": [
+          "Massa levinha que solta centenas de folhinhas crocantes na camisa.",
+          "Recheio aveludado de palmito picadinho com cheiro-verde."
+        ]
+      },
+      {
+        "name": "Pão de Queijo com Linguiça",
+        "sub": "lanches",
+        "word": "polvilho",
+        "phrase": "A combinação definitiva do lanche mineiro: queijo da canastra e embutido frito.",
+        "words": [
+          "polvilho",
+          "mineiro",
+          "calabresa na chapa",
+          "café"
+        ],
+        "phrases": [
+          "A combinação definitiva do lanche mineiro: queijo da canastra e embutido frito.",
+          "Acompanha uma xícara fumegante de café coado no coador de pano."
+        ]
+      },
+      {
+        "name": "Croissant de Chocolate",
+        "sub": "lanches",
+        "word": "manteiga",
+        "phrase": "Massa nobre laminada com pura manteiga que esfarela na boca com chocolate quente.",
+        "words": [
+          "manteiga",
+          "folhado",
+          "gotas derretidas",
+          "paris"
+        ],
+        "phrases": [
+          "Massa nobre laminada com pura manteiga que esfarela na boca com chocolate quente.",
+          "O café da manhã clássico nas mesinhas de calçada da França."
+        ]
+      },
+      {
+        "name": "Sanduíche Natural de Atum",
+        "sub": "lanches",
+        "word": "pão integral",
+        "phrase": "Opção fresca e leve embalada em papel alumínio para levar à praia.",
+        "words": [
+          "pão integral",
+          "cenoura ralada",
+          "maionese light",
+          "praia"
+        ],
+        "phrases": [
+          "Opção fresca e leve embalada em papel alumínio para levar à praia.",
+          "Pão integral com pasta cremosa de atum, milho e alface picadinha."
+        ]
+      },
+      {
+        "name": "Torta de Palmito de Travessa",
+        "sub": "lanches",
+        "word": "massa podre",
+        "phrase": "Massa que derrete na boca com recheio perfumado de palmito pupunha.",
+        "words": [
+          "massa podre",
+          "azeitona preta",
+          "cremosa",
+          "forno"
+        ],
+        "phrases": [
+          "Massa que derrete na boca com recheio perfumado de palmito pupunha.",
+          "Presença garantida nos almoços de domingo em família."
+        ]
+      },
+      {
+        "name": "Mini Hambúrguer de Festa",
+        "sub": "lanches",
+        "word": "palito",
+        "phrase": "Versão em miniatura presa com palitinho servida em bandejas de aniversário.",
+        "words": [
+          "palito",
+          "pequenino",
+          "buffet",
+          "festa"
+        ],
+        "phrases": [
+          "Versão em miniatura presa com palitinho servida em bandejas de aniversário.",
+          "Todos pegam três ou quatro de uma vez nas mesas de casamento."
+        ]
+      },
+      {
+        "name": "Dadinho de Tapioca",
+        "sub": "lanches",
+        "word": "queijo coalho",
+        "phrase": "Cubos dourados de tapioca e queijo fritos até ficarem crocantes por fora.",
+        "words": [
+          "queijo coalho",
+          "cubos",
+          "geleia de pimenta",
+          "crocante"
+        ],
+        "phrases": [
+          "Cubos dourados de tapioca e queijo fritos até ficarem crocantes por fora.",
+          "Mergulhados em geleia agridoce de pimenta nos bares modernos."
+        ]
+      },
+      {
+        "name": "Bolinho de Bacalhau",
+        "sub": "lanches",
+        "word": "português",
+        "phrase": "Receita tradicional lusitana que une lascas de peixe salgado e purê de batata.",
+        "words": [
+          "português",
+          "batata",
+          "azeite de oliva",
+          "frito"
+        ],
+        "phrases": [
+          "Receita tradicional lusitana que une lascas de peixe salgado e purê de batata.",
+          "Frito em azeite quente e apreciado com um bom vinho branco gelado."
+        ]
+      },
+      {
+        "name": "Pastel de Belém",
+        "sub": "lanches",
+        "word": "creme de nata",
+        "phrase": "Massa folhada crocante em forminha com creme de ovos dourado no topo.",
+        "words": [
+          "creme de nata",
+          "canela em pó",
+          "forno alto",
+          "lisboa"
+        ],
+        "phrases": [
+          "Massa folhada crocante em forminha com creme de ovos dourado no topo.",
+          "Come-se quente salpicado com bastante canela e açúcar de confeiteiro."
+        ]
+      },
+      {
+        "name": "Arepa Recheada",
+        "sub": "lanches",
+        "word": "milho branco",
+        "phrase": "Pãozinho redondo de farinha de milho tostado na chapa e aberto ao meio.",
+        "words": [
+          "milho branco",
+          "disco",
+          "carne desfiada",
+          "abacate"
+        ],
+        "phrases": [
+          "Pãozinho redondo de farinha de milho tostado na chapa e aberto ao meio.",
+          "Prato tradicional da Venezuela e Colômbia recheado com queijo fresco."
+        ]
+      },
+      {
+        "name": "Torta Salgada de Liquidificador",
+        "sub": "lanches",
+        "word": "ervilha",
+        "phrase": "Bate tudo no liquidificador e despeja na forma com recheio de sobras da geladeira.",
+        "words": [
+          "ervilha",
+          "milho",
+          "fácil",
+          "assadeira"
+        ],
+        "phrases": [
+          "Bate tudo no liquidificador e despeja na forma com recheio de sobras da geladeira.",
+          "O lanche prático mais feito nas casas brasileiras nas tardes de chuva."
+        ]
+      },
+      {
+        "name": "Sanduíche Banh Mi",
+        "sub": "lanches",
+        "word": "baguete",
+        "phrase": "A herança francesa no Sudeste Asiático: pão crocante com patê e ervas frescas.",
+        "words": [
+          "baguete",
+          "coentro",
+          "picles de cenoura",
+          "vietnã"
+        ],
+        "phrases": [
+          "A herança francesa no Sudeste Asiático: pão crocante com patê e ervas frescas.",
+          "Mistura refrescante e picante com carne de porco e pimenta fresca."
+        ]
+      },
+      {
+        "name": "Gyoza Frito na Chapa",
+        "sub": "lanches",
+        "word": "meia-lua",
+        "phrase": "Pasteizinhos asiáticos dourados no fundo e cozidos no vapor por cima.",
+        "words": [
+          "meia-lua",
+          "vapor e frito",
+          "porco e repolho",
+          "shoyu"
+        ],
+        "phrases": [
+          "Pasteizinhos asiáticos dourados no fundo e cozidos no vapor por cima.",
+          "Mergulhados em molho de soja com óleo de gergelim torrado."
+        ]
+      },
+      {
+        "name": "Pão de Alho de Churrasco",
+        "sub": "lanches",
+        "word": "grelha",
+        "phrase": "A melhor entrada do churrasco assada na grelha até a casquinha estalar.",
+        "words": [
+          "grelha",
+          "pasta cremosa",
+          "brasa",
+          "queijo"
+        ],
+        "phrases": [
+          "A melhor entrada do churrasco assada na grelha até a casquinha estalar.",
+          "Recheado de pasta cremosa de alho com queijo derretendo nos cortes."
+        ]
+      },
+      {
+        "name": "Wrap de Frango com Cream Cheese",
+        "sub": "lanches",
+        "word": "tortilha fina",
+        "phrase": "Massa fininha enrolada em cilindro com tiras de frango grelhado e queijo cremoso.",
+        "words": [
+          "tortilha fina",
+          "enrolado",
+          "folhas verdes",
+          "fresco"
+        ],
+        "phrases": [
+          "Massa fininha enrolada em cilindro com tiras de frango grelhado e queijo cremoso.",
+          "Prático para comer no trânsito sem sujar as mãos."
+        ]
+      },
+      {
+        "name": "Bruschetta Italiana",
+        "sub": "lanches",
+        "word": "pão italiano",
+        "phrase": "Fatia de pão rústico tostada esfregada com dente de alho fresco.",
+        "words": [
+          "pão italiano",
+          "tomate picado",
+          "manjericão",
+          "azeite"
+        ],
+        "phrases": [
+          "Fatia de pão rústico tostada esfregada com dente de alho fresco.",
+          "Coberta com cubinhos de tomate temperados com azeite e manjericão."
+        ]
+      },
+      {
+        "name": "Torresmo de Rolo",
+        "sub": "lanches",
+        "word": "barriga de porco",
+        "phrase": "Panceta enrolada como rocambole assada e frita até a pele pururucar.",
+        "words": [
+          "barriga de porco",
+          "pururuca",
+          "crocante",
+          "limão"
+        ],
+        "phrases": [
+          "Panceta enrolada como rocambole assada e frita até a pele pururucar.",
+          "Corta-se em fatias circulares crocantes que fazem barulho ao morder."
+        ]
+      },
+      {
+        "name": "Baião de Dois com Queijo Coalho",
+        "sub": "brasileira",
+        "word": "feijão-fradinho",
+        "phrase": "Prato nordestino que une arroz e feijão cozidos juntos com queijo derretido.",
+        "words": [
+          "feijão-fradinho",
+          "arroz",
+          "coentro",
+          "manteiga de garrafa"
+        ],
+        "phrases": [
+          "Prato nordestino que une arroz e feijão cozidos juntos com queijo derretido.",
+          "Regado generosamente com manteiga de garrafa e carne de sol."
+        ]
+      },
+      {
+        "name": "Feijão Tropeiro Mineiro",
+        "sub": "brasileira",
+        "word": "farinha de mandioca",
+        "phrase": "Histórica receita dos tropeiros que viajavam montados a cavalo pelo interior.",
+        "words": [
+          "farinha de mandioca",
+          "torresmo",
+          "couve",
+          "ovo"
+        ],
+        "phrases": [
+          "Histórica receita dos tropeiros que viajavam montados a cavalo pelo interior.",
+          "Feijão misturado com farinha, pedaços de torresmo e couve refogada."
+        ]
+      },
+      {
+        "name": "Moqueca Baiana com Dendê",
+        "sub": "brasileira",
+        "word": "leite de coco",
+        "phrase": "Cozida lentamente na panela de barro com leite de coco e azeite avermelhado.",
+        "words": [
+          "leite de coco",
+          "azeite de dendê",
+          "coentro",
+          "peixe fresco"
+        ],
+        "phrases": [
+          "Cozida lentamente na panela de barro com leite de coco e azeite avermelhado.",
+          "Perfuma toda a casa com o cheiro característico do litoral da Bahia."
+        ]
+      },
+      {
+        "name": "Costela no Bafo",
+        "sub": "brasileira",
+        "word": "osso soltando",
+        "phrase": "Assada pacientemente por doze horas na brasa até o osso sair limpo na mão.",
+        "words": [
+          "osso soltando",
+          "horas de brasa",
+          "celofane",
+          "sal grosso"
+        ],
+        "phrases": [
+          "Assada pacientemente por doze horas na brasa até o osso sair limpo na mão.",
+          "Carne macia e suculenta que desfia apenas com o encostar do garfo."
+        ]
+      },
+      {
+        "name": "Arroz de Carreteiro",
+        "sub": "brasileira",
+        "word": "charque",
+        "phrase": "Criado pelos condutores de carretas no sul usando carne seca desfiada.",
+        "words": [
+          "charque",
+          "gaúcho",
+          "panela de ferro",
+          "cebola"
+        ],
+        "phrases": [
+          "Criado pelos condutores de carretas no sul usando carne seca desfiada.",
+          "Cozido em panela grossa de ferro com bastante cheiro-verde."
+        ]
+      },
+      {
+        "name": "Sarapatel",
+        "sub": "brasileira",
+        "word": "miúdos de porco",
+        "phrase": "Prato de sabor forte e marcante feito com vísceras e sangue temperado.",
+        "words": [
+          "miúdos de porco",
+          "sangue coalhado",
+          "pimenta de cheiro",
+          "nordeste"
+        ],
+        "phrases": [
+          "Prato de sabor forte e marcante feito com vísceras e sangue temperado.",
+          "Acompanha farinha de mandioca e pimenta para os de estômago forte."
+        ]
+      },
+      {
+        "name": "Buchada de Bode",
+        "sub": "brasileira",
+        "word": "estômago",
+        "phrase": "Bolsa feita do bucho do animal costurada com linha e recheada de miúdos.",
+        "words": [
+          "estômago",
+          "vísceras",
+          "costurado",
+          "sertão"
+        ],
+        "phrases": [
+          "Bolsa feita do bucho do animal costurada com linha e recheada de miúdos.",
+          "Símbolo máximo da culinária de resistência do sertão nordestino."
+        ]
+      },
+      {
+        "name": "Caruru",
+        "sub": "brasileira",
+        "word": "quiabo picadinho",
+        "phrase": "Cozido verde e aveludado de quiabos frescos com amendoim e camarões secos.",
+        "words": [
+          "quiabo picadinho",
+          "camarão seco",
+          "dendê",
+          "castanha"
+        ],
+        "phrases": [
+          "Cozido verde e aveludado de quiabos frescos com amendoim e camarões secos.",
+          "Prato sagrado servido nas festas de São Cosme e Damião."
+        ]
+      },
+      {
+        "name": "Acarajé Completo",
+        "sub": "brasileira",
+        "word": "feijão-fradinho",
+        "phrase": "Bolinho frito no tacho de azeite pelas baianas com trajes brancos tradicionais.",
+        "words": [
+          "feijão-fradinho",
+          "dendê fervendo",
+          "vatapá",
+          "camarão"
+        ],
+        "phrases": [
+          "Bolinho frito no tacho de azeite pelas baianas com trajes brancos tradicionais.",
+          "Aberto ao meio e recheado com vatapá, caruru e camarão defumado."
+        ]
+      },
+      {
+        "name": "Picanha na Brasa",
+        "sub": "brasileira",
+        "word": "capa de gordura",
+        "phrase": "O corte bovino mais disputado do churrasco brasileiro com capa dourada.",
+        "words": [
+          "capa de gordura",
+          "sal de parrilla",
+          "ponto menos",
+          "fatiada"
+        ],
+        "phrases": [
+          "O corte bovino mais disputado do churrasco brasileiro com capa dourada.",
+          "Servida em fatias suculentas e rosadas no centro da tábua de madeira."
+        ]
+      },
+      {
+        "name": "Cupim Casqueirado",
+        "sub": "brasileira",
+        "word": "gordura entremeada",
+        "phrase": "Corte com gordura entremeada que derrete na boca após cozimento lento.",
+        "words": [
+          "gordura entremeada",
+          "fatiado fino",
+          "chapa quente",
+          "mandioca"
+        ],
+        "phrases": [
+          "Corte com gordura entremeada que derrete na boca após cozimento lento.",
+          "Fatiado em casquinhas bem finas servido com farofa e mandioca cozida."
+        ]
+      },
+      {
+        "name": "Frango com Quiabo",
+        "sub": "brasileira",
+        "word": "sem baba",
+        "phrase": "Clássico absoluto das fazendas de Minas Gerais com frango caipira ensopado.",
+        "words": [
+          "sem baba",
+          "caipira",
+          "angu",
+          "fogão a lenha"
+        ],
+        "phrases": [
+          "Clássico absoluto das fazendas de Minas Gerais com frango caipira ensopado.",
+          "Servido com angu de milho quentinho e quiabos sem nenhuma baba."
+        ]
+      },
+      {
+        "name": "Feijão Preto Carioca",
+        "sub": "brasileira",
+        "word": "folha de louro",
+        "phrase": "O feijão com caldo espesso e aromático que acompanha o dia a dia no Rio.",
+        "words": [
+          "folha de louro",
+          "alho dourado",
+          "caldo grosso",
+          "arroz branco"
+        ],
+        "phrases": [
+          "O feijão com caldo espesso e aromático que acompanha o dia a dia no Rio.",
+          "Temperado com muito alho batido e folhas de louro na panela de pressão."
+        ]
+      },
+      {
+        "name": "Caldo de Piranha",
+        "sub": "brasileira",
+        "word": "pantanal",
+        "phrase": "Famoso caldo pantaneiro conhecido pela lenda de dar energia e vigor físico.",
+        "words": [
+          "pantanal",
+          "afrodisíaco",
+          "coentro",
+          "peixe do rio"
+        ],
+        "phrases": [
+          "Famoso caldo pantaneiro conhecido pela lenda de dar energia e vigor físico.",
+          "Cozido com cabeças de peixe de dentes afiados e temperos da mata."
+        ]
+      },
+      {
+        "name": "Pirão de Peixe",
+        "sub": "brasileira",
+        "word": "caldo da moqueca",
+        "phrase": "Feito na panela mexendo farinha de mandioca aos poucos no caldo fervente do peixe.",
+        "words": [
+          "caldo da moqueca",
+          "farinha crua",
+          "mexer sem parar",
+          "costa"
+        ],
+        "phrases": [
+          "Feito na panela mexendo farinha de mandioca aos poucos no caldo fervente do peixe.",
+          "Textura aveludada indispensável ao lado de uma boa moqueca."
+        ]
+      },
+      {
+        "name": "Paçoca de Carne Seca no Pilão",
+        "sub": "brasileira",
+        "word": "pilão de madeira",
+        "phrase": "Carne salgada frita e socada no pilão de madeira com farinha e temperos.",
+        "words": [
+          "pilão de madeira",
+          "farinha de milho",
+          "cebola",
+          "batida"
+        ],
+        "phrases": [
+          "Carne salgada frita e socada no pilão de madeira com farinha e temperos.",
+          "Comida seca e duradoura levada em longas viagens pelo sertão."
+        ]
+      },
+      {
+        "name": "Arroz com Pequi",
+        "sub": "brasileira",
+        "word": "goiás",
+        "phrase": "Arroz dourado e aromático com a fruta mais famosa do cerrado brasileiro.",
+        "words": [
+          "goiás",
+          "fruta amarela",
+          "espinhos",
+          "roer"
+        ],
+        "phrases": [
+          "Arroz dourado e aromático com a fruta mais famosa do cerrado brasileiro.",
+          "Não se pode morder o caroço sob risco de machucar a língua com microespinhos."
+        ]
+      },
+      {
+        "name": "Leitão à Pururuca",
+        "sub": "brasileira",
+        "word": "pele estalando",
+        "phrase": "Porco inteiro assado cuja pele é regada com óleo quente para empipocar crocante.",
+        "words": [
+          "pele estalando",
+          "óleo fervendo",
+          "assado",
+          "natal"
+        ],
+        "phrases": [
+          "Porco inteiro assado cuja pele é regada com óleo quente para empipocar crocante.",
+          "O prato principal mais esperado das grandes celebrações de fim de ano."
+        ]
+      },
+      {
+        "name": "Maniçoba",
+        "sub": "brasileira",
+        "word": "folhas de maniva",
+        "phrase": "A feijoada paraense feita com folhas de mandioca cozidas por sete dias e noites.",
+        "words": [
+          "folhas de maniva",
+          "sete dias de fogo",
+          "pará",
+          "carnes salgadas"
+        ],
+        "phrases": [
+          "A feijoada paraense feita com folhas de mandioca cozidas por sete dias e noites.",
+          "O tempo longo de fogo elimina o veneno natural da planta antes de juntar as carnes."
+        ]
+      },
+      {
+        "name": "Chivito Tradicional",
+        "sub": "brasileira",
+        "word": "carne bovina",
+        "phrase": "Sanduíche gigante da fronteira do sul recheado com bife, bacon e queijo.",
+        "words": [
+          "carne bovina",
+          "presunto",
+          "ovo",
+          "fronteira"
+        ],
+        "phrases": [
+          "Sanduíche gigante da fronteira do sul recheado com bife, bacon e queijo.",
+          "Servido em pratos grandes acompanhado de uma montanha de batatas fritas."
+        ]
+      },
+      {
+        "name": "Pintado na Brasa",
+        "sub": "brasileira",
+        "word": "peixe de couro",
+        "phrase": "Peixe nobre de água doce com manchas pretas assado em postas firmes e claras.",
+        "words": [
+          "peixe de couro",
+          "postas grossas",
+          "pantanal",
+          "limão"
+        ],
+        "phrases": [
+          "Peixe nobre de água doce com manchas pretas assado em postas firmes e claras.",
+          "Carne branca suculenta sem espinhos pequenos apreciada nos rios do centro-oeste."
+        ]
+      },
+      {
+        "name": "Sururu de Capote",
+        "sub": "brasileira",
+        "word": "conchas",
+        "phrase": "Pequeno molusco cozido dentro da própria casca em caldo cremoso de coco.",
+        "words": [
+          "conchas",
+          "leite de coco",
+          "alagoas",
+          "lagoa"
+        ],
+        "phrases": [
+          "Pequeno molusco cozido dentro da própria casca em caldo cremoso de coco.",
+          "Patrimônio imaterial das lagoas de Alagoas servido com farofa amarela."
+        ]
+      },
+      {
+        "name": "Farofa de Içá (Formiga)",
+        "sub": "brasileira",
+        "word": "tanajura",
+        "phrase": "Tradição centenária de caçar formigas aladas nas primeiras chuvas da primavera.",
+        "words": [
+          "tanajura",
+          "vale do paraíba",
+          "crocante",
+          "tradição indígena"
+        ],
+        "phrases": [
+          "Tradição centenária de caçar formigas aladas nas primeiras chuvas da primavera.",
+          "O abdômen frito na manteiga com farinha ganha sabor que lembra castanhas torradas."
+        ]
+      },
+      {
+        "name": "Polenta Mole com Ragu",
+        "sub": "brasileira",
+        "word": "fubá",
+        "phrase": "Creme de milho aveludado mexido pacientemente na panela com molho de carne lento.",
+        "words": [
+          "fubá",
+          "panela de cobre",
+          "carne moída",
+          "queijo parmesão"
+        ],
+        "phrases": [
+          "Creme de milho aveludado mexido pacientemente na panela com molho de carne lento.",
+          "Herança dos imigrantes italianos que colonizaram a serra gaúcha."
+        ]
+      },
+      {
+        "name": "Arroz Negro com Frutos do Mar",
+        "sub": "brasileira",
+        "word": "grão escuro",
+        "phrase": "Grãos escuros aromáticos de textura firme cozidos com caldo de mariscos.",
+        "words": [
+          "grão escuro",
+          "lula",
+          "camarão",
+          "litoral"
+        ],
+        "phrases": [
+          "Grãos escuros aromáticos de textura firme cozidos com caldo de mariscos.",
+          "Prato sofisticado presente nos restaurantes da costa litorânea."
+        ]
+      },
+      {
+        "name": "Sopa Paraguaia",
+        "sub": "brasileira",
+        "word": "bolo salgado",
+        "phrase": "Apesar do nome de sopa, é uma torta salgada firme e macia de milho com queijo.",
+        "words": [
+          "bolo salgado",
+          "milho verde",
+          "muito queijo",
+          "fronteira"
+        ],
+        "phrases": [
+          "Apesar do nome de sopa, é uma torta salgada firme e macia de milho com queijo.",
+          "Tradição gastronômica compartilhada na fronteira do Mato Grosso do Sul."
+        ]
+      },
+      {
+        "name": "Quibebe de Abóbora",
+        "sub": "brasileira",
+        "word": "abóbora madura",
+        "phrase": "Purê rústico adocicado de abóbora cozida com cebola, alho e cheiro-verde.",
+        "words": [
+          "abóbora madura",
+          "amassada",
+          "cebola",
+          "refogado"
+        ],
+        "phrases": [
+          "Purê rústico adocicado de abóbora cozida com cebola, alho e cheiro-verde.",
+          "Acompanhamento perfeito para carnes de panela e frango assado."
+        ]
+      },
+      {
+        "name": "Feijoada Branca",
+        "sub": "brasileira",
+        "word": "feijão-branco",
+        "phrase": "Versão mais leve da feijoada tradicional preparada com grãos brancos e costelinha.",
+        "words": [
+          "feijão-branco",
+          "linguiça defumada",
+          "legumes",
+          "inverno"
+        ],
+        "phrases": [
+          "Versão mais leve da feijoada tradicional preparada com grãos brancos e costelinha.",
+          "Cozimento lento que resulta num caldo aveludado e reconfortante."
+        ]
+      },
+      {
+        "name": "Rabada com Agrião",
+        "sub": "brasileira",
+        "word": "cauda bovina",
+        "phrase": "Cozido rico de cauda bovina onde o tutano do osso dá cremosidade ao molho escuro.",
+        "words": [
+          "cauda bovina",
+          "osso com tutano",
+          "folhas amargas",
+          "polenta"
+        ],
+        "phrases": [
+          "Cozido rico de cauda bovina onde o tutano do osso dá cremosidade ao molho escuro.",
+          "O frescor amarguinho do agrião quebra a gordura rica do prato."
+        ]
+      },
+      {
+        "name": "Maminha na Cerveja Preta",
+        "sub": "brasileira",
+        "word": "pressão",
+        "phrase": "Carne assada na panela de pressão com cerveja preta e creme de cebola.",
+        "words": [
+          "pressão",
+          "malte escuro",
+          "sopa de cebola",
+          "desmanchando"
+        ],
+        "phrases": [
+          "Carne assada na panela de pressão com cerveja preta e creme de cebola.",
+          "Molho escuro caramelizado que fica perfeito com arroz branco fresco."
+        ]
+      },
+      {
+        "name": "Ratatouille Tradicional",
+        "sub": "mundo",
+        "word": "berinjela",
+        "phrase": "Prato camponês francês de legumes fatiados finos assados com ervas de Provence.",
+        "words": [
+          "berinjela",
+          "abobrinha",
+          "rodelas",
+          "tomate"
+        ],
+        "phrases": [
+          "Prato camponês francês de legumes fatiados finos assados com ervas de Provence.",
+          "Imortalizado no cinema como a comida que resgata memórias da infância."
+        ]
+      },
+      {
+        "name": "Bife Wellington",
+        "sub": "mundo",
+        "word": "filé mignon",
+        "phrase": "Filé nobre envolto em pasta de cogumelos e presunto de parma dentro de massa folhada.",
+        "words": [
+          "filé mignon",
+          "cogumelos",
+          "massa folhada",
+          "gordon ramsay"
+        ],
+        "phrases": [
+          "Filé nobre envolto em pasta de cogumelos e presunto de parma dentro de massa folhada.",
+          "O terror dos competidores de reality shows de culinária para não passar do ponto."
+        ]
+      },
+      {
+        "name": "Tacos al Pastor",
+        "sub": "mundo",
+        "word": "abacaxi",
+        "phrase": "Carne de porco marinada em achiote fatiada com uma fatia de abacaxi no topo.",
+        "words": [
+          "abacaxi",
+          "espeto giratório",
+          "tortilha de milho",
+          "méxico"
+        ],
+        "phrases": [
+          "Carne de porco marinada em achiote fatiada com uma fatia de abacaxi no topo.",
+          "A comida de rua mais famosa e premiada das noites da Cidade do México."
+        ]
+      },
+      {
+        "name": "Sushi Sashimi Misto",
+        "sub": "mundo",
+        "word": "peixe cru",
+        "phrase": "Fatias perfeitas de salmão e atum fresco servidas com arroz avinagrado e shoyu.",
+        "words": [
+          "peixe cru",
+          "arroz temperado",
+          "wasabi",
+          "haste"
+        ],
+        "phrases": [
+          "Fatias perfeitas de salmão e atum fresco servidas com arroz avinagrado e shoyu.",
+          "Arte milenar japonesa que valoriza a pureza e o corte da faca artesanal."
+        ]
+      },
+      {
+        "name": "Shakshuka",
+        "sub": "mundo",
+        "word": "ovos pochê",
+        "phrase": "Ovos cozidos diretamente em um molho espesso de tomates, pimentões e cominho.",
+        "words": [
+          "ovos pochê",
+          "molho de tomate",
+          "frigideira",
+          "oriente médio"
+        ],
+        "phrases": [
+          "Ovos cozidos diretamente em um molho espesso de tomates, pimentões e cominho.",
+          "Servido na própria frigideira de ferro com pão pita quente para mergulhar."
+        ]
+      },
+      {
+        "name": "Fish and Chips",
+        "sub": "mundo",
+        "word": "peixe empanado",
+        "phrase": "Peixe branco frito em massa crocante de cerveja com batatas rústicas grossas.",
+        "words": [
+          "peixe empanado",
+          "batata frita grossa",
+          "jornal",
+          "londres"
+        ],
+        "phrases": [
+          "Peixe branco frito em massa crocante de cerveja com batatas rústicas grossas.",
+          "Comida tradicional britânica servida com vinagre de malte e purê de ervilhas."
+        ]
+      },
+      {
+        "name": "Lasanha à Bolonhesa",
+        "sub": "mundo",
+        "word": "camadas",
+        "phrase": "Massa intercalada com ragu de carne rico e molho branco sob queijo derretido.",
+        "words": [
+          "camadas",
+          "molho bechamel",
+          "carne moída",
+          "queijo gratinado"
+        ],
+        "phrases": [
+          "Massa intercalada com ragu de carne rico e molho branco sob queijo derretido.",
+          "O prato italiano assado favorito do famoso gato laranja dos quadrinhos."
+        ]
+      },
+      {
+        "name": "Chucrute com Salsichão",
+        "sub": "mundo",
+        "word": "repolho fermentado",
+        "phrase": "Conserva azeda de repolho fermentado servida com linguiças alemãs e cerveja.",
+        "words": [
+          "repolho fermentado",
+          "azedinho",
+          "alemanha",
+          "mostarda"
+        ],
+        "phrases": [
+          "Conserva azeda de repolho fermentado servida com linguiças alemãs e cerveja.",
+          "Acompanhamento indispensável nos festivais de outubro pelo mundo."
+        ]
+      },
+      {
+        "name": "Moussaka Grega",
+        "sub": "mundo",
+        "word": "berinjela",
+        "phrase": "Torta grega assada em camadas de berinjela, batata e carne moída temperada.",
+        "words": [
+          "berinjela",
+          "carne de cordeiro",
+          "bechamel",
+          "grécia"
+        ],
+        "phrases": [
+          "Torta grega assada em camadas de berinjela, batata e carne moída temperada.",
+          "Coberta por uma camada espessa de creme branco gratinado no forno."
+        ]
+      },
+      {
+        "name": "Tom Yum",
+        "sub": "mundo",
+        "word": "camarão",
+        "phrase": "Sopa tailandesa famosa pela explosão de sabor cítrico, picante e aromático.",
+        "words": [
+          "camarão",
+          "capim-limão",
+          "pimenta tailandesa",
+          "sopa cítrica"
+        ],
+        "phrases": [
+          "Sopa tailandesa famosa pela explosão de sabor cítrico, picante e aromático.",
+          "Ervas frescas como capim-limão e folhas de lima kafir no caldo fumegante."
+        ]
+      },
+      {
+        "name": "Bibimbap Coreano",
+        "sub": "mundo",
+        "word": "tigela de pedra",
+        "phrase": "Tigela de pedra fervendo com arroz, vegetais variados, carne e pasta de pimenta.",
+        "words": [
+          "tigela de pedra",
+          "vegetais coloridos",
+          "gema crua",
+          "gochujang"
+        ],
+        "phrases": [
+          "Tigela de pedra fervendo com arroz, vegetais variados, carne e pasta de pimenta.",
+          "Mistura-se tudo vigorosamente com a colher comprida antes de comer."
+        ]
+      },
+      {
+        "name": "Arepas Colombianas",
+        "sub": "mundo",
+        "word": "milho moído",
+        "phrase": "Discos dourados de farinha de milho comidos no café da manhã com café quente.",
+        "words": [
+          "milho moído",
+          "manteiga",
+          "chapa",
+          "queijo branco"
+        ],
+        "phrases": [
+          "Discos dourados de farinha de milho comidos no café da manhã com café quente.",
+          "Casquinha tostada por fora e macia por dentro com queijo derretendo."
+        ]
+      },
+      {
+        "name": "Cassoulet Francês",
+        "sub": "mundo",
+        "word": "feijão-branco",
+        "phrase": "O primo francês da feijoada feito com feijão branco e carnes nobres de pato.",
+        "words": [
+          "feijão-branco",
+          "pato confitado",
+          "linguiça",
+          "panela de barro"
+        ],
+        "phrases": [
+          "O primo francês da feijoada feito com feijão branco e carnes nobres de pato.",
+          "Cozido por horas até formar uma crosta dourada e aromática por cima."
+        ]
+      },
+      {
+        "name": "Tartar de Salmão",
+        "sub": "mundo",
+        "word": "cubos frescos",
+        "phrase": "Cubinhos milimétricos de peixe cru marinados com azeite, cebola roxa e alcaparras.",
+        "words": [
+          "cubos frescos",
+          "abacate",
+          "limão",
+          "gema"
+        ],
+        "phrases": [
+          "Cubinhos milimétricos de peixe cru marinados com azeite, cebola roxa e alcaparras.",
+          "Montado em formato cilíndrico servido com torradas fininhas crocantes."
+        ]
+      },
+      {
+        "name": "Goulash Húngaro",
+        "sub": "mundo",
+        "word": "páprica vermelha",
+        "phrase": "Ensopado de carne bovina perfumado com montanhas de páprica doce e picante.",
+        "words": [
+          "páprica vermelha",
+          "cubos de carne",
+          "caldo grosso",
+          "húngaro"
+        ],
+        "phrases": [
+          "Ensopado de carne bovina perfumado com montanhas de páprica doce e picante.",
+          "Aquece os invernos rigorosos do leste europeu há séculos."
+        ]
+      },
+      {
+        "name": "Dim Sum no Vapor",
+        "sub": "mundo",
+        "word": "cestinha de bambu",
+        "phrase": "Pequenos bocados delicados cozidos no vapor em cestos redondos de bambu.",
+        "words": [
+          "cestinha de bambu",
+          "massa transparente",
+          "camarão",
+          "chá"
+        ],
+        "phrases": [
+          "Pequenos bocados delicados cozidos no vapor em cestos redondos de bambu.",
+          "Tradição cantonesa de reunir a família para tomar chá aos domingos."
+        ]
+      },
+      {
+        "name": "Ceviche Peruano Tradicional",
+        "sub": "mundo",
+        "word": "leite de tigre",
+        "phrase": "Peixe fresco curado na acidez do limão fresco com fatias finas de cebola roxa.",
+        "words": [
+          "leite de tigre",
+          "peixe branco",
+          "milho choclo",
+          "batata-doce"
+        ],
+        "phrases": [
+          "Peixe fresco curado na acidez do limão fresco com fatias finas de cebola roxa.",
+          "Acompanhado de grãos de milho gigantes e uma rodela de batata-doce cozida."
+        ]
+      },
+      {
+        "name": "Polvo à Lagareiro",
+        "sub": "mundo",
+        "word": "azeite abundante",
+        "phrase": "Tentáculos macios de polvo assados no forno afogados em muito azeite português.",
+        "words": [
+          "azeite abundante",
+          "batatas ao murro",
+          "alho dourado",
+          "forno"
+        ],
+        "phrases": [
+          "Tentáculos macios de polvo assados no forno afogados em muito azeite português.",
+          "Acompanha batatas pequenas amassadas com as mãos antes de dourar."
+        ]
+      },
+      {
+        "name": "Hambúrguer Americano Tradicional",
+        "sub": "mundo",
+        "word": "pão brioche",
+        "phrase": "A comida rápida mais famosa do planeta servida em caixinhas de papelão.",
+        "words": [
+          "pão brioche",
+          "carne bovina",
+          "picles",
+          "cheddar"
+        ],
+        "phrases": [
+          "A comida rápida mais famosa do planeta servida em caixinhas de papelão.",
+          "Símbolo da cultura dos Estados Unidos consumido em bilhões de unidades."
+        ]
+      },
+      {
+        "name": "Paella Valenciana",
+        "sub": "mundo",
+        "word": "tacho largo",
+        "phrase": "Arroz dourado com açafrão cozido em fogo aberto no tacho de duas alças.",
+        "words": [
+          "tacho largo",
+          "açafrão amarelo",
+          "arroz bomba",
+          "socarrat"
+        ],
+        "phrases": [
+          "Arroz dourado com açafrão cozido em fogo aberto no tacho de duas alças.",
+          "A raspinha crocante do fundo da panela é a parte mais disputada da mesa."
+        ]
+      },
+      {
+        "name": "Tacos de Carne Asada",
+        "sub": "mundo",
+        "word": "tortilha dobrada",
+        "phrase": "Tiras de carne grelhada na brasa sobre pequenas tortilhas macias de milho.",
+        "words": [
+          "tortilha dobrada",
+          "coentro e cebola",
+          "limão",
+          "molho salsa"
+        ],
+        "phrases": [
+          "Tiras de carne grelhada na brasa sobre pequenas tortilhas macias de milho.",
+          "Come-se em duas mordidas nas taquerias barulhentas da esquina."
+        ]
+      },
+      {
+        "name": "Ramen de Picanha / Tonkotsu",
+        "sub": "mundo",
+        "word": "caldo de ossos",
+        "phrase": "Caldo branco leitoso cozido por dezesseis horas para extrair todo o colágeno.",
+        "words": [
+          "caldo de ossos",
+          "ovo marinado",
+          "chashu",
+          "macarrão longo"
+        ],
+        "phrases": [
+          "Caldo branco leitoso cozido por dezesseis horas para extrair todo o colágeno.",
+          "Tigela fumegante sorvida ruidosamente com pauzinhos e colher de cerâmica."
+        ]
+      },
+      {
+        "name": "Katsu Sando",
+        "sub": "mundo",
+        "word": "lombo empanado",
+        "phrase": "Sanduíche japonês geométrico com carne de porco empanada super crocante.",
+        "words": [
+          "lombo empanado",
+          "pão de leite",
+          "molho tonkatsu",
+          "repolho fininho"
+        ],
+        "phrases": [
+          "Sanduíche japonês geométrico com carne de porco empanada super crocante.",
+          "Pão de forma sem casca macio como nuvem vendido nas lojas de conveniência."
+        ]
+      },
+      {
+        "name": "Onigiri de Salmão",
+        "sub": "mundo",
+        "word": "triângulo de arroz",
+        "phrase": "Bolinho triangular de arroz japonês envolto em uma faixa crocante de alga preta.",
+        "words": [
+          "triângulo de arroz",
+          "alga nori",
+          "recheio",
+          "viagem"
+        ],
+        "phrases": [
+          "Bolinho triangular de arroz japonês envolto em uma faixa crocante de alga preta.",
+          "O lanche portátil mais consumido por estudantes e trabalhadores no Japão."
+        ]
+      },
+      {
+        "name": "Empanada Argentina",
+        "sub": "mundo",
+        "word": "massa fechada no repulgue",
+        "phrase": "Massa dourada assada com borda torcida à mão em formato de ondas.",
+        "words": [
+          "massa fechada no repulgue",
+          "carne cortada na ponta da faca",
+          "azeitona",
+          "forno de barro"
+        ],
+        "phrases": [
+          "Massa dourada assada com borda torcida à mão em formato de ondas.",
+          "Recheio suculento de carne picada com ovos cozidos e cominho."
+        ]
+      },
+      {
+        "name": "Brigadeiro Gourmet",
+        "sub": "doces",
+        "word": "leite condensado",
+        "phrase": "O doce de festa brasileiro enrolado na manteiga coberto de confeitos nobres.",
+        "words": [
+          "leite condensado",
+          "chocolate belga",
+          "granulado fino",
+          "forminha"
+        ],
+        "phrases": [
+          "O doce de festa brasileiro enrolado na manteiga coberto de confeitos nobres.",
+          "Impossível comer um só quando a bandeja passa nos aniversários."
+        ]
+      },
+      {
+        "name": "Beijinho de Coco",
+        "sub": "doces",
+        "word": "cravo-da-índia",
+        "phrase": "O par perfeito do brigadeiro com um cravinho espetado no centro.",
+        "words": [
+          "cravo-da-índia",
+          "coco ralado",
+          "branco",
+          "festa"
+        ],
+        "phrases": [
+          "O par perfeito do brigadeiro com um cravinho espetado no centro.",
+          "Feito na panela com leite condensado e coco fresco ralado."
+        ]
+      },
+      {
+        "name": "Pudim de Leite Condensado",
+        "sub": "doces",
+        "word": "calda de caramelo",
+        "phrase": "A sobremesa favorita do almoço de domingo com calda brilhante escorrendo.",
+        "words": [
+          "calda de caramelo",
+          "sem furinhos",
+          "forma de furo",
+          "geladeira"
+        ],
+        "phrases": [
+          "A sobremesa favorita do almoço de domingo com calda brilhante escorrendo.",
+          "Desenformado gelado com cuidado para não quebrar a estrutura macia."
+        ]
+      },
+      {
+        "name": "Bolo de Cenoura com Chocolate",
+        "sub": "doces",
+        "word": "cobertura dura",
+        "phrase": "Bolo fofinho de cor alaranjada com calda de brigadeiro que faz casquinha ao esfriar.",
+        "words": [
+          "cobertura dura",
+          "massa laranja",
+          "café da tarde",
+          "panela"
+        ],
+        "phrases": [
+          "Bolo fofinho de cor alaranjada com calda de brigadeiro que faz casquinha ao esfriar.",
+          "O clássico do café da tarde que perfuma a casa toda ao sair do forno."
+        ]
+      },
+      {
+        "name": "Quindim Amarelo",
+        "sub": "doces",
+        "word": "muitas gemas",
+        "phrase": "Doce português adaptado com cor amarela reluzente e base de coco ralado.",
+        "words": [
+          "muitas gemas",
+          "coco ralado",
+          "brilhante",
+          "açúcar"
+        ],
+        "phrases": [
+          "Doce português adaptado com cor amarela reluzente e base de coco ralado.",
+          "Leva dezenas de gemas de ovos peneiradas para não ficar com cheiro."
+        ]
+      },
+      {
+        "name": "Cocada Branca Mole",
+        "sub": "doces",
+        "word": "de colher",
+        "phrase": "Servida em compotas para comer com queijo branco ou pura na colher.",
+        "words": [
+          "de colher",
+          "coco fresco",
+          "açúcar",
+          "cremosa"
+        ],
+        "phrases": [
+          "Servida em compotas para comer com queijo branco ou pura na colher.",
+          "Pedaços suculentos de coco cozidos em calda clara perfumada."
+        ]
+      },
+      {
+        "name": "Bolo de Rolo Pernambucano",
+        "sub": "doces",
+        "word": "camadas finíssimas",
+        "phrase": "Patrimônio cultural com dezenas de camadas quase transparentes de massa e doce.",
+        "words": [
+          "camadas finíssimas",
+          "goiabada derretida",
+          "enrolado",
+          "recife"
+        ],
+        "phrases": [
+          "Patrimônio cultural com dezenas de camadas quase transparentes de massa e doce.",
+          "Não confunda com rocambole: o verdadeiro tem camadas finas como papel."
+        ]
+      },
+      {
+        "name": "Torta Holandesa",
+        "sub": "doces",
+        "word": "biscoito calipso",
+        "phrase": "Borda cercada por biscoitos redondos cobertos de chocolate ao redor da forma.",
+        "words": [
+          "biscoito calipso",
+          "creme branco",
+          "ganache de chocolate",
+          "gelada"
+        ],
+        "phrases": [
+          "Borda cercada por biscoitos redondos cobertos de chocolate ao redor da forma.",
+          "Creme aerado suave coberto por uma camada escura de ganache brilhante."
+        ]
+      },
+      {
+        "name": "Manjar Branco com Ameixa",
+        "sub": "doces",
+        "word": "leite de coco",
+        "phrase": "Sobremesa branca como a neve com calda escura de ameixas em calda por cima.",
+        "words": [
+          "leite de coco",
+          "amido de milho",
+          "calda preta",
+          "gelado"
+        ],
+        "phrases": [
+          "Sobremesa branca como a neve com calda escura de ameixas em calda por cima.",
+          "O doce de travessa que nunca falta nas ceias de ano novo."
+        ]
+      },
+      {
+        "name": "Arroz Doce com Canela",
+        "sub": "doces",
+        "word": "leite condensado",
+        "phrase": "Grãos de arroz cozidos no leite até desmancharem em um creme doce aveludado.",
+        "words": [
+          "leite condensado",
+          "grãos cozidos",
+          "canela em pó",
+          "fogão"
+        ],
+        "phrases": [
+          "Grãos de arroz cozidos no leite até desmancharem em um creme doce aveludado.",
+          "Polvilhado com desenhos de canela em pó por cima da tigela."
+        ]
+      },
+      {
+        "name": "Pamonha Doce",
+        "sub": "doces",
+        "word": "palha de milho",
+        "phrase": "Massa de milho verde cozida embalada na própria casca da espiga amarrada.",
+        "words": [
+          "palha de milho",
+          "amarrada com barbante",
+          "coco",
+          "quermesse"
+        ],
+        "phrases": [
+          "Massa de milho verde cozida embalada na própria casca da espiga amarrada.",
+          "Vendida quente pelas ruas anunciada na caixa de som do carro."
+        ]
+      },
+      {
+        "name": "Curau de Milho Verde",
+        "sub": "doces",
+        "word": "canela",
+        "phrase": "Creme amarelo aveludado extraído do milho fresco ralado e coado.",
+        "words": [
+          "canela",
+          "creme de espiga",
+          "panela mexendo",
+          "junino"
+        ],
+        "phrases": [
+          "Creme amarelo aveludado extraído do milho fresco ralado e coado.",
+          "Come-se de colher morno ou gelado nas festas de São João."
+        ]
+      },
+      {
+        "name": "Rabanada Tradicional",
+        "sub": "doces",
+        "word": "pão amanhecido",
+        "phrase": "Fatias de pão velho mergulhadas no leite, fritas e passadas no açúcar.",
+        "words": [
+          "pão amanhecido",
+          "leite e ovos",
+          "frita",
+          "açúcar e canela"
+        ],
+        "phrases": [
+          "Fatias de pão velho mergulhadas no leite, fritas e passadas no açúcar.",
+          "O aroma inconfundível que avisa que a noite de Natal finalmente chegou."
+        ]
+      },
+      {
+        "name": "Churros de Doce de Leite",
+        "sub": "doces",
+        "word": "estrelado",
+        "phrase": "Massa frita na hora em formato de tubo oco recheada com doce de leite morno.",
+        "words": [
+          "estrelado",
+          "recheio quente",
+          "frito",
+          "carrinho de rua"
+        ],
+        "phrases": [
+          "Massa frita na hora em formato de tubo oco recheada com doce de leite morno.",
+          "O cheiro que atrai multidões nas praças ao redor do carrinho clássico."
+        ]
+      },
+      {
+        "name": "Bolo de Fubá Cremoso",
+        "sub": "doces",
+        "word": "queijo parmesão",
+        "phrase": "Parece que tem duas massas: fofinho por fora e com recheio cremoso no meio.",
+        "words": [
+          "queijo parmesão",
+          "meio derretido",
+          "café",
+          "tabuleiro"
+        ],
+        "phrases": [
+          "Parece que tem duas massas: fofinho por fora e com recheio cremoso no meio.",
+          "O par perfeito para uma caneca de café quente nos dias nublados."
+        ]
+      },
+      {
+        "name": "Brownie de Chocolate com Nozes",
+        "sub": "doces",
+        "word": "casquinha craquelada",
+        "phrase": "Bolo americano baixinho e denso que não leva fermento com casquinha crocante.",
+        "words": [
+          "casquinha craquelada",
+          "denso",
+          "cacau",
+          "sorvete"
+        ],
+        "phrases": [
+          "Bolo americano baixinho e denso que não leva fermento com casquinha crocante.",
+          "Servido quente acompanhado de uma bola de sorvete de creme derretendo."
+        ]
+      },
+      {
+        "name": "Torta de Limão com Merengue",
+        "sub": "doces",
+        "word": "maçarico",
+        "phrase": "Base crocante de biscoito com recheio azedo coberto por merengue tostado.",
+        "words": [
+          "maçarico",
+          "azedinho",
+          "base de biscoito",
+          "raspitas"
+        ],
+        "phrases": [
+          "Base crocante de biscoito com recheio azedo coberto por merengue tostado.",
+          "O maçarico queima as pontinhas do suspiro dando um visual espetacular."
+        ]
+      },
+      {
+        "name": "Pavê Tradicional de Chocolate",
+        "sub": "doces",
+        "word": "ou pra comer",
+        "phrase": "A sobremesa que sempre é acompanhada pela piada mais batida da família.",
+        "words": [
+          "ou pra comer",
+          "biscoito champanhe",
+          "camadas",
+          "piada de tio"
+        ],
+        "phrases": [
+          "A sobremesa que sempre é acompanhada pela piada mais batida da família.",
+          "Camadas alternadas de biscoito umedecido no leite e cremes aveludados."
+        ]
+      },
+      {
+        "name": "Bolo Red Velvet",
+        "sub": "doces",
+        "word": "vermelho vivo",
+        "phrase": "Bolo de cor vermelha intensa contrastando com recheio branco de queijo doce.",
+        "words": [
+          "vermelho vivo",
+          "cream cheese",
+          "cacau",
+          "camadas"
+        ],
+        "phrases": [
+          "Bolo de cor vermelha intensa contrastando com recheio branco de queijo doce.",
+          "Elegante e aveludado, presença constante nas confeitarias modernas."
+        ]
+      },
+      {
+        "name": "Cheesecake de Frutas Vermelhas",
+        "sub": "doces",
+        "word": "calda de morango e amora",
+        "phrase": "Torta clássica de Nova York com base de biscoito e calda brilhante de frutas.",
+        "words": [
+          "calda de morango e amora",
+          "creme de queijo",
+          "forno",
+          "geladeira"
+        ],
+        "phrases": [
+          "Torta clássica de Nova York com base de biscoito e calda brilhante de frutas.",
+          "Equilíbrio fino entre a acidez dos frutos silvestres e a doçura do queijo."
+        ]
+      },
+      {
+        "name": "Gelato Italiano de Pistache",
+        "sub": "doces",
+        "word": "espatulado",
+        "phrase": "Sorvete artesanal denso e menos gorduroso feito com pasta pura da semente verde.",
+        "words": [
+          "espatulado",
+          "verde claro",
+          "cremoso",
+          "casquinha"
+        ],
+        "phrases": [
+          "Sorvete artesanal denso e menos gorduroso feito com pasta pura da semente verde.",
+          "Servido na espátula acumulando ondas perfeitas na casquinha de biscoito."
+        ]
+      },
+      {
+        "name": "Sonho de Padaria",
+        "sub": "doces",
+        "word": "açúcar de confeiteiro",
+        "phrase": "Bola frita dourada cortada ao meio com montanhas de creme de baunilha.",
+        "words": [
+          "açúcar de confeiteiro",
+          "creme amarelo",
+          "massa frita",
+          "vitrine"
+        ],
+        "phrases": [
+          "Bola frita dourada cortada ao meio com montanhas de creme de baunilha.",
+          "Deixa a boca e as mãos cobertas de pó branco doce a cada mordida."
+        ]
+      },
+      {
+        "name": "Pé de Moça",
+        "sub": "doces",
+        "word": "leite condensado",
+        "phrase": "Versão muito mais macia e puxa-puxa do tradicional pé de moleque duro.",
+        "words": [
+          "leite condensado",
+          "amendoim macio",
+          "caramelo",
+          "macio"
+        ],
+        "phrases": [
+          "Versão muito mais macia e puxa-puxa do tradicional pé de moleque duro.",
+          "Desmancha na boca com amendoins inteiros torrados e leite condensado."
+        ]
+      },
+      {
+        "name": "Bolo de Nozes com Baba de Moça",
+        "sub": "doces",
+        "word": "casamento",
+        "phrase": "O recheio clássico dos bolos de casamento das famílias tradicionais.",
+        "words": [
+          "casamento",
+          "calda de ovos",
+          "massa nobre",
+          "festas"
+        ],
+        "phrases": [
+          "O recheio clássico dos bolos de casamento das famílias tradicionais.",
+          "Creme dourado feito com calda de açúcar e gemas cozidas com leite de coco."
+        ]
+      },
+      {
+        "name": "Cuca Alemã de Banana com Farofa",
+        "sub": "doces",
+        "word": "crocante",
+        "phrase": "Pão doce fofinho coberto com frutas e uma camada espessa de farofa crocante.",
+        "words": [
+          "crocante",
+          "canela",
+          "sul do brasil",
+          "café colonial"
+        ],
+        "phrases": [
+          "Pão doce fofinho coberto com frutas e uma camada espessa de farofa crocante.",
+          "Estrela dos cafés coloniais na serra gaúcha e catarinense."
+        ]
       }
     ]
   },
@@ -10111,6 +15386,1766 @@ const THEME_DATABASE = {
         ],
         "word": "pedra",
         "phrase": "Gira a rodinha áspera com o polegar para soltar faísca sobre o gás."
+      },
+      {
+        "name": "Notebook Ultrafino",
+        "sub": "tecnologia",
+        "word": "teclado iluminado",
+        "phrase": "Pesa pouco mais de um quilo e abre dezenas de abas de trabalho no colo.",
+        "words": [
+          "teclado iluminado",
+          "tela oled",
+          "bateria",
+          "mochila"
+        ],
+        "phrases": [
+          "Pesa pouco mais de um quilo e abre dezenas de abas de trabalho no colo.",
+          "Carregado na mochila permitindo trabalhar de qualquer cafeteria do mundo."
+        ]
+      },
+      {
+        "name": "Tablet com Caneta Stylus",
+        "sub": "tecnologia",
+        "word": "desenho digital",
+        "phrase": "Substituiu os cadernos de papel e as telas de pintura com tinta digital.",
+        "words": [
+          "desenho digital",
+          "tela tátil",
+          "pressão",
+          "bloco de notas"
+        ],
+        "phrases": [
+          "Substituiu os cadernos de papel e as telas de pintura com tinta digital.",
+          "Reconhece a inclinação e a força do traço na ponta da caneta sem fio."
+        ]
+      },
+      {
+        "name": "Smart TV 4K",
+        "sub": "tecnologia",
+        "word": "controle remoto",
+        "phrase": "Ocupa a parede da sala com milhões de pixels exibindo filmes e séries.",
+        "words": [
+          "controle remoto",
+          "streaming",
+          "polegadas",
+          "parede"
+        ],
+        "phrases": [
+          "Ocupa a parede da sala com milhões de pixels exibindo filmes e séries.",
+          "Conectada ao Wi-Fi para maratonar vídeos sem precisar de cabos de antena."
+        ]
+      },
+      {
+        "name": "Roteador Wi-Fi 6",
+        "sub": "tecnologia",
+        "word": "antenas",
+        "phrase": "Caixinha cheia de antenas pretas que distribui internet pelo ar na casa toda.",
+        "words": [
+          "antenas",
+          "sinal",
+          "ondas",
+          "luzinhas piscando"
+        ],
+        "phrases": [
+          "Caixinha cheia de antenas pretas que distribui internet pelo ar na casa toda.",
+          "A primeira coisa que todo mundo reinicia tirando da tomada quando a rede cai."
+        ]
+      },
+      {
+        "name": "Teclado Mecânico RGB",
+        "sub": "tecnologia",
+        "word": "switches",
+        "phrase": "Faz um barulho estalado satisfatório a cada letra digitada nas teclas.",
+        "words": [
+          "switches",
+          "clique audível",
+          "luzes coloridas",
+          "gamer"
+        ],
+        "phrases": [
+          "Faz um barulho estalado satisfatório a cada letra digitada nas teclas.",
+          "Luzes de todas as cores do arco-íris pulsam sob as teclas personalizadas."
+        ]
+      },
+      {
+        "name": "Monitor Ultrawide Curvo",
+        "sub": "tecnologia",
+        "word": "tela larga",
+        "phrase": "Tela panorâmica curvada que ocupa a visão periférica de quem senta à mesa.",
+        "words": [
+          "tela larga",
+          "curvatura",
+          "produtividade",
+          "jogos"
+        ],
+        "phrases": [
+          "Tela panorâmica curvada que ocupa a visão periférica de quem senta à mesa.",
+          "Permite abrir três janelas de trabalho lado a lado sem emendas."
+        ]
+      },
+      {
+        "name": "Câmera Mirrorless",
+        "sub": "tecnologia",
+        "word": "lentes intercambiáveis",
+        "phrase": "Grava imagens com qualidade de cinema sem o espelho mecânico antigo.",
+        "words": [
+          "lentes intercambiáveis",
+          "sensor full frame",
+          "obturador",
+          "gravação"
+        ],
+        "phrases": [
+          "Grava imagens com qualidade de cinema sem o espelho mecânico antigo.",
+          "Troca-se de lente para fotografar aves distantes ou retratos desfocados."
+        ]
+      },
+      {
+        "name": "Tripé Articulado",
+        "sub": "tecnologia",
+        "word": "três pernas",
+        "phrase": "Pernas de borracha flexíveis que se enrolam em galhos e canos de metal.",
+        "words": [
+          "três pernas",
+          "estabilidade",
+          "garra",
+          "gravação"
+        ],
+        "phrases": [
+          "Pernas de borracha flexíveis que se enrolam em galhos e canos de metal.",
+          "Segura a câmera ou o celular firmemente no ângulo desejado para o vídeo."
+        ]
+      },
+      {
+        "name": "Ring Light de Mesa",
+        "sub": "tecnologia",
+        "word": "círculo de luz",
+        "phrase": "Anel circular de LED que ilumina o rosto tirando sombras em gravações.",
+        "words": [
+          "círculo de luz",
+          "olhos brilhando",
+          "vídeo chamada",
+          "intensidade"
+        ],
+        "phrases": [
+          "Anel circular de LED que ilumina o rosto tirando sombras em gravações.",
+          "Reflete duas pequenas rosquinhas brancas brilhantes nas pupilas de quem grava."
+        ]
+      },
+      {
+        "name": "Microfone Condensador USB",
+        "sub": "tecnologia",
+        "word": "filtro pop",
+        "phrase": "Capta até o sussurro mais baixo e a respiração em frente ao computador.",
+        "words": [
+          "filtro pop",
+          "braço articulado",
+          "gravação de voz",
+          "podcast"
+        ],
+        "phrases": [
+          "Capta até o sussurro mais baixo e a respiração em frente ao computador.",
+          "Usado por podcasters e cantores conectado diretamente na porta USB."
+        ]
+      },
+      {
+        "name": "SSD Externo Portátil",
+        "sub": "tecnologia",
+        "word": "velocidade extrema",
+        "phrase": "Menor que um cartão de crédito, transfere gigabytes de arquivos em dois segundos.",
+        "words": [
+          "velocidade extrema",
+          "silício",
+          "cabo usbc",
+          "backup"
+        ],
+        "phrases": [
+          "Menor que um cartão de crédito, transfere gigabytes de arquivos em dois segundos.",
+          "Não tem peças móveis mecânicas, sobrevivendo a quedas no chão sem quebrar."
+        ]
+      },
+      {
+        "name": "Pen Drive Metálico",
+        "sub": "tecnologia",
+        "word": "chaveiro",
+        "phrase": "Pendurado no chaveiro de casa guardando documentos, fotos e músicas antigas.",
+        "words": [
+          "chaveiro",
+          "arquivos",
+          "porta usb",
+          "formatação"
+        ],
+        "phrases": [
+          "Pendurado no chaveiro de casa guardando documentos, fotos e músicas antigas.",
+          "Aparelho portátil pioneiro que aposentou de vez os disquetes e CDs."
+        ]
+      },
+      {
+        "name": "Projetor Portátil",
+        "sub": "tecnologia",
+        "word": "lente",
+        "phrase": "Pequeno aparelho que projeta uma tela de cem polegadas no teto do quarto.",
+        "words": [
+          "lente",
+          "parede branca",
+          "cinema em casa",
+          "lâmpada"
+        ],
+        "phrases": [
+          "Pequeno aparelho que projeta uma tela de cem polegadas no teto do quarto.",
+          "Transforma qualquer sala escura em uma sessão privada de cinema."
+        ]
+      },
+      {
+        "name": "Óculos de Realidade Virtual",
+        "sub": "tecnologia",
+        "word": "visor",
+        "phrase": "Coloca-se no rosto para se sentir fisicamente dentro de outro mundo digital.",
+        "words": [
+          "visor",
+          "imersão",
+          "sensores",
+          "joysticks"
+        ],
+        "phrases": [
+          "Coloca-se no rosto para se sentir fisicamente dentro de outro mundo digital.",
+          "Faz o cérebro acreditar que você está na beira de um penhasco virtual."
+        ]
+      },
+      {
+        "name": "Controle sem Fio de Videogame",
+        "sub": "tecnologia",
+        "word": "alavancas analógicas",
+        "phrase": "Encaixa perfeitamente nas duas mãos com botões de ação e motores de tremor.",
+        "words": [
+          "alavancas analógicas",
+          "gatilhos",
+          "vibração",
+          "bateria"
+        ],
+        "phrases": [
+          "Encaixa perfeitamente nas duas mãos com botões de ação e motores de tremor.",
+          "Vibra forte a cada tiro, colisão ou explosão ocorrida no jogo."
+        ]
+      },
+      {
+        "name": "Carregador Portátil Solar",
+        "sub": "tecnologia",
+        "word": "painel fotovoltaico",
+        "phrase": "Bateria externa equipada com pequenas placas que recarregam na luz do sol.",
+        "words": [
+          "painel fotovoltaico",
+          "sol",
+          "trilha",
+          "emergência"
+        ],
+        "phrases": [
+          "Bateria externa equipada com pequenas placas que recarregam na luz do sol.",
+          "Indispensável na mochila de quem faz acampamentos longe de tomadas elétricas."
+        ]
+      },
+      {
+        "name": "Webcam Full HD",
+        "sub": "tecnologia",
+        "word": "lente",
+        "phrase": "Presa no topo da tela do computador para reuniões virtuais de trabalho.",
+        "words": [
+          "lente",
+          "topo do monitor",
+          "home office",
+          "microfone embutido"
+        ],
+        "phrases": [
+          "Presa no topo da tela do computador para reuniões virtuais de trabalho.",
+          "Possui uma pequena tampinha plástica deslizante para proteger a privacidade."
+        ]
+      },
+      {
+        "name": "Leitor de Código de Barras",
+        "sub": "tecnologia",
+        "word": "laser vermelho",
+        "phrase": "Dispara uma linha vermelha de luz que emite um bipe agudo ao ler o preço.",
+        "words": [
+          "laser vermelho",
+          "bipe",
+          "caixa de supermercado",
+          "leitura"
+        ],
+        "phrases": [
+          "Dispara uma linha vermelha de luz que emite um bipe agudo ao ler o preço.",
+          "Trabalha o dia todo nas mãos dos operadores de caixa de supermercados."
+        ]
+      },
+      {
+        "name": "Balança Digital de Bioimpedância",
+        "sub": "tecnologia",
+        "word": "placas de metal",
+        "phrase": "Pisa-se descalço sobre placas metálicas que enviam microcorrentes pelo corpo.",
+        "words": [
+          "placas de metal",
+          "aplicativo",
+          "gordura corporal",
+          "visor lcd"
+        ],
+        "phrases": [
+          "Pisa-se descalço sobre placas metálicas que enviam microcorrentes pelo corpo.",
+          "Envia dados de massa muscular e hidratação diretamente para o celular."
+        ]
+      },
+      {
+        "name": "Fechadura Digital Biométrica",
+        "sub": "tecnologia",
+        "word": "impressão digital",
+        "phrase": "Dispensa o uso de chaves físicas, abrindo a porta com o toque do polegar.",
+        "words": [
+          "impressão digital",
+          "senha numérica",
+          "tranca automática",
+          "sem chave"
+        ],
+        "phrases": [
+          "Dispensa o uso de chaves físicas, abrindo a porta com o toque do polegar.",
+          "Emite um som musical ao trancar a casa automaticamente ao bater a porta."
+        ]
+      },
+      {
+        "name": "Tomada Inteligente Wi-Fi",
+        "sub": "tecnologia",
+        "word": "aplicativo",
+        "phrase": "Permite ligar a cafeteira ou a luminária à distância pelo telefone celular.",
+        "words": [
+          "aplicativo",
+          "ligar e desligar",
+          "consumo",
+          "temporizador"
+        ],
+        "phrases": [
+          "Permite ligar a cafeteira ou a luminária à distância pelo telefone celular.",
+          "Mede quantos watts o aparelho eletrônico está gastando a cada hora."
+        ]
+      },
+      {
+        "name": "Lâmpada Inteligente RGB",
+        "sub": "tecnologia",
+        "word": "mudar de cor",
+        "phrase": "Muda para luz azul relaxante ou vermelha de festa apenas com ordens de voz.",
+        "words": [
+          "mudar de cor",
+          "comando de voz",
+          "rosquear",
+          "automação"
+        ],
+        "phrases": [
+          "Muda para luz azul relaxante ou vermelha de festa apenas com ordens de voz.",
+          "Rosqueia-se no bocal comum conectando-se diretamente ao sinal da casa."
+        ]
+      },
+      {
+        "name": "Robô Aspirador de Pó",
+        "sub": "tecnologia",
+        "word": "sensores",
+        "phrase": "Aparelho redondo que anda sozinho pelo chão recolhendo pelos e poeira.",
+        "words": [
+          "sensores",
+          "redondo",
+          "base de recarga",
+          "esbarrando"
+        ],
+        "phrases": [
+          "Aparelho redondo que anda sozinho pelo chão recolhendo pelos e poeira.",
+          "Volta sozinho para a tomada na parede quando a bateria está fraca."
+        ]
+      },
+      {
+        "name": "Umidificador Ultrassônico",
+        "sub": "tecnologia",
+        "word": "névoa fria",
+        "phrase": "Solta uma fumaça fria contínua no quarto aliviando crises alérgicas.",
+        "words": [
+          "névoa fria",
+          "água",
+          "ar seco",
+          "luz noturna"
+        ],
+        "phrases": [
+          "Solta uma fumaça fria contínua no quarto aliviando crises alérgicas.",
+          "Faz uma água borbulhar suavemente com iluminação suave na cabeceira."
+        ]
+      },
+      {
+        "name": "Babá Eletrônica com Vídeo",
+        "sub": "tecnologia",
+        "word": "visão noturna",
+        "phrase": "Câmera com luz infravermelha que vigia o sono do bebê no escuro total.",
+        "words": [
+          "visão noturna",
+          "berço",
+          "choro",
+          "monitor"
+        ],
+        "phrases": [
+          "Câmera com luz infravermelha que vigia o sono do bebê no escuro total.",
+          "Acende a tela avisando os pais na sala assim que a criança se mexe."
+        ]
+      },
+      {
+        "name": "Termômetro Digital sem Contato",
+        "sub": "tecnologia",
+        "word": "laser",
+        "phrase": "Mede a temperatura corporal em um segundo sem precisar encostar na pele.",
+        "words": [
+          "laser",
+          "testa",
+          "febre",
+          "segundos"
+        ],
+        "phrases": [
+          "Mede a temperatura corporal em um segundo sem precisar encostar na pele.",
+          "Ficou onipresente na entrada de todas as lojas e escolas nos últimos anos."
+        ]
+      },
+      {
+        "name": "Cartão de Memória MicroSD",
+        "sub": "tecnologia",
+        "word": "minúsculo",
+        "phrase": "Menor que uma unha do dedo mindinho guardando milhares de fotos em alta resolução.",
+        "words": [
+          "minúsculo",
+          "unha",
+          "gigabytes",
+          "câmera"
+        ],
+        "phrases": [
+          "Menor que uma unha do dedo mindinho guardando milhares de fotos em alta resolução.",
+          "Insere-se em celulares, consoles portáteis e câmeras de ação."
+        ]
+      },
+      {
+        "name": "Cabo HDMI de Alta Velocidade",
+        "sub": "tecnologia",
+        "word": "conectores dourados",
+        "phrase": "Cabo grosso com ponta metálica que transmite som e imagens para a tela.",
+        "words": [
+          "conectores dourados",
+          "áudio e vídeo",
+          "tv e videogame",
+          "porta"
+        ],
+        "phrases": [
+          "Cabo grosso com ponta metálica que transmite som e imagens para a tela.",
+          "Conecta videogames e computadores na televisão da sala."
+        ]
+      },
+      {
+        "name": "Hub USB Multiportas",
+        "sub": "tecnologia",
+        "word": "várias entradas",
+        "phrase": "Resolve o problema dos computadores modernos que têm poucas entradas.",
+        "words": [
+          "várias entradas",
+          "adaptador",
+          "alumínio",
+          "cabos"
+        ],
+        "phrases": [
+          "Resolve o problema dos computadores modernos que têm poucas entradas.",
+          "Permite ligar mouse, teclado, pendrive e fone de ouvido ao mesmo tempo."
+        ]
+      },
+      {
+        "name": "Gps Veicular",
+        "sub": "tecnologia",
+        "word": "satélite",
+        "phrase": "Voz gravada no painel avisando para fazer a curva ou recalcular a rota.",
+        "words": [
+          "satélite",
+          "ventosa no vidro",
+          "rota",
+          "vire à direita"
+        ],
+        "phrases": [
+          "Voz gravada no painel avisando para fazer a curva ou recalcular a rota.",
+          "Conecta-se a satélites em órbita indicando a melhor rua para fugir do trânsito."
+        ]
+      },
+      {
+        "name": "Tapete de Sala Felpudo",
+        "sub": "casa",
+        "word": "pelos altos",
+        "phrase": "Pisar descalço sobre seus pelos macios assistindo televisão no chão da sala.",
+        "words": [
+          "pelos altos",
+          "macio",
+          "sala de estar",
+          "descalço"
+        ],
+        "phrases": [
+          "Pisar descalço sobre seus pelos macios assistindo televisão no chão da sala.",
+          "O local favorito do gato e do cachorro para tirar uma soneca à tarde."
+        ]
+      },
+      {
+        "name": "Cortina Blecaute",
+        "sub": "casa",
+        "word": "escuridão total",
+        "phrase": "Bloqueia totalmente os raios de sol permitindo dormir no escuro ao meio-dia.",
+        "words": [
+          "escuridão total",
+          "tecido grosso",
+          "trilho",
+          "dormir até tarde"
+        ],
+        "phrases": [
+          "Bloqueia totalmente os raios de sol permitindo dormir no escuro ao meio-dia.",
+          "Protege os móveis da sala do desbotamento causado pela claridade."
+        ]
+      },
+      {
+        "name": "Abajur de Cabeceira",
+        "sub": "casa",
+        "word": "luz suave",
+        "phrase": "Ilumina suavemente as páginas do livro antes de pegar no sono na cama.",
+        "words": [
+          "luz suave",
+          "cúpula",
+          "interruptor",
+          "leitura noturna"
+        ],
+        "phrases": [
+          "Ilumina suavemente as páginas do livro antes de pegar no sono na cama.",
+          "Fica ao alcance da mão no criado-mudo para não precisar levantar no escuro."
+        ]
+      },
+      {
+        "name": "Jogo de Panelas Antiaderente",
+        "sub": "casa",
+        "word": "teflon",
+        "phrase": "Frita ovos e prepara molhos sem que a comida fique grudada no fundo.",
+        "words": [
+          "teflon",
+          "sem grudar",
+          "tampa de vidro",
+          "colher de silicone"
+        ],
+        "phrases": [
+          "Frita ovos e prepara molhos sem que a comida fique grudada no fundo.",
+          "Exige o cuidado de nunca usar esponjas de aço ou garfos de metal na lavagem."
+        ]
+      },
+      {
+        "name": "Escorredor de Pratos",
+        "sub": "casa",
+        "word": "pia",
+        "phrase": "Fica ao lado da torneira empilhando pratos e copos molhados recém-lavados.",
+        "words": [
+          "pia",
+          "grades de inox",
+          "talheres",
+          "secar ao ar"
+        ],
+        "phrases": [
+          "Fica ao lado da torneira empilhando pratos e copos molhados recém-lavados.",
+          "Bandeja inferior que recolhe as gotinhas de água que escorrem da louça."
+        ]
+      },
+      {
+        "name": "Tabua de Passar Roupa",
+        "sub": "casa",
+        "word": "acolchoada",
+        "phrase": "Abre-se com pernas de metal dobráveis para apoiar camisas amassadas.",
+        "words": [
+          "acolchoada",
+          "pernas dobráveis",
+          "suporte de ferro",
+          "altura regulável"
+        ],
+        "phrases": [
+          "Abre-se com pernas de metal dobráveis para apoiar camisas amassadas.",
+          "Suporte de metal na ponta para descansar o ferro quente sem queimar o tecido."
+        ]
+      },
+      {
+        "name": "Cesto de Roupa Suja",
+        "sub": "casa",
+        "word": "vime ou plástico",
+        "phrase": "Guarda roupas usadas ao longo da semana esperando o dia da lavagem.",
+        "words": [
+          "vime ou plástico",
+          "banheiro",
+          "tampa",
+          "lavanderia"
+        ],
+        "phrases": [
+          "Guarda roupas usadas ao longo da semana esperando o dia da lavagem.",
+          "Fica no canto do quarto ou do banheiro acumulando meias e camisetas."
+        ]
+      },
+      {
+        "name": "Varredoura de Piso",
+        "sub": "casa",
+        "word": "cerdas macias",
+        "phrase": "Ferramenta diária mais simples e eficiente para varrer migalhas e poeira.",
+        "words": [
+          "cerdas macias",
+          "cabo longo",
+          "vassoura",
+          "poeira"
+        ],
+        "phrases": [
+          "Ferramenta diária mais simples e eficiente para varrer migalhas e poeira.",
+          "Acompanhada da pá de lixo de plástico para recolher o montinho varrido."
+        ]
+      },
+      {
+        "name": "Mop Giratório",
+        "sub": "casa",
+        "word": "balde com centrífuga",
+        "phrase": "Pisa-se no pedal ou empurra-se o cabo para centrifugar a água suja no balde.",
+        "words": [
+          "balde com centrífuga",
+          "tiras de microfibra",
+          "limpeza fácil",
+          "torcer"
+        ],
+        "phrases": [
+          "Pisa-se no pedal ou empurra-se o cabo para centrifugar a água suja no balde.",
+          "Aposentou o velho pano de chão que precisava ser torcido com as mãos."
+        ]
+      },
+      {
+        "name": "Lixeira com Pedal",
+        "sub": "casa",
+        "word": "pedal de pé",
+        "phrase": "Basta pisar com o pé no pedal para a tampa abrir sem precisar encostar as mãos.",
+        "words": [
+          "pedal de pé",
+          "tampa fechada",
+          "inox",
+          "saco plástico"
+        ],
+        "phrases": [
+          "Basta pisar com o pé no pedal para a tampa abrir sem precisar encostar as mãos.",
+          "Mantém odores desagradáveis presos no interior da cozinha ou do banheiro."
+        ]
+      },
+      {
+        "name": "Descascador de Legumes",
+        "sub": "casa",
+        "word": "lâmina oscilante",
+        "phrase": "Tira cascas transparentes de batatas e cenouras num único movimento suave.",
+        "words": [
+          "lâmina oscilante",
+          "casca fininha",
+          "batata",
+          "cenoura"
+        ],
+        "phrases": [
+          "Tira cascas transparentes de batatas e cenouras num único movimento suave.",
+          "Muitas vezes mais rápido e seguro do que tentar descascar com faca afiada."
+        ]
+      },
+      {
+        "name": "Ralador de Quatro Faces",
+        "sub": "casa",
+        "word": "inox",
+        "phrase": "Torre de metal com quatro frentes diferentes para ralar grosso, fino ou em tiras.",
+        "words": [
+          "inox",
+          "queijo e cenoura",
+          "quatro lados",
+          "ralar"
+        ],
+        "phrases": [
+          "Torre de metal com quatro frentes diferentes para ralar grosso, fino ou em tiras.",
+          "Cuidado para não ralar as pontas dos dedos quando o pedaço de queijo fica pequeno."
+        ]
+      },
+      {
+        "name": "Abridor de Latas Manual",
+        "sub": "casa",
+        "word": "borboleta",
+        "phrase": "Encaixa na beirada de metal girando a borboleta para cortar a tampa redonda.",
+        "words": [
+          "borboleta",
+          "rodinha afiada",
+          "milho e leite condensado",
+          "gira"
+        ],
+        "phrases": [
+          "Encaixa na beirada de metal girando a borboleta para cortar a tampa redonda.",
+          "Ferramenta essencial da gaveta da cozinha para abrir conservas."
+        ]
+      },
+      {
+        "name": "Bule de Café Esmaltado",
+        "sub": "casa",
+        "word": "bico longo",
+        "phrase": "Bico fino tradicional que joga água quente em círculos sobre o pó de café.",
+        "words": [
+          "bico longo",
+          "água fervendo",
+          "coador",
+          "antigo"
+        ],
+        "phrases": [
+          "Bico fino tradicional que joga água quente em círculos sobre o pó de café.",
+          "Lembrança viva das cozinhas de fazenda com pintura esmaltada colorida."
+        ]
+      },
+      {
+        "name": "Fruteira de Chão",
+        "sub": "casa",
+        "word": "três andares",
+        "phrase": "Cestos aramados empilhados guardando frutas frescas e cebolas na cozinha.",
+        "words": [
+          "três andares",
+          "bananas e maçãs",
+          "aramada",
+          "cozinha"
+        ],
+        "phrases": [
+          "Cestos aramados empilhados guardando frutas frescas e cebolas na cozinha.",
+          "Deixa as bananas amadurecerem ao ar livre ao alcance de qualquer um."
+        ]
+      },
+      {
+        "name": "Porta-Temperos Giratório",
+        "sub": "casa",
+        "word": "potinhos de vidro",
+        "phrase": "Carrossel de potinhos transparentes com nomes de especiarias e ervas secas.",
+        "words": [
+          "potinhos de vidro",
+          "orégano e pimenta",
+          "base giratória",
+          "bancada"
+        ],
+        "phrases": [
+          "Carrossel de potinhos transparentes com nomes de especiarias e ervas secas.",
+          "Gira na bancada facilitando encontrar a páprica ou o cominho na hora de cozinhar."
+        ]
+      },
+      {
+        "name": "Pote Hermético de Vidro",
+        "sub": "casa",
+        "word": "trava de metal",
+        "phrase": "Tampa de vidro com borracha de vedação que não deixa entrar ar nem umidade.",
+        "words": [
+          "trava de metal",
+          "borracha de vedação",
+          "mantimentos",
+          "formiga"
+        ],
+        "phrases": [
+          "Tampa de vidro com borracha de vedação que não deixa entrar ar nem umidade.",
+          "Guarda biscoitos crocantes e grãos de café longe de formigas e pragas."
+        ]
+      },
+      {
+        "name": "Forma de Gelo de Silicone",
+        "sub": "casa",
+        "word": "cubos perfeitos",
+        "phrase": "Basta empurrar o fundo flexível com o dedo para o cubo de gelo sair intacto.",
+        "words": [
+          "cubos perfeitos",
+          "dobrável",
+          "congelador",
+          "fácil de tirar"
+        ],
+        "phrases": [
+          "Basta empurrar o fundo flexível com o dedo para o cubo de gelo sair intacto.",
+          "Acabou com a briga de bater formas de plástico duras na pia para soltar o gelo."
+        ]
+      },
+      {
+        "name": "Garfo de Churrasco Longo",
+        "sub": "casa",
+        "word": "dois dentes",
+        "phrase": "Cabo comprido de madeira para virar peças pesadas na grelha sem queimar a mão.",
+        "words": [
+          "dois dentes",
+          "cabo de madeira",
+          "brasa",
+          "virar carne"
+        ],
+        "phrases": [
+          "Cabo comprido de madeira para virar peças pesadas na grelha sem queimar a mão.",
+          "Dois dentes de aço maciço que seguram a picanha com firmeza."
+        ]
+      },
+      {
+        "name": "Pegador de Salada",
+        "sub": "casa",
+        "word": "pinça de inox",
+        "phrase": "Funciona como uma pinça gigante para pegar folhas e tomates sem esmagar.",
+        "words": [
+          "pinça de inox",
+          "folhas de alface",
+          "mola",
+          "servir"
+        ],
+        "phrases": [
+          "Funciona como uma pinça gigante para pegar folhas e tomates sem esmagar.",
+          "Presente em todas as mesas de almoço ao lado da travessa de salada mista."
+        ]
+      },
+      {
+        "name": "Toalha de Banho Gigante",
+        "sub": "casa",
+        "word": "algodão macio",
+        "phrase": "Abraça o corpo inteiro com algodão felpudo ao sair do chuveiro quente.",
+        "words": [
+          "algodão macio",
+          "felpuda",
+          "enxugar",
+          "banho quente"
+        ],
+        "phrases": [
+          "Abraça o corpo inteiro com algodão felpudo ao sair do chuveiro quente.",
+          "Pendurada no box secando devagar até o próximo banho do dia."
+        ]
+      },
+      {
+        "name": "Tapete de Banheiro Antiderrapante",
+        "sub": "casa",
+        "word": "ventosas no chão",
+        "phrase": "Borracha com ventosas coladas no chão do box para ninguém escorregar no sabão.",
+        "words": [
+          "ventosas no chão",
+          "box molhado",
+          "sem escorregar",
+          "segurança"
+        ],
+        "phrases": [
+          "Borracha com ventosas coladas no chão do box para ninguém escorregar no sabão.",
+          "Item de segurança indispensável especialmente para crianças e idosos."
+        ]
+      },
+      {
+        "name": "Saboneteira de Cerâmica",
+        "sub": "casa",
+        "word": "furos de drenagem",
+        "phrase": "Bandejinha elegante com furinhos para a água escorrer e o sabonete não virar pasta.",
+        "words": [
+          "furos de drenagem",
+          "bancada da pia",
+          "sabonete",
+          "banheiro"
+        ],
+        "phrases": [
+          "Bandejinha elegante com furinhos para a água escorrer e o sabonete não virar pasta.",
+          "Combina com a decoração da pia do banheiro social."
+        ]
+      },
+      {
+        "name": "Cabide de Veludo",
+        "sub": "casa",
+        "word": "não escorrega",
+        "phrase": "Revestimento aveludado que impede que camisas de seda caiam no chão do armário.",
+        "words": [
+          "não escorrega",
+          "fino",
+          "guarda-roupa",
+          "camisas"
+        ],
+        "phrases": [
+          "Revestimento aveludado que impede que camisas de seda caiam no chão do armário.",
+          "Ocupa pouco espaço permitindo pendurar o dobro de roupas no varal interno."
+        ]
+      },
+      {
+        "name": "Espelho de Corpo Inteiro",
+        "sub": "casa",
+        "word": "reflexo completo",
+        "phrase": "Mostra a combinação dos sapatos até o chapéu antes de sair de casa.",
+        "words": [
+          "reflexo completo",
+          "porta do guarda-roupa",
+          "moldura",
+          "olhar o look"
+        ],
+        "phrases": [
+          "Mostra a combinação dos sapatos até o chapéu antes de sair de casa.",
+          "Amplia a sensação de espaço quando pendurado na parede do quarto."
+        ]
+      },
+      {
+        "name": "Relógio de Parede de Sala",
+        "sub": "casa",
+        "word": "ponteiro dos segundos",
+        "phrase": "O tique-taque ritmado que quebra o silêncio nas tardes tranquilas de domingo.",
+        "words": [
+          "ponteiro dos segundos",
+          "pilha aa",
+          "tique-taque",
+          "números grandes"
+        ],
+        "phrases": [
+          "O tique-taque ritmado que quebra o silêncio nas tardes tranquilas de domingo.",
+          "Dita os horários da casa com números grandes visíveis de longe."
+        ]
+      },
+      {
+        "name": "Manta de Sofá de Algodão",
+        "sub": "casa",
+        "word": "franjas",
+        "phrase": "Jogada sobre o encosto do sofá para cobrir as pernas nos dias frios de chuva.",
+        "words": [
+          "franjas",
+          "quentinha",
+          "televisão",
+          "proteger o tecido"
+        ],
+        "phrases": [
+          "Jogada sobre o encosto do sofá para cobrir as pernas nos dias frios de chuva.",
+          "Protege o estofado de manchas e pelos de animais domésticos."
+        ]
+      },
+      {
+        "name": "Almofada Decorativa",
+        "sub": "casa",
+        "word": "enchimento fofo",
+        "phrase": "Traz cor e aconchego para a sala servindo de apoio para tirar uma soneca.",
+        "words": [
+          "enchimento fofo",
+          "estampa",
+          "sofá",
+          "apoio de cabeça"
+        ],
+        "phrases": [
+          "Traz cor e aconchego para a sala servindo de apoio para tirar uma soneca.",
+          "Crianças costumam usar para montar fortes de travesseiro no meio da sala."
+        ]
+      },
+      {
+        "name": "Vaso de Planta de Cerâmica",
+        "sub": "casa",
+        "word": "terra vegetal",
+        "phrase": "Acomoda samambaias e orquídeas trazendo um pedacinho da natureza para dentro de casa.",
+        "words": [
+          "terra vegetal",
+          "folhas verdes",
+          "pratinho",
+          "rega"
+        ],
+        "phrases": [
+          "Acomoda samambaias e orquídeas trazendo um pedacinho da natureza para dentro de casa.",
+          "Pratinho na base para recolher a água que escorre da rega matinal."
+        ]
+      },
+      {
+        "name": "Regador de Bico Fino",
+        "sub": "casa",
+        "word": "chuveirinho",
+        "phrase": "Bico longo que alcança vasos altos sem derramar água nas folhas delicadas.",
+        "words": [
+          "chuveirinho",
+          "jardim",
+          "água nas raízes",
+          "plantas"
+        ],
+        "phrases": [
+          "Bico longo que alcança vasos altos sem derramar água nas folhas delicadas.",
+          "Companheiro matinal de quem cuida de hortas e jardins na varanda."
+        ]
+      },
+      {
+        "name": "Martelo de Borracha",
+        "sub": "ferramentas",
+        "word": "sem marcas",
+        "phrase": "Bate em pisos e azulejos novos assentando a argamassa sem quebrar a cerâmica.",
+        "words": [
+          "sem marcas",
+          "assentar piso",
+          "pesado",
+          "impacto suave"
+        ],
+        "phrases": [
+          "Bate em pisos e azulejos novos assentando a argamassa sem quebrar a cerâmica.",
+          "Usado também na marcenaria para encaixar peças sem riscar a madeira."
+        ]
+      },
+      {
+        "name": "Marreta de Cinco Quilos",
+        "sub": "ferramentas",
+        "word": "demolição",
+        "phrase": "Ferramenta pesada de demolição que derruba paredes de alvenaria com poucos golpes.",
+        "words": [
+          "demolição",
+          "cabo de madeira longo",
+          "aço maciço",
+          "derrubar parede"
+        ],
+        "phrases": [
+          "Ferramenta pesada de demolição que derruba paredes de alvenaria com poucos golpes.",
+          "Exige as duas mãos e braços fortes para erguer e golpear a estrutura."
+        ]
+      },
+      {
+        "name": "Talhadeira de Aço",
+        "sub": "ferramentas",
+        "word": "ponta chanfrada",
+        "phrase": "Barra de aço hexagonal com ponta cortante que abre valas no concreto duro.",
+        "words": [
+          "ponta chanfrada",
+          "quebrar concreto",
+          "marretadas",
+          "entalhe"
+        ],
+        "phrases": [
+          "Barra de aço hexagonal com ponta cortante que abre valas no concreto duro.",
+          "Recebe golpes diretos da marreta na cabeça achatada de metal."
+        ]
+      },
+      {
+        "name": "Ponteiro de Pedreiro",
+        "sub": "ferramentas",
+        "word": "ponta afiada",
+        "phrase": "Ponta piramidal afiada para furar blocos e abrir caminhos para canos nas paredes.",
+        "words": [
+          "ponta afiada",
+          "perfurar pedra",
+          "aço temperado",
+          "concreto"
+        ],
+        "phrases": [
+          "Ponta piramidal afiada para furar blocos e abrir caminhos para canos nas paredes.",
+          "Conduz toda a força do impacto da marreta em um único ponto exato."
+        ]
+      },
+      {
+        "name": "Desempenadeira Dentada",
+        "sub": "ferramentas",
+        "word": "dentes de aço",
+        "phrase": "Espalha cimento e cola criando sulcos perfeitos para assentar revestimentos.",
+        "words": [
+          "dentes de aço",
+          "argamassa",
+          "cordões",
+          "azulejista"
+        ],
+        "phrases": [
+          "Espalha cimento e cola criando sulcos perfeitos para assentar revestimentos.",
+          "Lâmina retangular com cabo de madeira usada pelos melhores azulejistas."
+        ]
+      },
+      {
+        "name": "Colher de Pedreiro",
+        "sub": "ferramentas",
+        "word": "formato triangular",
+        "phrase": "A extensão natural da mão do operário da construção assentando fileiras de tijolos.",
+        "words": [
+          "formato triangular",
+          "jogar massa",
+          "chapisco",
+          "tijolos"
+        ],
+        "phrases": [
+          "A extensão natural da mão do operário da construção assentando fileiras de tijolos.",
+          "Arremessa massa de cimento com precisão cirúrgica na parede crua."
+        ]
+      },
+      {
+        "name": "Prumo de Parede",
+        "sub": "ferramentas",
+        "word": "peso de chumbo",
+        "phrase": "Peso de metal cônico suspenso por um fio para garantir que a parede não fique torta.",
+        "words": [
+          "peso de chumbo",
+          "cordão fino",
+          "alinhamento vertical",
+          "sem tombar"
+        ],
+        "phrases": [
+          "Peso de metal cônico suspenso por um fio para garantir que a parede não fique torta.",
+          "A gravidade pura indicando se o muro está subindo reto em relação ao solo."
+        ]
+      },
+      {
+        "name": "Linha de Pedreiro",
+        "sub": "ferramentas",
+        "word": "nylon trançado",
+        "phrase": "Fio de nylon amarelo fluorescente bem esticado servindo de guia visual para os tijolos.",
+        "words": [
+          "nylon trançado",
+          "esticada entre pregos",
+          "nível",
+          "reta"
+        ],
+        "phrases": [
+          "Fio de nylon amarelo fluorescente bem esticado servindo de guia visual para os tijolos.",
+          "Garante que o alicerce e as paredes fiquem numa linha reta perfeita."
+        ]
+      },
+      {
+        "name": "Nível a Laser",
+        "sub": "ferramentas",
+        "word": "feixe vermelho",
+        "phrase": "Projeta linhas luminosas retas nas paredes de toda a sala ao mesmo tempo.",
+        "words": [
+          "feixe vermelho",
+          "360 graus",
+          "tripé",
+          "alinhamento perfeito"
+        ],
+        "phrases": [
+          "Projeta linhas luminosas retas nas paredes de toda a sala ao mesmo tempo.",
+          "Aposentou mangueiras de nível antigas na instalação de forros e quadros."
+        ]
+      },
+      {
+        "name": "Mangueira de Nível",
+        "sub": "ferramentas",
+        "word": "água e bolhas",
+        "phrase": "Mangueira plástica fina cheia de água que usa a física para marcar alturas iguais.",
+        "words": [
+          "água e bolhas",
+          "vasos comunicantes",
+          "transparente",
+          "física"
+        ],
+        "phrases": [
+          "Mangueira plástica fina cheia de água que usa a física para marcar alturas iguais.",
+          "A água nivela na mesma altura exata nas duas pontas distantes da obra."
+        ]
+      },
+      {
+        "name": "Grampeador de Tapeceiro",
+        "sub": "ferramentas",
+        "word": "grampos de metal",
+        "phrase": "Dispara grampos de aço reforçado fixando tecidos grossos na madeira do sofá.",
+        "words": [
+          "grampos de metal",
+          "estofados",
+          "pressão de mola",
+          "tecido"
+        ],
+        "phrases": [
+          "Dispara grampos de aço reforçado fixando tecidos grossos na madeira do sofá.",
+          "Ouvido frequentemente nas oficinas reformando cadeiras e poltronas antigas."
+        ]
+      },
+      {
+        "name": "Pistola de Cola Quente",
+        "sub": "ferramentas",
+        "word": "bastão de silicone",
+        "phrase": "Derrete tubos transparentes de silicone unindo papelão, tecido e plástico em segundos.",
+        "words": [
+          "bastão de silicone",
+          "bico quente",
+          "artesanato",
+          "derreter"
+        ],
+        "phrases": [
+          "Derrete tubos transparentes de silicone unindo papelão, tecido e plástico em segundos.",
+          "A ferramenta favorita de quem faz trabalhos manuais e maquetes escolares."
+        ]
+      },
+      {
+        "name": "Serra Tico-Tico",
+        "sub": "ferramentas",
+        "word": "lâmina vertical",
+        "phrase": "Lâmina fininha que sobe e desce cortando curvas sinuosas em tábuas de madeira.",
+        "words": [
+          "lâmina vertical",
+          "cortes curvos",
+          "madeira",
+          "motor elétrico"
+        ],
+        "phrases": [
+          "Lâmina fininha que sobe e desce cortando curvas sinuosas em tábuas de madeira.",
+          "Permite recortar letras e formatos circulares sem quebrar a peça."
+        ]
+      },
+      {
+        "name": "Serra Circular de Bancada",
+        "sub": "ferramentas",
+        "word": "disco dentado",
+        "phrase": "Disco giratório de dentes afiados que rasga tábuas compridas num piscar de olhos.",
+        "words": [
+          "disco dentado",
+          "guia reta",
+          "serragem",
+          "corte rápido"
+        ],
+        "phrases": [
+          "Disco giratório de dentes afiados que rasga tábuas compridas num piscar de olhos.",
+          "Levanta uma nuvem de pó perfumado de madeira na oficina de carpintaria."
+        ]
+      },
+      {
+        "name": "Esmerilhadeira Angular",
+        "sub": "ferramentas",
+        "word": "disco de corte",
+        "phrase": "Gira discos abrasivos a mais de dez mil rotações soltando uma chuva de faíscas.",
+        "words": [
+          "disco de corte",
+          "faíscas voando",
+          "aço e ferro",
+          "desbaste"
+        ],
+        "phrases": [
+          "Gira discos abrasivos a mais de dez mil rotações soltando uma chuva de faíscas.",
+          "Corta vergalhões de ferro e desbasta soldas grosseiras com facilidade."
+        ]
+      },
+      {
+        "name": "Furadeira de Impacto",
+        "sub": "ferramentas",
+        "word": "broca de vídia",
+        "phrase": "Gira e martela a parede ao mesmo tempo para abrir buracos em tijolos e concreto.",
+        "words": [
+          "broca de vídia",
+          "martelete",
+          "furo no concreto",
+          "bucha"
+        ],
+        "phrases": [
+          "Gira e martela a parede ao mesmo tempo para abrir buracos em tijolos e concreto.",
+          "O som mais conhecido que faz os vizinhos reclamarem nas manhãs de sábado."
+        ]
+      },
+      {
+        "name": "Parafusadeira a Bateria",
+        "sub": "ferramentas",
+        "word": "torque regulável",
+        "phrase": "Aperta e solta dezenas de parafusos sem cansar o pulso na montagem do armário.",
+        "words": [
+          "torque regulável",
+          "bits magnéticos",
+          "montar móveis",
+          "reversão"
+        ],
+        "phrases": [
+          "Aperta e solta dezenas de parafusos sem cansar o pulso na montagem do armário.",
+          "Possui luzinha frontal e controle fino de força no gatilho."
+        ]
+      },
+      {
+        "name": "Jogo de Brocas Variadas",
+        "sub": "ferramentas",
+        "word": "madeira aço e vídia",
+        "phrase": "Estojo organizado com pontas de diferentes tamanhos para furar metal, madeira ou parede.",
+        "words": [
+          "madeira aço e vídia",
+          "estojo",
+          "diâmetros",
+          "afiação"
+        ],
+        "phrases": [
+          "Estojo organizado com pontas de diferentes tamanhos para furar metal, madeira ou parede.",
+          "Ponta de vídia achatada para concreto e ponta fina com guia para madeira."
+        ]
+      },
+      {
+        "name": "Chave Allen (Sextavada)",
+        "sub": "ferramentas",
+        "word": "formato em l",
+        "phrase": "Hastes de aço em formato de L com pontas hexagonais de encaixe perfeito.",
+        "words": [
+          "formato em l",
+          "seis lados",
+          "móveis desmontáveis",
+          "bicicleta"
+        ],
+        "phrases": [
+          "Hastes de aço em formato de L com pontas hexagonais de encaixe perfeito.",
+          "A ferramenta que sempre vem dentro das caixas de móveis para montar em casa."
+        ]
+      },
+      {
+        "name": "Chave Torx (Estrela)",
+        "sub": "ferramentas",
+        "word": "seis pontas",
+        "phrase": "Ponta com formato de estrela de seis pontas usada em motores de carros e celulares.",
+        "words": [
+          "seis pontas",
+          "automotivo",
+          "eletrônicos",
+          "parafuso de precisão"
+        ],
+        "phrases": [
+          "Ponta com formato de estrela de seis pontas usada em motores de carros e celulares.",
+          "Não escorrega nem desgasta a cabeça do parafuso mesmo com aperto forte."
+        ]
+      },
+      {
+        "name": "Chave Soquete com Catraca",
+        "sub": "ferramentas",
+        "word": "estalos da catraca",
+        "phrase": "Permite apertar porcas em locais apertados sem precisar tirar a chave do parafuso.",
+        "words": [
+          "estalos da catraca",
+          "bocas intercambiáveis",
+          "mecânica",
+          "aperto rápido"
+        ],
+        "phrases": [
+          "Permite apertar porcas em locais apertados sem precisar tirar a chave do parafuso.",
+          "O som ritmado dos dentes da catraca girando na oficina mecânica."
+        ]
+      },
+      {
+        "name": "Torquímetro de Precisão",
+        "sub": "ferramentas",
+        "word": "quilos de aperto",
+        "phrase": "Aperta os parafusos do motor do carro com a força exata exigida pelo manual.",
+        "words": [
+          "quilos de aperto",
+          "estalo de torque",
+          "cabeçote do motor",
+          "medidor"
+        ],
+        "phrases": [
+          "Aperta os parafusos do motor do carro com a força exata exigida pelo manual.",
+          "Emite um estalo metálico no momento em que atinge o torque programado."
+        ]
+      },
+      {
+        "name": "Prensa Hidráulica",
+        "sub": "ferramentas",
+        "word": "toneladas de força",
+        "phrase": "Alavanca manual que aciona pistão de óleo capaz de exercer toneladas de pressão.",
+        "words": [
+          "toneladas de força",
+          "pistão de óleo",
+          "rolamentos",
+          "esmaga"
+        ],
+        "phrases": [
+          "Alavanca manual que aciona pistão de óleo capaz de exercer toneladas de pressão.",
+          "Saca rolamentos travados de eixos mecânicos sem amassar a peça."
+        ]
+      },
+      {
+        "name": "Cravejador de Rebite (Rebitadeira)",
+        "sub": "ferramentas",
+        "word": "duas alavancas",
+        "phrase": "Une duas chapas finas de metal puxando um pino de alumínio até ele quebrar.",
+        "words": [
+          "duas alavancas",
+          "pino de alumínio",
+          "calhas",
+          "estalo"
+        ],
+        "phrases": [
+          "Une duas chapas finas de metal puxando um pino de alumínio até ele quebrar.",
+          "Muito usada na instalação de calhas de telhado e funilaria de veículos."
+        ]
+      },
+      {
+        "name": "Extrator de Parafuso Quebrado",
+        "sub": "ferramentas",
+        "word": "rosca contrária",
+        "phrase": "Entra com rosca esquerda no furo do parafuso quebrado para desrosquear a peça travada.",
+        "words": [
+          "rosca contrária",
+          "salvação",
+          "parafuso espanado",
+          "broca"
+        ],
+        "phrases": [
+          "Entra com rosca esquerda no furo do parafuso quebrado para desrosquear a peça travada.",
+          "A salvação do mecânico quando a cabeça do parafuso quebrou rente ao bloco."
+        ]
+      },
+      {
+        "name": "Carteira de Couro Masculina",
+        "sub": "pessoal",
+        "word": "bolso traseiro",
+        "phrase": "Guarda a carteira de motorista, cartões magnéticos e notas dobradas no bolso.",
+        "words": [
+          "bolso traseiro",
+          "cartões e cédulas",
+          "documentos",
+          "dobrável"
+        ],
+        "phrases": [
+          "Guarda a carteira de motorista, cartões magnéticos e notas dobradas no bolso.",
+          "Ganha marcas de uso e formato curvado com o passar dos anos de uso diário."
+        ]
+      },
+      {
+        "name": "Bolsa Feminina Transversal",
+        "sub": "pessoal",
+        "word": "alça de ombro",
+        "phrase": "Parece carregar um universo inteiro de remédios, lenços, chaves e carteira.",
+        "words": [
+          "alça de ombro",
+          "zíper",
+          "maquiagem e chaves",
+          "espaço infinito"
+        ],
+        "phrases": [
+          "Parece carregar um universo inteiro de remédios, lenços, chaves e carteira.",
+          "Cruzada sobre o peito para caminhar com as mãos livres pelas ruas da cidade."
+        ]
+      },
+      {
+        "name": "Guarda-Chuva Automático",
+        "sub": "pessoal",
+        "word": "botão que abre",
+        "phrase": "Aperta-se um botão no cabo e ele se abre de uma vez com um estalo metálico.",
+        "words": [
+          "botão que abre",
+          "tecido impermeável",
+          "vento virando",
+          "chuva"
+        ],
+        "phrases": [
+          "Aperta-se um botão no cabo e ele se abre de uma vez com um estalo metálico.",
+          "A luta constante para não deixar o vento virar a armação de cabeça para baixo."
+        ]
+      },
+      {
+        "name": "Garrafa de Água Térmica",
+        "sub": "pessoal",
+        "word": "vácuo",
+        "phrase": "Mantém a água com gelo por vinte e quatro horas mesmo dentro do carro quente.",
+        "words": [
+          "vácuo",
+          "inox",
+          "água gelada",
+          "academia"
+        ],
+        "phrases": [
+          "Mantém a água com gelo por vinte e quatro horas mesmo dentro do carro quente.",
+          "Companheira inseparável de quem treina na academia e trabalha no computador."
+        ]
+      },
+      {
+        "name": "Mochila Executiva Impermeável",
+        "sub": "pessoal",
+        "word": "compartimento de notebook",
+        "phrase": "Tecido preto resistente à água com bolso protegido para transportar o computador.",
+        "words": [
+          "compartimento de notebook",
+          "alças acolchoadas",
+          "porta usb",
+          "trabalho"
+        ],
+        "phrases": [
+          "Tecido preto resistente à água com bolso protegido para transportar o computador.",
+          "Alças largas que distribuem o peso nas costas durante o trajeto no metrô."
+        ]
+      },
+      {
+        "name": "Óculos de Grau com Armação",
+        "sub": "pessoal",
+        "word": "lentes corretivas",
+        "phrase": "A primeira coisa procurada com a mão tateando a cabeceira ao acordar pela manhã.",
+        "words": [
+          "lentes corretivas",
+          "miopia",
+          "hastes atrás da orelha",
+          "limpar na camisa"
+        ],
+        "phrases": [
+          "A primeira coisa procurada com a mão tateando a cabeceira ao acordar pela manhã.",
+          "Corrige a visão e faz parte da identidade visual no rosto de quem usa."
+        ]
+      },
+      {
+        "name": "Estojo de Óculos Rígido",
+        "sub": "pessoal",
+        "word": "flanelinha de microfibra",
+        "phrase": "Caixinha dura forrada de veludo que protege as lentes de riscos na mochila.",
+        "words": [
+          "flanelinha de microfibra",
+          "mola que bate",
+          "proteção",
+          "bolsa"
+        ],
+        "phrases": [
+          "Caixinha dura forrada de veludo que protege as lentes de riscos na mochila.",
+          "Fecha com um estalo forte prendendo a flanela de limpeza dentro."
+        ]
+      },
+      {
+        "name": "Porta-Cartões Metálico com Ejetor",
+        "sub": "pessoal",
+        "word": "gatilho",
+        "phrase": "Puxa-se uma pequena alavanca na base e os cartões saltam em leque ordenado.",
+        "words": [
+          "gatilho",
+          "cartões em leque",
+          "alumínio",
+          "anti rfid"
+        ],
+        "phrases": [
+          "Puxa-se uma pequena alavanca na base e os cartões saltam em leque ordenado.",
+          "Protege contra clonagens por aproximação com bloqueio metálico de ondas."
+        ]
+      },
+      {
+        "name": "Caneta Tinteiro Clássica",
+        "sub": "pessoal",
+        "word": "pena de metal",
+        "phrase": "Desliza suavemente sobre o papel deixando um traço nobre de tinta azul ou preta.",
+        "words": [
+          "pena de metal",
+          "tinta líquida",
+          "assinatura de contratos",
+          "luxo"
+        ],
+        "phrases": [
+          "Desliza suavemente sobre o papel deixando um traço nobre de tinta azul ou preta.",
+          "Usada para assinar documentos solenes e cartas com caligrafia caprichada."
+        ]
+      },
+      {
+        "name": "Agenda de Couro com Marcador",
+        "sub": "pessoal",
+        "word": "fita de cetim",
+        "phrase": "Guarda metas, compromissos e pensamentos do ano organizados por datas.",
+        "words": [
+          "fita de cetim",
+          "página por dia",
+          "anotações",
+          "planejamento"
+        ],
+        "phrases": [
+          "Guarda metas, compromissos e pensamentos do ano organizados por datas.",
+          "Fita de cetim costurada na lombada marcando o dia de hoje."
+        ]
+      },
+      {
+        "name": "Chaveiro com Várias Chaves",
+        "sub": "pessoal",
+        "word": "barulho metálico",
+        "phrase": "O tinir de metais no bolso que avisa que alguém da família chegou em casa.",
+        "words": [
+          "barulho metálico",
+          "argola",
+          "casa e portão",
+          "abrir porta"
+        ],
+        "phrases": [
+          "O tinir de metais no bolso que avisa que alguém da família chegou em casa.",
+          "Argola com chave da porta da frente, do portão e a chave tetra reforçada."
+        ]
+      },
+      {
+        "name": "Cordão com Crachá",
+        "sub": "pessoal",
+        "word": "catraca da empresa",
+        "phrase": "Pendurado no pescoço abrindo portas automáticas e catracas no prédio comercial.",
+        "words": [
+          "catraca da empresa",
+          "pescoço",
+          "foto 3x4",
+          "rolete"
+        ],
+        "phrases": [
+          "Pendurado no pescoço abrindo portas automáticas e catracas no prédio comercial.",
+          "Muitos esquecem no pescoço e vão almoçar no restaurante por quilo assim mesmo."
+        ]
+      },
+      {
+        "name": "Fones de Ouvido com Fio P2",
+        "sub": "pessoal",
+        "word": "nó no bolso",
+        "phrase": "Nunca precisam ser recarregados na tomada, mas saem misteriosamente embolados do bolso.",
+        "words": [
+          "nó no bolso",
+          "borrachinhas",
+          "sem bateria",
+          "plugue"
+        ],
+        "phrases": [
+          "Nunca precisam ser recarregados na tomada, mas saem misteriosamente embolados do bolso.",
+          "O companheiro nostálgico dos velhos tocadores de MP3 portáteis."
+        ]
+      },
+      {
+        "name": "Bálsamo Labial (Manteiga de Cacau)",
+        "sub": "pessoal",
+        "word": "lábios rachados",
+        "phrase": "Pequeno tubinho que protege a boca contra rachaduras nos dias secos e frios.",
+        "words": [
+          "lábios rachados",
+          "inverno",
+          "bastãozinho",
+          "hidratação"
+        ],
+        "phrases": [
+          "Pequeno tubinho que protege a boca contra rachaduras nos dias secos e frios.",
+          "Desliza suavemente nos lábios com cheirinho doce característico."
+        ]
+      },
+      {
+        "name": "Cortador de Charutos",
+        "sub": "pessoal",
+        "word": "guilhotina dupla",
+        "phrase": "Pequena guilhotina de mão que corta a ponta do fumo com precisão milimétrica.",
+        "words": [
+          "guilhotina dupla",
+          "aço afiado",
+          "fumo",
+          "corte limpo"
+        ],
+        "phrases": [
+          "Pequena guilhotina de mão que corta a ponta do fumo com precisão milimétrica.",
+          "Acessório clássico guardado em caixas de cedro ao lado do isqueiro."
+        ]
+      },
+      {
+        "name": "Pente de Madeira para Barba",
+        "sub": "pessoal",
+        "word": "dentes finos",
+        "phrase": "Não gera eletricidade estática nos pelos, alinhando a barba com facilidade.",
+        "words": [
+          "dentes finos",
+          "antiestático",
+          "alinhar fios",
+          "bolso"
+        ],
+        "phrases": [
+          "Não gera eletricidade estática nos pelos, alinhando a barba com facilidade.",
+          "Cabe no bolso da camisa para arrumar o visual rapidamente no espelho."
+        ]
+      },
+      {
+        "name": "Espelho de Bolsa Duplo",
+        "sub": "pessoal",
+        "word": "um de aumento",
+        "phrase": "Abre como uma conchinha mostrando um reflexo normal e outro com aumento.",
+        "words": [
+          "um de aumento",
+          "dobradiça",
+          "retocar maquiagem",
+          "redondo"
+        ],
+        "phrases": [
+          "Abre como uma conchinha mostrando um reflexo normal e outro com aumento.",
+          "Usado para retocar o batom ou tirar um cisco incômodo do olho na rua."
+        ]
+      },
+      {
+        "name": "Presilha de Cabelo (Piranha)",
+        "sub": "pessoal",
+        "word": "dentes de plástico",
+        "phrase": "Mola forte que prende todo o cabelo num coque rápido em menos de dois segundos.",
+        "words": [
+          "dentes de plástico",
+          "mola forte",
+          "coque rápido",
+          "banho"
+        ],
+        "phrases": [
+          "Mola forte que prende todo o cabelo num coque rápido em menos de dois segundos.",
+          "Toda mulher tem várias espalhadas pela casa, no carro e na bolsa."
+        ]
+      },
+      {
+        "name": "Elástico de Cabelo (Xuxinha)",
+        "sub": "pessoal",
+        "word": "rabo de cavalo",
+        "phrase": "Mora no pulso da mão para estar sempre pronta quando bater o calor.",
+        "words": [
+          "rabo de cavalo",
+          "tecido elástico",
+          "pulso",
+          "prender"
+        ],
+        "phrases": [
+          "Mora no pulso da mão para estar sempre pronta quando bater o calor.",
+          "Item mais fácil de se perder no mundo, sumindo misteriosamente nos cômodos."
+        ]
+      },
+      {
+        "name": "Lixa de Unha de Papel",
+        "sub": "pessoal",
+        "word": "dois lados",
+        "phrase": "Lado áspero para diminuir o tamanho e lado fino para acertar as beiradinhas.",
+        "words": [
+          "dois lados",
+          "áspera",
+          "acabamento",
+          "descartável"
+        ],
+        "phrases": [
+          "Lado áspero para diminuir o tamanho e lado fino para acertar as beiradinhas.",
+          "Salva a vida quando uma unha quebra e fica enroscando nas roupas de lã."
+        ]
+      },
+      {
+        "name": "Pinça de Sobrancelha",
+        "sub": "pessoal",
+        "word": "ponta chanfrada",
+        "phrase": "Puxa pequenos pelos indesejados pela raiz com um puxão certeiro.",
+        "words": [
+          "ponta chanfrada",
+          "arrancar fio",
+          "precisão",
+          "espelho"
+        ],
+        "phrases": [
+          "Puxa pequenos pelos indesejados pela raiz com um puxão certeiro.",
+          "Instrumento delicado guardado no estojo de maquiagem."
+        ]
+      },
+      {
+        "name": "Anel de Prata Solitário",
+        "sub": "pessoal",
+        "word": "aro fino",
+        "phrase": "Aro delicado e brilhante usado no dedo anelar com significado sentimental.",
+        "words": [
+          "aro fino",
+          "brilho elegante",
+          "dedo",
+          "presente"
+        ],
+        "phrases": [
+          "Aro delicado e brilhante usado no dedo anelar com significado sentimental.",
+          "Presente clássico de quinze anos ou declaração de compromisso afetuoso."
+        ]
+      },
+      {
+        "name": "Pulseira de Couro Trançada",
+        "sub": "pessoal",
+        "word": "fecho magnético",
+        "phrase": "Tiras finas de couro entrelaçadas trazendo um visual despojado ao antebraço.",
+        "words": [
+          "fecho magnético",
+          "pulso",
+          "estilo casual",
+          "acessório"
+        ],
+        "phrases": [
+          "Tiras finas de couro entrelaçadas trazendo um visual despojado ao antebraço.",
+          "Usa fecho de ímã metálico que encaixa com um clique firme."
+        ]
+      },
+      {
+        "name": "Corrente de Ouro com Pingente",
+        "sub": "pessoal",
+        "word": "elos brilhantes",
+        "phrase": "Elos dourados que brilham sobre a pele com uma medalhinha protetora.",
+        "words": [
+          "elos brilhantes",
+          "pescoço",
+          "crucifixo",
+          "joalheria"
+        ],
+        "phrases": [
+          "Elos dourados que brilham sobre a pele com uma medalhinha protetora.",
+          "Herança passada de pai para filho com enorme valor emocional."
+        ]
+      },
+      {
+        "name": "Aliança de Casamento",
+        "sub": "pessoal",
+        "word": "ouro amarelo",
+        "phrase": "Aro circular sem começo nem fim gravado com a data mais importante do casal.",
+        "words": [
+          "ouro amarelo",
+          "nome gravado por dentro",
+          "dedo anelar",
+          "união"
+        ],
+        "phrases": [
+          "Aro circular sem começo nem fim gravado com a data mais importante do casal.",
+          "Usada no dedo anelar esquerdo como testemunho diário de um juramento de amor."
+        ]
       }
     ]
   },
@@ -11482,6 +18517,1734 @@ const THEME_DATABASE = {
         ],
         "word": "submersa",
         "phrase": "Civilização lendária avançada que teria afundado para sempre em um único dia."
+      },
+      {
+        "name": "Cataratas do Niágara",
+        "sub": "natureza",
+        "word": "queda",
+        "phrase": "Fronteira com estrondosa massa d'água e passeios de barco sob neblina.",
+        "words": [
+          "queda",
+          "fronteira",
+          "névoa",
+          "balsa"
+        ],
+        "phrases": [
+          "Fronteira com estrondosa massa d'água e passeios de barco sob neblina.",
+          "Gigantesca cascata binacional que atrai milhões pelo volume impressionante."
+        ]
+      },
+      {
+        "name": "Grande Barreira de Corais",
+        "sub": "natureza",
+        "word": "recife",
+        "phrase": "A maior estrutura viva do planeta visível do espaço sideral.",
+        "words": [
+          "recife",
+          "oceano",
+          "biodiversidade",
+          "mergulho"
+        ],
+        "phrases": [
+          "A maior estrutura viva do planeta visível do espaço sideral.",
+          "Paraíso de corais coloridos e rica vida marinha na costa australiana."
+        ]
+      },
+      {
+        "name": "Floresta Negra",
+        "sub": "natureza",
+        "word": "pinheiros",
+        "phrase": "Maciço montanhoso europeu famoso pelas lendas medievais e relógios cuco.",
+        "words": [
+          "pinheiros",
+          "contos",
+          "relógio",
+          "montanha"
+        ],
+        "phrases": [
+          "Maciço montanhoso europeu famoso pelas lendas medievais e relógios cuco.",
+          "Densa vegetação conífera associada aos contos dos irmãos Grimm."
+        ]
+      },
+      {
+        "name": "Deserto de Atacama",
+        "sub": "natureza",
+        "word": "aridez",
+        "phrase": "O planalto mais seco da Terra com o céu mais limpo para astrônomos.",
+        "words": [
+          "aridez",
+          "telescópios",
+          "sal",
+          "altitude"
+        ],
+        "phrases": [
+          "O planalto mais seco da Terra com o céu mais limpo para astrônomos.",
+          "Região andina árida repleta de lagoas salgadas e observatórios espaciais."
+        ]
+      },
+      {
+        "name": "Aurora Boreal na Lapônia",
+        "sub": "natureza",
+        "word": "luzes",
+        "phrase": "Espetáculo celeste verdejante provocado por ventos solares no Círculo Polar.",
+        "words": [
+          "luzes",
+          "polar",
+          "céu",
+          "renas"
+        ],
+        "phrases": [
+          "Espetáculo celeste verdejante provocado por ventos solares no Círculo Polar.",
+          "Noites árticas iluminadas por faixas brilhantes dançando na atmosfera."
+        ]
+      },
+      {
+        "name": "Monte Kilimanjaro",
+        "sub": "natureza",
+        "word": "savana",
+        "phrase": "O pico mais alto do continente africano com geleiras no cume sobre a savana.",
+        "words": [
+          "savana",
+          "topo",
+          "altitude",
+          "tanzânia"
+        ],
+        "phrases": [
+          "O pico mais alto do continente africano com geleiras no cume sobre a savana.",
+          "Vulcão adormecido isolado que desafia alpinistas de todo o mundo."
+        ]
+      },
+      {
+        "name": "Salto Ángel",
+        "sub": "natureza",
+        "word": "altura",
+        "phrase": "A mais alta queda d'água ininterrupta do planeta despencando de um platô.",
+        "words": [
+          "altura",
+          "tepui",
+          "venezuela",
+          "selva"
+        ],
+        "phrases": [
+          "A mais alta queda d'água ininterrupta do planeta despencando de um platô.",
+          "Cachoeira imponente escondida no coração da densa selva amazônica."
+        ]
+      },
+      {
+        "name": "Geleira Perito Moreno",
+        "sub": "natureza",
+        "word": "gelo",
+        "phrase": "Massa colossal de gelo em constante avanço com estrondosos desprendimentos.",
+        "words": [
+          "gelo",
+          "estalos",
+          "patagônia",
+          "azul"
+        ],
+        "phrases": [
+          "Massa colossal de gelo em constante avanço com estrondosos desprendimentos.",
+          "Geleira monumental argentina de coloração azulada que desafia o aquecimento."
+        ]
+      },
+      {
+        "name": "Planalto do Tibete",
+        "sub": "natureza",
+        "word": "altitude",
+        "phrase": "Conhecido como o teto do mundo, cercado pelas cordilheiras mais elevadas.",
+        "words": [
+          "altitude",
+          "iaque",
+          "monastério",
+          "himalaia"
+        ],
+        "phrases": [
+          "Conhecido como o teto do mundo, cercado pelas cordilheiras mais elevadas.",
+          "Vasta região de alta altitude habitada por monges e pastores nômades."
+        ]
+      },
+      {
+        "name": "Vale da Morte",
+        "sub": "natureza",
+        "word": "calor",
+        "phrase": "Bacia desértica recordista de temperatura extrema e pedras que deslizam.",
+        "words": [
+          "calor",
+          "pedras",
+          "depressão",
+          "desolação"
+        ],
+        "phrases": [
+          "Bacia desértica recordista de temperatura extrema e pedras que deslizam.",
+          "Uma das regiões mais quentes e secas da América do Norte."
+        ]
+      },
+      {
+        "name": "Parque de Yellowstone",
+        "sub": "natureza",
+        "word": "gêiser",
+        "phrase": "Supervulcão adormecido repleto de fontes hidrotermais multicoloridas.",
+        "words": [
+          "gêiser",
+          "caldeira",
+          "bisons",
+          "fontes"
+        ],
+        "phrases": [
+          "Supervulcão adormecido repleto de fontes hidrotermais multicoloridas.",
+          "Primeiro parque nacional do mundo marcado pela erupção regular do Old Faithful."
+        ]
+      },
+      {
+        "name": "Halong Bay",
+        "sub": "natureza",
+        "word": "ilhotas",
+        "phrase": "Baía vietnamita repleta de milhares de pilares cársticos emergindo das águas.",
+        "words": [
+          "ilhotas",
+          "calcário",
+          "juncos",
+          "esmeralda"
+        ],
+        "phrases": [
+          "Baía vietnamita repleta de milhares de pilares cársticos emergindo das águas.",
+          "Cenário místico com águas de tonalidade esmeralda e cavernas navegáveis."
+        ]
+      },
+      {
+        "name": "Salar de Uyuni",
+        "sub": "natureza",
+        "word": "espelho",
+        "phrase": "O maior deserto de sal contínuo da Terra que reflete o céu perfeitamente nas chuvas.",
+        "words": [
+          "espelho",
+          "sal",
+          "infinito",
+          "lítio"
+        ],
+        "phrases": [
+          "O maior deserto de sal contínuo da Terra que reflete o céu perfeitamente nas chuvas.",
+          "Vastidão branca deslumbrante onde a linha do horizonte praticamente desaparece."
+        ]
+      },
+      {
+        "name": "Caverna dos Cristais de Naica",
+        "sub": "natureza",
+        "word": "selenite",
+        "phrase": "Câmara subterrânea infernal com cristais de selenita maiores que vigas prediais.",
+        "words": [
+          "selenite",
+          "gigante",
+          "calor",
+          "subsolo"
+        ],
+        "phrases": [
+          "Câmara subterrânea infernal com cristais de selenita maiores que vigas prediais.",
+          "Gruta mexicana com condições térmicas extremas e formações geológicas surreais."
+        ]
+      },
+      {
+        "name": "Cânion do Itaimbezinho",
+        "sub": "natureza",
+        "word": "paredões",
+        "phrase": "Profundas fendas rochosas verticais cobertas de mata atlântica e araucárias.",
+        "words": [
+          "paredões",
+          "névoa",
+          "sul",
+          "aparados"
+        ],
+        "phrases": [
+          "Profundas fendas rochosas verticais cobertas de mata atlântica e araucárias.",
+          "Impressionante desfiladeiro nos Aparados da Serra com cachoeiras vertiginosas."
+        ]
+      },
+      {
+        "name": "Lago Baikal",
+        "sub": "natureza",
+        "word": "profundo",
+        "phrase": "O lago de água doce mais antigo e profundo do mundo na gelada Sibéria.",
+        "words": [
+          "profundo",
+          "sibéria",
+          "gelo",
+          "foca"
+        ],
+        "phrases": [
+          "O lago de água doce mais antigo e profundo do mundo na gelada Sibéria.",
+          "Reserva que abriga cerca de vinte por cento da água doce superficial não congelada."
+        ]
+      },
+      {
+        "name": "Ilha de Galápagos",
+        "sub": "natureza",
+        "word": "tartaruga",
+        "phrase": "Arquipélago vulcânico isolado que inspirou a teoria da evolução das espécies.",
+        "words": [
+          "tartaruga",
+          "darwin",
+          "evolução",
+          "isolada"
+        ],
+        "phrases": [
+          "Arquipélago vulcânico isolado que inspirou a teoria da evolução das espécies.",
+          "Santuário biológico com espécies endêmicas de répteis e aves extraordinárias."
+        ]
+      },
+      {
+        "name": "Chapada Diamantina",
+        "sub": "natureza",
+        "word": "morros",
+        "phrase": "Região de serras e cavernas com águas azuis incandescentes no interior baiano.",
+        "words": [
+          "morros",
+          "grutas",
+          "poço",
+          "trilha"
+        ],
+        "phrases": [
+          "Região de serras e cavernas com águas azuis incandescentes no interior baiano.",
+          "Coração de pedras, cachoeiras e grutas que já foi rota de garimpo precioso."
+        ]
+      },
+      {
+        "name": "Cabo da Boa Esperança",
+        "sub": "natureza",
+        "word": "navegação",
+        "phrase": "Histórico marco náutico africano conhecido pelos mares revoltos e ventos fortes.",
+        "words": [
+          "navegação",
+          "tormentas",
+          "extremo",
+          "sul"
+        ],
+        "phrases": [
+          "Histórico marco náutico africano conhecido pelos mares revoltos e ventos fortes.",
+          "Ponto crucial na era das grandes navegações entre os oceanos Atlântico e Índico."
+        ]
+      },
+      {
+        "name": "Monte Roraima",
+        "sub": "natureza",
+        "word": "tepui",
+        "phrase": "Montanha de topo achatado na tríplice fronteira que parece saída de outro mundo.",
+        "words": [
+          "tepui",
+          "névoa",
+          "platô",
+          "fronteira"
+        ],
+        "phrases": [
+          "Montanha de topo achatado na tríplice fronteira que parece saída de outro mundo.",
+          "Muralha de pedra milenar frequentemente envolta em espessas nuvens densas."
+        ]
+      },
+      {
+        "name": "Fjord de Geiranger",
+        "sub": "natureza",
+        "word": "fiorde",
+        "phrase": "Estreita enseada marítima ladeada por paredões íngremes e cascatas norueguesas.",
+        "words": [
+          "fiorde",
+          "cascatas",
+          "navios",
+          "noruega"
+        ],
+        "phrases": [
+          "Estreita enseada marítima ladeada por paredões íngremes e cascatas norueguesas.",
+          "Obra-prima esculpida pelas geleiras com pequenas vilas à beira d'água."
+        ]
+      },
+      {
+        "name": "Floresta Boreal (Taiga)",
+        "sub": "natureza",
+        "word": "coníferas",
+        "phrase": "O maior bioma terrestre contínuo do hemisfério norte com densos pinheirais.",
+        "words": [
+          "coníferas",
+          "frio",
+          "cinturão",
+          "alce"
+        ],
+        "phrases": [
+          "O maior bioma terrestre contínuo do hemisfério norte com densos pinheirais.",
+          "Imensa faixa verdejante e fria que se estende pela Rússia, Canadá e Escandinávia."
+        ]
+      },
+      {
+        "name": "Tóquio",
+        "sub": "cidade",
+        "word": "cruzamento",
+        "phrase": "Metrópole futurista com o cruzamento de pedestres mais movimentado do mundo.",
+        "words": [
+          "cruzamento",
+          "neon",
+          "arranha-céu",
+          "metrô"
+        ],
+        "phrases": [
+          "Metrópole futurista com o cruzamento de pedestres mais movimentado do mundo.",
+          "Capital hiperconectada onde tradição xintoísta convive com tecnologia de ponta."
+        ]
+      },
+      {
+        "name": "Nova York",
+        "sub": "cidade",
+        "word": "táxi",
+        "phrase": "A metrópole que nunca dorme, pontilhada por táxis amarelos e teatros famosos.",
+        "words": [
+          "táxi",
+          "broadway",
+          "central",
+          "arranha-céu"
+        ],
+        "phrases": [
+          "A metrópole que nunca dorme, pontilhada por táxis amarelos e teatros famosos.",
+          "Centro financeiro e cultural global marcado por skyline monumental e parques icônicos."
+        ]
+      },
+      {
+        "name": "Londres",
+        "sub": "cidade",
+        "word": "névoa",
+        "phrase": "Cidade histórica cortada pelo Tâmisa com clássicos ônibus vermelhos de dois andares.",
+        "words": [
+          "névoa",
+          "ônibus",
+          "realeza",
+          "tâmisa"
+        ],
+        "phrases": [
+          "Cidade histórica cortada pelo Tâmisa com clássicos ônibus vermelhos de dois andares.",
+          "Capital monárquica com pontes seculares, palácios e cabines telefônicas antigas."
+        ]
+      },
+      {
+        "name": "Paris",
+        "sub": "cidade",
+        "word": "luzes",
+        "phrase": "Cidade luz famosa pelos bulevares elegantes, cafés de calçada e alta gastronomia.",
+        "words": [
+          "luzes",
+          "café",
+          "boulangerie",
+          "rio"
+        ],
+        "phrases": [
+          "Cidade luz famosa pelos bulevares elegantes, cafés de calçada e alta gastronomia.",
+          "Epicentro do romantismo e da moda mundial banhado pelas curvas do Sena."
+        ]
+      },
+      {
+        "name": "Roma",
+        "sub": "cidade",
+        "word": "ruínas",
+        "phrase": "A cidade eterna onde cada quarteirão esconde monumentos e templos de milênios.",
+        "words": [
+          "ruínas",
+          "fonte",
+          "vespa",
+          "coliseu"
+        ],
+        "phrases": [
+          "A cidade eterna onde cada quarteirão esconde monumentos e templos de milênios.",
+          "Capital repleta de praças barrocas, fontes de mármore e aroma de café expresso."
+        ]
+      },
+      {
+        "name": "Cairo",
+        "sub": "cidade",
+        "word": "nilo",
+        "phrase": "Caótica e fascinante metrópole milenar às margens do mais longo rio africano.",
+        "words": [
+          "nilo",
+          "trânsito",
+          "pirâmides",
+          "bazar"
+        ],
+        "phrases": [
+          "Caótica e fascinante metrópole milenar às margens do mais longo rio africano.",
+          "Porta de entrada para as maravilhas do deserto e bazares cheios de especiarias."
+        ]
+      },
+      {
+        "name": "Dubai",
+        "sub": "cidade",
+        "word": "luxo",
+        "phrase": "Cidade futurista que brotou das areias do deserto com arquitetura extravagante.",
+        "words": [
+          "luxo",
+          "arranha-céu",
+          "marina",
+          "deserto"
+        ],
+        "phrases": [
+          "Cidade futurista que brotou das areias do deserto com arquitetura extravagante.",
+          "Metrópole de ilhas artificiais, centros de compras gigantes e opulência sem limites."
+        ]
+      },
+      {
+        "name": "Istambul",
+        "sub": "cidade",
+        "word": "bósforo",
+        "phrase": "A fascinante ponte viva que une Europa e Ásia ao redor do estreito de Bósforo.",
+        "words": [
+          "bósforo",
+          "continentes",
+          "mesquitas",
+          "chá"
+        ],
+        "phrases": [
+          "A fascinante ponte viva que une Europa e Ásia ao redor do estreito de Bósforo.",
+          "Antiga Constantinopla repleta de minaretes majestosos e mercados aromáticos."
+        ]
+      },
+      {
+        "name": "Hong Kong",
+        "sub": "cidade",
+        "word": "porto",
+        "phrase": "Ilha de edifícios verticais apertados entre o mar cintilante e montanhas íngremes.",
+        "words": [
+          "porto",
+          "balsa",
+          "vertical",
+          "neons"
+        ],
+        "phrases": [
+          "Ilha de edifícios verticais apertados entre o mar cintilante e montanhas íngremes.",
+          "Porto histórico de comércio intenso onde o oriente tradicional beija o capitalismo."
+        ]
+      },
+      {
+        "name": "Sydney",
+        "sub": "cidade",
+        "word": "baía",
+        "phrase": "Principal polo urbano australiano com porto radiante e cultura praiana descontraída.",
+        "words": [
+          "baía",
+          "velas",
+          "praia",
+          "ponte"
+        ],
+        "phrases": [
+          "Principal polo urbano australiano com porto radiante e cultura praiana descontraída.",
+          "Cidade com teatro em formato de velas brancas e surfistas nas praias litorâneas."
+        ]
+      },
+      {
+        "name": "Amsterdã",
+        "sub": "cidade",
+        "word": "canais",
+        "phrase": "Capital plana cortada por canais concêntricos onde bicicletas dominam o tráfego.",
+        "words": [
+          "canais",
+          "bicicletas",
+          "tulipas",
+          "barcos"
+        ],
+        "phrases": [
+          "Capital plana cortada por canais concêntricos onde bicicletas dominam o tráfego.",
+          "Cidade charmosa de pontes baixas, casinhas estreitas e mercados de flores."
+        ]
+      },
+      {
+        "name": "Berlim",
+        "sub": "cidade",
+        "word": "muro",
+        "phrase": "Capital marcada pela divisão da guerra fria que se reinventou em polo alternativo.",
+        "words": [
+          "muro",
+          "porta",
+          "arte",
+          "underground"
+        ],
+        "phrases": [
+          "Capital marcada pela divisão da guerra fria que se reinventou em polo alternativo.",
+          "Metrópole com vibrante cena eletrônica noturna, museus de ponta e ciclovias amplas."
+        ]
+      },
+      {
+        "name": "Moscou",
+        "sub": "cidade",
+        "word": "cúpulas",
+        "phrase": "Centro do poder eslavo com palácios fortificados e cúpulas em formato de bulbo.",
+        "words": [
+          "cúpulas",
+          "praça",
+          "neve",
+          "metrô"
+        ],
+        "phrases": [
+          "Centro do poder eslavo com palácios fortificados e cúpulas em formato de bulbo.",
+          "Metrópole monumental de avenidas imensas e estações subterrâneas que parecem palácios."
+        ]
+      },
+      {
+        "name": "Seul",
+        "sub": "cidade",
+        "word": "kpop",
+        "phrase": "Capital sul-coreana hiperconectada com internet ultraveloz e templos preservados.",
+        "words": [
+          "kpop",
+          "tecnologia",
+          "palácio",
+          "rio"
+        ],
+        "phrases": [
+          "Capital sul-coreana hiperconectada com internet ultraveloz e templos preservados.",
+          "Cidade de cultura pop pulsante, mercados noturnos e arranha-céus iluminados."
+        ]
+      },
+      {
+        "name": "Buenos Aires",
+        "sub": "cidade",
+        "word": "tango",
+        "phrase": "A mais europeia das capitais sul-americanas, embalada por passos de tango e livrarias.",
+        "words": [
+          "tango",
+          "obelisco",
+          "café",
+          "avenida"
+        ],
+        "phrases": [
+          "A mais europeia das capitais sul-americanas, embalada por passos de tango e livrarias.",
+          "Metrópole portenha com avenidas largas, arquitetura neoclássica e corte de carne nobre."
+        ]
+      },
+      {
+        "name": "São Paulo",
+        "sub": "cidade",
+        "word": "trânsito",
+        "phrase": "A locomotiva econômica do Brasil com trânsito lendário e gastronomia multicultural.",
+        "words": [
+          "trânsito",
+          "garoa",
+          "paulista",
+          "pizzarias"
+        ],
+        "phrases": [
+          "A locomotiva econômica do Brasil com trânsito lendário e gastronomia multicultural.",
+          "Selva de pedra com museus renomados, avenidas financeiras e noites ininterruptas."
+        ]
+      },
+      {
+        "name": "Rio de Janeiro",
+        "sub": "cidade",
+        "word": "orla",
+        "phrase": "A cidade maravilhosa onde a mata atlântica desce até areias douradas de praias famosas.",
+        "words": [
+          "orla",
+          "calçadão",
+          "samba",
+          "morros"
+        ],
+        "phrases": [
+          "A cidade maravilhosa onde a mata atlântica desce até areias douradas de praias famosas.",
+          "Cenário de morros sinuosos, bossa nova e celebrações ao ar livre sob o sol tropical."
+        ]
+      },
+      {
+        "name": "Singapura",
+        "sub": "cidade",
+        "word": "jardins",
+        "phrase": "Cidade-estado insular ultramoderna com árvores gigantes de aço e leis estritas.",
+        "words": [
+          "jardins",
+          "porto",
+          "limpeza",
+          "futuro"
+        ],
+        "phrases": [
+          "Cidade-estado insular ultramoderna com árvores gigantes de aço e leis estritas.",
+          "Hub financeiro do sudeste asiático repleto de arranha-céus verdes e alta tecnologia."
+        ]
+      },
+      {
+        "name": "Barcelona",
+        "sub": "cidade",
+        "word": "mosaicos",
+        "phrase": "Capital catalã banhada pelo mar com obras arquitetônicas modernistas de curvas livres.",
+        "words": [
+          "mosaicos",
+          "ramblas",
+          "mediterrâneo",
+          "tapas"
+        ],
+        "phrases": [
+          "Capital catalã banhada pelo mar com obras arquitetônicas modernistas de curvas livres.",
+          "Cidade vibrante de calçadões movimentados, praias ensolaradas e culinária mediterrânea."
+        ]
+      },
+      {
+        "name": "Quioto",
+        "sub": "cidade",
+        "word": "gueixa",
+        "phrase": "Antiga sede imperial japonesa preservada com milhares de santuários e casas de chá.",
+        "words": [
+          "gueixa",
+          "bambu",
+          "templos",
+          "jardins"
+        ],
+        "phrases": [
+          "Antiga sede imperial japonesa preservada com milhares de santuários e casas de chá.",
+          "Cidade serena cercada por florestas de bambu e caminhos de pedra ancestrais."
+        ]
+      },
+      {
+        "name": "Cidade do Cabo",
+        "sub": "cidade",
+        "word": "platô",
+        "phrase": "Metrópole litorânea sul-africana aninhada sob uma montanha com cume perfeitamente plano.",
+        "words": [
+          "platô",
+          "praias",
+          "dois-oceanos",
+          "vinhedos"
+        ],
+        "phrases": [
+          "Metrópole litorânea sul-africana aninhada sob uma montanha com cume perfeitamente plano.",
+          "Ponto de encontro deslumbrante entre relevo montanhoso, colônias de pinguins e oceanos."
+        ]
+      },
+      {
+        "name": "Lisboa",
+        "sub": "cidade",
+        "word": "elétrico",
+        "phrase": "A cidade das sete colinas ladeada pelo Tejo e percorrida por bondes amarelos.",
+        "words": [
+          "elétrico",
+          "ladeiras",
+          "azulejos",
+          "miradouro"
+        ],
+        "phrases": [
+          "A cidade das sete colinas ladeada pelo Tejo e percorrida por bondes amarelos.",
+          "Capital de calçadas de pedra portuguesa, pastéis folhados e cantos de fado."
+        ]
+      },
+      {
+        "name": "Praga",
+        "sub": "cidade",
+        "word": "torres",
+        "phrase": "A cidade das cem torres com ponte histórica ornada por estátuas góticas de pedra.",
+        "words": [
+          "torres",
+          "relógio",
+          "ponte",
+          "boêmia"
+        ],
+        "phrases": [
+          "A cidade das cem torres com ponte histórica ornada por estátuas góticas de pedra.",
+          "Centro histórico preservado com castelos nas colinas e relógio astronômico medieval."
+        ]
+      },
+      {
+        "name": "Cartagena das Índias",
+        "sub": "cidade",
+        "word": "muralhas",
+        "phrase": "Jóia colonial colombiana protegida por fortes de pedra contra ataques de piratas.",
+        "words": [
+          "muralhas",
+          "balcões",
+          "caribe",
+          "fortaleza"
+        ],
+        "phrases": [
+          "Jóia colonial colombiana protegida por fortes de pedra contra ataques de piratas.",
+          "Cidade caribenha de casas coloridas com varandas floridas de buganvílias."
+        ]
+      },
+      {
+        "name": "São Francisco",
+        "sub": "cidade",
+        "word": "bondinho",
+        "phrase": "Metrópole californiana famosa por colinas íngremes e baía coberta de névoa marinha.",
+        "words": [
+          "bondinho",
+          "neblina",
+          "ponte-vermelha",
+          "ladeiras"
+        ],
+        "phrases": [
+          "Metrópole californiana famosa por colinas íngremes e baía coberta de névoa marinha.",
+          "Cidade de casas vitorianas coloridas e histórica ponte pênsil de tom alaranjado."
+        ]
+      },
+      {
+        "name": "Atenas",
+        "sub": "cidade",
+        "word": "mármore",
+        "phrase": "Berço da democracia e do pensamento clássico vigiado por templos em ruínas na colina.",
+        "words": [
+          "mármore",
+          "filosofia",
+          "colina",
+          "olímpica"
+        ],
+        "phrases": [
+          "Berço da democracia e do pensamento clássico vigiado por templos em ruínas na colina.",
+          "Cidade solar com tabernas tradicionais ao pé de monumentos com milênios de história."
+        ]
+      },
+      {
+        "name": "Marrakech",
+        "sub": "cidade",
+        "word": "especiarias",
+        "phrase": "Cidade ocre marroquina de labirintos de ruelas, encantadores de serpentes e lanternas.",
+        "words": [
+          "especiarias",
+          "medina",
+          "tapetes",
+          "vermelho"
+        ],
+        "phrases": [
+          "Cidade ocre marroquina de labirintos de ruelas, encantadores de serpentes e lanternas.",
+          "Porta para as rotas do Atlas com palacetes escondidos e riads com pátios internos."
+        ]
+      },
+      {
+        "name": "Coliseu de Roma",
+        "sub": "turismo",
+        "word": "gladiadores",
+        "phrase": "Anfiteatro elíptico de pedra que recebia espetáculos sangrentos na antiguidade.",
+        "words": [
+          "gladiadores",
+          "arena",
+          "arcos",
+          "império"
+        ],
+        "phrases": [
+          "Anfiteatro elíptico de pedra que recebia espetáculos sangrentos na antiguidade.",
+          "O maior anfiteatro do mundo clássico preservado no coração da Itália."
+        ]
+      },
+      {
+        "name": "Petra",
+        "sub": "turismo",
+        "word": "rocha",
+        "phrase": "Cidade escavada diretamente em paredões de arenito avermelhado no deserto jordaniano.",
+        "words": [
+          "rocha",
+          "tesouro",
+          "desfiladeiro",
+          "nabateus"
+        ],
+        "phrases": [
+          "Cidade escavada diretamente em paredões de arenito avermelhado no deserto jordaniano.",
+          "Fascinante capital esculpida na rocha acessada por um cânion estreito e sombrio."
+        ]
+      },
+      {
+        "name": "Chichén Itzá",
+        "sub": "turismo",
+        "word": "maias",
+        "phrase": "Pirâmide maia escalonada que projeta sombras em forma de serpente nos equinócios.",
+        "words": [
+          "maias",
+          "serpente",
+          "degraus",
+          "equinócio"
+        ],
+        "phrases": [
+          "Pirâmide maia escalonada que projeta sombras em forma de serpente nos equinócios.",
+          "Complexo cerimonial na península de Yucatán dedicado a divindades ancestrais."
+        ]
+      },
+      {
+        "name": "Catedral de Notre-Dame",
+        "sub": "turismo",
+        "word": "gárgulas",
+        "phrase": "Catedral gótica secular situada em uma ilha fluvial famosa por suas rosáceas.",
+        "words": [
+          "gárgulas",
+          "vitrais",
+          "sena",
+          "gótico"
+        ],
+        "phrases": [
+          "Catedral gótica secular situada em uma ilha fluvial famosa por suas rosáceas.",
+          "Templo imponente que inspirou a história do corcunda apaixonado."
+        ]
+      },
+      {
+        "name": "Sagrada Família",
+        "sub": "turismo",
+        "word": "gaudí",
+        "phrase": "Basílica monumental com fachadas hiperdetalhadas inspiradas na natureza viva.",
+        "words": [
+          "gaudí",
+          "torres",
+          "floresta-colunas",
+          "inacabada"
+        ],
+        "phrases": [
+          "Basílica monumental com fachadas hiperdetalhadas inspiradas na natureza viva.",
+          "Obra-prima modernista com mais de um século de construção em andamento."
+        ]
+      },
+      {
+        "name": "Palácio de Versalhes",
+        "sub": "turismo",
+        "word": "espelhos",
+        "phrase": "Suntuosa residência monárquica com salão dourado de espelhos e fontes geométricas.",
+        "words": [
+          "espelhos",
+          "rei-sol",
+          "jardins",
+          "ouro"
+        ],
+        "phrases": [
+          "Suntuosa residência monárquica com salão dourado de espelhos e fontes geométricas.",
+          "Símbolo máximo do absolutismo real com jardins que se estendem até o horizonte."
+        ]
+      },
+      {
+        "name": "Angkor Wat",
+        "sub": "turismo",
+        "word": "raízes",
+        "phrase": "O maior complexo religioso do mundo parcialmente engolido por árvores gigantes.",
+        "words": [
+          "raízes",
+          "khmer",
+          "torres",
+          "selva"
+        ],
+        "phrases": [
+          "O maior complexo religioso do mundo parcialmente engolido por árvores gigantes.",
+          "Templo do império Khmer no Camboja cercado por fossos de água protetores."
+        ]
+      },
+      {
+        "name": "Museu do Louvre",
+        "sub": "turismo",
+        "word": "pirâmide-vidro",
+        "phrase": "Antigo palácio real que abriga as pinturas e esculturas mais cobiçadas da história.",
+        "words": [
+          "pirâmide-vidro",
+          "quadros",
+          "galeria",
+          "paris"
+        ],
+        "phrases": [
+          "Antigo palácio real que abriga as pinturas e esculturas mais cobiçadas da história.",
+          "Museu com pátio de pirâmide transparente e corredores sem fim de arte universal."
+        ]
+      },
+      {
+        "name": "Acópole de Atenas",
+        "sub": "turismo",
+        "word": "partenon",
+        "phrase": "Colina fortificada que abriga o templo consagrado à deusa da sabedoria com colunas dóricas.",
+        "words": [
+          "partenon",
+          "colunata",
+          "atenas",
+          "rocha"
+        ],
+        "phrases": [
+          "Colina fortificada que abriga o templo consagrado à deusa da sabedoria com colunas dóricas.",
+          "Santuário milenar de mármore visível de qualquer parte da capital grega."
+        ]
+      },
+      {
+        "name": "Ópera de Sydney",
+        "sub": "turismo",
+        "word": "conchas",
+        "phrase": "Edifício com telhados expressivos que lembram velas de barco sobre a água.",
+        "words": [
+          "conchas",
+          "baía",
+          "acústica",
+          "porto"
+        ],
+        "phrases": [
+          "Edifício com telhados expressivos que lembram velas de barco sobre a água.",
+          "Centro de artes cênicas com projeto arquitetônico inovador do século vinte."
+        ]
+      },
+      {
+        "name": "Burj Khalifa",
+        "sub": "turismo",
+        "word": "altura",
+        "phrase": "A mais alta estrutura já erguida pela humanidade perfurando as nuvens do oriente.",
+        "words": [
+          "altura",
+          "elevador",
+          "mirante",
+          "deserto"
+        ],
+        "phrases": [
+          "A mais alta estrutura já erguida pela humanidade perfurando as nuvens do oriente.",
+          "Arranha-céu recordista com observatórios que oferecem vista espetacular do golfo."
+        ]
+      },
+      {
+        "name": "Palácio de Buckingham",
+        "sub": "turismo",
+        "word": "guarda",
+        "phrase": "Residência oficial da monarquia britânica famosa pela troca solene de guardas com chapéu alto.",
+        "words": [
+          "guarda",
+          "bandeira",
+          "varanda",
+          "realeza"
+        ],
+        "phrases": [
+          "Residência oficial da monarquia britânica famosa pela troca solene de guardas com chapéu alto.",
+          "Edifício palaciano com portões dourados onde a multidão se reúne em datas comemorativas."
+        ]
+      },
+      {
+        "name": "Vaticano",
+        "sub": "turismo",
+        "word": "papa",
+        "phrase": "O menor estado independente do planeta com uma das maiores basílicas da cristandade.",
+        "words": [
+          "papa",
+          "capela",
+          "praça",
+          "cúpula"
+        ],
+        "phrases": [
+          "O menor estado independente do planeta com uma das maiores basílicas da cristandade.",
+          "Enclave romano com teto pintado por um gênio renascentista e tesouros de arte."
+        ]
+      },
+      {
+        "name": "Castelo de Neuschwanstein",
+        "sub": "turismo",
+        "word": "fadas",
+        "phrase": "Palácio de contos de fadas com torres pontiagudas erguido em montanhas alpinas.",
+        "words": [
+          "fadas",
+          "torres",
+          "baviera",
+          "bosque"
+        ],
+        "phrases": [
+          "Palácio de contos de fadas com torres pontiagudas erguido em montanhas alpinas.",
+          "Fortaleza romântica encomendada por um rei sonhador que inspirou castelos de animação."
+        ]
+      },
+      {
+        "name": "Disneyland de Orlando",
+        "sub": "turismo",
+        "word": "parques",
+        "phrase": "O império do entretenimento temático com montanhas-russas e shows de fogos noturnos.",
+        "words": [
+          "parques",
+          "castelo",
+          "personagens",
+          "fogos"
+        ],
+        "phrases": [
+          "O império do entretenimento temático com montanhas-russas e shows de fogos noturnos.",
+          "Destino turístico da Flórida onde milhões buscam magia e atrações infantis."
+        ]
+      },
+      {
+        "name": "Praça Vermelha",
+        "sub": "turismo",
+        "word": "kremlin",
+        "phrase": "Histórica praça de paradas militares ladeada por muralhas e torres com relógio.",
+        "words": [
+          "kremlin",
+          "desfiles",
+          "basílica-são-basílio",
+          "tijolos"
+        ],
+        "phrases": [
+          "Histórica praça de paradas militares ladeada por muralhas e torres com relógio.",
+          "Coração da capital russa famosa por igreja com cúpulas policromadas em espiral."
+        ]
+      },
+      {
+        "name": "Canal do Panamá",
+        "sub": "turismo",
+        "word": "eclusas",
+        "phrase": "Engenhosa via navegável artificial que liga o Atlântico ao Pacífico por comportas.",
+        "words": [
+          "eclusas",
+          "navios",
+          "oceano",
+          "istmo"
+        ],
+        "phrases": [
+          "Engenhosa via navegável artificial que liga o Atlântico ao Pacífico por comportas.",
+          "Corte monumental no relevo centro-americano que revolucionou o tráfego marítimo mundial."
+        ]
+      },
+      {
+        "name": "Cinque Terre",
+        "sub": "turismo",
+        "word": "vilas",
+        "phrase": "Cinco vilarejos coloridos incrustados em encostas rochosas à beira do mar ligure.",
+        "words": [
+          "vilas",
+          "falésias",
+          "mediterrâneo",
+          "colorido"
+        ],
+        "phrases": [
+          "Cinco vilarejos coloridos incrustados em encostas rochosas à beira do mar ligure.",
+          "Trecho litorâneo italiano com trilhas estreitas entre vinhedos e casinhas pitorescas."
+        ]
+      },
+      {
+        "name": "Linhas de Nazca",
+        "sub": "misterio",
+        "word": "geoglifos",
+        "phrase": "Gigantescas gravuras no solo desértico peruano visíveis apenas do céu.",
+        "words": [
+          "geoglifos",
+          "aéreo",
+          "solo",
+          "macaco"
+        ],
+        "phrases": [
+          "Gigantescas gravuras no solo desértico peruano visíveis apenas do céu.",
+          "Figuras milenares de animais e linhas geométricas traçadas sobre a terra árida."
+        ]
+      },
+      {
+        "name": "Lago Ness",
+        "sub": "misterio",
+        "word": "monstro",
+        "phrase": "Lago escocês de águas escuras que abriga a lenda de uma criatura pré-histórica submersa.",
+        "words": [
+          "monstro",
+          "escócia",
+          "foto",
+          "profundezas"
+        ],
+        "phrases": [
+          "Lago escocês de águas escuras que abriga a lenda de uma criatura pré-histórica submersa.",
+          "Corpo hídrico cercado por montanhas onde turistas buscam registrar uma silhueta misteriosa."
+        ]
+      },
+      {
+        "name": "Tchernóbil e Pripyat",
+        "sub": "misterio",
+        "word": "radiação",
+        "phrase": "Cidade-fantasma congelada no tempo após o pior acidente nuclear da história humana.",
+        "words": [
+          "radiação",
+          "roda-gigante",
+          "reator",
+          "abandono"
+        ],
+        "phrases": [
+          "Cidade-fantasma congelada no tempo após o pior acidente nuclear da história humana.",
+          "Zona de exclusão radioativa tomada pela vegetação selvagem e prédios em ruínas."
+        ]
+      },
+      {
+        "name": "Floresta de Hoia-Baciu",
+        "sub": "misterio",
+        "word": "troncos-tortos",
+        "phrase": "Mata romena com árvores de troncos curvados em padrões anômalos e contos paranormais.",
+        "words": [
+          "troncos-tortos",
+          "névoa",
+          "romênia",
+          "assombração"
+        ],
+        "phrases": [
+          "Mata romena com árvores de troncos curvados em padrões anômalos e contos paranormais.",
+          "O suposto triângulo das bermudas terrestre onde bússolas falham e luzes estranhas surgem."
+        ]
+      },
+      {
+        "name": "Ilha das Bonecas",
+        "sub": "misterio",
+        "word": "bonecas-velhas",
+        "phrase": "Ilhota nos canais de Xochimilco coberta de brinquedos decapitados pendurados em galhos.",
+        "words": [
+          "bonecas-velhas",
+          "canais",
+          "méxico",
+          "lenda"
+        ],
+        "phrases": [
+          "Ilhota nos canais de Xochimilco coberta de brinquedos decapitados pendurados em galhos.",
+          "Local macabro criado por um eremita em memória da alma de uma menina afogada."
+        ]
+      },
+      {
+        "name": "Ilha da Queimada Grande",
+        "sub": "misterio",
+        "word": "serpentes",
+        "phrase": "Ilha costeira brasileira de acesso restrito infestada de jararacas-ilhoas venenosas.",
+        "words": [
+          "serpentes",
+          "veneno",
+          "litoral",
+          "proibida"
+        ],
+        "phrases": [
+          "Ilha costeira brasileira de acesso restrito infestada de jararacas-ilhoas venenosas.",
+          "Pedaço de terra no oceano atlântico considerado um dos pontos mais letais do planeta."
+        ]
+      },
+      {
+        "name": "Castelo de Bran",
+        "sub": "misterio",
+        "word": "vampiro",
+        "phrase": "Fortaleza gótica cravada em rochedos que serviu de cenário para a lenda do conde noturno.",
+        "words": [
+          "vampiro",
+          "transilvânia",
+          "morcegos",
+          "torres"
+        ],
+        "phrases": [
+          "Fortaleza gótica cravada em rochedos que serviu de cenário para a lenda do conde noturno.",
+          "Castelo romeno cercado de lendas de criaturas que temem o alho e a luz solar."
+        ]
+      },
+      {
+        "name": "Túmulo de Tutancâmon",
+        "sub": "misterio",
+        "word": "maldição",
+        "phrase": "Câmara mortuária subterrânea cujo descobrimento foi seguido de mortes suspeitas de arqueólogos.",
+        "words": [
+          "maldição",
+          "sarcófago",
+          "ouro",
+          "vale"
+        ],
+        "phrases": [
+          "Câmara mortuária subterrânea cujo descobrimento foi seguido de mortes suspeitas de arqueólogos.",
+          "Túmulo intacto no Vale dos Reis que revelou a máscara mortuária de ouro maciço."
+        ]
+      },
+      {
+        "name": "Passo Dyatlov",
+        "sub": "misterio",
+        "word": "ural",
+        "phrase": "Local montanhoso nos Urais onde nove esquiadores experientes morreram em circunstâncias bizarras.",
+        "words": [
+          "ural",
+          "expedição",
+          "tenda-rasgada",
+          "hipotermia"
+        ],
+        "phrases": [
+          "Local montanhoso nos Urais onde nove esquiadores experientes morreram em circunstâncias bizarras.",
+          "Incidente de inverno com tendas rasgadas por dentro e pistas enigmáticas nunca decifradas."
+        ]
+      },
+      {
+        "name": "Cratera de Darvaza (Porta do Inferno)",
+        "sub": "misterio",
+        "word": "chamas",
+        "phrase": "Boca de cratera no Turcomenistão que queima gás metano continuamente há mais de cinquenta anos.",
+        "words": [
+          "chamas",
+          "gás",
+          "fogo-eterno",
+          "deserto"
+        ],
+        "phrases": [
+          "Boca de cratera no Turcomenistão que queima gás metano continuamente há mais de cinquenta anos.",
+          "Poço incandescente ardente que brilha como fogo do inferno no meio da noite escura."
+        ]
+      },
+      {
+        "name": "Hotel Cecil",
+        "sub": "misterio",
+        "word": "caixa-dágua",
+        "phrase": "Edifício histórico no centro californiano com passado macabro de tragédias e crimes insolúveis.",
+        "words": [
+          "caixa-dágua",
+          "elevador",
+          "los-angeles",
+          "crimes"
+        ],
+        "phrases": [
+          "Edifício histórico no centro californiano com passado macabro de tragédias e crimes insolúveis.",
+          "Local de hospedes infames e vídeos de segurança assustadores em elevadores."
+        ]
+      },
+      {
+        "name": "Ilha Hashima (Gunkanjima)",
+        "sub": "misterio",
+        "word": "concreto",
+        "phrase": "Ilha com aspecto de navio de guerra coberta de prédios de concreto abandonados ao mar.",
+        "words": [
+          "concreto",
+          "mina-carvão",
+          "fantasma",
+          "mar"
+        ],
+        "phrases": [
+          "Ilha com aspecto de navio de guerra coberta de prédios de concreto abandonados ao mar.",
+          "Antiga colônia mineradora hiperdensa abandonada subitamente com pertences para trás."
+        ]
+      },
+      {
+        "name": "Centralia",
+        "sub": "misterio",
+        "word": "fumaça",
+        "phrase": "Cidade da Pensilvânia com incêndio subterrâneo de carvão ativo há décadas expelindo gases.",
+        "words": [
+          "fumaça",
+          "fissuras",
+          "subsolo",
+          "asfalto"
+        ],
+        "phrases": [
+          "Cidade da Pensilvânia com incêndio subterrâneo de carvão ativo há décadas expelindo gases.",
+          "Local fantasma cortado por rodovias rachadas que inspirou filmes de terror de nevoeiro."
+        ]
+      },
+      {
+        "name": "Castelo de Chillingham",
+        "sub": "misterio",
+        "word": "fantasmas",
+        "phrase": "Fortaleza medieval com masmorras e câmaras de tortura reputada como a mais assombrada do reino.",
+        "words": [
+          "fantasmas",
+          "tortura",
+          "inglaterra",
+          "calabouço"
+        ],
+        "phrases": [
+          "Fortaleza medieval com masmorras e câmaras de tortura reputada como a mais assombrada do reino.",
+          "Castelo histórico onde pesquisadores de fenômenos inexplicáveis relatam aparições frequentes."
+        ]
+      },
+      {
+        "name": "Roanoke",
+        "sub": "misterio",
+        "word": "colônia-perdida",
+        "phrase": "Primeira colônia inglesa na América cujos cem habitantes desapareceram sem deixar vestígios além de uma palavra.",
+        "words": [
+          "colônia-perdida",
+          "croatoan",
+          "árvore",
+          "sumiço"
+        ],
+        "phrases": [
+          "Primeira colônia inglesa na América cujos cem habitantes desapareceram sem deixar vestígios além de uma palavra.",
+          "Mistério histórico onde suprimentos e lares foram deixados intocados sem corpos."
+        ]
+      },
+      {
+        "name": "Ossuário de Sedlec",
+        "sub": "misterio",
+        "word": "lustre-ossos",
+        "phrase": "Capela gótica subterrânea decorada artisticamente com ossadas humanas de milhares de pessoas.",
+        "words": [
+          "lustre-ossos",
+          "capela",
+          "crânios",
+          "chéquia"
+        ],
+        "phrases": [
+          "Capela gótica subterrânea decorada artisticamente com ossadas humanas de milhares de pessoas.",
+          "Templo religioso com lustres monumentais e brasões construídos integralmente com esqueletos."
+        ]
+      },
+      {
+        "name": "Floresta Aokigahara",
+        "sub": "misterio",
+        "word": "bússola-falha",
+        "phrase": "Vasta floresta no sopé de um vulcão sagrado com solo vulcânico que anula campos magnéticos.",
+        "words": [
+          "bússola-falha",
+          "silêncio",
+          "árvores-densas",
+          "rochas"
+        ],
+        "phrases": [
+          "Vasta floresta no sopé de um vulcão sagrado com solo vulcânico que anula campos magnéticos.",
+          "Mar de árvores com silêncio pesado e labirinto verde onde é fácil perder o rumo."
+        ]
+      },
+      {
+        "name": "Mina de Mirny",
+        "sub": "misterio",
+        "word": "buraco-gigante",
+        "phrase": "Cratera artificial colossal na Sibéria tão profunda que cria sucção no ar para helicópteros.",
+        "words": [
+          "buraco-gigante",
+          "diamantes",
+          "sibéria",
+          "vórtice"
+        ],
+        "phrases": [
+          "Cratera artificial colossal na Sibéria tão profunda que cria sucção no ar para helicópteros.",
+          "Garganta de mineração a céu aberto de pedras preciosas que parece um portal geológico."
+        ]
+      },
+      {
+        "name": "Mausoléu do Primeiro Imperador",
+        "sub": "misterio",
+        "word": "terracota",
+        "phrase": "Túmulo imperial protegido por milhares de guerreiros de argila em tamanho real.",
+        "words": [
+          "terracota",
+          "mercúrio",
+          "soldados",
+          "escavação"
+        ],
+        "phrases": [
+          "Túmulo imperial protegido por milhares de guerreiros de argila em tamanho real.",
+          "Câmara mortuária lendária que supostamente contém rios simulados de mercúrio líquido."
+        ]
+      },
+      {
+        "name": "Torre de Londres",
+        "sub": "misterio",
+        "word": "corvos",
+        "phrase": "Antiga prisão real às margens do rio onde nobres e rainhas foram executados no passado.",
+        "words": [
+          "corvos",
+          "decapitação",
+          "joias",
+          "fantasma-rainha"
+        ],
+        "phrases": [
+          "Antiga prisão real às margens do rio onde nobres e rainhas foram executados no passado.",
+          "Fortaleza medieval onde corvos são mantidos para evitar a suposta queda do reino."
+        ]
+      },
+      {
+        "name": "Navio Fantasma Mary Celeste",
+        "sub": "misterio",
+        "word": "deriva",
+        "phrase": "Veleiro encontrado navegando a pleno vapor no oceano sem uma única alma viva a bordo.",
+        "words": [
+          "deriva",
+          "tripulação-sumida",
+          "carga-intacta",
+          "oceano"
+        ],
+        "phrases": [
+          "Veleiro encontrado navegando a pleno vapor no oceano sem uma única alma viva a bordo.",
+          "Mistério náutico onde o bote salvador sumiu mas a carga de álcool e refeições estavam intactas."
+        ]
+      },
+      {
+        "name": "Pedras Deslizantes de Racetrack",
+        "sub": "misterio",
+        "word": "trilhas",
+        "phrase": "Rochas pesadas que deixam sulcos no leito seco de um lago sem intervenção humana aparente.",
+        "words": [
+          "trilhas",
+          "gelo-fino",
+          "vento",
+          "deserto"
+        ],
+        "phrases": [
+          "Rochas pesadas que deixam sulcos no leito seco de um lago sem intervenção humana aparente.",
+          "Fenômeno geológico que mobiliza cientistas pelo deslocamento misterioso na calada da noite."
+        ]
+      },
+      {
+        "name": "Monte Saint-Michel",
+        "sub": "turismo",
+        "word": "maré-alta",
+        "phrase": "Ilhota rochosa medieval coroada por uma abadia que fica ilhada no oceano durante as marés altas.",
+        "words": [
+          "maré-alta",
+          "abadia-ilha",
+          "normandia",
+          "ponte-acesso"
+        ],
+        "phrases": [
+          "Ilhota rochosa medieval coroada por uma abadia que fica ilhada no oceano durante as marés altas.",
+          "Maravilha arquitetônica gótica na França ligada ao continente por uma estreita passarela."
+        ]
+      },
+      {
+        "name": "Vale dos Reis",
+        "sub": "misterio",
+        "word": "faraós-túmulos",
+        "phrase": "Desfiladeiro rochoso árido no Egito onde foram escavadas dezenas de câmaras mortuárias de governantes antigos.",
+        "words": [
+          "faraós-túmulos",
+          "deserto-rochas",
+          "luxor",
+          "escavações"
+        ],
+        "phrases": [
+          "Desfiladeiro rochoso árido no Egito onde foram escavadas dezenas de câmaras mortuárias de governantes antigos.",
+          "Local secreto de descanso eterno dos maiores soberanos do império com tesouros escondidos na pedra."
+        ]
+      },
+      {
+        "name": "Monte Fuji no Outono",
+        "sub": "natureza",
+        "word": "folhas-vermelhas",
+        "phrase": "Cartão-postal japonês cercado por folhagens rubras de bordo refletidas nas águas calmas dos lagos.",
+        "words": [
+          "folhas-vermelhas",
+          "lago-kawaguchi",
+          "vulcão-simétrico",
+          "japão"
+        ],
+        "phrases": [
+          "Cartão-postal japonês cercado por folhagens rubras de bordo refletidas nas águas calmas dos lagos.",
+          "Cone vulcânico sagrado de beleza contemplativa celebrada por séculos de poetas e pintores."
+        ]
+      },
+      {
+        "name": "Foz do Iguaçu (Parque Nacional)",
+        "sub": "natureza",
+        "word": "araraquara",
+        "phrase": "Reserva exuberante de mata subtropical protegendo as mais imponentes quedas d'água da América do Sul.",
+        "words": [
+          "araraquara",
+          "névoa-eterna",
+          "trilha-verde",
+          "fronteira-tríplice"
+        ],
+        "phrases": [
+          "Reserva exuberante de mata subtropical protegendo as mais imponentes quedas d'água da América do Sul.",
+          "Passarelas que levam visitantes ao centro da névoa úmida onde o barulho das águas é ensurdecedor."
+        ]
+      },
+      {
+        "name": "Jardins de Versalhes",
+        "sub": "turismo",
+        "word": "fontes-música",
+        "phrase": "Parque monumental de geometria rigorosa com alamedas infinitas e fontes que dançam ao som barroco.",
+        "words": [
+          "fontes-música",
+          "labirinto-verde",
+          "estátuas-ouro",
+          "perspectiva"
+        ],
+        "phrases": [
+          "Parque monumental de geometria rigorosa com alamedas infinitas e fontes que dançam ao som barroco.",
+          "A obra-prima do paisagismo francês encomendada para espelhar a glória do Rei Sol."
+        ]
+      },
+      {
+        "name": "Pompéia",
+        "sub": "misterio",
+        "word": "cinzas-vesúvio",
+        "phrase": "Antiga cidade romana soterrada por cinzas vulcânicas preservando corpos petrificados e casas intactas.",
+        "words": [
+          "cinzas-vesúvio",
+          "cidade-congelada",
+          "ruínas-romanas",
+          "século-um"
+        ],
+        "phrases": [
+          "Antiga cidade romana soterrada por cinzas vulcânicas preservando corpos petrificados e casas intactas.",
+          "Cenário congelado no tempo no ano setenta e nove após a erupção cataclísmica de um vulcão vizinho."
+        ]
+      },
+      {
+        "name": "Mônaco",
+        "sub": "cidade",
+        "word": "iates-porto",
+        "phrase": "Pequeno principado costeiro encravado na Riviera Francesa famoso pela opulência e corridas nas ruas.",
+        "words": [
+          "iates-porto",
+          "cassino-luxo",
+          "fórmula-um-ruas",
+          "principado"
+        ],
+        "phrases": [
+          "Pequeno principado costeiro encravado na Riviera Francesa famoso pela opulência e corridas nas ruas.",
+          "Paraíso fiscal de cassinos suntuosos onde supercarros circulam pelas mesmas curvas do GP mais charmoso."
+        ]
+      },
+      {
+        "name": "Quioto Histórico",
+        "sub": "turismo",
+        "word": "santuário-fushimi",
+        "phrase": "Corredores formados por milhares de arcos de madeira vermelha subindo montanhas sagradas.",
+        "words": [
+          "santuário-fushimi",
+          "portais-torii",
+          "quimonos",
+          "chá-matcha"
+        ],
+        "phrases": [
+          "Corredores formados por milhares de arcos de madeira vermelha subindo montanhas sagradas.",
+          "Coração da espiritualidade japonesa onde viajantes vestem quimonos tradicionais entre pagodes antigos."
+        ]
+      },
+      {
+        "name": "Cabo Canaveral",
+        "sub": "turismo",
+        "word": "plataforma-lançamento",
+        "phrase": "Centro espacial na costa leste de onde partiram as missões Apollo que levaram astronautas à Lua.",
+        "words": [
+          "plataforma-lançamento",
+          "nasa",
+          "foguetes",
+          "flórida"
+        ],
+        "phrases": [
+          "Centro espacial na costa leste de onde partiram as missões Apollo que levaram astronautas à Lua.",
+          "Faixa litorânea de onde foguetes modernos decolam rasgando o céu com colunas de fumaça e fogo."
+        ]
+      },
+      {
+        "name": "Vale da Lua (Chapada dos Veadeiros)",
+        "sub": "natureza",
+        "word": "rochas-lunares",
+        "phrase": "Formações rochosas de pedras esculpidas pelas águas que lembram a superfície cinzenta da Lua.",
+        "words": [
+          "rochas-lunares",
+          "piscinas-naturais",
+          "rio-são-miguel",
+          "cerrado"
+        ],
+        "phrases": [
+          "Formações rochosas de pedras esculpidas pelas águas que lembram a superfície cinzenta da Lua.",
+          "Cenário místico com fendas profundas e poços cristalinos no coração do planalto central brasileiro."
+        ]
+      },
+      {
+        "name": "Monte Olimpo",
+        "sub": "misterio",
+        "word": "deuses-mitologia",
+        "phrase": "Montanha mítica da Grécia clássica considerada o lar e trono sagrado das doze divindades do panteão.",
+        "words": [
+          "deuses-mitologia",
+          "pico-mais-alto-grécia",
+          "nuvens-topo",
+          "zeus"
+        ],
+        "phrases": [
+          "Montanha mítica da Grécia clássica considerada o lar e trono sagrado das doze divindades do panteão.",
+          "Cume frequentemente envolto em tempestades e névoa associado aos raios do soberano do céu."
+        ]
+      },
+      {
+        "name": "Fernando de Noronha",
+        "sub": "natureza",
+        "word": "baía-sancho",
+        "phrase": "Arquipélago vulcânico isolado com as praias de águas mais transparentes e protegidas do litoral brasileiro.",
+        "words": [
+          "baía-sancho",
+          "golfinhos",
+          "morro-dois-irmãos",
+          "paraíso-mergulho"
+        ],
+        "phrases": [
+          "Arquipélago vulcânico isolado com as praias de águas mais transparentes e protegidas do litoral brasileiro.",
+          "Santuário marinho de tartarugas e falésias imponentes onde dois morros gêmeos emergem do oceano."
+        ]
+      },
+      {
+        "name": "Polo Sul (Antártica)",
+        "sub": "natureza",
+        "word": "zero-absoluto",
+        "phrase": "O ponto mais meridional da superfície terrestre coberto por quilômetros de gelo e ventos polares furiosos.",
+        "words": [
+          "zero-absoluto",
+          "deserto-gelo",
+          "estação-amundsen",
+          "noite-seis-meses"
+        ],
+        "phrases": [
+          "O ponto mais meridional da superfície terrestre coberto por quilômetros de gelo e ventos polares furiosos.",
+          "Local onde todas as linhas de longitude se encontram em meio a meses de escuridão total de inverno."
+        ]
+      },
+      {
+        "name": "Veneza e o Grande Canal",
+        "sub": "turismo",
+        "word": "ponte-rialto",
+        "phrase": "A mais famosa artéria aquática do mundo contornada por palácios de fachadas de mármore e pontes seculares.",
+        "words": [
+          "ponte-rialto",
+          "gôndolas-listras",
+          "palácio-ducal",
+          "maré-alta-acqua"
+        ],
+        "phrases": [
+          "A mais famosa artéria aquática do mundo contornada por palácios de fachadas de mármore e pontes seculares.",
+          "Embarcações tradicionais remadas por gondoleiros com camisas listradas cortando águas esverdeadas."
+        ]
+      },
+      {
+        "name": "Santorini",
+        "sub": "turismo",
+        "word": "casas-brancas",
+        "phrase": "Ilha grega de penhascos íngremes coberta de vilarejos caiados de branco com domos azuis cobalto.",
+        "words": [
+          "casas-brancas",
+          "cúpulas-azuis",
+          "caldeira-vulcão",
+          "pôr-do-sol"
+        ],
+        "phrases": [
+          "Ilha grega de penhascos íngremes coberta de vilarejos caiados de branco com domos azuis cobalto.",
+          "Famosa mundialmente pelo pôr do sol cinematográfico que tinge o mar Egeu de tons dourados."
+        ]
+      },
+      {
+        "name": "Planalto da Escócia (Highlands)",
+        "sub": "natureza",
+        "word": "lagos-lochs",
+        "phrase": "Região de montanhas áridas e lagos profundos pontilhada por fortalezas medievais de clãs históricos.",
+        "words": [
+          "lagos-lochs",
+          "castelos-pedra",
+          "gaita-fole",
+          "neblina-morros"
+        ],
+        "phrases": [
+          "Região de montanhas áridas e lagos profundos pontilhada por fortalezas medievais de clãs históricos.",
+          "Cenário melancólico e grandioso de charnecas roxas onde ecoam histórias de bravura e independência."
+        ]
+      },
+      {
+        "name": "Monte Branco (Mont Blanc)",
+        "sub": "natureza",
+        "word": "alpes",
+        "phrase": "O pico culminante da Europa Ocidental coberto por neves eternas que desafia montanhistas do mundo inteiro.",
+        "words": [
+          "alpes",
+          "fronteira-frança-itália",
+          "geleiras-altas",
+          "alpinismo"
+        ],
+        "phrases": [
+          "O pico culminante da Europa Ocidental coberto por neves eternas que desafia montanhistas do mundo inteiro.",
+          "Maciço colossal de granito e gelo que marca a divisa entre os vales franceses e italianos."
+        ]
+      },
+      {
+        "name": "Jerusalém Antiga",
+        "sub": "turismo",
+        "word": "muro-lamentações",
+        "phrase": "Cidade milenar cercada por muralhas de pedra sagrada para três grandes religiões mundiais.",
+        "words": [
+          "muro-lamentações",
+          "cúpula-dourada",
+          "santo-sepulcro",
+          "quatro-bairros"
+        ],
+        "phrases": [
+          "Cidade milenar cercada por muralhas de pedra sagrada para três grandes religiões mundiais.",
+          "Ruelas estreitas onde fiéis rezam diante de pedras históricas e cúpulas douradas refletem o sol."
+        ]
+      },
+      {
+        "name": "Cânion de Antelope",
+        "sub": "natureza",
+        "word": "feixes-luz",
+        "phrase": "Desfiladeiro estreito esculpido por inundações relâmpago com paredes de arenito onduladas como ondas de fogo.",
+        "words": [
+          "feixes-luz",
+          "curvas-arenito",
+          "vermelho-laranja",
+          "navajo"
+        ],
+        "phrases": [
+          "Desfiladeiro estreito esculpido por inundações relâmpago com paredes de arenito onduladas como ondas de fogo.",
+          "Raios de sol que penetram verticalmente pelas fendas do teto iluminando a poeira dourada no chão."
+        ]
       }
     ]
   },
@@ -12921,6 +21684,1750 @@ const THEME_DATABASE = {
         ],
         "word": "dócil",
         "phrase": "Mamífero aquático dócil e vagaroso que passa o dia pastando plantas no rio."
+      },
+      {
+        "name": "Elefante Africano",
+        "sub": "selvagens",
+        "word": "tromba",
+        "phrase": "O maior mamífero terrestre dotado de tromba versátil e presas cobiçadas.",
+        "words": [
+          "tromba",
+          "marfim",
+          "orelhas",
+          "memória"
+        ],
+        "phrases": [
+          "O maior mamífero terrestre dotado de tromba versátil e presas cobiçadas.",
+          "Gigante com passos lentos reconhecido pela inteligência emocional e memória prodigiosa."
+        ]
+      },
+      {
+        "name": "Tigre de Bengala",
+        "sub": "selvagens",
+        "word": "listras",
+        "phrase": "Felino solitário de pelagem alaranjada e listras negras que caça à espreita em pântanos.",
+        "words": [
+          "listras",
+          "garras",
+          "selva",
+          "camuflagem"
+        ],
+        "phrases": [
+          "Felino solitário de pelagem alaranjada e listras negras que caça à espreita em pântanos.",
+          "Poderoso caçador asiático de olhos penetrantes que não teme nadar em rios velozes."
+        ]
+      },
+      {
+        "name": "Rinoceronte Branco",
+        "sub": "selvagens",
+        "word": "chifre",
+        "phrase": "Enorme herbívoro de pele grossa acinzentada com um ou dois chifres no focinho.",
+        "words": [
+          "chifre",
+          "blindagem",
+          "peso",
+          "extinção"
+        ],
+        "phrases": [
+          "Enorme herbívoro de pele grossa acinzentada com um ou dois chifres no focinho.",
+          "Animal robusto com visão deficiente mas audição aguçada que sofre com a caça ilegal."
+        ]
+      },
+      {
+        "name": "Leopardo",
+        "sub": "selvagens",
+        "word": "árvores",
+        "phrase": "Felino ágil com manchas em formato de rosetas que sobe em troncos com suas presas.",
+        "words": [
+          "árvores",
+          "rosetas",
+          "salto",
+          "emboscada"
+        ],
+        "phrases": [
+          "Felino ágil com manchas em formato de rosetas que sobe em troncos com suas presas.",
+          "Caçador furtivo noturno mestre em se esconder na copa da vegetação densa."
+        ]
+      },
+      {
+        "name": "Guepardo (Chita)",
+        "sub": "selvagens",
+        "word": "velocidade",
+        "phrase": "O animal terrestre mais rápido do mundo em arrancadas curtas de tirar o fôlego.",
+        "words": [
+          "velocidade",
+          "arrancada",
+          "lágrima",
+          "planície"
+        ],
+        "phrases": [
+          "O animal terrestre mais rápido do mundo em arrancadas curtas de tirar o fôlego.",
+          "Corredor magro e esguio com linhas negras no rosto que reduzem o reflexo do sol."
+        ]
+      },
+      {
+        "name": "Urso Polar",
+        "sub": "selvagens",
+        "word": "gelo",
+        "phrase": "Colosso branco das calotas polares que nada por quilômetros em busca de alimento marinho.",
+        "words": [
+          "gelo",
+          "ártico",
+          "foca",
+          "pelagem"
+        ],
+        "phrases": [
+          "Colosso branco das calotas polares que nada por quilômetros em busca de alimento marinho.",
+          "O maior predador carnívoro do Ártico adaptado a temperaturas abaixo de zero."
+        ]
+      },
+      {
+        "name": "Urso Pardo (Grizzly)",
+        "sub": "selvagens",
+        "word": "salmão",
+        "phrase": "Feroz habitante das florestas do hemisfério norte mestre em capturar peixes em corredeiras.",
+        "words": [
+          "salmão",
+          "hibernação",
+          "garras",
+          "bosque"
+        ],
+        "phrases": [
+          "Feroz habitante das florestas do hemisfério norte mestre em capturar peixes em corredeiras.",
+          "Grande mamífero onívoro que acumula reservas de gordura para o longo sono de inverno."
+        ]
+      },
+      {
+        "name": "Gorila da Montanha",
+        "sub": "selvagens",
+        "word": "peito",
+        "phrase": "Primata colossal e pacífico liderado por um macho de costas prateadas na neblina.",
+        "words": [
+          "peito",
+          "lombo-prateado",
+          "floresta",
+          "olhar"
+        ],
+        "phrases": [
+          "Primata colossal e pacífico liderado por um macho de costas prateadas na neblina.",
+          "Maior primata vivo com impressionante força física e expressivos laços familiares."
+        ]
+      },
+      {
+        "name": "Hiena Malhada",
+        "sub": "selvagens",
+        "word": "risada",
+        "phrase": "Predador e carniceiro em clãs matriarcais conhecido por vocalizações que lembram risos.",
+        "words": [
+          "risada",
+          "ossos",
+          "clã",
+          "mandíbula"
+        ],
+        "phrases": [
+          "Predador e carniceiro em clãs matriarcais conhecido por vocalizações que lembram risos.",
+          "Animal resistente de mandíbulas capazes de triturar os ossos mais duros da presa."
+        ]
+      },
+      {
+        "name": "Lobo Cinzento",
+        "sub": "selvagens",
+        "word": "uivo",
+        "phrase": "Cacídeo selvagem de hierarquia estrita que caça em equipe sob o luar congelante.",
+        "words": [
+          "uivo",
+          "alcateia",
+          "lua",
+          "neve"
+        ],
+        "phrases": [
+          "Cacídeo selvagem de hierarquia estrita que caça em equipe sob o luar congelante.",
+          "Animal icônico dos contos florestais cujo uivo sincronizado ecoa pelas montanhas."
+        ]
+      },
+      {
+        "name": "Raposa Vermelha",
+        "sub": "selvagens",
+        "word": "cauda",
+        "phrase": "Pequeno canídeo de cauda espessa avermelhada e fama lendária de astúcia e esperteza.",
+        "words": [
+          "cauda",
+          "esperteza",
+          "toca",
+          "orelhas"
+        ],
+        "phrases": [
+          "Pequeno canídeo de cauda espessa avermelhada e fama lendária de astúcia e esperteza.",
+          "Caçadora solitária que salta sobre a neve para capturar pequenos roedores no subsolo."
+        ]
+      },
+      {
+        "name": "Coala",
+        "sub": "selvagens",
+        "word": "eucalipto",
+        "phrase": "Pequeno mamífero arborícola que passa quase todo o dia dormindo e mastigando folhas aromáticas.",
+        "words": [
+          "eucalipto",
+          "sono",
+          "árvores",
+          "marsupial"
+        ],
+        "phrases": [
+          "Pequeno mamífero arborícola que passa quase todo o dia dormindo e mastigando folhas aromáticas.",
+          "Criatura fofa e lenta que sobrevive ingerindo quase exclusivamente folhas tóxicas de eucalipto."
+        ]
+      },
+      {
+        "name": "Onça-Pintada",
+        "sub": "selvagens",
+        "word": "mordida",
+        "phrase": "O maior felino das Américas dotado de mordida capaz de perfurar cascos duros de tartaruga.",
+        "words": [
+          "mordida",
+          "pantanal",
+          "rosetas",
+          "jacaré"
+        ],
+        "phrases": [
+          "O maior felino das Américas dotado de mordida capaz de perfurar cascos duros de tartaruga.",
+          "Predador supremo das matas e margens ribeirinhas do Pantanal e da Amazônia."
+        ]
+      },
+      {
+        "name": "Panda-Gigante",
+        "sub": "selvagens",
+        "word": "bambu",
+        "phrase": "Mamífero com manchas escuras nos olhos e orelhas que passa o dia sentado quebrando bambu.",
+        "words": [
+          "bambu",
+          "preto-branco",
+          "china",
+          "manso"
+        ],
+        "phrases": [
+          "Mamífero com manchas escuras nos olhos e orelhas que passa o dia sentado quebrando bambu.",
+          "Símbolo mundial de preservação da fauna ameaçada nativo das florestas chinesas de montanha."
+        ]
+      },
+      {
+        "name": "Lêmure de Cauda Anelada",
+        "sub": "selvagens",
+        "word": "anéis",
+        "phrase": "Primata com cauda listrada em preto e branco que adora tomar sol com a barriga exposta.",
+        "words": [
+          "anéis",
+          "madagascar",
+          "sol",
+          "saltos"
+        ],
+        "phrases": [
+          "Primata com cauda listrada em preto e branco que adora tomar sol com a barriga exposta.",
+          "Endêmico da ilha de Madagascar com olhos esbugalhados e passos acrobáticos no chão."
+        ]
+      },
+      {
+        "name": "Preguiça-de-Três-Dedos",
+        "sub": "selvagens",
+        "word": "lentidão",
+        "phrase": "Mamífero lento que vive de cabeça para baixo pendurado em galhos de florestas tropicais.",
+        "words": [
+          "lentidão",
+          "copa",
+          "musgo",
+          "galhos"
+        ],
+        "phrases": [
+          "Mamífero lento que vive de cabeça para baixo pendurado em galhos de florestas tropicais.",
+          "Move-se em câmera lenta com pelos esverdeados por algas simbióticas protetoras."
+        ]
+      },
+      {
+        "name": "Coiote",
+        "sub": "selvagens",
+        "word": "uivo-curto",
+        "phrase": "Canídeo astuto do oeste norte-americano adaptado tanto a desertos quanto a áreas suburbanas.",
+        "words": [
+          "uivo-curto",
+          "adaptação",
+          "deserto",
+          "presa"
+        ],
+        "phrases": [
+          "Canídeo astuto do oeste norte-americano adaptado tanto a desertos quanto a áreas suburbanas.",
+          "Famoso por perseguições infames nos desenhos animados e uivos agudos nas noites áridas."
+        ]
+      },
+      {
+        "name": "Babuíno",
+        "sub": "selvagens",
+        "word": "focinho-cão",
+        "phrase": "Primata de solo com focinho comprido que lembra o de um cão e presas afiadíssimas.",
+        "words": [
+          "focinho-cão",
+          "bando",
+          "dentes-longos",
+          "savana"
+        ],
+        "phrases": [
+          "Primata de solo com focinho comprido que lembra o de um cão e presas afiadíssimas.",
+          "Forma tropas barulhentas e agressivas que defendem seu território com determinação."
+        ]
+      },
+      {
+        "name": "Anta Brasileira",
+        "sub": "selvagens",
+        "word": "tromba-curta",
+        "phrase": "O maior mamífero terrestre do Brasil conhecida como a jardineira das florestas por dispersar sementes.",
+        "words": [
+          "tromba-curta",
+          "jardineira",
+          "mata",
+          "água"
+        ],
+        "phrases": [
+          "O maior mamífero terrestre do Brasil conhecida como a jardineira das florestas por dispersar sementes.",
+          "Animal robusto e dócil com probóscide móvel que mergulha em rios para escapar de onças."
+        ]
+      },
+      {
+        "name": "Cachorro Golden Retriever",
+        "sub": "domesticos",
+        "word": "dourado",
+        "phrase": "Cão dócil de pelagem brilhante que adora buscar bolinhas e ajudar pessoas cegas.",
+        "words": [
+          "dourado",
+          "brincalhão",
+          "guia",
+          "água"
+        ],
+        "phrases": [
+          "Cão dócil de pelagem brilhante que adora buscar bolinhas e ajudar pessoas cegas.",
+          "Companheiro canino alegre e leal muito popular entre famílias com crianças pequenas."
+        ]
+      },
+      {
+        "name": "Gato Siamês",
+        "sub": "domesticos",
+        "word": "olhos-azuis",
+        "phrase": "Felino de porte elegante com patas, orelhas e focinho escuros e olhos azuis penetrantes.",
+        "words": [
+          "olhos-azuis",
+          "miado",
+          "pontas-escuras",
+          "esbelto"
+        ],
+        "phrases": [
+          "Felino de porte elegante com patas, orelhas e focinho escuros e olhos azuis penetrantes.",
+          "Raça felina falante e comunicativa com pelagem clara no corpo e temperamento apegado."
+        ]
+      },
+      {
+        "name": "Cavalo Puro-Sangue",
+        "sub": "domesticos",
+        "word": "crina",
+        "phrase": "Nobre quadrúpede de velocidade e vigor atlético criado para corridas e saltos de elite.",
+        "words": [
+          "crina",
+          "galope",
+          "ferradura",
+          "sela"
+        ],
+        "phrases": [
+          "Nobre quadrúpede de velocidade e vigor atlético criado para corridas e saltos de elite.",
+          "Equino de musculatura torneada e passos ritmados conduzido por rédeas em hipódromos."
+        ]
+      },
+      {
+        "name": "Gato Persa",
+        "sub": "domesticos",
+        "word": "peludo",
+        "phrase": "Felino calmo de pelos longos e volumosos com focinho plano e olhos redondos expressivos.",
+        "words": [
+          "peludo",
+          "focinho-achatado",
+          "calmo",
+          "luxo"
+        ],
+        "phrases": [
+          "Felino calmo de pelos longos e volumosos com focinho plano e olhos redondos expressivos.",
+          "Gato de temperamento aristocrático e silencioso que adora almofadas macias."
+        ]
+      },
+      {
+        "name": "Cachorro Poodle",
+        "sub": "domesticos",
+        "word": "tosquia",
+        "phrase": "Cão esperto de pelagem encaracolada que não solta pelos e aprende truques com rapidez.",
+        "words": [
+          "tosquia",
+          "inteligente",
+          "caracóis",
+          "circo"
+        ],
+        "phrases": [
+          "Cão esperto de pelagem encaracolada que não solta pelos e aprende truques com rapidez.",
+          "Raça com corte característico em pompons de pelos que se destaca em concursos de obediência."
+        ]
+      },
+      {
+        "name": "Cachorro Buldogue Francês",
+        "sub": "domesticos",
+        "word": "orelhas-morcego",
+        "phrase": "Cachorro compacto com orelhas empinadas e focinho curto que costuma roncar ao cochilar.",
+        "words": [
+          "orelhas-morcego",
+          "ronco",
+          "baixo",
+          "musculoso"
+        ],
+        "phrases": [
+          "Cachorro compacto com orelhas empinadas e focinho curto que costuma roncar ao cochilar.",
+          "Companheiro de apartamento sociável e preguiçoso com passos engraçados e peito largo."
+        ]
+      },
+      {
+        "name": "Coelho Doméstico",
+        "sub": "domesticos",
+        "word": "cenoura",
+        "phrase": "Pequeno mamífero orelhudo que rói feno sem parar e bate as patas traseiras no chão.",
+        "words": [
+          "cenoura",
+          "orelhas-longas",
+          "pulos",
+          "fofo"
+        ],
+        "phrases": [
+          "Pequeno mamífero orelhudo que rói feno sem parar e bate as patas traseiras no chão.",
+          "Mascote de pelagem aveludada que pula alegremente pela casa em pequenos ziguezagues."
+        ]
+      },
+      {
+        "name": "Hamster Sírio",
+        "sub": "domesticos",
+        "word": "bochechas",
+        "phrase": "Pequeno roedor que armazena sementes nas bochechas e corre na rodinha durante a madrugada.",
+        "words": [
+          "bochechas",
+          "roda",
+          "noturno",
+          "serragem"
+        ],
+        "phrases": [
+          "Pequeno roedor que armazena sementes nas bochechas e corre na rodinha durante a madrugada.",
+          "Pet de gaiola com hábitos noturnos que adora fazer ninhos macios em aparas de madeira."
+        ]
+      },
+      {
+        "name": "Porquinho-da-Índia",
+        "sub": "domesticos",
+        "word": "assobio",
+        "phrase": "Roedor gordinho que solta sonoros assovios agudos quando ouve o som de legumes frescos.",
+        "words": [
+          "assobio",
+          "roedor",
+          "feno",
+          "sem-rabo"
+        ],
+        "phrases": [
+          "Roedor gordinho que solta sonoros assovios agudos quando ouve o som de legumes frescos.",
+          "Animal dócil e gregário que se comunica constantemente com pequenos ruídos carinhosos."
+        ]
+      },
+      {
+        "name": "Cachorro Pastor Alemão",
+        "sub": "domesticos",
+        "word": "policial",
+        "phrase": "Cão de guarda imponente e vigilante muito utilizado no faro e proteção policial.",
+        "words": [
+          "policial",
+          "guarda",
+          "leal",
+          "porte"
+        ],
+        "phrases": [
+          "Cão de guarda imponente e vigilante muito utilizado no faro e proteção policial.",
+          "Raça atlética com capa preta e dourada famosa pelo instinto protetor e disciplina."
+        ]
+      },
+      {
+        "name": "Gato Maine Coon",
+        "sub": "domesticos",
+        "word": "gigante",
+        "phrase": "O gigante gentil dos gatos com pelagem espessa e tufos de pelo nas pontas das orelhas.",
+        "words": [
+          "gigante",
+          "pincel-orelha",
+          "cauda-cheia",
+          "manso"
+        ],
+        "phrases": [
+          "O gigante gentil dos gatos com pelagem espessa e tufos de pelo nas pontas das orelhas.",
+          "Felino de porte imenso que mia suavemente e não se importa de se molhar em água."
+        ]
+      },
+      {
+        "name": "Cachorro Labrador",
+        "sub": "domesticos",
+        "word": "fome",
+        "phrase": "Cão brincalhão de apetite insaciável que não resiste a um mergulho em lagoas.",
+        "words": [
+          "fome",
+          "água",
+          "guia",
+          "família"
+        ],
+        "phrases": [
+          "Cão brincalhão de apetite insaciável que não resiste a um mergulho em lagoas.",
+          "Excelente nadador com cauda de lontra e coração caloroso que convive bem com todos."
+        ]
+      },
+      {
+        "name": "Vaca Holandesa",
+        "sub": "domesticos",
+        "word": "leite",
+        "phrase": "Bovino de pelagem malhada em branco e preto campeão na produção diária de leite fresco.",
+        "words": [
+          "leite",
+          "manchas-pretas",
+          "pasto",
+          "mugido"
+        ],
+        "phrases": [
+          "Bovino de pelagem malhada em branco e preto campeão na produção diária de leite fresco.",
+          "Animal manso das fazendas leiteiras que rumina calmamente sob a sombra do pasto."
+        ]
+      },
+      {
+        "name": "Cabra Doméstica",
+        "sub": "domesticos",
+        "word": "barbicha",
+        "phrase": "Caprino curioso e teimoso capaz de subir em muros estreitos e comer ramos espinhosos.",
+        "words": [
+          "barbicha",
+          "chifres",
+          "salto",
+          "leite-forte"
+        ],
+        "phrases": [
+          "Caprino curioso e teimoso capaz de subir em muros estreitos e comer ramos espinhosos.",
+          "Animal de pupila retangular com barbicha no queixo e leite apreciado em queijos finos."
+        ]
+      },
+      {
+        "name": "Porco Doméstico",
+        "sub": "domesticos",
+        "word": "lama",
+        "phrase": "Animal de fazenda com olfato apurado que se refresca na lama para proteger a pele clara.",
+        "words": [
+          "lama",
+          "focinho",
+          "rabo-espiral",
+          "inteligência"
+        ],
+        "phrases": [
+          "Animal de fazenda com olfato apurado que se refresca na lama para proteger a pele clara.",
+          "Surpreendentemente limpo e inteligente com rabinho em espiral e roncos sonoros."
+        ]
+      },
+      {
+        "name": "Galinha Poedeira",
+        "sub": "domesticos",
+        "word": "ovos",
+        "phrase": "Ave doméstica indispensável em sítios que acorda cedo cacarejando e ciscando grãos.",
+        "words": [
+          "ovos",
+          "cacarejo",
+          "penas",
+          "poleiro"
+        ],
+        "phrases": [
+          "Ave doméstica indispensável em sítios que acorda cedo cacarejando e ciscando grãos.",
+          "Habitante do galinheiro que põe ovos com casca dura e dorme equilibrada em poleiros de madeira."
+        ]
+      },
+      {
+        "name": "Galo Garnizé",
+        "sub": "domesticos",
+        "word": "canto",
+        "phrase": "Ave de pequeno porte mas temperamento valente que canta pontualmente antes do nascer do sol.",
+        "words": [
+          "canto",
+          "crista",
+          "esporão",
+          "madrugada"
+        ],
+        "phrases": [
+          "Ave de pequeno porte mas temperamento valente que canta pontualmente antes do nascer do sol.",
+          "Possui crista vermelha destacada e esporões afiados com plumagem vistosa e colorida."
+        ]
+      },
+      {
+        "name": "Cachorro Chiuaua",
+        "sub": "domesticos",
+        "word": "pequeno",
+        "phrase": "A menor raça canina do mundo com olhos arregalados e latido estridente e territorial.",
+        "words": [
+          "pequeno",
+          "latido-fino",
+          "tremedeira",
+          "bolsa"
+        ],
+        "phrases": [
+          "A menor raça canina do mundo com olhos arregalados e latido estridente e territorial.",
+          "Cachorrinho minúsculo que cabe no colo mas tem a coragem e atitude de um leão."
+        ]
+      },
+      {
+        "name": "Cachorro Pug",
+        "sub": "domesticos",
+        "word": "rugas",
+        "phrase": "Cãozinho rechonchudo de rosto enrugado e olhar suplicante que solta respirações ruidosas.",
+        "words": [
+          "rugas",
+          "focinho-curto",
+          "rabo-enrolado",
+          "olhos-saltados"
+        ],
+        "phrases": [
+          "Cãozinho rechonchudo de rosto enrugado e olhar suplicante que solta respirações ruidosas.",
+          "Companheiro afetuoso de passos saltitantes e rabo bem enroladinho sobre as costas."
+        ]
+      },
+      {
+        "name": "Cachorro Dachshund (Salsicha)",
+        "sub": "domesticos",
+        "word": "comprido",
+        "phrase": "Cãozinho longo de pernas curtas originalmente criado para caçar animais em buracos no solo.",
+        "words": [
+          "comprido",
+          "pernas-curtas",
+          "toca",
+          "faro"
+        ],
+        "phrases": [
+          "Cãozinho longo de pernas curtas originalmente criado para caçar animais em buracos no solo.",
+          "Muito valente e teimoso que adora se enfiar debaixo de cobertores no sofá."
+        ]
+      },
+      {
+        "name": "Gato Vira-Lata (SRD)",
+        "sub": "domesticos",
+        "word": "ronrom",
+        "phrase": "O felino mais popular dos lares com cores variadas, vigor resistente e muita personalidade.",
+        "words": [
+          "ronrom",
+          "caixa-papelão",
+          "agilidade",
+          "telhado"
+        ],
+        "phrases": [
+          "O felino mais popular dos lares com cores variadas, vigor resistente e muita personalidade.",
+          "Especialista em saltos improváveis e em preferir caixas de papelão a caminhas caras."
+        ]
+      },
+      {
+        "name": "Cachorro Vira-Lata Caramelo",
+        "sub": "domesticos",
+        "word": "caramelo",
+        "phrase": "O ícone supremo do afeto brasileiro presente em todas as esquinas e lares carinhosos.",
+        "words": [
+          "caramelo",
+          "patrimônio",
+          "calçada",
+          "esperteza"
+        ],
+        "phrases": [
+          "O ícone supremo do afeto brasileiro presente em todas as esquinas e lares carinhosos.",
+          "Cão inteligente e amigável de pelagem dourada que sabe atravessar a rua na faixa."
+        ]
+      },
+      {
+        "name": "Furão (Ferret)",
+        "sub": "domesticos",
+        "word": "esguio",
+        "phrase": "Pequeno mamífero flexível como uma mola que adora se esconder em meias e gavetas.",
+        "words": [
+          "esguio",
+          "túnel",
+          "brincadeira",
+          "máscara"
+        ],
+        "phrases": [
+          "Pequeno mamífero flexível como uma mola que adora se esconder em meias e gavetas.",
+          "Curioso e brincalhão com corpo comprido e focinho afilado que dorme em redes suspensas."
+        ]
+      },
+      {
+        "name": "Chinchila",
+        "sub": "domesticos",
+        "word": "banho-poeira",
+        "phrase": "Pequeno roedor andino cuja pelagem é uma das mais densas e sedosas de todo o reino animal.",
+        "words": [
+          "banho-poeira",
+          "pelo-macio",
+          "pulos",
+          "noturna"
+        ],
+        "phrases": [
+          "Pequeno roedor andino cuja pelagem é uma das mais densas e sedosas de todo o reino animal.",
+          "Não pode se molhar em água e precisa tomar banhos regulares em poeira vulcânica especial."
+        ]
+      },
+      {
+        "name": "Periquito-Australiano",
+        "sub": "domesticos",
+        "word": "canto",
+        "phrase": "Pequena ave psitacídea colorida que aprende a imitar assobios e convive bem com humanos.",
+        "words": [
+          "canto",
+          "gaiola",
+          "bico-curvo",
+          "azul-verde"
+        ],
+        "phrases": [
+          "Pequena ave psitacídea colorida que aprende a imitar assobios e convive bem com humanos.",
+          "Passarinho sociável de bico curvo que adora espelhos e sementes de alpiste."
+        ]
+      },
+      {
+        "name": "Águia-Careca",
+        "sub": "aves",
+        "word": "cabeça-branca",
+        "phrase": "Poderosa ave de rapina com cabeça emplumada de branco e visão capaz de avistar peixes de longe.",
+        "words": [
+          "cabeça-branca",
+          "garras",
+          "símbolo",
+          "voo"
+        ],
+        "phrases": [
+          "Poderosa ave de rapina com cabeça emplumada de branco e visão capaz de avistar peixes de longe.",
+          "Símbolo imponente da liberdade norte-americana com bico curvo amarelo afiadíssimo."
+        ]
+      },
+      {
+        "name": "Tucano-Toco",
+        "sub": "aves",
+        "word": "bico-laranja",
+        "phrase": "Ave tropical icônica com bico descomunal alaranjado surpreendentemente oco e leve.",
+        "words": [
+          "bico-laranja",
+          "frutas",
+          "penas-pretas",
+          "mata"
+        ],
+        "phrases": [
+          "Ave tropical icônica com bico descomunal alaranjado surpreendentemente oco e leve.",
+          "Símbolo das matas brasileiras com olhos azuis destacados e gosto por frutos silvestres."
+        ]
+      },
+      {
+        "name": "Arara-Azul-Grande",
+        "sub": "aves",
+        "word": "pantanal",
+        "phrase": "Ave exuberante de plumagem cobalto que quebra coquinhos com a força incrível do bico.",
+        "words": [
+          "pantanal",
+          "penas-azuis",
+          "amarelo-olho",
+          "castanha"
+        ],
+        "phrases": [
+          "Ave exuberante de plumagem cobalto que quebra coquinhos com a força incrível do bico.",
+          "Maior espécie de arara do planeta que voa em casais inseparáveis pelos céus pantaneiros."
+        ]
+      },
+      {
+        "name": "Flamingo-Rosa",
+        "sub": "aves",
+        "word": "perna-única",
+        "phrase": "Ave esbelta de pernas longas que se equilibra em uma pata só enquanto dorme na água rasa.",
+        "words": [
+          "perna-única",
+          "camarão",
+          "pescoço-curvo",
+          "lagoa"
+        ],
+        "phrases": [
+          "Ave esbelta de pernas longas que se equilibra em uma pata só enquanto dorme na água rasa.",
+          "Sua coloração rosada vibrante vem diretamente dos pigmentos presentes nos crustáceos que come."
+        ]
+      },
+      {
+        "name": "Pinguim-Imperador",
+        "sub": "aves",
+        "word": "neve",
+        "phrase": "Ave não voadora que resiste às nevascas mais geladas do polo equilibrando o ovo sobre as patas.",
+        "words": [
+          "neve",
+          "ovo-pés",
+          "antártica",
+          "mergulho"
+        ],
+        "phrases": [
+          "Ave não voadora que resiste às nevascas mais geladas do polo equilibrando o ovo sobre as patas.",
+          "Excelente nadador submarino em águas congeladas protegido por grossas camadas de gordura."
+        ]
+      },
+      {
+        "name": "Avestruz",
+        "sub": "aves",
+        "word": "corrida",
+        "phrase": "A maior ave do planeta incapaz de voar mas capaz de correr na velocidade de um automóvel.",
+        "words": [
+          "corrida",
+          "ovo-gigante",
+          "penas",
+          "pescoço-longo"
+        ],
+        "phrases": [
+          "A maior ave do planeta incapaz de voar mas capaz de correr na velocidade de um automóvel.",
+          "Põe o maior ovo do reino animal e desfere coices capazes de espantar leões da savana."
+        ]
+      },
+      {
+        "name": "Pavão-Real",
+        "sub": "aves",
+        "word": "cauda-leque",
+        "phrase": "Ave ornamental cujo macho abre um leque espetacular de penas com desenhos parecendo olhos.",
+        "words": [
+          "cauda-leque",
+          "olhos-penas",
+          "cortejo",
+          "azul"
+        ],
+        "phrases": [
+          "Ave ornamental cujo macho abre um leque espetacular de penas com desenhos parecendo olhos.",
+          "Exibe seu manto cintilante em movimentos vibratórios para impressionar fêmeas."
+        ]
+      },
+      {
+        "name": "Falcão-Peregrino",
+        "sub": "aves",
+        "word": "mergulho-aéreo",
+        "phrase": "O animal mais veloz do planeta ao descer em mergulho aéreo fechado sobre suas presas.",
+        "words": [
+          "mergulho-aéreo",
+          "recordista",
+          "velocidade",
+          "rapina"
+        ],
+        "phrases": [
+          "O animal mais veloz do planeta ao descer em mergulho aéreo fechado sobre suas presas.",
+          "Caçador implacável dos céus que ultrapassa trezentos quilômetros por hora em queda livre."
+        ]
+      },
+      {
+        "name": "Cisne-Branco",
+        "sub": "aves",
+        "word": "elegância",
+        "phrase": "Ave graciosa de penas brancas como a neve que desliza calmamente pelas águas de lagos reais.",
+        "words": [
+          "elegância",
+          "pescoço-s",
+          "lago",
+          "fidelidade"
+        ],
+        "phrases": [
+          "Ave graciosa de penas brancas como a neve que desliza calmamente pelas águas de lagos reais.",
+          "Famoso pela fidelidade ao companheiro durante a vida toda formando silhuetas de coração."
+        ]
+      },
+      {
+        "name": "Pelicano",
+        "sub": "aves",
+        "word": "bolsa-bico",
+        "phrase": "Grande ave litorânea dotada de uma bolsa flexível embaixo do bico que funciona como rede de pesca.",
+        "words": [
+          "bolsa-bico",
+          "peixes",
+          "litoral",
+          "mergulho"
+        ],
+        "phrases": [
+          "Grande ave litorânea dotada de uma bolsa flexível embaixo do bico que funciona como rede de pesca.",
+          "Captura grandes volumes de água com peixes e drena o líquido antes de engolir a refeição."
+        ]
+      },
+      {
+        "name": "Urubu-de-Cabeça-Preta",
+        "sub": "aves",
+        "word": "carniça",
+        "phrase": "Ave carniceira indispensável ao meio ambiente que plana em círculos aproveitando correntes térmicas.",
+        "words": [
+          "carniça",
+          "voo-planar",
+          "limpeza",
+          "cabeça-nua"
+        ],
+        "phrases": [
+          "Ave carniceira indispensável ao meio ambiente que plana em círculos aproveitando correntes térmicas.",
+          "Possui cabeça sem penas para facilitar a higiene ao se alimentar de carcaças no campo."
+        ]
+      },
+      {
+        "name": "Papagaio-Verdadeiro",
+        "sub": "aves",
+        "word": "verde",
+        "phrase": "Psitacídeo verde de cabeça amarela conhecido pela habilidade de reproduzir palavras humanas.",
+        "words": [
+          "verde",
+          "fala",
+          "bico",
+          "inteligente"
+        ],
+        "phrases": [
+          "Psitacídeo verde de cabeça amarela conhecido pela habilidade de reproduzir palavras humanas.",
+          "Ave companheira e longeva que vive décadas demonstrando incrível capacidade de imitação."
+        ]
+      },
+      {
+        "name": "Gavião-Carcará",
+        "sub": "aves",
+        "word": "sertão",
+        "phrase": "Ave de rapina típica do sertão brasileiro que caça tanto no solo quanto no ar com topete arrepiado.",
+        "words": [
+          "sertão",
+          "chão",
+          "topete",
+          "oportunista"
+        ],
+        "phrases": [
+          "Ave de rapina típica do sertão brasileiro que caça tanto no solo quanto no ar com topete arrepiado.",
+          "Tema de canções sertanejas pela bravura e resistência em climas semiáridos e secos."
+        ]
+      },
+      {
+        "name": "Garça-Branca",
+        "sub": "aves",
+        "word": "pescoço-longo",
+        "phrase": "Ave esguia e imaculada que permanece imóvel por minutos à espera de um peixe distraído.",
+        "words": [
+          "pescoço-longo",
+          "bico-amarelo",
+          "brejo",
+          "paciência"
+        ],
+        "phrases": [
+          "Ave esguia e imaculada que permanece imóvel por minutos à espera de um peixe distraído.",
+          "Habitante de lagoas e restingas de silhueta elegante e voo lento de asas arqueadas."
+        ]
+      },
+      {
+        "name": "Martim-Pescador",
+        "sub": "aves",
+        "word": "flecha",
+        "phrase": "Pássaro colorido que se lança como uma flecha em direção à água para fisgar pequenos alevinos.",
+        "words": [
+          "flecha",
+          "bico-fino",
+          "rio",
+          "mergulho"
+        ],
+        "phrases": [
+          "Pássaro colorido que se lança como uma flecha em direção à água para fisgar pequenos alevinos.",
+          "Pousa em galhos secos sobre riachos observando pacientemente a refração da água."
+        ]
+      },
+      {
+        "name": "João-de-Barro",
+        "sub": "aves",
+        "word": "casa-barro",
+        "phrase": "Pequeno pássaro arquiteto que constrói ninhos circulares de barro resistente com câmara secreta.",
+        "words": [
+          "casa-barro",
+          "engenheiro",
+          "canto-duplo",
+          "poste"
+        ],
+        "phrases": [
+          "Pequeno pássaro arquiteto que constrói ninhos circulares de barro resistente com câmara secreta.",
+          "Canta em dueto ritmado com o par após moldar pacientemente sua casinha com bico e terra."
+        ]
+      },
+      {
+        "name": "Canário-da-Terra",
+        "sub": "aves",
+        "word": "amarelo",
+        "phrase": "Pequeno pássaro brasileiro de peito amarelo vivo famoso por seu canto melodioso e vibrante.",
+        "words": [
+          "amarelo",
+          "canto-melodioso",
+          "cerrado",
+          "pássaro"
+        ],
+        "phrases": [
+          "Pequeno pássaro brasileiro de peito amarelo vivo famoso por seu canto melodioso e vibrante.",
+          "Pula em gramados e campos abertos recolhendo pequenas sementes ao amanhecer."
+        ]
+      },
+      {
+        "name": "Corvo-Comum",
+        "sub": "aves",
+        "word": "preto",
+        "phrase": "Ave negra de extraordinária cognição capaz de resolver quebra-cabeças e usar gravetos.",
+        "words": [
+          "preto",
+          "inteligência",
+          "ferramentas",
+          "mistério"
+        ],
+        "phrases": [
+          "Ave negra de extraordinária cognição capaz de resolver quebra-cabeças e usar gravetos.",
+          "Presente em lendas sombrias e poemas pela astúcia e capacidade de reconhecer rostos humanos."
+        ]
+      },
+      {
+        "name": "Uirapuru",
+        "sub": "aves",
+        "word": "amazônia",
+        "phrase": "Pássaro lendário da floresta amazônica cujo canto suave faz todas as outras aves silenciarem.",
+        "words": [
+          "amazônia",
+          "canto-mágico",
+          "lenda",
+          "silêncio"
+        ],
+        "phrases": [
+          "Pássaro lendário da floresta amazônica cujo canto suave faz todas as outras aves silenciarem.",
+          "Alvo de mitos indígenas sobre amor e sorte que quase nunca se deixa ver na mata fechada."
+        ]
+      },
+      {
+        "name": "Cardeal",
+        "sub": "aves",
+        "word": "topete-vermelho",
+        "phrase": "Pássaro de crista pontiaguda e coloração escarlate vibrante que se destaca contra a neve de inverno.",
+        "words": [
+          "topete-vermelho",
+          "neve",
+          "canto",
+          "vermelho-vivo"
+        ],
+        "phrases": [
+          "Pássaro de crista pontiaguda e coloração escarlate vibrante que se destaca contra a neve de inverno.",
+          "Macho territorial de canto límpido muito associado às paisagens da América do Norte."
+        ]
+      },
+      {
+        "name": "Ema Brasileira",
+        "sub": "aves",
+        "word": "corredora",
+        "phrase": "A maior ave nativa da América do Sul onde o macho é o responsável por chocar os ovos.",
+        "words": [
+          "corredora",
+          "cerrado",
+          "penas-cinza",
+          "pai-dedicado"
+        ],
+        "phrases": [
+          "A maior ave nativa da América do Sul onde o macho é o responsável por chocar os ovos.",
+          "Animal veloz sem asas para voo que percorre os campos do cerrado em passadas largas."
+        ]
+      },
+      {
+        "name": "Albatroz-Viajante",
+        "sub": "aves",
+        "word": "envergadura",
+        "phrase": "Ave marinha com a maior envergadura de asas do mundo capaz de voar por anos sem tocar terra.",
+        "words": [
+          "envergadura",
+          "oceano",
+          "vento",
+          "navegador"
+        ],
+        "phrases": [
+          "Ave marinha com a maior envergadura de asas do mundo capaz de voar por anos sem tocar terra.",
+          "Plana sobre as ondas dos oceanos austrais aproveitando as correntes marítimas sem bater asas."
+        ]
+      },
+      {
+        "name": "Cegonha-Branca",
+        "sub": "aves",
+        "word": "chaminé",
+        "phrase": "Grande ave migratória que constrói ninhos gigantescos sobre telhados, torres e chaminés.",
+        "words": [
+          "chaminé",
+          "lenda-bebê",
+          "migração",
+          "ninho-alto"
+        ],
+        "phrases": [
+          "Grande ave migratória que constrói ninhos gigantescos sobre telhados, torres e chaminés.",
+          "Famosa no folclore ocidental como a encarregada mágica de entregar recém-nascidos aos pais."
+        ]
+      },
+      {
+        "name": "Tubarão-Branco",
+        "sub": "aquaticos",
+        "word": "barbatana",
+        "phrase": "Grande predador das profundezas oceânicas de mandíbula armada com fileiras de dentes serrilhados.",
+        "words": [
+          "barbatana",
+          "dentes-triangulares",
+          "sangue",
+          "oceano"
+        ],
+        "phrases": [
+          "Grande predador das profundezas oceânicas de mandíbula armada com fileiras de dentes serrilhados.",
+          "Caçador com sentidos elétricos apurados temido e reverenciado em todos os mares abertos."
+        ]
+      },
+      {
+        "name": "Baleia-Azul",
+        "sub": "aquaticos",
+        "word": "gigante",
+        "phrase": "O maior animal que já existiu no planeta cujo coração tem o tamanho de um carro pequeno.",
+        "words": [
+          "gigante",
+          "cachalote",
+          "krill",
+          "esguicho"
+        ],
+        "phrases": [
+          "O maior animal que já existiu no planeta cujo coração tem o tamanho de um carro pequeno.",
+          "Gigante pacífico que filtra toneladas de pequenos crustáceos com suas barbatanas flexíveis."
+        ]
+      },
+      {
+        "name": "Golfinho-Rotador",
+        "sub": "aquaticos",
+        "word": "saltos",
+        "phrase": "Cetáceo acrobático e inteligente que salta fora da água dando múltiplos giros no ar.",
+        "words": [
+          "saltos",
+          "giros",
+          "ecolocalização",
+          "noronha"
+        ],
+        "phrases": [
+          "Cetáceo acrobático e inteligente que salta fora da água dando múltiplos giros no ar.",
+          "Animal altamente sociável que navega e se comunica através de cliques de sonar biológico."
+        ]
+      },
+      {
+        "name": "Orca (Baleia-Assassina)",
+        "sub": "aquaticos",
+        "word": "preto-branco",
+        "phrase": "O maior membro da família dos golfinhos, caçador supremo que atua em grupos coordenados.",
+        "words": [
+          "preto-branco",
+          "matriarca",
+          "caça-equipe",
+          "barbatana-alta"
+        ],
+        "phrases": [
+          "O maior membro da família dos golfinhos, caçador supremo que atua em grupos coordenados.",
+          "Com manchas brancas e dorso negro com barbatana dorsal ereta que desafia tubarões e focas."
+        ]
+      },
+      {
+        "name": "Polvo-Comum",
+        "sub": "aquaticos",
+        "word": "tentáculos",
+        "phrase": "Molusco invertebrado com oito tentáculos munidos de ventosas e extraordinária capacidade de disfarce.",
+        "words": [
+          "tentáculos",
+          "tinta",
+          "camuflagem",
+          "três-corações"
+        ],
+        "phrases": [
+          "Molusco invertebrado com oito tentáculos munidos de ventosas e extraordinária capacidade de disfarce.",
+          "Possui sangue azulado, três corações e inteligência para abrir potes e resolver labirintos."
+        ]
+      },
+      {
+        "name": "Lula-Gigante",
+        "sub": "aquaticos",
+        "word": "abismo",
+        "phrase": "Criatura enigmática das fossas abissais que inspirou lendas medievais de monstros marinhos.",
+        "words": [
+          "abismo",
+          "olhos-prato",
+          "tentáculos-longos",
+          "kraken"
+        ],
+        "phrases": [
+          "Criatura enigmática das fossas abissais que inspirou lendas medievais de monstros marinhos.",
+          "Invertebrado monumental de olhos do tamanho de pratos adaptado à escuridão total."
+        ]
+      },
+      {
+        "name": "Tartaruga-Marinha",
+        "sub": "aquaticos",
+        "word": "casco",
+        "phrase": "Réptil ancestral de nadadeiras longas que cruza oceanos e retorna à praia de nascença para desovar.",
+        "words": [
+          "casco",
+          "desova",
+          "praia",
+          "viagem-longa"
+        ],
+        "phrases": [
+          "Réptil ancestral de nadadeiras longas que cruza oceanos e retorna à praia de nascença para desovar.",
+          "Navegadora solitária ameaçada pelo lixo plástico nos oceanos que vive por quase um século."
+        ]
+      },
+      {
+        "name": "Raia-Manta (Jamanta)",
+        "sub": "aquaticos",
+        "word": "asas-marinhas",
+        "phrase": "Gigantesco peixe cartilaginoso que plana pelas águas com a graciosidade de um pássaro.",
+        "words": [
+          "asas-marinhas",
+          "plâncton",
+          "chifres-cefálicos",
+          "elegância"
+        ],
+        "phrases": [
+          "Gigantesco peixe cartilaginoso que plana pelas águas com a graciosidade de um pássaro.",
+          "Totalmente inofensiva apesar do tamanho monumental, alimentando-se apenas de plâncton."
+        ]
+      },
+      {
+        "name": "Água-Viva (Medusa)",
+        "sub": "aquaticos",
+        "word": "urticante",
+        "phrase": "Criatura gelatinosa translúcida que flutua nas correntes marinhas com tentáculos queimantes.",
+        "words": [
+          "urticante",
+          "tentáculos",
+          "transparente",
+          "gelatina"
+        ],
+        "phrases": [
+          "Criatura gelatinosa translúcida que flutua nas correntes marinhas com tentáculos queimantes.",
+          "Composta quase inteiramente de água, produz bioluminescência fascinante na escuridão."
+        ]
+      },
+      {
+        "name": "Peixe-Boi-Marinho",
+        "sub": "aquaticos",
+        "word": "dócil",
+        "phrase": "Mamífero aquático herbívoro e gordinho com cauda em formato de remo que mastiga algas calmamente.",
+        "words": [
+          "dócil",
+          "capim-agulha",
+          "nadadeiras",
+          "sereia"
+        ],
+        "phrases": [
+          "Mamífero aquático herbívoro e gordinho com cauda em formato de remo que mastiga algas calmamente.",
+          "Criatura pacífica que inspirou antigos marinheiros a criarem lendas sobre sereias no mar."
+        ]
+      },
+      {
+        "name": "Moreia-Verde",
+        "sub": "aquaticos",
+        "word": "fenda-rocha",
+        "phrase": "Peixe serpentiforme de corpo esguio e viscoso que espreita em tocas rochosas nos recifes.",
+        "words": [
+          "fenda-rocha",
+          "dentes-afiados",
+          "enguia",
+          "emboscada"
+        ],
+        "phrases": [
+          "Peixe serpentiforme de corpo esguio e viscoso que espreita em tocas rochosas nos recifes.",
+          "Abre e fecha a boca pontiaguda constantemente para respirar enquanto vigia suas presas."
+        ]
+      },
+      {
+        "name": "Baiacu",
+        "sub": "aquaticos",
+        "word": "infla",
+        "phrase": "Peixe que engole água para inflar o corpo feito uma bola cheia de espinhos quando ameaçado.",
+        "words": [
+          "infla",
+          "espinhos",
+          "tetrodotoxina",
+          "bola"
+        ],
+        "phrases": [
+          "Peixe que engole água para inflar o corpo feito uma bola cheia de espinhos quando ameaçado.",
+          "Carrega um dos venenos naturais mais potentes do reino animal, consumido no oriente com alto risco."
+        ]
+      },
+      {
+        "name": "Leão-Marinho",
+        "sub": "aquaticos",
+        "word": "costa",
+        "phrase": "Mamífero marinho barulhento com orelhas visíveis que descansa em colônias barulhentas sobre rochedos.",
+        "words": [
+          "costa",
+          "rugido-rouco",
+          "nadadeiras",
+          "pedras"
+        ],
+        "phrases": [
+          "Mamífero marinho barulhento com orelhas visíveis que descansa em colônias barulhentas sobre rochedos.",
+          "Capaz de se locomover com agilidade na terra usando todas as quatro nadadeiras."
+        ]
+      },
+      {
+        "name": "Boto-Cor-de-Rosa",
+        "sub": "aquaticos",
+        "word": "amazônia",
+        "phrase": "O maior golfinho de água doce do planeta com coloração rosada única e pescoço flexível.",
+        "words": [
+          "amazônia",
+          "lenda-chapéu",
+          "rio",
+          "rosa"
+        ],
+        "phrases": [
+          "O maior golfinho de água doce do planeta com coloração rosada única e pescoço flexível.",
+          "Protagonista de lendas amazônicas de bailes ribeirinhos e seduções mágicas sob luar."
+        ]
+      },
+      {
+        "name": "Piranha-Vermelha",
+        "sub": "aquaticos",
+        "word": "dentes-afiados",
+        "phrase": "Pequeno peixe predador de mandíbula saliente e dentes triangulares que caça em cardumes vorazes.",
+        "words": [
+          "dentes-afiados",
+          "cardume",
+          "bacia-rio",
+          "frenesi"
+        ],
+        "phrases": [
+          "Pequeno peixe predador de mandíbula saliente e dentes triangulares que caça em cardumes vorazes.",
+          "Sentem sangue na água e desossam presas feridas em questão de minutos em rios tropicais."
+        ]
+      },
+      {
+        "name": "Pirarucu",
+        "sub": "aquaticos",
+        "word": "gigante-rio",
+        "phrase": "O gigante das águas doces brasileiras que precisa subir à superfície para respirar oxigênio com frequência.",
+        "words": [
+          "gigante-rio",
+          "escamas-duras",
+          "respiração-ar",
+          "amazônia"
+        ],
+        "phrases": [
+          "O gigante das águas doces brasileiras que precisa subir à superfície para respirar oxigênio com frequência.",
+          "Peixe com escamas espessas quase impenetráveis e carne muito apreciada na culinária nortista."
+        ]
+      },
+      {
+        "name": "Caranguejo-Uçá",
+        "sub": "aquaticos",
+        "word": "manguezal",
+        "phrase": "Crustáceo de carapaça arredondada e fortes pinças que constrói tocas na lama dos mangues.",
+        "words": [
+          "manguezal",
+          "pinças",
+          "lama",
+          "andada"
+        ],
+        "phrases": [
+          "Crustáceo de carapaça arredondada e fortes pinças que constrói tocas na lama dos mangues.",
+          "Famoso pela época da andada quando sai das galerias para o acasalamento sob a maré."
+        ]
+      },
+      {
+        "name": "Lagosta-Vermelha",
+        "sub": "aquaticos",
+        "word": "antenas-longas",
+        "phrase": "Crustáceo marinho com longas antenas sensoriais que caminha sobre o leito oceânico rochoso.",
+        "words": [
+          "antenas-longas",
+          "fundo-mar",
+          "carapaça",
+          "gourmet"
+        ],
+        "phrases": [
+          "Crustáceo marinho com longas antenas sensoriais que caminha sobre o leito oceânico rochoso.",
+          "Prato nobre da gastronomia litorânea apreciado pela carne tenra de sua cauda musculosa."
+        ]
+      },
+      {
+        "name": "Estrela-do-Mar",
+        "sub": "aquaticos",
+        "word": "cinco-braços",
+        "phrase": "Equinodermo com simetria radial que se desloca lentamente usando centenas de pés ambulacrários.",
+        "words": [
+          "cinco-braços",
+          "regeneração",
+          "bentônica",
+          "ventosas"
+        ],
+        "phrases": [
+          "Equinodermo com simetria radial que se desloca lentamente usando centenas de pés ambulacrários.",
+          "Tem a incrível capacidade de regenerar braços perdidos e digerir alimentos externamente."
+        ]
+      },
+      {
+        "name": "Ostra-Pérola",
+        "sub": "aquaticos",
+        "word": "concha-bivalve",
+        "phrase": "Molusco marinho que isola grãos de areia invasores cobrindo-os com camadas brilhantes de nácar.",
+        "words": [
+          "concha-bivalve",
+          "pérola",
+          "nácar",
+          "recife"
+        ],
+        "phrases": [
+          "Molusco marinho que isola grãos de areia invasores cobrindo-os com camadas brilhantes de nácar.",
+          "Fixa-se em rochas submarinas filtrando água e produzindo pequenas esferas preciosas."
+        ]
+      },
+      {
+        "name": "Barracuda",
+        "sub": "aquaticos",
+        "word": "torpedo",
+        "phrase": "Peixe predador veloz em formato de torpedo atraído por objetos brilhantes em águas claras.",
+        "words": [
+          "torpedo",
+          "brilho",
+          "ataque-relâmpago",
+          "dentes-adaga"
+        ],
+        "phrases": [
+          "Peixe predador veloz em formato de torpedo atraído por objetos brilhantes em águas claras.",
+          "Realiza ataques fulminantes com dentes afiados em emboscadas perto de recifes de coral."
+        ]
+      },
+      {
+        "name": "Peixe-Espada",
+        "sub": "aquaticos",
+        "word": "bico-lamina",
+        "phrase": "Poderoso habitante do mar aberto cujo focinho se projeta em uma longa lâmina óssea achatada.",
+        "words": [
+          "bico-lamina",
+          "oceano-aberto",
+          "velocidade",
+          "pesca"
+        ],
+        "phrases": [
+          "Poderoso habitante do mar aberto cujo focinho se projeta em uma longa lâmina óssea achatada.",
+          "Usa sua lâmina para golpear e atordoar cardumes velozes em corridas de alta profundidade."
+        ]
+      },
+      {
+        "name": "Caravelha-Portuguesa",
+        "sub": "aquaticos",
+        "word": "vela-flutuante",
+        "phrase": "Colônia de organismos que flutua impulsionada por uma bolsa cheia de gás parecida com uma vela.",
+        "words": [
+          "vela-flutuante",
+          "queimadura",
+          "colônia",
+          "tentáculos-azuis"
+        ],
+        "phrases": [
+          "Colônia de organismos que flutua impulsionada por uma bolsa cheia de gás parecida com uma vela.",
+          "Arrasta longos tentáculos azuis venenosos capazes de causar queimaduras intensas em banhistas."
+        ]
+      },
+      {
+        "name": "Nautilus",
+        "sub": "aquaticos",
+        "word": "fóssil-vivo",
+        "phrase": "Cefalópode primitivo protegido por uma concha espiralada perfeita dividida em câmaras de gás.",
+        "words": [
+          "fóssil-vivo",
+          "câmaras",
+          "espiral",
+          "profundeza"
+        ],
+        "phrases": [
+          "Cefalópode primitivo protegido por uma concha espiralada perfeita dividida em câmaras de gás.",
+          "Verdadeiro fóssil vivo que regula sua flutuabilidade há centenas de milhões de anos no oceano."
+        ]
+      },
+      {
+        "name": "Pangolim",
+        "sub": "selvagens",
+        "word": "escamas-queratina",
+        "phrase": "Mamífero tímido e único coberto por placas de queratina que se enrola como uma bola impenetrável.",
+        "words": [
+          "escamas-queratina",
+          "bola-armadura",
+          "língua-formigas",
+          "ameaçado"
+        ],
+        "phrases": [
+          "Mamífero tímido e único coberto por placas de queratina que se enrola como uma bola impenetrável.",
+          "Alvo infelizmente cobiçado pelo tráfico internacional que se alimenta de cupins com língua fina."
+        ]
+      },
+      {
+        "name": "Ornitorrinco",
+        "sub": "selvagens",
+        "word": "bico-pato",
+        "phrase": "Criatura bizarra australiana com bico flexível que bota ovos e produz veneno nas patas traseiras.",
+        "words": [
+          "bico-pato",
+          "bota-ovos",
+          "esporão-venenoso",
+          "eletro-sensores"
+        ],
+        "phrases": [
+          "Criatura bizarra australiana com bico flexível que bota ovos e produz veneno nas patas traseiras.",
+          "Nada com olhos fechados localizando presas através de campos elétricos emitidos na água turva."
+        ]
+      },
+      {
+        "name": "Dragão-de-Komodo",
+        "sub": "selvagens",
+        "word": "maior-lagarto",
+        "phrase": "O maior réptil lagarto do mundo capaz de abater búfalos com mordidas que inoculam anticoagulantes mortais.",
+        "words": [
+          "maior-lagarto",
+          "saliva-bactérias",
+          "veneno-sangue",
+          "ilhas-indonésia"
+        ],
+        "phrases": [
+          "O maior réptil lagarto do mundo capaz de abater búfalos com mordidas que inoculam anticoagulantes mortais.",
+          "Predador de sangue frio com língua bífida amarela que rastreia presas feridas a quilômetros."
+        ]
+      },
+      {
+        "name": "Lontra-Gigante (Ariranha)",
+        "sub": "selvagens",
+        "word": "pantanal-rios",
+        "phrase": "A maior lontra do mundo apelidada de lobo dos rios que domina as águas do Pantanal e da Amazônia.",
+        "words": [
+          "pantanal-rios",
+          "peixes-grandes",
+          "latidos-aquáticos",
+          "bando-família"
+        ],
+        "phrases": [
+          "A maior lontra do mundo apelidada de lobo dos rios que domina as águas do Pantanal e da Amazônia.",
+          "Nada em grupos barulhentos e unidos capazes de afugentar até jacarés de grande porte."
+        ]
+      },
+      {
+        "name": "Mico-Leão-Dourado",
+        "sub": "selvagens",
+        "word": "juba-dourada",
+        "phrase": "Pequeno macaco brasileiro com pelos de tom dourado reluzente e juba exuberante ao redor da face.",
+        "words": [
+          "juba-dourada",
+          "mata-atlântica",
+          "pequeno-primata",
+          "preservação"
+        ],
+        "phrases": [
+          "Pequeno macaco brasileiro com pelos de tom dourado reluzente e juba exuberante ao redor da face.",
+          "Símbolo histórico da luta pela conservação da biodiversidade da Mata Atlântica ameaçada."
+        ]
+      },
+      {
+        "name": "Bicho-Folha (Louva-a-Deus)",
+        "sub": "selvagens",
+        "word": "camuflagem-verde",
+        "phrase": "Inseto mestre supremo do disfarce que copia perfeitamente o formato, cor e nervuras de uma folha verde.",
+        "words": [
+          "camuflagem-verde",
+          "nervuras-falsas",
+          "patas-garras",
+          "imóvel"
+        ],
+        "phrases": [
+          "Inseto mestre supremo do disfarce que copia perfeitamente o formato, cor e nervuras de uma folha verde.",
+          "Permanece imóvel ao sabor do vento esperando presas distraídas passarem ao alcance de suas garras."
+        ]
+      },
+      {
+        "name": "Tatu-Bola",
+        "sub": "selvagens",
+        "word": "casca-articulada",
+        "phrase": "Pequeno mamífero brasileiro que fecha completamente sua carapaça óssea em uma esfera dura quando ameaçado.",
+        "words": [
+          "casca-articulada",
+          "bola-perfeita",
+          "caatinga",
+          "roleta"
+        ],
+        "phrases": [
+          "Pequeno mamífero brasileiro que fecha completamente sua carapaça óssea em uma esfera dura quando ameaçado.",
+          "Mascote de campeonatos mundiais que vive nos biomas secos da Caatinga e do Cerrado."
+        ]
+      },
+      {
+        "name": "Búfalo-Africano",
+        "sub": "selvagens",
+        "word": "chifres-capacete",
+        "phrase": "Herbívoro massivo da África famoso pelo escudo ósseo contínuo sobre a testa formado por seus chifres.",
+        "words": [
+          "chifres-capacete",
+          "manada-furiosa",
+          "savana",
+          "vingativo"
+        ],
+        "phrases": [
+          "Herbívoro massivo da África famoso pelo escudo ósseo contínuo sobre a testa formado por seus chifres.",
+          "Membro dos cinco grandes da savana conhecido pela coragem de contra-atacar e enfrentar bandos de leões."
+        ]
+      },
+      {
+        "name": "Foca-Leopardo",
+        "sub": "aquaticos",
+        "word": "predadora-gelo",
+        "phrase": "Grande foca carnívora do continente gelado de corpo esguio e manchas cinzentas que caça pinguins na água.",
+        "words": [
+          "predadora-gelo",
+          "dentes-longos",
+          "antártica",
+          "pinguins-caça"
+        ],
+        "phrases": [
+          "Grande foca carnívora do continente gelado de corpo esguio e manchas cinzentas que caça pinguins na água.",
+          "Predadora submarina ágil e veloz com dentes pontiagudos adaptados para rasgar presas marinhas."
+        ]
+      },
+      {
+        "name": "Narval (Unicórnio-do-Mar)",
+        "sub": "aquaticos",
+        "word": "presa-espiralada",
+        "phrase": "Baleia do oceano ártico cujo dente canino cresce em uma longa presa helicoidal de marfim de dois metros.",
+        "words": [
+          "presa-espiralada",
+          "ártico-gelo",
+          "baleia-dente",
+          "sensorial"
+        ],
+        "phrases": [
+          "Baleia do oceano ártico cujo dente canino cresce em uma longa presa helicoidal de marfim de dois metros.",
+          "O verdadeiro unicórnio das profundezas geladas que utiliza sua lâmina como órgão sensorial ultrassensível."
+        ]
+      },
+      {
+        "name": "Tartaruga-Gigante-de-Galápagos",
+        "sub": "selvagens",
+        "word": "século-vida",
+        "phrase": "Réptil terrestre colossal que ultrapassa cem anos de idade movendo-se em passos lentos e meditativos.",
+        "words": [
+          "século-vida",
+          "casco-cúpula",
+          "pescoço-longo",
+          "lentidão"
+        ],
+        "phrases": [
+          "Réptil terrestre colossal que ultrapassa cem anos de idade movendo-se em passos lentos e meditativos.",
+          "Endêmica de ilhas vulcânicas do Pacífico com carapaças adaptadas à vegetação de cada altitude."
+        ]
+      },
+      {
+        "name": "Peixe-Palhaço-do-Mar-Vermelho",
+        "sub": "aquaticos",
+        "word": "laranja-brilhante",
+        "phrase": "Pequeno peixe de listras bem marcadas que dança protegido entre tentáculos venenosos nos recifes.",
+        "words": [
+          "laranja-brilhante",
+          "simbiose",
+          "anêmona-fogo",
+          "faixas-pretas"
+        ],
+        "phrases": [
+          "Pequeno peixe de listras bem marcadas que dança protegido entre tentáculos venenosos nos recifes.",
+          "Habitante colorido de mares quentes que defende seu território marinho contra invasores maiores."
+        ]
+      },
+      {
+        "name": "Condor-dos-Andes",
+        "sub": "aves",
+        "word": "maior-envergadura-terra",
+        "phrase": "A maior ave de rapina voadora do planeta que plana majestosa sobre os picos nevados da cordilheira andina.",
+        "words": [
+          "maior-envergadura-terra",
+          "colar-branco",
+          "altitude-picos",
+          "voo-planar"
+        ],
+        "phrases": [
+          "A maior ave de rapina voadora do planeta que plana majestosa sobre os picos nevados da cordilheira andina.",
+          "Ave sagrada para civilizações pré-colombianas com colar de penas brancas e cabeça calva avermelhada."
+        ]
+      },
+      {
+        "name": "Curió",
+        "sub": "aves",
+        "word": "canto-repetido",
+        "phrase": "Pássaro brasileiro de plumagem escura e peito castanho admirado pela beleza melódica e complexa de seu canto.",
+        "words": [
+          "canto-repetido",
+          "pássaro-preto",
+          "bico-forte",
+          "torneios"
+        ],
+        "phrases": [
+          "Pássaro brasileiro de plumagem escura e peito castanho admirado pela beleza melódica e complexa de seu canto.",
+          "Ave muito valorizada em competições tradicionais de canto que habita capoeiras e brejos."
+        ]
+      },
+      {
+        "name": "Sabiá-Laranjeira",
+        "sub": "aves",
+        "word": "ave-nacional",
+        "phrase": "A ave símbolo oficial do Brasil cujo canto melodioso ecoa pelas cidades antes do amanhecer na primavera.",
+        "words": [
+          "ave-nacional",
+          "peito-ferrugem",
+          "canto-madrugada",
+          "primavera"
+        ],
+        "phrases": [
+          "A ave símbolo oficial do Brasil cujo canto melodioso ecoa pelas cidades antes do amanhecer na primavera.",
+          "Passarinho de peito alaranjado e dorso pardo imortalizado na poesia nacional pela saudade da terra."
+        ]
+      },
+      {
+        "name": "Gato-do-Mato",
+        "sub": "selvagens",
+        "word": "pequeno-felino",
+        "phrase": "Pequeno felino silvestre brasileiro muito ágil que sobe com facilidade em troncos caçando pequenos roedores.",
+        "words": [
+          "pequeno-felino",
+          "manchas-rosetas",
+          "árvores",
+          "noturno"
+        ],
+        "phrases": [
+          "Pequeno felino silvestre brasileiro muito ágil que sobe com facilidade em troncos caçando pequenos roedores.",
+          "Pelagem pintada com rosetas parecida com uma versão miniatura e graciosa de uma onça."
+        ]
+      },
+      {
+        "name": "Quati",
+        "sub": "selvagens",
+        "word": "focinho-móvel",
+        "phrase": "Mamífero carnívoro de rabo comprido anelado que anda com o focinho grudado no chão revirando folhas secas.",
+        "words": [
+          "focinho-móvel",
+          "cauda-listrada",
+          "bando-curioso",
+          "parques"
+        ],
+        "phrases": [
+          "Mamífero carnívoro de rabo comprido anelado que anda com o focinho grudado no chão revirando folhas secas.",
+          "Frequentador assíduo e ousado de trilhas turísticas em busca de frutas e lanches descuidados."
+        ]
+      },
+      {
+        "name": "Jupará (Kinkajou)",
+        "sub": "selvagens",
+        "word": "cauda-preênsil",
+        "phrase": "Pequeno mamífero das copas das árvores amazônicas com cauda que funciona como um quinto membro para se pendurar.",
+        "words": [
+          "cauda-preênsil",
+          "olhos-grandes",
+          "mel-frutas",
+          "noturno-copa"
+        ],
+        "phrases": [
+          "Pequeno mamífero das copas das árvores amazônicas com cauda que funciona como um quinto membro para se pendurar.",
+          "Adora lamber o néctar das flores e frutos doces durante a madrugada com sua língua fina e longa."
+        ]
       }
     ]
   },
@@ -14190,6 +24697,1734 @@ const THEME_DATABASE = {
         ],
         "word": "madeira",
         "phrase": "Tira as medidas na parede e fabrica móveis sob medida com encaixes perfeitos."
+      },
+      {
+        "name": "Médico Cirurgião",
+        "sub": "saude",
+        "word": "bisturi",
+        "phrase": "Profissional de mãos firmes que realiza incisões delicadas para salvar vidas no bloco cirúrgico.",
+        "words": [
+          "bisturi",
+          "bloco-operatório",
+          "luvas",
+          "precisão"
+        ],
+        "phrases": [
+          "Profissional de mãos firmes que realiza incisões delicadas para salvar vidas no bloco cirúrgico.",
+          "Usa paramentação estéril e instrumentos cirúrgicos para reparar órgãos e tecidos internos."
+        ]
+      },
+      {
+        "name": "Dentista / Odontologista",
+        "sub": "saude",
+        "word": "broca",
+        "phrase": "Especialista na saúde bucal que restaura dentes e alivia dores na cadeira odontológica.",
+        "words": [
+          "broca",
+          "cárie",
+          "cadeira-reclinável",
+          "sorriso"
+        ],
+        "phrases": [
+          "Especialista na saúde bucal que restaura dentes e alivia dores na cadeira odontológica.",
+          "Trata canais, limpa tártaro e devolve a função mastigatória e a estética aos sorrisos."
+        ]
+      },
+      {
+        "name": "Paramédico / Socorrista",
+        "sub": "saude",
+        "word": "ambulância",
+        "phrase": "Profissional que corre contra o relógio prestando primeiros socorros em acidentes nas ruas.",
+        "words": [
+          "ambulância",
+          "sirene",
+          "urgência",
+          "resgate"
+        ],
+        "phrases": [
+          "Profissional que corre contra o relógio prestando primeiros socorros em acidentes nas ruas.",
+          "Estabiliza vítimas com colar cervical e desfibrilador no trajeto veloz da ambulância."
+        ]
+      },
+      {
+        "name": "Anestesista",
+        "sub": "saude",
+        "word": "sedação",
+        "phrase": "Médico especialista em bloquear a dor e monitorar as funções vitais durante cirurgias complexas.",
+        "words": [
+          "sedação",
+          "monitor",
+          "sem-dor",
+          "gases"
+        ],
+        "phrases": [
+          "Médico especialista em bloquear a dor e monitorar as funções vitais durante cirurgias complexas.",
+          "Calcula dosagens precisas de sedativos para manter o paciente inconsciente e em segurança."
+        ]
+      },
+      {
+        "name": "Pediatra",
+        "sub": "saude",
+        "word": "crianças",
+        "phrase": "Médico que acompanha o desenvolvimento saudável de bebês e crianças com carinho e paciência.",
+        "words": [
+          "crianças",
+          "crescimento",
+          "vacina",
+          "estetoscópio-lúdico"
+        ],
+        "phrases": [
+          "Médico que acompanha o desenvolvimento saudável de bebês e crianças com carinho e paciência.",
+          "Mede altura, peso e orienta pais sobre febres e marcos motores na primeira infância."
+        ]
+      },
+      {
+        "name": "Cardiologista",
+        "sub": "saude",
+        "word": "coração",
+        "phrase": "Especialista no funcionamento do miocárdio, válvulas cardíacas e circulação sanguínea.",
+        "words": [
+          "coração",
+          "eletrocardiograma",
+          "pressão",
+          "artérias"
+        ],
+        "phrases": [
+          "Especialista no funcionamento do miocárdio, válvulas cardíacas e circulação sanguínea.",
+          "Orienta sobre controle da pressão arterial e previne infartos e arritmias cardíacas."
+        ]
+      },
+      {
+        "name": "Oftalmologista",
+        "sub": "saude",
+        "word": "grau",
+        "phrase": "Médico dos olhos que testa a acuidade visual e prescreve lentes corretivas e cirurgias de miopia.",
+        "words": [
+          "grau",
+          "óculos",
+          "retina",
+          "letras-parede"
+        ],
+        "phrases": [
+          "Médico dos olhos que testa a acuidade visual e prescreve lentes corretivas e cirurgias de miopia.",
+          "Examina o fundo do olho e mede a pressão ocular para prevenir o glaucoma."
+        ]
+      },
+      {
+        "name": "Ortopedista",
+        "sub": "saude",
+        "word": "fratura",
+        "phrase": "Trata fraturas ósseas, luxações e desvios de coluna engessando membros ou operando juntas.",
+        "words": [
+          "fratura",
+          "gesso",
+          "ossos",
+          "radiografia"
+        ],
+        "phrases": [
+          "Trata fraturas ósseas, luxações e desvios de coluna engessando membros ou operando juntas.",
+          "Analisa radiografias de ossos quebrados e orienta o uso de talas e próteses articulares."
+        ]
+      },
+      {
+        "name": "Dermatologista",
+        "sub": "saude",
+        "word": "pele",
+        "phrase": "Médico focado na saúde da pele, unhas e couro cabeludo combatendo manchas e queimaduras.",
+        "words": [
+          "pele",
+          "protetor-solar",
+          "pintas",
+          "cabelos"
+        ],
+        "phrases": [
+          "Médico focado na saúde da pele, unhas e couro cabeludo combatendo manchas e queimaduras.",
+          "Mapeia sinais e pintas prevenindo o câncer de pele e orientando cuidados dermatológicos."
+        ]
+      },
+      {
+        "name": "Psiquiatra",
+        "sub": "saude",
+        "word": "ansiedade",
+        "phrase": "Médico especialista em saúde mental capacitado a prescrever medicamentos para regular a química cerebral.",
+        "words": [
+          "ansiedade",
+          "antidepressivo",
+          "diagnóstico",
+          "química-cerebral"
+        ],
+        "phrases": [
+          "Médico especialista em saúde mental capacitado a prescrever medicamentos para regular a química cerebral.",
+          "Trata quadros de depressão profunda, ansiedade e transtornos de humor com suporte clínico."
+        ]
+      },
+      {
+        "name": "Instrumentador Cirúrgico",
+        "sub": "saude",
+        "word": "pinças",
+        "phrase": "Profissional que organiza e entrega os instrumentos corretos nas mãos do cirurgião no momento exato.",
+        "words": [
+          "pinças",
+          "contagem",
+          "mesa-cirúrgica",
+          "agilidade"
+        ],
+        "phrases": [
+          "Profissional que organiza e entrega os instrumentos corretos nas mãos do cirurgião no momento exato.",
+          "Garante a esterilidade dos bisturis e faz a contagem minuciosa de compressas antes do fechamento."
+        ]
+      },
+      {
+        "name": "Radiologista",
+        "sub": "saude",
+        "word": "raio-x",
+        "phrase": "Médico que interpreta exames de imagem como tomografias, ressonâncias e raios-x para revelar diagnósticos.",
+        "words": [
+          "raio-x",
+          "tomografia",
+          "imagem",
+          "laudo-preto-branco"
+        ],
+        "phrases": [
+          "Médico que interpreta exames de imagem como tomografias, ressonâncias e raios-x para revelar diagnósticos.",
+          "Identifica tumores, coágulos e fraturas através da análise criteriosa de sombras e cortes em telas."
+        ]
+      },
+      {
+        "name": "Obstetra",
+        "sub": "saude",
+        "word": "parto",
+        "phrase": "Acompanha a mulher durante o pré-natal e conduz o nascimento seguro do recém-nascido.",
+        "words": [
+          "parto",
+          "gestação",
+          "bebê",
+          "ultrassom"
+        ],
+        "phrases": [
+          "Acompanha a mulher durante o pré-natal e conduz o nascimento seguro do recém-nascido.",
+          "Monitora batimentos cardíacos fetais e ampara a mãe nos momentos finais do trabalho de parto."
+        ]
+      },
+      {
+        "name": "Quiropraxista",
+        "sub": "saude",
+        "word": "estalos",
+        "phrase": "Ajusta manualmente as articulações da coluna vertebral eliminando bloqueios nervosos e dores.",
+        "words": [
+          "estalos",
+          "coluna",
+          "ajuste",
+          "vértebras"
+        ],
+        "phrases": [
+          "Ajusta manualmente as articulações da coluna vertebral eliminando bloqueios nervosos e dores.",
+          "Alivia tensões posturais através de manobras rápidas e estalos controlados na coluna."
+        ]
+      },
+      {
+        "name": "Perito Médico Legista",
+        "sub": "saude",
+        "word": "autópsia",
+        "phrase": "Médico que examina corpos em necrotérios para determinar as circunstâncias e causas de óbitos violentos.",
+        "words": [
+          "autópsia",
+          "laudo-criminal",
+          "causa-morte",
+          "necropsia"
+        ],
+        "phrases": [
+          "Médico que examina corpos em necrotérios para determinar as circunstâncias e causas de óbitos violentos.",
+          "Coleta evidências biológicas decisivas para instruir inquéritos policiais e investigações criminais."
+        ]
+      },
+      {
+        "name": "Massoterapeuta",
+        "sub": "saude",
+        "word": "óleos",
+        "phrase": "Utiliza técnicas manuais sobre músculos e tendões para liberar nós de tensão e proporcionar relaxamento.",
+        "words": [
+          "óleos",
+          "tensão",
+          "maca",
+          "nódulos"
+        ],
+        "phrases": [
+          "Utiliza técnicas manuais sobre músculos e tendões para liberar nós de tensão e proporcionar relaxamento.",
+          "Trabalha com óleos essenciais e toques precisos aliviando o estresse físico e mental sobre a maca."
+        ]
+      },
+      {
+        "name": "Técnico de Enfermagem",
+        "sub": "saude",
+        "word": "soro",
+        "phrase": "Aplica medicações prescritas, punciona acessos venosos e realiza cuidados de higiene em internados.",
+        "words": [
+          "soro",
+          "injeção",
+          "pressão",
+          "banho-leito"
+        ],
+        "phrases": [
+          "Aplica medicações prescritas, punciona acessos venosos e realiza cuidados de higiene em internados.",
+          "Braço direito dos enfermeiros na execução direta dos procedimentos de suporte diário nos leitos."
+        ]
+      },
+      {
+        "name": "Acupunturista",
+        "sub": "saude",
+        "word": "agulhas",
+        "phrase": "Insere finíssimas agulhas descartáveis em pontos específicos do corpo para harmonizar energias e aliviar dores.",
+        "words": [
+          "agulhas",
+          "meridianos",
+          "energia",
+          "pontos"
+        ],
+        "phrases": [
+          "Insere finíssimas agulhas descartáveis em pontos específicos do corpo para harmonizar energias e aliviar dores.",
+          "Técnica milenar oriental que estimula respostas neurais e relaxamento profundo do organismo."
+        ]
+      },
+      {
+        "name": "Educador Físico / Personal Trainer",
+        "sub": "saude",
+        "word": "treino",
+        "phrase": "Prescreve rotinas de exercícios de força e cardio corrigindo a execução para evitar lesões musculares.",
+        "words": [
+          "treino",
+          "pesos",
+          "postura",
+          "repetições"
+        ],
+        "phrases": [
+          "Prescreve rotinas de exercícios de força e cardio corrigindo a execução para evitar lesões musculares.",
+          "Motiva o aluno a atingir metas de condicionamento físico com cronômetro e incentivo constante."
+        ]
+      },
+      {
+        "name": "Químico Laboratorial",
+        "sub": "ciencias",
+        "word": "tubo-ensaio",
+        "phrase": "Manipula substâncias e moléculas desenvolvendo novos materiais ou analisando pureza química.",
+        "words": [
+          "tubo-ensaio",
+          "reagentes",
+          "reação",
+          "capela"
+        ],
+        "phrases": [
+          "Manipula substâncias e moléculas desenvolvendo novos materiais ou analisando pureza química.",
+          "Mistura compostos em beckers observando variações de cor, temperatura e precipitação de sais."
+        ]
+      },
+      {
+        "name": "Físico Teórico",
+        "sub": "ciencias",
+        "word": "lousa",
+        "phrase": "Elabora modelos matemáticos abstratos para explicar desde partículas subatômicas até a curvatura do espaço.",
+        "words": [
+          "lousa",
+          "equações",
+          "quântica",
+          "relatividade"
+        ],
+        "phrases": [
+          "Elabora modelos matemáticos abstratos para explicar desde partículas subatômicas até a curvatura do espaço.",
+          "Resolve teoremas complexos em quadros negros repletos de fórmulas e símbolos gregos."
+        ]
+      },
+      {
+        "name": "Engenheiro de Software",
+        "sub": "ciencias",
+        "word": "código",
+        "phrase": "Arquiteta soluções digitais e escreve códigos lógicos para fazer sistemas e aplicativos funcionarem.",
+        "words": [
+          "código",
+          "algoritmo",
+          "terminal",
+          "bug"
+        ],
+        "phrases": [
+          "Arquiteta soluções digitais e escreve códigos lógicos para fazer sistemas e aplicativos funcionarem.",
+          "Passa horas em frente a múltiplos monitores depurando linhas de programa e subindo versões na nuvem."
+        ]
+      },
+      {
+        "name": "Engenheiro Civil",
+        "sub": "ciencias",
+        "word": "capacete",
+        "phrase": "Calcula estruturas de sustentação e fiscaliza o canteiro de obras de pontes e edifícios altos.",
+        "words": [
+          "capacete",
+          "concreto",
+          "vigas",
+          "obra"
+        ],
+        "phrases": [
+          "Calcula estruturas de sustentação e fiscaliza o canteiro de obras de pontes e edifícios altos.",
+          "Garante que fundações e lajes suportem as cargas mecânicas sem risco de desabamento."
+        ]
+      },
+      {
+        "name": "Geneticista",
+        "sub": "ciencias",
+        "word": "dna",
+        "phrase": "Investiga o código genético hereditário e desenvolve terapias para corrigir anomalias em genes.",
+        "words": [
+          "dna",
+          "mutação",
+          "crispr",
+          "cromossomo"
+        ],
+        "phrases": [
+          "Investiga o código genético hereditário e desenvolve terapias para corrigir anomalias em genes.",
+          "Mapeia sequências de nucleotídeos em espirais de DNA combatendo doenças hereditárias raras."
+        ]
+      },
+      {
+        "name": "Historiador",
+        "sub": "ciencias",
+        "word": "manuscritos",
+        "phrase": "Pesquisa documentos de época em arquivos empoeirados para compreender as transformações sociais.",
+        "words": [
+          "manuscritos",
+          "séculos",
+          "documentos",
+          "arquivos"
+        ],
+        "phrases": [
+          "Pesquisa documentos de época em arquivos empoeirados para compreender as transformações sociais.",
+          "Contextualiza guerras, revoluções e tratados do passado para iluminar os dilemas do presente."
+        ]
+      },
+      {
+        "name": "Filósofo",
+        "sub": "ciencias",
+        "word": "ética",
+        "phrase": "Examina os princípios fundamentais da existência humana, da verdade, do conhecimento e da moral.",
+        "words": [
+          "ética",
+          "questionamento",
+          "lógica",
+          "pensamento"
+        ],
+        "phrases": [
+          "Examina os princípios fundamentais da existência humana, da verdade, do conhecimento e da moral.",
+          "Constrói argumentos lógicos questionando verdades estabelecidas e provocando reflexão profunda."
+        ]
+      },
+      {
+        "name": "Matemático",
+        "sub": "ciencias",
+        "word": "teorema",
+        "phrase": "Explora padrões numéricos abstratos e demonstra teoremas que fundamentam toda a tecnologia moderna.",
+        "words": [
+          "teorema",
+          "cálculo",
+          "demonstração",
+          "números"
+        ],
+        "phrases": [
+          "Explora padrões numéricos abstratos e demonstra teoremas que fundamentam toda a tecnologia moderna.",
+          "Trabalha com criptografia, matrizes e equações diferenciais provando certezas lógicas absolutas."
+        ]
+      },
+      {
+        "name": "Cientista de Dados",
+        "sub": "ciencias",
+        "word": "estatística",
+        "phrase": "Minera volumes massivos de informação digital identificando padrões ocultos para tomadas de decisão.",
+        "words": [
+          "estatística",
+          "machine-learning",
+          "gráficos",
+          "padrões"
+        ],
+        "phrases": [
+          "Minera volumes massivos de informação digital identificando padrões ocultos para tomadas de decisão.",
+          "Treina modelos preditivos e constrói visualizações analíticas transformando dados brutos em inteligência."
+        ]
+      },
+      {
+        "name": "Agrônomo",
+        "sub": "ciencias",
+        "word": "safra",
+        "phrase": "Aplica conhecimentos científicos no campo para maximizar a produtividade agrícola e cuidar do solo.",
+        "words": [
+          "safra",
+          "solo",
+          "sementes",
+          "colheita"
+        ],
+        "phrases": [
+          "Aplica conhecimentos científicos no campo para maximizar a produtividade agrícola e cuidar do solo.",
+          "Analisa nutrientes da terra, combate pragas nas lavouras e planeja a rotação sustentável de culturas."
+        ]
+      },
+      {
+        "name": "Sociólogo",
+        "sub": "ciencias",
+        "word": "desigualdade",
+        "phrase": "Examina as relações entre grupos sociais, movimentos coletivos e o impacto de políticas públicas.",
+        "words": [
+          "desigualdade",
+          "instituições",
+          "coletivo",
+          "pesquisa"
+        ],
+        "phrases": [
+          "Examina as relações entre grupos sociais, movimentos coletivos e o impacto de políticas públicas.",
+          "Aplica questionários e analisa dados estatísticos para entender tendências de comportamento coletivo."
+        ]
+      },
+      {
+        "name": "Sismólogo",
+        "sub": "ciencias",
+        "word": "terremoto",
+        "phrase": "Monitora registros de tremores de terra e calcula a magnitude de falhas tectônicas em atividade.",
+        "words": [
+          "terremoto",
+          "escala-richter",
+          "epicentro",
+          "ondas-sísmicas"
+        ],
+        "phrases": [
+          "Monitora registros de tremores de terra e calcula a magnitude de falhas tectônicas em atividade.",
+          "Analisa sismógrafos para identificar o epicentro de abalos sísmicos e emitir alertas de tsunami."
+        ]
+      },
+      {
+        "name": "Bioquímico",
+        "sub": "ciencias",
+        "word": "enzimas",
+        "phrase": "Investiga as reações químicas que sustentam a vida no interior das células de organismos vivos.",
+        "words": [
+          "enzimas",
+          "proteínas",
+          "metabolismo",
+          "célula"
+        ],
+        "phrases": [
+          "Investiga as reações químicas que sustentam a vida no interior das células de organismos vivos.",
+          "Estuda a síntese de proteínas e o funcionamento de enzimas em processos metabólicos vitais."
+        ]
+      },
+      {
+        "name": "Botânico",
+        "sub": "ciencias",
+        "word": "folhas",
+        "phrase": "Cientista apaixonado pelo reino vegetal que cataloga espécies raras de plantas e árvores.",
+        "words": [
+          "folhas",
+          "fotossíntese",
+          "herbário",
+          "flores"
+        ],
+        "phrases": [
+          "Cientista apaixonado pelo reino vegetal que cataloga espécies raras de plantas e árvores.",
+          "Classifica flores, analisa estruturas celulares de folhas e preserva exemplares em herbários secos."
+        ]
+      },
+      {
+        "name": "Zoólogo",
+        "sub": "ciencias",
+        "word": "fauna",
+        "phrase": "Especialista na anatomia, evolução e hábitos de vida de animais vertebrados e invertebrados.",
+        "words": [
+          "fauna",
+          "comportamento",
+          "taxonomia",
+          "espécies"
+        ],
+        "phrases": [
+          "Especialista na anatomia, evolução e hábitos de vida de animais vertebrados e invertebrados.",
+          "Conduz estudos taxonômicos catalogando novas espécies e mapeando habitats naturais preservados."
+        ]
+      },
+      {
+        "name": "Estatístico",
+        "sub": "ciencias",
+        "word": "probabilidade",
+        "phrase": "Calcula probabilidades e projeta tendências futuras a partir de amostragens matemáticas rigorosas.",
+        "words": [
+          "probabilidade",
+          "amostra",
+          "margem-erro",
+          "curva-normal"
+        ],
+        "phrases": [
+          "Calcula probabilidades e projeta tendências futuras a partir de amostragens matemáticas rigorosas.",
+          "Determina margens de erro em pesquisas de opinião e valida ensaios clínicos com rigor numérico."
+        ]
+      },
+      {
+        "name": "Engenheiro Químico",
+        "sub": "ciencias",
+        "word": "reatores",
+        "phrase": "Transforma reações de laboratório em processos de produção em larga escala em fábricas e refinarias.",
+        "words": [
+          "reatores",
+          "escala-industrial",
+          "destilação",
+          "processos"
+        ],
+        "phrases": [
+          "Transforma reações de laboratório em processos de produção em larga escala em fábricas e refinarias.",
+          "Projeta colunas de destilação, tubulações industriais e sistemas seguros de mistura química."
+        ]
+      },
+      {
+        "name": "Ecólogo",
+        "sub": "ciencias",
+        "word": "ecossistema",
+        "phrase": "Analisa as complexas teias de interação entre seres vivos e o ambiente em que sobrevivem.",
+        "words": [
+          "ecossistema",
+          "cadeia-alimentar",
+          "bioma",
+          "preservação"
+        ],
+        "phrases": [
+          "Analisa as complexas teias de interação entre seres vivos e o ambiente em que sobrevivem.",
+          "Trabalha no diagnóstico e restauração de habitats degradados promovendo a sustentabilidade."
+        ]
+      },
+      {
+        "name": "Neurocientista",
+        "sub": "ciencias",
+        "word": "sinapses",
+        "phrase": "Pesquisa a complexa fiação elétrica e química do encéfalo responsável pela memória e consciência.",
+        "words": [
+          "sinapses",
+          "neurônios",
+          "cérebro",
+          "cognição"
+        ],
+        "phrases": [
+          "Pesquisa a complexa fiação elétrica e química do encéfalo responsável pela memória e consciência.",
+          "Usa mapeamento funcional e ressonâncias para desvendar como o cérebro processa sentimentos e ações."
+        ]
+      },
+      {
+        "name": "Pintor Artístico",
+        "sub": "artes",
+        "word": "cavalete",
+        "phrase": "Artista que traduz sentimentos e visões de mundo misturando pigmentos em uma tela em branco.",
+        "words": [
+          "cavalete",
+          "tinta-óleo",
+          "pincel",
+          "tela"
+        ],
+        "phrases": [
+          "Artista que traduz sentimentos e visões de mundo misturando pigmentos em uma tela em branco.",
+          "Trabalha diante de um cavalete com paleta de tintas a óleo e pincéis de diferentes cerdas."
+        ]
+      },
+      {
+        "name": "Músico Instrumentista",
+        "sub": "artes",
+        "word": "partitura",
+        "phrase": "Domina a técnica de um instrumento acústico ou elétrico expressando harmonia e ritmo sonoro.",
+        "words": [
+          "partitura",
+          "ensaio",
+          "notas",
+          "palco"
+        ],
+        "phrases": [
+          "Domina a técnica de um instrumento acústico ou elétrico expressando harmonia e ritmo sonoro.",
+          "Lê partituras com fluidez e encanta o público tocando em orquestras sinfônicas ou bandas."
+        ]
+      },
+      {
+        "name": "Ator / Atriz",
+        "sub": "artes",
+        "word": "figurino",
+        "phrase": "Encarna personalidades fictícias decorando falas e expressando emoções intensas sob holofotes.",
+        "words": [
+          "figurino",
+          "roteiro",
+          "personagem",
+          "palco"
+        ],
+        "phrases": [
+          "Encarna personalidades fictícias decorando falas e expressando emoções intensas sob holofotes.",
+          "Muda entonação de voz e postura corporal para dar vida a dramas e comédias no teatro e cinema."
+        ]
+      },
+      {
+        "name": "Escritor / Romancista",
+        "sub": "artes",
+        "word": "capítulos",
+        "phrase": "Cria universos imaginários e personagens inesquecíveis através do poder da palavra escrita.",
+        "words": [
+          "capítulos",
+          "máquina-escrever",
+          "enredo",
+          "páginas"
+        ],
+        "phrases": [
+          "Cria universos imaginários e personagens inesquecíveis através do poder da palavra escrita.",
+          "Passa madrugadas lapidando parágrafos e construindo reviravoltas até o ponto final do livro."
+        ]
+      },
+      {
+        "name": "Arquiteto Urbanista",
+        "sub": "artes",
+        "word": "planta",
+        "phrase": "Desenha espaços habitáveis equilibrando estética, funcionalidade e harmonia com a paisagem.",
+        "words": [
+          "planta",
+          "fachada",
+          "escala",
+          "maquete"
+        ],
+        "phrases": [
+          "Desenha espaços habitáveis equilibrando estética, funcionalidade e harmonia com a paisagem.",
+          "Projeta plantas baixas, fachadas modernas e planeja a ocupação inteligente do espaço urbano."
+        ]
+      },
+      {
+        "name": "Designer Gráfico",
+        "sub": "artes",
+        "word": "tipografia",
+        "phrase": "Cria identidades visuais marcantes combinando cores, diagramação e formas geométricas.",
+        "words": [
+          "tipografia",
+          "vetor",
+          "logo",
+          "cores"
+        ],
+        "phrases": [
+          "Cria identidades visuais marcantes combinando cores, diagramação e formas geométricas.",
+          "Trabalha com programas vetoriais desenhando logotipos e embalagens atraentes ao consumidor."
+        ]
+      },
+      {
+        "name": "Estilista de Moda",
+        "sub": "artes",
+        "word": "croqui",
+        "phrase": "Desenha coleções de roupas inovadoras combinando caimentos, estampas e texturas em croquis.",
+        "words": [
+          "croqui",
+          "tecidos",
+          "desfile",
+          "passarela"
+        ],
+        "phrases": [
+          "Desenha coleções de roupas inovadoras combinando caimentos, estampas e texturas em croquis.",
+          "Apresenta tendências em semanas de moda sob o olhar atento da imprensa e celebridades."
+        ]
+      },
+      {
+        "name": "Coreógrafo",
+        "sub": "artes",
+        "word": "compasso",
+        "phrase": "Idealiza a sequência de movimentos e o ritmo sincronizado executado por bailarinos e dançarinos.",
+        "words": [
+          "compasso",
+          "passos",
+          "ensaio",
+          "dança"
+        ],
+        "phrases": [
+          "Idealiza a sequência de movimentos e o ritmo sincronizado executado por bailarinos e dançarinos.",
+          "Marca o tempo com palmas e orienta o posicionamento cênico de cada membro do elenco de dança."
+        ]
+      },
+      {
+        "name": "Ceramista",
+        "sub": "artes",
+        "word": "torno",
+        "phrase": "Modela vasos e peças utilitárias girando barro no torno manual e vitrificando em altas temperaturas.",
+        "words": [
+          "torno",
+          "argila",
+          "forno",
+          "esmaltado"
+        ],
+        "phrases": [
+          "Modela vasos e peças utilitárias girando barro no torno manual e vitrificando em altas temperaturas.",
+          "Suja as mãos de argila dando acabamento delicado com esponjas antes da queima final no forno."
+        ]
+      },
+      {
+        "name": "Poeta",
+        "sub": "artes",
+        "word": "versos",
+        "phrase": "Lapida a linguagem cotidiana em versos carregados de simbolismo, musicalidade e emoção.",
+        "words": [
+          "versos",
+          "rimas",
+          "estrofes",
+          "métrica"
+        ],
+        "phrases": [
+          "Lapida a linguagem cotidiana em versos carregados de simbolismo, musicalidade e emoção.",
+          "Escreve estrofes rimadas ou livres despertando sensações profundas com poucas palavras."
+        ]
+      },
+      {
+        "name": "Mágico Ilusionista",
+        "sub": "artes",
+        "word": "cartas",
+        "phrase": "Engana os sentidos do público com truques de destreza manual e ilusões de ótica no palco.",
+        "words": [
+          "cartas",
+          "cartola",
+          "ilusão",
+          "varinha"
+        ],
+        "phrases": [
+          "Engana os sentidos do público com truques de destreza manual e ilusões de ótica no palco.",
+          "Faz lenços desaparecerem, serra caixas ao meio e tira coelhos da cartola sob aplausos."
+        ]
+      },
+      {
+        "name": "Humorista / Stand-up",
+        "sub": "artes",
+        "word": "piadas",
+        "phrase": "Arranca gargalhadas do público observando o cotidiano com ironia afiada e timing cômico no microfone.",
+        "words": [
+          "piadas",
+          "microfone",
+          "timing",
+          "risadas"
+        ],
+        "phrases": [
+          "Arranca gargalhadas do público observando o cotidiano com ironia afiada e timing cômico no microfone.",
+          "Domina o palco sozinho testando histórias pessoais que terminam em reviravoltas hilárias."
+        ]
+      },
+      {
+        "name": "Produtor Musical",
+        "sub": "artes",
+        "word": "mesa-som",
+        "phrase": "Lapida o arranjo sonoro de canções ajustando equalizadores, efeitos e volumes na mesa de som.",
+        "words": [
+          "mesa-som",
+          "gravação",
+          "mixagem",
+          "batida"
+        ],
+        "phrases": [
+          "Lapida o arranjo sonoro de canções ajustando equalizadores, efeitos e volumes na mesa de som.",
+          "Orienta cantores e instrumentistas no estúdio até obter a mixagem e masterização perfeitas."
+        ]
+      },
+      {
+        "name": "Crítico de Cinema / Arte",
+        "sub": "artes",
+        "word": "resenha",
+        "phrase": "Avalia a qualidade estética e a narrativa de obras culturais publicando análises e notas.",
+        "words": [
+          "resenha",
+          "análise",
+          "festival",
+          "estrelas"
+        ],
+        "phrases": [
+          "Avalia a qualidade estética e a narrativa de obras culturais publicando análises e notas.",
+          "Assiste a pré-estreias e exposições decodificando referências e orientando o público consumidor."
+        ]
+      },
+      {
+        "name": "Maestro Regente",
+        "sub": "artes",
+        "word": "batuta",
+        "phrase": "Comanda dezenas de músicos sinfônicos com movimentos expressivos de sua batuta no pódio.",
+        "words": [
+          "batuta",
+          "orquestra",
+          "pórtico",
+          "compasso"
+        ],
+        "phrases": [
+          "Comanda dezenas de músicos sinfônicos com movimentos expressivos de sua batuta no pódio.",
+          "Conduz entradas de violinos e metais garantindo a afinação perfeita da partitura orquestral."
+        ]
+      },
+      {
+        "name": "Designer de Interiores",
+        "sub": "artes",
+        "word": "móveis",
+        "phrase": "Transforma ambientes residenciais e comerciais escolhendo paletas de cores, iluminação e mobília.",
+        "words": [
+          "móveis",
+          "iluminação",
+          "harmonia",
+          "texturas"
+        ],
+        "phrases": [
+          "Transforma ambientes residenciais e comerciais escolhendo paletas de cores, iluminação e mobília.",
+          "Combina tapetes, luminárias e cortinas para criar espaços aconchegantes e sofisticados."
+        ]
+      },
+      {
+        "name": "Luthier",
+        "sub": "artes",
+        "word": "madeira-nobre",
+        "phrase": "Artesão que constrói e repara instrumentos de corda como violinos, violões e violoncelos.",
+        "words": [
+          "madeira-nobre",
+          "cordas",
+          "verniz",
+          "afinação"
+        ],
+        "phrases": [
+          "Artesão que constrói e repara instrumentos de corda como violinos, violões e violoncelos.",
+          "Escolhe madeiras nobres e aplica vernizes especiais para garantir ressonância acústica impecável."
+        ]
+      },
+      {
+        "name": "Bombeiro Militar",
+        "sub": "servicos",
+        "word": "mangueira",
+        "phrase": "Profissional corajoso que combate labaredas de incêndio e resgata vítimas de locais perigosos.",
+        "words": [
+          "mangueira",
+          "sirene",
+          "escada",
+          "fogo"
+        ],
+        "phrases": [
+          "Profissional corajoso que combate labaredas de incêndio e resgata vítimas de locais perigosos.",
+          "Desce de rapel e usa mangueiras de alta pressão com traje térmico para salvar vidas sob fumaça."
+        ]
+      },
+      {
+        "name": "Policial Militar",
+        "sub": "servicos",
+        "word": "viatura",
+        "phrase": "Patrulha as ruas em viaturas ostensivas prevenindo crimes e mantendo a ordem pública.",
+        "words": [
+          "viatura",
+          "ronda",
+          "farda",
+          "segurança"
+        ],
+        "phrases": [
+          "Patrulha as ruas em viaturas ostensivas prevenindo crimes e mantendo a ordem pública.",
+          "Usa uniforme oficial e atua na linha de frente para proteger cidadãos e atender chamados de emergência."
+        ]
+      },
+      {
+        "name": "Piloto de Avião Comercial",
+        "sub": "servicos",
+        "word": "manche",
+        "phrase": "Conduz aeronaves com centenas de passageiros calculando rotas seguras pelos céus do mundo.",
+        "words": [
+          "manche",
+          "altitude",
+          "cabine",
+          "decolagem"
+        ],
+        "phrases": [
+          "Conduz aeronaves com centenas de passageiros calculando rotas seguras pelos céus do mundo.",
+          "Monitora instrumentos complexos na cabine de comando e gerencia pousos suaves na pista."
+        ]
+      },
+      {
+        "name": "Professor Escolar",
+        "sub": "servicos",
+        "word": "giz",
+        "phrase": "Dedica a vida a transmitir conhecimento e formar o senso crítico de crianças e jovens em salas de aula.",
+        "words": [
+          "giz",
+          "lousa",
+          "chamada",
+          "ensino"
+        ],
+        "phrases": [
+          "Dedica a vida a transmitir conhecimento e formar o senso crítico de crianças e jovens em salas de aula.",
+          "Prepara aulas, corrige provas e incentiva a curiosidade dos alunos em frente à lousa."
+        ]
+      },
+      {
+        "name": "Chef de Cozinha",
+        "sub": "servicos",
+        "word": "fogão",
+        "phrase": "Lidera a brigada de um restaurante refinado criando pratos saborosos e empratamentos impecáveis.",
+        "words": [
+          "fogão",
+          "panela",
+          "tempero",
+          "dólmã"
+        ],
+        "phrases": [
+          "Lidera a brigada de um restaurante refinado criando pratos saborosos e empratamentos impecáveis.",
+          "Controla o ponto das carnes e o equilíbrio de ervas e especiarias vestindo dólmã branca."
+        ]
+      },
+      {
+        "name": "Motorista de Ônibus",
+        "sub": "servicos",
+        "word": "volante",
+        "phrase": "Transporta dezenas de passageiros pelo trânsito urbano parando pontualmente em cada ponto.",
+        "words": [
+          "volante",
+          "catraca",
+          "paradas",
+          "itinerário"
+        ],
+        "phrases": [
+          "Transporta dezenas de passageiros pelo trânsito urbano parando pontualmente em cada ponto.",
+          "Opera veículos pesados com atenção aos retrovisores e aos horários de sua linha diária."
+        ]
+      },
+      {
+        "name": "Eletricista Predial",
+        "sub": "servicos",
+        "word": "fiação",
+        "phrase": "Instala fiações, tomadas e quadros de força garantindo o fornecimento seguro de energia.",
+        "words": [
+          "fiação",
+          "disjuntor",
+          "alicate",
+          "voltagem"
+        ],
+        "phrases": [
+          "Instala fiações, tomadas e quadros de força garantindo o fornecimento seguro de energia.",
+          "Testa correntes com multímetro e substitui disjuntores para evitar curto-circuitos na rede."
+        ]
+      },
+      {
+        "name": "Encanador / Bombeiro Hidráulico",
+        "sub": "servicos",
+        "word": "vazamento",
+        "phrase": "Localiza vazamentos ocultos e repara tubulações de água e esgoto com rapidez.",
+        "words": [
+          "vazamento",
+          "cano-pvc",
+          "chave-grifo",
+          "sifão"
+        ],
+        "phrases": [
+          "Localiza vazamentos ocultos e repara tubulações de água e esgoto com rapidez.",
+          "Rosqueia conexões com fita veda-rosca e desobstrui ralos e pias entupidas com chave inglesa."
+        ]
+      },
+      {
+        "name": "Cabeleireiro / Barbeiro",
+        "sub": "servicos",
+        "word": "tesoura",
+        "phrase": "Modela cortes modernos e apara barbas na navalha atendendo clientes em cadeiras reclináveis.",
+        "words": [
+          "tesoura",
+          "navalha",
+          "espelho",
+          "secador"
+        ],
+        "phrases": [
+          "Modela cortes modernos e apara barbas na navalha atendendo clientes em cadeiras reclináveis.",
+          "Utiliza pentes e tesouras de precisão lavando e escovando cabelos com produtos aromáticos."
+        ]
+      },
+      {
+        "name": "Juiz de Direito",
+        "sub": "servicos",
+        "word": "martelo",
+        "phrase": "Analisa provas e depoimentos aplicando a legislação para proferir sentenças imparciais.",
+        "words": [
+          "martelo",
+          "sentença",
+          "toga",
+          "tribunal"
+        ],
+        "phrases": [
+          "Analisa provas e depoimentos aplicando a legislação para proferir sentenças imparciais.",
+          "Preside audiências vestindo toga preta e decidindo litígios com prudência e autoridade."
+        ]
+      },
+      {
+        "name": "Gari / Coletor de Lixo",
+        "sub": "servicos",
+        "word": "caminhão-compactador",
+        "phrase": "Profissional essencial que corre atrás do caminhão recolhendo resíduos e varrendo vias públicas.",
+        "words": [
+          "caminhão-compactador",
+          "uniforme-laranja",
+          "vassourão",
+          "limpeza-urbana"
+        ],
+        "phrases": [
+          "Profissional essencial que corre atrás do caminhão recolhendo resíduos e varrendo vias públicas.",
+          "Mantém as cidades limpas e salubres trabalhando sob sol e chuva com agilidade impecável."
+        ]
+      },
+      {
+        "name": "Segurança Privado / Vigilante",
+        "sub": "servicos",
+        "word": "câmeras",
+        "phrase": "Vigia estabelecimentos comerciais e condomínios inibindo invasões e monitorando telas.",
+        "words": [
+          "câmeras",
+          "guarita",
+          "colete",
+          "ronda"
+        ],
+        "phrases": [
+          "Vigia estabelecimentos comerciais e condomínios inibindo invasões e monitorando telas.",
+          "Permanece atento em postos de controle checando crachás e controlando entradas e saídas."
+        ]
+      },
+      {
+        "name": "Contador / Contabilista",
+        "sub": "servicos",
+        "word": "imposto",
+        "phrase": "Gerencia tributos, folhas de pagamento e demonstrativos financeiros de empresas e autônomos.",
+        "words": [
+          "imposto",
+          "balanço",
+          "planilha",
+          "receita-federal"
+        ],
+        "phrases": [
+          "Gerencia tributos, folhas de pagamento e demonstrativos financeiros de empresas e autônomos.",
+          "Garante a conformidade fiscal calculando taxas e evitando multas com órgãos governamentais."
+        ]
+      },
+      {
+        "name": "Comissário de Bordo",
+        "sub": "servicos",
+        "word": "cinto-segurança",
+        "phrase": "Zela pela segurança e conforto dos viajantes em voos comerciais demonstrando procedimentos de emergência.",
+        "words": [
+          "cinto-segurança",
+          "carrinho-lanche",
+          "segurança-voo",
+          "avental"
+        ],
+        "phrases": [
+          "Zela pela segurança e conforto dos viajantes em voos comerciais demonstrando procedimentos de emergência.",
+          "Serve refeições a bordo e acolhe passageiros com sorriso acolhedor durante toda a viagem."
+        ]
+      },
+      {
+        "name": "Guia Turístico",
+        "sub": "servicos",
+        "word": "bandeirinha",
+        "phrase": "Conduz grupos de visitantes por pontos turísticos narrando histórias fascinantes sobre o local.",
+        "words": [
+          "bandeirinha",
+          "monumentos",
+          "fatos-históricos",
+          "excursão"
+        ],
+        "phrases": [
+          "Conduz grupos de visitantes por pontos turísticos narrando histórias fascinantes sobre o local.",
+          "Orienta percursos com megafone ou bandeira apontando detalhes arquitetônicos imperdíveis."
+        ]
+      },
+      {
+        "name": "Mergulhador de Resgate",
+        "sub": "servicos",
+        "word": "cilindro-oxigênio",
+        "phrase": "Mergulha em rios e mares revoltos para resgatar vítimas ou recuperar destroços submersos.",
+        "words": [
+          "cilindro-oxigênio",
+          "neoprene",
+          "busca",
+          "visibilidade-zero"
+        ],
+        "phrases": [
+          "Mergulha em rios e mares revoltos para resgatar vítimas ou recuperar destroços submersos.",
+          "Trabalha em águas turvas e frias guiando-se pelo tato e por cordas de segurança."
+        ]
+      },
+      {
+        "name": "Alfaiate / Costureira",
+        "sub": "servicos",
+        "word": "fita-métrica",
+        "phrase": "Toma medidas do corpo humano para confeccionar ou ajustar ternos e vestidos com caimento sob medida.",
+        "words": [
+          "fita-métrica",
+          "linha-agulha",
+          "bainha",
+          "máquina-costura"
+        ],
+        "phrases": [
+          "Toma medidas do corpo humano para confeccionar ou ajustar ternos e vestidos com caimento sob medida.",
+          "Alinhava tecidos no manequim e guia agulhas velozes no pedal da máquina de costura."
+        ]
+      },
+      {
+        "name": "Recepcionista",
+        "sub": "servicos",
+        "word": "ramal",
+        "phrase": "Primeiro ponto de contato em clínicas e empresas, acolhendo visitantes e organizando chamadas.",
+        "words": [
+          "ramal",
+          "cadastro",
+          "balcão",
+          "atendimento"
+        ],
+        "phrases": [
+          "Primeiro ponto de contato em clínicas e empresas, acolhendo visitantes e organizando chamadas.",
+          "Confere agendamentos, entrega crachás de visitante e atende ligações telefônicas com cordialidade."
+        ]
+      },
+      {
+        "name": "Programador Web",
+        "sub": "ciencias",
+        "word": "javascript",
+        "phrase": "Desenvolve páginas interativas e sistemas que rodam diretamente na tela do seu computador ou celular.",
+        "words": [
+          "javascript",
+          "html-css",
+          "navegador",
+          "responsivo"
+        ],
+        "phrases": [
+          "Desenvolve páginas interativas e sistemas que rodam diretamente na tela do seu computador ou celular.",
+          "Escreve código em editores de texto ajustando botões, formulários e conexões com APIs da web."
+        ]
+      },
+      {
+        "name": "Perito Criminal / Papiloscopista",
+        "sub": "ciencias",
+        "word": "lupa-digital",
+        "phrase": "Coleta impressões digitais e vestígios materiais em locais de delito para reconstituir o crime.",
+        "words": [
+          "lupa-digital",
+          "pó-impressões",
+          "fita-isolamento",
+          "cena-crime"
+        ],
+        "phrases": [
+          "Coleta impressões digitais e vestígios materiais em locais de delito para reconstituir o crime.",
+          "Usa reagentes químicos e pós fluorescentes para revelar marcas invisíveis deixadas em superfícies."
+        ]
+      },
+      {
+        "name": "Sommelier de Vinhos",
+        "sub": "servicos",
+        "word": "taça-cristal",
+        "phrase": "Especialista que degusta vinhos avaliando aromas, taninos e acidez para sugerir a combinação perfeita com pratos.",
+        "words": [
+          "taça-cristal",
+          "saca-rolhas",
+          "safra-uva",
+          "harmonização"
+        ],
+        "phrases": [
+          "Especialista que degusta vinhos avaliando aromas, taninos e acidez para sugerir a combinação perfeita com pratos.",
+          "Gira o líquido na taça, cheira as notas frutadas e decanta garrafas especiais em restaurantes refinados."
+        ]
+      },
+      {
+        "name": "Pescador Artesanal",
+        "sub": "servicos",
+        "word": "rede-pesca",
+        "phrase": "Acorda antes do nascer do sol para lançar redes no mar ou rio recolhendo peixes e camarões frescos.",
+        "words": [
+          "rede-pesca",
+          "anzol-linha",
+          "barco-madeira",
+          "maré-manhã"
+        ],
+        "phrases": [
+          "Acorda antes do nascer do sol para lançar redes no mar ou rio recolhendo peixes e camarões frescos.",
+          "Conhece os ciclos das marés e os ventos consertando nós de náilon na beira da praia."
+        ]
+      },
+      {
+        "name": "Ourives / Joalheiro",
+        "sub": "artes",
+        "word": "ouro-maçarico",
+        "phrase": "Artesão minucioso que funde metais preciosos e crava pedras raras em anéis, brincos e colares sob medida.",
+        "words": [
+          "ouro-maçarico",
+          "diamantes",
+          "lupa-olho",
+          "alça-anel"
+        ],
+        "phrases": [
+          "Artesão minucioso que funde metais preciosos e crava pedras raras em anéis, brincos e colares sob medida.",
+          "Trabalha em bancada com pequenas limas e maçarico delicado polindo peças até o brilho absoluto."
+        ]
+      },
+      {
+        "name": "Técnico de Som / Áudio",
+        "sub": "artes",
+        "word": "microfonia",
+        "phrase": "Controla os níveis de volume e frequências de instrumentos musicais evitando ruídos e microfonias em shows ao vivo.",
+        "words": [
+          "microfonia",
+          "cabos-xlr",
+          "retorno-ouvido",
+          "equalizador"
+        ],
+        "phrases": [
+          "Controla os níveis de volume e frequências de instrumentos musicais evitando ruídos e microfonias em shows ao vivo.",
+          "Posiciona microfones no palco e ajusta monitores para que a apresentação soe limpa para o público."
+        ]
+      },
+      {
+        "name": "Dublê de Ação",
+        "sub": "artes",
+        "word": "queda-escada",
+        "phrase": "Profissional corajoso que substitui astros de cinema em cenas perigosas de explosões, saltos e batidas de carro.",
+        "words": [
+          "queda-escada",
+          "fogo-corpo",
+          "capotamento",
+          "risco-ator"
+        ],
+        "phrases": [
+          "Profissional corajoso que substitui astros de cinema em cenas perigosas de explosões, saltos e batidas de carro.",
+          "Treina técnicas de amortecimento de impactos e utiliza proteções ocultas sob as roupas de cena."
+        ]
+      },
+      {
+        "name": "Guarda-Vidas / Salva-Vidas",
+        "sub": "servicos",
+        "word": "apito",
+        "phrase": "Vigia banhistas do alto de postos de madeira na praia entrando nas ondas para resgatar quem é puxado pela correnteza.",
+        "words": [
+          "apito",
+          "boia-resgate",
+          "posto-praia",
+          "correnteza"
+        ],
+        "phrases": [
+          "Vigia banhistas do alto de postos de madeira na praia entrando nas ondas para resgatar quem é puxado pela correnteza.",
+          "Corre com nadadeiras e boia tubular vermelha prestando reanimação e orientando os limites seguros de banho."
+        ]
+      },
+      {
+        "name": "Zelador de Condomínio",
+        "sub": "servicos",
+        "word": "chaves-mestras",
+        "phrase": "Coordena a conservação geral de edifícios residenciais cuidando da limpeza, pequenos reparos e segurança.",
+        "words": [
+          "chaves-mestras",
+          "manutenção-prédio",
+          "fiscalização",
+          "portaria"
+        ],
+        "phrases": [
+          "Coordena a conservação geral de edifícios residenciais cuidando da limpeza, pequenos reparos e segurança.",
+          "Verifica bombas hidráulicas, orienta prestadores de serviço e atende pedidos diários dos moradores."
+        ]
+      },
+      {
+        "name": "Cerimonialista de Eventos",
+        "sub": "servicos",
+        "word": "ponto-eletrônico",
+        "phrase": "Organiza o andamento minucioso de casamentos e grandes formaturas garantindo que cada entrada ocorra na hora certa.",
+        "words": [
+          "ponto-eletrônico",
+          "cronograma-minutos",
+          "casamento",
+          "prancheta"
+        ],
+        "phrases": [
+          "Organiza o andamento minucioso de casamentos e grandes formaturas garantindo que cada entrada ocorra na hora certa.",
+          "Resolve imprevistos nos bastidores com sorriso calmo enquanto orienta padrinhos e fornecedores."
+        ]
+      },
+      {
+        "name": "Apicultor",
+        "sub": "ciencias",
+        "word": "macacão-branco",
+        "phrase": "Cuida de colmeias de abelhas vestindo traje especial ventilado para colher mel puro, própolis e cera de abelha.",
+        "words": [
+          "macacão-branco",
+          "fumigador",
+          "favo-mel",
+          "ferrões"
+        ],
+        "phrases": [
+          "Cuida de colmeias de abelhas vestindo traje especial ventilado para colher mel puro, própolis e cera de abelha.",
+          "Usa fumaça para acalmar os enxames e maneja quadros de madeira cheios de operárias atarefadas."
+        ]
+      },
+      {
+        "name": "Piloto de Helicóptero",
+        "sub": "servicos",
+        "word": "rotor-hélice",
+        "phrase": "Conduz aeronaves de asas rotativas capazes de decolar na vertical e pairar no ar entre prédios de grandes metrópoles.",
+        "words": [
+          "rotor-hélice",
+          "heliponto",
+          "pairar-no-ar",
+          "controles-cíclicos"
+        ],
+        "phrases": [
+          "Conduz aeronaves de asas rotativas capazes de decolar na vertical e pairar no ar entre prédios de grandes metrópoles.",
+          "Monitora pás e controles de pedal transportando executivos ou realizando resgates em áreas de difícil acesso."
+        ]
+      },
+      {
+        "name": "Tradutor Intérprete",
+        "sub": "ciencias",
+        "word": "fone-cabine",
+        "phrase": "Converte discursos de chefes de estado e palestras internacionais para outro idioma em tempo real dentro de cabines acústicas.",
+        "words": [
+          "fone-cabine",
+          "idiomas",
+          "tempo-real",
+          "diplomacia"
+        ],
+        "phrases": [
+          "Converte discursos de chefes de estado e palestras internacionais para outro idioma em tempo real dentro de cabines acústicas.",
+          "Domina gírias, nuances culturais e termos técnicos transmitindo a mensagem sem pausas perceptíveis."
+        ]
+      },
+      {
+        "name": "Bibliotecário",
+        "sub": "ciencias",
+        "word": "estantes-livros",
+        "phrase": "Organiza e preserva acervos de milhares de livros orientando leitores e pesquisadores na busca por informações.",
+        "words": [
+          "estantes-livros",
+          "catalogação",
+          "silêncio",
+          "acervo"
+        ],
+        "phrases": [
+          "Organiza e preserva acervos de milhares de livros orientando leitores e pesquisadores na busca por informações.",
+          "Classifica obras por sistemas decimais e zela pela conservação de volumes raros e documentos históricos."
+        ]
+      },
+      {
+        "name": "Mestre de Obras",
+        "sub": "servicos",
+        "word": "prumo-nível",
+        "phrase": "Supervisiona a execução diária do trabalho de pedreiros, serventes e eletricistas no canteiro de construção civil.",
+        "words": [
+          "prumo-nível",
+          "pedreiros",
+          "cronograma-construção",
+          "plantas"
+        ],
+        "phrases": [
+          "Supervisiona a execução diária do trabalho de pedreiros, serventes e eletricistas no canteiro de construção civil.",
+          "Confere o alinhamento de paredes com fio de prumo e garante o cumprimento correto do traço da argamassa."
+        ]
+      },
+      {
+        "name": "Taxidermista",
+        "sub": "artes",
+        "word": "empalhar-animais",
+        "phrase": "Prepara e empalha espécimes da fauna falecidos para preservação científica e exposição em museus de história natural.",
+        "words": [
+          "empalhar-animais",
+          "preservação-peles",
+          "olhos-vidro",
+          "museu-ciências"
+        ],
+        "phrases": [
+          "Prepara e empalha espécimes da fauna falecidos para preservação científica e exposição em museus de história natural.",
+          "Recria com precisão anatômica a postura e expressividade dos animais usando estruturas e olhos de resina."
+        ]
+      },
+      {
+        "name": "Topógrafo",
+        "sub": "ciencias",
+        "word": "teodolito-tripé",
+        "phrase": "Mede distâncias e desníveis do terreno com teodolitos a laser para elaboração de mapas e projetos de engenharia.",
+        "words": [
+          "teodolito-tripé",
+          "desnível-terreno",
+          "mira-laser",
+          "mapa-relevo"
+        ],
+        "phrases": [
+          "Mede distâncias e desníveis do terreno com teodolitos a laser para elaboração de mapas e projetos de engenharia.",
+          "Registra coordenadas geográficas em campo fixando tripés em estradas e loteamentos futuros."
+        ]
+      },
+      {
+        "name": "Oceanógrafo Físico",
+        "sub": "ciencias",
+        "word": "bóias-deriva",
+        "phrase": "Analisa o movimento de grandes massas de água oceânica e sua influência na circulação térmica do planeta.",
+        "words": [
+          "bóias-deriva",
+          "ondas-mar",
+          "modelos-correntes",
+          "satélite"
+        ],
+        "phrases": [
+          "Analisa o movimento de grandes massas de água oceânica e sua influência na circulação térmica do planeta.",
+          "Processa dados de sensores submarinos e modelos numéricos para prever tempestades e marés."
+        ]
+      },
+      {
+        "name": "Fogueteiro / Pirotécnico",
+        "sub": "artes",
+        "word": "fogos-artifício",
+        "phrase": "Planeja e dispara shows pirotécnicos sincronizados iluminando o céu noturno com explosões coloridas e seguras.",
+        "words": [
+          "fogos-artifício",
+          "estopins",
+          "réveillon",
+          "cores-céu"
+        ],
+        "phrases": [
+          "Planeja e dispara shows pirotécnicos sincronizados iluminando o céu noturno com explosões coloridas e seguras.",
+          "Conecta detonadores elétricos a tubos de lançamento com pólvora e sais químicos que produzem faíscas brilhantes."
+        ]
+      },
+      {
+        "name": "Engenheiro de Alimentos",
+        "sub": "ciencias",
+        "word": "pasteurização",
+        "phrase": "Desenvolve processos industriais seguros para conservação, sabor e embalagem de produtos alimentícios em escala.",
+        "words": [
+          "pasteurização",
+          "prazo-validade",
+          "embalagens-vácuo",
+          "fábrica"
+        ],
+        "phrases": [
+          "Desenvolve processos industriais seguros para conservação, sabor e embalagem de produtos alimentícios em escala.",
+          "Controla padrões sanitários e cria fórmulas nutritivas que mantêm o frescor nas prateleiras dos supermercados."
+        ]
+      },
+      {
+        "name": "Técnico de TI / Helpdesk",
+        "sub": "ciencias",
+        "word": "reiniciar-computador",
+        "phrase": "Profissional indispensável em escritórios que resolve falhas de software e cabos desconectados.",
+        "words": [
+          "reiniciar-computador",
+          "chamados",
+          "suporte",
+          "rede-cabo"
+        ],
+        "phrases": [
+          "Profissional indispensável em escritórios que resolve falhas de software e cabos desconectados.",
+          "Sua primeira pergunta mágica sempre investiga se a máquina já foi desligada e ligada novamente."
+        ]
+      },
+      {
+        "name": "Barman / Mixologista",
+        "sub": "servicos",
+        "word": "coqueteleira",
+        "phrase": "Cria coquetéis refinados combinando destilados, xaropes artesanais e ervas aromáticas no balcão.",
+        "words": [
+          "coqueteleira",
+          "gelo-fatiado",
+          "drinques",
+          "copo-mistura"
+        ],
+        "phrases": [
+          "Cria coquetéis refinados combinando destilados, xaropes artesanais e ervas aromáticas no balcão.",
+          "Maneja dosadores e coqueteleiras de aço com destreza servindo taças enfeitadas com cascas de frutas."
+        ]
+      },
+      {
+        "name": "Guarda-Parque / Guarda-Florestal",
+        "sub": "servicos",
+        "word": "binóculo-trilha",
+        "phrase": "Patrulha áreas de preservação ambiental protegendo animais silvestres contra caçadores e invasores.",
+        "words": [
+          "binóculo-trilha",
+          "combate-fogo-mata",
+          "fauna-proteção",
+          "torre-vigia"
+        ],
+        "phrases": [
+          "Patrulha áreas de preservação ambiental protegendo animais silvestres contra caçadores e invasores.",
+          "Identifica focos de queimada em matas fechadas e orienta turistas sobre trilhas ecológicas seguras."
+        ]
+      },
+      {
+        "name": "Técnico em Agropecuária",
+        "sub": "ciencias",
+        "word": "vacina-gado",
+        "phrase": "Acompanha a saúde de rebanhos e a produção de rações e silagens em fazendas produtivas.",
+        "words": [
+          "vacina-gado",
+          "pesagem-bezerros",
+          "silagem",
+          "estábulo"
+        ],
+        "phrases": [
+          "Acompanha a saúde de rebanhos e a produção de rações e silagens em fazendas produtivas.",
+          "Aplica vacinas e monitora ganho de peso dos animais garantindo a eficiência da lida no campo."
+        ]
+      },
+      {
+        "name": "Designer de Games",
+        "sub": "artes",
+        "word": "fases-regras",
+        "phrase": "Concebe as regras, progressão e desafios interativos que tornam um jogo eletrônico divertido e viciante.",
+        "words": [
+          "fases-regras",
+          "balanceamento",
+          "mecânicas",
+          "jogabilidade"
+        ],
+        "phrases": [
+          "Concebe as regras, progressão e desafios interativos que tornam um jogo eletrônico divertido e viciante.",
+          "Desenha curvas de aprendizado, posicionamento de inimigos e funcionamento de controles."
+        ]
+      },
+      {
+        "name": "Restaurador de Obras de Arte",
+        "sub": "artes",
+        "word": "verniz-antigo",
+        "phrase": "Recupera pinturas e esculturas históricas danificadas pelo tempo sem alterar a identidade original do artista.",
+        "words": [
+          "verniz-antigo",
+          "solvente-suave",
+          "pincel-fino",
+          "telas-séculos"
+        ],
+        "phrases": [
+          "Recupera pinturas e esculturas históricas danificadas pelo tempo sem alterar a identidade original do artista.",
+          "Remove camadas escurecidas de poeira e refaz pinceladas milimétricas em telas de séculos passados."
+        ]
+      },
+      {
+        "name": "Marinheiro de Convés",
+        "sub": "servicos",
+        "word": "amarração-cabos",
+        "phrase": "Trabalha a bordo de navios mercantes realizando a limpeza do convés e a amarração segura no cais.",
+        "words": [
+          "amarração-cabos",
+          "âncora-içar",
+          "pintura-ferrugem",
+          "navio-porto"
+        ],
+        "phrases": [
+          "Trabalha a bordo de navios mercantes realizando a limpeza do convés e a amarração segura no cais.",
+          "Lança cabos grossos de atracação e fiscaliza guindastes durante o carregamento de contêineres."
+        ]
+      },
+      {
+        "name": "Coveiro / Sepultador",
+        "sub": "servicos",
+        "word": "jazigo-pá",
+        "phrase": "Prepara sepulturas e conduz o sepultamento com respeito e dignidade em cemitérios municipais.",
+        "words": [
+          "jazigo-pá",
+          "cemitério",
+          "cortejo",
+          "respeito-silêncio"
+        ],
+        "phrases": [
+          "Prepara sepulturas e conduz o sepultamento com respeito e dignidade em cemitérios municipais.",
+          "Maneja pás e ferramentas de alvenaria trabalhando sob o silêncio e o luto das despedidas humanas."
+        ]
+      },
+      {
+        "name": "Soldador Industrial",
+        "sub": "servicos",
+        "word": "máscara-escurecimento",
+        "phrase": "Une chapas de aço e tubulações pesadas gerando faíscas incandescentes sob máscara de proteção escura.",
+        "words": [
+          "máscara-escurecimento",
+          "eletrodo-faíscas",
+          "tocha-gás",
+          "cordão-solda"
+        ],
+        "phrases": [
+          "Une chapas de aço e tubulações pesadas gerando faíscas incandescentes sob máscara de proteção escura.",
+          "Trabalha em estaleiros e refinarias aplicando calor extremo para fundir metais sem falhas estruturais."
+        ]
+      },
+      {
+        "name": "Serralheiro",
+        "sub": "servicos",
+        "word": "portão-ferro",
+        "phrase": "Fabrica e instala portas, portões e grades de proteção cortando e montando perfis de ferro e alumínio.",
+        "words": [
+          "portão-ferro",
+          "disco-corte",
+          "grade-janela",
+          "esmerilhadeira"
+        ],
+        "phrases": [
+          "Fabrica e instala portas, portões e grades de proteção cortando e montando perfis de ferro e alumínio.",
+          "Mede vãos com trena e corta barras metálicas soltando chuvas de faíscas brilhantes na oficina."
+        ]
+      },
+      {
+        "name": "Vidraceiro",
+        "sub": "servicos",
+        "word": "diamante-corte",
+        "phrase": "Corta e instala painéis de vidro temperado e espelhos em janelas, fachadas e boxes de banheiro.",
+        "words": [
+          "diamante-corte",
+          "blindex",
+          "ventosas-mão",
+          "espelho-parede"
+        ],
+        "phrases": [
+          "Corta e instala painéis de vidro temperado e espelhos em janelas, fachadas e boxes de banheiro.",
+          "Transporta lâminas pesadas e translúcidas usando ventosas de borracha com cuidado redobrado."
+        ]
+      },
+      {
+        "name": "Guincheiro / Operador de Reboque",
+        "sub": "servicos",
+        "word": "plataforma-hidráulica",
+        "phrase": "Socorre motoristas com veículos quebrados ou acidentados rebocando-os para oficinas de socorro.",
+        "words": [
+          "plataforma-hidráulica",
+          "cabo-aço-guincho",
+          "carro-enguiçado",
+          "estrada"
+        ],
+        "phrases": [
+          "Socorre motoristas com veículos quebrados ou acidentados rebocando-os para oficinas de socorro.",
+          "Opera controles hidráulicos de inclinação puxando o automóvel para cima da plataforma do caminhão."
+        ]
+      },
+      {
+        "name": "Alfaiate de Sobretudos",
+        "sub": "artes",
+        "word": "lã-fria",
+        "phrase": "Mestre do corte clássico que desenha e costura casacos compridos e ternos de caimento impecável.",
+        "words": [
+          "lã-fria",
+          "giz-alfaiate",
+          "botoeiras",
+          "ombros-estruturados"
+        ],
+        "phrases": [
+          "Mestre do corte clássico que desenha e costura casacos compridos e ternos de caimento impecável.",
+          "Molda tecidos pesados com ferro a vapor marcando linhas com giz na bancada de madeira."
+        ]
+      },
+      {
+        "name": "Modelista de Roupas",
+        "sub": "artes",
+        "word": "moldes-papel",
+        "phrase": "Transforma o croqui conceitual do estilista em moldes de papel cartão prontos para o corte industrial.",
+        "words": [
+          "moldes-papel",
+          "graduação-tamanhos",
+          "curvas-francesas",
+          "corte-tecido"
+        ],
+        "phrases": [
+          "Transforma o croqui conceitual do estilista em moldes de papel cartão prontos para o corte industrial.",
+          "Calcula folgas de costura e gradua padrões para tamanhos pequenos, médios e grandes com precisão."
+        ]
+      },
+      {
+        "name": "Operador de Empilhadeira",
+        "sub": "servicos",
+        "word": "garfos-elevação",
+        "phrase": "Movimenta cargas pesadas e organiza pilhas de produtos em alturas elevadas de galpões logísticos.",
+        "words": [
+          "garfos-elevação",
+          "paletes",
+          "armazém-galpão",
+          "manobra-ré"
+        ],
+        "phrases": [
+          "Movimenta cargas pesadas e organiza pilhas de produtos em alturas elevadas de galpões logísticos.",
+          "Pilota veículos compactos com sinal sonoro de marcha à ré encaixando garfos de aço sob estrados de madeira."
+        ]
       }
     ]
   },
@@ -15476,6 +27711,1782 @@ const THEME_DATABASE = {
         ],
         "word": "carteira",
         "phrase": "Tire as carteiras de motorista em testes rigorosos antes de competir."
+      },
+      {
+        "name": "The Witcher 3: Wild Hunt",
+        "sub": "rpg",
+        "word": "bruxo",
+        "phrase": "A jornada do caçador de cabelos brancos com duas espadas nas costas em busca de sua protegida.",
+        "words": [
+          "bruxo",
+          "espadas",
+          "monstros",
+          "ciri"
+        ],
+        "phrases": [
+          "A jornada do caçador de cabelos brancos com duas espadas nas costas em busca de sua protegida.",
+          "RPG monumental em mundo aberto repleto de contratos de monstros, poções e escolhas morais."
+        ]
+      },
+      {
+        "name": "The Elder Scrolls V: Skyrim",
+        "sub": "rpg",
+        "word": "dragões",
+        "phrase": "Aventura nórdica onde o herói com alma de dragão grita aos ventos contra feras aladas.",
+        "words": [
+          "dragões",
+          "fus-ro-dah",
+          "flecha-joelho",
+          "neve"
+        ],
+        "phrases": [
+          "Aventura nórdica onde o herói com alma de dragão grita aos ventos contra feras aladas.",
+          "RPG de liberdade total nas montanhas nevadas com guildas de ladrões e cavernas infinitas."
+        ]
+      },
+      {
+        "name": "Dragon Quest XI",
+        "sub": "rpg",
+        "word": "herói-luminar",
+        "phrase": "Aventura clássica e colorida sobre o guerreiro marcado pelo destino com traços do criador de Dragon Ball.",
+        "words": [
+          "herói-luminar",
+          "gosma-azul",
+          "turnos",
+          "fantasia"
+        ],
+        "phrases": [
+          "Aventura clássica e colorida sobre o guerreiro marcado pelo destino com traços do criador de Dragon Ball.",
+          "JRPG tradicional com batalhas em turnos, cidades vibrantes e monstros simpáticos de gelatina."
+        ]
+      },
+      {
+        "name": "Mass Effect 2",
+        "sub": "rpg",
+        "word": "normandy",
+        "phrase": "O comandante reúne os melhores especialistas da galáxia para uma missão suicida contra uma ameaça alienígena.",
+        "words": [
+          "normandy",
+          "comandante-shepard",
+          "missão-suicida",
+          "galáxia"
+        ],
+        "phrases": [
+          "O comandante reúne os melhores especialistas da galáxia para uma missão suicida contra uma ameaça alienígena.",
+          "Ficção científica com escolhas de diálogo impactantes e exploração estelar dramática."
+        ]
+      },
+      {
+        "name": "Diablo II",
+        "sub": "rpg",
+        "word": "loot",
+        "phrase": "Ação sombria e frenética com milhares de cliques massacrando demônios em busca de armaduras lendárias.",
+        "words": [
+          "loot",
+          "senhor-terror",
+          "cliques",
+          "árvore-habilidades"
+        ],
+        "phrases": [
+          "Ação sombria e frenética com milhares de cliques massacrando demônios em busca de armaduras lendárias.",
+          "Clássico do hack and slash que definiu o gênero com classes icônicas e masmorras infinitas."
+        ]
+      },
+      {
+        "name": "Gothic",
+        "sub": "rpg",
+        "word": "barreira-mágica",
+        "phrase": "Prisioneiro jogado em uma colônia mineradora cercada por uma barreira mágica impenetrável.",
+        "words": [
+          "barreira-mágica",
+          "colônia-penal",
+          "acampamento",
+          "crueza"
+        ],
+        "phrases": [
+          "Prisioneiro jogado em uma colônia mineradora cercada por uma barreira mágica impenetrável.",
+          "RPG clássico europeu conhecido pelo mundo reativo e dificuldade impiedosa no início da jornada."
+        ]
+      },
+      {
+        "name": "Bloodborne",
+        "sub": "rpg",
+        "word": "caçador",
+        "phrase": "A noite da caçada em uma metrópole gótica tomada por feras grotescas e segredos cósmicos.",
+        "words": [
+          "caçador",
+          "pesadelo",
+          "sangue",
+          "cidade-vitoriana"
+        ],
+        "phrases": [
+          "A noite da caçada em uma metrópole gótica tomada por feras grotescas e segredos cósmicos.",
+          "Combates rápidos com armas transformáveis e esquivas viscerais em ruas encharcadas de sangue."
+        ]
+      },
+      {
+        "name": "Kingdom Hearts",
+        "sub": "rpg",
+        "word": "keyblade",
+        "phrase": "Jovem empunhando uma lâmina em formato de chave viaja por mundos de animações famosas.",
+        "words": [
+          "keyblade",
+          "disney",
+          "corações",
+          "sem-coração"
+        ],
+        "phrases": [
+          "Jovem empunhando uma lâmina em formato de chave viaja por mundos de animações famosas.",
+          "Crossover improvável entre personagens clássicos dos desenhos e estética de RPG japonês."
+        ]
+      },
+      {
+        "name": "Fable",
+        "sub": "rpg",
+        "word": "auréola-chifres",
+        "phrase": "Aventuras em Albion onde cada ação boa ou ruim transforma visualmente seu herói com auréolas ou chifres.",
+        "words": [
+          "auréola-chifres",
+          "albion",
+          "moralidade",
+          "frango"
+        ],
+        "phrases": [
+          "Aventuras em Albion onde cada ação boa ou ruim transforma visualmente seu herói com auréolas ou chifres.",
+          "RPG bem-humorado com casamento, compra de imóveis e magia em um reino de conto de fadas."
+        ]
+      },
+      {
+        "name": "Dragon Age: Origins",
+        "sub": "rpg",
+        "word": "guarda-cinzento",
+        "phrase": "Guerreiro juramentado recruta aliados improváveis para deter uma invasão profana de demônios.",
+        "words": [
+          "guarda-cinzento",
+          "flagelo",
+          "origens",
+          "tático"
+        ],
+        "phrases": [
+          "Guerreiro juramentado recruta aliados improváveis para deter uma invasão profana de demônios.",
+          "RPG com escolhas morais cruas, pausa tática nos combates e diálogos profundos de acampamento."
+        ]
+      },
+      {
+        "name": "Pokemon Red & Blue",
+        "sub": "rpg",
+        "word": "pokebola",
+        "phrase": "Criança de boné sai de casa para capturar cento e cinquenta e uma criaturas e vencer a liga.",
+        "words": [
+          "pokebola",
+          "insígnias",
+          "inicial",
+          "ginásio"
+        ],
+        "phrases": [
+          "Criança de boné sai de casa para capturar cento e cinquenta e uma criaturas e vencer a liga.",
+          "O início do fenômeno dos monstrinhos de bolso com batalhas em turnos na telinha monocromática."
+        ]
+      },
+      {
+        "name": "Star Wars: KOTOR",
+        "sub": "rpg",
+        "word": "sabre-luz",
+        "phrase": "Aventura milênios antes dos filmes onde você escolhe entre seguir a luz ou sucumbir ao poder Sith.",
+        "words": [
+          "sabre-luz",
+          "revan",
+          "lado-sombrio",
+          "força"
+        ],
+        "phrases": [
+          "Aventura milênios antes dos filmes onde você escolhe entre seguir a luz ou sucumbir ao poder Sith.",
+          "Considerado um dos maiores enredos espaciais com revelações chocantes e decisões morais."
+        ]
+      },
+      {
+        "name": "Undertale",
+        "sub": "rpg",
+        "word": "determinação",
+        "phrase": "Criança humana cai em um reino subterrâneo de monstros onde não é necessário matar ninguém.",
+        "words": [
+          "determinação",
+          "poupar",
+          "subsolo",
+          "esqueleto-piadista"
+        ],
+        "phrases": [
+          "Criança humana cai em um reino subterrâneo de monstros onde não é necessário matar ninguém.",
+          "RPG indie revolucionário que subverte convenções com opções de amizade e trilha sonora marcante."
+        ]
+      },
+      {
+        "name": "EarthBound (Mother 2)",
+        "sub": "rpg",
+        "word": "taco-beisebol",
+        "phrase": "Garoto de boné com taco de beisebol enfrenta ameaças extraterrestres bizarras no subúrbio.",
+        "words": [
+          "taco-beisebol",
+          "alienígenas",
+          "humor",
+          "psi"
+        ],
+        "phrases": [
+          "Garoto de boné com taco de beisebol enfrenta ameaças extraterrestres bizarras no subúrbio.",
+          "JRPG excêntrico e comovente que satiriza a cultura ocidental dos anos noventa com muito carinho."
+        ]
+      },
+      {
+        "name": "NieR: Automata",
+        "sub": "rpg",
+        "word": "androides",
+        "phrase": "Androides de combate lutam contra máquinas em uma Terra desolada questionando o sentido da existência.",
+        "words": [
+          "androides",
+          "espadas-voadoras",
+          "existencialismo",
+          "pod"
+        ],
+        "phrases": [
+          "Androides de combate lutam contra máquinas em uma Terra desolada questionando o sentido da existência.",
+          "Mistura genial de ação frenética, trilha sonora orquestral sublime e dezenas de finais alternativos."
+        ]
+      },
+      {
+        "name": "Tales of Symphonia",
+        "sub": "rpg",
+        "word": "mana",
+        "phrase": "Grupo de jovens viaja em peregrinação para salvar seu mundo da escassez de energia vital.",
+        "words": [
+          "mana",
+          "jornada-regeneração",
+          "combate-ação",
+          "cristais"
+        ],
+        "phrases": [
+          "Grupo de jovens viaja em peregrinação para salvar seu mundo da escassez de energia vital.",
+          "JRPG dinâmico com batalhas em tempo real e trama envolvente sobre mundos paralelos."
+        ]
+      },
+      {
+        "name": "Divinity: Original Sin II",
+        "sub": "rpg",
+        "word": "superfícies-elementais",
+        "phrase": "Combates táticos por turnos onde fogo, água e eletricidade interagem com o terreno de formas criativas.",
+        "words": [
+          "superfícies-elementais",
+          "sourcerer",
+          "barco",
+          "liberdade"
+        ],
+        "phrases": [
+          "Combates táticos por turnos onde fogo, água e eletricidade interagem com o terreno de formas criativas.",
+          "RPG cooperativo com escrita primorosa e liberdade quase ilimitada de resolução de missões."
+        ]
+      },
+      {
+        "name": "Disco Elysium",
+        "sub": "rpg",
+        "word": "detetive-amnésico",
+        "phrase": "Detetive acorda sem memória após uma bebedeira homérica e precisa resolver um crime sem disparar um tiro.",
+        "words": [
+          "detetive-amnésico",
+          "gravata-horrível",
+          "pensamentos",
+          "revachol"
+        ],
+        "phrases": [
+          "Detetive acorda sem memória após uma bebedeira homérica e precisa resolver um crime sem disparar um tiro.",
+          "Obra-prima textual com dezenas de facetas da própria mente dialogando entre si em uma cidade decadente."
+        ]
+      },
+      {
+        "name": "Pillars of Eternity",
+        "sub": "rpg",
+        "word": "isométrico",
+        "phrase": "Homenagem moderna aos clássicos de computador com visão isométrica e controle de grupo de heróis.",
+        "words": [
+          "isométrico",
+          "almas",
+          "grupo",
+          "feitiços"
+        ],
+        "phrases": [
+          "Homenagem moderna aos clássicos de computador com visão isométrica e controle de grupo de heróis.",
+          "Aventura densa e mágica ambientada em um universo onde os segredos das almas humanas são manipulados."
+        ]
+      },
+      {
+        "name": "Counter-Strike 2",
+        "sub": "tiro",
+        "word": "bomba-c4",
+        "phrase": "O tiroteio tático definitivo onde terroristas e contraterroristas disputam desarmes em rodadas acirradas.",
+        "words": [
+          "bomba-c4",
+          "ak47",
+          "granada-fumaça",
+          "rounds"
+        ],
+        "phrases": [
+          "O tiroteio tático definitivo onde terroristas e contraterroristas disputam desarmes em rodadas acirradas.",
+          "FPS competitivo lendário onde precisão de mira na cabeça e comunicação rápida vencem partidas."
+        ]
+      },
+      {
+        "name": "DOOM Eternal",
+        "sub": "tiro",
+        "word": "motosserra",
+        "phrase": "Guerreiro implacável que despedaça hordas de demônios ao som de riffs pesados de guitarra.",
+        "words": [
+          "motosserra",
+          "glory-kill",
+          "inferno",
+          "heavy-metal"
+        ],
+        "phrases": [
+          "Guerreiro implacável que despedaça hordas de demônios ao som de riffs pesados de guitarra.",
+          "Ação frenética sem pausas onde munição e vida são recuperadas retalhando inimigos de perto."
+        ]
+      },
+      {
+        "name": "Halo 3",
+        "sub": "tiro",
+        "word": "master-chief",
+        "phrase": "Soldado superhumano de armadura verde com escudo de energia que luta para salvar a humanidade de alienígenas.",
+        "words": [
+          "master-chief",
+          "spartan",
+          "cortana",
+          "veículo-warthog"
+        ],
+        "phrases": [
+          "Soldado superhumano de armadura verde com escudo de energia que luta para salvar a humanidade de alienígenas.",
+          "Campanha memorável e multiplayer lendário pilotando jipes com torretas em cenários futuristas."
+        ]
+      },
+      {
+        "name": "Battlefield 4",
+        "sub": "tiro",
+        "word": "tanques",
+        "phrase": "Confrontos militares de grande escala onde arranha-céus desabam em tempo real durante a batalha.",
+        "words": [
+          "tanques",
+          "destruição-prédios",
+          "64-jogadores",
+          "conquista"
+        ],
+        "phrases": [
+          "Confrontos militares de grande escala onde arranha-céus desabam em tempo real durante a batalha.",
+          "Guerra total combinando infantaria, helicópteros de ataque e blindados pesados em mapas gigantescos."
+        ]
+      },
+      {
+        "name": "Half-Life 2",
+        "sub": "tiro",
+        "word": "pé-de-cabra",
+        "phrase": "Cientista de jaleco armado com um pé-de-cabra e uma arma que arremessa qualquer objeto pela física.",
+        "words": [
+          "pé-de-cabra",
+          "arma-gravidade",
+          "combine",
+          "cidade-17"
+        ],
+        "phrases": [
+          "Cientista de jaleco armado com um pé-de-cabra e uma arma que arremessa qualquer objeto pela física.",
+          "Marco histórico da narrativa interativa enfrentando forças alienígenas opressoras na Cidade Dezessete."
+        ]
+      },
+      {
+        "name": "Left 4 Dead 2",
+        "sub": "tiro",
+        "word": "horda-zumbis",
+        "phrase": "Quatro sobreviventes correm desesperados até a sala de segurança enquanto centenas de infectados velozes atacam.",
+        "words": [
+          "horda-zumbis",
+          "tank",
+          "resgate",
+          "cooperativo-quatro"
+        ],
+        "phrases": [
+          "Quatro sobreviventes correm desesperados até a sala de segurança enquanto centenas de infectados velozes atacam.",
+          "Jogo cooperativo definitivo enfrentando zumbis especiais com tacos de beisebol e espingardas."
+        ]
+      },
+      {
+        "name": "Borderlands 2",
+        "sub": "tiro",
+        "word": "humor-ácido",
+        "phrase": "Planeta desértico caótico onde caçadores de arcas buscam armas malucas com efeitos elementais explosivos.",
+        "words": [
+          "humor-ácido",
+          "loot-milhões",
+          "cel-shading",
+          "handsome-jack"
+        ],
+        "phrases": [
+          "Planeta desértico caótico onde caçadores de arcas buscam armas malucas com efeitos elementais explosivos.",
+          "Visual em estilo gibi com visual cel-shading e um vilão sarcástico que zomba de você pelo rádio."
+        ]
+      },
+      {
+        "name": "Destiny 2",
+        "sub": "tiro",
+        "word": "guardião",
+        "phrase": "Guardiões espaciais renascidos pela luz que viajam pelo sistema solar cumprindo assaltos cooperativos.",
+        "words": [
+          "guardião",
+          "esferas-luz",
+          "raide-coop",
+          "viajante"
+        ],
+        "phrases": [
+          "Guardiões espaciais renascidos pela luz que viajam pelo sistema solar cumprindo assaltos cooperativos.",
+          "Mistura viciante de tiro em primeira pessoa com saques de armas exóticas e armaduras brilhantes."
+        ]
+      },
+      {
+        "name": "Gears of War",
+        "sub": "tiro",
+        "word": "motosserra-lancer",
+        "phrase": "Soldados musculosos de armadura pesada que deslizam entre muretas serrando monstros do subterrâneo.",
+        "words": [
+          "motosserra-lancer",
+          "cobertura",
+          "locust",
+          "recarga-ativa"
+        ],
+        "phrases": [
+          "Soldados musculosos de armadura pesada que deslizam entre muretas serrando monstros do subterrâneo.",
+          "Tiroteio em terceira pessoa com mecânica de cobertura e minijogo de recarga rápida de munição."
+        ]
+      },
+      {
+        "name": "Metro 2033",
+        "sub": "tiro",
+        "word": "túneis-metrô",
+        "phrase": "Sobrevivência nos túneis escuros do metrô de Moscou após um apocalipse nuclear na superfície.",
+        "words": [
+          "túneis-metrô",
+          "máscara-gás",
+          "balas-moeda",
+          "radiação"
+        ],
+        "phrases": [
+          "Sobrevivência nos túneis escuros do metrô de Moscou após um apocalipse nuclear na superfície.",
+          "Troca de filtros de ar desgastados em ambientes radioativos usando munição militar como moeda de troca."
+        ]
+      },
+      {
+        "name": "Payday 2",
+        "sub": "tiro",
+        "word": "máscara-palhaço",
+        "phrase": "Quatro criminosos mascarados invadem cofres de bancos enquanto furadeiras térmicas abrem portas de aço.",
+        "words": [
+          "máscara-palhaço",
+          "assalto-banco",
+          "furadeira",
+          "polícia"
+        ],
+        "phrases": [
+          "Quatro criminosos mascarados invadem cofres de bancos enquanto furadeiras térmicas abrem portas de aço.",
+          "Ação cooperativa caótica resistindo a levas infinitas de forças especiais da polícia com malas de dinheiro."
+        ]
+      },
+      {
+        "name": "S.T.A.L.K.E.R.: Shadow of Chernobyl",
+        "sub": "tiro",
+        "word": "zona-exclusão",
+        "phrase": "Exploração atmosférica e perigosa ao redor da usina nuclear tomada por distorções físicas mortais.",
+        "words": [
+          "zona-exclusão",
+          "anomalias",
+          "artefatos",
+          "mutantes"
+        ],
+        "phrases": [
+          "Exploração atmosférica e perigosa ao redor da usina nuclear tomada por distorções físicas mortais.",
+          "Atirador tático de sobrevivência enfrentando radiação, bandidos e monstros invisíveis na escuridão."
+        ]
+      },
+      {
+        "name": "Crysis",
+        "sub": "tiro",
+        "word": "nanotraje",
+        "phrase": "Soldado vestindo um nanotraje futurista que confere superforça, velocidade e camuflagem invisível.",
+        "words": [
+          "nanotraje",
+          "invisibilidade",
+          "gráficos-pesados",
+          "ilha"
+        ],
+        "phrases": [
+          "Soldado vestindo um nanotraje futurista que confere superforça, velocidade e camuflagem invisível.",
+          "Famoso na história dos computadores pela exigência extrema de hardware e selvas hiperdetalhadas."
+        ]
+      },
+      {
+        "name": "Quake III Arena",
+        "sub": "tiro",
+        "word": "rocket-jump",
+        "phrase": "Arenas espaciais antigravitacionais onde jogadores saltam com o impulso do próprio foguete nos pés.",
+        "words": [
+          "rocket-jump",
+          "arena-espacial",
+          "velocidade-pura",
+          "railgun"
+        ],
+        "phrases": [
+          "Arenas espaciais antigravitacionais onde jogadores saltam com o impulso do próprio foguete nos pés.",
+          "O ápice do tiroteio de arena clássico focado puramente em reflexos rápidos e domínio do mapa."
+        ]
+      },
+      {
+        "name": "Max Payne",
+        "sub": "tiro",
+        "word": "tempo-bala",
+        "phrase": "Policial atormentado pelas sombras de Nova York que mergulha em câmera lenta disparando duas pistolas.",
+        "words": [
+          "tempo-bala",
+          "salto-câmera-lenta",
+          "analgésicos",
+          "noir"
+        ],
+        "phrases": [
+          "Policial atormentado pelas sombras de Nova York que mergulha em câmera lenta disparando duas pistolas.",
+          "Estética sombria de história em quadrinhos com narrações poéticas e consumo de analgésicos para curar feridas."
+        ]
+      },
+      {
+        "name": "Sniper Elite 4",
+        "sub": "tiro",
+        "word": "raio-x-ossos",
+        "phrase": "Atirador de elite que elimina generais inimigos a centenas de metros com câmera lenta de impacto ósseo.",
+        "words": [
+          "raio-x-ossos",
+          "tiro-longo",
+          "vento-gravidade",
+          "segunda-guerra"
+        ],
+        "phrases": [
+          "Atirador de elite que elimina generais inimigos a centenas de metros com câmera lenta de impacto ósseo.",
+          "Cálculo minucioso de queda de projétil e velocidade do vento atrás de linhas inimigas na Segunda Guerra."
+        ]
+      },
+      {
+        "name": "Wolfenstein: The New Order",
+        "sub": "tiro",
+        "word": "robôs-nazistas",
+        "phrase": "Soldado americano acorda em uma linha do tempo alternativa onde o regime totalitário venceu a guerra com mechas.",
+        "words": [
+          "robôs-nazistas",
+          "duas-armas",
+          "resistência",
+          "castelo"
+        ],
+        "phrases": [
+          "Soldado americano acorda em uma linha do tempo alternativa onde o regime totalitário venceu a guerra com mechas.",
+          "Combate explosivo empunhando duas espingardas pesadas simultaneamente contra soldados de armadura."
+        ]
+      },
+      {
+        "name": "SUPERHOT",
+        "sub": "tiro",
+        "word": "o-tempo-anda-quando-você-anda",
+        "phrase": "Inovador jogo de tiro onde o tempo só avança quando o jogador se move no cenário minimalista.",
+        "words": [
+          "o-tempo-anda-quando-você-anda",
+          "vidro-vermelho",
+          "branco",
+          "quebra-cabeça"
+        ],
+        "phrases": [
+          "Inovador jogo de tiro onde o tempo só avança quando o jogador se move no cenário minimalista.",
+          "Esquive-se de balas congeladas no ar e desmonte inimigos de vidro vermelho com socos e arremessos."
+        ]
+      },
+      {
+        "name": "Escape from Tarkov",
+        "sub": "tiro",
+        "word": "extração",
+        "phrase": "Simulador militar ultrarrealista onde entrar em uma incursão e morrer significa perder todo o equipamento carregado.",
+        "words": [
+          "extração",
+          "perde-tudo",
+          "realismo",
+          "inventário-armas"
+        ],
+        "phrases": [
+          "Simulador militar ultrarrealista onde entrar em uma incursão e morrer significa perder todo o equipamento carregado.",
+          "Customização extrema de partes de fuzis e tensão constante caminhando por cidades russas abandonadas."
+        ]
+      },
+      {
+        "name": "Super Mario Bros. 3",
+        "sub": "retro",
+        "word": "cogumelo",
+        "phrase": "O encanador mais famoso do mundo ganha asas de guaxinim para voar sobre mundos temáticos de fases.",
+        "words": [
+          "cogumelo",
+          "rabinho-guaxinim",
+          "canos",
+          "castelo"
+        ],
+        "phrases": [
+          "O encanador mais famoso do mundo ganha asas de guaxinim para voar sobre mundos temáticos de fases.",
+          "Clássico supremo do console oito bits repleto de segredos, navios voadores e blocos com interrogação."
+        ]
+      },
+      {
+        "name": "Sonic the Hedgehog 2",
+        "sub": "retro",
+        "word": "anéis-dourados",
+        "phrase": "O ouriço azul corre em velocidade supersônica acompanhado por uma raposa de duas caudas giratórias.",
+        "words": [
+          "anéis-dourados",
+          "tails",
+          "spin-dash",
+          "esmeraldas"
+        ],
+        "phrases": [
+          "O ouriço azul corre em velocidade supersônica acompanhado por uma raposa de duas caudas giratórias.",
+          "Fases em loopings vertiginosos coletando anéis dourados e enfrentando as engenhocas do cientista bigodudo."
+        ]
+      },
+      {
+        "name": "Space Invaders",
+        "sub": "retro",
+        "word": "alienígenas-descendo",
+        "phrase": "Linhas de invasores extraterrestres que marcham em direção ao solo enquanto você atira detrás de barricadas.",
+        "words": [
+          "alienígenas-descendo",
+          "barreiras",
+          "canhão-laser",
+          "ufo"
+        ],
+        "phrases": [
+          "Linhas de invasores extraterrestres que marcham em direção ao solo enquanto você atira detrás de barricadas.",
+          "Um dos fundadores da indústria dos videogames com som ritmado acelerando conforme os inimigos descem."
+        ]
+      },
+      {
+        "name": "Mega Man 2",
+        "sub": "retro",
+        "word": "braço-canhão",
+        "phrase": "O robozinho azul salta sobre plataformas e derrota oito chefes absorvendo as armas de cada um.",
+        "words": [
+          "braço-canhão",
+          "troca-poder",
+          "robôs-mestres",
+          "dificuldade"
+        ],
+        "phrases": [
+          "O robozinho azul salta sobre plataformas e derrota oito chefes absorvendo as armas de cada um.",
+          "Clássico desafiador de ação em plataforma com a icônica fase do castelo e músicas enérgicas."
+        ]
+      },
+      {
+        "name": "Street Fighter II",
+        "sub": "retro",
+        "word": "hadouken",
+        "phrase": "Lutadores de várias partes do mundo se enfrentam em duelos com magias disparadas pelas mãos e socos giratórios.",
+        "words": [
+          "hadouken",
+          "shoryuken",
+          "luta-rua",
+          "fliperama"
+        ],
+        "phrases": [
+          "Lutadores de várias partes do mundo se enfrentam em duelos com magias disparadas pelas mãos e socos giratórios.",
+          "Revolucionou os fliperamas com a mecânica de combos e filas de fichas para desafiar o vencedor."
+        ]
+      },
+      {
+        "name": "Metal Gear Solid",
+        "sub": "retro",
+        "word": "caixa-papelão",
+        "phrase": "Espião lendário se infiltra em uma base nuclear ártica escondendo-se em caixas e ouvindo chamadas de rádio.",
+        "words": [
+          "caixa-papelão",
+          "stealth",
+          "codec",
+          "solid-snake"
+        ],
+        "phrases": [
+          "Espião lendário se infiltra em uma base nuclear ártica escondendo-se em caixas e ouvindo chamadas de rádio.",
+          "Revolução cinematográfica no primeiro PlayStation com chefes paranormais e quebra da quarta parede."
+        ]
+      },
+      {
+        "name": "Resident Evil 2 (1998)",
+        "sub": "retro",
+        "word": "delegacia",
+        "phrase": "Um policial novato e uma jovem universitária chegam em uma cidade tomada pelo caos de armas biológicas.",
+        "words": [
+          "delegacia",
+          "zumbis",
+          "ervas-verde",
+          "baú-seguro"
+        ],
+        "phrases": [
+          "Um policial novato e uma jovem universitária chegam em uma cidade tomada pelo caos de armas biológicas.",
+          "Sobrevivência clássica gerenciando cartuchos escassos e correndo de mutantes em corredores escuros."
+        ]
+      },
+      {
+        "name": "Spyro the Dragon",
+        "sub": "retro",
+        "word": "dragãozinho-roxo",
+        "phrase": "Pequeno dragão roxo que plana com asas curtas e cospe fogo para libertar anciãos cristalizados.",
+        "words": [
+          "dragãozinho-roxo",
+          "joias",
+          "chifrada",
+          "labareda"
+        ],
+        "phrases": [
+          "Pequeno dragão roxo que plana com asas curtas e cospe fogo para libertar anciãos cristalizados.",
+          "Aventura charmosa coletando gemas coloridas em reinos mágicos acompanhado por uma libélula."
+        ]
+      },
+      {
+        "name": "Tomb Raider (1996)",
+        "sub": "retro",
+        "word": "lara-croft",
+        "phrase": "Arqueóloga acrobática britânica explora cavernas ancestrais resolvendo quebra-cabeças e pulando abismos.",
+        "words": [
+          "lara-croft",
+          "tumbas",
+          "duas-pistolas",
+          "tiranossauro"
+        ],
+        "phrases": [
+          "Arqueóloga acrobática britânica explora cavernas ancestrais resolvendo quebra-cabeças e pulando abismos.",
+          "Pioneiro da ação tridimensional com tiroteios usando pistolas duplas contra feras e dinossauros."
+        ]
+      },
+      {
+        "name": "GoldenEye 007",
+        "sub": "retro",
+        "word": "james-bond",
+        "phrase": "O agente secreto britânico com licença para matar que transformou tardes de amigos em guerras na tela dividida.",
+        "words": [
+          "james-bond",
+          "tela-dividida",
+          "mina-proximidade",
+          "pausa-relógio"
+        ],
+        "phrases": [
+          "O agente secreto britânico com licença para matar que transformou tardes de amigos em guerras na tela dividida.",
+          "O jogo de tiro em console mais influente de sua geração com missões secretas e armas clássicas de espionagem."
+        ]
+      },
+      {
+        "name": "Galaga",
+        "sub": "retro",
+        "word": "navezinha",
+        "phrase": "Nave espacial na parte inferior da tela enfrentando esquadrilhas de insetos espaciais em formações de mergulho.",
+        "words": [
+          "navezinha",
+          "enxame-insetos",
+          "feixe-trator",
+          "dupla-nave"
+        ],
+        "phrases": [
+          "Nave espacial na parte inferior da tela enfrentando esquadrilhas de insetos espaciais em formações de mergulho.",
+          "Permitia que o jogador tivesse sua nave capturada propositalmente para resgatá-la e atirar com o dobro de canhões."
+        ]
+      },
+      {
+        "name": "OutRun",
+        "sub": "retro",
+        "word": "conversível-vermelho",
+        "phrase": "Corrida arcade ensolarada ao volante de um conversível esportivo ao lado de uma passageira loira.",
+        "words": [
+          "conversível-vermelho",
+          "bifurcações",
+          "rádio",
+          "palmeiras"
+        ],
+        "phrases": [
+          "Corrida arcade ensolarada ao volante de um conversível esportivo ao lado de uma passageira loira.",
+          "Possibilidade inédita de escolher a música no rádio do painel e pegar bifurcações na rodovia litorânea."
+        ]
+      },
+      {
+        "name": "Prince of Persia (1989)",
+        "sub": "retro",
+        "word": "espinhos",
+        "phrase": "Jovem prisioneiro que corre contra o relógio para escapar de masmorras repletas de armadilhas mortais.",
+        "words": [
+          "espinhos",
+          "ampulheta-sessenta-minutos",
+          "rotoscopia",
+          "espada"
+        ],
+        "phrases": [
+          "Jovem prisioneiro que corre contra o relógio para escapar de masmorras repletas de armadilhas mortais.",
+          "Pioneiro em animação realista usando rotoscopia para desenhar saltos e estocadas de espada fluidas."
+        ]
+      },
+      {
+        "name": "Asteroids",
+        "sub": "retro",
+        "word": "vetores-verdes",
+        "phrase": "Triângulo minimalista que flutua no vazio disparando contra pedregulhos espaciais que se partem em pedaços menores.",
+        "words": [
+          "vetores-verdes",
+          "rochas-espaciais",
+          "girar-atirar",
+          "hiperespaço"
+        ],
+        "phrases": [
+          "Triângulo minimalista que flutua no vazio disparando contra pedregulhos espaciais que se partem em pedaços menores.",
+          "Gráficos em linhas vetoriais brilhantes sobre tela preta com física inercial de empuxo."
+        ]
+      },
+      {
+        "name": "Sunset Riders",
+        "sub": "retro",
+        "word": "velho-oeste",
+        "phrase": "Caçadores de recompensa coloridos no Velho Oeste disparando contra foras da lei em cima de trens a vapor.",
+        "words": [
+          "velho-oeste",
+          "recompensa",
+          "touros-correndo",
+          "espingarda"
+        ],
+        "phrases": [
+          "Caçadores de recompensa coloridos no Velho Oeste disparando contra foras da lei em cima de trens a vapor.",
+          "Clássico dos fliperamas de quatro jogadores correndo sobre o lombo de manadas de gado em debandada."
+        ]
+      },
+      {
+        "name": "Banjo-Kazooie",
+        "sub": "retro",
+        "word": "urso-mochila",
+        "phrase": "Um urso camarada carrega em sua mochila azul um pássaro atrevido para resgatar sua irmãzinha.",
+        "words": [
+          "urso-mochila",
+          "pássaro-penas",
+          "peças-quebra-cabeça",
+          "notas-musicais"
+        ],
+        "phrases": [
+          "Um urso camarada carrega em sua mochila azul um pássaro atrevido para resgatar sua irmãzinha.",
+          "Plataforma de exploração primorosa com transformações mágicas e quebra-cabeças bem amarrados."
+        ]
+      },
+      {
+        "name": "Grim Fandango",
+        "sub": "retro",
+        "word": "terra-mortos",
+        "phrase": "Agente de viagens na Terra dos Mortos investiga corrupção no pós-vida com temática do feriado mexicano.",
+        "words": [
+          "terra-mortos",
+          "esqueleto-calaca",
+          "cigarro",
+          "viagem-quatro-anos"
+        ],
+        "phrases": [
+          "Agente de viagens na Terra dos Mortos investiga corrupção no pós-vida com temática do feriado mexicano.",
+          "Aventura gráfica em estilo filme noir com diálogos poéticos e esqueletos elegantes de smoking."
+        ]
+      },
+      {
+        "name": "Tony Hawk's Pro Skater 2",
+        "sub": "retro",
+        "word": "manual",
+        "phrase": "Skatista profissional emendando giros aéreos com manobras de duas rodas para multiplicar pontuações insanas.",
+        "words": [
+          "manual",
+          "manobras-combo",
+          "skate",
+          "punk-rock"
+        ],
+        "phrases": [
+          "Skatista profissional emendando giros aéreos com manobras de duas rodas para multiplicar pontuações insanas.",
+          "Trilha sonora explosiva de bandas lendárias que ditou o estilo de vida jovem da virada do milênio."
+        ]
+      },
+      {
+        "name": "EA Sports FC / FIFA",
+        "sub": "esporteluta",
+        "word": "chute-gol",
+        "phrase": "O simulador de futebol mais jogado do planeta disputando campeonatos mundiais e abrindo pacotes de cartas.",
+        "words": [
+          "chute-gol",
+          "ultimate-team",
+          "carrinho",
+          "estádio"
+        ],
+        "phrases": [
+          "O simulador de futebol mais jogado do planeta disputando campeonatos mundiais e abrindo pacotes de cartas.",
+          "Dribles rápidos e cobranças de falta no ângulo com narração vibrante e estádios lotados de torcedores."
+        ]
+      },
+      {
+        "name": "Madden NFL",
+        "sub": "esporteluta",
+        "word": "touchdown",
+        "phrase": "Simulador oficial do esporte mais popular da América lançando a bola oval para a endzone.",
+        "words": [
+          "touchdown",
+          "oval",
+          "quarterback",
+          "tackle"
+        ],
+        "phrases": [
+          "Simulador oficial do esporte mais popular da América lançando a bola oval para a endzone.",
+          "Estratégia pesada de jogadas ensaiadas com bloqueios brutais e passes milimétricos no gramado."
+        ]
+      },
+      {
+        "name": "NBA 2K",
+        "sub": "esporteluta",
+        "word": "enterrada",
+        "phrase": "Basquete de quadra com gráficos fotorrealistas e física de bola apurada até a rede balançar.",
+        "words": [
+          "enterrada",
+          "arremesso-três",
+          "cesta",
+          "garrafão"
+        ],
+        "phrases": [
+          "Basquete de quadra com gráficos fotorrealistas e física de bola apurada até a rede balançar.",
+          "Controle de estrelas mundiais executando dribles desconcertantes e enterradas acrobáticas de tirar o fôlego."
+        ]
+      },
+      {
+        "name": "Gran Turismo 7",
+        "sub": "esporteluta",
+        "word": "simulador-real",
+        "phrase": "O verdadeiro simulador de direção automotiva cultuado por colecionadores de supercarros e fãs de pistas reais.",
+        "words": [
+          "simulador-real",
+          "garagem",
+          "pista-asfalto",
+          "volante"
+        ],
+        "phrases": [
+          "O verdadeiro simulador de direção automotiva cultuado por colecionadores de supercarros e fãs de pistas reais.",
+          "Física refinada de atrito de pneus e condições climáticas dinâmicas em circuitos icônicos pelo mundo."
+        ]
+      },
+      {
+        "name": "Forza Horizon 5",
+        "sub": "esporteluta",
+        "word": "festival-aberto",
+        "phrase": "Festival de velocidade em mundo aberto acelerando através de selvas, vilarejos e vulcões ensolarados.",
+        "words": [
+          "festival-aberto",
+          "méxico",
+          "tempestade-areia",
+          "supercarros"
+        ],
+        "phrases": [
+          "Festival de velocidade em mundo aberto acelerando através de selvas, vilarejos e vulcões ensolarados.",
+          "Liberdade total para pilotar centenas de veículos clássicos e modernos em paisagens de tirar o fôlego."
+        ]
+      },
+      {
+        "name": "F1 23",
+        "sub": "esporteluta",
+        "word": "asa-móvel-drs",
+        "phrase": "A velocidade máxima dos monopostos de Fórmula Um disputando curvas a mais de trezentos por hora.",
+        "words": [
+          "asa-móvel-drs",
+          "pit-stop-pneus",
+          "cockpit",
+          "monoposto"
+        ],
+        "phrases": [
+          "A velocidade máxima dos monopostos de Fórmula Um disputando curvas a mais de trezentos por hora.",
+          "Gerenciamento de desgaste de compostos de pneu e trocas de marcha precisas em milésimos de segundo."
+        ]
+      },
+      {
+        "name": "Tekken 8",
+        "sub": "esporteluta",
+        "word": "combos-malabarismo",
+        "phrase": "Combates marciais tridimensionais intensos com lutadores que carregam o gene demoníaco no sangue.",
+        "words": [
+          "combos-malabarismo",
+          "punho-ferro",
+          "demoníaco",
+          "luta-3d"
+        ],
+        "phrases": [
+          "Combates marciais tridimensionais intensos com lutadores que carregam o gene demoníaco no sangue.",
+          "Golpes que lançam adversários no ar para sequências acrobáticas de chutes e socos destruidores de paredes."
+        ]
+      },
+      {
+        "name": "Guilty Gear Strive",
+        "sub": "esporteluta",
+        "word": "anime-luta",
+        "phrase": "Visual em cel-shading de animação impecável com personagens extravagantes duelando ao som de rock pesado.",
+        "words": [
+          "anime-luta",
+          "trilha-metal",
+          "quebra-parede",
+          "heavy-slash"
+        ],
+        "phrases": [
+          "Visual em cel-shading de animação impecável com personagens extravagantes duelando ao som de rock pesado.",
+          "Impactos brutais que arremessam lutadores através das bordas da tela para novos cenários de combate."
+        ]
+      },
+      {
+        "name": "Dragon Ball FighterZ",
+        "sub": "esporteluta",
+        "word": "kamehameha",
+        "phrase": "Batalhas rápidas em equipes de três guerreiros dourados disparando rajadas de energia cósmica no céu.",
+        "words": [
+          "kamehameha",
+          "trio",
+          "teleporte",
+          "super-saiyajin"
+        ],
+        "phrases": [
+          "Batalhas rápidas em equipes de três guerreiros dourados disparando rajadas de energia cósmica no céu.",
+          "Fidelidade visual absurda aos episódios da animação com golpes que partem montanhas inteiras ao meio."
+        ]
+      },
+      {
+        "name": "Super Smash Bros. Ultimate",
+        "sub": "esporteluta",
+        "word": "jogar-para-fora",
+        "phrase": "Dezenas de personagens dos videogames duelam para arremessar uns aos outros para fora da tela.",
+        "words": [
+          "jogar-para-fora",
+          "porcentagem",
+          "itens",
+          "plataformas"
+        ],
+        "phrases": [
+          "Dezenas de personagens dos videogames duelam para arremessar uns aos outros para fora da tela.",
+          "A porcentagem de dano acumulada determina a distância que o lutador voa a cada golpe recebido."
+        ]
+      },
+      {
+        "name": "UFC 5",
+        "sub": "esporteluta",
+        "word": "octógono",
+        "phrase": "Artes marciais mistas dentro da grade do octógono com socos viscerais, chutes baixos e luta agarrada no tatame.",
+        "words": [
+          "octógono",
+          "finalização-chão",
+          "nocaute",
+          "cortes"
+        ],
+        "phrases": [
+          "Artes marciais mistas dentro da grade do octógono com socos viscerais, chutes baixos e luta agarrada no tatame.",
+          "Simulação realista de hematomas, cortes sangrentos e tentativas de chave de braço até a desistência."
+        ]
+      },
+      {
+        "name": "WWE 2K",
+        "sub": "esporteluta",
+        "word": "telecatch",
+        "phrase": "Espetáculo teatral de luta livre com entradas pirotécnicas, saltos das cordas e golpes espetaculares.",
+        "words": [
+          "telecatch",
+          "cordas-ringue",
+          "cadeirada",
+          "golpe-assinatura"
+        ],
+        "phrases": [
+          "Espetáculo teatral de luta livre com entradas pirotécnicas, saltos das cordas e golpes espetaculares.",
+          "Rivalidades inflamadas com uso de mesas, escadas de aço e árbitros nocauteados acidentalmente."
+        ]
+      },
+      {
+        "name": "Punch-Out!! (Wii)",
+        "sub": "esporteluta",
+        "word": "pequeno-mac",
+        "phrase": "Pequeno boxeador novato que precisa decorar os padrões visuais de adversários gigantescos para vencer.",
+        "words": [
+          "pequeno-mac",
+          "esquiva",
+          "treinador-chocolate",
+          "nocaute"
+        ],
+        "phrases": [
+          "Pequeno boxeador novato que precisa decorar os padrões visuais de adversários gigantescos para vencer.",
+          "Esquivas milimétricas para o lado seguidas de ganchos rápidos no queixo para derrubar oponentes cômicos."
+        ]
+      },
+      {
+        "name": "Skate 3",
+        "sub": "esporteluta",
+        "word": "analógico-manobras",
+        "phrase": "Simulação fluida de skate onde cada movimento das manobras é controlado diretamente pela alavanca analógica.",
+        "words": [
+          "analógico-manobras",
+          "física-ragdoll",
+          "corrimão",
+          "port-carverton"
+        ],
+        "phrases": [
+          "Simulação fluida de skate onde cada movimento das manobras é controlado diretamente pela alavanca analógica.",
+          "Física corporal hilária que rende quedas espetaculares ao tentar descer escadarias e corrimãos íngremes."
+        ]
+      },
+      {
+        "name": "Wii Sports",
+        "sub": "esporteluta",
+        "word": "tênis-balanço",
+        "phrase": "O fenômeno que colocou famílias inteiras em pé na sala balançando controles sem fio em partidas de tênis.",
+        "words": [
+          "tênis-balanço",
+          "controle-movimento",
+          "boliche",
+          "sala-estar"
+        ],
+        "phrases": [
+          "O fenômeno que colocou famílias inteiras em pé na sala balançando controles sem fio em partidas de tênis.",
+          "Jogadores virtuais sem pernas que lançavam bolas de boliche e desferiam socos de boxe com gestos reais."
+        ]
+      },
+      {
+        "name": "Mario Kart 8 Deluxe",
+        "sub": "esporteluta",
+        "word": "casco-azul",
+        "phrase": "Corridas caóticas em pistas flutuantes de cabeça para baixo onde o primeiro colocado teme o casco azul voador.",
+        "words": [
+          "casco-azul",
+          "antigravidade",
+          "banana",
+          "derrapagem-turbo"
+        ],
+        "phrases": [
+          "Corridas caóticas em pistas flutuantes de cabeça para baixo onde o primeiro colocado teme o casco azul voador.",
+          "Derrapagens com faíscas coloridas e arremessos de raios e cogumelos que viram o resultado na última volta."
+        ]
+      },
+      {
+        "name": "Crash Team Racing (CTR)",
+        "sub": "esporteluta",
+        "word": "turbo-triplo",
+        "phrase": "Karting desafiador onde saltar no momento certo e dominar o turbo nas curvas é a chave para a vitória.",
+        "words": [
+          "turbo-triplo",
+          "frutas-wumpa",
+          "troféus",
+          "mísseis"
+        ],
+        "phrases": [
+          "Karting desafiador onde saltar no momento certo e dominar o turbo nas curvas é a chave para a vitória.",
+          "Personagens malucos disputam pistas cheias de atalhos secretos para impedir a destruição do planeta."
+        ]
+      },
+      {
+        "name": "Fight Night Champion",
+        "sub": "esporteluta",
+        "word": "boxe-puro",
+        "phrase": "A mais aclamada representação do boxe profissional com narrativa dramática e física realista de impactos faciais.",
+        "words": [
+          "boxe-puro",
+          "guarda-alta",
+          "jab-direto",
+          "cansaço"
+        ],
+        "phrases": [
+          "A mais aclamada representação do boxe profissional com narrativa dramática e física realista de impactos faciais.",
+          "Gestão rigorosa de energia dos braços desferindo combinações de golpes secos que deformam bochechas."
+        ]
+      },
+      {
+        "name": "Soulcalibur VI",
+        "sub": "esporteluta",
+        "word": "espadas-lendárias",
+        "phrase": "Duelos com espadas, lanças e nunchakus onde a lâmina amaldiçoada disputa poder contra a espada sagrada.",
+        "words": [
+          "espadas-lendárias",
+          "armas-brancas",
+          "anel-queda",
+          "crise-alma"
+        ],
+        "phrases": [
+          "Duelos com espadas, lanças e nunchakus onde a lâmina amaldiçoada disputa poder contra a espada sagrada.",
+          "Batalhas com possibilidade de derrubar o oponente para fora da arena com um golpe bem colocado."
+        ]
+      },
+      {
+        "name": "Injustice 2",
+        "sub": "esporteluta",
+        "word": "super-herois-lutando",
+        "phrase": "Heróis e vilões dos quadrinhos se digladiam arremessando oponentes através de paredes e edifícios inteiros.",
+        "words": [
+          "super-herois-lutando",
+          "armaduras",
+          "transição-cenário",
+          "choque"
+        ],
+        "phrases": [
+          "Heróis e vilões dos quadrinhos se digladiam arremessando oponentes através de paredes e edifícios inteiros.",
+          "Combates brutais com golpes supremos cinematográficos que levam a batalha até a órbita espacial."
+        ]
+      },
+      {
+        "name": "Virtua Fighter 5",
+        "sub": "esporteluta",
+        "word": "precisão-marcial",
+        "phrase": "O pioneiro dos jogos de luta tridimensional focado puramente em técnicas reais de artes marciais sem magias.",
+        "words": [
+          "precisão-marcial",
+          "sem-projéteis",
+          "quadros-animação",
+          "dojo"
+        ],
+        "phrases": [
+          "O pioneiro dos jogos de luta tridimensional focado puramente em técnicas reais de artes marciais sem magias.",
+          "Profundidade tática absurda onde a contagem de quadros de animação define o sucesso de cada esquiva."
+        ]
+      },
+      {
+        "name": "Riders Republic",
+        "sub": "esporteluta",
+        "word": "bicicleta-montanha",
+        "phrase": "Esportes radicais em escala colossal reunindo dezenas de ciclistas e esquiadores em descidas insanas de cânions.",
+        "words": [
+          "bicicleta-montanha",
+          "wingsuit",
+          "esqui",
+          "corrida-massa"
+        ],
+        "phrases": [
+          "Esportes radicais em escala colossal reunindo dezenas de ciclistas e esquiadores em descidas insanas de cânions.",
+          "Transição instantânea entre pranchas de snowboard, asas de planar e bicicletas de trilha em parques nacionais."
+        ]
+      },
+      {
+        "name": "SSX Tricky",
+        "sub": "esporteluta",
+        "word": "snowboard",
+        "phrase": "Descidas alucinantes na neve onde atletas realizavam giros impossíveis no ar retirando a prancha dos pés.",
+        "words": [
+          "snowboard",
+          "neve",
+          "manobra-impossível",
+          "música-run-dmc"
+        ],
+        "phrases": [
+          "Descidas alucinantes na neve onde atletas realizavam giros impossíveis no ar retirando a prancha dos pés.",
+          "O ápice do estilo exagerado dos anos 2000 embalado por batidas de hip-hop e pistas vertiginosas."
+        ]
+      },
+      {
+        "name": "Top Spin 4",
+        "sub": "esporteluta",
+        "word": "saque-voleio",
+        "phrase": "Simulação profunda de tênis de quadra exigindo ritmo perfeito no gatilho para soltar golpes vencedores na linha.",
+        "words": [
+          "saque-voleio",
+          "saibro",
+          "raquete",
+          "tempo-bola"
+        ],
+        "phrases": [
+          "Simulação profunda de tênis de quadra exigindo ritmo perfeito no gatilho para soltar golpes vencedores na linha.",
+          "Trocas de bola exaustivas em superfícies de grama, carpete e saibro com desgaste físico evidente."
+        ]
+      },
+      {
+        "name": "Mario Tennis Aces",
+        "sub": "esporteluta",
+        "word": "raquete-quebrando",
+        "phrase": "Tênis dinâmico com superpoderes e mira em câmera lenta onde rebater com a raquete errada pode quebrá-la.",
+        "words": [
+          "raquete-quebrando",
+          "energia",
+          "tiro-zona",
+          "quadra-cogumelo"
+        ],
+        "phrases": [
+          "Tênis dinâmico com superpoderes e mira em câmera lenta onde rebater com a raquete errada pode quebrá-la.",
+          "Partidas acirradas com personagens icônicos usando habilidades especiais em quadras temáticas malucas."
+        ]
+      },
+      {
+        "name": "The Last of Us Part I",
+        "sub": "rpg",
+        "word": "estaladores",
+        "phrase": "Pai em luto cruza uma América destruída por fungos para escoltar uma garota imune à infecção.",
+        "words": [
+          "estaladores",
+          "fungo-cordyceps",
+          "joel-ellie",
+          "tijolo-garrafa"
+        ],
+        "phrases": [
+          "Pai em luto cruza uma América destruída por fungos para escoltar uma garota imune à infecção.",
+          "Sobrevivência tensa escutando estalos aterrorizantes na escuridão e arremessando garrafas para desviar atenção."
+        ]
+      },
+      {
+        "name": "Hollow Knight",
+        "sub": "rpg",
+        "word": "besouro-cavaleiro",
+        "phrase": "Pequeno inseto silencioso empunhando um ferrão explora as profundezas arruinadas de um vasto reino subterrâneo.",
+        "words": [
+          "besouro-cavaleiro",
+          "ferrão-espada",
+          "hallownest",
+          "almas-feitiço"
+        ],
+        "phrases": [
+          "Pequeno inseto silencioso empunhando um ferrão explora as profundezas arruinadas de um vasto reino subterrâneo.",
+          "Metroidvania com gráficos desenhados à mão, chefes desafiadores e uma atmosfera melancólica inesquecível."
+        ]
+      },
+      {
+        "name": "God of War (2018)",
+        "sub": "rpg",
+        "word": "machado-leviatã",
+        "phrase": "O espartano que destruiu o Olimpo tenta uma vida tranquila nas terras nórdicas ensinando o filho a ser guerreiro.",
+        "words": [
+          "machado-leviatã",
+          "garoto-boy",
+          "mitologia-nórdica",
+          "cinzas-esposa"
+        ],
+        "phrases": [
+          "O espartano que destruiu o Olimpo tenta uma vida tranquila nas terras nórdicas ensinando o filho a ser guerreiro.",
+          "Arremessa seu machado congelante chamando-o de volta à mão enquanto enfrenta deuses e valquírias ferozes."
+        ]
+      },
+      {
+        "name": "Stardew Valley",
+        "sub": "rpg",
+        "word": "fazendinha",
+        "phrase": "Abandona o trabalho exaustivo em uma corporação para reformar a fazenda decadente herdada do avô.",
+        "words": [
+          "fazendinha",
+          "plantação-regador",
+          "pesca-mineração",
+          "vila-pelicano"
+        ],
+        "phrases": [
+          "Abandona o trabalho exaustivo em uma corporação para reformar a fazenda decadente herdada do avô.",
+          "Planta sementes, cuida de galinhas, desce minas perigosas e faz amizade com os moradores da cidadezinha pacata."
+        ]
+      },
+      {
+        "name": "Terraria",
+        "sub": "rpg",
+        "word": "mundo-2d-blocos",
+        "phrase": "Aventura bidimensional em caixas de areia cavando masmorras profundas e forjando armas mágicas lendárias.",
+        "words": [
+          "mundo-2d-blocos",
+          "mineração-fundo",
+          "olho-cthulhu",
+          "parede-carne"
+        ],
+        "phrases": [
+          "Aventura bidimensional em caixas de areia cavando masmorras profundas e forjando armas mágicas lendárias.",
+          "Invoca chefes cósmicos gigantescos construindo arenas de combate com plataformas de madeira e poções."
+        ]
+      },
+      {
+        "name": "Hades",
+        "sub": "rpg",
+        "word": "zagreus",
+        "phrase": "O príncipe do submundo luta para escapar dos domínios do próprio pai com a ajuda dos deuses do Olimpo.",
+        "words": [
+          "zagreus",
+          "bênçãos-olimpo",
+          "fugir-submundo",
+          "cérbero"
+        ],
+        "phrases": [
+          "O príncipe do submundo luta para escapar dos domínios do próprio pai com a ajuda dos deuses do Olimpo.",
+          "Roguelike com combates velozes onde cada tentativa fracassada traz diálogos envolventes e novas melhorias."
+        ]
+      },
+      {
+        "name": "Sekiro: Shadows Die Twice",
+        "sub": "rpg",
+        "word": "prótese-shinobi",
+        "phrase": "Lobo de um braço só protege seu jovem mestre usando técnicas de desarme e uma prótese com ferramentas mortais.",
+        "words": [
+          "prótese-shinobi",
+          "aparar-espadas",
+          "postura",
+          "japão-feudal"
+        ],
+        "phrases": [
+          "Lobo de um braço só protege seu jovem mestre usando técnicas de desarme e uma prótese com ferramentas mortais.",
+          "Combates baseados puramente no som metálico de defesas perfeitas até quebrar a postura do inimigo."
+        ]
+      },
+      {
+        "name": "Grand Theft Auto: San Andreas",
+        "sub": "retro",
+        "word": "bicicleta-groove",
+        "phrase": "Jovem retorna para o funeral da mãe e reconstrói o poder de sua antiga gangue de rua em três cidades fictícias.",
+        "words": [
+          "bicicleta-groove",
+          "cj",
+          "spray-pichação",
+          "aqui-vamos-nós-de-novo"
+        ],
+        "phrases": [
+          "Jovem retorna para o funeral da mãe e reconstrói o poder de sua antiga gangue de rua em três cidades fictícias.",
+          "Missões históricas de trem, personalização de carros rebaixados e trilha sonora marcante no rádio do carro."
+        ]
+      },
+      {
+        "name": "Super Mario World",
+        "sub": "retro",
+        "word": "yoshi-dinossauro",
+        "phrase": "O encanador cavalga um simpático réptil verde que come frutas e cospe cascos coloridos de tartarugas.",
+        "words": [
+          "yoshi-dinossauro",
+          "capa-amarela",
+          "penas-voo",
+          "ilha-dinossauros"
+        ],
+        "phrases": [
+          "O encanador cavalga um simpático réptil verde que come frutas e cospe cascos coloridos de tartarugas.",
+          "Aventura definitiva do console de dezesseis bits repleta de saídas secretas e fases com chaves douradas."
+        ]
+      },
+      {
+        "name": "Donkey Kong Country 2: Diddy's Kong Quest",
+        "sub": "retro",
+        "word": "piratas-crocodilos",
+        "phrase": "Dois jovens primatas viajam pela ilha sombria de crocodilos para resgatar o gorila sequestrado.",
+        "words": [
+          "piratas-crocodilos",
+          "cabelo-hélice",
+          "moedas-krem",
+          "música-floresta"
+        ],
+        "phrases": [
+          "Dois jovens primatas viajam pela ilha sombria de crocodilos para resgatar o gorila sequestrado.",
+          "Apresentou a macaquinha que plana usando o rabo de cavalo e níveis lendários de espinheiros com músicas sublimes."
+        ]
+      },
+      {
+        "name": "Pokemon Emerald",
+        "sub": "retro",
+        "word": "batalha-fronteira",
+        "phrase": "Jornada pela terra tropical de Hoenn montando uma base secreta e apaziguando o conflito entre terra e oceano.",
+        "words": [
+          "batalha-fronteira",
+          "rayquaza-céu",
+          "bicicleta-manobras",
+          "região-hoenn"
+        ],
+        "phrases": [
+          "Jornada pela terra tropical de Hoenn montando uma base secreta e apaziguando o conflito entre terra e oceano.",
+          "O dragão esmeralda desce dos céus para deter os confrontos entre criaturas lendárias do vulcão e do mar."
+        ]
+      },
+      {
+        "name": "Garry's Mod",
+        "sub": "tiro",
+        "word": "arma-física",
+        "phrase": "Caixa de areia sem regras onde jogadores manipulam modelos tridimensionais com feixes de raio azul e criam modos malucos.",
+        "words": [
+          "arma-física",
+          "espalhar-objetos",
+          "esconde-esconde",
+          "prop-hunt"
+        ],
+        "phrases": [
+          "Caixa de areia sem regras onde jogadores manipulam modelos tridimensionais com feixes de raio azul e criam modos malucos.",
+          "Diversão caótica transformando-se em cadeiras e canecas para não ser encontrado pelos caçadores armados."
+        ]
+      },
+      {
+        "name": "Sea of Thieves",
+        "sub": "rpg",
+        "word": "velejar-caravela",
+        "phrase": "Vida pirata em primeira pessoa gerenciando velas, âncoras e canhões com amigos sob um oceano deslumbrante.",
+        "words": [
+          "velejar-caravela",
+          "canhões-bala",
+          "tesouros-baú",
+          "esqueletos-ilha"
+        ],
+        "phrases": [
+          "Vida pirata em primeira pessoa gerenciando velas, âncoras e canhões com amigos sob um oceano deslumbrante.",
+          "Batalhas navais contra lulas colossais e enterro de baús dourados em ilhas secretas com mapas desenhados."
+        ]
+      },
+      {
+        "name": "Portal 2",
+        "sub": "rpg",
+        "word": "arma-portais-azul-laranja",
+        "phrase": "Resolução de quebra-cabeças de física espacial criando conexões instantâneas entre paredes brancas em laboratório abandonado.",
+        "words": [
+          "arma-portais-azul-laranja",
+          "inteligência-artificial-batata",
+          "cubo-companheiro",
+          "géis-velocidade"
+        ],
+        "phrases": [
+          "Resolução de quebra-cabeças de física espacial criando conexões instantâneas entre paredes brancas em laboratório abandonado.",
+          "Comentários sarcásticos de uma IA maníaca e poças de tinta que aceleram passadas ou catapultam aos ares."
+        ]
+      },
+      {
+        "name": "Half-Life (1998)",
+        "sub": "tiro",
+        "word": "cientista-jaleco",
+        "phrase": "Físico teórico chega de monotrilho para um teste científico que abre uma fenda dimensional e liberta horrores alienígenas.",
+        "words": [
+          "cientista-jaleco",
+          "experimento-falho",
+          "cratera-black-mesa",
+          "headcrab"
+        ],
+        "phrases": [
+          "Físico teórico chega de monotrilho para um teste científico que abre uma fenda dimensional e liberta horrores alienígenas.",
+          "O nascimento da narrativa imersiva sem cortes de cena enfrentando soldados do governo e criaturas nos dutos."
+        ]
+      },
+      {
+        "name": "Celeste",
+        "sub": "retro",
+        "word": "montanha-escalada",
+        "phrase": "Jovem garota enfrenta seus medos interiores e crises de ansiedade escalando uma montanha desafiadora.",
+        "words": [
+          "montanha-escalada",
+          "dash-ar",
+          "morangos",
+          "ansiedade-superação"
+        ],
+        "phrases": [
+          "Jovem garota enfrenta seus medos interiores e crises de ansiedade escalando uma montanha desafiadora.",
+          "Plataforma de precisão milimétrica onde um impulso no ar e perseverança vencem abismos de espinhos."
+        ]
+      },
+      {
+        "name": "Cuphead",
+        "sub": "retro",
+        "word": "desenho-anos-30",
+        "phrase": "Aparência idêntica aos desenhos animados feitos à mão dos anos trinta com jazz autêntico e chefes impiedosos.",
+        "words": [
+          "desenho-anos-30",
+          "xícara-cabeça",
+          "pacto-diabo",
+          "dificuldade-extrema"
+        ],
+        "phrases": [
+          "Aparência idêntica aos desenhos animados feitos à mão dos anos trinta com jazz autêntico e chefes impiedosos.",
+          "Dois irmãos com xícaras no lugar da cabeça atiram raios pelos dedos para pagar uma aposta com o coisa-ruim."
+        ]
+      },
+      {
+        "name": "Slay the Spire",
+        "sub": "rpg",
+        "word": "cartas-combate",
+        "phrase": "Construção estratégica de baralho a cada batalha subindo os andares perigosos de uma torre mágica.",
+        "words": [
+          "cartas-combate",
+          "subir-torre",
+          "roguelike-deck",
+          "relíquias"
+        ],
+        "phrases": [
+          "Construção estratégica de baralho a cada batalha subindo os andares perigosos de uma torre mágica.",
+          "Combinações de ataques, defesas e poderes arcanos para derrotar chefes de mecânicas surpreendentes."
+        ]
+      },
+      {
+        "name": "Dead Cells",
+        "sub": "rpg",
+        "word": "gosma-corpo",
+        "phrase": "Guerreiro decapitado que renasce a cada morte através de uma gosma explorando uma ilha amaldiçoada.",
+        "words": [
+          "gosma-corpo",
+          "rolamento-esquiva",
+          "células-mutação",
+          "castelo-prisão"
+        ],
+        "phrases": [
+          "Guerreiro decapitado que renasce a cada morte através de uma gosma explorando uma ilha amaldiçoada.",
+          "Combates rápidos frenéticos com espadas, arcos e chicotes em cenários gerados aleatoriamente."
+        ]
+      },
+      {
+        "name": "Ori and the Blind Forest",
+        "sub": "rpg",
+        "word": "espírito-guardião",
+        "phrase": "Pequeno ser de luz pura embarca em uma jornada comovente para salvar sua floresta da decadência.",
+        "words": [
+          "espírito-guardião",
+          "floresta-nibel",
+          "salto-pluma",
+          "visual-mágico"
+        ],
+        "phrases": [
+          "Pequeno ser de luz pura embarca em uma jornada comovente para salvar sua floresta da decadência.",
+          "Visual deslumbrante de conto de fadas com trilha orquestral arrebatadora e movimentação acrobática fluida."
+        ]
+      },
+      {
+        "name": "Subnautica",
+        "sub": "rpg",
+        "word": "planeta-oceano",
+        "phrase": "Único sobrevivente da queda de uma espaçonave em um planeta alienígena coberto quase inteiramente por água.",
+        "words": [
+          "planeta-oceano",
+          "submarino-costura",
+          "oxigênio-fundo",
+          "leviatãs-terror"
+        ],
+        "phrases": [
+          "Único sobrevivente da queda de uma espaçonave em um planeta alienígena coberto quase inteiramente por água.",
+          "Construa bases submarinas e mergulhe em fossas abissais escuras cheias de monstros aterrorizantes."
+        ]
+      },
+      {
+        "name": "Palworld",
+        "sub": "rpg",
+        "word": "monstrinhos-trabalho",
+        "phrase": "Fenômeno onde você captura criaturas fantásticas e as coloca para trabalhar em linhas de produção com armas.",
+        "words": [
+          "monstrinhos-trabalho",
+          "armas-fogo",
+          "esferas-captura",
+          "sobrevivência"
+        ],
+        "phrases": [
+          "Fenômeno onde você captura criaturas fantásticas e as coloca para trabalhar em linhas de produção com armas.",
+          "Construção de bases e exploração de mundo aberto montado no dorso de feras elementais."
+        ]
+      },
+      {
+        "name": "Lies of P",
+        "sub": "rpg",
+        "word": "boneco-mentiroso",
+        "phrase": "Releitura sombria e gótica da história do boneco de madeira em uma cidade dominada por autômatos assassinos.",
+        "words": [
+          "boneco-mentiroso",
+          "braço-ferramenta",
+          "marionetes-loucas",
+          "cidade-krat"
+        ],
+        "phrases": [
+          "Releitura sombria e gótica da história do boneco de madeira em uma cidade dominada por autômatos assassinos.",
+          "Cada mentira contada altera a humanidade do protagonista empunhando lâminas combinadas no combate."
+        ]
+      },
+      {
+        "name": "Armored Core VI",
+        "sub": "tiro",
+        "word": "robôs-customizados",
+        "phrase": "Pilote mechas gigantescos altamente personalizáveis disparando mísseis e canhões de energia em alta velocidade.",
+        "words": [
+          "robôs-customizados",
+          "foguetes-ombro",
+          "planeta-rubicon",
+          "velocidade-mecha"
+        ],
+        "phrases": [
+          "Pilote mechas gigantescos altamente personalizáveis disparando mísseis e canhões de energia em alta velocidade.",
+          "Missões táticas corporativas em um planeta congelado em guerra pela posse de uma substância misteriosa."
+        ]
+      },
+      {
+        "name": "Helldivers 2",
+        "sub": "tiro",
+        "word": "democracia-gerenciada",
+        "phrase": "Quatro soldados saltam do espaço com capas militares para espalhar a liberdade contra hordas de insetos e robôs.",
+        "words": [
+          "democracia-gerenciada",
+          "estratagemas-códigos",
+          "insetos-gigantes",
+          "quatro-soldados"
+        ],
+        "phrases": [
+          "Quatro soldados saltam do espaço com capas militares para espalhar a liberdade contra hordas de insetos e robôs.",
+          "Digite sequências nas setas do controle para chamar bombardeios aéreos massivos em solo alienígena."
+        ]
+      },
+      {
+        "name": "Lethal Company",
+        "sub": "tiro",
+        "word": "sucata-coleta",
+        "phrase": "Funcionários descartáveis pousam em luas industriais abandonadas para coletar tralhas e bater a meta da empresa.",
+        "words": [
+          "sucata-coleta",
+          "cota-empresa",
+          "monstros-dutos",
+          "talkie-walkie"
+        ],
+        "phrases": [
+          "Funcionários descartáveis pousam em luas industriais abandonadas para coletar tralhas e bater a meta da empresa.",
+          "Comunicação por rádio com chiado enquanto colegas são devorados no escuro por criaturas desconhecidas."
+        ]
+      },
+      {
+        "name": "Phasmophobia",
+        "sub": "tiro",
+        "word": "termômetro-frio",
+        "phrase": "Investigadores paranormais entram em casas escuras com equipamentos científicos para descobrir o tipo de fantasma.",
+        "words": [
+          "termômetro-frio",
+          "caixa-espírito",
+          "lanterna-uv",
+          "casa-assombrada"
+        ],
+        "phrases": [
+          "Investigadores paranormais entram em casas escuras com equipamentos científicos para descobrir o tipo de fantasma.",
+          "O espírito escuta a voz dos jogadores pelo microfone e inicia caçadas mortais trancando as portas."
+        ]
+      },
+      {
+        "name": "Baldur's Gate II",
+        "sub": "retro",
+        "word": "filho-de-baal",
+        "phrase": "Um dos mais aclamados RPGs clássicos de computador com diálogos profundos e combates por regras de D&D.",
+        "words": [
+          "filho-de-baal",
+          "pausa-tática",
+          "reinos-esquecidos",
+          "magias-livro"
+        ],
+        "phrases": [
+          "Um dos mais aclamados RPGs clássicos de computador com diálogos profundos e combates por regras de D&D.",
+          "Enfrente o poderoso mago Jon Irenicus liderando um grupo de aventureiros pelos Reinos Esquecidos."
+        ]
+      },
+      {
+        "name": "Age of Empires II",
+        "sub": "retro",
+        "word": "aldeões-madeira",
+        "phrase": "Construa impérios históricos coletando recursos e erguendo castelos de pedra com muralhas intransponíveis.",
+        "words": [
+          "aldeões-madeira",
+          "idade-castelos",
+          "trebuchet",
+          "wololo"
+        ],
+        "phrases": [
+          "Construa impérios históricos coletando recursos e erguendo castelos de pedra com muralhas intransponíveis.",
+          "Catapultas monumentais destruindo fortificações e sacerdotes convertendo unidades inimigas com cânticos."
+        ]
+      },
+      {
+        "name": "SimCity 2000",
+        "sub": "retro",
+        "word": "prefeito",
+        "phrase": "Assuma o cargo de prefeito planejando malhas viárias, redes elétricas e zoneamento urbano do zero.",
+        "words": [
+          "prefeito",
+          "zoneamento-residencial",
+          "desastres-monstro",
+          "tubos-água"
+        ],
+        "phrases": [
+          "Assuma o cargo de prefeito planejando malhas viárias, redes elétricas e zoneamento urbano do zero.",
+          "Enfrente incêndios, inundações e monstros gigantes destruindo os arranha-céus da sua metrópole."
+        ]
       }
     ]
   },
@@ -16711,6 +30722,1638 @@ const THEME_DATABASE = {
         ],
         "word": "olhar",
         "phrase": "Um supermodelo masculino com QI duvidoso e um olhar que vira febre mundial."
+      },
+      {
+        "name": "A Origem (Inception)",
+        "sub": "ficcao",
+        "word": "peão-girando",
+        "phrase": "Ladrões que invadem o subconsciente de pessoas adormecidas para plantar uma ideia.",
+        "words": [
+          "peão-girando",
+          "sonho-sonho",
+          "tótem",
+          "gravidade-zero"
+        ],
+        "phrases": [
+          "Ladrões que invadem o subconsciente de pessoas adormecidas para plantar uma ideia.",
+          "Cena icônica de luta giratória em um corredor de hotel e uma cidade que se dobra sobre si."
+        ]
+      },
+      {
+        "name": "Star Wars: O Império Contra-Ataca",
+        "sub": "ficcao",
+        "word": "eu-sou-seu-pai",
+        "phrase": "Revelação familiar chocante em uma passarela suspensa após duelo de sabres de luz.",
+        "words": [
+          "eu-sou-seu-pai",
+          "planeta-gelo",
+          "mestre-verde",
+          "carbonita"
+        ],
+        "phrases": [
+          "Revelação familiar chocante em uma passarela suspensa após duelo de sabres de luz.",
+          "Treinamento jedi em um pântano sombrio com mestre diminuto e andadores no gelo."
+        ]
+      },
+      {
+        "name": "Alien: O Oitavo Passageiro",
+        "sub": "ficcao",
+        "word": "peito-rasgando",
+        "phrase": "Tripulação comercial isolada no espaço é caçada por uma criatura com sangue ácido.",
+        "words": [
+          "peito-rasgando",
+          "nave-nostromo",
+          "sangue-ácido",
+          "xenomorfo"
+        ],
+        "phrases": [
+          "Tripulação comercial isolada no espaço é caçada por uma criatura com sangue ácido.",
+          "Terror claustrofóbico em corredores escuros de aço com uma das heroínas mais marcantes do cinema."
+        ]
+      },
+      {
+        "name": "Exterminador do Futuro 2",
+        "sub": "ficcao",
+        "word": "metal-líquido",
+        "phrase": "Ciborgue reprogramado é enviado do futuro para proteger o jovem líder da resistência humana.",
+        "words": [
+          "metal-líquido",
+          "polegar-fogo",
+          "espingarda-moto",
+          "hasta-la-vista"
+        ],
+        "phrases": [
+          "Ciborgue reprogramado é enviado do futuro para proteger o jovem líder da resistência humana.",
+          "Inimigo implacável de metal líquido capaz de se transformar em qualquer pessoa que toca."
+        ]
+      },
+      {
+        "name": "Black Mirror",
+        "sub": "ficcao",
+        "word": "telas-escuras",
+        "phrase": "Série antológica perturbadora que explora o lado sombrio e os desdobramentos éticos da tecnologia digital.",
+        "words": [
+          "telas-escuras",
+          "distopia",
+          "classificação-social",
+          "tecnologia"
+        ],
+        "phrases": [
+          "Série antológica perturbadora que explora o lado sombrio e os desdobramentos éticos da tecnologia digital.",
+          "Episódios isolados sobre dependência de curtidas sociais, memórias gravadas e cópias virtuais."
+        ]
+      },
+      {
+        "name": "Duna (2021)",
+        "sub": "ficcao",
+        "word": "verme-areia",
+        "phrase": "Herdeiro de uma casa nobre luta pela sobrevivência em um planeta desértico cobiçado por sua especiaria rara.",
+        "words": [
+          "verme-areia",
+          "especiaria",
+          "traje-destilação",
+          "olhos-azuis"
+        ],
+        "phrases": [
+          "Herdeiro de uma casa nobre luta pela sobrevivência em um planeta desértico cobiçado por sua especiaria rara.",
+          "Vastos oceanos de areia com vermes colossais subterrâneos e profecias messiânicas."
+        ]
+      },
+      {
+        "name": "O Exterminador do Futuro (1984)",
+        "sub": "ficcao",
+        "word": "viagem-tempo",
+        "phrase": "Assassino implacável com esqueleto de titânio persegue uma mulher que dará à luz a esperança humana.",
+        "words": [
+          "viagem-tempo",
+          "olho-vermelho",
+          "jaqueta-couro",
+          "alvo-sarah"
+        ],
+        "phrases": [
+          "Assassino implacável com esqueleto de titânio persegue uma mulher que dará à luz a esperança humana.",
+          "Ciborgue de sotaque austríaco disparando em delegacias em busca de sua vítima."
+        ]
+      },
+      {
+        "name": "Arquivo X",
+        "sub": "ficcao",
+        "word": "ovni",
+        "phrase": "Dois agentes investigam casos não solucionados envolvendo fenômenos paranormais e vida extraterrestre.",
+        "words": [
+          "ovni",
+          "agentes-fbi",
+          "a-verdade-está-lá-fora",
+          "conspiração"
+        ],
+        "phrases": [
+          "Dois agentes investigam casos não solucionados envolvendo fenômenos paranormais e vida extraterrestre.",
+          "O cético e a crente desvendando abduções alienígenas e conspirações secretas do governo."
+        ]
+      },
+      {
+        "name": "Westworld",
+        "sub": "ficcao",
+        "word": "parque-androides",
+        "phrase": "Parque temático futurista do Velho Oeste povoado por anfitriões artificiais que começam a despertar consciência.",
+        "words": [
+          "parque-androides",
+          "labirinto",
+          "revolta-máquinas",
+          "chapéu-preto"
+        ],
+        "phrases": [
+          "Parque temático futurista do Velho Oeste povoado por anfitriões artificiais que começam a despertar consciência.",
+          "Visitantes ricos pagam para viver fantasias violentas até que a programação dos robôs se rebela."
+        ]
+      },
+      {
+        "name": "Planeta dos Macacos: A Origem",
+        "sub": "ficcao",
+        "word": "vírus-inteligência",
+        "phrase": "Substância criada para curar o Alzheimer concede superinteligência a um chimpanzé que lidera uma revolução.",
+        "words": [
+          "vírus-inteligência",
+          "ponte-golden-gate",
+          "chimpanzé-líder",
+          "sinais-mãos"
+        ],
+        "phrases": [
+          "Substância criada para curar o Alzheimer concede superinteligência a um chimpanzé que lidera uma revolução.",
+          "O grito de não que ecoou pelo santuário e mudou o destino do domínio biológico da Terra."
+        ]
+      },
+      {
+        "name": "Homens de Preto",
+        "sub": "ficcao",
+        "word": "neuralizador",
+        "phrase": "Agência secreta governamental que monitora imigrantes de outros planetas apagando memórias de testemunhas.",
+        "words": [
+          "neuralizador",
+          "terno-preto",
+          "arma-grilo",
+          "disfarce-alien"
+        ],
+        "phrases": [
+          "Agência secreta governamental que monitora imigrantes de outros planetas apagando memórias de testemunhas.",
+          "Flash de luz de um bastão prateado e óculos escuros para esconder segredos intergalácticos."
+        ]
+      },
+      {
+        "name": "A Chegada (Arrival)",
+        "sub": "ficcao",
+        "word": "linguística",
+        "phrase": "Linguista é convocada pelo exército para tentar se comunicar com seres heptápodes alienígenas através de círculos de tinta.",
+        "words": [
+          "linguística",
+          "símbolos-tinta",
+          "naves-concha",
+          "tempo-não-linear"
+        ],
+        "phrases": [
+          "Linguista é convocada pelo exército para tentar se comunicar com seres heptápodes alienígenas através de círculos de tinta.",
+          "Compreensão de um idioma que altera a percepção humana sobre passado, presente e futuro."
+        ]
+      },
+      {
+        "name": "O Quinto Elemento",
+        "sub": "ficcao",
+        "word": "táxi-voador",
+        "phrase": "Motorista de táxi do futuro ajuda uma mulher divina criada em laboratório a salvar a galáxia do mal supremo.",
+        "words": [
+          "táxi-voador",
+          "cabelo-laranja",
+          "ópera-azul",
+          "maleta-pedras"
+        ],
+        "phrases": [
+          "Motorista de táxi do futuro ajuda uma mulher divina criada em laboratório a salvar a galáxia do mal supremo.",
+          "Visual futurista excêntrico com cantora lírica alienígena azul e quatro pedras elementais sagradas."
+        ]
+      },
+      {
+        "name": "Doctor Who",
+        "sub": "ficcao",
+        "word": "tardis",
+        "phrase": "Senhor do Tempo alienígena viaja pelo espaço em uma cabine telefônica policial maior por dentro.",
+        "words": [
+          "tardis",
+          "cabine-azul",
+          "chave-sônica",
+          "regeneração"
+        ],
+        "phrases": [
+          "Senhor do Tempo alienígena viaja pelo espaço em uma cabine telefônica policial maior por dentro.",
+          "Viajante secular que se regenera em novos corpos combatendo robôs que gritam exterminar."
+        ]
+      },
+      {
+        "name": "The Mandalorian",
+        "sub": "ficcao",
+        "word": "este-é-o-caminho",
+        "phrase": "Caçador de recompensas solitário de armadura reluzente decide proteger uma criança sensitiva à Força.",
+        "words": [
+          "este-é-o-caminho",
+          "beskar",
+          "bebê-verde",
+          "capacete"
+        ],
+        "phrases": [
+          "Caçador de recompensas solitário de armadura reluzente decide proteger uma criança sensitiva à Força.",
+          "Mercenário de poucas palavras que nunca retira o capacete perante outros seres vivos."
+        ]
+      },
+      {
+        "name": "Perdido em Marte",
+        "sub": "ficcao",
+        "word": "batatas",
+        "phrase": "Astronauta dado como morto após uma tempestade precisa usar a ciência para plantar comida em solo marciano.",
+        "words": [
+          "batatas",
+          "botânico",
+          "oxigênio-esgotando",
+          "planeta-vermelho"
+        ],
+        "phrases": [
+          "Astronauta dado como morto após uma tempestade precisa usar a ciência para plantar comida em solo marciano.",
+          "Sobrevivência solitária a milhões de quilômetros da Terra aguardando uma arriscada missão de resgate."
+        ]
+      },
+      {
+        "name": "E.T. O Extraterrestre",
+        "sub": "ficcao",
+        "word": "dedo-iluminado",
+        "phrase": "Garotinho faz amizade com uma criatura do espaço e o esconde em seu armário com doces coloridos.",
+        "words": [
+          "dedo-iluminado",
+          "bicicleta-lua",
+          "telefone-casa",
+          "cesto-cobertor"
+        ],
+        "phrases": [
+          "Garotinho faz amizade com uma criatura do espaço e o esconde em seu armário com doces coloridos.",
+          "Silhueta de bicicletas voando em frente à lua cheia em fuga dos agentes federais."
+        ]
+      },
+      {
+        "name": "O Show de Truman",
+        "sub": "ficcao",
+        "word": "câmeras-escondidas",
+        "phrase": "Homem comum descobre que toda a sua vida pacata não passa de um reality show transmitido globalmente.",
+        "words": [
+          "câmeras-escondidas",
+          "domo",
+          "barco-parede",
+          "bom-dia-boa-tarde"
+        ],
+        "phrases": [
+          "Homem comum descobre que toda a sua vida pacata não passa de um reality show transmitido globalmente.",
+          "Cidade artificial onde cada vizinho é um ator pago e o horizonte é o limite pintado de um estúdio."
+        ]
+      },
+      {
+        "name": "Gattaca: Experiência Genética",
+        "sub": "ficcao",
+        "word": "dna-perfeito",
+        "phrase": "Homem concebido naturalmente assume a identidade genética de um atleta paraplégico para realizar seu sonho espacial.",
+        "words": [
+          "dna-perfeito",
+          "urina-falsa",
+          "escada-caracol",
+          "válido-inválido"
+        ],
+        "phrases": [
+          "Homem concebido naturalmente assume a identidade genética de um atleta paraplégico para realizar seu sonho espacial.",
+          "Mundo onde o sucesso profissional é ditado por sequenciamentos genéticos perfeitos ao nascer."
+        ]
+      },
+      {
+        "name": "Viva: A Vida é uma Festa",
+        "sub": "animacoes",
+        "word": "terra-mortos",
+        "phrase": "Garoto apaixonado por música cruza uma ponte florida para o além no feriado dos mortos.",
+        "words": [
+          "terra-mortos",
+          "violão-caveira",
+          "pétalas-laranja",
+          "lembre-de-mim"
+        ],
+        "phrases": [
+          "Garoto apaixonado por música cruza uma ponte florida para o além no feriado dos mortos.",
+          "Busca pela bênção de antepassados esqueléticos em um festival de cores e melodias comoventes."
+        ]
+      },
+      {
+        "name": "Divertida Mente (Inside Out)",
+        "sub": "animacoes",
+        "word": "alegria-tristeza",
+        "phrase": "Cinco emoções básicas operam um painel de comando dentro da mente de uma garota em fase de mudanças.",
+        "words": [
+          "alegria-tristeza",
+          "painel-controle",
+          "ilhas-personalidade",
+          "memórias-esferas"
+        ],
+        "phrases": [
+          "Cinco emoções básicas operam um painel de comando dentro da mente de uma garota em fase de mudanças.",
+          "A importância da melancolia e da aceitação para a construção de memórias duradouras."
+        ]
+      },
+      {
+        "name": "Frozen: Uma Aventura Congelante",
+        "sub": "animacoes",
+        "word": "livre-estou",
+        "phrase": "Rainha com o poder involuntário de congelar tudo ao redor foge para o alto de montanhas isoladas.",
+        "words": [
+          "livre-estou",
+          "castelo-gelo",
+          "boneco-neve",
+          "luvas"
+        ],
+        "phrases": [
+          "Rainha com o poder involuntário de congelar tudo ao redor foge para o alto de montanhas isoladas.",
+          "Irmã corajosa parte em busca de seu amor fraternal acompanhada por um homem do gelo e sua rena."
+        ]
+      },
+      {
+        "name": "A Era do Gelo",
+        "sub": "animacoes",
+        "word": "noz-esquilo",
+        "phrase": "Três animais improváveis da era glacial se unem para devolver um bebê humano à sua tribo.",
+        "words": [
+          "noz-esquilo",
+          "mamute-rabugento",
+          "bebê-humano",
+          "preguiça-fala"
+        ],
+        "phrases": [
+          "Três animais improváveis da era glacial se unem para devolver um bebê humano à sua tribo.",
+          "Esquilo pré-histórico obcecado por uma bolota que provoca fraturas continentais a cada tentativa."
+        ]
+      },
+      {
+        "name": "Zootopia",
+        "sub": "animacoes",
+        "word": "coelha-policial",
+        "phrase": "Pequena roedora se forma com honras na academia policial e investiga sumiços em uma metrópole animal.",
+        "words": [
+          "coelha-policial",
+          "raposa-esperta",
+          "preguiça-detran",
+          "cenoura-gravador"
+        ],
+        "phrases": [
+          "Pequena roedora se forma com honras na academia policial e investiga sumiços em uma metrópole animal.",
+          "Parceria com uma raposa trapaceira e a hilária lentidão de funcionários públicos no setor de trânsito."
+        ]
+      },
+      {
+        "name": "Carros (Cars)",
+        "sub": "animacoes",
+        "word": "rota-66",
+        "phrase": "Supercarro arrogante de corridas fica preso em uma cidadezinha esquecida da Rota 66 aprendendo humildade.",
+        "words": [
+          "rota-66",
+          "copa-pistão",
+          "guincho-enferrujado",
+          "asfalto-pista"
+        ],
+        "phrases": [
+          "Supercarro arrogante de corridas fica preso em uma cidadezinha esquecida da Rota 66 aprendendo humildade.",
+          "Trabalho comunitário consertando o asfalto da rua principal ao lado de um simpático guincho caipira."
+        ]
+      },
+      {
+        "name": "Homem-Aranha no Aranhaverso",
+        "sub": "animacoes",
+        "word": "salto-de-fé",
+        "phrase": "Jovem negro de Nova York é picado por aranha radioativa e encontra variantes do herói de outras dimensões.",
+        "words": [
+          "salto-de-fé",
+          "multiverso",
+          "tênis-nike",
+          "estilo-hq"
+        ],
+        "phrases": [
+          "Jovem negro de Nova York é picado por aranha radioativa e encontra variantes do herói de outras dimensões.",
+          "Visual revolucionário com retículas de gibi, balões de pensamento e ritmo contagiante de hip-hop."
+        ]
+      },
+      {
+        "name": "O Castelo Animado",
+        "sub": "animacoes",
+        "word": "castelo-pernas",
+        "phrase": "Jovem amaldiçoada com a velhice encontra refúgio em uma fortaleza mágica ambulante movida a vapor.",
+        "words": [
+          "castelo-pernas",
+          "fogo-falante",
+          "velhinha-feitiço",
+          "mago-pássaro"
+        ],
+        "phrases": [
+          "Jovem amaldiçoada com a velhice encontra refúgio em uma fortaleza mágica ambulante movida a vapor.",
+          "Demônio do fogo preso a uma lareira e um mago vaidoso que perde as forças perante a guerra."
+        ]
+      },
+      {
+        "name": "Meu Vizinho Totoro",
+        "sub": "animacoes",
+        "word": "espírito-bosque",
+        "phrase": "Duas irmãs se mudam para o campo e descobrem criaturas místicas gentis habitando a floresta vizinha.",
+        "words": [
+          "espírito-bosque",
+          "ônibus-gato",
+          "sementes-brotando",
+          "guarda-chuva"
+        ],
+        "phrases": [
+          "Duas irmãs se mudam para o campo e descobrem criaturas místicas gentis habitando a floresta vizinha.",
+          "Ponto de ônibus na chuva ao lado de um gigante peludo e um felino vivo de múltiplos olhos e portas."
+        ]
+      },
+      {
+        "name": "Aladdin",
+        "sub": "animacoes",
+        "word": "lâmpada-mágica",
+        "phrase": "Jovem de rua generoso encontra um artefato místico no deserto e ganha o direito a três pedidos impossíveis.",
+        "words": [
+          "lâmpada-mágica",
+          "tapete-voador",
+          "três-desejos",
+          "gênio-azul"
+        ],
+        "phrases": [
+          "Jovem de rua generoso encontra um artefato místico no deserto e ganha o direito a três pedidos impossíveis.",
+          "Ser cósmico azul de humor rápido e imitações que transforma o rapaz em um príncipe exuberante."
+        ]
+      },
+      {
+        "name": "A Bela e a Fera",
+        "sub": "animacoes",
+        "word": "rosa-pétalas",
+        "phrase": "Jovem apaixonada por livros aceita ficar presa em um castelo em troca da liberdade de seu pai idoso.",
+        "words": [
+          "rosa-pétalas",
+          "bule-xícara",
+          "biblioteca-imensa",
+          "castelo-amaldiçoado"
+        ],
+        "phrases": [
+          "Jovem apaixonada por livros aceita ficar presa em um castelo em troca da liberdade de seu pai idoso.",
+          "Objetos domésticos encantados que cantam e dançam esperando a fera aprender a amar antes da última pétala cair."
+        ]
+      },
+      {
+        "name": "Enrolados",
+        "sub": "animacoes",
+        "word": "cabelos-dourados",
+        "phrase": "Princesa com dezenas de metros de cabelos mágicos sai de sua torre isolada com ajuda de um ladrão carismático.",
+        "words": [
+          "cabelos-dourados",
+          "frigideira-arma",
+          "lanternas-flutuantes",
+          "torre-alta"
+        ],
+        "phrases": [
+          "Princesa com dezenas de metros de cabelos mágicos sai de sua torre isolada com ajuda de um ladrão carismático.",
+          "Uso de frigideira pesada como arma de defesa e o sonho de ver as luzes douradas no céu de seu aniversário."
+        ]
+      },
+      {
+        "name": "Megamente",
+        "sub": "animacoes",
+        "word": "cabeça-azul",
+        "phrase": "Vilão genial de cabeça azul finalmente derrota seu arqui-inimigo mas entra em crise existencial sem propósito.",
+        "words": [
+          "cabeça-azul",
+          "vilão-vira-herói",
+          "robô-peixe",
+          "apresentação-espetacular"
+        ],
+        "phrases": [
+          "Vilão genial de cabeça azul finalmente derrota seu arqui-inimigo mas entra em crise existencial sem propósito.",
+          "Descobre que a diferença entre um vilão comum e um supervilão é a apresentação com fogos e rock."
+        ]
+      },
+      {
+        "name": "Pinóquio",
+        "sub": "animacoes",
+        "word": "nariz-crescendo",
+        "phrase": "Boneco de madeira entalhado por um carpinteiro sonhador ganha vida querendo se tornar um menino de verdade.",
+        "words": [
+          "nariz-crescendo",
+          "boneco-madeira",
+          "grilo-consciência",
+          "baleia-barriga"
+        ],
+        "phrases": [
+          "Boneco de madeira entalhado por um carpinteiro sonhador ganha vida querendo se tornar um menino de verdade.",
+          "Seu nariz se estica visivelmente a cada mentira dita sob os conselhos de sua consciência em forma de inseto."
+        ]
+      },
+      {
+        "name": "Um Sonho de Liberdade",
+        "sub": "drama",
+        "word": "martelo-pedra",
+        "phrase": "Banquereiro injustamente condenado à prisão perpétua cava uma rota de fuga durante duas décadas com pequeno martelo.",
+        "words": [
+          "martelo-pedra",
+          "túnel-esgoto",
+          "pôster-parede",
+          "esperança"
+        ],
+        "phrases": [
+          "Banquereiro injustamente condenado à prisão perpétua cava uma rota de fuga durante duas décadas com pequeno martelo.",
+          "Rasteja por canos fétidos em noite de tempestade para emergir livre e vitorioso sob a chuva torrencial."
+        ]
+      },
+      {
+        "name": "Forrest Gump",
+        "sub": "drama",
+        "word": "caixa-bombons",
+        "phrase": "Homem simples com coração puro participa involuntariamente dos maiores eventos históricos do século vinte.",
+        "words": [
+          "caixa-bombons",
+          "pena-voando",
+          "corrida-anos",
+          "camarão"
+        ],
+        "phrases": [
+          "Homem simples com coração puro participa involuntariamente dos maiores eventos históricos do século vinte.",
+          "A vida é como uma caixa de chocolates e correr de costa a costa sem rumo com tênis desgastados."
+        ]
+      },
+      {
+        "name": "A Lista de Schindler",
+        "sub": "drama",
+        "word": "vestido-vermelho",
+        "phrase": "Empresário alemão arrisca toda a sua fortuna para salvar mais de mil operários judeus do holocausto.",
+        "words": [
+          "vestido-vermelho",
+          "fábrica-esmaltados",
+          "preto-branco",
+          "salvação"
+        ],
+        "phrases": [
+          "Empresário alemão arrisca toda a sua fortuna para salvar mais de mil operários judeus do holocausto.",
+          "Filmado em comovente preto e branco com o marcante destaque cromático de uma garotinha em meio ao caos."
+        ]
+      },
+      {
+        "name": "Pulp Fiction: Tempo de Violência",
+        "sub": "drama",
+        "word": "maleta-brilhante",
+        "phrase": "Narrativa não linear entrelaçando assassinos de terno preto, um boxeador trapaceiro e um casal assaltante de lanchonete.",
+        "words": [
+          "maleta-brilhante",
+          "versículo-bíblico",
+          "dança-meias",
+          "hambúrguer-kahuna"
+        ],
+        "phrases": [
+          "Narrativa não linear entrelaçando assassinos de terno preto, um boxeador trapaceiro e um casal assaltante de lanchonete.",
+          "Diálogos banais sobre massagens nos pés e hambúrgueres momentos antes de tiroteios sangrentos."
+        ]
+      },
+      {
+        "name": "Parasita",
+        "sub": "drama",
+        "word": "porão-alagado",
+        "phrase": "Família empobrecida que vive em um subsolo infiltra-se gradualmente como prestadora de serviços na mansão de ricos.",
+        "words": [
+          "porão-alagado",
+          "pedra-estudioso",
+          "ramen-carne",
+          "cheiro-pobreza"
+        ],
+        "phrases": [
+          "Família empobrecida que vive em um subsolo infiltra-se gradualmente como prestadora de serviços na mansão de ricos.",
+          "Reviravolta chocante escondida em um abrigo subterrâneo durante uma noite de tempestade destruidora."
+        ]
+      },
+      {
+        "name": "Coringa (Joker)",
+        "sub": "drama",
+        "word": "escadaria-dança",
+        "phrase": "Comediante fracassado com distúrbio neurológico de riso espirala em loucura e revolta contra uma sociedade fria.",
+        "words": [
+          "escadaria-dança",
+          "palhaço-aluguel",
+          "risada-involuntária",
+          "talk-show"
+        ],
+        "phrases": [
+          "Comediante fracassado com distúrbio neurológico de riso espirala em loucura e revolta contra uma sociedade fria.",
+          "Dança apoteótica descendo os degraus de uma longa escada vestindo terno vermelho e maquiagem manchada."
+        ]
+      },
+      {
+        "name": "Cidade de Deus",
+        "sub": "drama",
+        "word": "galinha-fugindo",
+        "phrase": "O crescimento do crime organizado em uma favela carioca narrado pela lente fotográfica de um jovem sonhador.",
+        "words": [
+          "galinha-fugindo",
+          "fotógrafo",
+          "boca-fumo",
+          "dadinho-zé-pequeno"
+        ],
+        "phrases": [
+          "O crescimento do crime organizado em uma favela carioca narrado pela lente fotográfica de um jovem sonhador.",
+          "Dois amigos com destinos opostos em uma guerra sanguinária pelo controle de pontos de venda de drogas."
+        ]
+      },
+      {
+        "name": "Central do Brasil",
+        "sub": "drama",
+        "word": "escreve-cartas",
+        "phrase": "Mulher amargurada que redige cartas para analfabetos na estação de trens decide ajudar um menino órfão a achar o pai.",
+        "words": [
+          "escreve-cartas",
+          "estação-trens",
+          "sertão-busca",
+          "caminhão"
+        ],
+        "phrases": [
+          "Mulher amargurada que redige cartas para analfabetos na estação de trens decide ajudar um menino órfão a achar o pai.",
+          "Jornada emocionante pelos rincões do sertão nordestino em busca de redenção e afeto genuíno."
+        ]
+      },
+      {
+        "name": "O Náufrago",
+        "sub": "drama",
+        "word": "bola-vôlei",
+        "phrase": "Executivo de empresa de entregas sobrevive a uma queda de avião e passa anos isolado em um atol deserto.",
+        "words": [
+          "bola-vôlei",
+          "ilha-deserta",
+          "patins-gelo",
+          "dente-dor"
+        ],
+        "phrases": [
+          "Executivo de empresa de entregas sobrevive a uma queda de avião e passa anos isolado em um atol deserto.",
+          "Cria um companheiro inanimado com a marca de sangue da própria mão para não perder a sanidade."
+        ]
+      },
+      {
+        "name": "Gladiador",
+        "sub": "drama",
+        "word": "general-escravo",
+        "phrase": "General romano traído pelo novo imperador é reduzido à escravidão e se torna o maior campeão das arenas.",
+        "words": [
+          "general-escravo",
+          "trigo-mão",
+          "máscara-ferro",
+          "vingança"
+        ],
+        "phrases": [
+          "General romano traído pelo novo imperador é reduzido à escravidão e se torna o maior campeão das arenas.",
+          "O que fazemos na vida ecoa na eternidade ao acariciar espigas de trigo sob a luz do entardecer."
+        ]
+      },
+      {
+        "name": "O Lobo de Wall Street",
+        "sub": "drama",
+        "word": "quálude-rastejando",
+        "phrase": "Corretor de títulos sem escrúpulos enriquece rapidamente vendendo ações podres e vive em orgias e drogas.",
+        "words": [
+          "quálude-rastejando",
+          "ações-centavos",
+          "iate-afundando",
+          "microfone-vendas"
+        ],
+        "phrases": [
+          "Corretor de títulos sem escrúpulos enriquece rapidamente vendendo ações podres e vive em orgias e drogas.",
+          "Discursos inflamados na corretora arremessando anões contra alvos e batendo no peito ritmadamente."
+        ]
+      },
+      {
+        "name": "Sociedade dos Poetas Mortos",
+        "sub": "drama",
+        "word": "ó-capitão-meu-capitão",
+        "phrase": "Professor de literatura nada ortodoxo inspira rapazes de um colégio tradicional a aproveitarem cada dia intensamente.",
+        "words": [
+          "ó-capitão-meu-capitão",
+          "subir-mesas",
+          "carpe-diem",
+          "poesia-vida"
+        ],
+        "phrases": [
+          "Professor de literatura nada ortodoxo inspira rapazes de um colégio tradicional a aproveitarem cada dia intensamente.",
+          "Alunos sobem sobre as carteiras escolares em reverência ao mestre que os ensinou a pensar livremente."
+        ]
+      },
+      {
+        "name": "O Silêncio dos Inocentes",
+        "sub": "drama",
+        "word": "focinheira-cela",
+        "phrase": "Jovem agente do FBI busca conselhos de um brilhante psiquiatra canibal preso para capturar um assassino em série.",
+        "words": [
+          "focinheira-cela",
+          "mariposas",
+          "clarice",
+          "canibal-psiquiatra"
+        ],
+        "phrases": [
+          "Jovem agente do FBI busca conselhos de um brilhante psiquiatra canibal preso para capturar um assassino em série.",
+          "Troca psicológica tensa através do vidro blindado onde cada detalhe da infância é barganhado por pistas."
+        ]
+      },
+      {
+        "name": "Beleza Americana",
+        "sub": "drama",
+        "word": "pétalas-rosas",
+        "phrase": "Homem em crise de meia-idade larga o emprego e se apaixona pela melhor amiga adolescente de sua filha.",
+        "words": [
+          "pétalas-rosas",
+          "sacola-plástica-vento",
+          "crise-meia-idade",
+          "vizinho-fita"
+        ],
+        "phrases": [
+          "Homem em crise de meia-idade larga o emprego e se apaixona pela melhor amiga adolescente de sua filha.",
+          "Visões de banheiras cheias de pétalas vermelhas e o fascínio poético com uma sacola dançando ao vento."
+        ]
+      },
+      {
+        "name": "Bastardos Inglórios",
+        "sub": "drama",
+        "word": "cinema-chamas",
+        "phrase": "Grupo de soldados judeus-americanos espalha o terror atrás das linhas inimigas arrancando escalpos de generais.",
+        "words": [
+          "cinema-chamas",
+          "três-dedos-alemães",
+          "escalpos",
+          "leite-fazenda"
+        ],
+        "phrases": [
+          "Grupo de soldados judeus-americanos espalha o terror atrás das linhas inimigas arrancando escalpos de generais.",
+          "Interrogatório tenso em uma fazenda regado a um copo de leite fresco e um cinema incendiado por vingança."
+        ]
+      },
+      {
+        "name": "12 Homens e uma Sentença",
+        "sub": "drama",
+        "word": "sala-júri",
+        "phrase": "Doze jurados trancados em uma sala quente precisam decidir por unanimidade se um jovem culpado irá para a cadeira elétrica.",
+        "words": [
+          "sala-júri",
+          "canivete-mesa",
+          "calor-ventilador",
+          "dúvida-razoável"
+        ],
+        "phrases": [
+          "Doze jurados trancados em uma sala quente precisam decidir por unanimidade se um jovem culpado irá para a cadeira elétrica.",
+          "Um único homem discorda da condenação inicial e desmonta os preconceitos e certezas de cada colega."
+        ]
+      },
+      {
+        "name": "A Bela da Tarde",
+        "sub": "drama",
+        "word": "dupla-vida",
+        "phrase": "Jovem burguesa insatisfeita passa as tardes trabalhando discretamente em uma casa de encontros parisiense.",
+        "words": [
+          "dupla-vida",
+          "casaco-vinil",
+          "segredo-tardes",
+          "desejo"
+        ],
+        "phrases": [
+          "Jovem burguesa insatisfeita passa as tardes trabalhando discretamente em uma casa de encontros parisiense.",
+          "Clássico do cinema sobre fantasia, culpa e as contradições dos desejos humanos mais íntimos."
+        ]
+      },
+      {
+        "name": "Brilho Eterno de uma Mente sem Lembranças",
+        "sub": "drama",
+        "word": "cabelo-azul",
+        "phrase": "Homem desolado contrata um serviço para apagar cirurgicamente todas as lembranças de sua ex-namorada de sua mente.",
+        "words": [
+          "cabelo-azul",
+          "apagar-memória",
+          "cama-praia-neve",
+          "encontre-me-montauk"
+        ],
+        "phrases": [
+          "Homem desolado contrata um serviço para apagar cirurgicamente todas as lembranças de sua ex-namorada de sua mente.",
+          "Luta desesperada dentro dos próprios sonhos e lembranças em colapso para salvar o amor verdadeiro."
+        ]
+      },
+      {
+        "name": "Gran Torino",
+        "sub": "drama",
+        "word": "veterano-rabugento",
+        "phrase": "Veterano de guerra preconceituoso desenvolve amizade relutante com a família imigrante vizinha que tentou roubar seu carro.",
+        "words": [
+          "veterano-rabugento",
+          "carro-clássico",
+          "varanda-cerveja",
+          "sacrifício"
+        ],
+        "phrases": [
+          "Veterano de guerra preconceituoso desenvolve amizade relutante com a família imigrante vizinha que tentou roubar seu carro.",
+          "Defende a comunidade contra gangues violentas com postura austera e um sacrifício desarmado no gramado."
+        ]
+      },
+      {
+        "name": "O Menino do Pijama Listrado",
+        "sub": "drama",
+        "word": "cerca-arame",
+        "phrase": "O filho do comandante de um campo de concentração faz amizade secreta com um garoto preso do outro lado da cerca.",
+        "words": [
+          "cerca-arame",
+          "pijama-listras",
+          "filho-comandante",
+          "amizade-proibida"
+        ],
+        "phrases": [
+          "O filho do comandante de um campo de concentração faz amizade secreta com um garoto preso do outro lado da cerca.",
+          "Inocência infantil que ignora as atrocidades da guerra culminando em um destino trágico de mãos dadas."
+        ]
+      },
+      {
+        "name": "Taxi Driver",
+        "sub": "drama",
+        "word": "você-está-falando-comigo",
+        "phrase": "Veterano solitário e instável trabalha dirigindo pelas ruas decadentes de Nova York até decidir agir com violência.",
+        "words": [
+          "você-está-falando-comigo",
+          "moicano",
+          "táxi-chuva",
+          "veterano-noite"
+        ],
+        "phrases": [
+          "Veterano solitário e instável trabalha dirigindo pelas ruas decadentes de Nova York até decidir agir com violência.",
+          "Ensaio diante do espelho puxando o revólver escondido no coldre de mola da manga do casaco."
+        ]
+      },
+      {
+        "name": "À Espera de um Milagre",
+        "sub": "drama",
+        "word": "corredor-morte",
+        "phrase": "Guardas do corredor da morte descobrem que um prisioneiro gigante acusado de assassinato possui o dom divino da cura.",
+        "words": [
+          "corredor-morte",
+          "rato-truque",
+          "medo-escuro",
+          "cura-mãos"
+        ],
+        "phrases": [
+          "Guardas do corredor da morte descobrem que um prisioneiro gigante acusado de assassinato possui o dom divino da cura.",
+          "Homem bondoso que absorve as dores e enfermidades do mundo e chora por ter medo da escuridão."
+        ]
+      },
+      {
+        "name": "Se Beber, Não Case! (The Hangover)",
+        "sub": "comedia",
+        "word": "tigre-banheiro",
+        "phrase": "Três amigos acordam em uma suíte destruída em Las Vegas sem memória da noite anterior e sem o noivo.",
+        "words": [
+          "tigre-banheiro",
+          "dente-arrancado",
+          "telhado",
+          "bebê-óculos"
+        ],
+        "phrases": [
+          "Três amigos acordam em uma suíte destruída em Las Vegas sem memória da noite anterior e sem o noivo.",
+          "Descobrem um felino selvagem no banheiro, uma criança desconhecida no armário e um dente a menos."
+        ]
+      },
+      {
+        "name": "As Branquelas (White Chicks)",
+        "sub": "comedia",
+        "word": "disfarce-loiras",
+        "phrase": "Dois agentes negros do FBI se disfarçam como jovens herdeiras ricas loiras para evitar um sequestro.",
+        "words": [
+          "disfarce-loiras",
+          "segurando-o-peido",
+          "jantar-caro",
+          "desfile-moda"
+        ],
+        "phrases": [
+          "Dois agentes negros do FBI se disfarçam como jovens herdeiras ricas loiras para evitar um sequestro.",
+          "Cenas hilárias cantando pop no carro, dançando em boates e disputando compras em lojas de grife."
+        ]
+      },
+      {
+        "name": "Todo Mundo em Pânico",
+        "sub": "comedia",
+        "word": "máscara-fantasma",
+        "phrase": "Paródia escrachada de filmes de suspense dos anos noventa com um assassino desajeitado que fuma erva.",
+        "words": [
+          "máscara-fantasma",
+          "telefone-alô",
+          "maconha",
+          "paródia-terror"
+        ],
+        "phrases": [
+          "Paródia escrachada de filmes de suspense dos anos noventa com um assassino desajeitado que fuma erva.",
+          "Adolescentes caricatos sendo perseguidos por uma figura de capa preta que dança e perde as calças."
+        ]
+      },
+      {
+        "name": "O Máskara",
+        "sub": "comedia",
+        "word": "máscara-madeira",
+        "phrase": "Bancário tímido encontra um artefato nórdico antigo que o transforma em um desenho animado vivo e hiperativo.",
+        "words": [
+          "máscara-madeira",
+          "terno-amarelo",
+          "olhos-pulando",
+          "cachorro-milo"
+        ],
+        "phrases": [
+          "Bancário tímido encontra um artefato nórdico antigo que o transforma em um desenho animado vivo e hiperativo.",
+          "Terno amarelo berrante, queixo verde elástico e habilidades malucas de dobrar balões e desviar de tiros."
+        ]
+      },
+      {
+        "name": "Minha Mãe é uma Peça",
+        "sub": "comedia",
+        "word": "bobs-cabelo",
+        "phrase": "Mãe dedicada e histérica que ama os filhos de forma sufocante e desabafa na casa da irmã com bobs na cabeça.",
+        "words": [
+          "bobs-cabelo",
+          "gritos-filhos",
+          "apartamento-niterói",
+          "dona-hermínia"
+        ],
+        "phrases": [
+          "Mãe dedicada e histérica que ama os filhos de forma sufocante e desabafa na casa da irmã com bobs na cabeça.",
+          "Sucesso absoluto do humor brasileiro retratando com carinho e berros a rotina de uma típica dona de casa."
+        ]
+      },
+      {
+        "name": "O Auto da Compadecida",
+        "sub": "comedia",
+        "word": "cachorro-testamento",
+        "phrase": "Dois sertanejos espertos sobrevivem a cangaceiros e padres gananciosos através de mentiras hilárias no sertão.",
+        "words": [
+          "cachorro-testamento",
+          "não-sei-só-sei-que-foi-assim",
+          "julgamento-céu",
+          "cangaceiro"
+        ],
+        "phrases": [
+          "Dois sertanejos espertos sobrevivem a cangaceiros e padres gananciosos através de mentiras hilárias no sertão.",
+          "Apresentam defesas diante do diabo e de Jesus com a intervenção caridosa da mãe de Deus."
+        ]
+      },
+      {
+        "name": "Gente Grande (Grown Ups)",
+        "sub": "comedia",
+        "word": "casa-lago",
+        "phrase": "Cinco amigos de infância do time de basquete se reencontram décadas depois para passar um feriado com suas famílias.",
+        "words": [
+          "casa-lago",
+          "antigos-amigos",
+          "parque-aquático",
+          "tirolesa-queda"
+        ],
+        "phrases": [
+          "Cinco amigos de infância do time de basquete se reencontram décadas depois para passar um feriado com suas famílias.",
+          "Adultos agindo como crianças em toboáguas, brincadeiras na floresta e piadas sobre a velhice."
+        ]
+      },
+      {
+        "name": "Trovão Tropical",
+        "sub": "comedia",
+        "word": "filme-dentro-filme",
+        "phrase": "Atores mimados gravando um épico de guerra são jogados de verdade no meio de um cartel de drogas na selva asiática.",
+        "words": [
+          "filme-dentro-filme",
+          "ator-método",
+          "dança-careca",
+          "selva-drogas"
+        ],
+        "phrases": [
+          "Atores mimados gravando um épico de guerra são jogados de verdade no meio de um cartel de drogas na selva asiática.",
+          "Atores que nunca saem do personagem e produtores furiosos que dançam hip-hop em escritórios de luxo."
+        ]
+      },
+      {
+        "name": "Click",
+        "sub": "comedia",
+        "word": "controle-remoto",
+        "phrase": "Arquiteto atarefado recebe um controle universal capaz de pausar e adiantar momentos chatos de sua existência.",
+        "words": [
+          "controle-remoto",
+          "avançar-vida",
+          "arquiteto",
+          "chuva-estacionamento"
+        ],
+        "phrases": [
+          "Arquiteto atarefado recebe um controle universal capaz de pausar e adiantar momentos chatos de sua existência.",
+          "O aparelho passa a operar no modo automático fazendo sua vida passar em um piscar de olhos com lições profundas."
+        ]
+      },
+      {
+        "name": "Apertem os Cintos... O Piloto Sumiu!",
+        "sub": "comedia",
+        "word": "peixe-estragado",
+        "phrase": "Clássico da comédia nonsense onde toda a tripulação de um voo passa mal e um ex-piloto traumatizado precisa pousar o avião.",
+        "words": [
+          "peixe-estragado",
+          "piloto-inflável",
+          "piadas-visuais",
+          "nariz-crescendo"
+        ],
+        "phrases": [
+          "Clássico da comédia nonsense onde toda a tripulação de um voo passa mal e um ex-piloto traumatizado precisa pousar o avião.",
+          "Troiladilhos sem fim, passageiros neuróticos e um piloto automático que precisa ser inflado por uma válvula."
+        ]
+      },
+      {
+        "name": "Borat",
+        "sub": "comedia",
+        "word": "maiô-verde",
+        "phrase": "Jornalista estrangeiro viaja pelos Estados Unidos gravando reações reais de americanos a situações desconcertantes.",
+        "words": [
+          "maiô-verde",
+          "jornalista-cazaque",
+          "choque-cultural",
+          "sotaque-bizarro"
+        ],
+        "phrases": [
+          "Jornalista estrangeiro viaja pelos Estados Unidos gravando reações reais de americanos a situações desconcertantes.",
+          "Maiô de alça única verde limão na praia e choques culturais hilários com costumes locais."
+        ]
+      },
+      {
+        "name": "Ted",
+        "sub": "comedia",
+        "word": "urso-falante",
+        "phrase": "Desejo de infância de um garoto se realiza e seu ursinho de pelúcia ganha vida tornando-se um adulto desbocado e preguiçoso.",
+        "words": [
+          "urso-falante",
+          "raio-amigos",
+          "cerveja-sofá",
+          "maconha-bongo"
+        ],
+        "phrases": [
+          "Desejo de infância de um garoto se realiza e seu ursinho de pelúcia ganha vida tornando-se um adulto desbocado e preguiçoso.",
+          "Dupla que passa os dias no sofá bebendo e cantando a canção do trovão quando ouve tempestades."
+        ]
+      },
+      {
+        "name": "Escola de Rock",
+        "sub": "comedia",
+        "word": "professor-falso",
+        "phrase": "Músico desempregado se passa por professor substituto em uma rígida escola particular e ensina rock pesado às crianças.",
+        "words": [
+          "professor-falso",
+          "batalha-bandas",
+          "solo-guitarra",
+          "van-amarela"
+        ],
+        "phrases": [
+          "Músico desempregado se passa por professor substituto em uma rígida escola particular e ensina rock pesado às crianças.",
+          "Transforma alunos prodígios em uma banda de palco com backing vocals, guitarras e iluminação própria."
+        ]
+      },
+      {
+        "name": "Uma Babá Quase Perfeita",
+        "sub": "comedia",
+        "word": "disfarce-idosa",
+        "phrase": "Pai divorciado se fantasia como uma governanta inglesa idosa para poder passar mais tempo com os próprios filhos.",
+        "words": [
+          "disfarce-idosa",
+          "vestido-floral",
+          "chantilly-rosto",
+          "sotaque-britânico"
+        ],
+        "phrases": [
+          "Pai divorciado se fantasia como uma governanta inglesa idosa para poder passar mais tempo com os próprios filhos.",
+          "Cenas clássicas limpando a casa dançando com o aspirador de pó e mergulhando o rosto no bolo."
+        ]
+      },
+      {
+        "name": "O Pai da Noiva",
+        "sub": "comedia",
+        "word": "gasto-casamento",
+        "phrase": "Pai ciumento entra em parafuso ao descobrir que sua filha de vinte e poucos anos vai se casar com um desconhecido.",
+        "words": [
+          "gasto-casamento",
+          "surtos-pai",
+          "tênis-smoking",
+          "coordenador-festas"
+        ],
+        "phrases": [
+          "Pai ciumento entra em parafuso ao descobrir que sua filha de vinte e poucos anos vai se casar com um desconhecido.",
+          "Contrata um coordenador de festas excêntrico de sotaque enrolado e reclama dos custos de cada convidado."
+        ]
+      },
+      {
+        "name": "Quero Ser Grande (Big)",
+        "sub": "comedia",
+        "word": "máquina-zoltar",
+        "phrase": "Menino de doze anos faz um pedido a uma máquina de adivinhação em um parque e acorda no corpo de um adulto de trinta anos.",
+        "words": [
+          "máquina-zoltar",
+          "piano-chão",
+          "criança-adulto",
+          "empresa-brinquedos"
+        ],
+        "phrases": [
+          "Menino de doze anos faz um pedido a uma máquina de adivinhação em um parque e acorda no corpo de um adulto de trinta anos.",
+          "Toca canções infantis pulando com os pés sobre as teclas de um gigantesco piano no chão da loja."
+        ]
+      },
+      {
+        "name": "Austin Powers: O Agente Bond Cama",
+        "sub": "comedia",
+        "word": "congelamento-anos-60",
+        "phrase": "Espião mulherengo britânico dos anos sessenta é descongelado nos anos noventa para deter seu arqui-inimigo careca.",
+        "words": [
+          "congelamento-anos-60",
+          "dr-evil",
+          "mini-me",
+          "mojo"
+        ],
+        "phrases": [
+          "Espião mulherengo britânico dos anos sessenta é descongelado nos anos noventa para deter seu arqui-inimigo careca.",
+          "Piadas visuais de sombras chinesas e um clone minúsculo que morde o dedinho."
+        ]
+      },
+      {
+        "name": "Spaceballs: S.O.S. - Tem um Louco Solto no Espaço",
+        "sub": "comedia",
+        "word": "capacete-gigante",
+        "phrase": "Paródia de óperas espaciais com um vilão de capacete desproporcional que manda pentear o deserto com um pente gigante.",
+        "words": [
+          "capacete-gigante",
+          "pente-deserto",
+          "velocidade-ludicra",
+          "ar-enlatado"
+        ],
+        "phrases": [
+          "Paródia de óperas espaciais com um vilão de capacete desproporcional que manda pentear o deserto com um pente gigante.",
+          "Naves espaciais que aceleram até ultrapassar o absurdo deixando rastros coloridos no cosmos."
+        ]
+      },
+      {
+        "name": "Loucademia de Polícia",
+        "sub": "comedia",
+        "word": "efeitos-sonoros-boca",
+        "phrase": "Prefeita abre a academia de polícia para qualquer cidadão atraindo uma turma de desajustados hilários.",
+        "words": [
+          "efeitos-sonoros-boca",
+          "recrutas-bizarros",
+          "bar-blue-oyster",
+          "megafone"
+        ],
+        "phrases": [
+          "Prefeita abre a academia de polícia para qualquer cidadão atraindo uma turma de desajustados hilários.",
+          "Recruta capaz de reproduzir qualquer som de tiros e sirenes usando apenas a boca e a língua."
+        ]
+      },
+      {
+        "name": "O Âncora: A Lenda de Ron Burgundy",
+        "sub": "comedia",
+        "word": "bigode-jornalista",
+        "phrase": "Apresentador de TV machista e vaidoso dos anos setenta tem seu reinado ameaçado por uma jornalista talentosa.",
+        "words": [
+          "bigode-jornalista",
+          "teleprompter",
+          "batalha-canais",
+          "flauta-jazz"
+        ],
+        "phrases": [
+          "Apresentador de TV machista e vaidoso dos anos setenta tem seu reinado ameaçado por uma jornalista talentosa.",
+          "Luta bizarra entre equipes de reportagem de canais rivais em um beco com lanças e granadas."
+        ]
+      },
+      {
+        "name": "A Entrevista (The Interview)",
+        "sub": "comedia",
+        "word": "apresentador-fútil",
+        "phrase": "Apresentador sensacionalista de fofocas e seu produtor são recrutados pela CIA para assassinar um líder supremo.",
+        "words": [
+          "apresentador-fútil",
+          "ditador-coreia",
+          "tanque-margarita",
+          "veneno-adesivo"
+        ],
+        "phrases": [
+          "Apresentador sensacionalista de fofocas e seu produtor são recrutados pela CIA para assassinar um líder supremo.",
+          "Viagem oficial que se transforma em amizade regada a canções pop e passeios de tanque de guerra."
+        ]
+      },
+      {
+        "name": "Feitiço do Tempo (Groundhog Day)",
+        "sub": "comedia",
+        "word": "dia-marmota",
+        "phrase": "Repórter do tempo arrogante fica preso no mesmo dia repetidamente em uma pacata cidadezinha do interior.",
+        "words": [
+          "dia-marmota",
+          "rádio-relógio-seis",
+          "loop-temporal",
+          "piano-aprende"
+        ],
+        "phrases": [
+          "Repórter do tempo arrogante fica preso no mesmo dia repetidamente em uma pacata cidadezinha do interior.",
+          "Acorda às seis da manhã com a mesma canção no rádio até aprender a se tornar um ser humano generoso."
+        ]
+      },
+      {
+        "name": "Irmão Natureza / Ace Ventura",
+        "sub": "comedia",
+        "word": "detetive-pets",
+        "phrase": "Detetive excêntrico especializado em resgatar animais roubados que fala pelo traseiro e veste camisas floridas.",
+        "words": [
+          "detetive-pets",
+          "topete-alto",
+          "parto-rinoceronte",
+          "golfinho-sumido"
+        ],
+        "phrases": [
+          "Detetive excêntrico especializado em resgatar animais roubados que fala pelo traseiro e veste camisas floridas.",
+          "Cena inacreditável saindo pelado e suado de dentro de uma réplica mecânica de rinoceronte na savana."
+        ]
+      },
+      {
+        "name": "Clube dos Cinco (The Breakfast Club)",
+        "sub": "drama",
+        "word": "detenção-sábado",
+        "phrase": "Cinco estudantes com personalidades opostas passam um sábado inteiro trancados de castigo na biblioteca escolar.",
+        "words": [
+          "detenção-sábado",
+          "cinco-estereótipos",
+          "biblioteca-escola",
+          "carta-diretor"
+        ],
+        "phrases": [
+          "Cinco estudantes com personalidades opostas passam um sábado inteiro trancados de castigo na biblioteca escolar.",
+          "Descobrem que apesar dos rótulos de atleta, princesa, nerd, delinquente e esquisita, todos carregam as mesmas dores."
+        ]
+      },
+      {
+        "name": "Psicose (1960)",
+        "sub": "drama",
+        "word": "chuveiro-cortina",
+        "phrase": "Mulher em fuga se hospeda em um motel isolado administrado por um jovem tímido com uma relação perturbadora com a mãe.",
+        "words": [
+          "chuveiro-cortina",
+          "motel-beira-estrada",
+          "mãe-cadeira",
+          "violinos-estridentes"
+        ],
+        "phrases": [
+          "Mulher em fuga se hospeda em um motel isolado administrado por um jovem tímido com uma relação perturbadora com a mãe.",
+          "A cena mais icônica da história do suspense com sombras através da cortina plástica e trilha de cordas afiadas."
+        ]
+      },
+      {
+        "name": "Tubarão (Jaws)",
+        "sub": "drama",
+        "word": "praia-fechada",
+        "phrase": "Monstro marinho de dentes afiados aterroriza banhistas de uma pacata ilha turística durante o verão ensolarado.",
+        "words": [
+          "praia-fechada",
+          "barco-orqueiro",
+          "música-dois-tons",
+          "vamos-precisar-barco-maior"
+        ],
+        "phrases": [
+          "Monstro marinho de dentes afiados aterroriza banhistas de uma pacata ilha turística durante o verão ensolarado.",
+          "Caçada tensa em alto-mar liderada por um xerife com medo de água e um pescador ranzinza."
+        ]
+      },
+      {
+        "name": "La La Land: Cantando Estações",
+        "sub": "drama",
+        "word": "vestido-amarelo",
+        "phrase": "Uma aspirante a atriz e um músico apaixonado por jazz tentam conciliar seus sonhos de sucesso e seu amor em Los Angeles.",
+        "words": [
+          "vestido-amarelo",
+          "pianista-jazz",
+          "dança-estrelas",
+          "planisfério-auditório"
+        ],
+        "phrases": [
+          "Uma aspirante a atriz e um músico apaixonado por jazz tentam conciliar seus sonhos de sucesso e seu amor em Los Angeles.",
+          "Sequências musicais radiantes que homenageiam os clássicos da era de ouro do cinema com final comovente."
+        ]
+      },
+      {
+        "name": "Cães de Aluguel (Reservoir Dogs)",
+        "sub": "drama",
+        "word": "nomes-cores",
+        "phrase": "Criminosos contratados sob codinomes de cores se reúnem em um galpão após uma emboscada suspeitando de um traidor.",
+        "words": [
+          "nomes-cores",
+          "assalto-deu-errado",
+          "dança-orelha",
+          "galpão-sangue"
+        ],
+        "phrases": [
+          "Criminosos contratados sob codinomes de cores se reúnem em um galpão após uma emboscada suspeitando de um traidor.",
+          "Diálogos sobre gorjetas e música pop seguidos por confrontos tensos com armas apontadas uns para os outros."
+        ]
+      },
+      {
+        "name": "Os Intocáveis (1987)",
+        "sub": "drama",
+        "word": "leis-secas",
+        "phrase": "Grupo de agentes federais incorruptíveis enfrenta o império do crime em Chicago durante a proibição de bebidas.",
+        "words": [
+          "leis-secas",
+          "gangster-al-capone",
+          "tiroteio-carrinho-bebê",
+          "pontes-fronteira"
+        ],
+        "phrases": [
+          "Grupo de agentes federais incorruptíveis enfrenta o império do crime em Chicago durante a proibição de bebidas.",
+          "Tiroteio tenso na estação ferroviária com um carrinho de bebê descendo as escadarias em câmera lenta."
+        ]
+      },
+      {
+        "name": "História de um Casamento",
+        "sub": "drama",
+        "word": "divórcio-advogados",
+        "phrase": "O doloroso e realista processo de separação de um diretor de teatro e uma atriz que ainda se amam.",
+        "words": [
+          "divórcio-advogados",
+          "discussão-parede",
+          "carta-leitura",
+          "canção-bar"
+        ],
+        "phrases": [
+          "O doloroso e realista processo de separação de um diretor de teatro e uma atriz que ainda se amam.",
+          "Explosão de ressentimentos guardados em uma discussão acalorada que deixa marcas profundas nos dois lados."
+        ]
+      },
+      {
+        "name": "O Pianista",
+        "sub": "drama",
+        "word": "varsóvia-ruínas",
+        "phrase": "Brilhante músico judeu sobrevive sozinho escondendo-se nos escombros devastados da capital polonesa durante a guerra.",
+        "words": [
+          "varsóvia-ruínas",
+          "mãos-teclado",
+          "capote-oficial",
+          "sobrevivência-escombros"
+        ],
+        "phrases": [
+          "Brilhante músico judeu sobrevive sozinho escondendo-se nos escombros devastados da capital polonesa durante a guerra.",
+          "Toca uma peça emocionante em um piano empoeirado sob o olhar atento e compadecido de um oficial inimigo."
+        ]
+      },
+      {
+        "name": "O Labirinto do Fauno",
+        "sub": "ficcao",
+        "word": "três-tarefas",
+        "phrase": "Garotinha encontra refúgio da crueldade da guerra em um mundo de fantasia subterrâneo cheio de criaturas enigmáticas.",
+        "words": [
+          "três-tarefas",
+          "homem-olhos-mãos",
+          "monstro-mesa",
+          "espanha-pós-guerra"
+        ],
+        "phrases": [
+          "Garotinha encontra refúgio da crueldade da guerra em um mundo de fantasia subterrâneo cheio de criaturas enigmáticas.",
+          "Fuga aterrorizante de um monstro pálido que coloca os olhos na palma das mãos para enxergar no banquete."
+        ]
+      },
+      {
+        "name": "A Chegada",
+        "sub": "ficcao",
+        "word": "linguagem-círculos",
+        "phrase": "Cientista aprende a se comunicar com visitantes espaciais descobrindo que o idioma deles altera a mente.",
+        "words": [
+          "linguagem-círculos",
+          "heptápodes",
+          "percepção-tempo",
+          "comunicação-alien"
+        ],
+        "phrases": [
+          "Cientista aprende a se comunicar com visitantes espaciais descobrindo que o idioma deles altera a mente.",
+          "A visão de memórias futuras que dão sentido à jornada humana mesmo diante de perdas inevitáveis."
+        ]
+      },
+      {
+        "name": "O Grande Ditador",
+        "sub": "comedia",
+        "word": "discurso-humanidade",
+        "phrase": "A obra-prima satírica onde o gênio do cinema mudo ridiculariza a tirania militar e o preconceito.",
+        "words": [
+          "discurso-humanidade",
+          "globo-dança",
+          "barbeiro-sósia",
+          "satira"
+        ],
+        "phrases": [
+          "A obra-prima satírica onde o gênio do cinema mudo ridiculariza a tirania militar e o preconceito.",
+          "A inesquecível dança com o globo terrestre inflável e o discurso final em defesa da liberdade humana."
+        ]
+      },
+      {
+        "name": "Psicopata Americano",
+        "sub": "drama",
+        "word": "cartão-visitas",
+        "phrase": "Executivo narcisista de Wall Street obcecado pela aparência que esconde uma vida dupla sanguinária.",
+        "words": [
+          "cartão-visitas",
+          "capa-chuva-machado",
+          "música-anos-80",
+          "patrick-bateman"
+        ],
+        "phrases": [
+          "Executivo narcisista de Wall Street obcecado pela aparência que esconde uma vida dupla sanguinária.",
+          "Monólogos meticulosos sobre bandas pop momentos antes de golpear colegas com um machado reluzente."
+        ]
+      },
+      {
+        "name": "O Show de Truman (Sátira)",
+        "sub": "comedia",
+        "word": "barco-no-céu",
+        "phrase": "A vida inteira de um homem pacata transmitida como espetáculo televisivo global sem seu consentimento.",
+        "words": [
+          "barco-no-céu",
+          "sorriso-câmera",
+          "cidade-redoma",
+          "liberdade"
+        ],
+        "phrases": [
+          "A vida inteira de um homem pacata transmitida como espetáculo televisivo global sem seu consentimento.",
+          "A emocionante fuga de barco contra tempestades artificiais até tocar a parede pintada do estúdio."
+        ]
+      },
+      {
+        "name": "Tubarão 2",
+        "sub": "ficcao",
+        "word": "outro-tubarão",
+        "phrase": "A fera dos dentes afiados retorna às águas da ilha turística perseguindo um grupo de jovens velejadores.",
+        "words": [
+          "outro-tubarão",
+          "barcos-vela",
+          "cabo-elétrico",
+          "ilha-turística"
+        ],
+        "phrases": [
+          "A fera dos dentes afiados retorna às águas da ilha turística perseguindo um grupo de jovens velejadores.",
+          "O xerife traumatizado precisa provar novamente que as praias escondem perigo mortal sob as ondas."
+        ]
+      },
+      {
+        "name": "Cinquenta Tons de Cinza",
+        "sub": "drama",
+        "word": "quarto-vermelho",
+        "phrase": "O relacionamento controverso e secreto entre um jovem magnata enigmático e uma estudante de literatura.",
+        "words": [
+          "quarto-vermelho",
+          "contrato-bilionário",
+          "gravata-cinza",
+          "helicóptero"
+        ],
+        "phrases": [
+          "O relacionamento controverso e secreto entre um jovem magnata enigmático e uma estudante de literatura.",
+          "Visitas a uma sala trancada cheia de amarras e acordos de confidencialidade milionários."
+        ]
+      },
+      {
+        "name": "Midsommar: O Mal Não Espera a Noite",
+        "sub": "drama",
+        "word": "flores-vestido",
+        "phrase": "Grupo de amigos viaja para um festival rural escandinavo sob a luz perpétua do verão ensolarado.",
+        "words": [
+          "flores-vestido",
+          "sol-meia-noite",
+          "vila-suécia",
+          "ritual-fogo"
+        ],
+        "phrases": [
+          "Grupo de amigos viaja para um festival rural escandinavo sob a luz perpétua do verão ensolarado.",
+          "Terror em plena claridade do dia com coroas de flores campestres e rituais ancestrais perturbadores."
+        ]
+      },
+      {
+        "name": "Hereditário",
+        "sub": "drama",
+        "word": "estalo-língua",
+        "phrase": "A trágica e aterrorizante desintegração de uma família após a morte da matriarca misteriosa.",
+        "words": [
+          "estalo-língua",
+          "casa-miniaturas",
+          "rei-demônio",
+          "poste-estrada"
+        ],
+        "phrases": [
+          "A trágica e aterrorizante desintegração de uma família após a morte da matriarca misteriosa.",
+          "Miniaturas arquitetônicas detalhadas e segredos sombrios de uma seita que invadem o lar."
+        ]
+      },
+      {
+        "name": "Birdman",
+        "sub": "drama",
+        "word": "plano-sequência-falso",
+        "phrase": "Ator esquecido que interpretou um herói alado tenta recuperar prestígio montando uma peça na Broadway.",
+        "words": [
+          "plano-sequência-falso",
+          "cueca-times-square",
+          "baterista-corredor",
+          "teatro-broadway"
+        ],
+        "phrases": [
+          "Ator esquecido que interpretou um herói alado tenta recuperar prestígio montando uma peça na Broadway.",
+          "Filmado em um aparente e contínuo plano-sequência sem cortes pelos corredores do teatro."
+        ]
+      },
+      {
+        "name": "Spotlight: Segredos Revelados",
+        "sub": "drama",
+        "word": "jornalistas-investigação",
+        "phrase": "Equipe de jornalistas investigativos de um grande jornal descobre um esquema de acobertamento de abusos na arquidiocese.",
+        "words": [
+          "jornalistas-investigação",
+          "igreja-boston",
+          "arquivos-padres",
+          "artigo-bomba"
+        ],
+        "phrases": [
+          "Equipe de jornalistas investigativos de um grande jornal descobre um esquema de acobertamento de abusos na arquidiocese.",
+          "Trabalho árduo de checagem de fontes e registros públicos que rendeu o principal prêmio do Oscar."
+        ]
+      },
+      {
+        "name": "Mad Max 2: A Caçada Continua",
+        "sub": "ficcao",
+        "word": "caminhão-tanque-gasolina",
+        "phrase": "O clássico que definiu a estética do pós-apocalipse com comboios blindados disputando combustível precioso.",
+        "words": [
+          "caminhão-tanque-gasolina",
+          "guerreiro-estrada",
+          "bumerangue-metal",
+          "deserto-areia"
+        ],
+        "phrases": [
+          "O clássico que definiu a estética do pós-apocalipse com comboios blindados disputando combustível precioso.",
+          "Perseguição brutal em rodovias desérticas contra motoqueiros de trajes de couro selvagens."
+        ]
+      },
+      {
+        "name": "Scarface (1983)",
+        "sub": "drama",
+        "word": "diga-olá-meu-pequeno-amigo",
+        "phrase": "Imigrante cubano sobe implacavelmente na hierarquia do narcotráfico em Miami até o topo de um império de sangue.",
+        "words": [
+          "diga-olá-meu-pequeno-amigo",
+          "montanha-cocaína",
+          "flórida-mansão",
+          "tony-montana"
+        ],
+        "phrases": [
+          "Imigrante cubano sobe implacavelmente na hierarquia do narcotráfico em Miami até o topo de um império de sangue.",
+          "O tiroteio apoteótico na escadaria da mansão disparando um fuzil com lança-granadas acoplado."
+        ]
+      },
+      {
+        "name": "O Grande Hotel Budapeste",
+        "sub": "comedia",
+        "word": "simetria-perfeita",
+        "phrase": "As aventuras extravagantes de um concierge lendário de um suntuoso hotel europeu e seu fiel mensageiro.",
+        "words": [
+          "simetria-perfeita",
+          "perfume-l'air-de-panache",
+          "gerente-lobby",
+          "bolo-prisão"
+        ],
+        "phrases": [
+          "As aventuras extravagantes de um concierge lendário de um suntuoso hotel europeu e seu fiel mensageiro.",
+          "Estética pastel hiperdetalhada com fugas de prisão usando doces recheados de pequenas ferramentas."
+        ]
+      },
+      {
+        "name": "A Bruxa (The Witch)",
+        "sub": "drama",
+        "word": "bode-black-phillip",
+        "phrase": "Família puritana banhada pela superstição no século dezessete é expulsa da colônia e se isola na floresta sombria.",
+        "words": [
+          "bode-black-phillip",
+          "floresta-século-17",
+          "manteiga-gosto",
+          "puritanos"
+        ],
+        "phrases": [
+          "Família puritana banhada pela superstição no século dezessete é expulsa da colônia e se isola na floresta sombria.",
+          "O sumiço de um bebê e as conversas sinistras com um bode negro que oferece viver deliciosamente."
+        ]
+      },
+      {
+        "name": "Corra! (Get Out)",
+        "sub": "drama",
+        "word": "xícara-colher-chá",
+        "phrase": "Jovem negro viaja para conhecer os pais da namorada e descobre uma conspiração cirúrgica perturbadora.",
+        "words": [
+          "xícara-colher-chá",
+          "lugar-submerso",
+          "flash-câmera",
+          "família-namorada"
+        ],
+        "phrases": [
+          "Jovem negro viaja para conhecer os pais da namorada e descobre uma conspiração cirúrgica perturbadora.",
+          "O som de uma colher raspando na porcelana hipnotizando a mente e arremessando-a em um abismo mental escuro."
+        ]
       }
     ]
   },
@@ -17827,6 +33470,1718 @@ const THEME_DATABASE = {
         ],
         "word": "ansiedade",
         "phrase": "Uma garota com fobia social extrema que toca guitarra escondida numa caixa de papelão."
+      },
+      {
+        "name": "Attack on Titan (Shingeki no Kyojin)",
+        "sub": "shonen",
+        "word": "muralhas",
+        "phrase": "A humanidade vive enclausurada atrás de três imensas muralhas contra gigantes canibais sem órgãos vitais.",
+        "words": [
+          "muralhas",
+          "titãs-canibais",
+          "manobra-tridimensional",
+          "porão"
+        ],
+        "phrases": [
+          "A humanidade vive enclausurada atrás de três imensas muralhas contra gigantes canibais sem órgãos vitais.",
+          "Soldados que voam entre prédios com ganchos de gás cortando a nuca das criaturas com lâminas descartáveis."
+        ]
+      },
+      {
+        "name": "Demon Slayer (Kimetsu no Yaiba)",
+        "sub": "shonen",
+        "word": "respiração-água",
+        "phrase": "Garoto com cicatriz na testa viaja com a irmã transformada em criatura noturna dentro de uma caixa de madeira.",
+        "words": [
+          "respiração-água",
+          "espada-nichirin",
+          "caixa-costas",
+          "demônios"
+        ],
+        "phrases": [
+          "Garoto com cicatriz na testa viaja com a irmã transformada em criatura noturna dentro de uma caixa de madeira.",
+          "Espadachins que canalizam elementos da natureza através da respiração para cortar cabeças de luas demoníacas."
+        ]
+      },
+      {
+        "name": "My Hero Academia (Boku no Hero)",
+        "sub": "shonen",
+        "word": "individualidade",
+        "phrase": "Garoto nascido sem superpoderes em um mundo onde quase todos possuem um recebe o dom do maior símbolo da paz.",
+        "words": [
+          "individualidade",
+          "all-might",
+          "escola-heróis",
+          "soco-detroit"
+        ],
+        "phrases": [
+          "Garoto nascido sem superpoderes em um mundo onde quase todos possuem um recebe o dom do maior símbolo da paz.",
+          "Aprende a controlar a energia que quebra seus próprios ossos na mais renomada academia de heróis."
+        ]
+      },
+      {
+        "name": "Fullmetal Alchemist: Brotherhood",
+        "sub": "shonen",
+        "word": "troca-equivalente",
+        "phrase": "Dois irmãos que violaram o tabu de reviver a mãe morta buscam recuperar seus corpos através da alquimia.",
+        "words": [
+          "troca-equivalente",
+          "braço-metal",
+          "armadura-oca",
+          "pedra-filosofal"
+        ],
+        "phrases": [
+          "Dois irmãos que violaram o tabu de reviver a mãe morta buscam recuperar seus corpos através da alquimia.",
+          "O irmão mais velho com próteses mecânicas e o mais novo com a alma presa a uma armadura vazia."
+        ]
+      },
+      {
+        "name": "Fairy Tail",
+        "sub": "shonen",
+        "word": "matador-dragões",
+        "phrase": "Mago que come chamas e sofre de enjoo em qualquer veículo luta pela honra e amizade de sua guilda mágica.",
+        "words": [
+          "matador-dragões",
+          "fogo-come",
+          "gato-voador",
+          "marca-guilda"
+        ],
+        "phrases": [
+          "Mago que come chamas e sofre de enjoo em qualquer veículo luta pela honra e amizade de sua guilda mágica.",
+          "Acompanhado por um gato azul alado enquanto destrói cidades inteiras derrotando magos das trevas."
+        ]
+      },
+      {
+        "name": "Soul Eater",
+        "sub": "shonen",
+        "word": "arma-humana",
+        "phrase": "Estudantes de uma academia na cidade da Morte treinam para transformar parceiros humanos em foices e pistolas.",
+        "words": [
+          "arma-humana",
+          "guadana",
+          "simetria",
+          "noventa-nove-almas"
+        ],
+        "phrases": [
+          "Estudantes de uma academia na cidade da Morte treinam para transformar parceiros humanos em foices e pistolas.",
+          "Precisam coletar almas corrompidas e uma de bruxa para elevar suas armas ao status de Foice da Morte."
+        ]
+      },
+      {
+        "name": "Fire Force (Enen no Shouboutai)",
+        "sub": "shonen",
+        "word": "bombeiros-chamas",
+        "phrase": "Brigada de bombeiros especiais que combate humanos que entram em combustão espontânea virando monstros flamejantes.",
+        "words": [
+          "bombeiros-chamas",
+          "pés-fogo",
+          "demônio-sorriso",
+          "combustão-humana"
+        ],
+        "phrases": [
+          "Brigada de bombeiros especiais que combate humanos que entram em combustão espontânea virando monstros flamejantes.",
+          "Jovem herói com pegadas de chamas nos pés e um sorriso involuntário em momentos de grande tensão."
+        ]
+      },
+      {
+        "name": "Seven Deadly Sins (Nanatsu no Taizai)",
+        "sub": "shonen",
+        "word": "capitão-dragão",
+        "phrase": "Cavaleiros lendários banidos do reino se reúnem em uma taberna ambulante montada sobre as costas de um porco gigante.",
+        "words": [
+          "capitão-dragão",
+          "bar-porco",
+          "full-counter",
+          "mandamentos"
+        ],
+        "phrases": [
+          "Cavaleiros lendários banidos do reino se reúnem em uma taberna ambulante montada sobre as costas de um porco gigante.",
+          "O pecado da ira que reflete qualquer ataque mágico com o dobro de potência usando uma espada quebrada."
+        ]
+      },
+      {
+        "name": "One Punch Man",
+        "sub": "shonen",
+        "word": "careca-amarelo",
+        "phrase": "Herói por passatempo treinou tanto que perdeu todos os cabelos e derrota qualquer ameaça colossal com um único soco.",
+        "words": [
+          "careca-amarelo",
+          "um-soco",
+          "tédio-supremo",
+          "treino-cem-flexões"
+        ],
+        "phrases": [
+          "Herói por passatempo treinou tanto que perdeu todos os cabelos e derrota qualquer ameaça colossal com um único soco.",
+          "Frustrado pelo tédio de nunca encontrar um adversário à altura que resista aos seus golpes normais."
+        ]
+      },
+      {
+        "name": "Blue Exorcist (Ao no Exorcist)",
+        "sub": "shonen",
+        "word": "chamas-azuis",
+        "phrase": "Garoto descobre ser filho do senhor dos demônios e decide se tornar exorcista para vingar a morte de seu pai adotivo.",
+        "words": [
+          "chamas-azuis",
+          "filho-satã",
+          "espada-selo",
+          "academia-cruz"
+        ],
+        "phrases": [
+          "Garoto descobre ser filho do senhor dos demônios e decide se tornar exorcista para vingar a morte de seu pai adotivo.",
+          "Empunha uma katana que liberta labaredas azuis infernais mantidas em segredo entre os colegas."
+        ]
+      },
+      {
+        "name": "The Promised Neverland",
+        "sub": "shonen",
+        "word": "orfanato-fazenda",
+        "phrase": "Crianças órfãs brilhantes descobrem que seu lar acolhedor é na verdade uma fazenda que as cria como alimento para monstros.",
+        "words": [
+          "orfanato-fazenda",
+          "código-pescoço",
+          "monstros-devoram",
+          "fuga-muralha"
+        ],
+        "phrases": [
+          "Crianças órfãs brilhantes descobrem que seu lar acolhedor é na verdade uma fazenda que as cria como alimento para monstros.",
+          "Planejam uma fuga arriscada usando inteligência e raciocínio estratégico antes da data da entrega."
+        ]
+      },
+      {
+        "name": "Haikyuu!!",
+        "sub": "shonen",
+        "word": "vôlei",
+        "phrase": "Garoto de baixa estatura compensa a altura com impulsão vertiginosa jogando vôlei pelo time dos corvos.",
+        "words": [
+          "vôlei",
+          "baixinho-salta",
+          "levantador-gênio",
+          "corvos-voam"
+        ],
+        "phrases": [
+          "Garoto de baixa estatura compensa a altura com impulsão vertiginosa jogando vôlei pelo time dos corvos.",
+          "Combinações de ataques rápidos milimétricos com um levantador arrogante que precisa aprender a confiar na equipe."
+        ]
+      },
+      {
+        "name": "Cavaleiros do Zodíaco (Saint Seiya)",
+        "sub": "classicos",
+        "word": "meteoro-pegaso",
+        "phrase": "Guerreiros da esperança vestem armaduras sagradas de bronze inspiradas em constelações para proteger a deusa Atena.",
+        "words": [
+          "meteoro-pegaso",
+          "armaduras-ouro",
+          "cosmo-coração",
+          "doze-casas"
+        ],
+        "phrases": [
+          "Guerreiros da esperança vestem armaduras sagradas de bronze inspiradas em constelações para proteger a deusa Atena.",
+          "Subida dramática pelas escadarias das doze casas zodiacais elevando o cosmo além do sétimo sentido."
+        ]
+      },
+      {
+        "name": "Sailor Moon",
+        "sub": "classicos",
+        "word": "tiara-lua",
+        "phrase": "Estudante desastrada descobre ser a reencarnação de uma princesa guerreira que luta pelo amor e pela justiça.",
+        "words": [
+          "tiara-lua",
+          "transformação-brilho",
+          "gata-lua",
+          "pelo-poder-lunar"
+        ],
+        "phrases": [
+          "Estudante desastrada descobre ser a reencarnação de uma princesa guerreira que luta pelo amor e pela justiça.",
+          "Grita palavras mágicas para transformar suas roupas em uniforme marinheiro e punir vilões em nome da Lua."
+        ]
+      },
+      {
+        "name": "Pokémon (Série Original)",
+        "sub": "classicos",
+        "word": "choque-trovão",
+        "phrase": "Garoto de dez anos de Pallet sai pelo mundo com um roedor amarelo que se recusa a entrar na pokébola.",
+        "words": [
+          "choque-trovão",
+          "boné-virado",
+          "equipe-rocket",
+          "bicicleta-queimada"
+        ],
+        "phrases": [
+          "Garoto de dez anos de Pallet sai pelo mundo com um roedor amarelo que se recusa a entrar na pokébola.",
+          "Vilões atrapalhados que decolam de novo em balões em formato de felino a cada derrota."
+        ]
+      },
+      {
+        "name": "Digimon Adventure",
+        "sub": "classicos",
+        "word": "digivice",
+        "phrase": "Sete crianças em um acampamento de férias são transportadas para um mundo digital repleto de monstros companheiros.",
+        "words": [
+          "digivice",
+          "acampamento-verão",
+          "ilha-arquivo",
+          "brasões"
+        ],
+        "phrases": [
+          "Sete crianças em um acampamento de férias são transportadas para um mundo digital repleto de monstros companheiros.",
+          "Dispositivos que emitem luz fazendo pequenas criaturas evoluírem com armas e armaduras de metal."
+        ]
+      },
+      {
+        "name": "Dragon Ball Clássico",
+        "sub": "classicos",
+        "word": "rabo-macaco",
+        "phrase": "Pequeno menino selvagem com cauda de macaco viaja pelo mundo com uma garota de cabelo azul buscando esferas mágicas.",
+        "words": [
+          "rabo-macaco",
+          "bastão-mágico",
+          "nuvem-voadora",
+          "lua-cheia"
+        ],
+        "phrases": [
+          "Pequeno menino selvagem com cauda de macaco viaja pelo mundo com uma garota de cabelo azul buscando esferas mágicas.",
+          "Voa sobre uma nuvem amarela que só aceita corações puros e treina com um mestre eremita tartaruga."
+        ]
+      },
+      {
+        "name": "Yu-Gi-Oh!",
+        "sub": "classicos",
+        "word": "enigma-milênio",
+        "phrase": "Garoto monta um quebra-cabeça egípcio ancestral e divide o corpo com o espírito de um faraó jogador.",
+        "words": [
+          "enigma-milênio",
+          "corações-cartas",
+          "dragão-branco",
+          "duelo-monstros"
+        ],
+        "phrases": [
+          "Garoto monta um quebra-cabeça egípcio ancestral e divide o corpo com o espírito de um faraó jogador.",
+          "Batalhas com hologramas de monstros de duelo invocando o Mago Negro e montando as partes do Proibido."
+        ]
+      },
+      {
+        "name": "Sakura Card Captors",
+        "sub": "classicos",
+        "word": "báculo-mágico",
+        "phrase": "Menina acidentalmente liberta cartas místicas mágicas de um livro antigo e precisa recapturá-las com báculo sagrado.",
+        "words": [
+          "báculo-mágico",
+          "cartas-clow",
+          "ursinho-pelúcia",
+          "patins-escola"
+        ],
+        "phrases": [
+          "Menina acidentalmente liberta cartas místicas mágicas de um livro antigo e precisa recapturá-las com báculo sagrado.",
+          "Veste figurinos diferentes a cada batalha costurados por sua melhor amiga que filma tudo em vídeo."
+        ]
+      },
+      {
+        "name": "Ranma ½",
+        "sub": "classicos",
+        "word": "água-fria-quente",
+        "phrase": "Lutador de artes marciais cai em uma fonte amaldiçoada na China que o faz virar mulher com água fria.",
+        "words": [
+          "água-fria-quente",
+          "fonte-amaldiçoada",
+          "vira-garota",
+          "artes-marciais"
+        ],
+        "phrases": [
+          "Lutador de artes marciais cai em uma fonte amaldiçoada na China que o faz virar mulher com água fria.",
+          "Retorna ao corpo masculino com água morna gerando inúmeras confusões e noivados arranjados."
+        ]
+      },
+      {
+        "name": "Astro Boy",
+        "sub": "classicos",
+        "word": "menino-robô",
+        "phrase": "O pioneiro da animação japonesa criado como substituto de um filho perdido que defende a paz entre humanos e máquinas.",
+        "words": [
+          "menino-robô",
+          "canhões-pernas",
+          "olhos-faróis",
+          "criador-pai"
+        ],
+        "phrases": [
+          "O pioneiro da animação japonesa criado como substituto de um filho perdido que defende a paz entre humanos e máquinas.",
+          "Voa com propulsores nos pés e dispara lasers em aventuras clássicas desenhadas pelo pai do mangá."
+        ]
+      },
+      {
+        "name": "Speed Racer",
+        "sub": "classicos",
+        "word": "mach-5",
+        "phrase": "Piloto prodígio acelera em pistas mortais usando recursos secretos instalados no volante de seu bólido branco.",
+        "words": [
+          "mach-5",
+          "botões-volante",
+          "macaco-porta-malas",
+          "corredor-x"
+        ],
+        "phrases": [
+          "Piloto prodígio acelera em pistas mortais usando recursos secretos instalados no volante de seu bólido branco.",
+          "Mola de salto, serras circulares e um misterioso piloto mascarado que zela por ele das sombras."
+        ]
+      },
+      {
+        "name": "Gundam (Mobile Suit)",
+        "sub": "classicos",
+        "word": "mecha-gigante",
+        "phrase": "Jovem piloto entra no cockpit de um robô gigante branco para defender sua colônia em um conflito espacial realista.",
+        "words": [
+          "mecha-gigante",
+          "guerra-espacial",
+          "novo-tipo",
+          "cockpit"
+        ],
+        "phrases": [
+          "Jovem piloto entra no cockpit de um robô gigante branco para defender sua colônia em um conflito espacial realista.",
+          "Revolucionou a animação com guerras políticas complexas e batalhas com canhões de feixe no vácuo."
+        ]
+      },
+      {
+        "name": "Neon Genesis Evangelion",
+        "sub": "classicos",
+        "word": "entre-no-robô",
+        "phrase": "Adolescentes traumatizados pilotam gigantes biomecânicos sincronizados com suas mentes para combater seres cósmicos.",
+        "words": [
+          "entre-no-robô",
+          "anjos-atacam",
+          "lança-longinus",
+          "crise-existencial"
+        ],
+        "phrases": [
+          "Adolescentes traumatizados pilotam gigantes biomecânicos sincronizados com suas mentes para combater seres cósmicos.",
+          "Conflito psicológico denso com contagem regressiva de bateria e dilemas profundos sobre aceitação humana."
+        ]
+      },
+      {
+        "name": "Cowboy Bebop",
+        "sub": "classicos",
+        "word": "caçadores-recompensas",
+        "phrase": "Tripulação desajustada de caçadores de recompensas vaga pelo sistema solar em uma nave velha ao som de blues.",
+        "words": [
+          "caçadores-recompensas",
+          "jazz-abertura",
+          "corgi",
+          "veja-você-cowboy"
+        ],
+        "phrases": [
+          "Tripulação desajustada de caçadores de recompensas vaga pelo sistema solar em uma nave velha ao som de blues.",
+          "Ex-membro do sindicato do crime que fuma cigarros e luta jeet kune do sem conseguir esquecer seu passado."
+        ]
+      },
+      {
+        "name": "Trigun",
+        "sub": "classicos",
+        "word": "tufão-humanoide",
+        "phrase": "Pistoleiro pacifista com uma recompensa bilionária pela cabeça que deixa um rastro de destruição sem matar ninguém.",
+        "words": [
+          "tufão-humanoide",
+          "sobretudo-vermelho",
+          "revólver-prateado",
+          "paz-amor"
+        ],
+        "phrases": [
+          "Pistoleiro pacifista com uma recompensa bilionária pela cabeça que deixa um rastro de destruição sem matar ninguém.",
+          "Planeta desértico com usinas de energia e dois agentes de seguros que tentam conter os prejuízos de suas fugas."
+        ]
+      },
+      {
+        "name": "Rurouni Kenshin (Samurai X)",
+        "sub": "classicos",
+        "word": "espada-lâmina-invertida",
+        "phrase": "Lendário retalhador da era Meiji vaga pelo Japão empunhando uma espada que não corta carne para expiar pecados.",
+        "words": [
+          "espada-lâmina-invertida",
+          "cicatriz-x",
+          "juramento-não-matar",
+          "estilo-hiten"
+        ],
+        "phrases": [
+          "Lendário retalhador da era Meiji vaga pelo Japão empunhando uma espada que não corta carne para expiar pecados.",
+          "Cicatriz em forma de cruz na bochecha e técnicas ultrarrápidas de saque que desarmam oponentes."
+        ]
+      },
+      {
+        "name": "Captain Tsubasa (Super Campeões)",
+        "sub": "classicos",
+        "word": "campo-infinito",
+        "phrase": "Jogador de futebol japonês corre por gramados que parecem ter quilômetros chutando bolas que deformam no ar.",
+        "words": [
+          "campo-infinito",
+          "chute-trivela",
+          "gol-curvado",
+          "trave-salto"
+        ],
+        "phrases": [
+          "Jogador de futebol japonês corre por gramados que parecem ter quilômetros chutando bolas que deformam no ar.",
+          "Chutes duplos sincronizados e saltos na trave com narrativas épicas de partidas escolares."
+        ]
+      },
+      {
+        "name": "Slam Dunk",
+        "sub": "classicos",
+        "word": "cabelo-vermelho",
+        "phrase": "Brigão de rua de cabelos ruivos entra para o clube de basquete para impressionar uma garota e se apaixona pelo esporte.",
+        "words": [
+          "cabelo-vermelho",
+          "delinquente-basquete",
+          "rebote",
+          "shohoku"
+        ],
+        "phrases": [
+          "Brigão de rua de cabelos ruivos entra para o clube de basquete para impressionar uma garota e se apaixona pelo esporte.",
+          "Aprende fundamentos do esporte do zero tornando-se o rei dos rebotes sob a cesta com muita raça."
+        ]
+      },
+      {
+        "name": "Berserk (1997)",
+        "sub": "classicos",
+        "word": "espada-gigante",
+        "phrase": "Espadachim solitário armado com uma lâmina de ferro maior que um homem luta contra demônios e seu destino trágico.",
+        "words": [
+          "espada-gigante",
+          "marca-sacrifício",
+          "bando-falcão",
+          "eclipse"
+        ],
+        "phrases": [
+          "Espadachim solitário armado com uma lâmina de ferro maior que um homem luta contra demônios e seu destino trágico.",
+          "O apogeu e queda de um bando de mercenários durante um eclipse macabro que marcou a fantasia sombria."
+        ]
+      },
+      {
+        "name": "Ghost in the Shell (1995)",
+        "sub": "classicos",
+        "word": "corpo-cibernético",
+        "phrase": "Cyborg policial investiga um hacker fantasma capaz de invadir e reescrever memórias na rede cibernética.",
+        "words": [
+          "corpo-cibernético",
+          "mergulho-rede",
+          "major-motoko",
+          "mestre-marionetes"
+        ],
+        "phrases": [
+          "Cyborg policial investiga um hacker fantasma capaz de invadir e reescrever memórias na rede cibernética.",
+          "Questionamentos filosóficos sobre o que define a alma humana em um futuro de corpos sintéticos."
+        ]
+      },
+      {
+        "name": "Akira (1988)",
+        "sub": "classicos",
+        "word": "moto-vermelha",
+        "phrase": "Membro de gangue de motoqueiros desenvolve poderes psíquicos incontroláveis após um acidente nas ruínas de Neo-Tóquio.",
+        "words": [
+          "moto-vermelha",
+          "neo-tóquio",
+          "explosão-mental",
+          "estádio-olímpico"
+        ],
+        "phrases": [
+          "Membro de gangue de motoqueiros desenvolve poderes psíquicos incontroláveis após um acidente nas ruínas de Neo-Tóquio.",
+          "A moto vermelha que derrapa de lado deixando rastros de luz e um poder destrutivo comparável a uma bomba."
+        ]
+      },
+      {
+        "name": "Medabots",
+        "sub": "classicos",
+        "word": "medalha-metabee",
+        "phrase": "Garotos competem em arenas com pequenos robôs movidos por medalhas de animais que adquirem personalidades únicas.",
+        "words": [
+          "medalha-metabee",
+          "cyberluta",
+          "peças-troca",
+          "juiz-sr-juiz"
+        ],
+        "phrases": [
+          "Garotos competem em arenas com pequenos robôs movidos por medalhas de animais que adquirem personalidades únicas.",
+          "O perdedor da batalha precisa entregar uma peça de seu robô para o vencedor sob os olhos do juiz oficial."
+        ]
+      },
+      {
+        "name": "Zatch Bell!",
+        "sub": "classicos",
+        "word": "livro-feitiços",
+        "phrase": "Cem crianças demônios são enviadas à Terra com livros de feitiços que precisam ser lidos por humanos para eleger o rei.",
+        "words": [
+          "livro-feitiços",
+          "zaker",
+          "criança-demônio",
+          "batalha-cem"
+        ],
+        "phrases": [
+          "Cem crianças demônios são enviadas à Terra com livros de feitiços que precisam ser lidos por humanos para eleger o rei.",
+          "Garotinho de capa azul que come rabanete e dispara raios da boca gritando o primeiro feitiço."
+        ]
+      },
+      {
+        "name": "Shaman King",
+        "sub": "classicos",
+        "word": "espírito-guardião",
+        "phrase": "Jovem tranquilo que conversa com fantasmas empunha a alma de um guerreiro antigo em sua espada de madeira.",
+        "words": [
+          "espírito-guardião",
+          "posse-espiritual",
+          "samurai-fantasma",
+          "torneio-xamãs"
+        ],
+        "phrases": [
+          "Jovem tranquilo que conversa com fantasmas empunha a alma de um guerreiro antigo em sua espada de madeira.",
+          "Torneio que ocorre a cada quinhentos anos para determinar quem se fundirá aos Grandes Espíritos."
+        ]
+      },
+      {
+        "name": "Beyblade",
+        "sub": "classicos",
+        "word": "pião-batalha",
+        "phrase": "Competidores arremessam piões turbinados em arenas côncavas invocando feras sagradas presas nas engrenagens.",
+        "words": [
+          "pião-batalha",
+          "fera-bit",
+          "let-it-rip",
+          "arena-plástica"
+        ],
+        "phrases": [
+          "Competidores arremessam piões turbinados em arenas côncavas invocando feras sagradas presas nas engrenagens.",
+          "Puxam a fita dentada com força total gritando para o Dragão Azul ou a Tartaruga Negra entrarem em ação."
+        ]
+      },
+      {
+        "name": "Monster Rancher",
+        "sub": "classicos",
+        "word": "cd-destravar",
+        "phrase": "Garoto é sugado para dentro de seu videogame e viaja gerando monstros a partir de CDs comuns de música.",
+        "words": [
+          "cd-destravar",
+          "monstro-olho",
+          "lobo-tigre",
+          "disco-sagrado"
+        ],
+        "phrases": [
+          "Garoto é sugado para dentro de seu videogame e viaja gerando monstros a partir de CDs comuns de música.",
+          "Aventura buscando discos misteriosos com um companheiro de um olho só e um lobo de chifres."
+        ]
+      },
+      {
+        "name": "Tenchi Muyo!",
+        "sub": "classicos",
+        "word": "espaçonave-árvore",
+        "phrase": "Jovem que vive em um templo descobre segredos imperiais espaciais ao libertar uma pirata espacial presa há séculos.",
+        "words": [
+          "espaçonave-árvore",
+          "garotas-alienígenas",
+          "espada-luz",
+          "templo"
+        ],
+        "phrases": [
+          "Jovem que vive em um templo descobre segredos imperiais espaciais ao libertar uma pirata espacial presa há séculos.",
+          "Casarão tradicional invadido por princesas extraterrestres e criaturas mágicas em um clássico do harém espacial."
+        ]
+      },
+      {
+        "name": "GTO (Great Teacher Onizuka)",
+        "sub": "classicos",
+        "word": "ex-motoqueiro",
+        "phrase": "Antigo líder de gangue de rua decide virar professor e é colocado na turma mais problemática da escola.",
+        "words": [
+          "ex-motoqueiro",
+          "professor-maluco",
+          "alemã-suplex",
+          "sala-problema"
+        ],
+        "phrases": [
+          "Antigo líder de gangue de rua decide virar professor e é colocado na turma mais problemática da escola.",
+          "Resolve os dramas psicológicos e traumas dos alunos com métodos completamente insanos e fora da lei."
+        ]
+      },
+      {
+        "name": "Hajime no Ippo",
+        "sub": "classicos",
+        "word": "boxe-dempsy-roll",
+        "phrase": "Garoto tímido que sofria bullying no porto aprende a socar folhas de árvores e inicia uma lendária carreira no boxe.",
+        "words": [
+          "boxe-dempsy-roll",
+          "saco-areia",
+          "peixes-pescaria",
+          "gancho"
+        ],
+        "phrases": [
+          "Garoto tímido que sofria bullying no porto aprende a socar folhas de árvores e inicia uma lendária carreira no boxe.",
+          "Movimento em infinito com a cabeça esquivando de socos e disparando ganchos devastadores no queixo."
+        ]
+      },
+      {
+        "name": "Ben 10",
+        "sub": "nostalgia",
+        "word": "relógio-omnitrix",
+        "phrase": "Garoto de dez anos encontra um dispositivo alienígena na floresta que permite se transformar em criaturas poderosas.",
+        "words": [
+          "relógio-omnitrix",
+          "dez-alienígenas",
+          "fogo-quatro-braços",
+          "trailer-lata-velha"
+        ],
+        "phrases": [
+          "Garoto de dez anos encontra um dispositivo alienígena na floresta que permite se transformar em criaturas poderosas.",
+          "Viagem de férias pelo país com o avô e a prima enfrentando ameaças cósmicas com o relógio no pulso."
+        ]
+      },
+      {
+        "name": "As Três Espiãs Demais",
+        "sub": "nostalgia",
+        "word": "batom-laser",
+        "phrase": "Três estudantes de Beverly Hills levam vida dupla como agentes secretas da Organização Mundial de Proteção Humana.",
+        "words": [
+          "batom-laser",
+          "macacão-colorido",
+          "tubo-aspiração",
+          "shopping-beverly"
+        ],
+        "phrases": [
+          "Três estudantes de Beverly Hills levam vida dupla como agentes secretas da Organização Mundial de Proteção Humana.",
+          "São sugadas de repente por passagens secretas para receber engenhocas cosméticas de um chefe calvo."
+        ]
+      },
+      {
+        "name": "Os Padrinhos Mágicos",
+        "sub": "nostalgia",
+        "word": "varinhas-estrelas",
+        "phrase": "Garoto comum de boné rosa que tem a vida infernizada por uma babá ganha duas fadas mágicas como padrinhos.",
+        "words": [
+          "varinhas-estrelas",
+          "peixinhos-dourados",
+          "babá-má",
+          "desejos-regras"
+        ],
+        "phrases": [
+          "Garoto comum de boné rosa que tem a vida infernizada por uma babá ganha duas fadas mágicas como padrinhos.",
+          "Seres flutuantes disfarçados de peixes que realizam qualquer pedido maluco que desrespeita as regras de um livro."
+        ]
+      },
+      {
+        "name": "Johnny Bravo",
+        "sub": "nostalgia",
+        "word": "óculos-escuros",
+        "phrase": "Rapaz musculoso e vaidoso que se acha irresistível tenta flertar com mulheres fazendo poses e levando bofetadas.",
+        "words": [
+          "óculos-escuros",
+          "topete-loiro",
+          "bater-músculos",
+          "tapa-garota"
+        ],
+        "phrases": [
+          "Rapaz musculoso e vaidoso que se acha irresistível tenta flertar com mulheres fazendo poses e levando bofetadas.",
+          "Usa camiseta preta justa e nunca retira seus óculos escuros enquanto imita a voz do rei do rock."
+        ]
+      },
+      {
+        "name": "KND: A Turma do Bairro",
+        "sub": "nostalgia",
+        "word": "casa-árvore-gigante",
+        "phrase": "Organização mundial de crianças que opera a partir de bases em árvores combatendo a tirania dos adultos.",
+        "words": [
+          "casa-árvore-gigante",
+          "tecnologia-sucata",
+          "cinco-setor",
+          "adultos-inimigos"
+        ],
+        "phrases": [
+          "Organização mundial de crianças que opera a partir de bases em árvores combatendo a tirania dos adultos.",
+          "Usam armas feitas de secadores de cabelo, desentupidores e refrigerantes defendendo o direito de brincar."
+        ]
+      },
+      {
+        "name": "Jovens Titãs (Clássico)",
+        "sub": "nostalgia",
+        "word": "torre-t",
+        "phrase": "Cinco jovens heróis moram juntos em uma torre em forma de letra gigante comendo pizza e combatendo o crime.",
+        "words": [
+          "torre-t",
+          "robin",
+          "pizza-sofá",
+          "meio-robô"
+        ],
+        "phrases": [
+          "Cinco jovens heróis moram juntos em uma torre em forma de letra gigante comendo pizza e combatendo o crime.",
+          "Uma empata sombria, um líder acrobático, um alienígena doce, um metamorfo verde e um ciborgue bem-humorado."
+        ]
+      },
+      {
+        "name": "Danny Phantom",
+        "sub": "nostalgia",
+        "word": "portal-fantasmas",
+        "phrase": "Adolescente filho de caçadores de espíritos sofre um acidente no laboratório dos pais e vira metade assombração.",
+        "words": [
+          "portal-fantasmas",
+          "cabelo-branco",
+          "transformação-brilho",
+          "ficar-intangível"
+        ],
+        "phrases": [
+          "Adolescente filho de caçadores de espíritos sofre um acidente no laboratório dos pais e vira metade assombração.",
+          "Fica invisível, atravessa paredes e dispara rajadas de energia ectoplasmática mantendo a cidade segura."
+        ]
+      },
+      {
+        "name": "Mansão Foster para Amigos Imaginários",
+        "sub": "nostalgia",
+        "word": "casa-vitoriana",
+        "phrase": "Casarão gigantesco que acolhe criações mentais abandonadas por crianças que cresceram até serem adotadas novamente.",
+        "words": [
+          "casa-vitoriana",
+          "bloo-azul",
+          "queijo-maluco",
+          "amigos-adotados"
+        ],
+        "phrases": [
+          "Casarão gigantesco que acolhe criações mentais abandonadas por crianças que cresceram até serem adotadas novamente.",
+          "Uma massa azul egoísta e divertida apronta confusões com um amigo imaginário vermelho de braço quebrado."
+        ]
+      },
+      {
+        "name": "Kim Possible",
+        "sub": "nostalgia",
+        "word": "comunicador-kimmunicator",
+        "phrase": "Líder de torcida do ensino médio que salva o mundo em seu tempo livre com saltos mortais e chutes perfeitos.",
+        "words": [
+          "comunicador-kimmunicator",
+          "ruiva-acrobata",
+          "toupeira-careca",
+          "dr-drakken"
+        ],
+        "phrases": [
+          "Líder de torcida do ensino médio que salva o mundo em seu tempo livre com saltos mortais e chutes perfeitos.",
+          "Acompanhada por seu melhor amigo desastrado e um roedor pelado que viaja dentro do bolso da calça cargo."
+        ]
+      },
+      {
+        "name": "Phineas e Ferb",
+        "sub": "nostalgia",
+        "word": "montanha-russa-quintal",
+        "phrase": "Dois meio-irmãos geniais aproveitam as férias de verão construindo invenções monumentais no quintal de casa.",
+        "words": [
+          "montanha-russa-quintal",
+          "ornitorrinco-agente",
+          "cem-quarenta-dias",
+          "irmã-candace"
+        ],
+        "phrases": [
+          "Dois meio-irmãos geniais aproveitam as férias de verão construindo invenções monumentais no quintal de casa.",
+          "Seu animal de estimação de bico de pato veste um chapéu e sai secretamente para combater um cientista maluco."
+        ]
+      },
+      {
+        "name": "Hora de Aventura (Adventure Time)",
+        "sub": "nostalgia",
+        "word": "terra-ooo",
+        "phrase": "Um garoto humano corajoso e seu irmão adotivo canino capaz de esticar o corpo exploram uma terra pós-apocalíptica mágica.",
+        "words": [
+          "terra-ooo",
+          "cão-amarelo-elástico",
+          "menino-gorro-branco",
+          "rei-gelado"
+        ],
+        "phrases": [
+          "Um garoto humano corajoso e seu irmão adotivo canino capaz de esticar o corpo exploram uma terra pós-apocalíptica mágica.",
+          "Enfrentam um monarca solitário de barba branca que sequestra princesas com sua coroa mágica de gelo."
+        ]
+      },
+      {
+        "name": "Apenas um Show (Regular Show)",
+        "sub": "nostalgia",
+        "word": "gaio-azul",
+        "phrase": "Dois amigos preguiçosos trabalham como zeladores de um parque e transformam qualquer tarefa banal em uma crise cósmica.",
+        "words": [
+          "gaio-azul",
+          "guaxinim",
+          "parque-zeladores",
+          "máquina-chiclete-chefe"
+        ],
+        "phrases": [
+          "Dois amigos preguiçosos trabalham como zeladores de um parque e transformam qualquer tarefa banal em uma crise cósmica.",
+          "São ameaçados de demissão pelo chefe com cabeça de máquina de balas enquanto invocam demônios dos anos oitenta."
+        ]
+      },
+      {
+        "name": "X-Men: Evolution",
+        "sub": "nostalgia",
+        "word": "instituto-xavier",
+        "phrase": "Mutantes com poderes genéticos vivem como estudantes do ensino médio escondendo seus dons da sociedade.",
+        "words": [
+          "instituto-xavier",
+          "adolescentes-mutantes",
+          "moto-ciclope",
+          "irmandade"
+        ],
+        "phrases": [
+          "Mutantes com poderes genéticos vivem como estudantes do ensino médio escondendo seus dons da sociedade.",
+          "Treinam na sala de perigo sob orientação de um mentor em cadeira de rodas contra a irmandade rebelde."
+        ]
+      },
+      {
+        "name": "Tartarugas Ninja (2003)",
+        "sub": "nostalgia",
+        "word": "esgoto",
+        "phrase": "Quatro répteis mutantes treinados em artes marciais por um roedor sábio combatem o clã do pé nos telhados de Nova York.",
+        "words": [
+          "esgoto",
+          "pizza",
+          "destruidor",
+          "mestre-rato"
+        ],
+        "phrases": [
+          "Quatro répteis mutantes treinados em artes marciais por um roedor sábio combatem o clã do pé nos telhados de Nova York.",
+          "Armados com espadas katanas, bastão bo, sais e nunchakus com cascos duros e paixão por queijo derretido."
+        ]
+      },
+      {
+        "name": "Liga da Justiça Sem Limites",
+        "sub": "nostalgia",
+        "word": "torre-vigia",
+        "phrase": "Sindicato colossal de super-heróis operando em órbita espacial para responder a qualquer crise no planeta.",
+        "words": [
+          "torre-vigia",
+          "membros-dezenas",
+          "teleporte",
+          "trindade"
+        ],
+        "phrases": [
+          "Sindicato colossal de super-heróis operando em órbita espacial para responder a qualquer crise no planeta.",
+          "Confrontos memoráveis com equipes formadas sob medida e a liderança estratégica do Cavaleiro das Trevas."
+        ]
+      },
+      {
+        "name": "Samurai Jack",
+        "sub": "nostalgia",
+        "word": "espada-mágica",
+        "phrase": "Príncipe guerreiro do passado é arremessado para um futuro distópico dominado por um demônio metamorfo das trevas.",
+        "words": [
+          "espada-mágica",
+          "futuro-aku",
+          "silêncio",
+          "voltar-passado"
+        ],
+        "phrases": [
+          "Príncipe guerreiro do passado é arremessado para um futuro distópico dominado por um demônio metamorfo das trevas.",
+          "Caminha em silêncio por desertos e cidades futuristas com sua túnica branca buscando um portal de retorno."
+        ]
+      },
+      {
+        "name": "W.I.T.C.H.",
+        "sub": "nostalgia",
+        "word": "coração-kandrakar",
+        "phrase": "Cinco garotas comuns recebem a missão de proteger a muralha entre as dimensões canalizando forças da natureza.",
+        "words": [
+          "coração-kandrakar",
+          "elementos",
+          "guardiãs-portal",
+          "asas-brilhantes"
+        ],
+        "phrases": [
+          "Cinco garotas comuns recebem a missão de proteger a muralha entre as dimensões canalizando forças da natureza.",
+          "Giram o pingente brilhante para ganhar asas luminosas e controlar fogo, água, terra e ar."
+        ]
+      },
+      {
+        "name": "Gárgulas",
+        "sub": "nostalgia",
+        "word": "pedra-de-dia",
+        "phrase": "Criaturas aladas escocesas amaldiçoadas a dormir como estátuas de pedra despertam acima das nuvens de Nova York.",
+        "words": [
+          "pedra-de-dia",
+          "asas-couro",
+          "arranha-céu",
+          "escócia-manhattan"
+        ],
+        "phrases": [
+          "Criaturas aladas escocesas amaldiçoadas a dormir como estátuas de pedra despertam acima das nuvens de Nova York.",
+          "Protetores noturnos da metrópole que planam entre gárgulas de concreto e conspiram contra bilionários."
+        ]
+      },
+      {
+        "name": "Frieren: E a Jornada Para o Além",
+        "sub": "modernos",
+        "word": "elfa-longeva",
+        "phrase": "Maga elfa quase imortal refaz os passos da jornada de dez anos com o grupo de heróis após a velhice e morte deles.",
+        "words": [
+          "elfa-longeva",
+          "pós-derrota-rei-demônio",
+          "coleta-feitiços",
+          "flores-azuis"
+        ],
+        "phrases": [
+          "Maga elfa quase imortal refaz os passos da jornada de dez anos com o grupo de heróis após a velhice e morte deles.",
+          "Busca compreender os sentimentos humanos e colecionar pequenos feitiços curiosos pelas aldeias do continente."
+        ]
+      },
+      {
+        "name": "Solo Leveling",
+        "sub": "modernos",
+        "word": "o-mais-fraco",
+        "phrase": "O caçador mais fraco do mundo sobrevive a uma masmorra dupla e passa a subir de nível sozinho como em um videogame.",
+        "words": [
+          "o-mais-fraco",
+          "sistema-telas",
+          "ergam-se-sombras",
+          "adagas-duplas"
+        ],
+        "phrases": [
+          "O caçador mais fraco do mundo sobrevive a uma masmorra dupla e passa a subir de nível sozinho como em um videogame.",
+          "Comanda um exército de soldados de sombra que brotam do chão com olhos azuis ao pronunciar a ordem sagrada."
+        ]
+      },
+      {
+        "name": "Blue Lock",
+        "sub": "modernos",
+        "word": "prisão-atacantes",
+        "phrase": "Trezentos jovens atacantes japoneses são confinados em uma instalação futurista para forjar o atacante mais egoísta do mundo.",
+        "words": [
+          "prisão-atacantes",
+          "egoísmo",
+          "gol-supremo",
+          "futebol-sala"
+        ],
+        "phrases": [
+          "Trezentos jovens atacantes japoneses são confinados em uma instalação futurista para forjar o atacante mais egoísta do mundo.",
+          "Sobrevivência competitiva onde perder significa ter a carreira futebolística encerrada para sempre."
+        ]
+      },
+      {
+        "name": "Dungeon Meshi (Delicious in Dungeon)",
+        "sub": "modernos",
+        "word": "cozinhar-monstros",
+        "phrase": "Aventureiros sem dinheiro para suprimentos decidem cozinhar e devorar os próprios monstros que enfrentam no labirinto.",
+        "words": [
+          "cozinhar-monstros",
+          "dragão-vermelho",
+          "masmorra-prato",
+          "gourmet-calabouço"
+        ],
+        "phrases": [
+          "Aventureiros sem dinheiro para suprimentos decidem cozinhar e devorar os próprios monstros que enfrentam no labirinto.",
+          "Preparam guisados de cogumelos ambulantes e bifes de parasitas gigantes com rigor culinário profissional."
+        ]
+      },
+      {
+        "name": "The Apothecary Diaries (Kusuriya no Hitorigoto)",
+        "sub": "modernos",
+        "word": "venenos-teste",
+        "phrase": "Jovem boticária fascinada por venenos é sequestrada para o palácio imperial e resolve mistérios da corte.",
+        "words": [
+          "venenos-teste",
+          "boticária",
+          "palácio-imperial",
+          "sardas-falsas"
+        ],
+        "phrases": [
+          "Jovem boticária fascinada por venenos é sequestrada para o palácio imperial e resolve mistérios da corte.",
+          "Testa toxinas perigosas no próprio corpo com prazer científico enquanto assessora o eunuco mais belo."
+        ]
+      },
+      {
+        "name": "Kaiju No. 8",
+        "sub": "modernos",
+        "word": "limpeza-monstros",
+        "phrase": "Faxineiro de trinta e dois anos que limpa carcaças de monstros gigantes engole um parasita e ganha força colossal.",
+        "words": [
+          "limpeza-monstros",
+          "engolir-parasita",
+          "soco-gigante",
+          "transformação-kaiju"
+        ],
+        "phrases": [
+          "Faxineiro de trinta e dois anos que limpa carcaças de monstros gigantes engole um parasita e ganha força colossal.",
+          "Esconde sua transformação em kaiju enquanto tenta passar no teste de recrutamento das forças de defesa."
+        ]
+      },
+      {
+        "name": "Tokyo Revengers",
+        "sub": "modernos",
+        "word": "viagem-tempo-metrô",
+        "phrase": "Jovem fracassado viaja doze anos no passado apertando a mão do irmão de sua ex-namorada para salvá-la da morte.",
+        "words": [
+          "viagem-tempo-metrô",
+          "gangue-motos",
+          "aperto-mãos",
+          "mikey-invencível"
+        ],
+        "phrases": [
+          "Jovem fracassado viaja doze anos no passado apertando a mão do irmão de sua ex-namorada para salvá-la da morte.",
+          "Enfrenta líderes carismáticos de gangues de motoqueiros com uniformes tokkofuku e chutes giratórios devastadores."
+        ]
+      },
+      {
+        "name": "Mashle: Magic and Muscles",
+        "sub": "modernos",
+        "word": "sem-magia",
+        "phrase": "Garoto sem nenhuma aptidão mágica entra para a mais conceituada escola de bruxos resolvendo tudo na base da força física pura.",
+        "words": [
+          "sem-magia",
+          "creme-puffs",
+          "músculos-quebram-feitiços",
+          "academia-varinhas"
+        ],
+        "phrases": [
+          "Garoto sem nenhuma aptidão mágica entra para a mais conceituada escola de bruxos resolvendo tudo na base da força física pura.",
+          "Apaixonado por doces de massa choux com creme que rebate feitiços mortais com tapas de mão aberta."
+        ]
+      },
+      {
+        "name": "Kaguya-sama: Love is War",
+        "sub": "modernos",
+        "word": "conselho-estudantil",
+        "phrase": "Dois estudantes brilhantes e orgulhosos se amam mas travam guerras psicológicas para forçar o outro a se confessar primeiro.",
+        "words": [
+          "conselho-estudantil",
+          "guerra-declaração",
+          "orgulho",
+          "que-fofo"
+        ],
+        "phrases": [
+          "Dois estudantes brilhantes e orgulhosos se amam mas travam guerras psicológicas para forçar o outro a se confessar primeiro.",
+          "Disputas intelectuais mirabolantes por fatias de bolo e passeios de cinema narradas com drama épico."
+        ]
+      },
+      {
+        "name": "Ranking of Kings (Ousama Ranking)",
+        "sub": "modernos",
+        "word": "príncipe-surdo",
+        "phrase": "Pequeno príncipe surdo e mudo ridicularizado por todos treina técnicas esgrimistas de esquiva e precisão.",
+        "words": [
+          "príncipe-surdo",
+          "sombra-amiga",
+          "espada-agulha",
+          "coração-ouro"
+        ],
+        "phrases": [
+          "Pequeno príncipe surdo e mudo ridicularizado por todos treina técnicas esgrimistas de esquiva e precisão.",
+          "Acompanhado por uma criatura em forma de sombra negra que entende suas palavras e se torna seu maior aliado."
+        ]
+      },
+      {
+        "name": "Made in Abyss",
+        "sub": "modernos",
+        "word": "abismo-camadas",
+        "phrase": "Garotinha desce uma cratera colossal misteriosa cheia de monstros e relíquias acompanhada por um menino androide.",
+        "words": [
+          "abismo-camadas",
+          "maldição-subida",
+          "garoto-robô",
+          "relíquias"
+        ],
+        "phrases": [
+          "Garotinha desce uma cratera colossal misteriosa cheia de monstros e relíquias acompanhada por um menino androide.",
+          "Quanto mais fundo se desce na fenda, mais severa e desumana é a maldição sentida ao tentar retornar."
+        ]
+      },
+      {
+        "name": "Re:Zero - Começando uma Nova Vida em Outro Mundo",
+        "sub": "modernos",
+        "word": "retorno-pela-morte",
+        "phrase": "Jovem comum é transportado para um mundo de fantasia com a habilidade involuntária de voltar no tempo sempre que morre.",
+        "words": [
+          "retorno-pela-morte",
+          "bruxa-inveja",
+          "meia-elfa",
+          "salvar-todos"
+        ],
+        "phrases": [
+          "Jovem comum é transportado para um mundo de fantasia com a habilidade involuntária de voltar no tempo sempre que morre.",
+          "Traumas psicológicos brutais revivendo massacres repetidamente para encontrar o único caminho que salva seus amigos."
+        ]
+      },
+      {
+        "name": "That Time I Got Reincarnated as a Slime",
+        "sub": "modernos",
+        "word": "gosma-azul",
+        "phrase": "Homem assaltado reencarna em outro mundo como uma gosminha gelatinosa capaz de absorver qualquer criatura e seus poderes.",
+        "words": [
+          "gosma-azul",
+          "devorar-habilidades",
+          "vila-monstros",
+          "dragão-tempest"
+        ],
+        "phrases": [
+          "Homem assaltado reencarna em outro mundo como uma gosminha gelatinosa capaz de absorver qualquer criatura e seus poderes.",
+          "Funda uma federação próspera onde goblins, orcs e ogros convivem pacificamente sob sua liderança afetuosa."
+        ]
+      },
+      {
+        "name": "Mushoku Tensei: Jobless Reincarnation",
+        "sub": "modernos",
+        "word": "reencarnação-bebê",
+        "phrase": "Homem recluso renasce como bebê em um mundo feudal aprendendo magia complexa desde o berço com dedicação.",
+        "words": [
+          "reencarnação-bebê",
+          "cajado-mágico",
+          "teleporte-catástrofe",
+          "línguas-mundo"
+        ],
+        "phrases": [
+          "Homem recluso renasce como bebê em um mundo feudal aprendendo magia complexa desde o berço com dedicação.",
+          "Jornada de amadurecimento e superação pessoal cruzando continentes hostis após um desastre mágico global."
+        ]
+      },
+      {
+        "name": "Komi Can't Communicate",
+        "sub": "modernos",
+        "word": "caderno-recados",
+        "phrase": "A garota mais linda e idolatrada da escola sofre de ansiedade comunicativa e não consegue pronunciar uma palavra em público.",
+        "words": [
+          "caderno-recados",
+          "beleza-silenciosa",
+          "cem-amigos",
+          "timidez-extrema"
+        ],
+        "phrases": [
+          "A garota mais linda e idolatrada da escola sofre de ansiedade comunicativa e não consegue pronunciar uma palavra em público.",
+          "Escreve seus sentimentos na lousa e em cadernos contando com a ajuda de um colega comum para fazer cem amigos."
+        ]
+      },
+      {
+        "name": "Hell's Paradise (Jigokuraku)",
+        "sub": "modernos",
+        "word": "ilha-imortalidade",
+        "phrase": "Ninja imortal condenado à morte é enviado a uma ilha paradisíaca e bizarra para encontrar o elixir da juventude eterna.",
+        "words": [
+          "ilha-imortalidade",
+          "ninja-vazio",
+          "elixir-vida",
+          "deuses-monstros"
+        ],
+        "phrases": [
+          "Ninja imortal condenado à morte é enviado a uma ilha paradisíaca e bizarra para encontrar o elixir da juventude eterna.",
+          "Luta ao lado de carrascos samurais contra entidades budistas grotescas para poder voltar aos braços da esposa."
+        ]
+      },
+      {
+        "name": "Pluto",
+        "sub": "modernos",
+        "word": "sete-robôs-avançados",
+        "phrase": "Detetive robótico investiga o assassinato sistemático dos sete robôs mais poderosos do planeta e de humanos defensores da paz.",
+        "words": [
+          "sete-robôs-avançados",
+          "detetive-inspeção",
+          "chifres-ódio",
+          "tornado-morte"
+        ],
+        "phrases": [
+          "Detetive robótico investiga o assassinato sistemático dos sete robôs mais poderosos do planeta e de humanos defensores da paz.",
+          "Releitura madura e comovente de Astro Boy explorando as cicatrizes emocionais da guerra e a origem do ódio."
+        ]
+      },
+      {
+        "name": "Dandadan",
+        "sub": "modernos",
+        "word": "alienígenas-fantasmas",
+        "phrase": "Uma garota que acredita em fantasmas e um garoto que acredita em alienígenas têm suas crenças confirmadas da pior forma.",
+        "words": [
+          "alienígenas-fantasmas",
+          "turbo-avó",
+          "esferas-perdidas",
+          "corrida-louca"
+        ],
+        "phrases": [
+          "Uma garota que acredita em fantasmas e um garoto que acredita em alienígenas têm suas crenças confirmadas da pior forma.",
+          "Aventuras alucinantes com espíritos ancestrais possuindo corpos e extraterrestres tentando roubar órgãos vitais."
+        ]
+      },
+      {
+        "name": "Overlord",
+        "sub": "modernos",
+        "word": "esqueleto-mago",
+        "phrase": "Jogador fica preso no corpo de seu avatar esquelético supremo quando os servidores de um jogo online são encerrados.",
+        "words": [
+          "esqueleto-mago",
+          "guarda-tumba",
+          "mmo-fechando",
+          "dominação-mundial"
+        ],
+        "phrases": [
+          "Jogador fica preso no corpo de seu avatar esquelético supremo quando os servidores de um jogo online são encerrados.",
+          "Seus servos NPC ganham consciência e ele precisa fingir um plano genial de conquista para não desapontá-los."
+        ]
+      },
+      {
+        "name": "Sword Art Online",
+        "sub": "modernos",
+        "word": "capacete-nervgear",
+        "phrase": "Milhares de jogadores ficam aprisionados em um jogo de realidade virtual onde a morte no jogo frita o cérebro real.",
+        "words": [
+          "capacete-nervgear",
+          "morrer-jogo-morre-real",
+          "cem-andares",
+          "duas-espadas"
+        ],
+        "phrases": [
+          "Milhares de jogadores ficam aprisionados em um jogo de realidade virtual onde a morte no jogo frita o cérebro real.",
+          "O espadachim negro luta em duelos com espadas duplas para alcançar o centésimo andar e libertar os sobreviventes."
+        ]
+      },
+      {
+        "name": "Odd Taxi",
+        "sub": "modernos",
+        "word": "taxista-morsa",
+        "phrase": "Taxista morsa de meia-idade e olhar cansado se envolve na investigação do sumiço de uma jovem colegial na metrópole.",
+        "words": [
+          "taxista-morsa",
+          "câmera-carro",
+          "estudante-desaparecida",
+          "conversa-passageiros"
+        ],
+        "phrases": [
+          "Taxista morsa de meia-idade e olhar cansado se envolve na investigação do sumiço de uma jovem colegial na metrópole.",
+          "Diálogos ácidos e naturais com passageiros excêntricos que escondem uma teia de crimes e reviravoltas profundas."
+        ]
+      },
+      {
+        "name": "Dorohedoro",
+        "sub": "modernos",
+        "word": "cabeça-lagarto",
+        "phrase": "Homem com cabeça de réptil e sem memórias caça magos na cidade degradada do Buraco para descobrir quem o amaldiçoou.",
+        "words": [
+          "cabeça-lagarto",
+          "gyoza",
+          "magos-fumaça",
+          "boca-homem"
+        ],
+        "phrases": [
+          "Homem com cabeça de réptil e sem memórias caça magos na cidade degradada do Buraco para descobrir quem o amaldiçoou.",
+          "Morde a cabeça de feiticeiros para que o homem dentro de sua garganta julgue se eles são o verdadeiro culpado."
+        ]
+      },
+      {
+        "name": "Vinland Saga (Segunda Temporada)",
+        "sub": "modernos",
+        "word": "fazenda-ketil",
+        "phrase": "Antigo guerreiro sanguinário trabalha como escravo cortando árvores em uma fazenda aprendendo o valor do perdão e da paz.",
+        "words": [
+          "fazenda-ketil",
+          "escravos-trabalho",
+          "eu-não-tenho-inimigos",
+          "terra-sem-armas"
+        ],
+        "phrases": [
+          "Antigo guerreiro sanguinário trabalha como escravo cortando árvores em uma fazenda aprendendo o valor do perdão e da paz.",
+          "O lendário renascimento interior de quem jurou nunca mais erguer uma arma de matar contra outro ser humano."
+        ]
+      },
+      {
+        "name": "Steins;Gate",
+        "sub": "shonen",
+        "word": "micro-ondas-tempo",
+        "phrase": "Jovem autointitulado cientista louco inventa acidentalmente uma máquina que envia mensagens de texto para o passado.",
+        "words": [
+          "micro-ondas-tempo",
+          "dr-pepper",
+          "linhas-mundo",
+          "cientista-louco"
+        ],
+        "phrases": [
+          "Jovem autointitulado cientista louco inventa acidentalmente uma máquina que envia mensagens de texto para o passado.",
+          "Consequências trágicas que o forçam a pular entre dezenas de linhas temporais para salvar quem ama da morte inevitável."
+        ]
+      },
+      {
+        "name": "Fate/Zero",
+        "sub": "shonen",
+        "word": "guerra-santo-graal",
+        "phrase": "Sete magos invocam heróis lendários do passado como guerreiros armados para disputar um artefato que realiza desejos.",
+        "words": [
+          "guerra-santo-graal",
+          "sete-servos",
+          "espíritos-heroicos",
+          "selos-comando"
+        ],
+        "phrases": [
+          "Sete magos invocam heróis lendários do passado como guerreiros armados para disputar um artefato que realiza desejos.",
+          "Confrontos táticos sangrentos entre assassinos calculistas e cavaleiros de nobres ideais sob a noite urbana."
+        ]
+      },
+      {
+        "name": "Code Geass: Lelouch of the Rebellion",
+        "sub": "shonen",
+        "word": "olho-geass",
+        "phrase": "Príncipe exilado recebe o poder místico de dar uma ordem verbal irreversível que qualquer pessoa é forçada a cumprir.",
+        "words": [
+          "olho-geass",
+          "ordem-absoluta",
+          "zero-máscara",
+          "xadrez-estratégia"
+        ],
+        "phrases": [
+          "Príncipe exilado recebe o poder místico de dar uma ordem verbal irreversível que qualquer pessoa é forçada a cumprir.",
+          "Lidera uma revolução mascarada de dentro de um mecha gigante contra um império tirânico usando mente de enxadrista."
+        ]
+      },
+      {
+        "name": "Noragami",
+        "sub": "shonen",
+        "word": "deus-cinco-ienes",
+        "phrase": "Deus menor sem nenhum templo aceita qualquer pequeno trabalho por uma moeda de cinco ienes para juntar dinheiro.",
+        "words": [
+          "deus-cinco-ienes",
+          "moletom",
+          "espada-alma",
+          "shinki"
+        ],
+        "phrases": [
+          "Deus menor sem nenhum templo aceita qualquer pequeno trabalho por uma moeda de cinco ienes para juntar dinheiro.",
+          "Empunha a alma de um adolescente falecido transformada em lâmina sagrada para purificar fantasmas corrompidos."
+        ]
+      },
+      {
+        "name": "Mob Psycho 100 II",
+        "sub": "shonen",
+        "word": "brócolis-gigante",
+        "phrase": "A continuação do crescimento emocional do garoto mais poderoso do mundo que prefere ser gentil a usar sua força devastadora.",
+        "words": [
+          "brócolis-gigante",
+          "evolução-mental",
+          "amizade-verdadeira",
+          "exorcismo-espíritos"
+        ],
+        "phrases": [
+          "A continuação do crescimento emocional do garoto mais poderoso do mundo que prefere ser gentil a usar sua força devastadora.",
+          "Batalhas com animação fluida espetacular destruindo cidades para defender os laços humanos com seu mestre."
+        ]
+      },
+      {
+        "name": "Assassination Classroom",
+        "sub": "shonen",
+        "word": "polvo-amarelo",
+        "phrase": "Criatura tentacular amarela com sorriso eterno que destruiu metade da lua vira professor de uma turma de desajustados.",
+        "words": [
+          "polvo-amarelo",
+          "lua-destruída",
+          "classe-3e",
+          "mach-vinte"
+        ],
+        "phrases": [
+          "Criatura tentacular amarela com sorriso eterno que destruiu metade da lua vira professor de uma turma de desajustados.",
+          "Os alunos têm a missão de assassinar seu carismático mestre antes do fim do ano letivo para salvar o planeta."
+        ]
+      },
+      {
+        "name": "Toradora!",
+        "sub": "classicos",
+        "word": "tigre-de-bolso",
+        "phrase": "Garota baixinho feroz e garoto com cara de delinquente se unem para ajudar um ao outro a conquistar seus melhores amigos.",
+        "words": [
+          "tigre-de-bolso",
+          "dragão",
+          "limpeza-casa",
+          "romance-colegial"
+        ],
+        "phrases": [
+          "Garota baixinho feroz e garoto com cara de delinquente se unem para ajudar um ao outro a conquistar seus melhores amigos.",
+          "A convivência diária cozinhando e cuidando um do outro faz nascer um sentimento genuíno sob a neve de inverno."
+        ]
+      },
+      {
+        "name": "Erased (Boku dake ga Inai Machi)",
+        "sub": "shonen",
+        "word": "reviver-tempo",
+        "phrase": "Homem comum com o dom involuntário de voltar alguns minutos no tempo é arremessado de volta à sua infância de escola primária.",
+        "words": [
+          "reviver-tempo",
+          "borboleta-azul",
+          "crimes-infância",
+          "salvar-garota"
+        ],
+        "phrases": [
+          "Homem comum com o dom involuntário de voltar alguns minutos no tempo é arremessado de volta à sua infância de escola primária.",
+          "Precisa impedir o assassinato em série de colegas de classe para salvar sua mãe no presente."
+        ]
+      },
+      {
+        "name": "Parasyte (Kiseki)",
+        "sub": "shonen",
+        "word": "mão-direita-monstro",
+        "phrase": "Parasita alienígena falha em devorar o cérebro de um jovem e fica preso em sua mão direita tornando-se um parceiro relutante.",
+        "words": [
+          "mão-direita-monstro",
+          "parasitas-cérebro",
+          "olhos-dedos",
+          "natureza-humana"
+        ],
+        "phrases": [
+          "Parasita alienígena falha em devorar o cérebro de um jovem e fica preso em sua mão direita tornando-se um parceiro relutante.",
+          "Lutam juntos contra outras criaturas disfarçadas que devoram humanos na sociedade urbana."
+        ]
+      },
+      {
+        "name": "Great Pretender",
+        "sub": "modernos",
+        "word": "golpistas-mestres",
+        "phrase": "O maior vigarista do Japão tenta enganar um estranho e acaba arrastado para uma quadrilha internacional de golpes mirabolantes.",
+        "words": [
+          "golpistas-mestres",
+          "arte-falsa",
+          "cores-vibrantes",
+          "los-angeles-golpe"
+        ],
+        "phrases": [
+          "O maior vigarista do Japão tenta enganar um estranho e acaba arrastado para uma quadrilha internacional de golpes mirabolantes.",
+          "Cenários com cores expressionistas e planos engenhosos que desviam milhões de mafiosos e colecionadores corruptos."
+        ]
+      },
+      {
+        "name": "Castlevania (Animação)",
+        "sub": "modernos",
+        "word": "chicote-vampiros",
+        "phrase": "O último membro de uma linhagem de caçadores de monstros se une à filha de um monarca noturno e a uma maga elemental.",
+        "words": [
+          "chicote-vampiros",
+          "dracula-vingança",
+          "maga-oradora",
+          "alucard-filho"
+        ],
+        "phrases": [
+          "O último membro de uma linhagem de caçadores de monstros se une à filha de um monarca noturno e a uma maga elemental.",
+          "Batalhas sangrentas e viscerais com chicote consagrado contra exércitos de demônios nas noites da Valáquia."
+        ]
+      },
+      {
+        "name": "Hellsing Ultimate",
+        "sub": "classicos",
+        "word": "alucard-vampiro",
+        "phrase": "O mais poderoso vampiro de todos os tempos caça outras criaturas sob o comando da ordem protestante britânica.",
+        "words": [
+          "alucard-vampiro",
+          "pistolas-gigantes",
+          "luvas-pentagrama",
+          "zepelins-guerra"
+        ],
+        "phrases": [
+          "O mais poderoso vampiro de todos os tempos caça outras criaturas sob o comando da ordem protestante britânica.",
+          "Libera selos mágicos e devora exércitos inteiros de ghouls com sorrisos macabros e pistolas prateadas."
+        ]
+      },
+      {
+        "name": "Kill la Kill",
+        "sub": "shonen",
+        "word": "metade-tesoura",
+        "phrase": "Jovem empunhando uma lâmina em formato de tesoura gigante chega a uma academia onde roupas conferem superpoderes.",
+        "words": [
+          "metade-tesoura",
+          "uniforme-vivo",
+          "escola-honnoji",
+          "fibras-vida"
+        ],
+        "phrases": [
+          "Jovem empunhando uma lâmina em formato de tesoura gigante chega a uma academia onde roupas conferem superpoderes.",
+          "Lutas hipercinéticas e extravagantes com uniformes que se transformam ao serem alimentados com sangue."
+        ]
+      },
+      {
+        "name": "Gurren Lagann",
+        "sub": "shonen",
+        "word": "broca-que-fura-os-céus",
+        "phrase": "Dois irmãos saem de uma vila subterrânea e pilotam um mecha que combina com outros perfurando os céus.",
+        "words": [
+          "broca-que-fura-os-céus",
+          "óculos-estrelados",
+          "robô-peito-rosto",
+          "espiral-poder"
+        ],
+        "phrases": [
+          "Dois irmãos saem de uma vila subterrânea e pilotam um mecha que combina com outros perfurando os céus.",
+          "Batalhas em escala cósmica arremessando galáxias inteiras ao som de discursos sobre acreditar em si mesmo."
+        ]
+      },
+      {
+        "name": "Psycho-Pass",
+        "sub": "shonen",
+        "word": "arma-dominator",
+        "phrase": "Polícia futurista mede o estado mental de cidadãos com armas inteligentes que decidem quem deve ser executado no local.",
+        "words": [
+          "arma-dominator",
+          "coeficiente-crime",
+          "sistema-sibyl",
+          "futuro-distópico"
+        ],
+        "phrases": [
+          "Polícia futurista mede o estado mental de cidadãos com armas inteligentes que decidem quem deve ser executado no local.",
+          "Detetives e executores caçam criminosos cujas mentes conseguem burlar os scanners biométricos do sistema."
+        ]
+      },
+      {
+        "name": "Monster",
+        "sub": "classicos",
+        "word": "dr-tenma",
+        "phrase": "Brilhante neurocirurgião salva a vida de um menino ferido sem saber que a criança se tornaria o monstro mais frio do mundo.",
+        "words": [
+          "dr-tenma",
+          "johan-liebert",
+          "cirurgia-criança",
+          "alemanha-mistério"
+        ],
+        "phrases": [
+          "Brilhante neurocirurgião salva a vida de um menino ferido sem saber que a criança se tornaria o monstro mais frio do mundo.",
+          "Jornada investigativa densa através da Alemanha pós-muro caçando um manipulador sem escrúpulos."
+        ]
+      },
+      {
+        "name": "Vinland Saga (Temporada 1)",
+        "sub": "classicos",
+        "word": "askeladd",
+        "phrase": "A saga inicial de vingança com mercenários nórdicos invadindo vilarejos e batalhas sangrentas de machado.",
+        "words": [
+          "askeladd",
+          "duelos-honra",
+          "mar-norte",
+          "guerreiro-frio"
+        ],
+        "phrases": [
+          "A saga inicial de vingança com mercenários nórdicos invadindo vilarejos e batalhas sangrentas de machado.",
+          "O jovem que dorme ao relento com duas adagas esperando a chance de um duelo justo."
+        ]
+      },
+      {
+        "name": "Samurai Champloo",
+        "sub": "classicos",
+        "word": "hip-hop-samurai",
+        "phrase": "Dois espadachins errantes com estilos de luta completamente opostos escoltam uma jovem em busca do samurai que cheira a girassóis.",
+        "words": [
+          "hip-hop-samurai",
+          "cheiro-girassóis",
+          "breakdance-espada",
+          "chá-casa"
+        ],
+        "phrases": [
+          "Dois espadachins errantes com estilos de luta completamente opostos escoltam uma jovem em busca do samurai que cheira a girassóis.",
+          "Mistura genial de Japão feudal com batidas de hip-hop clássico e golpes de espada com passos de dança de rua."
+        ]
+      },
+      {
+        "name": "Black Lagoon",
+        "sub": "shonen",
+        "word": "revólveres-duplos-revvy",
+        "phrase": "Executivo japonês sequestrado decide abandonar sua vida corporativa e se juntar a mercenários armados no sudeste asiático.",
+        "words": [
+          "revólveres-duplos-revvy",
+          "piratas-modernos",
+          "cidade-roanapur",
+          "torpedo-barco"
+        ],
+        "phrases": [
+          "Executivo japonês sequestrado decide abandonar sua vida corporativa e se juntar a mercenários armados no sudeste asiático.",
+          "Tiroteios frenéticos em bares decadentes e perseguições velozes em lanchas torpedeiras."
+        ]
+      },
+      {
+        "name": "Baki the Grappler",
+        "sub": "shonen",
+        "word": "músculos-demônio",
+        "phrase": "Lutadores com anatomias hipertrofiadas bizarras que disputam torneios mortais sem luvas no subsolo de Tóquio.",
+        "words": [
+          "músculos-demônio",
+          "ogro-yujiro",
+          "arena-subterrânea",
+          "treino-extremo"
+        ],
+        "phrases": [
+          "Lutadores com anatomias hipertrofiadas bizarras que disputam torneios mortais sem luvas no subsolo de Tóquio.",
+          "O filho que busca superar o ser vivo mais forte do planeta com golpes que desafiam toda a biologia."
+        ]
+      },
+      {
+        "name": "Record of Ragnarok (Shuumatsu no Valkyrie)",
+        "sub": "shonen",
+        "word": "deuses-vs-humanos",
+        "phrase": "Os maiores heróis da história humana como generais e inventores enfrentam divindades em duelos até a morte pela sobrevivência da Terra.",
+        "words": [
+          "deuses-vs-humanos",
+          "valquírias-volund",
+          "treze-batalhas",
+          "arena-sagrada"
+        ],
+        "phrases": [
+          "Os maiores heróis da história humana como generais e inventores enfrentam divindades em duelos até a morte pela sobrevivência da Terra.",
+          "Armas humanas reforçadas pela alma de valquírias cortando deuses em combates dramáticos."
+        ]
+      },
+      {
+        "name": "Os Jovens Titãs em Ação!",
+        "sub": "modernos",
+        "word": "waffles-canção",
+        "phrase": "Versão cômica e paródica dos heróis adolescentes vivendo situações absurdas na torre sem levar nada a sério.",
+        "words": [
+          "waffles-canção",
+          "pernas-bebê",
+          "comédia-nonsense",
+          "robin-neurótico"
+        ],
+        "phrases": [
+          "Versão cômica e paródica dos heróis adolescentes vivendo situações absurdas na torre sem levar nada a sério.",
+          "Músicas malucas sobre comidas, danças ridículas e o líder do grupo surtando por qualquer motivo banal."
+        ]
+      },
+      {
+        "name": "Star Wars: The Clone Wars (Animação)",
+        "sub": "modernos",
+        "word": "soldados-clones",
+        "phrase": "A épica guerra galáctica explorando a irmandade entre soldados clonados e o amadurecimento da jovem padawan.",
+        "words": [
+          "soldados-clones",
+          "ahsoka-tano",
+          "duelo-sabres",
+          "capacetes-fase"
+        ],
+        "phrases": [
+          "A épica guerra galáctica explorando a irmandade entre soldados clonados e o amadurecimento da jovem padawan.",
+          "Batalhas com esquadrões de elite e naves de combate sob o comando de generais jedi."
+        ]
+      },
+      {
+        "name": "O Incrível Mundo de Gumball (Mais Aventuras)",
+        "sub": "modernos",
+        "word": "anís-irmã-gênio",
+        "phrase": "Mais confusões no subúrbio de Elmore com uma coelha genial de quatro anos e um pai que evita qualquer trabalho.",
+        "words": [
+          "anís-irmã-gênio",
+          "mãe-fúria",
+          "pai-preguiçoso",
+          "escola-caos"
+        ],
+        "phrases": [
+          "Mais confusões no subúrbio de Elmore com uma coelha genial de quatro anos e um pai que evita qualquer trabalho.",
+          "Paródias geniais de filmes de ação, animes japoneses e RPGs clássicos dentro de um desenho escolar."
+        ]
+      },
+      {
+        "name": "Invencível (Animação)",
+        "sub": "modernos",
+        "word": "marca-amarela",
+        "phrase": "Jovem filho do herói mais poderoso do planeta descobre a verdade aterradora sobre a missão colonial de sua raça extraterrestre.",
+        "words": [
+          "marca-amarela",
+          "viltrumita-pai",
+          "metrô-massacre",
+          "sangue-heróis"
+        ],
+        "phrases": [
+          "Jovem filho do herói mais poderoso do planeta descobre a verdade aterradora sobre a missão colonial de sua raça extraterrestre.",
+          "Combates brutais com sangue e ossos partidos onde cada vitória exige sacrifício corporal extremo."
+        ]
+      },
+      {
+        "name": "Castlevania: Nocturne",
+        "sub": "modernos",
+        "word": "revolução-francesa",
+        "phrase": "A descendência dos caçadores de vampiros lutando nas sombras da Revolução Francesa contra uma aristocracia sanguinária.",
+        "words": [
+          "revolução-francesa",
+          "richter-belmont",
+          "messias-vampiro",
+          "magia-chicote"
+        ],
+        "phrases": [
+          "A descendência dos caçadores de vampiros lutando nas sombras da Revolução Francesa contra uma aristocracia sanguinária.",
+          "O chicote estala nas noites de Paris com feitiços arcanos e a chegada de velhos aliados imortais."
+        ]
       }
     ]
   },
@@ -18756,6 +36111,1638 @@ const THEME_DATABASE = {
         ],
         "word": "esferas",
         "phrase": "Lançamento de bolas pesadas tentando encostar na pequena bolinha guia."
+      },
+      {
+        "name": "Futebol de Campo",
+        "sub": "coletivos",
+        "word": "chuteira",
+        "phrase": "Onze atletas de cada lado disputam a posse da redonda sobre grama natural buscando estufar a rede adversária.",
+        "words": [
+          "chuteira",
+          "trave",
+          "impedimento",
+          "onze-jogadores"
+        ],
+        "phrases": [
+          "Onze atletas de cada lado disputam a posse da redonda sobre grama natural buscando estufar a rede adversária.",
+          "O esporte mais popular do planeta com cobranças de pênalti sob pressão e bandeirinhas de impedimento."
+        ]
+      },
+      {
+        "name": "Basquetebol",
+        "sub": "coletivos",
+        "word": "tabela",
+        "phrase": "Cinco jogadores ágeis quicam a bola laranja no piso de madeira e arremessam em um aro suspenso a mais de três metros.",
+        "words": [
+          "tabela",
+          "cesta-alto",
+          "drible-quique",
+          "três-pontos"
+        ],
+        "phrases": [
+          "Cinco jogadores ágeis quicam a bola laranja no piso de madeira e arremessam em um aro suspenso a mais de três metros.",
+          "Arremessos de longa distância no estouro do cronômetro de vinte e quatro segundos e enterradas acrobáticas."
+        ]
+      },
+      {
+        "name": "Voleibol de Quadra",
+        "sub": "coletivos",
+        "word": "manchete",
+        "phrase": "Duas equipes de seis atletas tocam a bola até três vezes sem deixá-la tocar o chão de seu lado da quadra.",
+        "words": [
+          "manchete",
+          "saque-viagem",
+          "bloqueio-rede",
+          "levantamento"
+        ],
+        "phrases": [
+          "Duas equipes de seis atletas tocam a bola até três vezes sem deixá-la tocar o chão de seu lado da quadra.",
+          "Ataques velozes cortando rente à fita superior da rede contra paredões duplos de bloqueio."
+        ]
+      },
+      {
+        "name": "Futsal / Futebol de Salão",
+        "sub": "coletivos",
+        "word": "tênis-liso",
+        "phrase": "Futebol dinâmico em quadra fechada com bola pesada que quase não quica e giros de pivô rápidos.",
+        "words": [
+          "tênis-liso",
+          "bola-pesada",
+          "cinco-jogadores",
+          "piso-madeira"
+        ],
+        "phrases": [
+          "Futebol dinâmico em quadra fechada com bola pesada que quase não quica e giros de pivô rápidos.",
+          "Dribles curtos de sola de tênis e tabelas fulminantes em espaços reduzidos com goleiro linha."
+        ]
+      },
+      {
+        "name": "Cricket",
+        "sub": "coletivos",
+        "word": "taco-chato",
+        "phrase": "Esporte tradicional britânico com partidas que podem durar dias onde arremessadores tentam derrubar estacas de madeira.",
+        "words": [
+          "taco-chato",
+          "wickets",
+          "lançador-quique",
+          "camisa-branca"
+        ],
+        "phrases": [
+          "Esporte tradicional britânico com partidas que podem durar dias onde arremessadores tentam derrubar estacas de madeira.",
+          "Batedores com tacos planos rebatem a bola dura correndo entre faixas centrais do gramado oval."
+        ]
+      },
+      {
+        "name": "Futebol de Areia (Beach Soccer)",
+        "sub": "coletivos",
+        "word": "bicicleta",
+        "phrase": "Futebol jogado na areia litorânea onde a bola é mantida no alto para permitir voleios e bicicletas espetaculares.",
+        "words": [
+          "bicicleta",
+          "areia",
+          "gol-curto",
+          "bola-ar"
+        ],
+        "phrases": [
+          "Futebol jogado na areia litorânea onde a bola é mantida no alto para permitir voleios e bicicletas espetaculares.",
+          "Exige preparo físico extremo das pernas para arrancar sobre terreno fofo e fuzilar o gol."
+        ]
+      },
+      {
+        "name": "Hóquei sobre a Grama",
+        "sub": "coletivos",
+        "word": "taco-gancho",
+        "phrase": "Onze atletas conduzem uma pequena bola rígida usando o lado plano de tacos com extremidade curvada.",
+        "words": [
+          "taco-gancho",
+          "bola-dura",
+          "curva-chão",
+          "protetor-canela"
+        ],
+        "phrases": [
+          "Onze atletas conduzem uma pequena bola rígida usando o lado plano de tacos com extremidade curvada.",
+          "Jogadas rápidas rasteiras exigindo postura curvada e grande controle manual da bola no gramado sintético."
+        ]
+      },
+      {
+        "name": "Remo Quatro Sem / Oito",
+        "sub": "coletivos",
+        "word": "timoneiro",
+        "phrase": "Atletas sentados de costas para a linha de chegada puxam remos longos em sincronia milimétrica sobre a água.",
+        "words": [
+          "timoneiro",
+          "remos-longos",
+          "barco-esguio",
+          "sincronia-pura"
+        ],
+        "phrases": [
+          "Atletas sentados de costas para a linha de chegada puxam remos longos em sincronia milimétrica sobre a água.",
+          "O timoneiro na proa dita o ritmo das remadas e corrige o curso do barco estreito até o limite da exaustão."
+        ]
+      },
+      {
+        "name": "Ultimate Frisbee",
+        "sub": "coletivos",
+        "word": "disco-plástico",
+        "phrase": "Equipes avançam pelo campo lançando um disco voador de mão em mão até pegá-lo dentro da área final.",
+        "words": [
+          "disco-plástico",
+          "sem-contato",
+          "auto-arbitragem",
+          "zona-gol"
+        ],
+        "phrases": [
+          "Equipes avançam pelo campo lançando um disco voador de mão em mão até pegá-lo dentro da área final.",
+          "Esporte coletivo único sem árbitros em campo baseado no espírito de jogo e na honestidade entre adversários."
+        ]
+      },
+      {
+        "name": "Futebol Australiano",
+        "sub": "coletivos",
+        "word": "campo-gigante-oval",
+        "phrase": "Dezoito atletas correm por um gramado oval colossal chutando e esmurrando a bola entre quatro traves verticais.",
+        "words": [
+          "campo-gigante-oval",
+          "chute-pontos",
+          "saltos-ombros",
+          "sem-impedimento"
+        ],
+        "phrases": [
+          "Dezoito atletas correm por um gramado oval colossal chutando e esmurrando a bola entre quatro traves verticais.",
+          "Saltos incríveis apoiando os pés sobre os ombros de oponentes no ar para agarrar a bola no alto."
+        ]
+      },
+      {
+        "name": "Lacrosse",
+        "sub": "coletivos",
+        "word": "bastão-rede",
+        "phrase": "Atletas correm carregando e arremessando uma pequena bola dura usando uma cesta de rede na ponta do bastão.",
+        "words": [
+          "bastão-rede",
+          "bolinha-borracha",
+          "capacete",
+          "tiro-rápido"
+        ],
+        "phrases": [
+          "Atletas correm carregando e arremessando uma pequena bola dura usando uma cesta de rede na ponta do bastão.",
+          "Esporte veloz e físico de origem indígena norte-americana disputado com capacetes de proteção com grade."
+        ]
+      },
+      {
+        "name": "Canoagem Quádrupla (K4)",
+        "sub": "coletivos",
+        "word": "caiaque-quatro",
+        "phrase": "Quatro remadores sentados em fila dentro de um caiaque estreito cravam pás duplas com força explosiva.",
+        "words": [
+          "caiaque-quatro",
+          "remo-duas-pás",
+          "raias-lago",
+          "sincronia-braço"
+        ],
+        "phrases": [
+          "Quatro remadores sentados em fila dentro de um caiaque estreito cravam pás duplas com força explosiva.",
+          "Velocidade impressionante em linha reta cruzando raias aquáticas de lagos e canais olímpicos."
+        ]
+      },
+      {
+        "name": "Pólo Equestre",
+        "sub": "coletivos",
+        "word": "cavalos-galope",
+        "phrase": "Cavaleiros empunham tacos compridos de madeira tentando acertar uma pequena bola a pleno galope pelo gramado.",
+        "words": [
+          "cavalos-galope",
+          "taco-longo",
+          "bola-madeira",
+          "campo-grama"
+        ],
+        "phrases": [
+          "Cavaleiros empunham tacos compridos de madeira tentando acertar uma pequena bola a pleno galope pelo gramado.",
+          "Esporte tradicional nobre exigindo sintonia perfeita entre a agilidade do animal e a pontaria do cavaleiro."
+        ]
+      },
+      {
+        "name": "Softbol",
+        "sub": "coletivos",
+        "word": "bola-maior",
+        "phrase": "Semelhante ao beisebol mas disputado em campo mais compacto com uma bola maior arremessada por baixo.",
+        "words": [
+          "bola-maior",
+          "arremesso-por-baixo",
+          "campo-menor",
+          "taco"
+        ],
+        "phrases": [
+          "Semelhante ao beisebol mas disputado em campo mais compacto com uma bola maior arremessada por baixo.",
+          "Requer reações ultrarrápidas de batedoras devido à proximidade da placa de arremesso."
+        ]
+      },
+      {
+        "name": "Futebol de Cinco (Cegos)",
+        "sub": "coletivos",
+        "word": "bola-chocalho",
+        "phrase": "Atletas com deficiência visual jogam com vendas nos olhos guiando-se pelo som de guizos dentro da bola.",
+        "words": [
+          "bola-chocalho",
+          "olhos-vendados",
+          "silêncio-torcida",
+          "guia-atrás-gol"
+        ],
+        "phrases": [
+          "Atletas com deficiência visual jogam com vendas nos olhos guiando-se pelo som de guizos dentro da bola.",
+          "A torcida permanece em silêncio absoluto para que os jogadores possam ouvir instruções e a aproximação do rival."
+        ]
+      },
+      {
+        "name": "Basquete em Cadeira de Rodas",
+        "sub": "coletivos",
+        "word": "rodas-inclinadas",
+        "phrase": "Atletas paralímpicos pilotam cadeiras de rodas esportivas com rodas em ângulo disputando a posse de bola no garrafão.",
+        "words": [
+          "rodas-inclinadas",
+          "giros-rápidos",
+          "tabela",
+          "arremesso-sentado"
+        ],
+        "phrases": [
+          "Atletas paralímpicos pilotam cadeiras de rodas esportivas com rodas em ângulo disputando a posse de bola no garrafão.",
+          "Impulsionam as rodas com as mãos e freiam com precisão para soltar arremessos perfeitos na cesta padrão."
+        ]
+      },
+      {
+        "name": "Sepak Takraw",
+        "sub": "coletivos",
+        "word": "bola-vime",
+        "phrase": "Vôlei com os pés jogado no sudeste asiático onde atletas dão mortais no ar para cortar uma bola de vime sobre a rede.",
+        "words": [
+          "bola-vime",
+          "bicicleta-rede",
+          "pés-cabeça",
+          "acrobacia-asiática"
+        ],
+        "phrases": [
+          "Vôlei com os pés jogado no sudeste asiático onde atletas dão mortais no ar para cortar uma bola de vime sobre a rede.",
+          "Flexibilidade inacreditável com chutes acrobáticos acima da cabeça sem nunca usar as mãos ou braços."
+        ]
+      },
+      {
+        "name": "Boliche por Equipes",
+        "sub": "coletivos",
+        "word": "pistas-enceradas",
+        "phrase": "Jogadores arremessam bolas pesadas de três furos ao longo de pistas de madeira oleada para derrubar dez pinos brancos.",
+        "words": [
+          "pistas-enceradas",
+          "dez-pinos",
+          "strike",
+          "sapato-especial"
+        ],
+        "phrases": [
+          "Jogadores arremessam bolas pesadas de três furos ao longo de pistas de madeira oleada para derrubar dez pinos brancos.",
+          "Celebrações de strikes perfeitos em sequência e controle apurado de efeito giratório da bola curva."
+        ]
+      },
+      {
+        "name": "Goooolball",
+        "sub": "coletivos",
+        "word": "guizos-bola",
+        "phrase": "Esporte paralímpico para atletas com deficiência visual que se lançam no chão para defender arremessos com guizos.",
+        "words": [
+          "guizos-bola",
+          "defesa-chão",
+          "vendas-olhos",
+          "arremesso-rasteiro"
+        ],
+        "phrases": [
+          "Esporte paralímpico para atletas com deficiência visual que se lançam no chão para defender arremessos com guizos.",
+          "Disputado em piso tátil em silêncio de auditório com defesas em bloco corporal estendido."
+        ]
+      },
+      {
+        "name": "Nado Artístico / Sincronizado",
+        "sub": "coletivos",
+        "word": "clipe-nariz",
+        "phrase": "Nadadoras realizam figuras e piruetas acrobáticas com as pernas fora da água em perfeita sincronia musical.",
+        "words": [
+          "clipe-nariz",
+          "gelatina-cabelo",
+          "pernas-fora-água",
+          "música-submarina"
+        ],
+        "phrases": [
+          "Nadadoras realizam figuras e piruetas acrobáticas com as pernas fora da água em perfeita sincronia musical.",
+          "Usam prendedores nasais e gelatina incolor para manter o cabelo impecável durante acrobacias no ar."
+        ]
+      },
+      {
+        "name": "Boxe Profissional",
+        "sub": "lutas",
+        "word": "luvas-couro",
+        "phrase": "Nobre arte de golpear apenas com os punhos fechados esquivando e contra-atacando dentro de um tablado quadrado.",
+        "words": [
+          "luvas-couro",
+          "cordas-ringue",
+          "jab-direto",
+          "nocaute"
+        ],
+        "phrases": [
+          "Nobre arte de golpear apenas com os punhos fechados esquivando e contra-atacando dentro de um tablado quadrado.",
+          "Doze rounds extenuantes de socos diretos e cruzados sob os olhares atentos de um árbitro no ringue."
+        ]
+      },
+      {
+        "name": "Muay Thai (Boxe Tailandês)",
+        "sub": "lutas",
+        "word": "oito-armas",
+        "phrase": "A arte das oito armas combinando socos, chutes com a tíbia, joelhadas voadoras e cotoveladas afiadas.",
+        "words": [
+          "oito-armas",
+          "canelada-costela",
+          "cotovelada",
+          "clinch"
+        ],
+        "phrases": [
+          "A arte das oito armas combinando socos, chutes com a tíbia, joelhadas voadoras e cotoveladas afiadas.",
+          "Lutadores com cordas no braço e testeira sagrada duelando ao som de flautas tradicionais tailandesas."
+        ]
+      },
+      {
+        "name": "Caratê (Karate-do)",
+        "sub": "lutas",
+        "word": "kata-formas",
+        "phrase": "Caminho das mãos vazias com golpes retos secos, defesas firmes e gritos energéticos de foco mental.",
+        "words": [
+          "kata-formas",
+          "mão-aberta",
+          "faixa-preta",
+          "kiai-grito"
+        ],
+        "phrases": [
+          "Caminho das mãos vazias com golpes retos secos, defesas firmes e gritos energéticos de foco mental.",
+          "Apresentação de katas tradicionais simulando combates imaginários com postura impecável."
+        ]
+      },
+      {
+        "name": "MMA (Artes Marciais Mistas)",
+        "sub": "lutas",
+        "word": "octógono-grade",
+        "phrase": "Combate irrestrito dentro de uma jaula de oito lados mesclando boxe, muay thai, wrestling e jiu-jitsu.",
+        "words": [
+          "octógono-grade",
+          "luvinhas-dedos",
+          "trocação-chão",
+          "cinturão"
+        ],
+        "phrases": [
+          "Combate irrestrito dentro de uma jaula de oito lados mesclando boxe, muay thai, wrestling e jiu-jitsu.",
+          "Disputa pelo cinturão dourado onde a luta transita de socos em pé até chaves no chão da lona."
+        ]
+      },
+      {
+        "name": "Luta Olímpica / Wrestling",
+        "sub": "lutas",
+        "word": "macaquinho-malha",
+        "phrase": "Combate corpo a corpo buscando derrubar o adversário e fixar suas duas escápulas no chão do tatame.",
+        "words": [
+          "macaquinho-malha",
+          "queda-dupla",
+          "costas-chão",
+          "círculo-tatame"
+        ],
+        "phrases": [
+          "Combate corpo a corpo buscando derrubar o adversário e fixar suas duas escápulas no chão do tatame.",
+          "Projeções explosivas e pegadas nas pernas com força de tronco vestindo trajes justos de elastano."
+        ]
+      },
+      {
+        "name": "Esgrima (Espada / Florete)",
+        "sub": "lutas",
+        "word": "máscara-grade",
+        "phrase": "Duelo com armas brancas flexíveis onde sensores elétricos acendem luzes quando uma ponta atinge a jaqueta do rival.",
+        "words": [
+          "máscara-grade",
+          "pista-estreita",
+          "toque-elétrico",
+          "lâmina-flexível"
+        ],
+        "phrases": [
+          "Duelo com armas brancas flexíveis onde sensores elétricos acendem luzes quando uma ponta atinge a jaqueta do rival.",
+          "Movimentos velozes de avançar e recuar em uma passarela de metal com passos milimétricos."
+        ]
+      },
+      {
+        "name": "Kickboxing",
+        "sub": "lutas",
+        "word": "chute-baixo",
+        "phrase": "Fusão de golpes de punho do boxe com chutes fortes de artes marciais em combates de contato pleno no ringue.",
+        "words": [
+          "chute-baixo",
+          "combinações-socos",
+          "ringue",
+          "calça-cetim"
+        ],
+        "phrases": [
+          "Fusão de golpes de punho do boxe com chutes fortes de artes marciais em combates de contato pleno no ringue.",
+          "Combinações rápidas de jab, cruzado e chute baixo na coxa para minar o equilíbrio do oponente."
+        ]
+      },
+      {
+        "name": "Krav Magá",
+        "sub": "lutas",
+        "word": "defesa-pessoal",
+        "phrase": "Sistema de combate e defesa pessoal israelense focado na neutralização imediata de ameaças reais na rua.",
+        "words": [
+          "defesa-pessoal",
+          "ataque-olhos",
+          "desarme-faca",
+          "sobrevivência"
+        ],
+        "phrases": [
+          "Sistema de combate e defesa pessoal israelense focado na neutralização imediata de ameaças reais na rua.",
+          "Técnicas diretas sem regras esportivas atacando pontos vitais e desarmando agressores com facas ou armas."
+        ]
+      },
+      {
+        "name": "Kung Fu Shaolin",
+        "sub": "lutas",
+        "word": "formas-animais",
+        "phrase": "Milenar arte marcial chinesa inspirada nos movimentos de animais como tigre, garça, serpente e louva-a-deus.",
+        "words": [
+          "formas-animais",
+          "bastão-madeira",
+          "monge-laranja",
+          "flexibilidade"
+        ],
+        "phrases": [
+          "Milenar arte marcial chinesa inspirada nos movimentos de animais como tigre, garça, serpente e louva-a-deus.",
+          "Praticantes treinam equilíbrio em estacas de madeira e quebram barras de ferro com a força da mente."
+        ]
+      },
+      {
+        "name": "Sambo Russo",
+        "sub": "lutas",
+        "word": "jaqueta-kurtka",
+        "phrase": "Arte marcial desenvolvida para forças armadas soviéticas combinando quedas de judô com chaves de perna brutais.",
+        "words": [
+          "jaqueta-kurtka",
+          "chave-calcanhar",
+          "botas-luta",
+          "quedas-pesadas"
+        ],
+        "phrases": [
+          "Arte marcial desenvolvida para forças armadas soviéticas combinando quedas de judô com chaves de perna brutais.",
+          "Praticantes usam jaqueta vermelha ou azul com ombreiras grossas e sapatilhas de couro macio."
+        ]
+      },
+      {
+        "name": "Aikidô",
+        "sub": "lutas",
+        "word": "torção-pulso",
+        "phrase": "Arte marcial defensiva que neutraliza agressões redirecionando a força do golpe com movimentos circulares harmoniosos.",
+        "words": [
+          "torção-pulso",
+          "desvio-energia",
+          "hakama-preto",
+          "sem-ataque"
+        ],
+        "phrases": [
+          "Arte marcial defensiva que neutraliza agressões redirecionando a força do golpe com movimentos circulares harmoniosos.",
+          "Usa torções sutis de punho e projeções circulares vestindo calças largas tradicionais plissadas."
+        ]
+      },
+      {
+        "name": "Haidong Gumdo (Espada Coreana)",
+        "sub": "lutas",
+        "word": "espada-bambu",
+        "phrase": "Arte marcial focada no manejo de espadas cortando alvos móveis e apagando chamas de velas com o vento da lâmina.",
+        "words": [
+          "espada-bambu",
+          "corte-papel",
+          "apagar-velas",
+          "lâmina"
+        ],
+        "phrases": [
+          "Arte marcial focada no manejo de espadas cortando alvos móveis e apagando chamas de velas com o vento da lâmina.",
+          "Treinamentos tradicionais com katanas orientais executando múltiplos cortes precisos no ar."
+        ]
+      },
+      {
+        "name": "Luta Greco-Romana",
+        "sub": "lutas",
+        "word": "só-cintura-cima",
+        "phrase": "Estilo olímpico clássico onde é estritamente proibido segurar o adversário abaixo da linha da cintura.",
+        "words": [
+          "só-cintura-cima",
+          "ponte-pescoço",
+          "projeção-costas",
+          "sem-pernas"
+        ],
+        "phrases": [
+          "Estilo olímpico clássico onde é estritamente proibido segurar o adversário abaixo da linha da cintura.",
+          "Lutadores usam a força do peito e braços para erguer o rival do chão e jogá-lo em arco por cima dos ombros."
+        ]
+      },
+      {
+        "name": "Savate (Boxe Francês)",
+        "sub": "lutas",
+        "word": "sapatos-bota",
+        "phrase": "Estilo europeu elegante de combate onde chutes são desferidos exclusivamente usando calçados de sola rígida.",
+        "words": [
+          "sapatos-bota",
+          "chute-bico",
+          "luvas-boxe",
+          "elegância"
+        ],
+        "phrases": [
+          "Estilo europeu elegante de combate onde chutes são desferidos exclusivamente usando calçados de sola rígida.",
+          "Combina golpes de punho precisos com chutes mirados no tronco e na cabeça com a ponta dos sapatos."
+        ]
+      },
+      {
+        "name": "Wushu Moderno",
+        "sub": "lutas",
+        "word": "lança-vermelha",
+        "phrase": "Versão esportiva e acrobática das artes chinesas com saltos giratórios e movimentos coreografados velozes.",
+        "words": [
+          "lança-vermelha",
+          "saltos-mortais",
+          "espada-reta",
+          "acrobacia-plataforma"
+        ],
+        "phrases": [
+          "Versão esportiva e acrobática das artes chinesas com saltos giratórios e movimentos coreografados velozes.",
+          "Exibições com lâminas flexíveis que estalam no ar e lanças com tufos vermelhos de crina de cavalo."
+        ]
+      },
+      {
+        "name": "Kendo",
+        "sub": "lutas",
+        "word": "espada-bambu-shinai",
+        "phrase": "O caminho da espada samurai praticado com réplicas de bambu e pesadas armaduras acolchoadas pretas.",
+        "words": [
+          "espada-bambu-shinai",
+          "armadura-bogú",
+          "grito-men",
+          "máscara-ferro"
+        ],
+        "phrases": [
+          "O caminho da espada samurai praticado com réplicas de bambu e pesadas armaduras acolchoadas pretas.",
+          "Golpeadores desferem pancadas na cabeça e pulsos berrando o nome do alvo atingido com os dois pés no piso."
+        ]
+      },
+      {
+        "name": "Bōjutsu (Luta com Bastão)",
+        "sub": "lutas",
+        "word": "bastão-longo",
+        "phrase": "Técnica marcial tradicional focada no domínio de um bastão de madeira com cerca de um metro e oitenta de comprimento.",
+        "words": [
+          "bastão-longo",
+          "giro-madeira",
+          "alcance",
+          "estocada"
+        ],
+        "phrases": [
+          "Técnica marcial tradicional focada no domínio de um bastão de madeira com cerca de um metro e oitenta de comprimento.",
+          "Gira a vara de ponta a ponta criando uma barreira impenetrável contra múltiplos oponentes armados."
+        ]
+      },
+      {
+        "name": "Hapkido",
+        "sub": "lutas",
+        "word": "chutes-altos",
+        "phrase": "Arte marcial coreana completa que une chutes acrobáticos a curta e longa distância com dolorosas torções articulares.",
+        "words": [
+          "chutes-altos",
+          "torções-dedos",
+          "pontos-pressão",
+          "coreia"
+        ],
+        "phrases": [
+          "Arte marcial coreana completa que une chutes acrobáticos a curta e longa distância com dolorosas torções articulares.",
+          "Especialista em controlar o oponente pressionando terminações nervosas e aplicando alavancas no punho."
+        ]
+      },
+      {
+        "name": "Wing Chun",
+        "sub": "lutas",
+        "word": "boneco-madeira",
+        "phrase": "Estilo de kung fu especializado em combate a curtíssima distância com saraivadas contínuas de socos verticais rápidos.",
+        "words": [
+          "boneco-madeira",
+          "socos-em-cadeia",
+          "linha-central",
+          "mãos-pegajosas"
+        ],
+        "phrases": [
+          "Estilo de kung fu especializado em combate a curtíssima distância com saraivadas contínuas de socos verticais rápidos.",
+          "Treina sensibilidade tátil com o exercício de mãos coladas e golpes em um boneco de madeira com três braços."
+        ]
+      },
+      {
+        "name": "Lethwei (Boxe Birmanês)",
+        "sub": "lutas",
+        "word": "cabeçadas",
+        "phrase": "A mais brutal arte de trocação do mundo onde cabeçadas são permitidas e lutadores usam apenas gazes nas mãos.",
+        "words": [
+          "cabeçadas",
+          "sem-luvas-ataduras",
+          "sangue-cru",
+          "extremo"
+        ],
+        "phrases": [
+          "A mais brutal arte de trocação do mundo onde cabeçadas são permitidas e lutadores usam apenas gazes nas mãos.",
+          "Combate sem luvas acolchoadas onde a luta só termina por nocaute real com atletas retornando após desmaios."
+        ]
+      },
+      {
+        "name": "Kyokushin Karate",
+        "sub": "lutas",
+        "word": "contato-total",
+        "phrase": "Estilo de caratê de contato total onde socos e chutes são desferidos com força máxima sem luvas no peito do adversário.",
+        "words": [
+          "contato-total",
+          "sem-proteção",
+          "chute-canela",
+          "quebra-gelo"
+        ],
+        "phrases": [
+          "Estilo de caratê de contato total onde socos e chutes são desferidos com força máxima sem luvas no peito do adversário.",
+          "Treinamentos rigorosos de resistência física com quebra de tábuas grossas e blocos maciços de gelo."
+        ]
+      },
+      {
+        "name": "Silat",
+        "sub": "lutas",
+        "word": "sudeste-asiático",
+        "phrase": "Arte marcial tradicional da Indonésia e Malásia com posturas baixas e golpes com lâminas curvas em formato de garra.",
+        "words": [
+          "sudeste-asiático",
+          "faca-karambit",
+          "rasteiras-chão",
+          "movimentos-felinos"
+        ],
+        "phrases": [
+          "Arte marcial tradicional da Indonésia e Malásia com posturas baixas e golpes com lâminas curvas em formato de garra.",
+          "Movimentação fluida e rasteira que ataca juntas e tendões com eficácia letal em combates de selva."
+        ]
+      },
+      {
+        "name": "Luta Livre Esportiva Brasileira",
+        "sub": "lutas",
+        "word": "sem-quimono-nogi",
+        "phrase": "Estilo de luta agarrada brasileiro praticado exclusivamente de bermuda sem quimono focado em finalizações rápidas.",
+        "words": [
+          "sem-quimono-nogi",
+          "chaves-tornozelo",
+          "derrubada",
+          "submissão"
+        ],
+        "phrases": [
+          "Estilo de luta agarrada brasileiro praticado exclusivamente de bermuda sem quimono focado em finalizações rápidas.",
+          "Histórica rival do jiu-jitsu tradicional famosa pelo domínio de chaves de perna e pé."
+        ]
+      },
+      {
+        "name": "Skateboarding (Street e Park)",
+        "sub": "radicais",
+        "word": "shape-lixa",
+        "phrase": "Atletas equilibram-se sobre uma prancha de madeira com lixa saltando escadarias e deslizando sobre canos de ferro.",
+        "words": [
+          "shape-lixa",
+          "trucks-rodinhas",
+          "corrimão-ollie",
+          "halfpipe"
+        ],
+        "phrases": [
+          "Atletas equilibram-se sobre uma prancha de madeira com lixa saltando escadarias e deslizando sobre canos de ferro.",
+          "Manobras aéreas girando a prancha no ar e aterrissando com os pés cravados sobre os parafusos da base."
+        ]
+      },
+      {
+        "name": "Surfe de Ondas Grandes",
+        "sub": "radicais",
+        "word": "pranchão-tow-in",
+        "phrase": "Corajosos surfistas são rebocados por motos aquáticas para descer muralhas líquidas de mais de vinte metros de altura.",
+        "words": [
+          "pranchão-tow-in",
+          "onda-nazare",
+          "jet-ski-resgate",
+          "colete-inflável"
+        ],
+        "phrases": [
+          "Corajosos surfistas são rebocados por motos aquáticas para descer muralhas líquidas de mais de vinte metros de altura.",
+          "Despencam em paredões colossais onde um tombo significa ser prensado por toneladas de água marinha."
+        ]
+      },
+      {
+        "name": "Paraquedismo / Skydiving",
+        "sub": "radicais",
+        "word": "queda-livre",
+        "phrase": "Salto de uma aeronave a milhares de metros do solo experimentando um minuto de pura aceleração em queda livre.",
+        "words": [
+          "queda-livre",
+          "salto-avião",
+          "altímetro",
+          "velame-aberto"
+        ],
+        "phrases": [
+          "Salto de uma aeronave a milhares de metros do solo experimentando um minuto de pura aceleração em queda livre.",
+          "Puxa a corda do velame no momento exato e plana suavemente apreciando a paisagem panorâmica da Terra."
+        ]
+      },
+      {
+        "name": "Wingsuit (Voo com Roupa de Asa)",
+        "sub": "radicais",
+        "word": "homem-pássaro",
+        "phrase": "Voadores saltam do topo de montanhas íngremes usando trajes com asas de tecido entre os braços e as pernas.",
+        "words": [
+          "homem-pássaro",
+          "membranas-braços",
+          "voo-penhasco",
+          "velocidade-ar"
+        ],
+        "phrases": [
+          "Voadores saltam do topo de montanhas íngremes usando trajes com asas de tecido entre os braços e as pernas.",
+          "Planejam a mais de duzentos quilômetros por hora raspando encostas rochosas antes de abrir o paraquedas."
+        ]
+      },
+      {
+        "name": "BASE Jumping",
+        "sub": "radicais",
+        "word": "ponte-antena",
+        "phrase": "Saltos de paraquedas realizados de locais fixos baixos como pontes, prédios, penhascos e antenas de transmissão.",
+        "words": [
+          "ponte-antena",
+          "salto-baixo",
+          "paraquedas-único",
+          "adrenalina"
+        ],
+        "phrases": [
+          "Saltos de paraquedas realizados de locais fixos baixos como pontes, prédios, penhascos e antenas de transmissão.",
+          "Margem de erro mínima com tempo de reação de poucos segundos para a abertura da copa sem reserva."
+        ]
+      },
+      {
+        "name": "Escalada em Rocha (Bouldering)",
+        "sub": "radicais",
+        "word": "sapatilha-aderente",
+        "phrase": "Superação de paredes de pedra verticais e tetos rochosos usando apenas a ponta dos dedos e solados aderentes.",
+        "words": [
+          "sapatilha-aderente",
+          "magnésio-pó",
+          "agarras-pedra",
+          "colchão-chão"
+        ],
+        "phrases": [
+          "Superação de paredes de pedra verticais e tetos rochosos usando apenas a ponta dos dedos e solados aderentes.",
+          "Mãos esbranquiçadas pelo pó de magnésio buscando pequenas fendas na rocha sem cordas de segurança."
+        ]
+      },
+      {
+        "name": "Downhill de Bicicleta (MTB)",
+        "sub": "radicais",
+        "word": "trilha-pedras",
+        "phrase": "Ciclistas descem montanhas em alta velocidade por trilhas estreitas cheias de raízes, pedregulhos e saltos no vazio.",
+        "words": [
+          "trilha-pedras",
+          "suspensão-dupla",
+          "capacete-fullface",
+          "descida-morro"
+        ],
+        "phrases": [
+          "Ciclistas descem montanhas em alta velocidade por trilhas estreitas cheias de raízes, pedregulhos e saltos no vazio.",
+          "Bicicletas reforçadas com amortecedores de curso longo absorvendo impactos brutais em florestas íngremes."
+        ]
+      },
+      {
+        "name": "BMX Freestyle",
+        "sub": "radicais",
+        "word": "pedaleiras-pegs",
+        "phrase": "Manobras acrobáticas em bicicletas pequenas de aro vinte girando o guidão e aterrissando em canos de ferro.",
+        "words": [
+          "pedaleiras-pegs",
+          "aro-vinte",
+          "giro-guidão",
+          "pista-madeira"
+        ],
+        "phrases": [
+          "Manobras acrobáticas em bicicletas pequenas de aro vinte girando o guidão e aterrissando em canos de ferro.",
+          "Saltos em caixas de madeira executando giros mortais para trás segurando os pedais com firmeza."
+        ]
+      },
+      {
+        "name": "Rafting em Corredeiras",
+        "sub": "radicais",
+        "word": "bote-inflável",
+        "phrase": "Equipe desce rios revoltos de montanha a bordo de um bote de borracha remando sincronizada contra vagalhões.",
+        "words": [
+          "bote-inflável",
+          "remo-água-branca",
+          "colete-salva-vidas",
+          "turbulência"
+        ],
+        "phrases": [
+          "Equipe desce rios revoltos de montanha a bordo de um bote de borracha remando sincronizada contra vagalhões.",
+          "Gritam comandos para desviar de pedras afiadas em quedas d'água turbulentas cheias de espuma branca."
+        ]
+      },
+      {
+        "name": "Kitesurfe",
+        "sub": "radicais",
+        "word": "pipa-vento",
+        "phrase": "Surfista conduzido sobre as ondas puxado pela força de uma grande pipa aerodinâmica conectada por longas linhas.",
+        "words": [
+          "pipa-vento",
+          "barra-linhas",
+          "prancha-alças",
+          "voo-água"
+        ],
+        "phrases": [
+          "Surfista conduzido sobre as ondas puxado pela força de uma grande pipa aerodinâmica conectada por longas linhas.",
+          "Aproveita rajadas de vento para decolar a metros acima do mar executando manobras suspensas no ar."
+        ]
+      },
+      {
+        "name": "Windsurfe",
+        "sub": "radicais",
+        "word": "vela-mastro",
+        "phrase": "Navegação veloz equilibrando-se sobre uma prancha com mastro articulado segurando a vela com as duas mãos.",
+        "words": [
+          "vela-mastro",
+          "retranca",
+          "quilha",
+          "equilíbrio-mar"
+        ],
+        "phrases": [
+          "Navegação veloz equilibrando-se sobre uma prancha com mastro articulado segurando a vela com as duas mãos.",
+          "Planeia sobre cristas de ondas oceânicas aproveitando correntes de ar para atingir altas velocidades litorâneas."
+        ]
+      },
+      {
+        "name": "Parkour (Free Running)",
+        "sub": "radicais",
+        "word": "muros-saltos",
+        "phrase": "Deslocamento eficiente pelo mobiliário urbano saltando muros, escadarias e vãos entre telhados sem equipamentos.",
+        "words": [
+          "muros-saltos",
+          "rolamento-chão",
+          "telhados",
+          "obstáculos-cidade"
+        ],
+        "phrases": [
+          "Deslocamento eficiente pelo mobiliário urbano saltando muros, escadarias e vãos entre telhados sem equipamentos.",
+          "Usa a física do próprio corpo para absorver quedas com rolamentos e transformar obstáculos em impulsão."
+        ]
+      },
+      {
+        "name": "Mergulho em Cavernas (Cave Diving)",
+        "sub": "radicais",
+        "word": "carretilha-guia",
+        "phrase": "Mergulhadores penetram galerias subaquáticas escuras e estreitas onde não é possível subir direto à superfície.",
+        "words": [
+          "carretilha-guia",
+          "cilindro-duplo",
+          "escuridão-submersa",
+          "teto-rocha"
+        ],
+        "phrases": [
+          "Mergulhadores penetram galerias subaquáticas escuras e estreitas onde não é possível subir direto à superfície.",
+          "Seguem uma linha guia esticada com lanternas potentes gerenciando com rigor absoluto o suprimento de ar dos tanques."
+        ]
+      },
+      {
+        "name": "Bungee Jumping",
+        "sub": "radicais",
+        "word": "corda-elástica",
+        "phrase": "Salto no vazio de plataformas de pontes e guindastes com os pés atados a um espesso cabo de borracha elástica.",
+        "words": [
+          "corda-elástica",
+          "tornozelos-presos",
+          "salto-ponte",
+          "efeito-ioiô"
+        ],
+        "phrases": [
+          "Salto no vazio de plataformas de pontes e guindastes com os pés atados a um espesso cabo de borracha elástica.",
+          "Despenca de cabeça em direção ao rio e experimenta ricochetes eletrizantes no ar antes de ser içado de volta."
+        ]
+      },
+      {
+        "name": "Sandboard",
+        "sub": "radicais",
+        "word": "dunas-areia",
+        "phrase": "Descida em alta velocidade pelas encostas íngremes de dunas de areia sobre uma prancha polida com parafina.",
+        "words": [
+          "dunas-areia",
+          "prancha-cera",
+          "descida-inclinada",
+          "deserto"
+        ],
+        "phrases": [
+          "Descida em alta velocidade pelas encostas íngremes de dunas de areia sobre uma prancha polida com parafina.",
+          "Manobras e saltos em cristas arenosas ensolaradas com poeira dourada levantando a cada curva fechada."
+        ]
+      },
+      {
+        "name": "Motocross / Supercross",
+        "sub": "radicais",
+        "word": "moto-lama",
+        "phrase": "Motos leves de dois tempos voam alto sobre sequências de rampas e curvas de terra batida cheias de barrotes.",
+        "words": [
+          "moto-lama",
+          "saltos-triplos",
+          "barulho-escape",
+          "costelas-pista"
+        ],
+        "phrases": [
+          "Motos leves de dois tempos voam alto sobre sequências de rampas e curvas de terra batida cheias de barrotes.",
+          "Pilotos duelam lado a lado em circuitos fechados com poeira subindo e capacetes com óculos de proteção."
+        ]
+      },
+      {
+        "name": "Slackline (Highline)",
+        "sub": "radicais",
+        "word": "fita-esticada",
+        "phrase": "Caminhada sobre uma estreita fita de náilon estendida entre dois penhascos a centenas de metros acima do solo.",
+        "words": [
+          "fita-esticada",
+          "abismo-altura",
+          "equilíbrio-pés",
+          "leash-segurança"
+        ],
+        "phrases": [
+          "Caminhada sobre uma estreita fita de náilon estendida entre dois penhascos a centenas de metros acima do solo.",
+          "Passos lentos e descalços desafiando o vento e a vertigem do abismo sob os pés com braços abertos."
+        ]
+      },
+      {
+        "name": "Wakeboard",
+        "sub": "radicais",
+        "word": "cabo-lancha",
+        "phrase": "Atleta com pés fixos em botas sobre uma prancha é rebocado por uma lancha veloz aproveitando o rastro de ondas.",
+        "words": [
+          "cabo-lancha",
+          "marola-salto",
+          "prancha-botas",
+          "puxado-água"
+        ],
+        "phrases": [
+          "Atleta com pés fixos em botas sobre uma prancha é rebocado por uma lancha veloz aproveitando o rastro de ondas.",
+          "Usa a marola como rampa de propulsão para decolar dando giros mortais de costas antes de tocar a água de novo."
+        ]
+      },
+      {
+        "name": "Alpinismo de Alta Montanha",
+        "sub": "radicais",
+        "word": "crampons-botas",
+        "phrase": "Escalada extrema em picos nevados acima de oito mil metros enfrentando tempestades de gelo e ar rarefeito.",
+        "words": [
+          "crampons-botas",
+          "piolet-machadinha",
+          "oxigênio-zona-morte",
+          "cordada-neve"
+        ],
+        "phrases": [
+          "Escalada extrema em picos nevados acima de oito mil metros enfrentando tempestades de gelo e ar rarefeito.",
+          "Usa grampões pontiagudos nos calçados e machadinhas de gelo para subir paredes congeladas verticais."
+        ]
+      },
+      {
+        "name": "Bodyboard",
+        "sub": "radicais",
+        "word": "prancha-curta-espuma",
+        "phrase": "Desliza deitado ou com um joelho apoiado sobre uma prancha flexível usando nadadeiras curtas para pegar velocidade.",
+        "words": [
+          "prancha-curta-espuma",
+          "pé-de-pato",
+          "tubo-onda",
+          "drop-joelho"
+        ],
+        "phrases": [
+          "Desliza deitado ou com um joelho apoiado sobre uma prancha flexível usando nadadeiras curtas para pegar velocidade.",
+          "Penetra nas partes mais cavadas e perigosas de ondas que quebram sobre bancadas rasas de corais afiados."
+        ]
+      },
+      {
+        "name": "Street Luge",
+        "sub": "radicais",
+        "word": "deitado-costas",
+        "phrase": "Descida de rodovias montanhosas em declive com o atleta deitado de costas a poucos centímetros do asfalto quente.",
+        "words": [
+          "deitado-costas",
+          "pranchão-asfalto",
+          "rodas-grandes",
+          "freio-tênis"
+        ],
+        "phrases": [
+          "Descida de rodovias montanhosas em declive com o atleta deitado de costas a poucos centímetros do asfalto quente.",
+          "Acelera a mais de cem quilômetros por hora usando solas de borracha reforçadas nos calçados para frear em curvas."
+        ]
+      },
+      {
+        "name": "Canyoning / Canionismo",
+        "sub": "radicais",
+        "word": "rapel-cachoeira",
+        "phrase": "Descida de desfiladeiros rochosos profundos alternando rapel sob cascatas d'água, natação e saltos em poços naturais.",
+        "words": [
+          "rapel-cachoeira",
+          "salto-poço",
+          "neoprene",
+          "desfiladeiro"
+        ],
+        "phrases": [
+          "Descida de desfiladeiros rochosos profundos alternando rapel sob cascatas d'água, natação e saltos em poços naturais.",
+          "Equipamento aquático completo com mosquetões e cordas especiais que resistem ao atrito da água em pedras."
+        ]
+      },
+      {
+        "name": "Zipline / Tirolesa Extrema",
+        "sub": "radicais",
+        "word": "cabo-aço",
+        "phrase": "Deslizamento em alta velocidade suspenso por uma roldana através de cabos de aço esticados entre montanhas.",
+        "words": [
+          "cabo-aço",
+          "roldana",
+          "vale-sobrevoo",
+          "vento-rosto"
+        ],
+        "phrases": [
+          "Deslizamento em alta velocidade suspenso por uma roldana através de cabos de aço esticados entre montanhas.",
+          "Sensação inesquecível de sobrevoar copas de florestas e desfiladeiros profundos preso a um arnês de segurança."
+        ]
+      },
+      {
+        "name": "Corrida de Aventura",
+        "sub": "radicais",
+        "word": "bússola-mapa",
+        "phrase": "Equipes multidisciplinares enfrentam centenas de quilômetros de mata cruzando rios, bikes e trilhas sem paradas.",
+        "words": [
+          "bússola-mapa",
+          "dias-ininterruptos",
+          "mato-fechado",
+          "cansaço-sono"
+        ],
+        "phrases": [
+          "Equipes multidisciplinares enfrentam centenas de quilômetros de mata cruzando rios, bikes e trilhas sem paradas.",
+          "Orientam-se exclusivamente por carta topográfica e bússola gerenciando poucas horas de sono sob estrelas."
+        ]
+      },
+      {
+        "name": "Free Diving (Mergulho Livre / Apneia)",
+        "sub": "radicais",
+        "word": "um-sopro-ar",
+        "phrase": "Descida às profundezas escuras do oceano com um único fôlego de ar sem nenhum equipamento de respiração.",
+        "words": [
+          "um-sopro-ar",
+          "mononadadeira",
+          "pressão-abismo",
+          "corda-fundo"
+        ],
+        "phrases": [
+          "Descida às profundezas escuras do oceano com um único fôlego de ar sem nenhum equipamento de respiração.",
+          "Desacelera os batimentos cardíacos para economizar oxigênio descendo a mais de cem metros ao lado de um cabo guia."
+        ]
+      },
+      {
+        "name": "Drift Automobilístico",
+        "sub": "radicais",
+        "word": "fumaça-pneus",
+        "phrase": "Pilotos deslizam carros potentes de lado em curvas fechadas queimando pneus intencionalmente em ângulos extremos.",
+        "words": [
+          "fumaça-pneus",
+          "derrapagem-curva",
+          "freio-mão",
+          "tração-traseira"
+        ],
+        "phrases": [
+          "Pilotos deslizam carros potentes de lado em curvas fechadas queimando pneus intencionalmente em ângulos extremos.",
+          "Controle absoluto de sobresterço com o volante esterçado na direção oposta ao movimento da traseira."
+        ]
+      },
+      {
+        "name": "Tiro com Arco (Arco e Flecha)",
+        "sub": "precisao",
+        "word": "mira-estabilizador",
+        "phrase": "Arqueiro retrai a corda do arco recurvo até encostar no queixo controlando a respiração antes do disparo.",
+        "words": [
+          "mira-estabilizador",
+          "alvo-dez-amarelo",
+          "dedeira",
+          "setenta-metros"
+        ],
+        "phrases": [
+          "Arqueiro retrai a corda do arco recurvo até encostar no queixo controlando a respiração antes do disparo.",
+          "A flecha voa a dezenas de metros para cravar no centro milimétrico amarelo de pontuação máxima."
+        ]
+      },
+      {
+        "name": "Sinuca / Bilhar / Snooker",
+        "sub": "precisao",
+        "word": "taco-giz",
+        "phrase": "Usa um longo taco de madeira de ponta de giz para golpear a bola branca e encaçapar esferas numeradas.",
+        "words": [
+          "taco-giz",
+          "tabela-feltro",
+          "bola-branca",
+          "caçapa"
+        ],
+        "phrases": [
+          "Usa um longo taco de madeira de ponta de giz para golpear a bola branca e encaçapar esferas numeradas.",
+          "Planejamento geométrico de ângulos nas tabelas de borracha e efeitos de rotação na bola para deixar a mesa pronta."
+        ]
+      },
+      {
+        "name": "Dardos de Precisão",
+        "sub": "precisao",
+        "word": "alvo-cortiça",
+        "phrase": "Arremesso com os dedos de pequenos dardos pontiagudos de metal mirando a faixa tripla do vinte no topo do alvo.",
+        "words": [
+          "alvo-cortiça",
+          "trinca-vinte",
+          "penas",
+          "distância-linha"
+        ],
+        "phrases": [
+          "Arremesso com os dedos de pequenos dardos pontiagudos de metal mirando a faixa tripla do vinte no topo do alvo.",
+          "Jogo clássico de pubs e campeonatos mundiais exigindo cálculos matemáticos rápidos para fechar as partidas."
+        ]
+      },
+      {
+        "name": "Tiro Esportivo com Carabina",
+        "sub": "precisao",
+        "word": "mira-dióptro",
+        "phrase": "Atirador veste casaco pesado de lona para imobilizar o corpo e apoia o rifle disparando entre batimentos cardíacos.",
+        "words": [
+          "mira-dióptro",
+          "roupa-rígida",
+          "gatilho-leve",
+          "chumbinho"
+        ],
+        "phrases": [
+          "Atirador veste casaco pesado de lona para imobilizar o corpo e apoia o rifle disparando entre batimentos cardíacos.",
+          "Atinge alvos de papel minúsculos a dez ou cinquenta metros de distância com precisão cirúrgica de frações de milímetro."
+        ]
+      },
+      {
+        "name": "Boliche Individual",
+        "sub": "precisao",
+        "word": "dez-pinos",
+        "phrase": "Arremesso de bola pesada ao longo de uma pista oleada mirando a fresta entre os pinos um e três para o strike.",
+        "words": [
+          "dez-pinos",
+          "canaleta",
+          "strike-perfeito",
+          "bola-furos"
+        ],
+        "phrases": [
+          "Arremesso de bola pesada ao longo de uma pista oleada mirando a fresta entre os pinos um e três para o strike.",
+          "Passadas ritmadas de aproximação soltando a esfera rente ao piso com efeito lateral acentuado."
+        ]
+      },
+      {
+        "name": "Petanca (Pétanque)",
+        "sub": "precisao",
+        "word": "esferas-aço",
+        "phrase": "Tradicional jogo francês jogado em praças públicas lançando bolas de metal com as duas solas dos pés plantadas no chão.",
+        "words": [
+          "esferas-aço",
+          "cochonnet",
+          "círculo-pés",
+          "praça-frança"
+        ],
+        "phrases": [
+          "Tradicional jogo francês jogado em praças públicas lançando bolas de metal com as duas solas dos pés plantadas no chão.",
+          "Disputa acirrada de centímetros medindo com fita métrica a bola mais próxima da pequena bolinha de madeira."
+        ]
+      },
+      {
+        "name": "Croquet",
+        "sub": "precisao",
+        "word": "taco-martelo",
+        "phrase": "Esporte de jardim britânico onde bolas de madeira coloridas são golpeadas com martelos através de pequenos aros fincados no solo.",
+        "words": [
+          "taco-martelo",
+          "arcos-arame",
+          "gramado-jardim",
+          "bola-colorida"
+        ],
+        "phrases": [
+          "Esporte de jardim britânico onde bolas de madeira coloridas são golpeadas com martelos através de pequenos aros fincados no solo.",
+          "Estratégia calma de posicionamento nos cantos do gramado para abrir caminho livre até o pino central."
+        ]
+      },
+      {
+        "name": "Badminton",
+        "sub": "precisao",
+        "word": "peteca-penas",
+        "phrase": "O esporte de raquete mais rápido do mundo rebatendo uma peteca de cortiça com dezesseis penas de ganso no ar.",
+        "words": [
+          "peteca-penas",
+          "raquete-longa",
+          "rede-alta",
+          "smash-veloz"
+        ],
+        "phrases": [
+          "O esporte de raquete mais rápido do mundo rebatendo uma peteca de cortiça com dezesseis penas de ganso no ar.",
+          "Cortes fulminantes que ultrapassam quatrocentos por hora e deixadas milimétricas coladas na rede alta."
+        ]
+      },
+      {
+        "name": "Tiro ao Prato (Skeet / Trap)",
+        "sub": "precisao",
+        "word": "espingarda-calibre",
+        "phrase": "Atirador grita o comando e discos alaranjados de argila são lançados no ar em alta velocidade para serem pulverizados.",
+        "words": [
+          "espingarda-calibre",
+          "prato-laranja",
+          "estilhaços",
+          "pedida-pull"
+        ],
+        "phrases": [
+          "Atirador grita o comando e discos alaranjados de argila são lançados no ar em alta velocidade para serem pulverizados.",
+          "Requer acompanhamento visual fluido e disparo antecipado com espingarda de canos sobrepostos."
+        ]
+      },
+      {
+        "name": "Damas",
+        "sub": "precisao",
+        "word": "pedras-redondas",
+        "phrase": "Jogo de tabuleiro clássico onde peças circulares avançam pelas casas escuras em linhas diagonais capturando peças rivais.",
+        "words": [
+          "pedras-redondas",
+          "comer-para-trás",
+          "coroar-dama",
+          "diagonal"
+        ],
+        "phrases": [
+          "Jogo de tabuleiro clássico onde peças circulares avançam pelas casas escuras em linhas diagonais capturando peças rivais.",
+          "Alcançar a última fileira do adversário coroa a peça permitindo que ela percorra toda a extensão das diagonais."
+        ]
+      },
+      {
+        "name": "Tiro Prático (IPSC)",
+        "sub": "precisao",
+        "word": "coldre-veloz",
+        "phrase": "Atiradores percorrem pistas dinâmicas atirando em alvos móveis e de metal combinando precisão milimétrica e velocidade.",
+        "words": [
+          "coldre-veloz",
+          "pistas-obstáculos",
+          "tempo-precisão",
+          "recarregar-correndo"
+        ],
+        "phrases": [
+          "Atiradores percorrem pistas dinâmicas atirando em alvos móveis e de metal combinando precisão milimétrica e velocidade.",
+          "Trocas de carregadores em frações de segundo enquanto correm entre paredes de madeira e janelas baixas."
+        ]
+      },
+      {
+        "name": "Lançamento de Dardos no Atletismo",
+        "sub": "precisao",
+        "word": "dardo-alumínio",
+        "phrase": "Atleta corre pela pista segurando uma haste pontiaguda de metal e a lança com toda a potência do ombro no gramado.",
+        "words": [
+          "dardo-alumínio",
+          "corrida-impulso",
+          "ponta-chão",
+          "setor-grama"
+        ],
+        "phrases": [
+          "Atleta corre pela pista segurando uma haste pontiaguda de metal e a lança com toda a potência do ombro no gramado.",
+          "O dardo precisa planar pelo ar e cravar sua ponta metálica no solo para a medição da distância ser validada."
+        ]
+      },
+      {
+        "name": "Salto com Vara",
+        "sub": "precisao",
+        "word": "vara-fibra",
+        "phrase": "Atleta corre segurando uma longa vara flexível encaixando-a em uma caixa para se catapultar sobre uma barra a metros do solo.",
+        "words": [
+          "vara-fibra",
+          "caixa-apoio",
+          "sarrafo-alto",
+          "colchão-queda"
+        ],
+        "phrases": [
+          "Atleta corre segurando uma longa vara flexível encaixando-a em uma caixa para se catapultar sobre uma barra a metros do solo.",
+          "Gira o corpo de cabeça para baixo no ápice da flexão sem derrubar o sarrafo milimétrico antes de cair de costas."
+        ]
+      },
+      {
+        "name": "Hipismo de Salto",
+        "sub": "precisao",
+        "word": "obstáculos-varas",
+        "phrase": "Cavaleiro conduz seu cavalo em ritmo cadenciado saltando cercas e valas de água sem tocar nas varas de madeira.",
+        "words": [
+          "obstáculos-varas",
+          "cavalo-salto",
+          "casaco-hípico",
+          "pistas-sem-faltas"
+        ],
+        "phrases": [
+          "Cavaleiro conduz seu cavalo em ritmo cadenciado saltando cercas e valas de água sem tocar nas varas de madeira.",
+          "Uma única barra derrubada gera penalidades de quatro pontos na contagem do percurso contra o cronômetro."
+        ]
+      },
+      {
+        "name": "Patinação Artística no Gelo",
+        "sub": "precisao",
+        "word": "giro-axel",
+        "phrase": "Patinadores executam saltos quádruplos no ar e piruetas rodopiantes sobre o gelo com graça e equilíbrio absoluto.",
+        "words": [
+          "giro-axel",
+          "lâmina-gelo",
+          "música-clássica",
+          "traje-brilhante"
+        ],
+        "phrases": [
+          "Patinadores executam saltos quádruplos no ar e piruetas rodopiantes sobre o gelo com graça e equilíbrio absoluto.",
+          "Combinação de notas técnicas pela altura dos saltos e notas de expressão artística para a coreografia musical."
+        ]
+      },
+      {
+        "name": "Ginástica Rítmica",
+        "sub": "precisao",
+        "word": "fita-espirais",
+        "phrase": "Ginastas executam movimentos corporais flexíveis manipulando aparelhos como fitas compridas, maças e arcos dourados.",
+        "words": [
+          "fita-espirais",
+          "arco",
+          "maças",
+          "bola-rolando"
+        ],
+        "phrases": [
+          "Ginastas executam movimentos corporais flexíveis manipulando aparelhos como fitas compridas, maças e arcos dourados.",
+          "Lançam o aparelho bem alto no ginásio e realizam piruetas no chão antes de recuperá-lo sem olhar."
+        ]
+      },
+      {
+        "name": "Frescobol",
+        "sub": "precisao",
+        "word": "raquete-madeira",
+        "phrase": "Esporte praiano brasileiro inventado em Copacabana onde os dois jogadores cooperam para manter a bola no ar o máximo possível.",
+        "words": [
+          "raquete-madeira",
+          "bolinha-azul",
+          "sem-perdedor",
+          "beira-mar"
+        ],
+        "phrases": [
+          "Esporte praiano brasileiro inventado em Copacabana onde os dois jogadores cooperam para manter a bola no ar o máximo possível.",
+          "Golpes firmes com raquetes de madeira maciça que produzem um som estalado característico na beira do mar."
+        ]
+      },
+      {
+        "name": "Pelota Basca / Jai Alai",
+        "sub": "precisao",
+        "word": "cesta-curva-chistera",
+        "phrase": "Atletas usam uma cesta de vime curvada presa ao punho para pegar e arremessar uma bola duríssima contra um frontão de pedra.",
+        "words": [
+          "cesta-curva-chistera",
+          "parede-fronton",
+          "velocidade-recorde",
+          "capacete"
+        ],
+        "phrases": [
+          "Atletas usam uma cesta de vime curvada presa ao punho para pegar e arremessar uma bola duríssima contra um frontão de pedra.",
+          "A bola atinge velocidades assustadoras exigindo reflexos relâmpago para não sofrer lesões graves na quadra."
+        ]
+      },
+      {
+        "name": "Squash",
+        "sub": "precisao",
+        "word": "quatro-paredes",
+        "phrase": "Dois jogadores dividem uma sala fechada golpeando alternadamente uma pequena bola oca de borracha contra a parede frontal.",
+        "words": [
+          "quatro-paredes",
+          "bolinha-borracha-quente",
+          "linha-lata",
+          "óculos-proteção"
+        ],
+        "phrases": [
+          "Dois jogadores dividem uma sala fechada golpeando alternadamente uma pequena bola oca de borracha contra a parede frontal.",
+          "A bola esquenta durante a partida ficando mais rápida e quicando menos exigindo corrida intensa em espaço confinado."
+        ]
+      },
+      {
+        "name": "Padel",
+        "sub": "precisao",
+        "word": "paredes-vidro",
+        "phrase": "Esporte de raquetes sólidas com furos jogado em duplas dentro de uma quadra cercada por paredes de vidro e telas.",
+        "words": [
+          "paredes-vidro",
+          "raquete-furada",
+          "duplas",
+          "grade"
+        ],
+        "phrases": [
+          "Esporte de raquetes sólidas com furos jogado em duplas dentro de uma quadra cercada por paredes de vidro e telas.",
+          "A bola pode continuar em jogo após quicar no chão e rebater nas paredes de vidro gerando trocas longas e dinâmicas."
+        ]
+      },
+      {
+        "name": "Pickleball",
+        "sub": "precisao",
+        "word": "pá-plástica",
+        "phrase": "Febre esportiva moderna misturando tênis e ping-pong com pás leves e bola plástica perfurada que não quica muito alto.",
+        "words": [
+          "pá-plástica",
+          "bola-furada-wiffle",
+          "área-cozinha",
+          "saque-por-baixo"
+        ],
+        "phrases": [
+          "Febre esportiva moderna misturando tênis e ping-pong com pás leves e bola plástica perfurada que não quica muito alto.",
+          "Possui uma área proibida perto da rede chamada cozinha onde não se pode volear a bola de primeira."
+        ]
+      },
+      {
+        "name": "Bilhar Francês (Três Tabelas)",
+        "sub": "precisao",
+        "word": "mesa-sem-caçapas",
+        "phrase": "Disputado em uma mesa lisa aquecida sem nenhum buraco onde a bola do jogador precisa bater nas outras duas e em três tabelas.",
+        "words": [
+          "mesa-sem-caçapas",
+          "três-bolas",
+          "tocar-todas",
+          "aquecimento-mesa"
+        ],
+        "phrases": [
+          "Disputado em uma mesa lisa aquecida sem nenhum buraco onde a bola do jogador precisa bater nas outras duas e em três tabelas.",
+          "O ápice do cálculo de geometria vetorial e efeito de rotação de bilhar exigindo concentração absoluta."
+        ]
+      },
+      {
+        "name": "Footgolf (Futebol-Golfe)",
+        "sub": "precisao",
+        "word": "chute-pé",
+        "phrase": "Jogadores percorrem campos de golfe chutando uma bola de futebol tamanho cinco em direção a buracos de meio metro de diâmetro.",
+        "words": [
+          "chute-pé",
+          "buraco-gigante",
+          "campo-golfe",
+          "bermuda-meião"
+        ],
+        "phrases": [
+          "Jogadores percorrem campos de golfe chutando uma bola de futebol tamanho cinco em direção a buracos de meio metro de diâmetro.",
+          "Combina a potência do chute de futebol com a leitura sutil de curvas e desníveis do terreno de golfe."
+        ]
+      },
+      {
+        "name": "Pólo Aquático Feminino",
+        "sub": "coletivos",
+        "word": "toucas-números",
+        "phrase": "Disputa aquática intensa de quatro tempos com passes e finalizações no gol sem apoiar os pés no fundo.",
+        "words": [
+          "toucas-números",
+          "nadar-sem-tocar-chão",
+          "tiro-meta",
+          "piscina-profunda"
+        ],
+        "phrases": [
+          "Disputa aquática intensa de quatro tempos com passes e finalizações no gol sem apoiar os pés no fundo.",
+          "Movimentos de perna vigorosos na água para erguer o tronco acima da superfície e soltar a bola no travessão."
+        ]
+      },
+      {
+        "name": "Ginástica Artística (Solo)",
+        "sub": "radicais",
+        "word": "música-fundo",
+        "phrase": "Apresentação de noventa segundos combinando acrobacias no ar sobre tablado elástico com passos coreografados ao ritmo musical.",
+        "words": [
+          "música-fundo",
+          "mortais-triplos",
+          "tablado-mola",
+          "aterrissagem-firme"
+        ],
+        "phrases": [
+          "Apresentação de noventa segundos combinando acrobacias no ar sobre tablado elástico com passos coreografados ao ritmo musical.",
+          "Executa duplos twist carpados e busca cravá-los no chão sem desequilíbrios para notas máximas de execução."
+        ]
+      },
+      {
+        "name": "Natação (100m Livre)",
+        "sub": "precisao",
+        "word": "bloco-partida",
+        "phrase": "A prova mais nobre e veloz das piscinas onde atletas cortam a água em braçadas explosivas de pura força muscular.",
+        "words": [
+          "bloco-partida",
+          "nado-crawl",
+          "virada-olímpica",
+          "bater-placa"
+        ],
+        "phrases": [
+          "A prova mais nobre e veloz das piscinas onde atletas cortam a água em braçadas explosivas de pura força muscular.",
+          "Largada ao soar do alarme com mergulho hidrodinâmico e virada com cambalhota rápida na parede."
+        ]
+      },
+      {
+        "name": "Ciclismo de Pista (Velódromo)",
+        "sub": "radicais",
+        "word": "pista-madeira-inclinada",
+        "phrase": "Bicicletas ultraleves sem freios e com marcha fixa atingem velocidades estonteantes em curvas inclinadas de até quarenta e cinco graus.",
+        "words": [
+          "pista-madeira-inclinada",
+          "sem-freio-roda-fixa",
+          "capacete-aerodinâmico",
+          "perseguição"
+        ],
+        "phrases": [
+          "Bicicletas ultraleves sem freios e com marcha fixa atingem velocidades estonteantes em curvas inclinadas de até quarenta e cinco graus.",
+          "Duelos táticos em madeira polida onde ciclistas se estudam em manobras lentas antes do sprint fulminante."
+        ]
+      },
+      {
+        "name": "Triatlo (Ironman)",
+        "sub": "radicais",
+        "word": "natação-aberta",
+        "phrase": "O teste supremo de resistência física humana combinando quase quatro quilômetros de mar, cento e oitenta de pedal e uma maratona.",
+        "words": [
+          "natação-aberta",
+          "bike-longa",
+          "maratona-final",
+          "limite-físico"
+        ],
+        "phrases": [
+          "O teste supremo de resistência física humana combinando quase quatro quilômetros de mar, cento e oitenta de pedal e uma maratona.",
+          "Cruzar o pórtico final após mais de dez horas ininterruptas de esforço é a coroação de um atleta de ferro."
+        ]
+      },
+      {
+        "name": "Maratona Clássica",
+        "sub": "radicais",
+        "word": "quarenta-e-dois-km",
+        "phrase": "A histórica corrida de quarenta e dois quilômetros que testa a resistência mental e física de milhares de pessoas pelas ruas.",
+        "words": [
+          "quarenta-e-dois-km",
+          "muro-dos-trinta",
+          "passadas-ritmadas",
+          "hidratação"
+        ],
+        "phrases": [
+          "A histórica corrida de quarenta e dois quilômetros que testa a resistência mental e física de milhares de pessoas pelas ruas.",
+          "Enfrentar a queda de energia muscular após a marca dos trinta quilômetros com passos firmes até a linha de chegada."
+        ]
+      },
+      {
+        "name": "Salto em Distância",
+        "sub": "precisao",
+        "word": "tábua-marcação",
+        "phrase": "Atleta corre pela pista sintética acelerando até pisar na tábua branca sem queimar para se projetar o mais longe possível na areia.",
+        "words": [
+          "tábua-marcação",
+          "corrida-impulso",
+          "caixa-areia",
+          "medida-trena"
+        ],
+        "phrases": [
+          "Atleta corre pela pista sintética acelerando até pisar na tábua branca sem queimar para se projetar o mais longe possível na areia.",
+          "Puxa as pernas para a frente no ar e aterrissa levantando poeira dourada para a medição da trena oficial."
+        ]
+      },
+      {
+        "name": "Salto em Altura (Estilo Fosbury)",
+        "sub": "precisao",
+        "word": "sarrafo-barra",
+        "phrase": "Abordagem em curva rápida para projetar o corpo de costas por cima de uma barra horizontal a mais de dois metros do solo.",
+        "words": [
+          "sarrafo-barra",
+          "salto-de-costas",
+          "colchão-queda",
+          "curva-j"
+        ],
+        "phrases": [
+          "Abordagem em curva rápida para projetar o corpo de costas por cima de uma barra horizontal a mais de dois metros do solo.",
+          "Arqueia a coluna no ponto mais alto sem relar na barra fina antes de desabar no colchão de espuma macia."
+        ]
+      },
+      {
+        "name": "Lançamento de Disco",
+        "sub": "precisao",
+        "word": "gaiola-redes",
+        "phrase": "Gira o corpo velozmente dentro de um círculo de concreto protegido por redes e arremessa o disco plano no gramado.",
+        "words": [
+          "gaiola-redes",
+          "giros-corpo",
+          "disco-metal",
+          "setor-grama"
+        ],
+        "phrases": [
+          "Gira o corpo velozmente dentro de um círculo de concreto protegido por redes e arremessa o disco plano no gramado.",
+          "Usa a aceleração centrífuga dos braços abertos para fazer a peça voar em ângulo perfeito sem sair das linhas demarcadas."
+        ]
+      },
+      {
+        "name": "Remo Single Skiff",
+        "sub": "precisao",
+        "word": "barco-estreito-um",
+        "phrase": "Atleta solitário desliza sobre um barco estreito como agulha impulsionando dois remos longos com força de pernas e tronco.",
+        "words": [
+          "barco-estreito-um",
+          "dois-remos",
+          "costas-chegada",
+          "água-espelho"
+        ],
+        "phrases": [
+          "Atleta solitário desliza sobre um barco estreito como agulha impulsionando dois remos longos com força de pernas e tronco.",
+          "Coordenação ritmada sobre assento deslizante em raias serenas de canais e lagos olímpicos."
+        ]
       }
     ]
   }
