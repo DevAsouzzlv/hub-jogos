@@ -1,6 +1,6 @@
 /**
  * BANCO DE DADOS COMPLETO DO HUB DE JOGOS
- * Suporte a todos os 11 temas com subcategorias filtráveis e mais de 2.200 palavras.
+ * Suporte a todos os 15 temas com subcategorias filtráveis e mais de 2.800 palavras.
  * Cada palavra contém dicas individuais distintas (palavras e frases) para cada impostor da rodada.
  */
 
@@ -7048,6 +7048,230 @@ const THEME_DATABASE = {
           "Assassino implacável que deixa a vida de suas vítimas a critério de cara ou coroa.",
           "Carrega um cilindro de ar comprimido para estourar fechaduras e vidas."
         ]
+      },
+      {
+        "name": "Guardião Vermelho",
+        "sub": "marvel_herois",
+        "word": "escudo-russo",
+        "phrase": "O equivalente soviético ao supersoldado americano com escudo vermelho e carisma fanfarrão.",
+        "words": [
+          "escudo-russo",
+          "urss",
+          "viúva-pai",
+          "força"
+        ],
+        "phrases": [
+          "O equivalente soviético ao supersoldado americano com escudo vermelho e carisma fanfarrão.",
+          "Pai adotivo das espiãs russas que se gaba de suas antigas glórias da Guerra Fria."
+        ]
+      },
+      {
+        "name": "Kraven, o Caçador",
+        "sub": "marvel_viloes",
+        "word": "colete-leão",
+        "phrase": "Caçador implacável que vê o herói aracnídeo como o troféu definitivo de sua carreira selvagem.",
+        "words": [
+          "colete-leão",
+          "lança-caça",
+          "selva-urbana",
+          "aracnídeo-presa"
+        ],
+        "phrases": [
+          "Caçador implacável que vê o herói aracnídeo como o troféu definitivo de sua carreira selvagem.",
+          "Usa poções de ervas que ampliam seus sentidos animalescos e luta com as próprias mãos."
+        ]
+      },
+      {
+        "name": "Homem-Areia (Flint Marko)",
+        "sub": "marvel_viloes",
+        "word": "grãos-areia",
+        "phrase": "Vilão trágico que pode transformar todo o seu corpo em grãos de areia movediça e martelos colossais.",
+        "words": [
+          "grãos-areia",
+          "castelo-areia",
+          "mãos-martelo",
+          "praia"
+        ],
+        "phrases": [
+          "Vilão trágico que pode transformar todo o seu corpo em grãos de areia movediça e martelos colossais.",
+          "Dispersa-se ao vento para desviar de golpes e dissolve-se ao entrar em contato com água."
+        ]
+      },
+      {
+        "name": "Gavião Negro (Carter Hall)",
+        "sub": "dc_herois",
+        "word": "asas-metal-enésimo",
+        "phrase": "Guerreiro alado armado com uma maça pesada que reencarna através das eras ao lado de sua amada.",
+        "words": [
+          "asas-metal-enésimo",
+          "maça-espinhos",
+          "reencarnação",
+          "egito-antigo"
+        ],
+        "phrases": [
+          "Guerreiro alado armado com uma maça pesada que reencarna através das eras ao lado de sua amada.",
+          "Suas asas de metal alienígena desafiam a gravidade conferindo força sobre-humana nos céus."
+        ]
+      },
+      {
+        "name": "Besouro Azul (Jaime Reyes)",
+        "sub": "dc_herois",
+        "word": "escaravelho-costas",
+        "phrase": "Jovem latino que se funde a um escaravelho biotecnológico alienígena cravado em sua coluna.",
+        "words": [
+          "escaravelho-costas",
+          "armadura-alienígena",
+          "canhões-energia",
+          "adolescente"
+        ],
+        "phrases": [
+          "Jovem latino que se funde a um escaravelho biotecnológico alienígena cravado em sua coluna.",
+          "Cria espadas de plasma, escudos e canhões através de uma armadura azul inteligente."
+        ]
+      },
+      {
+        "name": "Superboy (Conner Kent)",
+        "sub": "dc_herois",
+        "word": "jaqueta-couro",
+        "phrase": "Clone gerado a partir do DNA do Homem de Aço e de seu maior arqui-inimigo bilionário.",
+        "words": [
+          "jaqueta-couro",
+          "clone-híbrido",
+          "telecinese-tátil",
+          "tatuagem-s"
+        ],
+        "phrases": [
+          "Clone gerado a partir do DNA do Homem de Aço e de seu maior arqui-inimigo bilionário.",
+          "Possui telecinese tátil que permite erguer qualquer objeto que toque diretamente com as mãos."
+        ]
+      },
+      {
+        "name": "Pacificador (Peacemaker)",
+        "sub": "anti_herois",
+        "word": "capacete-cromado",
+        "phrase": "Vigilante patriota que ama tanto a paz que está disposto a matar quantos homens, mulheres e crianças forem necessários por ela.",
+        "words": [
+          "capacete-cromado",
+          "águia-eagly",
+          "paz-custe-o-que-custar",
+          "pistola-longa"
+        ],
+        "phrases": [
+          "Vigilante patriota que ama tanto a paz que está disposto a matar quantos homens, mulheres e crianças forem necessários por ela.",
+          "Usa capacete espelhado que dispara ondas sonoras e anda acompanhado por uma águia americana de estimação."
+        ]
+      },
+      {
+        "name": "Soldado Invernal (Bucky Barnes)",
+        "sub": "anti_herois",
+        "word": "braço-cibernético",
+        "phrase": "Melhor amigo do sentinela da liberdade resgatado e transformado em assassino cibernético silencioso da Guerra Fria.",
+        "words": [
+          "braço-cibernético",
+          "estrela-vermelha",
+          "lavagem-cerebral",
+          "palavras-gatilho"
+        ],
+        "phrases": [
+          "Melhor amigo do sentinela da liberdade resgatado e transformado em assassino cibernético silencioso da Guerra Fria.",
+          "Braço de metal com estrela soviética e memórias dolorosas despertadas por uma sequência secreta de palavras."
+        ]
+      },
+      {
+        "name": "Profundo (The Deep)",
+        "sub": "the_boys_invincible",
+        "word": "falar-golfinhos",
+        "phrase": "Super-herói aquático ridicularizado por todos que se comunica com criaturas marinhas e apronta tragédias cômicas.",
+        "words": [
+          "falar-golfinhos",
+          "guelras-peito",
+          "lorde-sete-mares",
+          "patético"
+        ],
+        "phrases": [
+          "Super-herói aquático ridicularizado por todos que se comunica com criaturas marinhas e apronta tragédias cômicas.",
+          "Guelras pulsantes no abdômen e uma obsessão bizarra por animais com tentáculos no aquário."
+        ]
+      },
+      {
+        "name": "Esqueleto",
+        "sub": "viloes_pop",
+        "word": "rosto-caveira",
+        "phrase": "Lorde das trevas de pele azul e crânio amarelo descoberto que comanda criaturas da montanha da serpente.",
+        "words": [
+          "rosto-caveira",
+          "castelo-greyskull",
+          "bastão-carneiro",
+          "risada-vilão"
+        ],
+        "phrases": [
+          "Lorde das trevas de pele azul e crânio amarelo descoberto que comanda criaturas da montanha da serpente.",
+          "Deseja invadir a fortaleza sagrada empunhando seu cetro com cabeça de carneiro e soltando gargalhadas estridentes."
+        ]
+      },
+      {
+        "name": "Shredder (Destruidor)",
+        "sub": "viloes_pop",
+        "word": "lâminas-armadura",
+        "phrase": "Mestre ninja impiedoso de capacete com lâminas pontiagudas nos ombros e antebraços que comanda o Clã do Pé.",
+        "words": [
+          "lâminas-armadura",
+          "clã-do-pé",
+          "máscara-ferro",
+          "ninja-tártaro"
+        ],
+        "phrases": [
+          "Mestre ninja impiedoso de capacete com lâminas pontiagudas nos ombros e antebraços que comanda o Clã do Pé.",
+          "Arqui-inimigo de quatro quelônios mutantes treinados nas artes marciais nos esgotos de Nova York."
+        ]
+      },
+      {
+        "name": "Pennywise (A Coisa)",
+        "sub": "viloes_pop",
+        "word": "balão-vermelho",
+        "phrase": "Entidade cósmica que assume a forma de um palhaço dançarino e se alimenta do medo mais íntimo de crianças.",
+        "words": [
+          "balão-vermelho",
+          "dentes-afiados",
+          "bueiro",
+          "flutuam"
+        ],
+        "phrases": [
+          "Entidade cósmica que assume a forma de um palhaço dançarino e se alimenta do medo mais íntimo de crianças.",
+          "Atrai vítimas inocentes para a escuridão dos bueiros prometendo que lá embaixo todos flutuam."
+        ]
+      },
+      {
+        "name": "Monstro do Pântano",
+        "sub": "dc_herois",
+        "word": "planta-humanoide",
+        "phrase": "Entidade elemental conectada a toda a flora do planeta surgida das águas turvas de um manguezal.",
+        "words": [
+          "planta-humanoide",
+          "verde-reino",
+          "pântano-lama",
+          "espírito-terra"
+        ],
+        "phrases": [
+          "Entidade elemental conectada a toda a flora do planeta surgida das águas turvas de um manguezal.",
+          "Pode regenerar seu corpo a partir de qualquer folha ou galho e viajar através das raízes da Terra."
+        ]
+      },
+      {
+        "name": "Estelar (Starfire)",
+        "sub": "dc_herois",
+        "word": "cabelos-fogo",
+        "phrase": "Princesa guerreira alienígena que absorve radiação ultravioleta disparando energia verde pelas mãos.",
+        "words": [
+          "cabelos-fogo",
+          "tamaran",
+          "rajadas-verdes",
+          "voo"
+        ],
+        "phrases": [
+          "Princesa guerreira alienígena que absorve radiação ultravioleta disparando energia verde pelas mãos.",
+          "Cabelos ruivos ondulados compridos parecidos com labaredas ardentes e coração afetuoso."
+        ]
       }
     ]
   },
@@ -13845,6 +14069,118 @@ const THEME_DATABASE = {
           "Pão doce fofinho coberto com frutas e uma camada espessa de farofa crocante.",
           "Estrela dos cafés coloniais na serra gaúcha e catarinense."
         ]
+      },
+      {
+        "name": "Caldo de Cana (Garapa)",
+        "sub": "lanches",
+        "word": "moenda-ferro",
+        "phrase": "Bebida doce e refrescante extraída na hora ao prensar o caule fibroso em rolos de moagem de ferro.",
+        "words": [
+          "moenda-ferro",
+          "cana-açúcar",
+          "pastel-feira",
+          "gelo-limão"
+        ],
+        "phrases": [
+          "Bebida doce e refrescante extraída na hora ao prensar o caule fibroso em rolos de moagem de ferro.",
+          "A combinação clássica mais sagrada das feiras livres de domingo ao lado de um pastel frito."
+        ]
+      },
+      {
+        "name": "Torta de Frango com Catupiry",
+        "sub": "lanches",
+        "word": "massa-podre",
+        "phrase": "Torta salgada de massa amanteigada que derrete na boca com recheio abundante e cremoso.",
+        "words": [
+          "massa-podre",
+          "frango-desfiado",
+          "requeijão-cremoso",
+          "forno-dourado"
+        ],
+        "phrases": [
+          "Torta salgada de massa amanteigada que derrete na boca com recheio abundante e cremoso.",
+          "Servida em fatias generosas no lanche da tarde com bordas douradas e crocantes."
+        ]
+      },
+      {
+        "name": "Brownie com Sorvete",
+        "sub": "doces",
+        "word": "bolo-denso-chocolate",
+        "phrase": "Bolo de chocolate pesado e macio no centro com casquinha crocante servido quente com sorvete gelado.",
+        "words": [
+          "bolo-denso-chocolate",
+          "nozes",
+          "bola-baunilha",
+          "calda-quente"
+        ],
+        "phrases": [
+          "Bolo de chocolate pesado e macio no centro com casquinha crocante servido quente com sorvete gelado.",
+          "O contraste de temperaturas perfeito coberto por generosa calda de fudge de chocolate."
+        ]
+      },
+      {
+        "name": "Torta de Limão Merengada",
+        "sub": "doces",
+        "word": "merengue-maçaricado",
+        "phrase": "Sobremesa clássica que equilibra o azedinho refrescante do limão com a doçura do suspiro tostado.",
+        "words": [
+          "merengue-maçaricado",
+          "raspas-limão",
+          "creme-azedinho",
+          "base-bolacha"
+        ],
+        "phrases": [
+          "Sobremesa clássica que equilibra o azedinho refrescante do limão com a doçura do suspiro tostado.",
+          "Creme aveludado sobre massa amanteigada decorado com picos de merengue maçaricados na hora."
+        ]
+      },
+      {
+        "name": "Moqueca Baiana",
+        "sub": "brasileira",
+        "word": "panela-barro",
+        "phrase": "Cozido aromático de postas de peixe fresco com pimentões, cebola e azeite de dendê borbulhando na mesa.",
+        "words": [
+          "panela-barro",
+          "peixe-posta",
+          "leite-coco",
+          "azeite-dendê"
+        ],
+        "phrases": [
+          "Cozido aromático de postas de peixe fresco com pimentões, cebola e azeite de dendê borbulhando na mesa.",
+          "Servida diretamente na panela de barro preta acompanhada de pirão e farofa de dendê."
+        ]
+      },
+      {
+        "name": "Bolo Vulcão de Cenoura",
+        "sub": "doces",
+        "word": "cascata-brigadeiro",
+        "phrase": "Bolo caseiro de massa fofa e alaranjada cujo buraco central é recheado com calda líquida de brigadeiro.",
+        "words": [
+          "cascata-brigadeiro",
+          "massa-laranja",
+          "furo-central",
+          "chocolate-escorrendo"
+        ],
+        "phrases": [
+          "Bolo caseiro de massa fofa e alaranjada cujo buraco central é recheado com calda líquida de brigadeiro.",
+          "Ao cortar a primeira fatia, uma avalanche de chocolate cremoso escorre cobrindo todo o prato."
+        ]
+      },
+      {
+        "name": "Pão com Linguiça na Brasa",
+        "sub": "lanches",
+        "word": "pão-francês-crocante",
+        "phrase": "O lanche mais tradicional e saboroso dos churrascos de fim de semana nas calçadas brasileiras.",
+        "words": [
+          "pão-francês-crocante",
+          "linguiça-tostada",
+          "vinagrete-fresco",
+          "churrasco"
+        ],
+        "phrases": [
+          "O lanche mais tradicional e saboroso dos churrascos de fim de semana nas calçadas brasileiras.",
+          "Pão crocante recheado com linguiça suculenta cortada ao meio com molho vinagrete temperado."
+        ]
       }
     ]
   },
@@ -17146,6 +17482,166 @@ const THEME_DATABASE = {
           "Aro circular sem começo nem fim gravado com a data mais importante do casal.",
           "Usada no dedo anelar esquerdo como testemunho diário de um juramento de amor."
         ]
+      },
+      {
+        "name": "Grampeador de Papel",
+        "sub": "casa",
+        "word": "grampos-metal",
+        "phrase": "Utensílio mecânico de escritório que dobra pequenas hastes metálicas para unir maços de folhas.",
+        "words": [
+          "grampos-metal",
+          "mola",
+          "folhas-unidas",
+          "mesa-escritório"
+        ],
+        "phrases": [
+          "Utensílio mecânico de escritório que dobra pequenas hastes metálicas para unir maços de folhas.",
+          "Acionado com um golpe firme da palma da mão sobre pilhas de relatórios e documentos."
+        ]
+      },
+      {
+        "name": "Fita Isolante",
+        "sub": "ferramentas",
+        "word": "rolo-preto",
+        "phrase": "Fita plástica preta maleável usada por eletricistas para cobrir emendas e impedir curto-circuitos.",
+        "words": [
+          "rolo-preto",
+          "eletricidade-fios",
+          "adesivo-cola",
+          "segurança"
+        ],
+        "phrases": [
+          "Fita plástica preta maleável usada por eletricistas para cobrir emendas e impedir curto-circuitos.",
+          "Resiste à passagem de corrente elétrica isolando condutores desencapados em instalações."
+        ]
+      },
+      {
+        "name": "Powerbank (Bateria Portátil)",
+        "sub": "tecnologia",
+        "word": "carga-emergência",
+        "phrase": "Dispositivo portátil recarregável que salva o celular sem bateria quando não há tomadas por perto.",
+        "words": [
+          "carga-emergência",
+          "cabo-usb",
+          "bateria-externa",
+          "mochila"
+        ],
+        "phrases": [
+          "Dispositivo portátil recarregável que salva o celular sem bateria quando não há tomadas por perto.",
+          "Pequeno bloco pesado que carrega energia de sobra no bolso durante viagens e shows."
+        ]
+      },
+      {
+        "name": "Mala de Viagem com Rodinhas",
+        "sub": "pessoal",
+        "word": "zíper-cadeado",
+        "phrase": "Bagagem rígida com puxador retrátil de alumínio projetada para deslizar suavemente por saguões de embarque.",
+        "words": [
+          "zíper-cadeado",
+          "rodas-360",
+          "puxador-telescópico",
+          "aeroporto"
+        ],
+        "phrases": [
+          "Bagagem rígida com puxador retrátil de alumínio projetada para deslizar suavemente por saguões de embarque.",
+          "Guarda roupas dobradas e sapatos protegidos por divisórias internas e fechos de segurança."
+        ]
+      },
+      {
+        "name": "Aspirador de Pó Robô",
+        "sub": "tecnologia",
+        "word": "disco-chão",
+        "phrase": "Pequeno disco inteligente que navega pelo chão da casa varrendo e aspirando poeira sem supervisão.",
+        "words": [
+          "disco-chão",
+          "sensores-obstáculo",
+          "limpeza-automática",
+          "base-carregamento"
+        ],
+        "phrases": [
+          "Pequeno disco inteligente que navega pelo chão da casa varrendo e aspirando poeira sem supervisão.",
+          "Retorna sozinho para sua estação de recarga quando a bateria está perto do fim."
+        ]
+      },
+      {
+        "name": "Carregador por Indução (Sem Fio)",
+        "sub": "tecnologia",
+        "word": "base-redonda",
+        "phrase": "Dispositivo sobre o qual você apenas apoia o celular para que a bateria carregue por campo eletromagnético.",
+        "words": [
+          "base-redonda",
+          "sem-fio",
+          "bobina-magnética",
+          "led-indicador"
+        ],
+        "phrases": [
+          "Dispositivo sobre o qual você apenas apoia o celular para que a bateria carregue por campo eletromagnético.",
+          "Elimina o uso de cabos quebrados mantendo a mesa de cabeceira limpa e organizada."
+        ]
+      },
+      {
+        "name": "AirFryer (Fritadeira sem Óleo)",
+        "sub": "casa",
+        "word": "ar-quente-circulando",
+        "phrase": "Eletrodoméstico moderno que frita alimentos usando correntes de ar em alta temperatura e velocidade.",
+        "words": [
+          "ar-quente-circulando",
+          "cesto-removível",
+          "timer-apito",
+          "crocante-sem-óleo"
+        ],
+        "phrases": [
+          "Eletrodoméstico moderno que frita alimentos usando correntes de ar em alta temperatura e velocidade.",
+          "Prepara batatas, carnes e pães de queijo crocantes com facilidade acionando o botão de tempo."
+        ]
+      },
+      {
+        "name": "Fritadeira Elétrica Industrial",
+        "sub": "ferramentas",
+        "word": "cesto-aramado",
+        "phrase": "Equipamento de aço inox com cubas de óleo fervente usado em lanchonetes para fritar salgados aos montes.",
+        "words": [
+          "cesto-aramado",
+          "óleo-fervendo",
+          "termostato",
+          "pastelaria"
+        ],
+        "phrases": [
+          "Equipamento de aço inox com cubas de óleo fervente usado em lanchonetes para fritar salgados aos montes.",
+          "Cestos com cabos longos que sobem escorrendo o excesso de gordura após dourar coxinhas e pastéis."
+        ]
+      },
+      {
+        "name": "Smartwatch (Relógio Inteligente)",
+        "sub": "tecnologia",
+        "word": "batimentos-cardíacos",
+        "phrase": "Relógio digital que mede frequência cardíaca, monitora o sono e exibe mensagens diretamente no pulso.",
+        "words": [
+          "batimentos-cardíacos",
+          "passos-contados",
+          "tela-touch-pulso",
+          "notificações"
+        ],
+        "phrases": [
+          "Relógio digital que mede frequência cardíaca, monitora o sono e exibe mensagens diretamente no pulso.",
+          "Vibra ao receber chamadas alertando quando é hora de levantar e se movimentar."
+        ]
+      },
+      {
+        "name": "Mochila Antifurto",
+        "sub": "pessoal",
+        "word": "zíper-oculto-costas",
+        "phrase": "Mochila com zíperes embutidos voltados para o corpo impedindo que estranhos a abram no transporte público.",
+        "words": [
+          "zíper-oculto-costas",
+          "tecido-impermeável",
+          "saída-usb",
+          "transporte-seguro"
+        ],
+        "phrases": [
+          "Mochila com zíperes embutidos voltados para o corpo impedindo que estranhos a abram no transporte público.",
+          "Possui bolsos secretos na alça e conexões internas para carregar o celular em caminhadas."
+        ]
       }
     ]
   },
@@ -20244,6 +20740,134 @@ const THEME_DATABASE = {
         "phrases": [
           "Desfiladeiro estreito esculpido por inundações relâmpago com paredes de arenito onduladas como ondas de fogo.",
           "Raios de sol que penetram verticalmente pelas fendas do teto iluminando a poeira dourada no chão."
+        ]
+      },
+      {
+        "name": "Himalaia (Cordilheira)",
+        "sub": "natureza",
+        "word": "picos-mais-altos",
+        "phrase": "A mais colossal cadeia montanhosa do planeta que abriga os picos mais elevados e perigosos da Terra.",
+        "words": [
+          "picos-mais-altos",
+          "neve-eterna",
+          "sherpas",
+          "fronteira-ásia"
+        ],
+        "phrases": [
+          "A mais colossal cadeia montanhosa do planeta que abriga os picos mais elevados e perigosos da Terra.",
+          "Muralha de gelo e rocha sagrada para civilizações orientais que desafia alpinistas lendários."
+        ]
+      },
+      {
+        "name": "Canal de Veneza",
+        "sub": "turismo",
+        "word": "gôndolas",
+        "phrase": "Via navegável charmosa contornada por casarões históricos onde barcos a remo substituem o trânsito de automóveis.",
+        "words": [
+          "gôndolas",
+          "pontes-pedra",
+          "sem-carros",
+          "água-verde"
+        ],
+        "phrases": [
+          "Via navegável charmosa contornada por casarões históricos onde barcos a remo substituem o trânsito de automóveis.",
+          "Cenário romântico mundialmente conhecido com reflexos de postes e canções de gondoleiros."
+        ]
+      },
+      {
+        "name": "Deserto de Gobi",
+        "sub": "natureza",
+        "word": "frio-inverno",
+        "phrase": "Vasto planalto desértico na Ásia Central conhecido por tempestades de poeira e temperaturas congelantes no inverno.",
+        "words": [
+          "frio-inverno",
+          "camelos-duas-corcovas",
+          "fósseis-dinossauros",
+          "ásia-central"
+        ],
+        "phrases": [
+          "Vasto planalto desértico na Ásia Central conhecido por tempestades de poeira e temperaturas congelantes no inverno.",
+          "Cenário de antigas caravanas da Rota da Seda onde foram descobertos os primeiros ovos fossilizados."
+        ]
+      },
+      {
+        "name": "Mar Morto",
+        "sub": "natureza",
+        "word": "flutuar-água",
+        "phrase": "O ponto em terra firme mais baixo do planeta cujas águas densas não permitem que nenhum banhista afunde.",
+        "words": [
+          "flutuar-água",
+          "sal-extremo",
+          "sem-peixes",
+          "lama-preta"
+        ],
+        "phrases": [
+          "O ponto em terra firme mais baixo do planeta cujas águas densas não permitem que nenhum banhista afunde.",
+          "Concentração salina tão severa que impede qualquer forma de vida animal além de microorganismos."
+        ]
+      },
+      {
+        "name": "Jalapão",
+        "sub": "natureza",
+        "word": "fervedouros-flutuar",
+        "phrase": "Paraíso de águas transparentes onde nascentes de alta pressão fazem banhistas flutuarem sem conseguir afundar.",
+        "words": [
+          "fervedouros-flutuar",
+          "dunas-douradas",
+          "capim-dourado",
+          "tocantins"
+        ],
+        "phrases": [
+          "Paraíso de águas transparentes onde nascentes de alta pressão fazem banhistas flutuarem sem conseguir afundar.",
+          "Dunas avermelhadas cercadas por veredas de buritis e artesanato feito com fios de capim dourado."
+        ]
+      },
+      {
+        "name": "Bonito (Mato Grosso do Sul)",
+        "sub": "natureza",
+        "word": "flutuação-peixes",
+        "phrase": "Capital do ecoturismo famosa por rios de águas tão transparentes que parecem aquários gigantescos.",
+        "words": [
+          "flutuação-peixes",
+          "rio-sucuri",
+          "águas-cristalinas",
+          "gruta-lago-azul"
+        ],
+        "phrases": [
+          "Capital do ecoturismo famosa por rios de águas tão transparentes que parecem aquários gigantescos.",
+          "Mergulho de snorkel deslizando com a correnteza ao lado de piraputangas e dourados imponentes."
+        ]
+      },
+      {
+        "name": "Ouro Preto",
+        "sub": "cidade",
+        "word": "igrejas-ouro",
+        "phrase": "Cidade colonial encravada nas montanhas mineiras famosa por ladeiras de pedra sabão e barroco dourado.",
+        "words": [
+          "igrejas-ouro",
+          "ladeiras-pedra",
+          "aleijadinho",
+          "cidade-histórica"
+        ],
+        "phrases": [
+          "Cidade colonial encravada nas montanhas mineiras famosa por ladeiras de pedra sabão e barroco dourado.",
+          "Igrejas com esculturas esculpidas por mestres do século dezoito e casarões de janelas coloridas."
+        ]
+      },
+      {
+        "name": "Jericoacoara",
+        "sub": "natureza",
+        "word": "pedra-furada",
+        "phrase": "Antiga vila de pescadores no Ceará cercada por dunas onde viajantes descansam em redes fincadas na lagoa.",
+        "words": [
+          "pedra-furada",
+          "rede-dentro-água",
+          "duna-pôr-do-sol",
+          "ventos-kite"
+        ],
+        "phrases": [
+          "Antiga vila de pescadores no Ceará cercada por dunas onde viajantes descansam em redes fincadas na lagoa.",
+          "Pôr do sol cinematográfico no mar e ventos constantes que atraem praticantes de kitesurfe do mundo todo."
         ]
       }
     ]
@@ -23428,6 +24052,118 @@ const THEME_DATABASE = {
           "Pequeno mamífero das copas das árvores amazônicas com cauda que funciona como um quinto membro para se pendurar.",
           "Adora lamber o néctar das flores e frutos doces durante a madrugada com sua língua fina e longa."
         ]
+      },
+      {
+        "name": "Texugo-do-Mel (Honey Badger)",
+        "sub": "selvagens",
+        "word": "pele-dura",
+        "phrase": "O animal mais destemido do planeta que não hesita em enfrentar leões e devora serpentes venenosas.",
+        "words": [
+          "pele-dura",
+          "feroz-sem-medo",
+          "imune-veneno",
+          "garras"
+        ],
+        "phrases": [
+          "O animal mais destemido do planeta que não hesita em enfrentar leões e devora serpentes venenosas.",
+          "Sua pele espessa resiste a picadas de abelhas e mordidas de predadores muito maiores que ele."
+        ]
+      },
+      {
+        "name": "Surucucu Pico-de-Jaca",
+        "sub": "aquaticos",
+        "word": "maior-venenosa-américas",
+        "phrase": "A maior serpente peçonhenta do continente americano com escamas ásperas parecidas com casca de fruta.",
+        "words": [
+          "maior-venenosa-américas",
+          "bote-fatal",
+          "floresta-densa",
+          "escamas-rugosas"
+        ],
+        "phrases": [
+          "A maior serpente peçonhenta do continente americano com escamas ásperas parecidas com casca de fruta.",
+          "Predadora noturna da floresta tropical com veneno hemotóxico potente capaz de abater grandes animais."
+        ]
+      },
+      {
+        "name": "Peixe-Gota (Blobfish)",
+        "sub": "aquaticos",
+        "word": "gelatinoso-rosa",
+        "phrase": "Criatura do fundo do oceano com corpo gelatinoso adaptado a suportar pressões esmagadoras no leito marinho.",
+        "words": [
+          "gelatinoso-rosa",
+          "abismo-marinho",
+          "sem-músculos",
+          "peixe-mais-feio"
+        ],
+        "phrases": [
+          "Criatura do fundo do oceano com corpo gelatinoso adaptado a suportar pressões esmagadoras no leito marinho.",
+          "Fora d'água deforma-se completamente em uma massa flácida rosada que virou meme global na internet."
+        ]
+      },
+      {
+        "name": "Cão São Bernardo",
+        "sub": "domesticos",
+        "word": "barril-pescoço",
+        "phrase": "Cão monumental de pelagem espessa criado por monges alpinos para localizar viajantes soterrados em avalanches.",
+        "words": [
+          "barril-pescoço",
+          "resgate-neve",
+          "gigante-dócil",
+          "alpes-suíços"
+        ],
+        "phrases": [
+          "Cão monumental de pelagem espessa criado por monges alpinos para localizar viajantes soterrados em avalanches.",
+          "Gentil gigante famoso na cultura pop por carregar um barrilzinho de conhaque na coleira."
+        ]
+      },
+      {
+        "name": "Ariranha (Lobo dos Rios)",
+        "sub": "aquaticos",
+        "word": "lontra-gigante",
+        "phrase": "O maior mamífero carnívoro aquático do continente com hábitos gregários e vocalizações estridentes.",
+        "words": [
+          "lontra-gigante",
+          "pantanal-águas",
+          "bando-unido",
+          "peixes-grandes"
+        ],
+        "phrases": [
+          "O maior mamífero carnívoro aquático do continente com hábitos gregários e vocalizações estridentes.",
+          "Nada em grupos familiares velozes capazes de enfrentar jacarés para defender seus filhotes."
+        ]
+      },
+      {
+        "name": "Tuiuiú (Jabiru)",
+        "sub": "aves",
+        "word": "ave-símbolo-pantanal",
+        "phrase": "A ave símbolo do Pantanal com mais de um metro de altura, bico comprido preto e papo vermelho vivo.",
+        "words": [
+          "ave-símbolo-pantanal",
+          "papo-vermelho",
+          "pernas-longas",
+          "ninho-árvore-alta"
+        ],
+        "phrases": [
+          "A ave símbolo do Pantanal com mais de um metro de altura, bico comprido preto e papo vermelho vivo.",
+          "Constrói ninhos monumentais no topo das árvores mais altas das planícies alagadas."
+        ]
+      },
+      {
+        "name": "Jaguatirica",
+        "sub": "selvagens",
+        "word": "felino-manchado",
+        "phrase": "Felino de médio porte com pelagem desenhada em rosetas alongadas e excelente visão noturna na selva.",
+        "words": [
+          "felino-manchado",
+          "olhos-grandes",
+          "escaladora",
+          "mata-noturna"
+        ],
+        "phrases": [
+          "Felino de médio porte com pelagem desenhada em rosetas alongadas e excelente visão noturna na selva.",
+          "Caçadora ágil e silenciosa que sobe em troncos com facilidade para capturar aves e pequenos roedores."
+        ]
       }
     ]
   },
@@ -26424,6 +27160,102 @@ const THEME_DATABASE = {
         "phrases": [
           "Movimenta cargas pesadas e organiza pilhas de produtos em alturas elevadas de galpões logísticos.",
           "Pilota veículos compactos com sinal sonoro de marcha à ré encaixando garfos de aço sob estrados de madeira."
+        ]
+      },
+      {
+        "name": "Piloto de Drone",
+        "sub": "ciencias",
+        "word": "controle-remoto",
+        "phrase": "Opera aeronaves não tripuladas manobrando através de telas e óculos FPV para inspeções ou filmagens de cinema.",
+        "words": [
+          "controle-remoto",
+          "câmera-aérea",
+          "hélices",
+          "voo-monitor"
+        ],
+        "phrases": [
+          "Opera aeronaves não tripuladas manobrando através de telas e óculos FPV para inspeções ou filmagens de cinema.",
+          "Decola com precisão entre prédios e montanhas capturando planos aéreos vertiginosos sem risco humano."
+        ]
+      },
+      {
+        "name": "Mergulhador de Saturação",
+        "sub": "servicos",
+        "word": "câmara-hiperbárica",
+        "phrase": "Profissional que vive semanas confinado em câmaras de alta pressão para consertar dutos no fundo do oceano.",
+        "words": [
+          "câmara-hiperbárica",
+          "profundezas-plataforma",
+          "hélio-voz",
+          "solda-submarina"
+        ],
+        "phrases": [
+          "Profissional que vive semanas confinado em câmaras de alta pressão para consertar dutos no fundo do oceano.",
+          "Respira mistura de hélio que deixa a voz aguda e trabalha na escuridão congelante das plataformas de petróleo."
+        ]
+      },
+      {
+        "name": "Engenheiro de Prompts (IA)",
+        "sub": "ciencias",
+        "word": "comandos-texto",
+        "phrase": "Especialista em formular instruções precisas para orientar inteligências artificiais a gerar respostas perfeitas.",
+        "words": [
+          "comandos-texto",
+          "treinamento-ia",
+          "ajuste-respostas",
+          "modelos-linguagem"
+        ],
+        "phrases": [
+          "Especialista em formular instruções precisas para orientar inteligências artificiais a gerar respostas perfeitas.",
+          "Desenvolve técnicas de raciocínio passo a passo e afina o comportamento de sistemas digitais modernos."
+        ]
+      },
+      {
+        "name": "Perito em Balística Forense",
+        "sub": "ciencias",
+        "word": "estrias-bala",
+        "phrase": "Cientista da polícia que analisa as marcas únicas deixadas pelos canos das armas em projéteis disparados.",
+        "words": [
+          "estrias-bala",
+          "confronto-projéteis",
+          "microscópio-comparador",
+          "arma-crime"
+        ],
+        "phrases": [
+          "Cientista da polícia que analisa as marcas únicas deixadas pelos canos das armas em projéteis disparados.",
+          "Compara ranhuras microscópicas em balas de metal para determinar com certeza a autoria de disparos."
+        ]
+      },
+      {
+        "name": "Sommelier de Cervejas",
+        "sub": "servicos",
+        "word": "copo-tulipa",
+        "phrase": "Especialista na degustação e serviço de cervejas artesanais identificando notas de malte e fermentação.",
+        "words": [
+          "copo-tulipa",
+          "aromas-lúpulo",
+          "harmonização-pratos",
+          "carta-artesanal"
+        ],
+        "phrases": [
+          "Especialista na degustação e serviço de cervejas artesanais identificando notas de malte e fermentação.",
+          "Orienta a taça correta e a temperatura exata para cada estilo da bebida harmonizada com pratos."
+        ]
+      },
+      {
+        "name": "Analista de Cibersegurança",
+        "sub": "ciencias",
+        "word": "hacker-ético",
+        "phrase": "Profissional de segurança digital que protege redes corporativas e bancos contra ataques e vazamentos de dados.",
+        "words": [
+          "hacker-ético",
+          "firewall",
+          "invasão-testes",
+          "criptografia"
+        ],
+        "phrases": [
+          "Profissional de segurança digital que protege redes corporativas e bancos contra ataques e vazamentos de dados.",
+          "Simula tentativas de invasão para encontrar vulnerabilidades antes que criminosos virtuais as descubram."
         ]
       }
     ]
@@ -29487,6 +30319,54 @@ const THEME_DATABASE = {
           "Assuma o cargo de prefeito planejando malhas viárias, redes elétricas e zoneamento urbano do zero.",
           "Enfrente incêndios, inundações e monstros gigantes destruindo os arranha-céus da sua metrópole."
         ]
+      },
+      {
+        "name": "Ghost of Tsushima",
+        "sub": "rpg",
+        "word": "samurai-fantasma",
+        "phrase": "Guerreiro samurai que precisa abandonar seu código de honra rígido para salvar sua ilha da invasão estrangeira.",
+        "words": [
+          "samurai-fantasma",
+          "vento-guia",
+          "espadas-katana",
+          "invasão-mongol"
+        ],
+        "phrases": [
+          "Guerreiro samurai que precisa abandonar seu código de honra rígido para salvar sua ilha da invasão estrangeira.",
+          "Cavalga por campos de flores coloridas guiado pelo sopro do vento em duelos cinematográficos ao luar."
+        ]
+      },
+      {
+        "name": "Death Stranding",
+        "sub": "rpg",
+        "word": "entregador-mochila",
+        "phrase": "Homem solitário caminha por paisagens desoladas entregando suprimentos para reconectar uma América isolada.",
+        "words": [
+          "entregador-mochila",
+          "bebê-frasco",
+          "corda-conexão",
+          "chuva-temporal"
+        ],
+        "phrases": [
+          "Homem solitário caminha por paisagens desoladas entregando suprimentos para reconectar uma América isolada.",
+          "Carrega um bebê em uma cápsula no peito que detecta a presença de entidades sobrenaturais no nevoeiro."
+        ]
+      },
+      {
+        "name": "Alan Wake 2",
+        "sub": "tiro",
+        "word": "escritor-pesadelo",
+        "phrase": "Romancista preso em uma dimensão de pesadelos usa feixes de luz para quebrar a escuridão de sombras assassinas.",
+        "words": [
+          "escritor-pesadelo",
+          "lanterna-arma",
+          "lugar-escuro",
+          "páginas-manuscrito"
+        ],
+        "phrases": [
+          "Romancista preso em uma dimensão de pesadelos usa feixes de luz para quebrar a escuridão de sombras assassinas.",
+          "A realidade é moldada pelas páginas de um manuscrito datilografado encontrado em florestas tenebrosas."
+        ]
       }
     ]
   },
@@ -32354,6 +33234,54 @@ const THEME_DATABASE = {
           "Jovem negro viaja para conhecer os pais da namorada e descobre uma conspiração cirúrgica perturbadora.",
           "O som de uma colher raspando na porcelana hipnotizando a mente e arremessando-a em um abismo mental escuro."
         ]
+      },
+      {
+        "name": "Oppenheimer",
+        "sub": "drama",
+        "word": "bomba-atômica",
+        "phrase": "O drama biográfico sobre o cientista que liderou o desenvolvimento da mais devastadora arma da humanidade.",
+        "words": [
+          "bomba-atômica",
+          "projeto-manhattan",
+          "físico-chapéu",
+          "teste-trinity"
+        ],
+        "phrases": [
+          "O drama biográfico sobre o cientista que liderou o desenvolvimento da mais devastadora arma da humanidade.",
+          "A contagem regressiva silenciosa no deserto do Novo México seguida por uma explosão que mudou a história do mundo."
+        ]
+      },
+      {
+        "name": "Barbie (O Filme)",
+        "sub": "comedia",
+        "word": "mundo-cor-de-rosa",
+        "phrase": "A boneca mais famosa do mundo sofre uma crise existencial e viaja para a realidade acompanhada de seu namorado loiro.",
+        "words": [
+          "mundo-cor-de-rosa",
+          "ken-crise",
+          "patins-neon",
+          "fuga-mundo-real"
+        ],
+        "phrases": [
+          "A boneca mais famosa do mundo sofre uma crise existencial e viaja para a realidade acompanhada de seu namorado loiro.",
+          "Cenários deslumbrantes cor-de-rosa com números musicais hilários sobre a fragilidade masculina e a vida real."
+        ]
+      },
+      {
+        "name": "Duna: Parte 2",
+        "sub": "ficcao",
+        "word": "montar-verme-areia",
+        "phrase": "O herdeiro nobre aceita seu papel messiânico liderando o povo do deserto contra o império tirânico.",
+        "words": [
+          "montar-verme-areia",
+          "guerra-santa",
+          "olhos-azuis-especiaria",
+          "profeta-paul"
+        ],
+        "phrases": [
+          "O herdeiro nobre aceita seu papel messiânico liderando o povo do deserto contra o império tirânico.",
+          "Cenas monumentais cavalgando no dorso de gigantescas criaturas subterrâneas de areia em tempestades."
+        ]
       }
     ]
   },
@@ -35182,6 +36110,70 @@ const THEME_DATABASE = {
           "A descendência dos caçadores de vampiros lutando nas sombras da Revolução Francesa contra uma aristocracia sanguinária.",
           "O chicote estala nas noites de Paris com feitiços arcanos e a chegada de velhos aliados imortais."
         ]
+      },
+      {
+        "name": "Haikyuu!! (Vôlei)",
+        "sub": "shonen",
+        "word": "baixinho-salta",
+        "phrase": "Garoto de baixa estatura compensa a altura com impulsão vertiginosa jogando vôlei pelo time dos corvos.",
+        "words": [
+          "baixinho-salta",
+          "levantador-gênio",
+          "corvos-voam",
+          "bloqueio-toque"
+        ],
+        "phrases": [
+          "Garoto de baixa estatura compensa a altura com impulsão vertiginosa jogando vôlei pelo time dos corvos.",
+          "Combinações de ataques rápidos milimétricos com um levantador arrogante que precisa aprender a confiar na equipe."
+        ]
+      },
+      {
+        "name": "Dungeon Meshi (Delícias da Masmorra)",
+        "sub": "modernos",
+        "word": "cozinhar-monstros",
+        "phrase": "Aventureiros sem dinheiro para suprimentos decidem cozinhar e devorar os próprios monstros que enfrentam no labirinto.",
+        "words": [
+          "cozinhar-monstros",
+          "dragão-vermelho",
+          "masmorra-prato",
+          "gourmet-calabouço"
+        ],
+        "phrases": [
+          "Aventureiros sem dinheiro para suprimentos decidem cozinhar e devorar os próprios monstros que enfrentam no labirinto.",
+          "Preparam guisados de cogumelos ambulantes e bifes de parasitas gigantes com rigor culinário profissional."
+        ]
+      },
+      {
+        "name": "Solo Leveling (Anime)",
+        "sub": "shonen",
+        "word": "sung-jin-woo",
+        "phrase": "O caçador mais fraco do mundo sobrevive a um teste mortal e passa a enxergar telas de videogame na sua frente.",
+        "words": [
+          "sung-jin-woo",
+          "subir-nível-sozinho",
+          "soldados-sombra",
+          "adagas"
+        ],
+        "phrases": [
+          "O caçador mais fraco do mundo sobrevive a um teste mortal e passa a enxergar telas de videogame na sua frente.",
+          "Comanda um exército invencível de guerreiros de sombra que emergem do solo ao comando da sua voz."
+        ]
+      },
+      {
+        "name": "Frieren e a Jornada Para o Além",
+        "sub": "modernos",
+        "word": "elfa-quase-imortal",
+        "phrase": "Maga elfa milenar refaz a rota da antiga aventura para compreender os sentimentos mortais após a partida de seus amigos.",
+        "words": [
+          "elfa-quase-imortal",
+          "morte-herói",
+          "passado-tempo",
+          "magia-flores"
+        ],
+        "phrases": [
+          "Maga elfa milenar refaz a rota da antiga aventura para compreender os sentimentos mortais após a partida de seus amigos.",
+          "Narrativa poética e sensível sobre a brevidade dos instantes e o valor das memórias que guardamos no peito."
+        ]
       }
     ]
   },
@@ -37743,6 +38735,7862 @@ const THEME_DATABASE = {
           "Atleta solitário desliza sobre um barco estreito como agulha impulsionando dois remos longos com força de pernas e tronco.",
           "Coordenação ritmada sobre assento deslizante em raias serenas de canais e lagos olímpicos."
         ]
+      },
+      {
+        "name": "Canyoning (Canionismo)",
+        "sub": "radicais",
+        "word": "rapel-cachoeira",
+        "phrase": "Descida de desfiladeiros rochosos profundos alternando rapel sob cascatas d'água, natação e saltos em poços naturais.",
+        "words": [
+          "rapel-cachoeira",
+          "salto-poço",
+          "neoprene",
+          "desfiladeiro"
+        ],
+        "phrases": [
+          "Descida de desfiladeiros rochosos profundos alternando rapel sob cascatas d'água, natação e saltos em poços naturais.",
+          "Equipamento aquático completo com mosquetões e cordas especiais que resistem ao atrito da água em pedras."
+        ]
+      },
+      {
+        "name": "Frescobol de Copacabana",
+        "sub": "precisao",
+        "word": "raquete-madeira",
+        "phrase": "Esporte praiano brasileiro inventado em Copacabana onde os dois jogadores cooperam para manter a bola no ar o máximo possível.",
+        "words": [
+          "raquete-madeira",
+          "bolinha-azul",
+          "sem-perdedor",
+          "beira-mar"
+        ],
+        "phrases": [
+          "Esporte praiano brasileiro inventado em Copacabana onde os dois jogadores cooperam para manter a bola no ar o máximo possível.",
+          "Golpes firmes com raquetes de madeira maciça que produzem um som estalado característico na beira do mar."
+        ]
+      },
+      {
+        "name": "Escalada Esportiva Olímpica",
+        "sub": "radicais",
+        "word": "agarras-resina",
+        "phrase": "Atletas escalam paredões verticais artificiais com agarras coloridas em segundos batendo na placa no topo.",
+        "words": [
+          "agarras-resina",
+          "velocidade-paredão",
+          "magnésio-mãos",
+          "sapatilha-curva"
+        ],
+        "phrases": [
+          "Atletas escalam paredões verticais artificiais com agarras coloridas em segundos batendo na placa no topo.",
+          "Exige força nos dedos, flexibilidade corporal elástica e movimentos dinâmicos em tetos inclinados."
+        ]
+      },
+      {
+        "name": "Vela Olímpica",
+        "sub": "precisao",
+        "word": "barco-monotipo",
+        "phrase": "Regatas táticas em alto-mar onde timoneiros leem as rajadas de vento na água para contornar boias na liderança.",
+        "words": [
+          "barco-monotipo",
+          "vento-marejadas",
+          "leme-retranca",
+          "bóias-marcação"
+        ],
+        "phrases": [
+          "Regatas táticas em alto-mar onde timoneiros leem as rajadas de vento na água para contornar boias na liderança.",
+          "O esporte que mais rendeu medalhas de ouro para o Brasil na história dos Jogos Olímpicos."
+        ]
+      }
+    ]
+  },
+  "Mitologia & Lendas": {
+    "icon": "⚡",
+    "color": "#9b59b6",
+    "subcategories": {
+      "grega_romana": {
+        "label": "Grega & Romana",
+        "icon": "🏛️",
+        "desc": "Zeus, Poseidon, Hades, Hércules, Medusa, Atena, Minotauro e deuses do Olimpo"
+      },
+      "nordica": {
+        "label": "Nórdica & Vikings",
+        "icon": "⚔️",
+        "desc": "Odin, Thor, Loki, Freya, Valquírias, Fenrir, Asgard e o fim do mundo Ragnarök"
+      },
+      "folclore_br": {
+        "label": "Folclore Brasileiro",
+        "icon": "🇧🇷",
+        "desc": "Saci, Curupira, Mula sem Cabeça, Boitatá, Boto Rosa, Iara e lendas da mata"
+      },
+      "egipcia_oriental": {
+        "label": "Egípcia & Oriental",
+        "icon": "🏺",
+        "desc": "Rá, Anúbis, Osíris, Esfinge, Dragões Orientais, Fênix, Kitsune e divindades místicas"
+      }
+    },
+    "items": [
+      {
+        "name": "Zeus",
+        "sub": "grega_romana",
+        "word": "raio",
+        "phrase": "O soberano supremo dos deuses empunhando relâmpagos do alto do monte sagrado.",
+        "words": [
+          "raio",
+          "olimpo",
+          "trovão",
+          "águia"
+        ],
+        "phrases": [
+          "O soberano supremo dos deuses empunhando relâmpagos do alto do monte sagrado.",
+          "Comanda as tempestades celestes sentado em seu trono de marfim."
+        ]
+      },
+      {
+        "name": "Poseidon",
+        "sub": "grega_romana",
+        "word": "tridente",
+        "phrase": "Senhor dos mares e terremotos que ergue maremotos com sua lança de três pontas.",
+        "words": [
+          "tridente",
+          "ondas",
+          "cavalos",
+          "terremoto"
+        ],
+        "phrases": [
+          "Senhor dos mares e terremotos que ergue maremotos com sua lança de três pontas.",
+          "Irmão do soberano que comanda tempestades oceânicas sobre sua carruagem de cavalos-marinhos."
+        ]
+      },
+      {
+        "name": "Hades",
+        "sub": "grega_romana",
+        "word": "submundo",
+        "phrase": "Governante das sombras subterrâneas vigiado por um feroz cão de três cabeças.",
+        "words": [
+          "submundo",
+          "cérbero",
+          "invisibilidade",
+          "almas"
+        ],
+        "phrases": [
+          "Governante das sombras subterrâneas vigiado por um feroz cão de três cabeças.",
+          "Rei do reino dos mortos que raramente sobe à superfície da terra."
+        ]
+      },
+      {
+        "name": "Medusa",
+        "sub": "grega_romana",
+        "word": "serpentes",
+        "phrase": "Criatura com serpentes vivas no lugar de cabelos cujo olhar direto transforma homens em pedra.",
+        "words": [
+          "serpentes",
+          "petrificar",
+          "espelho",
+          "górgona"
+        ],
+        "phrases": [
+          "Criatura com serpentes vivas no lugar de cabelos cujo olhar direto transforma homens em pedra.",
+          "Vítima de maldição divina decapitada por um herói que usou um escudo como espelho."
+        ]
+      },
+      {
+        "name": "Minotauro",
+        "sub": "grega_romana",
+        "word": "labirinto",
+        "phrase": "Fera com cabeça de touro e corpo humano aprisionada em um labirinto cretense sem saída.",
+        "words": [
+          "labirinto",
+          "chifres",
+          "touro",
+          "novelo"
+        ],
+        "phrases": [
+          "Fera com cabeça de touro e corpo humano aprisionada em um labirinto cretense sem saída.",
+          "Alimentava-se de jovens atenienses até ser derrotado por Teseu com um fio guia."
+        ]
+      },
+      {
+        "name": "Atena",
+        "sub": "grega_romana",
+        "word": "sabedoria",
+        "phrase": "Deusa da sabedoria, da justiça e da estratégia militar nascida da cabeça do pai supremo.",
+        "words": [
+          "sabedoria",
+          "coruja",
+          "escudo",
+          "estratégia"
+        ],
+        "phrases": [
+          "Deusa da sabedoria, da justiça e da estratégia militar nascida da cabeça do pai supremo.",
+          "Protetora da maior pólis grega representada ao lado de uma coruja e um escudo polido."
+        ]
+      },
+      {
+        "name": "Afrodite",
+        "sub": "grega_romana",
+        "word": "beleza",
+        "phrase": "Deusa da beleza e do amor nascida das espumas brancas das ondas do mar mediterrâneo.",
+        "words": [
+          "beleza",
+          "concha",
+          "espuma",
+          "amor"
+        ],
+        "phrases": [
+          "Deusa da beleza e do amor nascida das espumas brancas das ondas do mar mediterrâneo.",
+          "Desembarcou em uma concha dourada despertando a paixão de mortais e imortais."
+        ]
+      },
+      {
+        "name": "Ares",
+        "sub": "grega_romana",
+        "word": "guerra",
+        "phrase": "Deus da guerra violenta e do massacre que se deleita com o choque de espadas nos campos de batalha.",
+        "words": [
+          "guerra",
+          "sangue",
+          "lança",
+          "fúria"
+        ],
+        "phrases": [
+          "Deus da guerra violenta e do massacre que se deleita com o choque de espadas nos campos de batalha.",
+          "Divindade impetuosa e brutal temida pela sede de sangue e caos militar."
+        ]
+      },
+      {
+        "name": "Apolo",
+        "sub": "grega_romana",
+        "word": "sol",
+        "phrase": "Deus da luz solar, da música e da medicina que cruza o céu guiando sua carruagem de fogo.",
+        "words": [
+          "sol",
+          "arco",
+          "lira",
+          "profecia"
+        ],
+        "phrases": [
+          "Deus da luz solar, da música e da medicina que cruza o céu guiando sua carruagem de fogo.",
+          "Mestre do oráculo de Delfos que toca a lira dourada e atira flechas prateadas."
+        ]
+      },
+      {
+        "name": "Hermes",
+        "sub": "grega_romana",
+        "word": "sandálias-aladas",
+        "phrase": "O mensageiro ligeiro dos deuses com asas nos pés e bastão entrelaçado por duas cobras.",
+        "words": [
+          "sandálias-aladas",
+          "caduceu",
+          "mensageiro",
+          "velocidade"
+        ],
+        "phrases": [
+          "O mensageiro ligeiro dos deuses com asas nos pés e bastão entrelaçado por duas cobras.",
+          "Guia das almas até os portões do além e protetor de viajantes e comerciantes."
+        ]
+      },
+      {
+        "name": "Hércules",
+        "sub": "grega_romana",
+        "word": "doze-trabalhos",
+        "phrase": "O mais forte semideus da antiguidade que cumpriu doze tarefas humanamente impossíveis.",
+        "words": [
+          "doze-trabalhos",
+          "pele-leão",
+          "clava",
+          "semideus"
+        ],
+        "phrases": [
+          "O mais forte semideus da antiguidade que cumpriu doze tarefas humanamente impossíveis.",
+          "Vestia a pele invulnerável de uma fera felina abatida com as próprias mãos."
+        ]
+      },
+      {
+        "name": "Cérbero",
+        "sub": "grega_romana",
+        "word": "três-cabeças",
+        "phrase": "O cão monstruoso de três cabeças que guarda a entrada do submundo impedindo a fuga de almas.",
+        "words": [
+          "três-cabeças",
+          "guardião",
+          "portão-inferno",
+          "correntes"
+        ],
+        "phrases": [
+          "O cão monstruoso de três cabeças que guarda a entrada do submundo impedindo a fuga de almas.",
+          "Fera feroz que apenas foi amansada pelo som suave de uma lira divina."
+        ]
+      },
+      {
+        "name": "Pégaso",
+        "sub": "grega_romana",
+        "word": "cavalo-alado",
+        "phrase": "O lendário cavalo branco alado que saltou do pescoço de uma górgona abatida.",
+        "words": [
+          "cavalo-alado",
+          "nuvens",
+          "cascos",
+          "fonte"
+        ],
+        "phrases": [
+          "O lendário cavalo branco alado que saltou do pescoço de uma górgona abatida.",
+          "Fez brotar fontes sagradas com um golpe de seus cascos nas montanhas."
+        ]
+      },
+      {
+        "name": "Dionísio (Baco)",
+        "sub": "grega_romana",
+        "word": "vinho",
+        "phrase": "Deus da fertilidade, das vinhas e do delírio festivo coroado com ramos de videira.",
+        "words": [
+          "vinho",
+          "uvas",
+          "festa",
+          "êxtase"
+        ],
+        "phrases": [
+          "Deus da fertilidade, das vinhas e do delírio festivo coroado com ramos de videira.",
+          "Transformava a água em vinho trazendo alegria e desordem aos banquetes mortais."
+        ]
+      },
+      {
+        "name": "Ártemis",
+        "sub": "grega_romana",
+        "word": "lua",
+        "phrase": "Deusa virgem da caça e das florestas selvagens armada com arco prateado sob o luar.",
+        "words": [
+          "lua",
+          "caça",
+          "cerva",
+          "flechas"
+        ],
+        "phrases": [
+          "Deusa virgem da caça e das florestas selvagens armada com arco prateado sob o luar.",
+          "Protetora dos animais jovens que percorria os bosques acompanhada de ninfas e cães."
+        ]
+      },
+      {
+        "name": "Hefesto (Vulcano)",
+        "sub": "grega_romana",
+        "word": "forja",
+        "phrase": "O ferreiro divino dos deuses que forjava raios e armaduras mágicas no calor do vulcão.",
+        "words": [
+          "forja",
+          "bigorna",
+          "fogo",
+          "armaduras"
+        ],
+        "phrases": [
+          "O ferreiro divino dos deuses que forjava raios e armaduras mágicas no calor do vulcão.",
+          "Apesar de manco e rejeitado, criava as mais belas e complexas obras mecânicas da antiguidade."
+        ]
+      },
+      {
+        "name": "Centaura / Centauro Quíron",
+        "sub": "grega_romana",
+        "word": "meio-cavalo",
+        "phrase": "Criatura com torso de homem e corpo de cavalo conhecido pela sabedoria e medicina.",
+        "words": [
+          "meio-cavalo",
+          "arco",
+          "mentor",
+          "ervas"
+        ],
+        "phrases": [
+          "Criatura com torso de homem e corpo de cavalo conhecido pela sabedoria e medicina.",
+          "O nobre mestre que educou os maiores heróis e guerreiros da mitologia grega."
+        ]
+      },
+      {
+        "name": "Quimera",
+        "sub": "grega_romana",
+        "word": "três-animais",
+        "phrase": "Criatura híbrida aterrorizante com cabeça de leão, corpo de cabra e cauda de serpente que cospe chamas.",
+        "words": [
+          "três-animais",
+          "fogo",
+          "leão-cabra-cobra",
+          "monstro"
+        ],
+        "phrases": [
+          "Criatura híbrida aterrorizante com cabeça de leão, corpo de cabra e cauda de serpente que cospe chamas.",
+          "Monstro devastador derrotado pelo cavaleiro que montava um corcel alado nos ares."
+        ]
+      },
+      {
+        "name": "Hidra de Lerna",
+        "sub": "grega_romana",
+        "word": "múltiplas-cabeças",
+        "phrase": "Serpente monstruosa dos pântanos cujas cabeças cortadas renasciam em dobro.",
+        "words": [
+          "múltiplas-cabeças",
+          "regeneração",
+          "fogo-cauterizar",
+          "pântano"
+        ],
+        "phrases": [
+          "Serpente monstruosa dos pântanos cujas cabeças cortadas renasciam em dobro.",
+          "Exigiu o uso de tochas ardentes para cauterizar os pescoços e impedir o renascimento."
+        ]
+      },
+      {
+        "name": "Pandora",
+        "sub": "grega_romana",
+        "word": "caixa",
+        "phrase": "A primeira mulher mortal que abriu um vaso proibido libertando todas as desgraças pelo mundo.",
+        "words": [
+          "caixa",
+          "curiosidade",
+          "males",
+          "esperança"
+        ],
+        "phrases": [
+          "A primeira mulher mortal que abriu um vaso proibido libertando todas as desgraças pelo mundo.",
+          "Fechou o recipiente a tempo de manter apenas um último sentimento guardado no fundo."
+        ]
+      },
+      {
+        "name": "Aquiles",
+        "sub": "grega_romana",
+        "word": "calcanhar",
+        "phrase": "O mais veloz e temido guerreiro grego cujo único ponto frágil ficava no tornozelo.",
+        "words": [
+          "calcanhar",
+          "troia",
+          "invulnerável",
+          "lança"
+        ],
+        "phrases": [
+          "O mais veloz e temido guerreiro grego cujo único ponto frágil ficava no tornozelo.",
+          "Mergulhado ainda bebê nas águas sagradas do rio Estige segurado pelos pés da mãe."
+        ]
+      },
+      {
+        "name": "Ulisses (Odisseu)",
+        "sub": "grega_romana",
+        "word": "cavalo-madeira",
+        "phrase": "Herói lendário que bolou o estratagema do presente de madeira oco para invadir Troia.",
+        "words": [
+          "cavalo-madeira",
+          "odisseia",
+          "sereias",
+          "astúcia"
+        ],
+        "phrases": [
+          "Herói lendário que bolou o estratagema do presente de madeira oco para invadir Troia.",
+          "Navegou por dez anos enfrentando monstros marinhos e cantos enfeitiçados para voltar para casa."
+        ]
+      },
+      {
+        "name": "Cronos (Saturno)",
+        "sub": "grega_romana",
+        "word": "tempo",
+        "phrase": "O titã líder que engolia os próprios filhos recém-nascidos com medo de ser destronado.",
+        "words": [
+          "tempo",
+          "foice",
+          "engolir-filhos",
+          "titã"
+        ],
+        "phrases": [
+          "O titã líder que engolia os próprios filhos recém-nascidos com medo de ser destronado.",
+          "Senhor do tempo inexorável que acabou derrubado pelo filho salvo com uma pedra embrulhada."
+        ]
+      },
+      {
+        "name": "Atlas",
+        "sub": "grega_romana",
+        "word": "segurar-céu",
+        "phrase": "O titã condenado a sustentar a abóbada celeste eternamente sobre as costas e ombros.",
+        "words": [
+          "segurar-céu",
+          "ombros",
+          "castigo",
+          "peso-mundo"
+        ],
+        "phrases": [
+          "O titã condenado a sustentar a abóbada celeste eternamente sobre as costas e ombros.",
+          "Castigado pelos deuses vitoriosos por liderar a rebelião dos gigantes primordiais."
+        ]
+      },
+      {
+        "name": "Prometeu",
+        "sub": "grega_romana",
+        "word": "roubo-fogo",
+        "phrase": "O titã benfeitor que roubou as chamas sagradas dos deuses para entregá-las à humanidade.",
+        "words": [
+          "roubo-fogo",
+          "fígado",
+          "águia-rocha",
+          "humanidade"
+        ],
+        "phrases": [
+          "O titã benfeitor que roubou as chamas sagradas dos deuses para entregá-las à humanidade.",
+          "Acorrentado ao cume do monte tendo seu órgão vital devorado diariamente por uma ave de rapina."
+        ]
+      },
+      {
+        "name": "Perseu",
+        "sub": "grega_romana",
+        "word": "escudo-espelho",
+        "phrase": "Herói que decapitou a criatura de cabelos de serpente olhando apenas para o reflexo no escudo.",
+        "words": [
+          "escudo-espelho",
+          "cabeça-górgona",
+          "sandálias",
+          "andrómeda"
+        ],
+        "phrases": [
+          "Herói que decapitou a criatura de cabelos de serpente olhando apenas para o reflexo no escudo.",
+          "Resgatou a princesa acorrentada ao rochedo marinho das presas de um monstro das águas."
+        ]
+      },
+      {
+        "name": "Narciso",
+        "sub": "grega_romana",
+        "word": "reflexo-água",
+        "phrase": "Jovem de beleza fascinante que se apaixonou pelo próprio reflexo na superfície de um lago.",
+        "words": [
+          "reflexo-água",
+          "auto-admiração",
+          "flor",
+          "afogamento"
+        ],
+        "phrases": [
+          "Jovem de beleza fascinante que se apaixonou pelo próprio reflexo na superfície de um lago.",
+          "Morreu de inanição sem conseguir se afastar da imagem transformando-se em uma flor branca."
+        ]
+      },
+      {
+        "name": "Ícaro",
+        "sub": "grega_romana",
+        "word": "asas-cera",
+        "phrase": "Jovem que ignorou os avisos do pai arquiteto e voou perto demais do sol escaldante.",
+        "words": [
+          "asas-cera",
+          "voo-sol",
+          "derreter",
+          "mar"
+        ],
+        "phrases": [
+          "Jovem que ignorou os avisos do pai arquiteto e voou perto demais do sol escaldante.",
+          "Suas asas de penas unidas por cera derreteram precipitando-o em queda livre no oceano."
+        ]
+      },
+      {
+        "name": "Cupido (Eros)",
+        "sub": "grega_romana",
+        "word": "flechas-ouro-chumbo",
+        "phrase": "Divindade travessa que dispara dardos dourados para despertar paixão incontrolável ou repulsa.",
+        "words": [
+          "flechas-ouro-chumbo",
+          "asas",
+          "amor",
+          "arco"
+        ],
+        "phrases": [
+          "Divindade travessa que dispara dardos dourados para despertar paixão incontrolável ou repulsa.",
+          "Ser alado que une corações apaixonados sem que ninguém consiga prever seus disparos."
+        ]
+      },
+      {
+        "name": "Deméter",
+        "sub": "grega_romana",
+        "word": "estações",
+        "phrase": "Deusa da agricultura cujo luto pelo rapto da filha faz a terra esfriar trazendo o inverno.",
+        "words": [
+          "estações",
+          "colheita",
+          "trigo",
+          "filha-raptada"
+        ],
+        "phrases": [
+          "Deusa da agricultura cujo luto pelo rapto da filha faz a terra esfriar trazendo o inverno.",
+          "Abençoa o crescimento dos grãos e a abundância dos campos quando a primavera retorna."
+        ]
+      },
+      {
+        "name": "Odin",
+        "sub": "nordica",
+        "word": "pai-de-todos",
+        "phrase": "O patriarca supremo que sacrificou um olho na fonte sagrada em busca de sabedoria infinita.",
+        "words": [
+          "pai-de-todos",
+          "olho-sacrificado",
+          "corvos",
+          "lança-gungnir"
+        ],
+        "phrases": [
+          "O patriarca supremo que sacrificou um olho na fonte sagrada em busca de sabedoria infinita.",
+          "Acompanhado por dois corvos que sussurram notícias dos nove reinos e empunha lança infalível."
+        ]
+      },
+      {
+        "name": "Thor",
+        "sub": "nordica",
+        "word": "martelo-mjolnir",
+        "phrase": "Deus guerreiro ruivo que despedaça gigantes com seu martelo encantado que sempre volta à mão.",
+        "words": [
+          "martelo-mjolnir",
+          "trovões",
+          "bodes",
+          "força"
+        ],
+        "phrases": [
+          "Deus guerreiro ruivo que despedaça gigantes com seu martelo encantado que sempre volta à mão.",
+          "Percorre as nuvens em uma carruagem puxada por bodes mágicos faiscando relâmpagos."
+        ]
+      },
+      {
+        "name": "Loki",
+        "sub": "nordica",
+        "word": "trapaça",
+        "phrase": "O deus ardiloso da mentira capaz de se transformar em qualquer animal para enganar os deuses.",
+        "words": [
+          "trapaça",
+          "metamorfo",
+          "fogo",
+          "ilusão"
+        ],
+        "phrases": [
+          "O deus ardiloso da mentira capaz de se transformar em qualquer animal para enganar os deuses.",
+          "Pai de criaturas monstruosas cujo destino é liderar as forças das trevas no apocalipse."
+        ]
+      },
+      {
+        "name": "Freya",
+        "sub": "nordica",
+        "word": "gatos",
+        "phrase": "Deusa do amor, da fertilidade e da magia que conduz uma carruagem puxada por dois gatos azuis.",
+        "words": [
+          "gatos",
+          "colar-ouro",
+          "valquírias",
+          "beleza-amor"
+        ],
+        "phrases": [
+          "Deusa do amor, da fertilidade e da magia que conduz uma carruagem puxada por dois gatos azuis.",
+          "Metade dos guerreiros caídos em combate são acolhidos em seu suntuoso palácio nos campos."
+        ]
+      },
+      {
+        "name": "Valquíria",
+        "sub": "nordica",
+        "word": "cavalos-alados",
+        "phrase": "Donzelas guerreiras que sobrevoam os campos sangrentos escolhendo os mortos mais bravos.",
+        "words": [
+          "cavalos-alados",
+          "valhalla",
+          "guerreiros-mortos",
+          "armadura"
+        ],
+        "phrases": [
+          "Donzelas guerreiras que sobrevoam os campos sangrentos escolhendo os mortos mais bravos.",
+          "Conduzem heróis de batalha até o grande salão dourado para o banquete eterno."
+        ]
+      },
+      {
+        "name": "Fenrir",
+        "sub": "nordica",
+        "word": "lobo-gigante",
+        "phrase": "Lobo colossal cuja mandíbula toca a terra e o céu aprisionado por uma fita mágica fina de seda.",
+        "words": [
+          "lobo-gigante",
+          "corrente-mágica",
+          "morder-mão",
+          "ragnarok"
+        ],
+        "phrases": [
+          "Lobo colossal cuja mandíbula toca a terra e o céu aprisionado por uma fita mágica fina de seda.",
+          "Arrancou a mão do deus da coragem antes de ser atado até a chegada do fim do mundo."
+        ]
+      },
+      {
+        "name": "Jörmungandr (Serpente do Mundo)",
+        "sub": "nordica",
+        "word": "engolir-cauda",
+        "phrase": "Serpente marinha colossal que circunda toda a terra de Midgard mordendo a própria cauda.",
+        "words": [
+          "engolir-cauda",
+          "oceano",
+          "veneno",
+          "abismo"
+        ],
+        "phrases": [
+          "Serpente marinha colossal que circunda toda a terra de Midgard mordendo a própria cauda.",
+          "Arqui-inimiga do deus do trovão destinada a afogar o mundo em veneno negro na batalha final."
+        ]
+      },
+      {
+        "name": "Heimdall",
+        "sub": "nordica",
+        "word": "ponte-arco-íris",
+        "phrase": "O vigia insone de Asgard que enxerga no escuro por cem léguas e escuta a lã crescer na ovelha.",
+        "words": [
+          "ponte-arco-íris",
+          "trompa-gjallarhorn",
+          "visão-perfeita",
+          "guardião"
+        ],
+        "phrases": [
+          "O vigia insone de Asgard que enxerga no escuro por cem léguas e escuta a lã crescer na ovelha.",
+          "Sopra a grande trompa dourada para alertar os deuses sobre a invasão dos gigantes."
+        ]
+      },
+      {
+        "name": "Yggdrasil",
+        "sub": "nordica",
+        "word": "árvore-mundo",
+        "phrase": "O freixo cósmico sagrado cujos galhos e raízes sustentam e conectam os nove mundos da existência.",
+        "words": [
+          "árvore-mundo",
+          "nove-reinos",
+          "raízes",
+          "esquilo"
+        ],
+        "phrases": [
+          "O freixo cósmico sagrado cujos galhos e raízes sustentam e conectam os nove mundos da existência.",
+          "Árvore monumental habitada por uma águia no topo, um dragão na base e um esquilo mensageiro."
+        ]
+      },
+      {
+        "name": "Valhalla",
+        "sub": "nordica",
+        "word": "salão-guerreiros",
+        "phrase": "O imenso palácio com quinhentas e quarenta portas com teto feito de escudos dourados reluzentes.",
+        "words": [
+          "salão-guerreiros",
+          "escudos-teto",
+          "hidromel",
+          "banquete"
+        ],
+        "phrases": [
+          "O imenso palácio com quinhentas e quarenta portas com teto feito de escudos dourados reluzentes.",
+          "Morada eterna dos guerreiros nobres que treinam duelos de dia e banqueteiam à noite."
+        ]
+      },
+      {
+        "name": "Hela (Hel)",
+        "sub": "nordica",
+        "word": "reino-frio",
+        "phrase": "A governante do reino dos mortos que não pereceram em batalha, metade bela e metade putrefata.",
+        "words": [
+          "reino-frio",
+          "meio-morta",
+          "submundo",
+          "cadáveres"
+        ],
+        "phrases": [
+          "A governante do reino dos mortos que não pereceram em batalha, metade bela e metade putrefata.",
+          "Habita um palácio gélido e sombrio cercada pelas almas que sucumbiram à doença e à velhice."
+        ]
+      },
+      {
+        "name": "Balder",
+        "sub": "nordica",
+        "word": "luz",
+        "phrase": "O mais belo e amado dos deuses a quem tudo na natureza jurou não ferir exceto uma pequena planta.",
+        "words": [
+          "luz",
+          "visco",
+          "invulnerável",
+          "luto"
+        ],
+        "phrases": [
+          "O mais belo e amado dos deuses a quem tudo na natureza jurou não ferir exceto uma pequena planta.",
+          "Assassinado pela armadilha de um galho de visco arremessado por seu irmão cego enganado."
+        ]
+      },
+      {
+        "name": "Tyr",
+        "sub": "nordica",
+        "word": "mão-única",
+        "phrase": "O bravo deus da guerra honrada e da justiça que colocou a mão na boca da fera em garantia de paz.",
+        "words": [
+          "mão-única",
+          "coragem",
+          "justiça",
+          "sacrifício"
+        ],
+        "phrases": [
+          "O bravo deus da guerra honrada e da justiça que colocou a mão na boca da fera em garantia de paz.",
+          "O único deus que teve coragem suficiente para se aproximar do lobo gigante durante o aprisionamento."
+        ]
+      },
+      {
+        "name": "Ragnarök",
+        "sub": "nordica",
+        "word": "apocalipse",
+        "phrase": "O crepúsculo final dos deuses onde o sol escurece, as estrelas caem e os mundos são destruídos pelo fogo.",
+        "words": [
+          "apocalipse",
+          "inverno-três-anos",
+          "fogo-gigantes",
+          "renascimento"
+        ],
+        "phrases": [
+          "O crepúsculo final dos deuses onde o sol escurece, as estrelas caem e os mundos são destruídos pelo fogo.",
+          "Profecia épica onde os maiores guerreiros perecem em combate antes do renascimento de uma nova terra."
+        ]
+      },
+      {
+        "name": "Sleipnir",
+        "sub": "nordica",
+        "word": "oito-patas",
+        "phrase": "O cavalo cinzento de oito patas mais veloz de todos capaz de cavalgar sobre a terra, o mar e o ar.",
+        "words": [
+          "oito-patas",
+          "corcel",
+          "marcas-runas",
+          "vento"
+        ],
+        "phrases": [
+          "O cavalo cinzento de oito patas mais veloz de todos capaz de cavalgar sobre a terra, o mar e o ar.",
+          "Montaria pessoal do soberano que salta sobre as muralhas do além sem perder o ritmo."
+        ]
+      },
+      {
+        "name": "Surtr",
+        "sub": "nordica",
+        "word": "espada-chamas",
+        "phrase": "O guardião do reino de fogo que marcha à frente dos gigantes empunhando uma lâmina mais brilhante que o sol.",
+        "words": [
+          "espada-chamas",
+          "gigante-fogo",
+          "muspelheim",
+          "incêndio-mundo"
+        ],
+        "phrases": [
+          "O guardião do reino de fogo que marcha à frente dos gigantes empunhando uma lâmina mais brilhante que o sol.",
+          "Comanda as chamas cósmicas que reduzem os galhos da árvore sagrada a cinzas no crepúsculo."
+        ]
+      },
+      {
+        "name": "Nidhogg",
+        "sub": "nordica",
+        "word": "roer-raízes",
+        "phrase": "O dragão terrível que rói continuamente a raiz mais profunda da árvore do mundo na escuridão.",
+        "words": [
+          "roer-raízes",
+          "dragão",
+          "cadáveres",
+          "profundezas"
+        ],
+        "phrases": [
+          "O dragão terrível que rói continuamente a raiz mais profunda da árvore do mundo na escuridão.",
+          "Alimenta-se de corpos de perjuros e assassinos nos pântanos congelados do submundo."
+        ]
+      },
+      {
+        "name": "Skadi",
+        "sub": "nordica",
+        "word": "esquis",
+        "phrase": "A gigante e deusa das montanhas geladas que calça esquis de madeira caçando com arco nas nevascas.",
+        "words": [
+          "esquis",
+          "arcos-neve",
+          "montanhas",
+          "inverno"
+        ],
+        "phrases": [
+          "A gigante e deusa das montanhas geladas que calça esquis de madeira caçando com arco nas nevascas.",
+          "Escolheu seu marido divino olhando apenas para a beleza e brancura dos pés descalços dos deuses."
+        ]
+      },
+      {
+        "name": "Bragi",
+        "sub": "nordica",
+        "word": "poesia",
+        "phrase": "Deus da eloquência, dos bardos e da poesia com símbolos mágicos gravados na própria língua.",
+        "words": [
+          "poesia",
+          "harpa",
+          "runas-língua",
+          "palavras"
+        ],
+        "phrases": [
+          "Deus da eloquência, dos bardos e da poesia com símbolos mágicos gravados na própria língua.",
+          "Acolhe os recém-chegados guerreiros no palácio dourado com versos rimados e hidromel fresco."
+        ]
+      },
+      {
+        "name": "Bifrost",
+        "sub": "nordica",
+        "word": "ponte-arco-íris",
+        "phrase": "A ponte luminosa que cintila em três cores unindo a morada dos humanos ao reino dos deuses celestes.",
+        "words": [
+          "ponte-arco-íris",
+          "chamas-sagradas",
+          "cristal",
+          "ligação"
+        ],
+        "phrases": [
+          "A ponte luminosa que cintila em três cores unindo a morada dos humanos ao reino dos deuses celestes.",
+          "Construída com magia e fogo ardente para impedir que os gigantes de gelo atravessem suas curvas."
+        ]
+      },
+      {
+        "name": "Mjolnir",
+        "sub": "nordica",
+        "word": "martelo-curto",
+        "phrase": "A arma mágica forjada por anões nas profundezas com cabo curto devido a uma picada de mosca.",
+        "words": [
+          "martelo-curto",
+          "relâmpagos",
+          "anões-forja",
+          "indestrutível"
+        ],
+        "phrases": [
+          "A arma mágica forjada por anões nas profundezas com cabo curto devido a uma picada de mosca.",
+          "Esmaga montanhas inteiras e retorna automaticamente para as mãos protegidas por luvas de ferro."
+        ]
+      },
+      {
+        "name": "Draupnir",
+        "sub": "nordica",
+        "word": "anel-ouro",
+        "phrase": "O anel mágico de ouro que a cada nove noites pinga oito novos anéis de igual peso e valor.",
+        "words": [
+          "anel-ouro",
+          "multiplicação",
+          "nove-noites",
+          "riqueza"
+        ],
+        "phrases": [
+          "O anel mágico de ouro que a cada nove noites pinga oito novos anéis de igual peso e valor.",
+          "Símbolo inesgotável da fartura e prosperidade do soberano nos salões reais."
+        ]
+      },
+      {
+        "name": "Frey",
+        "sub": "nordica",
+        "word": "sol-chuva",
+        "phrase": "Deus da paz e da fertilidade que controla as chuvas amenas e o brilho fertilizador do sol nos campos.",
+        "words": [
+          "sol-chuva",
+          "javali-ouro",
+          "espada-voadora",
+          "fertilidade"
+        ],
+        "phrases": [
+          "Deus da paz e da fertilidade que controla as chuvas amenas e o brilho fertilizador do sol nos campos.",
+          "Montava um javali de cerdas de ouro brilhante e abriu mão de sua lâmina mágica por um grande amor."
+        ]
+      },
+      {
+        "name": "Gullinbursti",
+        "sub": "nordica",
+        "word": "javali-dourado",
+        "phrase": "Criatura forjada em fole mágico cujas cerdas douradas iluminam até as noites mais escuras dos reinos.",
+        "words": [
+          "javali-dourado",
+          "cerdas-luz",
+          "mais-rápido-cavalo",
+          "noite-clara"
+        ],
+        "phrases": [
+          "Criatura forjada em fole mágico cujas cerdas douradas iluminam até as noites mais escuras dos reinos.",
+          "Corre mais veloz que qualquer corcel cruzando céus e oceanos sem cansaço."
+        ]
+      },
+      {
+        "name": "Gungnir",
+        "sub": "nordica",
+        "word": "lança-infalível",
+        "phrase": "A lança sagrada com runas gravadas que nunca erra o alvo designado ao ser lançada no ar.",
+        "words": [
+          "lança-infalível",
+          "runas-ponta",
+          "arremesso",
+          "nunca-erra"
+        ],
+        "phrases": [
+          "A lança sagrada com runas gravadas que nunca erra o alvo designado ao ser lançada no ar.",
+          "Arma lendária utilizada para iniciar guerras sagradas sobrevoando exércitos inteiros."
+        ]
+      },
+      {
+        "name": "Ratatoskr",
+        "sub": "nordica",
+        "word": "esquilo-fofoqueiro",
+        "phrase": "O pequeno roedor que corre para cima e para baixo no tronco da árvore cósmica espalhando fofocas.",
+        "words": [
+          "esquilo-fofoqueiro",
+          "tronco-sobe-desce",
+          "mensagens",
+          "insultos"
+        ],
+        "phrases": [
+          "O pequeno roedor que corre para cima e para baixo no tronco da árvore cósmica espalhando fofocas.",
+          "Leva provocações e insultos entre a águia nas copas altas e o dragão das raízes profundas."
+        ]
+      },
+      {
+        "name": "Jotunheim",
+        "sub": "nordica",
+        "word": "terra-gigantes",
+        "phrase": "O reino inóspito e desolado cercado por montanhas pontiagudas onde habitam os gigantes de rocha e geada.",
+        "words": [
+          "terra-gigantes",
+          "rochas-gelo",
+          "fortaleza-utgard",
+          "selvagem"
+        ],
+        "phrases": [
+          "O reino inóspito e desolado cercado por montanhas pontiagudas onde habitam os gigantes de rocha e geada.",
+          "Terra de fortes encantados onde as ilusões de ótica enganam até os mais experientes deuses."
+        ]
+      },
+      {
+        "name": "Asgard",
+        "sub": "nordica",
+        "word": "cidade-deuses",
+        "phrase": "A magnífica cidadela celestial protegida por muralhas ciclópicas erguidas por um construtor misterioso.",
+        "words": [
+          "cidade-deuses",
+          "muralha-alta",
+          "palácios-ouro",
+          "céu"
+        ],
+        "phrases": [
+          "A magnífica cidadela celestial protegida por muralhas ciclópicas erguidas por um construtor misterioso.",
+          "Reino divino no topo da criação repleto de palacetes reluzentes e salões de festa."
+        ]
+      },
+      {
+        "name": "Midgard",
+        "sub": "nordica",
+        "word": "terra-humanos",
+        "phrase": "O reino central habitado pelos seres humanos mortais cercado pelas águas onde dorme o réptil gigante.",
+        "words": [
+          "terra-humanos",
+          "cercada-serpente",
+          "barrotes",
+          "mortal"
+        ],
+        "phrases": [
+          "O reino central habitado pelos seres humanos mortais cercado pelas águas onde dorme o réptil gigante.",
+          "Criado a partir da carne e dos ossos do primeiro gigante primordial abatido."
+        ]
+      },
+      {
+        "name": "Norns (Urðr, Verðandi, Skuld)",
+        "sub": "nordica",
+        "word": "três-destino",
+        "phrase": "As três donzelas do destino que tecem os fios da vida de deuses e homens à beira do poço sagrado.",
+        "words": [
+          "três-destino",
+          "fiar-vida",
+          "passado-presente-futuro",
+          "fonte-ufo"
+        ],
+        "phrases": [
+          "As três donzelas do destino que tecem os fios da vida de deuses e homens à beira do poço sagrado.",
+          "Determinam a duração da existência humana regando as raízes da grande árvore cósmica diariamente."
+        ]
+      },
+      {
+        "name": "Saci-Pererê",
+        "sub": "folclore_br",
+        "word": "uma-perna",
+        "phrase": "Menino travesso de uma perna só que usa gorro mágico vermelho e fuma cachimbo de barro.",
+        "words": [
+          "uma-perna",
+          "cachimbo",
+          "carapuça-vermelha",
+          "redemoinho"
+        ],
+        "phrases": [
+          "Menino travesso de uma perna só que usa gorro mágico vermelho e fuma cachimbo de barro.",
+          "Surge em redemoinhos de vento trançando crinas de cavalos e azedando o leite na panela."
+        ]
+      },
+      {
+        "name": "Curupira",
+        "sub": "folclore_br",
+        "word": "pés-virados",
+        "phrase": "Protetor das florestas com cabelos vermelhos como brasas e calcanhares voltados para a frente.",
+        "words": [
+          "pés-virados",
+          "cabelo-fogo",
+          "protetor-mata",
+          "pegadas-falsas"
+        ],
+        "phrases": [
+          "Protetor das florestas com cabelos vermelhos como brasas e calcanhares voltados para a frente.",
+          "Engana caçadores gananciosos deixando rastros que apontam na direção oposta à sua fuga."
+        ]
+      },
+      {
+        "name": "Mula sem Cabeça",
+        "sub": "folclore_br",
+        "word": "fogo-pescoço",
+        "phrase": "Criatura amaldiçoada que galopa nas noites de quinta para sexta cuspindo labaredas pelo pescoço.",
+        "words": [
+          "fogo-pescoço",
+          "relincho",
+          "ferraduras-prata",
+          "maldição-padre"
+        ],
+        "phrases": [
+          "Criatura amaldiçoada que galopa nas noites de quinta para sexta cuspindo labaredas pelo pescoço.",
+          "Mulher que se transforma em equino assustador por se apaixonar por um sacerdote da igreja."
+        ]
+      },
+      {
+        "name": "Boitatá",
+        "sub": "folclore_br",
+        "word": "serpente-fogo",
+        "phrase": "Gigantesca serpente de fogo brilhante que desliza pelos campos protegendo as matas de incêndios criminosos.",
+        "words": [
+          "serpente-fogo",
+          "olhos-chamas",
+          "mata-queimada",
+          "cegar"
+        ],
+        "phrases": [
+          "Gigantesca serpente de fogo brilhante que desliza pelos campos protegendo as matas de incêndios criminosos.",
+          "Quem olha diretamente em seus olhos flamejantes corre o risco de ficar cego ou enlouquecer de pavor."
+        ]
+      },
+      {
+        "name": "Boto Cor-de-Rosa",
+        "sub": "folclore_br",
+        "word": "terno-branco",
+        "phrase": "Golfinho fluvial rosado que se transforma em um homem charmoso de roupas claras nas noites de festa ribeirinha.",
+        "words": [
+          "terno-branco",
+          "chapéu",
+          "festa-junina",
+          "rio-amazônia"
+        ],
+        "phrases": [
+          "Golfinho fluvial rosado que se transforma em um homem charmoso de roupas claras nas noites de festa ribeirinha.",
+          "Usa chapéu elegante para cobrir o orifício de respiração no topo da cabeça enquanto seduz moças."
+        ]
+      },
+      {
+        "name": "Iara (Mãe d'Água)",
+        "sub": "folclore_br",
+        "word": "canto-sedução",
+        "phrase": "Bela sereia dos rios amazônicos de longos cabelos que encanta pescadores com seu canto hipnótico.",
+        "words": [
+          "canto-sedução",
+          "metade-peixe",
+          "lagoa-fundo",
+          "cabelos-pretos"
+        ],
+        "phrases": [
+          "Bela sereia dos rios amazônicos de longos cabelos que encanta pescadores com seu canto hipnótico.",
+          "Arrasta jovens hipnotizados para o fundo das águas escuras onde nunca mais retornam."
+        ]
+      },
+      {
+        "name": "Cuca",
+        "sub": "folclore_br",
+        "word": "jacaré-bruxa",
+        "phrase": "Bruxa temível com corpo de réptil e garras afiadas que não dorme há séculos em sua caverna sombria.",
+        "words": [
+          "jacaré-bruxa",
+          "caldeirão",
+          "pega-criança",
+          "caverna"
+        ],
+        "phrases": [
+          "Bruxa temível com corpo de réptil e garras afiadas que não dorme há séculos em sua caverna sombria.",
+          "Assusta crianças teimosas que não querem dormir entoando canções de ninar ameaçadoras."
+        ]
+      },
+      {
+        "name": "Caipora",
+        "sub": "folclore_br",
+        "word": "porco-do-mato",
+        "phrase": "Espírito guardião que cavalga montado em um grande caititu selvagem assobiando forte pela selva.",
+        "words": [
+          "porco-do-mato",
+          "fumo-corda",
+          "assobio",
+          "floresta-densa"
+        ],
+        "phrases": [
+          "Espírito guardião que cavalga montado em um grande caititu selvagem assobiando forte pela selva.",
+          "Exige oferendas de fumo de corda de caçadores para permitir que encontrem trilhas na mata."
+        ]
+      },
+      {
+        "name": "Negrinho do Pastoreio",
+        "sub": "folclore_br",
+        "word": "vela-acesa",
+        "phrase": "Menino escravizado milagroso que ajuda quem perdeu um objeto a reencontrá-lo em troca de uma vela acesa.",
+        "words": [
+          "vela-acesa",
+          "cavalo-baio",
+          "formigueiro",
+          "achar-perdidos"
+        ],
+        "phrases": [
+          "Menino escravizado milagroso que ajuda quem perdeu um objeto a reencontrá-lo em troca de uma vela acesa.",
+          "Foi castigado injustamente em um formigueiro mas ressurgiu protegido pela Virgem Maria montado em seu cavalo."
+        ]
+      },
+      {
+        "name": "Lobisomem do Sertão",
+        "sub": "folclore_br",
+        "word": "lua-cheia",
+        "phrase": "Homem amaldiçoado por ser o sétimo filho homem que se transforma em fera canina nas sextas-feiras.",
+        "words": [
+          "lua-cheia",
+          "uivo-encruzilhada",
+          "sétimo-filho",
+          "bala-prata"
+        ],
+        "phrases": [
+          "Homem amaldiçoado por ser o sétimo filho homem que se transforma em fera canina nas sextas-feiras.",
+          "Ataca animais e galinheiros uivando em encruzilhadas até o canto do primeiro galo da madrugada."
+        ]
+      },
+      {
+        "name": "Mapinguari",
+        "sub": "folclore_br",
+        "word": "olho-único",
+        "phrase": "Monstro peludo e gigantesco da floresta profunda com um único olho na testa e boca vertical no abdômen.",
+        "words": [
+          "olho-único",
+          "boca-barriga",
+          "fedor-insuportável",
+          "preguiça-gigante"
+        ],
+        "phrases": [
+          "Monstro peludo e gigantesco da floresta profunda com um único olho na testa e boca vertical no abdômen.",
+          "Exala um fedor podre capaz de atordoar quem se aproxima sendo quase imune a balas e flechas."
+        ]
+      },
+      {
+        "name": "Cobra Grande (Boiúna)",
+        "sub": "folclore_br",
+        "word": "olhos-farol",
+        "phrase": "Serpente fluvial de dimensões monumentais que afunda barcaças e cria ondas gigantescas por onde nada.",
+        "words": [
+          "olhos-farol",
+          "naufrágio",
+          "fundo-rio",
+          "gigante-escamas"
+        ],
+        "phrases": [
+          "Serpente fluvial de dimensões monumentais que afunda barcaças e cria ondas gigantescas por onde nada.",
+          "Seus olhos incandescentes parecem os faróis de um vapor flutuando na escuridão dos rios amazônicos."
+        ]
+      },
+      {
+        "name": "Vitória-Régia",
+        "sub": "folclore_br",
+        "word": "planta-aquática",
+        "phrase": "Jovem indígena apaixonada pelo astro da noite que se afogou ao tentar beijar seu reflexo na água.",
+        "words": [
+          "planta-aquática",
+          "índia-lua",
+          "estrela-águas",
+          "folha-gigante"
+        ],
+        "phrases": [
+          "Jovem indígena apaixonada pelo astro da noite que se afogou ao tentar beijar seu reflexo na água.",
+          "Foi transformada pelo senhor da lua em uma colossal folha circular perfumada que flutua nas lagoas."
+        ]
+      },
+      {
+        "name": "Chupa-Cabra",
+        "sub": "folclore_br",
+        "word": "sangue-seco",
+        "phrase": "Criatura misteriosa que aterrorizou áreas rurais atacando rebanhos e drenando todo o sangue sem deixar carne.",
+        "words": [
+          "sangue-seco",
+          "olhos-vermelhos",
+          "garras-costas",
+          "ovelhas"
+        ],
+        "phrases": [
+          "Criatura misteriosa que aterrorizou áreas rurais atacando rebanhos e drenando todo o sangue sem deixar carne.",
+          "Deixava furos simétricos nos pescoços de cabras e galinhas sem fazer ruído nas madrugadas."
+        ]
+      },
+      {
+        "name": "Matinta Perera",
+        "sub": "folclore_br",
+        "word": "pássaro-bruxa",
+        "phrase": "Bruxa velha que se transforma em uma ave noturna de canto agudo e assustador pousada no telhado das casas.",
+        "words": [
+          "pássaro-bruxa",
+          "assobio-estridente",
+          "pedir-tabaco",
+          "noite-telhado"
+        ],
+        "phrases": [
+          "Bruxa velha que se transforma em uma ave noturna de canto agudo e assustador pousada no telhado das casas.",
+          "Para que ela vá embora, o morador deve prometer fumo ou café na manhã seguinte à sua visita."
+        ]
+      },
+      {
+        "name": "Corpo-Seco (Unhudo)",
+        "sub": "folclore_br",
+        "word": "rejeitado-terra",
+        "phrase": "Homem tão cruel em vida que nem a terra nem o céu aceitaram seu corpo após a morte.",
+        "words": [
+          "rejeitado-terra",
+          "árvore-seca",
+          "garras-longas",
+          "abraço-morte"
+        ],
+        "phrases": [
+          "Homem tão cruel em vida que nem a terra nem o céu aceitaram seu corpo após a morte.",
+          "Virou uma criatura ressequida com unhas compridas que se esconde em troncos secos para agarrar viajantes."
+        ]
+      },
+      {
+        "name": "Bicho-Papão",
+        "sub": "folclore_br",
+        "word": "guarda-roupa",
+        "phrase": "Criatura das trevas que habita armários e vãos escuros debaixo da cama esperando crianças acordadas.",
+        "words": [
+          "guarda-roupa",
+          "cama-embaixo",
+          "medo-infantil",
+          "sombra"
+        ],
+        "phrases": [
+          "Criatura das trevas que habita armários e vãos escuros debaixo da cama esperando crianças acordadas.",
+          "Monstro sem forma definida citado em parlendas populares para incentivar o sono dos pequenos."
+        ]
+      },
+      {
+        "name": "Pisadeira",
+        "sub": "folclore_br",
+        "word": "peito-pesado",
+        "phrase": "Mulher esquelética de queixo pontiagudo que sobe nos telhados e pisa no peito de quem dorme de barriga cheia.",
+        "words": [
+          "peito-pesado",
+          "paralisia-sono",
+          "velha-magra",
+          "gargalhada"
+        ],
+        "phrases": [
+          "Mulher esquelética de queixo pontiagudo que sobe nos telhados e pisa no peito de quem dorme de barriga cheia.",
+          "Deixa a vítima consciente mas completamente imóvel e sufocada em um pesadelo paralisante."
+        ]
+      },
+      {
+        "name": "Caboclo d'Água",
+        "sub": "folclore_br",
+        "word": "são-francisco",
+        "phrase": "Monstro das águas do Velho Chico com corpo musculoso e pele de couro que vira barcos de pescadores.",
+        "words": [
+          "são-francisco",
+          "carrancas",
+          "olho-testa",
+          "virar-barcos"
+        ],
+        "phrases": [
+          "Monstro das águas do Velho Chico com corpo musculoso e pele de couro que vira barcos de pescadores.",
+          "Motivo pelo qual embarcações colocavam esculturas de madeira ferozes na proa para espantá-lo."
+        ]
+      },
+      {
+        "name": "Cabeça Satânica (Cabeça de Cuia)",
+        "sub": "folclore_br",
+        "word": "parnaíba",
+        "phrase": "Jovem amaldiçoado pela mãe que se transformou em monstro de cabeça desproporcional que habita o rio Parnaíba.",
+        "words": [
+          "parnaíba",
+          "cabeça-enorme",
+          "maldição-mãe",
+          "sete-virgens"
+        ],
+        "phrases": [
+          "Jovem amaldiçoado pela mãe que se transformou em monstro de cabeça desproporcional que habita o rio Parnaíba.",
+          "Precisa devorar sete moças virgens de mesmo nome para finalmente se livrar de sua terrível sina."
+        ]
+      },
+      {
+        "name": "Alamoa",
+        "sub": "folclore_br",
+        "word": "noronha-praia",
+        "phrase": "Fantasma de mulher loira sedutora que dança nua nas areias do arquipélago em noites de tempestade.",
+        "words": [
+          "noronha-praia",
+          "loira-encantada",
+          "esqueleto",
+          "farol"
+        ],
+        "phrases": [
+          "Fantasma de mulher loira sedutora que dança nua nas areias do arquipélago em noites de tempestade.",
+          "Atrai pescadores e marinheiros até o alto de penhascos transformando-se subitamente em uma caveira medonha."
+        ]
+      },
+      {
+        "name": "Capelobo",
+        "sub": "folclore_br",
+        "word": "tamanduá-monstro",
+        "phrase": "Criatura violenta com corpo humano musculoso e cabeça alongada que corre sobre patas redondas parecidas com fundo de garrafa.",
+        "words": [
+          "tamanduá-monstro",
+          "focinho-garrafa",
+          "miolos-presas",
+          "grito-forte"
+        ],
+        "phrases": [
+          "Criatura violenta com corpo humano musculoso e cabeça alongada que corre sobre patas redondas parecidas com fundo de garrafa.",
+          "Perfura o crânio de cães e pessoas com focinho de osso para sugar os miolos na calada da noite."
+        ]
+      },
+      {
+        "name": "Romãozinho",
+        "sub": "folclore_br",
+        "word": "falsa-traição",
+        "phrase": "Garoto maldoso que enganou os próprios pais causando uma tragédia familiar com mentiras sobre o almoço.",
+        "words": [
+          "falsa-traição",
+          "menino-maldoso",
+          "pedradas",
+          "andar-mundo"
+        ],
+        "phrases": [
+          "Garoto maldoso que enganou os próprios pais causando uma tragédia familiar com mentiras sobre o almoço.",
+          "Condenado a vagar eternamente pelos campos arremessando pedras em telhados e quebrando louças."
+        ]
+      },
+      {
+        "name": "Pé-de-Garrafa",
+        "sub": "folclore_br",
+        "word": "pegada-redonda",
+        "phrase": "Criatura misteriosa das matas centrais que deixa rastros circulares perfeitos parecendo o fundo de um vasilhame.",
+        "words": [
+          "pegada-redonda",
+          "mata-cerrado",
+          "assovio-longo",
+          "hipnose"
+        ],
+        "phrases": [
+          "Criatura misteriosa das matas centrais que deixa rastros circulares perfeitos parecendo o fundo de um vasilhame.",
+          "Solta assobios hipnóticos que desorientam caçadores fazendo-os andar em círculos até a exaustão."
+        ]
+      },
+      {
+        "name": "Boi Barroso",
+        "sub": "folclore_br",
+        "word": "canção-infantil",
+        "phrase": "O novilho lendário das cantigas de ninar que perdeu o rabo e a ponta da orelha na lida do gado.",
+        "words": [
+          "canção-infantil",
+          "touro-sertão",
+          "chifres-largos",
+          "cantiga"
+        ],
+        "phrases": [
+          "O novilho lendário das cantigas de ninar que perdeu o rabo e a ponta da orelha na lida do gado.",
+          "Protagonista de versos carinhosos entoados por mães e avós no interior do Brasil."
+        ]
+      },
+      {
+        "name": "Cão de Sete Pernas",
+        "sub": "folclore_br",
+        "word": "encruzilhada",
+        "phrase": "Aparição canina medonha com patas adicionais que corre em velocidade impossível pelas estradas de terra.",
+        "words": [
+          "encruzilhada",
+          "uivo-sinistro",
+          "patas-extras",
+          "assombração"
+        ],
+        "phrases": [
+          "Aparição canina medonha com patas adicionais que corre em velocidade impossível pelas estradas de terra.",
+          "Cruza caminhos desertos deixando um rastro de poeira e arrepios em quem viaja a cavalo na madrugada."
+        ]
+      },
+      {
+        "name": "Comadre Fulozinha",
+        "sub": "folclore_br",
+        "word": "tranças-cabelo",
+        "phrase": "Pequena mulher mística e arisca das matas nordestinas que castiga com chicotadas de taquara quem não lhe traz fumo.",
+        "words": [
+          "tranças-cabelo",
+          "taquara-açoite",
+          "floresta-nordeste",
+          "fumo-presente"
+        ],
+        "phrases": [
+          "Pequena mulher mística e arisca das matas nordestinas que castiga com chicotadas de taquara quem não lhe traz fumo.",
+          "Divertia-se fazendo tranças impossíveis de desatar nas crinas dos cavalos durante a noite."
+        ]
+      },
+      {
+        "name": "Papa-Figo",
+        "sub": "folclore_br",
+        "word": "saco-costas",
+        "phrase": "Homem misterioso e corcunda que carrega um saco nas costas atraindo crianças desobedientes com guloseimas.",
+        "words": [
+          "saco-costas",
+          "fígado-crianças",
+          "doente-velho",
+          "lenda-urbana"
+        ],
+        "phrases": [
+          "Homem misterioso e corcunda que carrega um saco nas costas atraindo crianças desobedientes com guloseimas.",
+          "Acreditava que comer órgãos saudáveis de meninos pequenos curaria sua própria enfermidade incurável."
+        ]
+      },
+      {
+        "name": "Homem do Saco",
+        "sub": "folclore_br",
+        "word": "andarilho",
+        "phrase": "Figura folclórica urbana utilizada por pais para impedir que filhos pequenos fiquem sozinhos na rua.",
+        "words": [
+          "andarilho",
+          "ruas-tarde",
+          "levar-embora",
+          "saco-estopa"
+        ],
+        "phrases": [
+          "Figura folclórica urbana utilizada por pais para impedir que filhos pequenos fiquem sozinhos na rua.",
+          "Andarilho silencioso que supostamente recolhe crianças distraídas para dentro de seu grande fardo de estopa."
+        ]
+      },
+      {
+        "name": "Bradador",
+        "sub": "folclore_br",
+        "word": "gritos-sepultura",
+        "phrase": "Ermitão falecido que sai de sua cova nas noites de sexta para soltar berros lancinantes pelos morros e vales.",
+        "words": [
+          "gritos-sepultura",
+          "terra-rejeitou",
+          "noite-assombração",
+          "eco-vales"
+        ],
+        "phrases": [
+          "Ermitão falecido que sai de sua cova nas noites de sexta para soltar berros lancinantes pelos morros e vales.",
+          "Seus gritos apavorantes ecoam pelas encostas até encontrar o perdão de seus pecados na terra."
+        ]
+      },
+      {
+        "name": "Rá",
+        "sub": "egipcia_oriental",
+        "word": "sol-disco",
+        "phrase": "O deus supremo solar que navega em uma barca sagrada pelos céus de dia e pelo submundo de noite.",
+        "words": [
+          "sol-disco",
+          "barca-solar",
+          "falcão-cabeça",
+          "criador"
+        ],
+        "phrases": [
+          "O deus supremo solar que navega em uma barca sagrada pelos céus de dia e pelo submundo de noite.",
+          "Representado com cabeça de falcão encimada por um disco solar flamejante cercado por uma serpente."
+        ]
+      },
+      {
+        "name": "Anúbis",
+        "sub": "egipcia_oriental",
+        "word": "chacal",
+        "phrase": "O deus com cabeça de canídeo negro que pesa o coração dos falecidos contra uma pluma sagrada da verdade.",
+        "words": [
+          "chacal",
+          "mumificação",
+          "balança-coração",
+          "pena-maat"
+        ],
+        "phrases": [
+          "O deus com cabeça de canídeo negro que pesa o coração dos falecidos contra uma pluma sagrada da verdade.",
+          "Mestre supremo da mumificação e dos rituais fúnebres que protege as tumbas nas necrópoles."
+        ]
+      },
+      {
+        "name": "Osíris",
+        "sub": "egipcia_oriental",
+        "word": "pele-verde",
+        "phrase": "O soberano do além de pele esverdeada que simboliza o renascimento da vegetação e das almas.",
+        "words": [
+          "pele-verde",
+          "rei-mortos",
+          "esquartejado",
+          "ressurreição"
+        ],
+        "phrases": [
+          "O soberano do além de pele esverdeada que simboliza o renascimento da vegetação e das almas.",
+          "Foi assassinado e despedaçado pelo irmão invejoso sendo recomposto com magia por sua fiel esposa."
+        ]
+      },
+      {
+        "name": "Ísis",
+        "sub": "egipcia_oriental",
+        "word": "magia",
+        "phrase": "A mais poderosa deusa feiticeira do Egito antiga protetora das mulheres e das crianças.",
+        "words": [
+          "magia",
+          "asas-abertas",
+          "maternidade",
+          "trono"
+        ],
+        "phrases": [
+          "A mais poderosa deusa feiticeira do Egito antiga protetora das mulheres e das crianças.",
+          "Reuniu os pedaços do marido e usou suas asas emplumadas para soprar o ar da vida de volta aos seus pulmões."
+        ]
+      },
+      {
+        "name": "Hórus",
+        "sub": "egipcia_oriental",
+        "word": "olho-protetor",
+        "phrase": "Deus dos céus com cabeça de falcão cujo olho curado virou o mais famoso amuleto de proteção do mundo antigo.",
+        "words": [
+          "olho-protetor",
+          "falcão",
+          "vingança",
+          "faraó"
+        ],
+        "phrases": [
+          "Deus dos céus com cabeça de falcão cujo olho curado virou o mais famoso amuleto de proteção do mundo antigo.",
+          "Lutou bravamente contra o tio tirano para vingar a morte do pai e herdar a coroa do Egito."
+        ]
+      },
+      {
+        "name": "Seth (Set)",
+        "sub": "egipcia_oriental",
+        "word": "caos",
+        "phrase": "Deus do caos, dos desertos áridos e das tempestades violentas representado por uma criatura de orelhas quadradas.",
+        "words": [
+          "caos",
+          "deserto",
+          "tempestades",
+          "animal-enigmático"
+        ],
+        "phrases": [
+          "Deus do caos, dos desertos áridos e das tempestades violentas representado por uma criatura de orelhas quadradas.",
+          "O irmão traidor que espalhou discórdia mas também defendia a barca solar contra a serpente primordial."
+        ]
+      },
+      {
+        "name": "Esfinge de Gizé",
+        "sub": "egipcia_oriental",
+        "word": "corpo-leão",
+        "phrase": "Monumento colossal esculpido em calcário com corpo de felino e rosto régio vigiando as pirâmides no deserto.",
+        "words": [
+          "corpo-leão",
+          "cabeça-humana",
+          "enigma",
+          "pedra"
+        ],
+        "phrases": [
+          "Monumento colossal esculpido em calcário com corpo de felino e rosto régio vigiando as pirâmides no deserto.",
+          "Criatura lendária que devorava viajantes incapazes de decifrar suas charadas misteriosas."
+        ]
+      },
+      {
+        "name": "Bastet",
+        "sub": "egipcia_oriental",
+        "word": "gata",
+        "phrase": "Deusa solar com cabeça de felino domesticado protetora dos lares, das mães e dos perfumes aromáticos.",
+        "words": [
+          "gata",
+          "proteção-lar",
+          "fertilidade",
+          "perfumes"
+        ],
+        "phrases": [
+          "Deusa solar com cabeça de felino domesticado protetora dos lares, das mães e dos perfumes aromáticos.",
+          "Reverenciada pelos egípcios que consideravam os gatos criaturas sagradas portadoras de boa sorte."
+        ]
+      },
+      {
+        "name": "Sobek",
+        "sub": "egipcia_oriental",
+        "word": "crocodilo",
+        "phrase": "O poderoso deus com cabeça de réptil predador que garantia a cheia fértil e os peixes do rio Nilo.",
+        "words": [
+          "crocodilo",
+          "nilo",
+          "fertilidade-águas",
+          "dentes-afiados"
+        ],
+        "phrases": [
+          "O poderoso deus com cabeça de réptil predador que garantia a cheia fértil e os peixes do rio Nilo.",
+          "Associado à força militar implacável e temido por pescadores nas margens ribeirinhas."
+        ]
+      },
+      {
+        "name": "Thoth",
+        "sub": "egipcia_oriental",
+        "word": "íbis",
+        "phrase": "O deus com cabeça de ave pernalta de bico curvo que inventou a escrita, a matemática e o calendário.",
+        "words": [
+          "íbis",
+          "escrita-hieróglifos",
+          "sabedoria",
+          "lua"
+        ],
+        "phrases": [
+          "O deus com cabeça de ave pernalta de bico curvo que inventou a escrita, a matemática e o calendário.",
+          "O escriba celestial que registra os vereditos finais durante a pesagem das almas na outra vida."
+        ]
+      },
+      {
+        "name": "Fênix (Bennu)",
+        "sub": "egipcia_oriental",
+        "word": "cinzas-renascer",
+        "phrase": "Pássaro sagrado de plumagem escarlate e dourada que entra em combustão ao morrer para renascer jovem das cinzas.",
+        "words": [
+          "cinzas-renascer",
+          "penas-chamas",
+          "imortalidade",
+          "fogo"
+        ],
+        "phrases": [
+          "Pássaro sagrado de plumagem escarlate e dourada que entra em combustão ao morrer para renascer jovem das cinzas.",
+          "Símbolo universal do renascimento eterno, da ressurreição e da força que nunca se apaga."
+        ]
+      },
+      {
+        "name": "Dragão Oriental (Long)",
+        "sub": "egipcia_oriental",
+        "word": "serpente-nuvens",
+        "phrase": "Criatura benevolente e majestosa sem asas que nada pelo ar controlando as chuvas e rios na Ásia.",
+        "words": [
+          "serpente-nuvens",
+          "pérola-sabedoria",
+          "chuvas",
+          "bigodes-longos"
+        ],
+        "phrases": [
+          "Criatura benevolente e majestosa sem asas que nada pelo ar controlando as chuvas e rios na Ásia.",
+          "Símbolo máximo da realeza e prosperidade imperial com escamas reluzentes e longos bigodes."
+        ]
+      },
+      {
+        "name": "Kitsune (Raposa de Nove Caudas)",
+        "sub": "egipcia_oriental",
+        "word": "nove-caudas",
+        "phrase": "Raposa mística japonesa que ganha uma nova cauda a cada século de sabedoria até atingir a cor branca ou dourada.",
+        "words": [
+          "nove-caudas",
+          "metamorfa",
+          "ilusões",
+          "fogo-azul"
+        ],
+        "phrases": [
+          "Raposa mística japonesa que ganha uma nova cauda a cada século de sabedoria até atingir a cor branca ou dourada.",
+          "Mestre na arte de se transformar em belas mulheres e criar labaredas mágicas em noites florestais."
+        ]
+      },
+      {
+        "name": "Tengu",
+        "sub": "egipcia_oriental",
+        "word": "nariz-longo",
+        "phrase": "Espírito guardião das montanhas japonesas com rosto vermelho, nariz proeminente e asas de ave de rapina.",
+        "words": [
+          "nariz-longo",
+          "asas-pretas",
+          "leque-penas",
+          "montanhas-espadas"
+        ],
+        "phrases": [
+          "Espírito guardião das montanhas japonesas com rosto vermelho, nariz proeminente e asas de ave de rapina.",
+          "Mestre incomparável na arte da esgrima que castiga a arrogância e protege templos sagrados."
+        ]
+      },
+      {
+        "name": "Oni (Demônio Japonês)",
+        "sub": "egipcia_oriental",
+        "word": "chifres-testa",
+        "phrase": "Ogro ogro da mitologia oriental de pele vermelha ou azul armado com uma massuda clava de ferro pontiaguda.",
+        "words": [
+          "chifres-testa",
+          "clava-ferro",
+          "pele-vermelha",
+          "tanga-tigre"
+        ],
+        "phrases": [
+          "Ogro ogro da mitologia oriental de pele vermelha ou azul armado com uma massuda clava de ferro pontiaguda.",
+          "Guardião dos portões infernais que pune almas pecadoras com força bruta avassaladora."
+        ]
+      },
+      {
+        "name": "Jiangshi (Vampiro Chinês)",
+        "sub": "egipcia_oriental",
+        "word": "pulos-braços-retos",
+        "phrase": "Cadáver reanimado que se locomove aos saltos com braços esticados para frente e veste terno imperial.",
+        "words": [
+          "pulos-braços-retos",
+          "papel-amarelo",
+          "manto-dinastia",
+          "suga-qi"
+        ],
+        "phrases": [
+          "Cadáver reanimado que se locomove aos saltos com braços esticados para frente e veste terno imperial.",
+          "Pode ser imobilizado grudando um talismã de papel amarelo com feitiços arcanos na sua testa."
+        ]
+      },
+      {
+        "name": "Shiva",
+        "sub": "egipcia_oriental",
+        "word": "dança-cósmica",
+        "phrase": "A divindade que realiza a dança cósmica que destrói as ilusões do universo para que ele possa renascer.",
+        "words": [
+          "dança-cósmica",
+          "terceiro-olho",
+          "tridente-trishula",
+          "destruição-renovação"
+        ],
+        "phrases": [
+          "A divindade que realiza a dança cósmica que destrói as ilusões do universo para que ele possa renascer.",
+          "Carrega a lua crescente nos cabelos, uma serpente ao redor do pescoço e cinzas sagradas na pele."
+        ]
+      },
+      {
+        "name": "Ganesha",
+        "sub": "egipcia_oriental",
+        "word": "cabeça-elefante",
+        "phrase": "Divindade benevolente com cabeça de elefante e barriga proeminente reverenciada para abrir caminhos e novos começos.",
+        "words": [
+          "cabeça-elefante",
+          "remover-obstáculos",
+          "doce-ladoo",
+          "rato-montaria"
+        ],
+        "phrases": [
+          "Divindade benevolente com cabeça de elefante e barriga proeminente reverenciada para abrir caminhos e novos começos.",
+          "Escreveu epopeias sagradas com sua presa quebrada e cavalga um pequeno roedor com calma."
+        ]
+      },
+      {
+        "name": "Sun Wukong (Rei Macaco)",
+        "sub": "egipcia_oriental",
+        "word": "bastão-esticar",
+        "phrase": "Guerreiro símio nascido de uma pedra que dominou dezenas de magias de imortalidade e desafiou o próprio céu.",
+        "words": [
+          "bastão-esticar",
+          "nuvem-voadora",
+          "imortal",
+          "travesso"
+        ],
+        "phrases": [
+          "Guerreiro símio nascido de uma pedra que dominou dezenas de magias de imortalidade e desafiou o próprio céu.",
+          "Empunha um cajado mágico que muda de tamanho conforme sua vontade e voa montado em nuvens."
+        ]
+      },
+      {
+        "name": "Garuda",
+        "sub": "egipcia_oriental",
+        "word": "pássaro-sol",
+        "phrase": "O rei alado dos pássaros com corpo de homem e bico de águia mortal inimigo de todas as cobras venenosas.",
+        "words": [
+          "pássaro-sol",
+          "garras-serpentes",
+          "dourado",
+          "montaria-vishnu"
+        ],
+        "phrases": [
+          "O rei alado dos pássaros com corpo de homem e bico de águia mortal inimigo de todas as cobras venenosas.",
+          "Suas asas gigantescas são tão brilhantes que quando decola bloqueia a própria luz do sol."
+        ]
+      },
+      {
+        "name": "Kappa",
+        "sub": "egipcia_oriental",
+        "word": "prato-água-cabeça",
+        "phrase": "Criatura anfíbia travessa que habita lagoas japonesas com uma cavidade cheia de água no topo do crânio.",
+        "words": [
+          "prato-água-cabeça",
+          "casco-tartaruga",
+          "pepino",
+          "rio-puxar"
+        ],
+        "phrases": [
+          "Criatura anfíbia travessa que habita lagoas japonesas com uma cavidade cheia de água no topo do crânio.",
+          "Perde todas as suas forças sobrenaturais se for forçado a se curvar derramando o líquido da cabeça."
+        ]
+      },
+      {
+        "name": "Tanuki",
+        "sub": "egipcia_oriental",
+        "word": "cão-guaxinim",
+        "phrase": "Animal místico fofinho que coloca uma folha na cabeça para se transformar em qualquer objeto ou pessoa.",
+        "words": [
+          "cão-guaxinim",
+          "folha-cabeça",
+          "garrafa-saquê",
+          "transformação"
+        ],
+        "phrases": [
+          "Animal místico fofinho que coloca uma folha na cabeça para se transformar em qualquer objeto ou pessoa.",
+          "Adora pregar peças inofensivas em viajantes, tomar saquê e tocar sua grande barriga como um tambor."
+        ]
+      },
+      {
+        "name": "Banshee",
+        "sub": "egipcia_oriental",
+        "word": "grito-morte",
+        "phrase": "Espírito feminino ancestral que vagueia nos pântanos entoando lamentos estridentes anunciando a morte iminente.",
+        "words": [
+          "grito-morte",
+          "cabelos-cinzas",
+          "lamento",
+          "presságio"
+        ],
+        "phrases": [
+          "Espírito feminino ancestral que vagueia nos pântanos entoando lamentos estridentes anunciando a morte iminente.",
+          "Seu uivo dilacerante na escuridão faz gelar o sangue de qualquer um que o escute nas noites frias."
+        ]
+      },
+      {
+        "name": "Golem de Praga",
+        "sub": "egipcia_oriental",
+        "word": "barro-animado",
+        "phrase": "Gigante moldado em argila trazido à vida por um rabino através de inscrições místicas sagradas na testa.",
+        "words": [
+          "barro-animado",
+          "palavra-verdade-testa",
+          "sem-fala",
+          "protetor"
+        ],
+        "phrases": [
+          "Gigante moldado em argila trazido à vida por um rabino através de inscrições místicas sagradas na testa.",
+          "Autômato de terra criado para proteger a comunidade que perde o controle quando o texto é apagado."
+        ]
+      },
+      {
+        "name": "Ouroboros",
+        "sub": "egipcia_oriental",
+        "word": "morder-própria-cauda",
+        "phrase": "O símbolo ancestral da serpente que engole a própria cauda formando um círculo perpétuo sem início nem fim.",
+        "words": [
+          "morder-própria-cauda",
+          "círculo-eterno",
+          "infinito",
+          "serpente"
+        ],
+        "phrases": [
+          "O símbolo ancestral da serpente que engole a própria cauda formando um círculo perpétuo sem início nem fim.",
+          "Representa a constante reciclagem da vida, da morte e da renovação eterna de todo o cosmos."
+        ]
+      },
+      {
+        "name": "Apep (Apófis)",
+        "sub": "egipcia_oriental",
+        "word": "serpente-escuridão",
+        "phrase": "A colossal serpente demoníaca que rasteja pelo submundo tentando engolir o astro rei todas as noites.",
+        "words": [
+          "serpente-escuridão",
+          "devorar-sol",
+          "eclipse",
+          "caos-abismo"
+        ],
+        "phrases": [
+          "A colossal serpente demoníaca que rasteja pelo submundo tentando engolir o astro rei todas as noites.",
+          "Derrotada diariamente em combate para que a alvorada de um novo dia possa iluminar a terra."
+        ]
+      },
+      {
+        "name": "Sekhmet",
+        "sub": "egipcia_oriental",
+        "word": "leoa-guerreira",
+        "phrase": "Deusa leoa feroz enviada para punir os humanos rebeldes cuja fúria quase exterminou toda a civilização.",
+        "words": [
+          "leoa-guerreira",
+          "sede-sangue",
+          "cerveja-romã",
+          "sol-fúria"
+        ],
+        "phrases": [
+          "Deusa leoa feroz enviada para punir os humanos rebeldes cuja fúria quase exterminou toda a civilização.",
+          "Só foi acalmada pelos deuses após beber milhares de jarras de cerveja tingidas de vermelho pensando ser sangue."
+        ]
+      },
+      {
+        "name": "Hathor",
+        "sub": "egipcia_oriental",
+        "word": "chifres-vaca",
+        "phrase": "Deusa graciosa do amor, da música e da maternidade com chifres bovinos abraçando o disco solar.",
+        "words": [
+          "chifres-vaca",
+          "música-sistro",
+          "alegria",
+          "disco-solar"
+        ],
+        "phrases": [
+          "Deusa graciosa do amor, da música e da maternidade com chifres bovinos abraçando o disco solar.",
+          "Acolhe os viajantes com acolhimento maternal espalhando dança e perfumes doces pelo reino."
+        ]
+      },
+      {
+        "name": "Yeti (Abominável Homem das Neves)",
+        "sub": "egipcia_oriental",
+        "word": "pegadas-gelo",
+        "phrase": "Criatura simiesca colossal de pelagem branca que habita as encostas congeladas e inexploradas da Ásia.",
+        "words": [
+          "pegadas-gelo",
+          "pêlos-brancos",
+          "himalaia",
+          "montanha-frio"
+        ],
+        "phrases": [
+          "Criatura simiesca colossal de pelagem branca que habita as encostas congeladas e inexploradas da Ásia.",
+          "Deixa pegadas gigantescas na neve fofa desaparecendo nas nevascas antes de ser fotografado."
+        ]
+      },
+      {
+        "name": "Leviatã",
+        "sub": "egipcia_oriental",
+        "word": "monstro-marinho",
+        "phrase": "Monstruosidade primordial das profundezas oceânicas de couraça impenetrável que agita o mar como uma caldeira.",
+        "words": [
+          "monstro-marinho",
+          "escamas-ferro",
+          "abismo-oceano",
+          "maré-alta"
+        ],
+        "phrases": [
+          "Monstruosidade primordial das profundezas oceânicas de couraça impenetrável que agita o mar como uma caldeira.",
+          "Criatura de proporções apocalípticas temida por marinheiros e pescadores desde tempos imemoriais."
+        ]
+      }
+    ]
+  },
+  "Música & Ritmos": {
+    "icon": "🎵",
+    "color": "#e056fd",
+    "subcategories": {
+      "rock_metal": {
+        "label": "Rock, Punk & Metal",
+        "icon": "🎸",
+        "desc": "Queen, Guns N' Roses, Metallica, Nirvana, AC/DC, Charlie Brown Jr e solos de guitarra"
+      },
+      "pop_funk": {
+        "label": "Pop, Funk & Eletrônica",
+        "icon": "✨",
+        "desc": "Michael Jackson, Madonna, Taylor Swift, Anitta, Alok, batidas eletrônicas e hits dançantes"
+      },
+      "sertanejo_pagode": {
+        "label": "Sertanejo, Pagode & Samba",
+        "icon": "🪕",
+        "desc": "Jorge & Mateus, Thiaguinho, Zeca Pagodinho, Raça Negra, viola caipira e roda de samba"
+      },
+      "rap_trap_mpb": {
+        "label": "Rap, Trap, MPB & Reggae",
+        "icon": "🎤",
+        "desc": "Racionais MC's, Emicida, Matuê, Bob Marley, Tim Maia, Caetano, rimas e poesia musical"
+      }
+    },
+    "items": [
+      {
+        "name": "Guitarras Elétricas",
+        "sub": "rock_metal",
+        "word": "palheta",
+        "phrase": "Instrumento com captadores magnéticos que ruge através de pedais de efeito nos palcos de rock.",
+        "words": [
+          "palheta",
+          "amplificador",
+          "distorção",
+          "cordas-aço"
+        ],
+        "phrases": [
+          "Instrumento com captadores magnéticos que ruge através de pedais de efeito nos palcos de rock.",
+          "Solos estridentes rasgando o ar em acordes pesados e distorcidos sob luzes estroboscópicas."
+        ]
+      },
+      {
+        "name": "Bateria Acústica",
+        "sub": "rock_metal",
+        "word": "baquetas",
+        "phrase": "Conjunto de tambores e pratos de latão que dita a pulsação enérgica e o compasso de uma banda.",
+        "words": [
+          "baquetas",
+          "bumbo-pedal",
+          "pratos",
+          "caixa"
+        ],
+        "phrases": [
+          "Conjunto de tambores e pratos de latão que dita a pulsação enérgica e o compasso de uma banda.",
+          "Batidas vigorosas nos pratos com bumbos duplos que fazem tremer o chão de festivais."
+        ]
+      },
+      {
+        "name": "Solo de Guitarra",
+        "sub": "rock_metal",
+        "word": "alavanca",
+        "phrase": "Momento de apoteose instrumental onde o guitarrista domina o centro do palco em alta velocidade técnica.",
+        "words": [
+          "alavanca",
+          "bend-corda",
+          "tapping",
+          "improviso"
+        ],
+        "phrases": [
+          "Momento de apoteose instrumental onde o guitarrista domina o centro do palco em alta velocidade técnica.",
+          "Dedos deslizando com precisão pelo braço do instrumento sustentando notas que arrepiam multidões."
+        ]
+      },
+      {
+        "name": "Baixo Elétrico",
+        "sub": "rock_metal",
+        "word": "quatro-cordas-grossas",
+        "phrase": "Instrumento de quatro cordas grossas que produz as notas mais graves e corporais da harmonia musical.",
+        "words": [
+          "quatro-cordas-grossas",
+          "grave",
+          "slap",
+          "ritmo-base"
+        ],
+        "phrases": [
+          "Instrumento de quatro cordas grossas que produz as notas mais graves e corporais da harmonia musical.",
+          "Conecta a batida seca da bateria com os acordes melódicos sustentando o groove invisível."
+        ]
+      },
+      {
+        "name": "Palheta de Guitarra",
+        "sub": "rock_metal",
+        "word": "triângulo-plástico",
+        "phrase": "Pequeno pedaço triangular de plástico que os músicos seguram entre o polegar e o indicador para tocar.",
+        "words": [
+          "triângulo-plástico",
+          "arremesso-plateia",
+          "ferrão-cordas",
+          "bolso"
+        ],
+        "phrases": [
+          "Pequeno pedaço triangular de plástico que os músicos seguram entre o polegar e o indicador para tocar.",
+          "Frequentemente arremessada no fim do show para delírio dos fãs que disputam a lembrança."
+        ]
+      },
+      {
+        "name": "Pedal de Distorção",
+        "sub": "rock_metal",
+        "word": "pisada-pé",
+        "phrase": "Caixa metálica no chão que altera o sinal limpo transformando notas suaves em rugidos metálicos furiosos.",
+        "words": [
+          "pisada-pé",
+          "som-pesado",
+          "ganho",
+          "fuzz"
+        ],
+        "phrases": [
+          "Caixa metálica no chão que altera o sinal limpo transformando notas suaves em rugidos metálicos furiosos.",
+          "Acionado com um pisão no momento exato em que o refrão pesado entra na música."
+        ]
+      },
+      {
+        "name": "Roda Punk (Mosh Pit)",
+        "sub": "rock_metal",
+        "word": "empurrões",
+        "phrase": "Círculo aberto no meio da pista onde fãs pulam e se chocam ao ritmo acelerado de guitarras e baterias.",
+        "words": [
+          "empurrões",
+          "círculo-aberto",
+          "cotovelos",
+          "pulos"
+        ],
+        "phrases": [
+          "Círculo aberto no meio da pista onde fãs pulam e se chocam ao ritmo acelerado de guitarras e baterias.",
+          "Ritual de energia bruta nos shows de rock onde quem cai no chão é imediatamente ajudado a levantar."
+        ]
+      },
+      {
+        "name": "Queen",
+        "sub": "rock_metal",
+        "word": "bohemian-rhapsody",
+        "phrase": "Lendária banda britânica que misturou rock de arena com ópera coral grandiosa e solos magistrais.",
+        "words": [
+          "bohemian-rhapsody",
+          "bigode-vocal",
+          "bater-palmas-estádio",
+          "capa-rei"
+        ],
+        "phrases": [
+          "Lendária banda britânica que misturou rock de arena com ópera coral grandiosa e solos magistrais.",
+          "Famosa pela batida rítmica de palmas nos pés e refrões cantados em coro por cem mil pessoas."
+        ]
+      },
+      {
+        "name": "Guns N' Roses",
+        "sub": "rock_metal",
+        "word": "cartola",
+        "phrase": "Banda que explodiu nos anos oitenta com riffs melódicos inconfundíveis e atitude rebelde nas turnês.",
+        "words": [
+          "cartola",
+          "sweet-child",
+          "voz-rouca-aguda",
+          "rosas"
+        ],
+        "phrases": [
+          "Banda que explodiu nos anos oitenta com riffs melódicos inconfundíveis e atitude rebelde nas turnês.",
+          "Guitarrista de cabelos cacheados sob cartola fumando cigarro enquanto solar notas eternas."
+        ]
+      },
+      {
+        "name": "Metallica",
+        "sub": "rock_metal",
+        "word": "enter-sandman",
+        "phrase": "Os gigantes do metal pesado com palhetadas descendentes ultrarrápidas e álbuns pretos históricos.",
+        "words": [
+          "enter-sandman",
+          "thrash-metal",
+          "palhetada-rápida",
+          "preto"
+        ],
+        "phrases": [
+          "Os gigantes do metal pesado com palhetadas descendentes ultrarrápidas e álbuns pretos históricos.",
+          "Liderados por vocais guturais marcantes e bumbos duplos em estádios lotados pelo mundo."
+        ]
+      },
+      {
+        "name": "Iron Maiden",
+        "sub": "rock_metal",
+        "word": "eddie-mascote",
+        "phrase": "Pioneiros do heavy metal com mascote cadavérico gigante que invade o palco durante as apresentações.",
+        "words": [
+          "eddie-mascote",
+          "baixo-galopante",
+          "avião-turnê",
+          "duas-guitarras"
+        ],
+        "phrases": [
+          "Pioneiros do heavy metal com mascote cadavérico gigante que invade o palco durante as apresentações.",
+          "Vocalista piloto de avião comercial e linhas de baixo com ritmo galopante característico."
+        ]
+      },
+      {
+        "name": "Nirvana",
+        "sub": "rock_metal",
+        "word": "grunge",
+        "phrase": "Trio de Seattle que inaugurou a era do rock alternativo nos anos noventa com angústia e distorção.",
+        "words": [
+          "grunge",
+          "smells-like-teen-spirit",
+          "camisa-flanela",
+          "quebrar-guitarras"
+        ],
+        "phrases": [
+          "Trio de Seattle que inaugurou a era do rock alternativo nos anos noventa com angústia e distorção.",
+          "Camisas xadrez de flanela, baterias destruidoras e guitarras despedaçadas contra amplificadores."
+        ]
+      },
+      {
+        "name": "AC/DC",
+        "sub": "rock_metal",
+        "word": "uniforme-escolar",
+        "phrase": "Banda australiana com riffs de três acordes simples e potentes com guitarrista de uniforme escolar infantil.",
+        "words": [
+          "uniforme-escolar",
+          "sino-inferno",
+          "raio-logotipo",
+          "highway"
+        ],
+        "phrases": [
+          "Banda australiana com riffs de três acordes simples e potentes com guitarrista de uniforme escolar infantil.",
+          "Giro no chão com a guitarra nos braços e canhões reais disparando no final de cada show."
+        ]
+      },
+      {
+        "name": "The Beatles",
+        "sub": "rock_metal",
+        "word": "quatro-liverpool",
+        "phrase": "O quarteto britânico mais influente de todos os tempos que mudou a história da cultura pop mundial.",
+        "words": [
+          "quatro-liverpool",
+          "faixa-pedestres",
+          "submarino-amarelo",
+          "hey-jude"
+        ],
+        "phrases": [
+          "O quarteto britânico mais influente de todos os tempos que mudou a história da cultura pop mundial.",
+          "Atravessaram uma faixa de pedestres em Abbey Road e criaram melodias que encantam gerações."
+        ]
+      },
+      {
+        "name": "Pink Floyd",
+        "sub": "rock_metal",
+        "word": "prisma-arco-íris",
+        "phrase": "Mestres do rock progressivo conceitual com capas de discos de prismas refratando a luz branca.",
+        "words": [
+          "prisma-arco-íris",
+          "muro-tijolos",
+          "porco-voador",
+          "psicodélico"
+        ],
+        "phrases": [
+          "Mestres do rock progressivo conceitual com capas de discos de prismas refratando a luz branca.",
+          "Construíam e derrubavam paredes gigantescas de tijolos brancos de papelão sobre o palco."
+        ]
+      },
+      {
+        "name": "Led Zeppelin",
+        "sub": "rock_metal",
+        "word": "escada-para-o-céu",
+        "phrase": "Grupo britânico que fundou as bases do hard rock mesclando blues pesado com misticismo celta.",
+        "words": [
+          "escada-para-o-céu",
+          "dirigível",
+          "arco-violino-guitarra",
+          "vocal-agudo"
+        ],
+        "phrases": [
+          "Grupo britânico que fundou as bases do hard rock mesclando blues pesado com misticismo celta.",
+          "Guitarrista que tocava as seis cordas usando arco de violoncelo sob solos de bateria sem baquetas."
+        ]
+      },
+      {
+        "name": "Charlie Brown Jr.",
+        "sub": "rock_metal",
+        "word": "skate",
+        "phrase": "Banda santista icônica que uniu punk rock, rap, reggae e a cultura do skate nas praias paulistas.",
+        "words": [
+          "skate",
+          "santos",
+          "proibida-para-mim",
+          "pontes-indestrutíveis"
+        ],
+        "phrases": [
+          "Banda santista icônica que uniu punk rock, rap, reggae e a cultura do skate nas praias paulistas.",
+          "Letras poéticas sobre amizade, superação e liberdade cantadas por um vocalista inesquecível de bermuda."
+        ]
+      },
+      {
+        "name": "Legião Urbana",
+        "sub": "rock_metal",
+        "word": "brasília",
+        "phrase": "Banda de rock nacional de Brasília cujas letras poéticas e confessionais viraram hinos para gerações de jovens.",
+        "words": [
+          "brasília",
+          "faroeste-caboclo",
+          "pais-e-filhos",
+          "violão-letras"
+        ],
+        "phrases": [
+          "Banda de rock nacional de Brasília cujas letras poéticas e confessionais viraram hinos para gerações de jovens.",
+          "Músicas épicas de mais de cem versos contadas sem refrão como histórias completas da vida real."
+        ]
+      },
+      {
+        "name": "Titãs",
+        "sub": "rock_metal",
+        "word": "homem-primata",
+        "phrase": "Banda paulistana com múltiplos vocalistas que transitaram do pop new wave ao punk rock agressivo e visceral.",
+        "words": [
+          "homem-primata",
+          "epifania",
+          "oito-integrantes",
+          "cabeça-dinossauro"
+        ],
+        "phrases": [
+          "Banda paulistana com múltiplos vocalistas que transitaram do pop new wave ao punk rock agressivo e visceral.",
+          "Turnês comemorativas históricas que reuniram integrantes originais em arenas lotadas."
+        ]
+      },
+      {
+        "name": "Pitty",
+        "sub": "rock_metal",
+        "word": "máscara",
+        "phrase": "A maior voz feminina do rock brasileiro contemporâneo nascida em Salvador que conquistou o país.",
+        "words": [
+          "máscara",
+          "admirável-chip-novo",
+          "rock-baiano",
+          "equalize"
+        ],
+        "phrases": [
+          "A maior voz feminina do rock brasileiro contemporâneo nascida em Salvador que conquistou o país.",
+          "Letras afiadas questionando os padrões da sociedade moderna com vocais marcantes e atitude firme."
+        ]
+      },
+      {
+        "name": "Sepultura",
+        "sub": "rock_metal",
+        "word": "roots-bloody-roots",
+        "phrase": "Banda brasileira de metal extremo reverenciada globalmente que misturou batidas indígenas ao thrash pesado.",
+        "words": [
+          "roots-bloody-roots",
+          "tribal-pesado",
+          "berimbau-metal",
+          "reconhecimento-mundial"
+        ],
+        "phrases": [
+          "Banda brasileira de metal extremo reverenciada globalmente que misturou batidas indígenas ao thrash pesado.",
+          "Riffs brutais com percussões tribais que colocaram o som brasileiro no mapa do metal internacional."
+        ]
+      },
+      {
+        "name": "Angra",
+        "sub": "rock_metal",
+        "word": "metal-melódico",
+        "phrase": "Grupo de heavy metal melódico nacional conhecido pela erudição clássica, agudos operísticos e solos velozes.",
+        "words": [
+          "metal-melódico",
+          "bateria-rápida",
+          "teclado-ópera",
+          "carry-on"
+        ],
+        "phrases": [
+          "Grupo de heavy metal melódico nacional conhecido pela erudição clássica, agudos operísticos e solos velozes.",
+          "Misturavam ritmos brasileiros a lendas medievais em canções cultuadas no Japão e Europa."
+        ]
+      },
+      {
+        "name": "Linkin Park",
+        "sub": "rock_metal",
+        "word": "grito-melodia",
+        "phrase": "Banda que definiu os anos 2000 unindo rimas aceleradas com gritos rasgados de dor e superação.",
+        "words": [
+          "grito-melodia",
+          "rap-metal",
+          "in-the-end",
+          "híbrido"
+        ],
+        "phrases": [
+          "Banda que definiu os anos 2000 unindo rimas aceleradas com gritos rasgados de dor e superação.",
+          "Letras comoventes sobre saúde mental e guitarras afinadas em tons pesados com batidas eletrônicas."
+        ]
+      },
+      {
+        "name": "Green Day",
+        "sub": "rock_metal",
+        "word": "punk-pop",
+        "phrase": "Trio californiano que revitalizou o punk pop com canções enérgicas e óperas rock políticas.",
+        "words": [
+          "punk-pop",
+          "american-idiot",
+          "gravata-vermelha",
+          "três-acordes"
+        ],
+        "phrases": [
+          "Trio californiano que revitalizou o punk pop com canções enérgicas e óperas rock políticas.",
+          "Visual de camisas pretas com gravatas vermelhas e plateias cantando em uníssono de estádio."
+        ]
+      },
+      {
+        "name": "Red Hot Chili Peppers",
+        "sub": "rock_metal",
+        "word": "baixo-slap-flea",
+        "phrase": "Banda californiana de funk rock famosa pela energia descontrolada no palco e linhas de baixo com slap furioso.",
+        "words": [
+          "baixo-slap-flea",
+          "califórnia",
+          "sem-camisa",
+          "funk-rock"
+        ],
+        "phrases": [
+          "Banda californiana de funk rock famosa pela energia descontrolada no palco e linhas de baixo com slap furioso.",
+          "Músicos que se apresentam pulando sem camisa com misturas de psicodelia e ritmos dançantes."
+        ]
+      },
+      {
+        "name": "Os Mutantes",
+        "sub": "rock_metal",
+        "word": "tropicalismo-rock",
+        "phrase": "Trio vanguardista pioneiro do rock psicodélico brasileiro com instrumentos inventados e guitarras distorcidas.",
+        "words": [
+          "tropicalismo-rock",
+          "pedais-invenção",
+          "rita-lee",
+          "psicodelia-brasileira"
+        ],
+        "phrases": [
+          "Trio vanguardista pioneiro do rock psicodélico brasileiro com instrumentos inventados e guitarras distorcidas.",
+          "Desafiaram a crítica nos festivais da canção com trajes espaciais e harmonias vocais inovadoras."
+        ]
+      },
+      {
+        "name": "Raul Seixas",
+        "sub": "rock_metal",
+        "word": "metamorfose-ambulante",
+        "phrase": "O pai do rock brasileiro famoso pela filosofia mística e por preferir ser uma metamorfose ambulante.",
+        "words": [
+          "metamorfose-ambulante",
+          "sociedade-alternativa",
+          "mosca-na-sopa",
+          "maluco-beleza"
+        ],
+        "phrases": [
+          "O pai do rock brasileiro famoso pela filosofia mística e por preferir ser uma metamorfose ambulante.",
+          "Músicas atemporais tocadas em qualquer calçada do país ao clássico grito de toca Raul."
+        ]
+      },
+      {
+        "name": "Cazuza",
+        "sub": "rock_metal",
+        "word": "exagerado",
+        "phrase": "Poeta boêmio e compositor comovente que declarava seu amor com intensidade exagerada.",
+        "words": [
+          "exagerado",
+          "ideologia",
+          "poeta-boêmio",
+          "barão-vermelho"
+        ],
+        "phrases": [
+          "Poeta boêmio e compositor comovente que declarava seu amor com intensidade exagerada.",
+          "Voz corajosa que cantou as dores e esperanças da redemocratização com microfone em punho."
+        ]
+      },
+      {
+        "name": "Rita Lee",
+        "sub": "rock_metal",
+        "word": "rainha-rock",
+        "phrase": "A eterna rainha do rock brasileiro com cabelos vermelhos, franjinha e irreverência luminosa.",
+        "words": [
+          "rainha-rock",
+          "óculos-redondos",
+          "lança-perfume",
+          "mania-de-você"
+        ],
+        "phrases": [
+          "A eterna rainha do rock brasileiro com cabelos vermelhos, franjinha e irreverência luminosa.",
+          "Compôs as canções mais livres e femininas da MPB e do pop rock nacional com ironia e afeto."
+        ]
+      },
+      {
+        "name": "Skank",
+        "sub": "rock_metal",
+        "word": "reggae-pop",
+        "phrase": "Quarteto mineiro que explodiu nos anos noventa com uma fusão irresistível de pop rock e dancehall jamaicano.",
+        "words": [
+          "reggae-pop",
+          "garota-nacional",
+          "belo-horizonte",
+          "partida-futebol"
+        ],
+        "phrases": [
+          "Quarteto mineiro que explodiu nos anos noventa com uma fusão irresistível de pop rock e dancehall jamaicano.",
+          "Clássicos que celebraram a paixão pelo futebol e baladas orquestradas tocadas em rádios de todo o país."
+        ]
+      },
+      {
+        "name": "Sintetizador",
+        "sub": "pop_funk",
+        "word": "teclado-eletrônico",
+        "phrase": "Instrumento de teclas que gera sons através de circuitos eletrônicos e modulações digitais.",
+        "words": [
+          "teclado-eletrônico",
+          "timbres",
+          "onda-senoidal",
+          "anos-80"
+        ],
+        "phrases": [
+          "Instrumento de teclas que gera sons através de circuitos eletrônicos e modulações digitais.",
+          "A espinha dorsal das músicas pop dançantes com timbres futuristas e linhas de baixo marcantes."
+        ]
+      },
+      {
+        "name": "Microfone Dourado",
+        "sub": "pop_funk",
+        "word": "pedestal",
+        "phrase": "Equipamento vocal reluzente customizado usado por superestrelas da música em turnês mundiais.",
+        "words": [
+          "pedestal",
+          "cápsula-brilho",
+          "diva-pop",
+          "sem-fio"
+        ],
+        "phrases": [
+          "Equipamento vocal reluzente customizado usado por superestrelas da música em turnês mundiais.",
+          "Destaca a presença de palco da cantora principal sob canhões de luz e chuva de papéis coloridos."
+        ]
+      },
+      {
+        "name": "Mesa de DJ (Controladora)",
+        "sub": "pop_funk",
+        "word": "jog-wheels",
+        "phrase": "Aparelho com dois pratos sensíveis ao toque e botões que permitem emendar faixas musicais sem interrupções.",
+        "words": [
+          "jog-wheels",
+          "crossfader",
+          "fones-pescoço",
+          "mixagem"
+        ],
+        "phrases": [
+          "Aparelho com dois pratos sensíveis ao toque e botões que permitem emendar faixas musicais sem interrupções.",
+          "Usada pelo comandante da pista para fazer scratches, soltar efeitos sonoros e dosar frequências."
+        ]
+      },
+      {
+        "name": "Auto-Tune",
+        "sub": "pop_funk",
+        "word": "correção-afinação",
+        "phrase": "Software digital que corrige notas desafinadas ou produz um timbre propositalmente metálico e futurista.",
+        "words": [
+          "correção-afinação",
+          "voz-robô",
+          "efeito-moderno",
+          "plug-in"
+        ],
+        "phrases": [
+          "Software digital que corrige notas desafinadas ou produz um timbre propositalmente metálico e futurista.",
+          "Marca registrada das produções de pop, trap e funk contemporâneo nos serviços de streaming."
+        ]
+      },
+      {
+        "name": "Caixa de Som JBL",
+        "sub": "pop_funk",
+        "word": "bluetooth",
+        "phrase": "Aparelho portátil sem fio que transmite músicas com radiadores passivos de graves potentes.",
+        "words": [
+          "bluetooth",
+          "led-colorido",
+          "graves-pesados",
+          "praia-rua"
+        ],
+        "phrases": [
+          "Aparelho portátil sem fio que transmite músicas com radiadores passivos de graves potentes.",
+          "Presente em encontros de amigos na praia, churrascos e praças públicas tocando hits atuais."
+        ]
+      },
+      {
+        "name": "Michael Jackson",
+        "sub": "pop_funk",
+        "word": "luva-brilhante",
+        "phrase": "O maior dançarino e cantor pop de todos os tempos que desafiava a gravidade andando de costas nos palcos.",
+        "words": [
+          "luva-brilhante",
+          "moonwalk",
+          "rei-do-pop",
+          "thriller"
+        ],
+        "phrases": [
+          "O maior dançarino e cantor pop de todos os tempos que desafiava a gravidade andando de costas nos palcos.",
+          "Revolucionou a indústria de videoclipes com zumbis dançarinos, jaqueta vermelha e chapéu inclinado."
+        ]
+      },
+      {
+        "name": "Madonna",
+        "sub": "pop_funk",
+        "word": "rainha-pop",
+        "phrase": "A mulher mais influente e transgressora da história da música pop que ditou tendências por quatro décadas.",
+        "words": [
+          "rainha-pop",
+          "sutiã-cone",
+          "vogue",
+          "reinvenção"
+        ],
+        "phrases": [
+          "A mulher mais influente e transgressora da história da música pop que ditou tendências por quatro décadas.",
+          "Performances icônicas desafiando dogmas com coreografias de passarela e produções teatrais."
+        ]
+      },
+      {
+        "name": "Taylor Swift",
+        "sub": "pop_funk",
+        "word": "eras-turnê",
+        "phrase": "Fenômeno global da música com turnê que movimentou a economia de países inteiros em estádios lotados.",
+        "words": [
+          "eras-turnê",
+          "pulseiras-amizade",
+          "letras-amor",
+          "estádios-lotados"
+        ],
+        "phrases": [
+          "Fenômeno global da música com turnê que movimentou a economia de países inteiros em estádios lotados.",
+          "Compositora de narrativas confessionais que regravou seus próprios álbuns com apoio fervoroso de fãs."
+        ]
+      },
+      {
+        "name": "Anitta",
+        "sub": "pop_funk",
+        "word": "envolver",
+        "phrase": "A cantora carioca que levou o funk dos morros brasileiros ao primeiro lugar das paradas globais.",
+        "words": [
+          "envolver",
+          "passo-anitta",
+          "honório-gurgel",
+          "palco-mundial"
+        ],
+        "phrases": [
+          "A cantora carioca que levou o funk dos morros brasileiros ao primeiro lugar das paradas globais.",
+          "Conhecida por passos de dança no chão que viralizaram mundialmente e visão estratégica de carreira."
+        ]
+      },
+      {
+        "name": "Alok",
+        "sub": "pop_funk",
+        "word": "hear-me-now",
+        "phrase": "O mais famoso produtor e DJ brasileiro no cenário internacional famoso por espetáculos com lasers visíveis do espaço.",
+        "words": [
+          "hear-me-now",
+          "laser-verde-céu",
+          "óculos-escuros",
+          "dj-goiano"
+        ],
+        "phrases": [
+          "O mais famoso produtor e DJ brasileiro no cenário internacional famoso por espetáculos com lasers visíveis do espaço.",
+          "Mistura batidas de música eletrônica melódica com causas socioambientais e cantos indígenas ancestrais."
+        ]
+      },
+      {
+        "name": "Beyoncé",
+        "sub": "pop_funk",
+        "word": "queen-bey",
+        "phrase": "A artista mais premiada da história do Grammy famosa por vocais perfeitos e coreografias sincronizadas.",
+        "words": [
+          "queen-bey",
+          "single-ladies",
+          "coreografia-impecável",
+          "voz-poderosa"
+        ],
+        "phrases": [
+          "A artista mais premiada da história do Grammy famosa por vocais perfeitos e coreografias sincronizadas.",
+          "Domina estádios mundiais com figurinos metálicos e hinos de empoderamento e excelência artística."
+        ]
+      },
+      {
+        "name": "Rihanna",
+        "sub": "pop_funk",
+        "word": "guarda-chuva",
+        "phrase": "Estrela caribenha dona de hits mundiais inesquecíveis que se tornou magnata da moda e dos cosméticos.",
+        "words": [
+          "guarda-chuva",
+          "barbados",
+          "super-bowl-vermelho",
+          "diamantes"
+        ],
+        "phrases": [
+          "Estrela caribenha dona de hits mundiais inesquecíveis que se tornou magnata da moda e dos cosméticos.",
+          "Apresentação apoteótica suspensa em plataformas flutuantes sobre o campo da final do campeonato de futebol americano."
+        ]
+      },
+      {
+        "name": "Bruno Mars",
+        "sub": "pop_funk",
+        "word": "bruninho",
+        "phrase": "Showman carismático completo que mistura funk clássico, soul e pop com passinhos sincronizados de terno.",
+        "words": [
+          "bruninho",
+          "passinhos-funk",
+          "terno-elegante",
+          "voz-soul"
+        ],
+        "phrases": [
+          "Showman carismático completo que mistura funk clássico, soul e pop com passinhos sincronizados de terno.",
+          "Adotado carinhosamente pelo público brasileiro com apresentações contagiantes e simpatia absoluta."
+        ]
+      },
+      {
+        "name": "Dua Lipa",
+        "sub": "pop_funk",
+        "word": "future-nostalgia",
+        "phrase": "Cantora britânica que resgatou o brilho dos globos espelhados dos anos setenta com batidas de discoteca modernas.",
+        "words": [
+          "future-nostalgia",
+          "disco-dança",
+          "britânica",
+          "linhas-baixo"
+        ],
+        "phrases": [
+          "Cantora britânica que resgatou o brilho dos globos espelhados dos anos setenta com batidas de discoteca modernas.",
+          "Hits dançantes com vocais graves marcantes que dominaram as pistas e treinos durante os últimos anos."
+        ]
+      },
+      {
+        "name": "Lady Gaga",
+        "sub": "pop_funk",
+        "word": "bad-romance",
+        "phrase": "Camaleoa do pop que uniu estética excêntrica teatral a vocais líricos potentes de piano e jazz.",
+        "words": [
+          "bad-romance",
+          "pequenos-monstros",
+          "piano-acústico",
+          "versatilidade"
+        ],
+        "phrases": [
+          "Camaleoa do pop que uniu estética excêntrica teatral a vocais líricos potentes de piano e jazz.",
+          "Venceu prêmios máximos no cinema e na música após quebrar paradigmas visuais com fantasias bizarras."
+        ]
+      },
+      {
+        "name": "Katy Perry",
+        "sub": "pop_funk",
+        "word": "fogos-artifício",
+        "phrase": "Princesa do pop colorida famosa por cenários de algodão-doce, perucas azuis e refrões explosivos nas rádios.",
+        "words": [
+          "fogos-artifício",
+          "tubarão-dançarino",
+          "cores-doces",
+          "hits-rádio"
+        ],
+        "phrases": [
+          "Princesa do pop colorida famosa por cenários de algodão-doce, perucas azuis e refrões explosivos nas rádios.",
+          "Show histórico do intervalo do futebol americano com tigre mecânico gigante e tubarões atrapalhados."
+        ]
+      },
+      {
+        "name": "Britney Spears",
+        "sub": "pop_funk",
+        "word": "serpente-pescoço",
+        "phrase": "O maior fenômeno adolescente da virada do milênio com coreografias impecáveis e clipes escolares icônicos.",
+        "words": [
+          "serpente-pescoço",
+          "baby-one-more-time",
+          "princesa-pop",
+          "dança-intensa"
+        ],
+        "phrases": [
+          "O maior fenômeno adolescente da virada do milênio com coreografias impecáveis e clipes escolares icônicos.",
+          "Dançou com uma cobra albina nos ombros em premiação de música marcando a história da cultura pop."
+        ]
+      },
+      {
+        "name": "MC Kevin o Chris",
+        "sub": "pop_funk",
+        "word": "tamborzão-150bpm",
+        "phrase": "Pioneiro do funk carioca acelerado em cento e cinquenta batidas por minuto que dominou os bailes da cidade.",
+        "words": [
+          "tamborzão-150bpm",
+          "ela-é-do-tipo",
+          "funk-rj",
+          "baile-gaiola"
+        ],
+        "phrases": [
+          "Pioneiro do funk carioca acelerado em cento e cinquenta batidas por minuto que dominou os bailes da cidade.",
+          "Gravou sucessos mundiais com astros internacionais levando as batidas da favela a festivais gringos."
+        ]
+      },
+      {
+        "name": "Dennis DJ",
+        "sub": "pop_funk",
+        "word": "baile-do-dennis",
+        "phrase": "O maior produtor da história do funk brasileiro por trás dos maiores clássicos do gênero desde os anos noventa.",
+        "words": [
+          "baile-do-dennis",
+          "produção-funk",
+          "pirotecnia",
+          "quarenta-anos"
+        ],
+        "phrases": [
+          "O maior produtor da história do funk brasileiro por trás dos maiores clássicos do gênero desde os anos noventa.",
+          "Comanda espetáculos monumentais de pirotecnia e remixes em grandes arenas com milhares de pessoas."
+        ]
+      },
+      {
+        "name": "Pedro Sampaio",
+        "sub": "pop_funk",
+        "word": "dançarina",
+        "phrase": "Produtor e DJ carioca famoso por sua assinatura vocal antes das batidas e misturas criativas de pop e funk.",
+        "words": [
+          "dançarina",
+          "pedro-sampaio-voz",
+          "remixes-virais",
+          "dj-colorido"
+        ],
+        "phrases": [
+          "Produtor e DJ carioca famoso por sua assinatura vocal antes das batidas e misturas criativas de pop e funk.",
+          "Cria coreografias virais nas redes com visual extravagante e participações de grandes nomes da música."
+        ]
+      },
+      {
+        "name": "Ludmilla",
+        "sub": "pop_funk",
+        "word": "rainha-favela",
+        "phrase": "Começou nos bailes cariocas cantando funk ousado e construiu uma das carreiras mais versáteis do país.",
+        "words": [
+          "rainha-favela",
+          "cheguei",
+          "funk-raiz",
+          "show-estádio"
+        ],
+        "phrases": [
+          "Começou nos bailes cariocas cantando funk ousado e construiu uma das carreiras mais versáteis do país.",
+          "Comanda apresentações enérgicas com dançarinos sincronizados e vocais ao vivo de alto nível."
+        ]
+      },
+      {
+        "name": "Pabllo Vittar",
+        "sub": "pop_funk",
+        "word": "sua-cara",
+        "phrase": "A mais popular cantora drag do mundo que une ritmos do norte e nordeste brasileiro ao pop eletrônico global.",
+        "words": [
+          "sua-cara",
+          "agudos-gritos",
+          "drag-rainha",
+          "batidão-tropical"
+        ],
+        "phrases": [
+          "A mais popular cantora drag do mundo que une ritmos do norte e nordeste brasileiro ao pop eletrônico global.",
+          "Famosa por agudos poderosos no microfone e coreografias ousadas de salto alto em grandes palcos."
+        ]
+      },
+      {
+        "name": "Gloria Groove",
+        "sub": "pop_funk",
+        "word": "vermelho",
+        "phrase": "Artista versátil com habilidade ímpar tanto em rimar rápido no rap quanto em sustentar notas difíceis no pop.",
+        "words": [
+          "vermelho",
+          "bonekinha",
+          "rap-e-canto",
+          "lady-leste"
+        ],
+        "phrases": [
+          "Artista versátil com habilidade ímpar tanto em rimar rápido no rap quanto em sustentar notas difíceis no pop.",
+          "Criou conceitos visuais marcantes celebrando a cultura da periferia paulistana em mega produções."
+        ]
+      },
+      {
+        "name": "David Guetta",
+        "sub": "pop_funk",
+        "word": "titânio",
+        "phrase": "DJ e produtor francês que popularizou a música eletrônica nas rádios mundiais ao lado de grandes cantores pop.",
+        "words": [
+          "titânio",
+          "dj-francês",
+          "pioneiro-edm",
+          "colaborações"
+        ],
+        "phrases": [
+          "DJ e produtor francês que popularizou a música eletrônica nas rádios mundiais ao lado de grandes cantores pop.",
+          "Produtor de hinos das pistas com sintetizadores épicos e refrões grandiosos de festivais de verão."
+        ]
+      },
+      {
+        "name": "Calvin Harris",
+        "sub": "pop_funk",
+        "word": "summer",
+        "phrase": "Produtor escocês recordista de sucessos nas paradas mundiais com canções solares de baixo marcante.",
+        "words": [
+          "summer",
+          "escocês-produtor",
+          "hits-verão",
+          "baixo-sintetizado"
+        ],
+        "phrases": [
+          "Produtor escocês recordista de sucessos nas paradas mundiais com canções solares de baixo marcante.",
+          "Dono de parcerias bilionárias em reproduções que definiram as férias de verão da última década."
+        ]
+      },
+      {
+        "name": "Daft Punk",
+        "sub": "pop_funk",
+        "word": "capacetes-robôs",
+        "phrase": "Duo francês lendário que nunca revelava seus rostos humanos apresentando-se sempre como robôs prateados.",
+        "words": [
+          "capacetes-robôs",
+          "get-lucky",
+          "jaquetas-couro",
+          "disco-futurista"
+        ],
+        "phrases": [
+          "Duo francês lendário que nunca revelava seus rostos humanos apresentando-se sempre como robôs prateados.",
+          "Pioneiros da música eletrônica com sintetizadores vocoder e baixos dançantes de tirar o fôlego."
+        ]
+      },
+      {
+        "name": "Avicii",
+        "sub": "pop_funk",
+        "word": "wake-me-up",
+        "phrase": "Jovem gênio sueco que revolucionou as pistas misturando violões de música country à música eletrônica.",
+        "words": [
+          "wake-me-up",
+          "violão-eletrônico",
+          "melodias-emocionantes",
+          "níveis"
+        ],
+        "phrases": [
+          "Jovem gênio sueco que revolucionou as pistas misturando violões de música country à música eletrônica.",
+          "Compositor de melodias arrebatadoras que tocaram o coração de multidões em festivais ao ar livre."
+        ]
+      },
+      {
+        "name": "Tiësto",
+        "sub": "pop_funk",
+        "word": "padrinho-eletrônica",
+        "phrase": "Lenda viva da música eletrônica que tocou na abertura dos Jogos Olímpicos diante de bilhões de telespectadores.",
+        "words": [
+          "padrinho-eletrônica",
+          "olimpíadas-atena",
+          "sets-épicos",
+          "holandês"
+        ],
+        "phrases": [
+          "Lenda viva da música eletrônica que tocou na abertura dos Jogos Olímpicos diante de bilhões de telespectadores.",
+          "Comanda residências em clubes de Las Vegas com transições perfeitas de graves e efeitos."
+        ]
+      },
+      {
+        "name": "Swedish House Mafia",
+        "sub": "pop_funk",
+        "word": "trio-sueco",
+        "phrase": "Trio de produtores suecos que lotava arenas como astros do rock com hinos de estádio inesquecíveis.",
+        "words": [
+          "trio-sueco",
+          "não-se-preocupe-filho",
+          "três-pontos",
+          "retorno-épico"
+        ],
+        "phrases": [
+          "Trio de produtores suecos que lotava arenas como astros do rock com hinos de estádio inesquecíveis.",
+          "Três círculos pretos no telão anunciando quedas sonoras com chuvas de confetes nas madrugadas."
+        ]
+      },
+      {
+        "name": "MC Livinho",
+        "sub": "pop_funk",
+        "word": "voz-aguda-afinação",
+        "phrase": "Cantor paulista de funk com alcance vocal diferenciado e afinação técnica apurada inspirada no R&B.",
+        "words": [
+          "voz-aguda-afinação",
+          "fazer-falta",
+          "funk-paulista",
+          "violão-acústico"
+        ],
+        "phrases": [
+          "Cantor paulista de funk com alcance vocal diferenciado e afinação técnica apurada inspirada no R&B.",
+          "Autor de sucessos com milhões de audições que combinam refrões cantados a batidas dançantes."
+        ]
+      },
+      {
+        "name": "Cavaquinho",
+        "sub": "sertanejo_pagode",
+        "word": "quatro-cordas",
+        "phrase": "Pequeno instrumento de quatro cordas metálicas cujo repicado alegre conduz a harmonia das rodas de samba.",
+        "words": [
+          "quatro-cordas",
+          "palhetada-rápida",
+          "centro-roda",
+          "som-agudo"
+        ],
+        "phrases": [
+          "Pequeno instrumento de quatro cordas metálicas cujo repicado alegre conduz a harmonia das rodas de samba.",
+          "Dedos ágeis na escala de madeira acompanhando o ritmo do pandeiro e do tantã sob palmas."
+        ]
+      },
+      {
+        "name": "Pandeiro",
+        "sub": "sertanejo_pagode",
+        "word": "platinelas",
+        "phrase": "Instrumento circular de percussão com lâminas de metal que o sambista segura com uma mão e golpeia com a outra.",
+        "words": [
+          "platinelas",
+          "couro-esticado",
+          "batida-polegar",
+          "malabarismo"
+        ],
+        "phrases": [
+          "Instrumento circular de percussão com lâminas de metal que o sambista segura com uma mão e golpeia com a outra.",
+          "Movimentos de pulso e polegar que criam levadas sincopadas com toques secos no centro da pele."
+        ]
+      },
+      {
+        "name": "Surdo de Marcação",
+        "sub": "sertanejo_pagode",
+        "word": "tambor-gigante",
+        "phrase": "O tambor mais grave e pesado da bateria de uma escola de samba que marca o primeiro tempo da música.",
+        "words": [
+          "tambor-gigante",
+          "maçaneta",
+          "coração-escola",
+          "grave-profundo"
+        ],
+        "phrases": [
+          "O tambor mais grave e pesado da bateria de uma escola de samba que marca o primeiro tempo da música.",
+          "Batidas estrondosas no couro que ressoam no peito de quem assiste ao desfile na avenida."
+        ]
+      },
+      {
+        "name": "Tantã",
+        "sub": "sertanejo_pagode",
+        "word": "cilindro-metal",
+        "phrase": "Tambor cilíndrico tocado deitado no colo com a palma da mão na pele e toques de dedos no corpo de metal.",
+        "words": [
+          "cilindro-metal",
+          "pele-napa",
+          "marcação-pagode",
+          "colo"
+        ],
+        "phrases": [
+          "Tambor cilíndrico tocado deitado no colo com a palma da mão na pele e toques de dedos no corpo de metal.",
+          "Sustenta o grave macio e a pulsação contínua nas rodas de samba de mesa e botecos."
+        ]
+      },
+      {
+        "name": "Viola Caipira",
+        "sub": "sertanejo_pagode",
+        "word": "dez-cordas",
+        "phrase": "Instrumento rústico de dez cordas dispostas em cinco pares com sonoridade brilhante e tradicional.",
+        "words": [
+          "dez-cordas",
+          "cinco-pares",
+          "ponteio",
+          "sertão"
+        ],
+        "phrases": [
+          "Instrumento rústico de dez cordas dispostas em cinco pares com sonoridade brilhante e tradicional.",
+          "O som do ponteio lento no início de uma moda de viola contando causos de boiadeiros no interior."
+        ]
+      },
+      {
+        "name": "Sanfona (Acordeon)",
+        "sub": "sertanejo_pagode",
+        "word": "fole-abrir-fechar",
+        "phrase": "Instrumento de fole que comprime o ar enquanto os dedos passeiam por teclas e botões de baixo.",
+        "words": [
+          "fole-abrir-fechar",
+          "teclas-botões",
+          "forró-modão",
+          "couro"
+        ],
+        "phrases": [
+          "Instrumento de fole que comprime o ar enquanto os dedos passeiam por teclas e botões de baixo.",
+          "Alma dos bailes sertanejos e do arrasta-pé nordestino chorando notas de saudades da roça."
+        ]
+      },
+      {
+        "name": "Roda de Samba",
+        "sub": "sertanejo_pagode",
+        "word": "cerveja-gelada",
+        "phrase": "Reunião informal de amigos e músicos ao redor de uma mesa de boteco cantando clássicos populares.",
+        "words": [
+          "cerveja-gelada",
+          "mesa-bar",
+          "palmas-mãos",
+          "coro"
+        ],
+        "phrases": [
+          "Reunião informal de amigos e músicos ao redor de uma mesa de boteco cantando clássicos populares.",
+          "Música sem microfones pomposos movida a batidas de copos, cavaquinho, pandeiro e alegria espontânea."
+        ]
+      },
+      {
+        "name": "Jorge & Mateus",
+        "sub": "sertanejo_pagode",
+        "word": "dupla-itumbiara",
+        "phrase": "Dupla goiana que liderou a revolução jovem do sertanejo com letras românticas e arranjos modernos.",
+        "words": [
+          "dupla-itumbiara",
+          "amo-noite-e-dia",
+          "sertanejo-universitário",
+          "estádios"
+        ],
+        "phrases": [
+          "Dupla goiana que liderou a revolução jovem do sertanejo com letras românticas e arranjos modernos.",
+          "Arraste de multidões em festivais com milhares cantando versos de amor a plenos pulmões."
+        ]
+      },
+      {
+        "name": "Henrique & Juliano",
+        "sub": "sertanejo_pagode",
+        "word": "irmãos-tocantins",
+        "phrase": "Irmãos que conquistaram o topo da música brasileira com projetos ao vivo gravados em cidades históricas.",
+        "words": [
+          "irmãos-tocantins",
+          "liberdade-provisória",
+          "vozes-unidas",
+          "gravações-ao-vivo"
+        ],
+        "phrases": [
+          "Irmãos que conquistaram o topo da música brasileira com projetos ao vivo gravados em cidades históricas.",
+          "Sintonia vocal impecável em baladas emotivas sobre encontros, desencontros e términos dolorosos."
+        ]
+      },
+      {
+        "name": "Marília Mendonça",
+        "sub": "sertanejo_pagode",
+        "word": "rainha-sofrência",
+        "phrase": "A maior compositora e cantora da história do sertanejo moderno com versos sinceros de dor de cotovelo.",
+        "words": [
+          "rainha-sofrência",
+          "todo-mundo-vai-sofrer",
+          "violão-caneta",
+          "eterna"
+        ],
+        "phrases": [
+          "A maior compositora e cantora da história do sertanejo moderno com versos sinceros de dor de cotovelo.",
+          "Conquistou o país cantando a perspectiva feminina nas traições e desilusões amorosas com voz potente."
+        ]
+      },
+      {
+        "name": "Gusttavo Lima",
+        "sub": "sertanejo_pagode",
+        "word": "embaixador",
+        "phrase": "O cantor com uma das maiores estruturas de show do país com apresentações de mais de quatro horas.",
+        "words": [
+          "embaixador",
+          "buteco",
+          "fala-comigo",
+          "palco-gigante"
+        ],
+        "phrases": [
+          "O cantor com uma das maiores estruturas de show do país com apresentações de mais de quatro horas.",
+          "Famoso pelos bordões no microfone e shows temáticos com cavalos e produções nababescas."
+        ]
+      },
+      {
+        "name": "Chitãozinho & Xororó",
+        "sub": "sertanejo_pagode",
+        "word": "evidências",
+        "phrase": "A dupla clássica que levou a música caipira dos circos e rádios AM para os grandes teatros e novelas.",
+        "words": [
+          "evidências",
+          "fio-de-cabelo",
+          "grito-agudo",
+          "cinquenta-anos"
+        ],
+        "phrases": [
+          "A dupla clássica que levou a música caipira dos circos e rádios AM para os grandes teatros e novelas.",
+          "Donos do verdadeiro hino não oficial do Brasil que qualquer cidadão sabe cantar de cor em karaokês."
+        ]
+      },
+      {
+        "name": "Zezé Di Camargo & Luciano",
+        "sub": "sertanejo_pagode",
+        "word": "é-o-amor",
+        "phrase": "História de superação do campo para as rádios retratada no filme nacional mais assistido de sua época.",
+        "words": [
+          "é-o-amor",
+          "dois-filhos-de-francisco",
+          "agudos-inconfundíveis",
+          "goiás"
+        ],
+        "phrases": [
+          "História de superação do campo para as rádios retratada no filme nacional mais assistido de sua época.",
+          "Voz rasgada de agudos brilhantes que marcou os anos noventa com milhões de fitas e CDs vendidos."
+        ]
+      },
+      {
+        "name": "Luan Santana",
+        "sub": "sertanejo_pagode",
+        "word": "meteoro",
+        "phrase": "O garoto de Campo Grande que virou fenômeno nacional com uma canção sobre a queda de uma estrela cadente.",
+        "words": [
+          "meteoro",
+          "luan-city",
+          "morena",
+          "astro-jovem"
+        ],
+        "phrases": [
+          "O garoto de Campo Grande que virou fenômeno nacional com uma canção sobre a queda de uma estrela cadente.",
+          "Consolidou carreira de mais de quinze anos com mega produções e voz aveludada em arenas lotadas."
+        ]
+      },
+      {
+        "name": "Zeca Pagodinho",
+        "sub": "sertanejo_pagode",
+        "word": "deixa-a-vida-me-levar",
+        "phrase": "O mais querido cronista do subúrbio carioca famoso pela simplicidade descalça e talento no partido-alto.",
+        "words": [
+          "deixa-a-vida-me-levar",
+          "xerém",
+          "cerveja-fresca",
+          "partido-alto"
+        ],
+        "phrases": [
+          "O mais querido cronista do subúrbio carioca famoso pela simplicidade descalça e talento no partido-alto.",
+          "Filosofia desapegada de deixar a vida levar com um copo americano na mão e um sorriso acolhedor."
+        ]
+      },
+      {
+        "name": "Thiaguinho",
+        "sub": "sertanejo_pagode",
+        "word": "tardezinha",
+        "phrase": "Cantor carismático que reuniu multidões ao redor do palco 360 graus em tardes ensolaradas de pagode.",
+        "words": [
+          "tardezinha",
+          "ousadia-e-alegria",
+          "exaltasamba-antigo",
+          "energia-boa"
+        ],
+        "phrases": [
+          "Cantor carismático que reuniu multidões ao redor do palco 360 graus em tardes ensolaradas de pagode.",
+          "Evoluiu de grupo de sucesso dos anos 2000 para a maior referência moderna do gênero no país."
+        ]
+      },
+      {
+        "name": "Raça Negra",
+        "sub": "sertanejo_pagode",
+        "word": "cheia-de-manias",
+        "phrase": "O grupo que revolucionou o pagode romântico introduzindo naipes de metais e violões elétricos nas gravações.",
+        "words": [
+          "cheia-de-manias",
+          "didididiê",
+          "luiz-carlos",
+          "anos-90"
+        ],
+        "phrases": [
+          "O grupo que revolucionou o pagode romântico introduzindo naipes de metais e violões elétricos nas gravações.",
+          "Dono de refrões contagiantes com onomatopeias clássicas cantadas por todas as faixas etárias."
+        ]
+      },
+      {
+        "name": "Menos é Mais",
+        "sub": "sertanejo_pagode",
+        "word": "churrasquinho",
+        "phrase": "Grupo de Brasília que viralizou na internet cantando pot-pourris de clássicos com carne assando no fundo.",
+        "words": [
+          "churrasquinho",
+          "brasília-pagode",
+          "lapada-dela",
+          "medleys-sucesso"
+        ],
+        "phrases": [
+          "Grupo de Brasília que viralizou na internet cantando pot-pourris de clássicos com carne assando no fundo.",
+          "Arrastou multidões em turnês por todo o país revitalizando a energia do pagode para a nova geração."
+        ]
+      },
+      {
+        "name": "Sorriso Maroto",
+        "sub": "sertanejo_pagode",
+        "word": "assim-você-mata-o-papai",
+        "phrase": "Banda carioca com mais de vinte anos de trajetória marcando casais com baladas sobre relacionamentos complicados.",
+        "words": [
+          "assim-você-mata-o-papai",
+          "bruno-cardoso",
+          "romântico",
+          "duas-décadas"
+        ],
+        "phrases": [
+          "Banda carioca com mais de vinte anos de trajetória marcando casais com baladas sobre relacionamentos complicados.",
+          "Combina pagode melódico a letras sofisticadas sobre perdas amorosas e reconciliações apaixonadas."
+        ]
+      },
+      {
+        "name": "Turma do Pagode",
+        "sub": "sertanejo_pagode",
+        "word": "lancinho",
+        "phrase": "Grupo paulistano conhecido pela energia contagiante nas rodas de samba e sucessos tocados em qualquer festa.",
+        "words": [
+          "lancinho",
+          "camisa-dez",
+          "são-paulo",
+          "pagode-mesa"
+        ],
+        "phrases": [
+          "Grupo paulistano conhecido pela energia contagiante nas rodas de samba e sucessos tocados em qualquer festa.",
+          "Letras descontraídas sobre paqueras de balada e encontros casuais embalados por cavaquinho afiado."
+        ]
+      },
+      {
+        "name": "Fundo de Quintal",
+        "sub": "sertanejo_pagode",
+        "word": "bloco-cacique-de-ramos",
+        "phrase": "O mais lendário celeiro de compositores do samba que inventou instrumentos como o tantã e o repique de mão.",
+        "words": [
+          "bloco-cacique-de-ramos",
+          "repique-de-mão",
+          "padrinhos-do-samba",
+          "raiz"
+        ],
+        "phrases": [
+          "O mais lendário celeiro de compositores do samba que inventou instrumentos como o tantã e o repique de mão.",
+          "Batizado nas sombras da tamarineira de uma histórica agremiação carioca de carnaval de rua."
+        ]
+      },
+      {
+        "name": "Alcione",
+        "sub": "sertanejo_pagode",
+        "word": "marrom",
+        "phrase": "Voz grave e solene reverenciada no mundo inteiro como uma das maiores intérpretes da canção brasileira.",
+        "words": [
+          "marrom",
+          "não-deixe-o-samba-morrer",
+          "trompete",
+          "mangueira"
+        ],
+        "phrases": [
+          "Voz grave e solene reverenciada no mundo inteiro como uma das maiores intérpretes da canção brasileira.",
+          "Defensora intransigente das tradições do samba de morro com unhas compridas e afinação impecável."
+        ]
+      },
+      {
+        "name": "Beth Carvalho",
+        "sub": "sertanejo_pagode",
+        "word": "madrinha-do-samba",
+        "phrase": "A cantora que descobriu e gravou os maiores talentos das favelas cariocas levando-os ao rádio.",
+        "words": [
+          "madrinha-do-samba",
+          "vou-festejar",
+          "cacique-ramos",
+          "sorriso-aberto"
+        ],
+        "phrases": [
+          "A cantora que descobriu e gravou os maiores talentos das favelas cariocas levando-os ao rádio.",
+          "Hino entoado em estádios de futebol celebrando que quem planta o mal deve chorar no final."
+        ]
+      },
+      {
+        "name": "Martinho da Vila",
+        "sub": "sertanejo_pagode",
+        "word": "canta-canta-minha-gente",
+        "phrase": "Mestre da malandragem boa e do ritmo desacelerado com sorriso nos olhos e poemas sobre o cotidiano.",
+        "words": [
+          "canta-canta-minha-gente",
+          "vila-isabel",
+          "passo-lento",
+          "cronista"
+        ],
+        "phrases": [
+          "Mestre da malandragem boa e do ritmo desacelerado com sorriso nos olhos e poemas sobre o cotidiano.",
+          "Compositor de sambas-enredo clássicos que deram títulos históricos à sua escola do coração."
+        ]
+      },
+      {
+        "name": "Cartola",
+        "sub": "sertanejo_pagode",
+        "word": "as-rosas-não-falam",
+        "phrase": "O mais sublime e sensível poeta das encostas cariocas que fundou a escola verde e rosa.",
+        "words": [
+          "as-rosas-não-falam",
+          "mangueira-fundador",
+          "violão-poesia",
+          "verde-rosa"
+        ],
+        "phrases": [
+          "O mais sublime e sensível poeta das encostas cariocas que fundou a escola verde e rosa.",
+          "Garçom e lavador de carros que compôs as mais belas melodias da língua portuguesa aos sessenta anos."
+        ]
+      },
+      {
+        "name": "Paulinho da Viola",
+        "sub": "sertanejo_pagode",
+        "word": "portela",
+        "phrase": "O cavalheiro do samba famoso pela elegância suave de sua voz e a afinação limpa no cavaquinho e violão.",
+        "words": [
+          "portela",
+          "foi-um-rio-que-passou",
+          "terno-azul",
+          "elegância"
+        ],
+        "phrases": [
+          "O cavalheiro do samba famoso pela elegância suave de sua voz e a afinação limpa no cavaquinho e violão.",
+          "Compôs a mais bela declaração de amor à escola da águia azul e branca do bairro de Madureira."
+        ]
+      },
+      {
+        "name": "Ferrugem",
+        "sub": "sertanejo_pagode",
+        "word": "pirata-e-tesouro",
+        "phrase": "Cantor carioca ruivo de voz aguda e potente que conquistou paradas de rádio com romantismo arrebatador.",
+        "words": [
+          "pirata-e-tesouro",
+          "voz-alta",
+          "cabelo-ruivo",
+          "pagode-moderno"
+        ],
+        "phrases": [
+          "Cantor carioca ruivo de voz aguda e potente que conquistou paradas de rádio com romantismo arrebatador.",
+          "Apresenta shows com afinação difícil ao vivo interpretando grandes clássicos e sucessos autorais."
+        ]
+      },
+      {
+        "name": "Péricles",
+        "sub": "sertanejo_pagode",
+        "word": "voz-de-veludo",
+        "phrase": "O grande mestre da voz aveludada do pagode que comanda o público com afeto, carisma e sorrisos calorosos.",
+        "words": [
+          "voz-de-veludo",
+          "exaltasamba-líder",
+          "elegância-terno",
+          "gravata-borboleta"
+        ],
+        "phrases": [
+          "O grande mestre da voz aveludada do pagode que comanda o público com afeto, carisma e sorrisos calorosos.",
+          "Interpretou os maiores sucessos dos anos noventa e 2000 em estádios e palcos de todo o Brasil."
+        ]
+      },
+      {
+        "name": "Dilsinho",
+        "sub": "sertanejo_pagode",
+        "word": "péssimo-negócio",
+        "phrase": "Representante do pagode pop com figurinos elegantes e melodias focadas em dramas de relacionamentos modernos.",
+        "words": [
+          "péssimo-negócio",
+          "pagode-pop",
+          "topete",
+          "romântico"
+        ],
+        "phrases": [
+          "Representante do pagode pop com figurinos elegantes e melodias focadas em dramas de relacionamentos modernos.",
+          "Cantor e compositor de sucessos que alcançam milhões de pessoas nos aplicativos digitais."
+        ]
+      },
+      {
+        "name": "Belo",
+        "sub": "sertanejo_pagode",
+        "word": "desafio",
+        "phrase": "Voz marcante e romântica do pagode paulistano que marcou época com cabelos platinados nos anos noventa.",
+        "words": [
+          "desafio",
+          "soweto-antigo",
+          "loiro-cabelo",
+          "voz-rouca-romance"
+        ],
+        "phrases": [
+          "Voz marcante e romântica do pagode paulistano que marcou época com cabelos platinados nos anos noventa.",
+          "Arrebata multidões cantando clássicos nostálgicos com entonação dramática de amor e sofrimento."
+        ]
+      },
+      {
+        "name": "Batalha de Rima",
+        "sub": "rap_trap_mpb",
+        "word": "improviso",
+        "phrase": "Dois MCs se enfrentam no centro de uma roda sob batidas com rimas improvisadas em segundos.",
+        "words": [
+          "improviso",
+          "microfone-dois",
+          "flow",
+          "sangue-ou-conhecimento"
+        ],
+        "phrases": [
+          "Dois MCs se enfrentam no centro de uma roda sob batidas com rimas improvisadas em segundos.",
+          "Disputa de criatividade mental e resposta rápida sem roteiro avaliada pelo barulho da plateia."
+        ]
+      },
+      {
+        "name": "Racionais MC's",
+        "sub": "rap_trap_mpb",
+        "word": "diário-de-um-detento",
+        "phrase": "O mais importante e influente grupo da história da música urbana e periférica do Brasil.",
+        "words": [
+          "diário-de-um-detento",
+          "mano-brown",
+          "capão-redondo",
+          "fórmula-mágica"
+        ],
+        "phrases": [
+          "O mais importante e influente grupo da história da música urbana e periférica do Brasil.",
+          "Retrataram a sobrevivência, o racismo e a dignidade nas quebradas com letras de impacto histórico."
+        ]
+      },
+      {
+        "name": "Emicida",
+        "sub": "rap_trap_mpb",
+        "word": "amarelo",
+        "phrase": "Cresceu vencendo todas as batalhas de freestyle com rimas afiadas até erguer um império de cultura e afeto.",
+        "words": [
+          "amarelo",
+          "triunfo",
+          "batalha-santa-cruz",
+          "elo-com-passado"
+        ],
+        "phrases": [
+          "Cresceu vencendo todas as batalhas de freestyle com rimas afiadas até erguer um império de cultura e afeto.",
+          "Uniu o rap à ancestralidade de sambistas históricos em um projeto aclamado sobre esperança."
+        ]
+      },
+      {
+        "name": "Sabotage",
+        "sub": "rap_trap_mpb",
+        "word": "maestro-do-canão",
+        "phrase": "O eterno maestro da zona sul de São Paulo que misturou rap acelerado com samba e atuou no cinema.",
+        "words": [
+          "maestro-do-canão",
+          "respeito-é-pra-quem-tem",
+          "cinema-ator",
+          "lenda-eterna"
+        ],
+        "phrases": [
+          "O eterno maestro da zona sul de São Paulo que misturou rap acelerado com samba e atuou no cinema.",
+          "Voz inconfundível com espinhos na fala que se tornou mito da cultura hip-hop nacional."
+        ]
+      },
+      {
+        "name": "Matuê",
+        "sub": "rap_trap_mpb",
+        "word": "30praum",
+        "phrase": "O artista de Fortaleza que bateu recordes históricos colocando todas as faixas do álbum no topo das paradas.",
+        "words": [
+          "30praum",
+          "anos-luz",
+          "máquina-do-tempo",
+          "trap-fortaleza"
+        ],
+        "phrases": [
+          "O artista de Fortaleza que bateu recordes históricos colocando todas as faixas do álbum no topo das paradas.",
+          "Produções psicodélicas, autotune afinado e melodias envolventes que moldaram a cena do trap."
+        ]
+      },
+      {
+        "name": "Djonga",
+        "sub": "rap_trap_mpb",
+        "word": "bh-rap",
+        "phrase": "Rapper mineiro de verso visceral e presença de palco avassaladora com letras de impacto contundente.",
+        "words": [
+          "bh-rap",
+          "fogo-nos-racistas",
+          "olho-de-tigre",
+          "letras-pesadas"
+        ],
+        "phrases": [
+          "Rapper mineiro de verso visceral e presença de palco avassaladora com letras de impacto contundente.",
+          "Autor de bordões que viraram lemas sociais em marchas e festivais de todo o país."
+        ]
+      },
+      {
+        "name": "Filipe Ret",
+        "sub": "rap_trap_mpb",
+        "word": "vivaz",
+        "phrase": "Nome de peso do rap carioca que construiu legiões de seguidores com poesias urbanas de ambição e superação.",
+        "words": [
+          "vivaz",
+          "nadamal",
+          "rap-leblon-catete",
+          "fórmula-sucesso"
+        ],
+        "phrases": [
+          "Nome de peso do rap carioca que construiu legiões de seguidores com poesias urbanas de ambição e superação.",
+          "Lota festivais de norte a sul cantando rimas sobre independência financeira e estilo de vida."
+        ]
+      },
+      {
+        "name": "Tupac Shakur (2Pac)",
+        "sub": "rap_trap_mpb",
+        "word": "bandana-amarrada",
+        "phrase": "O maior mito do hip-hop mundial com versos apaixonados sobre lutas sociais, poesia e dor das ruas.",
+        "words": [
+          "bandana-amarrada",
+          "west-coast",
+          "poeta-rua",
+          "california-love"
+        ],
+        "phrases": [
+          "O maior mito do hip-hop mundial com versos apaixonados sobre lutas sociais, poesia e dor das ruas.",
+          "Usava bandana com nó para frente e tatuagem de sobrevivência no peito desafiando o sistema."
+        ]
+      },
+      {
+        "name": "Notorious B.I.G. (Biggie)",
+        "sub": "rap_trap_mpb",
+        "word": "coroa-dourada",
+        "phrase": "Lenda nova-iorquina do rap conhecida pelo ritmo impecável, narrativa envolvente e voz rouca monumental.",
+        "words": [
+          "coroa-dourada",
+          "east-coast",
+          "juicy",
+          "flow-pesado"
+        ],
+        "phrases": [
+          "Lenda nova-iorquina do rap conhecida pelo ritmo impecável, narrativa envolvente e voz rouca monumental.",
+          "Retratou sua ascensão da miséria para o topo das paradas em hinos atemporais da música americana."
+        ]
+      },
+      {
+        "name": "Eminem",
+        "sub": "rap_trap_mpb",
+        "word": "lose-yourself",
+        "phrase": "O rapper mais rápido e vendedor da história que conquistou o Oscar por canção dramática sobre superação.",
+        "words": [
+          "lose-yourself",
+          "rap-god",
+          "rimas-rápidas",
+          "8-mile"
+        ],
+        "phrases": [
+          "O rapper mais rápido e vendedor da história que conquistou o Oscar por canção dramática sobre superação.",
+          "Dispara centenas de palavras por minuto com precisão rítmica cirúrgica e jogos complexos de rimas."
+        ]
+      },
+      {
+        "name": "Kendrick Lamar",
+        "sub": "rap_trap_mpb",
+        "word": "pulitzer",
+        "phrase": "O único artista de rap da história a vencer o prestigiado Prêmio Pulitzer de literatura e música.",
+        "words": [
+          "pulitzer",
+          "compton",
+          "not-like-us",
+          "mestre-narrativa"
+        ],
+        "phrases": [
+          "O único artista de rap da história a vencer o prestigiado Prêmio Pulitzer de literatura e música.",
+          "Compositor brilhante que venceu embates épicos na cultura pop contemporânea com letras refinadas."
+        ]
+      },
+      {
+        "name": "Bob Marley",
+        "sub": "rap_trap_mpb",
+        "word": "jamaica",
+        "phrase": "O profeta do reggae mundial que usou guitarras com contratempo para espalhar mensagens de união e paz.",
+        "words": [
+          "jamaica",
+          "dreadlocks",
+          "três-passarinhos",
+          "paz-amor"
+        ],
+        "phrases": [
+          "O profeta do reggae mundial que usou guitarras com contratempo para espalhar mensagens de união e paz.",
+          "Fez políticos rivais apertarem as mãos em cima do palco e imortalizou o ritmo da ilha caribenha."
+        ]
+      },
+      {
+        "name": "Natiruts",
+        "sub": "rap_trap_mpb",
+        "word": "reggae-brasília",
+        "phrase": "A maior banda de reggae brasileira nascida no planalto central que embalou litorais de todo o país.",
+        "words": [
+          "reggae-brasília",
+          "sorri-sou-rei",
+          "praia-vibes",
+          "natiruts-reggae-power"
+        ],
+        "phrases": [
+          "A maior banda de reggae brasileira nascida no planalto central que embalou litorais de todo o país.",
+          "Canções ensolaradas com naipes de metais suaves sobre amor, natureza e paz de espírito."
+        ]
+      },
+      {
+        "name": "Maneva",
+        "sub": "rap_trap_mpb",
+        "word": "saudades-do-tempo",
+        "phrase": "Grupo paulistano com letras poéticas profundas sobre os valores da vida e o tempo que passa rápido.",
+        "words": [
+          "saudades-do-tempo",
+          "reggae-paulista",
+          "poesia-boa",
+          "voz-grave"
+        ],
+        "phrases": [
+          "Grupo paulistano com letras poéticas profundas sobre os valores da vida e o tempo que passa rápido.",
+          "Arranjos aconchegantes com violões e percussões que acumulam bilhões de reproduções digitais."
+        ]
+      },
+      {
+        "name": "Elis Regina",
+        "sub": "rap_trap_mpb",
+        "word": "pimentinha",
+        "phrase": "Considerada a maior cantora da história da música brasileira com potência vocal e expressividade arrebatadoras.",
+        "words": [
+          "pimentinha",
+          "águas-de-março",
+          "voz-máxima",
+          "o-bêbado-e-a-equilibrista"
+        ],
+        "phrases": [
+          "Considerada a maior cantora da história da música brasileira com potência vocal e expressividade arrebatadoras.",
+          "Interpretou com lágrimas e sorrisos canções que se tornaram monumentos da identidade cultural do país."
+        ]
+      },
+      {
+        "name": "Tim Maia",
+        "sub": "rap_trap_mpb",
+        "word": "descobridor-dos-sete-mares",
+        "phrase": "O pioneiro do soul e funk no Brasil famoso pela voz de trovão e temperamento vulcânico com o retorno do som.",
+        "words": [
+          "descobridor-dos-sete-mares",
+          "síndico",
+          "não-quero-dinheiro",
+          "soul-voz-grave"
+        ],
+        "phrases": [
+          "O pioneiro do soul e funk no Brasil famoso pela voz de trovão e temperamento vulcânico com o retorno do som.",
+          "Gritava exigindo mais grave e agudo na mesa e colocava o país inteiro para dançar baladas inesquecíveis."
+        ]
+      },
+      {
+        "name": "Jorge Ben Jor",
+        "sub": "rap_trap_mpb",
+        "word": "mas-que-nada",
+        "phrase": "O criador da batida sincopada mais imitada do planeta que uniu samba, rock, maracatu e poesia cósmica.",
+        "words": [
+          "mas-que-nada",
+          "chove-chuva",
+          "violão-batida-única",
+          "alquimia"
+        ],
+        "phrases": [
+          "O criador da batida sincopada mais imitada do planeta que uniu samba, rock, maracatu e poesia cósmica.",
+          "Sua canção de abertura foi gravada por astros do jazz e do pop internacional rodando os continentes."
+        ]
+      },
+      {
+        "name": "Caetano Veloso",
+        "sub": "rap_trap_mpb",
+        "word": "sozinho",
+        "phrase": "Mestre da Tropicália e pensador de voz doce que desafiou preconceitos com poesia e sofisticação.",
+        "words": [
+          "sozinho",
+          "tropicalismo",
+          "terra",
+          "santo-amaro"
+        ],
+        "phrases": [
+          "Mestre da Tropicália e pensador de voz doce que desafiou preconceitos com poesia e sofisticação.",
+          "Gravou interpretações viscerais ao vivo que calaram plateias inteiras ao som de um violão solo."
+        ]
+      },
+      {
+        "name": "Gilberto Gil",
+        "sub": "rap_trap_mpb",
+        "word": "aquele-abraço",
+        "phrase": "Gênio rítmico que passeia do xote nordestino ao reggae internacional com dedilhados geniais no violão.",
+        "words": [
+          "aquele-abraço",
+          "esperança-dança",
+          "violão-suingue",
+          "ministro-cultura"
+        ],
+        "phrases": [
+          "Gênio rítmico que passeia do xote nordestino ao reggae internacional com dedilhados geniais no violão.",
+          "Conectou a espiritualidade dos terreiros baianos à física quântica e à internet em versos visionários."
+        ]
+      },
+      {
+        "name": "Chico Buarque",
+        "sub": "rap_trap_mpb",
+        "word": "construção",
+        "phrase": "O maior letrista da língua portuguesa que driblou censores com trocadilhos geniais de duplo sentido.",
+        "words": [
+          "construção",
+          "cálice",
+          "apesar-de-você",
+          "gênio-letras"
+        ],
+        "phrases": [
+          "O maior letrista da língua portuguesa que driblou censores com trocadilhos geniais de duplo sentido.",
+          "Descreveu o drama do operário que morreu na contramão atrapalhando o tráfego em uma obra-prima poética."
+        ]
+      },
+      {
+        "name": "Milton Nascimento",
+        "sub": "rap_trap_mpb",
+        "word": "maria-maria",
+        "phrase": "Dono de uma voz celestial que comoveu lendas do jazz internacional como Quincy Jones e Wayne Shorter.",
+        "words": [
+          "maria-maria",
+          "clube-da-esquina",
+          "voz-de-anjo",
+          "travessia"
+        ],
+        "phrases": [
+          "Dono de uma voz celestial que comoveu lendas do jazz internacional como Quincy Jones e Wayne Shorter.",
+          "Uniu o som dos sinos das igrejas coloniais mineiras a harmonias modernas que tocam o fundo da alma."
+        ]
+      },
+      {
+        "name": "Gal Costa",
+        "sub": "rap_trap_mpb",
+        "word": "meu-nome-é-gal",
+        "phrase": "A musa absoluta da Tropicália com alcance agudo cristalino que duelava notas com guitarras elétricas distorcidas.",
+        "words": [
+          "meu-nome-é-gal",
+          "agudo-cristalino",
+          "baby",
+          "musa-tropicália"
+        ],
+        "phrases": [
+          "A musa absoluta da Tropicália com alcance agudo cristalino que duelava notas com guitarras elétricas distorcidas.",
+          "Interpretou com doçura e sensualidade os maiores compositores da música brasileira com voz eterna."
+        ]
+      },
+      {
+        "name": "Maria Bethânia",
+        "sub": "rap_trap_mpb",
+        "word": "voz-rouca-dramática",
+        "phrase": "A sacerdotisa da canção brasileira que transforma shows em rituais poéticos declamando versos com teatralidade.",
+        "words": [
+          "voz-rouca-dramática",
+          "declamação",
+          "carcará",
+          "força-da-terra"
+        ],
+        "phrases": [
+          "A sacerdotisa da canção brasileira que transforma shows em rituais poéticos declamando versos com teatralidade.",
+          "Primeira mulher a vender mais de um milhão de cópias no país cantando canções com intensidade de raio."
+        ]
+      },
+      {
+        "name": "Djavan",
+        "sub": "rap_trap_mpb",
+        "word": "flor-de-lis",
+        "phrase": "Compositor alagoano famoso por harmonias sofisticadas que desafiam músicos experientes com poesia radiante.",
+        "words": [
+          "flor-de-lis",
+          "sinal-de-vida",
+          "harmonia-complexa",
+          "alagoas"
+        ],
+        "phrases": [
+          "Compositor alagoano famoso por harmonias sofisticadas que desafiam músicos experientes com poesia radiante.",
+          "Criador de canções apaixonadas repletas de metáforas visuais únicas e melodias que grudam na memória."
+        ]
+      },
+      {
+        "name": "Criolo",
+        "sub": "rap_trap_mpb",
+        "word": "não-existe-amor-em-sp",
+        "phrase": "Educador e poeta da periferia que estourou nacionalmente com canção comovente sobre a frieza da metrópole paulistana.",
+        "words": [
+          "não-existe-amor-em-sp",
+          "nó-na-orelha",
+          "grajaú",
+          "rap-samba"
+        ],
+        "phrases": [
+          "Educador e poeta da periferia que estourou nacionalmente com canção comovente sobre a frieza da metrópole paulistana.",
+          "Transita com maestria comovente entre o rap engajado, o samba tradicional e o afrobeat."
+        ]
+      },
+      {
+        "name": "Rincon Sapiência",
+        "sub": "rap_trap_mpb",
+        "word": "ponta-de-lança",
+        "phrase": "Rapper paulistano com flow sincopado e estética visual exuberante celebrando a cultura negra contemporânea.",
+        "words": [
+          "ponta-de-lança",
+          "afrobeat",
+          "versos-estilo",
+          "manicongo"
+        ],
+        "phrases": [
+          "Rapper paulistano com flow sincopado e estética visual exuberante celebrando a cultura negra contemporânea.",
+          "Famoso por versos acrobáticos e batidas africanas dançantes com roupas e turbantes cheios de estilo."
+        ]
+      },
+      {
+        "name": "Poesia Acústica",
+        "sub": "rap_trap_mpb",
+        "word": "cypher",
+        "phrase": "Projeto musical em formato de roda onde vários artistas rimam sequencialmente sobre base de violão.",
+        "words": [
+          "cypher",
+          "violão-rap",
+          "vários-mcs",
+          "milhões-visualizações"
+        ],
+        "phrases": [
+          "Projeto musical em formato de roda onde vários artistas rimam sequencialmente sobre base de violão.",
+          "Vídeos de mais de dez minutos que batem centenas de milhões de audições nos aplicativos de streaming."
+        ]
+      },
+      {
+        "name": "Seu Jorge",
+        "sub": "rap_trap_mpb",
+        "word": "burguesinha",
+        "phrase": "Superou a vida nas ruas para se tornar um dos artistas mais carismáticos e internacionais do país.",
+        "words": [
+          "burguesinha",
+          "amiga-da-minha-mulher",
+          "voz-grave-sambalanço",
+          "violão"
+        ],
+        "phrases": [
+          "Superou a vida nas ruas para se tornar um dos artistas mais carismáticos e internacionais do país.",
+          "Sucesso com sambalanço moderno, violão com batida marcante e atuações de destaque no cinema."
+        ]
+      },
+      {
+        "name": "Tribo de Jah",
+        "sub": "rap_trap_mpb",
+        "word": "são-luís-maranhão",
+        "phrase": "Pioneira banda de reggae maranhense formada por músicos com deficiência visual em uma escola de São Luís.",
+        "words": [
+          "são-luís-maranhão",
+          "músicos-cegos",
+          "reggae-raízes",
+          "jamaica-brasileira"
+        ],
+        "phrases": [
+          "Pioneira banda de reggae maranhense formada por músicos com deficiência visual em uma escola de São Luís.",
+          "Espalhou a cultura do reggae de peso e mensagens espirituais da Jamaica brasileira para o mundo."
+        ]
+      },
+      {
+        "name": "Armandinho",
+        "sub": "rap_trap_mpb",
+        "word": "desenho-de-deus",
+        "phrase": "Compositor de hits solares que misturam reggae e pop litorâneo com violão acústico e cheiro de maresia.",
+        "words": [
+          "desenho-de-deus",
+          "reggae-praia",
+          "sul-litoral",
+          "violão-maresia"
+        ],
+        "phrases": [
+          "Compositor de hits solares que misturam reggae e pop litorâneo com violão acústico e cheiro de maresia.",
+          "Trilhas sonoras de viagens de praia com canções românticas tocadas ao redor de fogueiras."
+        ]
+      }
+    ]
+  },
+  "Marcas & Empresas": {
+    "icon": "🏷️",
+    "color": "#10ac84",
+    "subcategories": {
+      "tecnologia_redes": {
+        "label": "Tecnologia & Redes",
+        "icon": "💻",
+        "desc": "Apple, Google, Microsoft, PlayStation, Nintendo, Instagram, WhatsApp e gigantes digitais"
+      },
+      "alimentacao_bebidas": {
+        "label": "Alimentos & Bebidas",
+        "icon": "🍔",
+        "desc": "McDonald's, Coca-Cola, Burger King, Nutella, Starbucks, Doritos, Nestlé e lanches"
+      },
+      "moda_esporte": {
+        "label": "Moda & Calçados",
+        "icon": "👟",
+        "desc": "Nike, Adidas, Puma, Jordan, Vans, Gucci, Havaianas, Louis Vuitton e roupas de grife"
+      },
+      "automoveis_varejo": {
+        "label": "Carros & Varejo",
+        "icon": "🚗",
+        "desc": "Ferrari, Porsche, BMW, Mercedes, Tesla, Mercado Livre, Amazon, Disney e Lego"
+      }
+    },
+    "items": [
+      {
+        "name": "Apple",
+        "sub": "tecnologia_redes",
+        "word": "maçã-mordida",
+        "phrase": "A mais valiosa empresa de eletrônicos do mundo famosa por celulares elegantes e sistemas fechados.",
+        "words": [
+          "maçã-mordida",
+          "iphone",
+          "steve-jobs",
+          "minimalismo"
+        ],
+        "phrases": [
+          "A mais valiosa empresa de eletrônicos do mundo famosa por celulares elegantes e sistemas fechados.",
+          "Logotipo com uma fruta mordida que transformou computadores e relógios em símbolos de luxo."
+        ]
+      },
+      {
+        "name": "Google",
+        "sub": "tecnologia_redes",
+        "word": "buscador",
+        "phrase": "O mecanismo de busca na internet que se tornou o maior organizador de informações do mundo.",
+        "words": [
+          "buscador",
+          "letras-coloridas",
+          "pesquisa",
+          "android"
+        ],
+        "phrases": [
+          "O mecanismo de busca na internet que se tornou o maior organizador de informações do mundo.",
+          "Página inicial branca e minimalista com quatro cores básicas que virou verbo de busca."
+        ]
+      },
+      {
+        "name": "Microsoft",
+        "sub": "tecnologia_redes",
+        "word": "janelas",
+        "phrase": "Gigante fundada pelo homem mais rico dos anos noventa criadora do sistema operacional dos PCs.",
+        "words": [
+          "janelas",
+          "bill-gates",
+          "xbox",
+          "office"
+        ],
+        "phrases": [
+          "Gigante fundada pelo homem mais rico dos anos noventa criadora do sistema operacional dos PCs.",
+          "Empresa dona do console de jogos verde e das ferramentas de planilhas e textos de trabalho."
+        ]
+      },
+      {
+        "name": "PlayStation (Sony)",
+        "sub": "tecnologia_redes",
+        "word": "quadrado-triângulo-círculo-x",
+        "phrase": "A mais vendida família de consoles de videogame domésticos da história dos jogos eletrônicos.",
+        "words": [
+          "quadrado-triângulo-círculo-x",
+          "console",
+          "dualshock",
+          "japão"
+        ],
+        "phrases": [
+          "A mais vendida família de consoles de videogame domésticos da história dos jogos eletrônicos.",
+          "Controles com quatro botões geométricos icônicos que revolucionaram os jogos tridimensionais."
+        ]
+      },
+      {
+        "name": "Nintendo",
+        "sub": "tecnologia_redes",
+        "word": "switch",
+        "phrase": "A centenária empresa de jogos japonesa que começou fabricando cartas de baralho tradicional.",
+        "words": [
+          "switch",
+          "mario-criador",
+          "console-híbrido",
+          "quioto"
+        ],
+        "phrases": [
+          "A centenária empresa de jogos japonesa que começou fabricando cartas de baralho tradicional.",
+          "Mãe do encanador bigodudo e de consoles portáteis que unem famílias ao redor da tela."
+        ]
+      },
+      {
+        "name": "Instagram",
+        "sub": "tecnologia_redes",
+        "word": "feed-fotos",
+        "phrase": "Rede social que começou com filtros de fotos quadradas e virou a vitrine global de fotos e vídeos curtos.",
+        "words": [
+          "feed-fotos",
+          "stories",
+          "reels",
+          "câmera-quadrada"
+        ],
+        "phrases": [
+          "Rede social que começou com filtros de fotos quadradas e virou a vitrine global de fotos e vídeos curtos.",
+          "Círculos coloridos de postagens temporárias de vinte e quatro horas que todos tocam sem parar."
+        ]
+      },
+      {
+        "name": "WhatsApp",
+        "sub": "tecnologia_redes",
+        "word": "dois-tiques-azuis",
+        "phrase": "O aplicativo de mensagens instantâneas mais utilizado para conversas diárias e grupos de família.",
+        "words": [
+          "dois-tiques-azuis",
+          "áudio-acelerado",
+          "balão-verde",
+          "mensagens"
+        ],
+        "phrases": [
+          "O aplicativo de mensagens instantâneas mais utilizado para conversas diárias e grupos de família.",
+          "Ícone verde com um telefone no centro onde áudios são ouvidos em dobro da velocidade."
+        ]
+      },
+      {
+        "name": "TikTok",
+        "sub": "tecnologia_redes",
+        "word": "algoritmo-infinito",
+        "phrase": "Plataforma de vídeos curtos que conquistou o planeta com um algoritmo hipnótico de recomendações.",
+        "words": [
+          "algoritmo-infinito",
+          "dancinhas",
+          "vídeos-verticais",
+          "nota-musical"
+        ],
+        "phrases": [
+          "Plataforma de vídeos curtos que conquistou o planeta com um algoritmo hipnótico de recomendações.",
+          "Logotipo com uma nota musical distorcida por falha digital que dita tendências globais."
+        ]
+      },
+      {
+        "name": "YouTube",
+        "sub": "tecnologia_redes",
+        "word": "botão-play",
+        "phrase": "A maior plataforma de vídeos sob demanda da internet onde criadores sonham com placas prateadas e douradas.",
+        "words": [
+          "botão-play",
+          "inscrição-canal",
+          "vídeos-online",
+          "placas-cem-mil"
+        ],
+        "phrases": [
+          "A maior plataforma de vídeos sob demanda da internet onde criadores sonham com placas prateadas e douradas.",
+          "Botão retangular vermelho com triângulo branco apontando para a direita no centro."
+        ]
+      },
+      {
+        "name": "Netflix",
+        "sub": "tecnologia_redes",
+        "word": "som-tudum",
+        "phrase": "Começou enviando DVDs pelo correio e transformou a forma de consumir cinema no sofá de casa.",
+        "words": [
+          "som-tudum",
+          "maratona-séries",
+          "streaming",
+          "n-vermelho"
+        ],
+        "phrases": [
+          "Começou enviando DVDs pelo correio e transformou a forma de consumir cinema no sofá de casa.",
+          "O clássico acorde grave de abertura que antecede o início de uma longa maratona de fim de semana."
+        ]
+      },
+      {
+        "name": "Spotify",
+        "sub": "tecnologia_redes",
+        "word": "playlists",
+        "phrase": "O aplicativo que reuniu quase todas as canções do mundo na ponta dos dedos com fundo preto e ondas verdes.",
+        "words": [
+          "playlists",
+          "ondas-verdes",
+          "retrospectiva-ano",
+          "streaming-música"
+        ],
+        "phrases": [
+          "O aplicativo que reuniu quase todas as canções do mundo na ponta dos dedos com fundo preto e ondas verdes.",
+          "Gera a mais aguardada retrospectiva musical personalizada de fim de ano que todos compartilham."
+        ]
+      },
+      {
+        "name": "Uber",
+        "sub": "tecnologia_redes",
+        "word": "carro-por-aplicativo",
+        "phrase": "Revolucionou a mobilidade urbana permitindo pedir um carro com motorista pela tela do smartphone.",
+        "words": [
+          "carro-por-aplicativo",
+          "corrida",
+          "nota-cinco-estrelas",
+          "motorista"
+        ],
+        "phrases": [
+          "Revolucionou a mobilidade urbana permitindo pedir um carro com motorista pela tela do smartphone.",
+          "Sistema de avaliação mútua com estrelas que aposentou o hábito de acenar para táxis na calçada."
+        ]
+      },
+      {
+        "name": "Amazon",
+        "sub": "tecnologia_redes",
+        "word": "sorriso-seta",
+        "phrase": "Começou vendendo livros pela internet em uma garagem e virou o maior império do comércio mundial.",
+        "words": [
+          "sorriso-seta",
+          "entrega-rápida",
+          "jeff-bezos",
+          "caixa-papelão"
+        ],
+        "phrases": [
+          "Começou vendendo livros pela internet em uma garagem e virou o maior império do comércio mundial.",
+          "Seta alaranjada que vai da letra A até a letra Z simbolizando que vende de tudo."
+        ]
+      },
+      {
+        "name": "ChatGPT (OpenAI)",
+        "sub": "tecnologia_redes",
+        "word": "inteligência-artificial",
+        "phrase": "O assistente de inteligência artificial generativa que surpreendeu o mundo conversando em linguagem natural.",
+        "words": [
+          "inteligência-artificial",
+          "prompt",
+          "conversa-robô",
+          "respostas"
+        ],
+        "phrases": [
+          "O assistente de inteligência artificial generativa que surpreendeu o mundo conversando em linguagem natural.",
+          "Escreve redações, códigos de computador e responde qualquer pergunta em questão de segundos."
+        ]
+      },
+      {
+        "name": "Twitter / X",
+        "sub": "tecnologia_redes",
+        "word": "passarinho-azul-antigo",
+        "phrase": "A praça pública digital dos debates acalorados que trocou o famoso pássaro azul por uma letra preta.",
+        "words": [
+          "passarinho-azul-antigo",
+          "retweet",
+          "limite-caracteres",
+          "elon-musk"
+        ],
+        "phrases": [
+          "A praça pública digital dos debates acalorados que trocou o famoso pássaro azul por uma letra preta.",
+          "Pioneira na cultura dos tópicos mais comentados do momento com mensagens curtas em tempo real."
+        ]
+      },
+      {
+        "name": "Twitch",
+        "sub": "tecnologia_redes",
+        "word": "transmissão-ao-vivo",
+        "phrase": "A maior plataforma de transmissões ao vivo focada em jogos eletrônicos, reacts e bate-papo de streamers.",
+        "words": [
+          "transmissão-ao-vivo",
+          "chat-rápido",
+          "emotes",
+          "roxo"
+        ],
+        "phrases": [
+          "A maior plataforma de transmissões ao vivo focada em jogos eletrônicos, reacts e bate-papo de streamers.",
+          "Tela roxa com chat acelerado de mensagens de inscritos e doações de moedas virtuais."
+        ]
+      },
+      {
+        "name": "Steam (Valve)",
+        "sub": "tecnologia_redes",
+        "word": "promoções-verão",
+        "phrase": "A principal loja digital de jogos para computador onde jogadores acumulam bibliotecas gigantescas com desconto.",
+        "words": [
+          "promoções-verão",
+          "biblioteca-jogos",
+          "válvula",
+          "pc-gamer"
+        ],
+        "phrases": [
+          "A principal loja digital de jogos para computador onde jogadores acumulam bibliotecas gigantescas com desconto.",
+          "Fundada pela empresa que colocou uma válvula de encanamento na cabeça de seu mascote."
+        ]
+      },
+      {
+        "name": "Discord",
+        "sub": "tecnologia_redes",
+        "word": "chamada-voz",
+        "phrase": "Aplicativo de comunicação por voz e texto onde comunidades e grupos de amigos conversam enquanto jogam.",
+        "words": [
+          "chamada-voz",
+          "servidores",
+          "bot-música",
+          "gamers"
+        ],
+        "phrases": [
+          "Aplicativo de comunicação por voz e texto onde comunidades e grupos de amigos conversam enquanto jogam.",
+          "Ícone com carinha de controle sorridente em fundo azulado com canais de voz livres."
+        ]
+      },
+      {
+        "name": "LinkedIn",
+        "sub": "tecnologia_redes",
+        "word": "currículo-online",
+        "phrase": "A rede social profissional onde executivos e trabalhadores celebram promoções e buscam empregos.",
+        "words": [
+          "currículo-online",
+          "networking",
+          "conexões",
+          "mundo-corporativo"
+        ],
+        "phrases": [
+          "A rede social profissional onde executivos e trabalhadores celebram promoções e buscam empregos.",
+          "Feed azul focado em conquistas profissionais, palestras e dicas de liderança corporativa."
+        ]
+      },
+      {
+        "name": "Pinterest",
+        "sub": "tecnologia_redes",
+        "word": "alfinete-pin",
+        "phrase": "Plataforma visual de ideias onde pessoas salvam fotos de decoração, roupas e receitas em murais digitais.",
+        "words": [
+          "alfinete-pin",
+          "quadros-ideias",
+          "inspiração-fotos",
+          "vermelho"
+        ],
+        "phrases": [
+          "Plataforma visual de ideias onde pessoas salvam fotos de decoração, roupas e receitas em murais digitais.",
+          "Alfinete virtual vermelho para fixar imagens que inspiram projetos de vida e casamentos."
+        ]
+      },
+      {
+        "name": "Snapchat",
+        "sub": "tecnologia_redes",
+        "word": "fantasma-amarelo",
+        "phrase": "O aplicativo do fantasminha amarelo que popularizou mensagens que se autodestroem após abertas.",
+        "words": [
+          "fantasma-amarelo",
+          "foto-some",
+          "filtros-rosto",
+          "fogaréus"
+        ],
+        "phrases": [
+          "O aplicativo do fantasminha amarelo que popularizou mensagens que se autodestroem após abertas.",
+          "Inovou criando os primeiros filtros que transformavam rostos em cachorrinho e bebês na tela."
+        ]
+      },
+      {
+        "name": "Telegram",
+        "sub": "tecnologia_redes",
+        "word": "aviãozinho-papel",
+        "phrase": "Aplicativo de mensagens com logotipo de aviãozinho de papel famoso por grupos gigantes e stickers animados.",
+        "words": [
+          "aviãozinho-papel",
+          "canais-milhões",
+          "privacidade",
+          "stickers"
+        ],
+        "phrases": [
+          "Aplicativo de mensagens com logotipo de aviãozinho de papel famoso por grupos gigantes e stickers animados.",
+          "Muito utilizado para transmissões de canais de notícias e compartilhamento rápido de arquivos pesados."
+        ]
+      },
+      {
+        "name": "Reddit",
+        "sub": "tecnologia_redes",
+        "word": "alienígena-antena",
+        "phrase": "O autointitulado mural da internet com milhares de fóruns anônimos divididos por temas específicos.",
+        "words": [
+          "alienígena-antena",
+          "upvotes",
+          "subreddits",
+          "fórum"
+        ],
+        "phrases": [
+          "O autointitulado mural da internet com milhares de fóruns anônimos divididos por temas específicos.",
+          "Mascote alienígena com antena e sistema de votos positivos ou negativos em publicações."
+        ]
+      },
+      {
+        "name": "Wikipedia",
+        "sub": "tecnologia_redes",
+        "word": "enciclopédia-livre",
+        "phrase": "A maior enciclopédia aberta da história da humanidade escrita e editada por voluntários do mundo todo.",
+        "words": [
+          "enciclopédia-livre",
+          "globo-quebra-cabeça",
+          "artigos",
+          "voluntários"
+        ],
+        "phrases": [
+          "A maior enciclopédia aberta da história da humanidade escrita e editada por voluntários do mundo todo.",
+          "Globo formado por peças de quebra-cabeça com caracteres de diferentes alfabetos da Terra."
+        ]
+      },
+      {
+        "name": "Duolingo",
+        "sub": "tecnologia_redes",
+        "word": "coruja-verde",
+        "phrase": "O aplicativo de aprender idiomas famoso pela corujinha verde que cobra as lições diárias sem piedade.",
+        "words": [
+          "coruja-verde",
+          "ofensiva-dias",
+          "idiomas-licoes",
+          "notificação-bronca"
+        ],
+        "phrases": [
+          "O aplicativo de aprender idiomas famoso pela corujinha verde que cobra as lições diárias sem piedade.",
+          "Mantém milhões viciados em lições de cinco minutos para não perder a sequência de dias estudados."
+        ]
+      },
+      {
+        "name": "Nubank",
+        "sub": "tecnologia_redes",
+        "word": "cartão-roxinho",
+        "phrase": "O banco digital que revolucionou o sistema financeiro nacional com seu cartão de crédito roxo sem tarifas.",
+        "words": [
+          "cartão-roxinho",
+          "sem-anuidade",
+          "banco-digital",
+          "startup-brasil"
+        ],
+        "phrases": [
+          "O banco digital que revolucionou o sistema financeiro nacional com seu cartão de crédito roxo sem tarifas.",
+          "Atendimento pelo aplicativo que aboliu filas de agências físicas para milhões de brasileiros."
+        ]
+      },
+      {
+        "name": "iFood",
+        "sub": "tecnologia_redes",
+        "word": "entrega-comida",
+        "phrase": "O aplicativo líder em pedidos de refeições a domicílio com entregadores de mochilas térmicas nas ruas.",
+        "words": [
+          "entrega-comida",
+          "sacola-vermelha",
+          "motoboy",
+          "cupom"
+        ],
+        "phrases": [
+          "O aplicativo líder em pedidos de refeições a domicílio com entregadores de mochilas térmicas nas ruas.",
+          "Alerta sonoro inconfundível avisando que o pedido saiu para a entrega com cupom de desconto."
+        ]
+      },
+      {
+        "name": "Mercado Pago",
+        "sub": "tecnologia_redes",
+        "word": "maquininha-cartão",
+        "phrase": "Carteira digital e processadora de pagamentos com maquininhas azuis presentes em milhares de comércios.",
+        "words": [
+          "maquininha-cartão",
+          "pagamento-pix",
+          "carteira-digital",
+          "dois-braços"
+        ],
+        "phrases": [
+          "Carteira digital e processadora de pagamentos com maquininhas azuis presentes em milhares de comércios.",
+          "Surgiu como braço financeiro do maior site de comércio eletrônico da América Latina."
+        ]
+      },
+      {
+        "name": "Canva",
+        "sub": "tecnologia_redes",
+        "word": "arrastar-soltar",
+        "phrase": "A plataforma de design gráfico que permitiu a qualquer pessoa criar convites, pôsteres e artes profissionais.",
+        "words": [
+          "arrastar-soltar",
+          "templates",
+          "design-fácil",
+          "apresentações"
+        ],
+        "phrases": [
+          "A plataforma de design gráfico que permitiu a qualquer pessoa criar convites, pôsteres e artes profissionais.",
+          "Milhares de modelos prontos na nuvem com ferramentas intuitivas de arrastar e soltar elementos."
+        ]
+      },
+      {
+        "name": "Waze",
+        "sub": "tecnologia_redes",
+        "word": "carrinho-sorridente",
+        "phrase": "O aplicativo de navegação GPS colaborativo onde motoristas avisam sobre buracos, viaturas e congestionamentos.",
+        "words": [
+          "carrinho-sorridente",
+          "radar-alerta",
+          "trânsito-tempo-real",
+          "rota-rápida"
+        ],
+        "phrases": [
+          "O aplicativo de navegação GPS colaborativo onde motoristas avisam sobre buracos, viaturas e congestionamentos.",
+          "Calcula desvios em tempo real por ruas secundárias para economizar minutos no tráfego caótico."
+        ]
+      },
+      {
+        "name": "McDonald's",
+        "sub": "alimentacao_bebidas",
+        "word": "arcos-dourados",
+        "phrase": "A maior e mais reconhecida rede de fast-food do planeta com seus dois arcos amarelos monumentais.",
+        "words": [
+          "arcos-dourados",
+          "big-mac",
+          "batata-frita-caixa-vermelha",
+          "palhaço-ronald"
+        ],
+        "phrases": [
+          "A maior e mais reconhecida rede de fast-food do planeta com seus dois arcos amarelos monumentais.",
+          "Famosa pelo sanduíche de dois hambúrgueres com molho especial, cebola e picles no pão com gergelim."
+        ]
+      },
+      {
+        "name": "Coca-Cola",
+        "sub": "alimentacao_bebidas",
+        "word": "refrigerante-preto",
+        "phrase": "A bebida mais famosa e consumida do mundo guardada a sete chaves em um cofre na Geórgia.",
+        "words": [
+          "refrigerante-preto",
+          "garrafa-vidro",
+          "urso-polar",
+          "fórmula-secreta"
+        ],
+        "phrases": [
+          "A bebida mais famosa e consumida do mundo guardada a sete chaves em um cofre na Geórgia.",
+          "Garrafa curvilínea vermelha que ajudou a moldar a imagem moderna do bom velhinho de Natal."
+        ]
+      },
+      {
+        "name": "Burger King",
+        "sub": "alimentacao_bebidas",
+        "word": "grelhado-fogo",
+        "phrase": "A rede de lanches rival conhecida pelo preparo da carne na grelha com sabor característico de churrasco.",
+        "words": [
+          "grelhado-fogo",
+          "whopper",
+          "coroa-papelão",
+          "rei-mascote"
+        ],
+        "phrases": [
+          "A rede de lanches rival conhecida pelo preparo da carne na grelha com sabor característico de churrasco.",
+          "Distribui coroas de papelão douradas para os clientes enquanto zomba das promoções dos concorrentes."
+        ]
+      },
+      {
+        "name": "Nutella",
+        "sub": "alimentacao_bebidas",
+        "word": "avela-cacau",
+        "phrase": "O irresistível creme italiano de avelãs com cacau que se tornou paixão mundial no café da manhã.",
+        "words": [
+          "avela-cacau",
+          "creme-pote",
+          "torrada-pão",
+          "tampa-branca"
+        ],
+        "phrases": [
+          "O irresistível creme italiano de avelãs com cacau que se tornou paixão mundial no café da manhã.",
+          "Pote bojudo de vidro com tampa plástica branca que acompanha crepes, pães e colheradas puras."
+        ]
+      },
+      {
+        "name": "Starbucks",
+        "sub": "alimentacao_bebidas",
+        "word": "sereia-verde",
+        "phrase": "A maior cafeteria do mundo famosa por grafar nomes de clientes de forma engraçada nos copos descartáveis.",
+        "words": [
+          "sereia-verde",
+          "escrever-nome-copo",
+          "frappuccino",
+          "copo-térmico"
+        ],
+        "phrases": [
+          "A maior cafeteria do mundo famosa por grafar nomes de clientes de forma engraçada nos copos descartáveis.",
+          "Logotipo com sereia de duas caudas servindo bebidas geladas com chantilly e caldas aromáticas."
+        ]
+      },
+      {
+        "name": "Pepsi",
+        "sub": "alimentacao_bebidas",
+        "word": "círculo-azul-vermelho",
+        "phrase": "Histórica competidora das colas com logotipo circular dividido por uma onda branca no centro.",
+        "words": [
+          "círculo-azul-vermelho",
+          "desafio-à-cegas",
+          "refrigerante-cola",
+          "limão-twist"
+        ],
+        "phrases": [
+          "Histórica competidora das colas com logotipo circular dividido por uma onda branca no centro.",
+          "Famosa pelas campanhas publicitárias com superestrelas do pop e jogadores mundiais de futebol."
+        ]
+      },
+      {
+        "name": "Red Bull",
+        "sub": "alimentacao_bebidas",
+        "word": "te-dá-asas",
+        "phrase": "O energético mais vendido do mundo que patrocina equipes de Fórmula Um e atletas de esportes extremos.",
+        "words": [
+          "te-dá-asas",
+          "dois-touros-sol",
+          "latinha-azul-prata",
+          "esportes-radicais"
+        ],
+        "phrases": [
+          "O energético mais vendido do mundo que patrocina equipes de Fórmula Um e atletas de esportes extremos.",
+          "Lata fina prateada e azul que promete energia imediata com o clássico slogan sobre criar asas."
+        ]
+      },
+      {
+        "name": "Doritos",
+        "sub": "alimentacao_bebidas",
+        "word": "triângulo-crocante",
+        "phrase": "Salgadinho de milho assado em formato triangular com tempero intenso que mancha a ponta dos dedos de laranja.",
+        "words": [
+          "triângulo-crocante",
+          "pó-queijo-nacho",
+          "dedos-laranjas",
+          "milho"
+        ],
+        "phrases": [
+          "Salgadinho de milho assado em formato triangular com tempero intenso que mancha a ponta dos dedos de laranja.",
+          "A crocância mais cobiçada em festas e sessões de cinema acompanhada de molhos de queijo ou pimenta."
+        ]
+      },
+      {
+        "name": "Oreo",
+        "sub": "alimentacao_bebidas",
+        "word": "gira-lambe-mergulha",
+        "phrase": "O biscoito recheado mais vendido do planeta composto por duas bolachas escuras de cacau e creme branco.",
+        "words": [
+          "gira-lambe-mergulha",
+          "biscoito-preto",
+          "recheio-baunilha",
+          "leite"
+        ],
+        "phrases": [
+          "O biscoito recheado mais vendido do planeta composto por duas bolachas escuras de cacau e creme branco.",
+          "Consumido no ritual clássico de desrosquear as metades, lamber o recheio e mergulhar em um copo de leite."
+        ]
+      },
+      {
+        "name": "Nestlé",
+        "sub": "alimentacao_bebidas",
+        "word": "ninho-pássaros",
+        "phrase": "A gigantesca multinacional suíça de alimentos com logotipo de aves sendo alimentadas em um ninho.",
+        "words": [
+          "ninho-pássaros",
+          "chocolate-leite",
+          "leite-condensado",
+          "suíça"
+        ],
+        "phrases": [
+          "A gigantesca multinacional suíça de alimentos com logotipo de aves sendo alimentadas em um ninho.",
+          "Criadora de marcas consagradas de chocolates, cafés solúveis e o clássico leite condensado em lata."
+        ]
+      },
+      {
+        "name": "Subway",
+        "sub": "alimentacao_bebidas",
+        "word": "quinze-trinta-cm",
+        "phrase": "Rede de sanduíches onde o cliente escolhe o tipo de pão, queijo, carnes e saladas na vitrine de vidro.",
+        "words": [
+          "quinze-trinta-cm",
+          "monte-seu-sanduíche",
+          "vegetais-frescos",
+          "cookies"
+        ],
+        "phrases": [
+          "Rede de sanduíches onde o cliente escolhe o tipo de pão, queijo, carnes e saladas na vitrine de vidro.",
+          "Famosa pelos tamanhos padrão de meio pé ou um pé inteiro com cookies de gotas de chocolate quentinhos."
+        ]
+      },
+      {
+        "name": "Heineken",
+        "sub": "alimentacao_bebidas",
+        "word": "garrafa-verde",
+        "phrase": "Cervejaria holandesa famosa pela icônica garrafa verde com estrela vermelha e receita puro malte.",
+        "words": [
+          "garrafa-verde",
+          "estrela-vermelha",
+          "puro-malte",
+          "holandesa"
+        ],
+        "phrases": [
+          "Cervejaria holandesa famosa pela icônica garrafa verde com estrela vermelha e receita puro malte.",
+          "Patrocinadora master da maior liga de clubes de futebol europeu com copos exclusivos em festivais."
+        ]
+      },
+      {
+        "name": "Guaraná Antarctica",
+        "sub": "alimentacao_bebidas",
+        "word": "fruto-amazônia",
+        "phrase": "O mais tradicional e amado refrigerante nacional feito a partir de um fruto nativo da floresta amazônica.",
+        "words": [
+          "fruto-amazônia",
+          "pipoca-com-guaraná",
+          "orgulho-brasileiro",
+          "latinha-verde"
+        ],
+        "phrases": [
+          "O mais tradicional e amado refrigerante nacional feito a partir de um fruto nativo da floresta amazônica.",
+          "Presente em aniversários infantis e celebrações brasileiras como a combinação perfeita com pipoca salgada."
+        ]
+      },
+      {
+        "name": "Outback Steakhouse",
+        "sub": "alimentacao_bebidas",
+        "word": "cebola-gigante-bloomin",
+        "phrase": "Restaurante temático com inspiração no interior australiano famoso pela cebola empanada gigante e frita.",
+        "words": [
+          "cebola-gigante-bloomin",
+          "costela-barbecue",
+          "pão-australiano",
+          "chope-caneca-congelada"
+        ],
+        "phrases": [
+          "Restaurante temático com inspiração no interior australiano famoso pela cebola empanada gigante e frita.",
+          "Serve pão preto macio com manteiga de cortesia e chope servido em canecas trincando de geladas."
+        ]
+      },
+      {
+        "name": "KFC",
+        "sub": "alimentacao_bebidas",
+        "word": "balde-frango",
+        "phrase": "A rede que serve pedaços de frango empanado ultracrocante em grandes baldes de papelão com listras vermelhas.",
+        "words": [
+          "balde-frango",
+          "coronel-sanders",
+          "crocante-secreto",
+          "onze-ervas"
+        ],
+        "phrases": [
+          "A rede que serve pedaços de frango empanado ultracrocante em grandes baldes de papelão com listras vermelhas.",
+          "Fundada pelo simpático senhor de terno branco e cavanhaque com uma receita secreta de temperos."
+        ]
+      },
+      {
+        "name": "Ferrero Rocher",
+        "sub": "alimentacao_bebidas",
+        "word": "papel-dourado",
+        "phrase": "Bombom requintado envolvido individualmente em papel dourado com uma avelã inteira no coração do recheio.",
+        "words": [
+          "papel-dourado",
+          "bombom-avela",
+          "wafer-crocante",
+          "pirâmide-festas"
+        ],
+        "phrases": [
+          "Bombom requintado envolvido individualmente em papel dourado com uma avelã inteira no coração do recheio.",
+          "Clássico presente de datas comemorativas montado em pirâmides em vitrines refinadas."
+        ]
+      },
+      {
+        "name": "Lay's",
+        "sub": "alimentacao_bebidas",
+        "word": "batata-ondulada",
+        "phrase": "A mais popular marca mundial de batatas fritas em fatias finíssimas e estaladiças em sacos amarelos.",
+        "words": [
+          "batata-ondulada",
+          "ar-no-pacote",
+          "crocante-salgada",
+          "sol-amarelo"
+        ],
+        "phrases": [
+          "A mais popular marca mundial de batatas fritas em fatias finíssimas e estaladiças em sacos amarelos.",
+          "Conhecida pelas piadas sobre o volume de ar dentro da embalagem para proteger a integridade das fatias."
+        ]
+      },
+      {
+        "name": "KitKat",
+        "sub": "alimentacao_bebidas",
+        "word": "quatro-dedos",
+        "phrase": "Barra de chocolate ao leite com camadas de wafer crocante projetada para ser partida com os dedos no intervalo.",
+        "words": [
+          "quatro-dedos",
+          "dê-um-tempo",
+          "quebrar-chocolate",
+          "wafer"
+        ],
+        "phrases": [
+          "Barra de chocolate ao leite com camadas de wafer crocante projetada para ser partida com os dedos no intervalo.",
+          "Slogan clássico convidando a fazer uma pausa na rotina corrida para saborear um pedaço."
+        ]
+      },
+      {
+        "name": "Monster Energy",
+        "sub": "alimentacao_bebidas",
+        "word": "garra-verde",
+        "phrase": "Bebida energética famosa pela lata preta fosca com a letra M rasgada em verde fluorescente por garras afiadas.",
+        "words": [
+          "garra-verde",
+          "lata-preta-grande",
+          "tampinha-m",
+          "cafeína-alta"
+        ],
+        "phrases": [
+          "Bebida energética famosa pela lata preta fosca com a letra M rasgada em verde fluorescente por garras afiadas.",
+          "Muito popular entre praticantes de esportes a motor e jogadores de videogame competitivos."
+        ]
+      },
+      {
+        "name": "Fanta",
+        "sub": "alimentacao_bebidas",
+        "word": "refrigerante-laranja",
+        "phrase": "Refrigerante frutado com sabor marcante de laranja ou uva famoso por suas cores berrantes e gás intenso.",
+        "words": [
+          "refrigerante-laranja",
+          "uva",
+          "bolhas-fruta",
+          "latinha-azul-laranja"
+        ],
+        "phrases": [
+          "Refrigerante frutado com sabor marcante de laranja ou uva famoso por suas cores berrantes e gás intenso.",
+          "Criado na Europa durante a escassez de ingredientes da guerra e adotado pelo público jovem."
+        ]
+      },
+      {
+        "name": "Pringles",
+        "sub": "alimentacao_bebidas",
+        "word": "tubo-cilíndrico",
+        "phrase": "Batatas em fatias perfeitamente simétricas com curvatura geométrica idêntica empilhadas dentro de uma lata de tubo.",
+        "words": [
+          "tubo-cilíndrico",
+          "batatas-iguais",
+          "bigode-julius",
+          "paraboloide"
+        ],
+        "phrases": [
+          "Batatas em fatias perfeitamente simétricas com curvatura geométrica idêntica empilhadas dentro de uma lata de tubo.",
+          "Mascote com cabeça redonda e bigode castanho com a promessa de que é impossível comer uma só."
+        ]
+      },
+      {
+        "name": "Snickers",
+        "sub": "alimentacao_bebidas",
+        "word": "amendoim-caramelo",
+        "phrase": "Barra de chocolate espessa recheada de caramelo cremoso, nougat e amendoins inteiros torrados.",
+        "words": [
+          "amendoim-caramelo",
+          "barra-pesada",
+          "você-não-é-você-com-fome",
+          "nougat"
+        ],
+        "phrases": [
+          "Barra de chocolate espessa recheada de caramelo cremoso, nougat e amendoins inteiros torrados.",
+          "Comerciais clássicos mostrando pessoas irritadas agindo de forma estranha por estarem com fome."
+        ]
+      },
+      {
+        "name": "Häagen-Dazs",
+        "sub": "alimentacao_bebidas",
+        "word": "sorvete-premium",
+        "phrase": "Marca de sorvetes artesanais refinados com potes elegantes e formulação sem conservantes de ar excessivo.",
+        "words": [
+          "sorvete-premium",
+          "pote-luxo",
+          "colher-resistente",
+          "ingredientes-nobres"
+        ],
+        "phrases": [
+          "Marca de sorvetes artesanais refinados com potes elegantes e formulação sem conservantes de ar excessivo.",
+          "Nome criado com estética escandinava fictícia para transmitir nobreza e pureza de sabores."
+        ]
+      },
+      {
+        "name": "Sprite",
+        "sub": "alimentacao_bebidas",
+        "word": "limão-lima",
+        "phrase": "Refrigerante translúcido sabor limão e lima famoso pelo visual borbulhante e poder de saciar a sede.",
+        "words": [
+          "limão-lima",
+          "garrafa-verde",
+          "sem-corante-transparente",
+          "refrescância"
+        ],
+        "phrases": [
+          "Refrigerante translúcido sabor limão e lima famoso pelo visual borbulhante e poder de saciar a sede.",
+          "Frequentemente associado a campanhas com astros do basquete americano e estética urbana jovem."
+        ]
+      },
+      {
+        "name": "Nescau",
+        "sub": "alimentacao_bebidas",
+        "word": "raio-amarelo",
+        "phrase": "O achocolatado em pó mais querido dos lares brasileiros com um raio dourado cruzando a lata vermelha.",
+        "words": [
+          "raio-amarelo",
+          "energia-que-dá-gosto",
+          "achocolatado-pó",
+          "latinha-espiral"
+        ],
+        "phrases": [
+          "O achocolatado em pó mais querido dos lares brasileiros com um raio dourado cruzando a lata vermelha.",
+          "Misturado ao leite frio ou quente pela manhã dando sabor doce com grumos característicos."
+        ]
+      },
+      {
+        "name": "Toddy",
+        "sub": "alimentacao_bebidas",
+        "word": "vacas-mascotes",
+        "phrase": "O histórico concorrente dos achocolatados famoso pelas bolinhas de chocolate que boiam no topo do copo de leite.",
+        "words": [
+          "vacas-mascotes",
+          "bolinhas-chocolate",
+          "pote-marrom",
+          "achocolatado"
+        ],
+        "phrases": [
+          "O histórico concorrente dos achocolatados famoso pelas bolinhas de chocolate que boiam no topo do copo de leite.",
+          "Mascotes bem-humoradas de vacas com visual descolado que aprontam travessuras na televisão."
+        ]
+      },
+      {
+        "name": "Bauducco",
+        "sub": "alimentacao_bebidas",
+        "word": "panetone",
+        "phrase": "A mais tradicional fabricante brasileira de panetones e biscoitos com icônicas caixas amarelas no final de ano.",
+        "words": [
+          "panetone",
+          "gotas-chocolate",
+          "caixa-amarela",
+          "natal-família"
+        ],
+        "phrases": [
+          "A mais tradicional fabricante brasileira de panetones e biscoitos com icônicas caixas amarelas no final de ano.",
+          "Massa fofa de fermentação natural com aroma característico que marca as mesas das ceias de Natal."
+        ]
+      },
+      {
+        "name": "Ruffles",
+        "sub": "alimentacao_bebidas",
+        "word": "batata-ondulada",
+        "phrase": "Batatas com ondulações profundas projetadas para reter mais sabor e produzir barulho estalado ao morder.",
+        "words": [
+          "batata-ondulada",
+          "a-batata-da-onda",
+          "sal-na-medida",
+          "saco-azul"
+        ],
+        "phrases": [
+          "Batatas com ondulações profundas projetadas para reter mais sabor e produzir barulho estalado ao morder.",
+          "Salgadinho clássico para comer assistindo a jogos de futebol ou conversando com a galera."
+        ]
+      },
+      {
+        "name": "Skol",
+        "sub": "alimentacao_bebidas",
+        "word": "a-cerveja-que-desce-redondo",
+        "phrase": "A marca de cerveja que dominou o mercado de massa nacional com a promessa de descer redondo pela garganta.",
+        "words": [
+          "a-cerveja-que-desce-redondo",
+          "lata-amarela",
+          "pilsen",
+          "carnaval"
+        ],
+        "phrases": [
+          "A marca de cerveja que dominou o mercado de massa nacional com a promessa de descer redondo pela garganta.",
+          "Lata amarela marcante onipresente em blocos de rua, churrascos e praias de todo o litoral brasileiro."
+        ]
+      },
+      {
+        "name": "Corona",
+        "sub": "alimentacao_bebidas",
+        "word": "fatia-limão-gargalo",
+        "phrase": "Cerveja leve mexicana servida obrigatoriamente com uma fatia de limão espremida para dentro do gargalo fino.",
+        "words": [
+          "fatia-limão-gargalo",
+          "garrafa-transparente",
+          "mexicana",
+          "pôr-do-sol-praia"
+        ],
+        "phrases": [
+          "Cerveja leve mexicana servida obrigatoriamente com uma fatia de limão espremida para dentro do gargalo fino.",
+          "Garrafa transparente de vidro associada a climas ensolarados e relaxamento na beira do mar."
+        ]
+      },
+      {
+        "name": "Nike",
+        "sub": "moda_esporte",
+        "word": "swoosh-virgula",
+        "phrase": "A maior gigante global de artigos esportivos cujo logotipo é uma asa estilizada que lembra uma vírgula.",
+        "words": [
+          "swoosh-virgula",
+          "just-do-it",
+          "air-max",
+          "atletismo"
+        ],
+        "phrases": [
+          "A maior gigante global de artigos esportivos cujo logotipo é uma asa estilizada que lembra uma vírgula.",
+          "Famosa pelas câmaras de ar visíveis no solado de seus tênis e o lema de apenas faça acontecer."
+        ]
+      },
+      {
+        "name": "Adidas",
+        "sub": "moda_esporte",
+        "word": "três-listras",
+        "phrase": "Empresa alemã consagrada identificada mundialmente por suas três listras paralelas em roupas e calçados.",
+        "words": [
+          "três-listras",
+          "trefoil-trevo",
+          "superstar",
+          "alemanha"
+        ],
+        "phrases": [
+          "Empresa alemã consagrada identificada mundialmente por suas três listras paralelas em roupas e calçados.",
+          "Patrocinadora de bolas e chuteiras das Copas do Mundo e pioneira na união do esporte com o hip-hop."
+        ]
+      },
+      {
+        "name": "Puma",
+        "sub": "moda_esporte",
+        "word": "felino-saltando",
+        "phrase": "Marca esportiva fundada pelo irmão do criador da Adidas com um felino selvagem saltando no logotipo.",
+        "words": [
+          "felino-saltando",
+          "usain-bolt",
+          "camurça-suede",
+          "velocidade"
+        ],
+        "phrases": [
+          "Marca esportiva fundada pelo irmão do criador da Adidas com um felino selvagem saltando no logotipo.",
+          "Calçou o homem mais veloz do planeta e lendas históricas do futebol mundial nos gramados."
+        ]
+      },
+      {
+        "name": "Jordan (Air Jordan)",
+        "sub": "moda_esporte",
+        "word": "jumpman-enterrada",
+        "phrase": "Linha de calçados revolucionária que colocou a silhueta do maior jogador de basquete enterrando a bola no calcanhar.",
+        "words": [
+          "jumpman-enterrada",
+          "número-23",
+          "tênis-basquete-luxo",
+          "chicago"
+        ],
+        "phrases": [
+          "Linha de calçados revolucionária que colocou a silhueta do maior jogador de basquete enterrando a bola no calcanhar.",
+          "Tênis disputados por colecionadores em leilões que custam pequenas fortunas no mercado de revenda."
+        ]
+      },
+      {
+        "name": "Vans",
+        "sub": "moda_esporte",
+        "word": "off-the-wall",
+        "phrase": "O calçado oficial dos skatistas californianos com solado em relevo de waffle aderente à lixa da prancha.",
+        "words": [
+          "off-the-wall",
+          "solado-waffle",
+          "skate-cano-baixo",
+          "quadriculado"
+        ],
+        "phrases": [
+          "O calçado oficial dos skatistas californianos com solado em relevo de waffle aderente à lixa da prancha.",
+          "Famoso pelo padrão de tecido quadriculado em preto e branco e a listra lateral de couro ondulada."
+        ]
+      },
+      {
+        "name": "Gucci",
+        "sub": "moda_esporte",
+        "word": "duplo-g",
+        "phrase": "Grife italiana de alta costura com duas letras G entrelaçadas que vestem celebridades e astros do rap.",
+        "words": [
+          "duplo-g",
+          "faixa-verde-vermelha",
+          "luxo-italiano",
+          "bolsas-caras"
+        ],
+        "phrases": [
+          "Grife italiana de alta costura com duas letras G entrelaçadas que vestem celebridades e astros do rap.",
+          "Bolsas de couro refinado e mocassins com ferragens douradas que definem o luxo europeu."
+        ]
+      },
+      {
+        "name": "Havaianas",
+        "sub": "moda_esporte",
+        "word": "chinelo-borracha",
+        "phrase": "O chinelo de borracha mais democrático e famoso do mundo que vai da periferia aos desfiles de moda de Paris.",
+        "words": [
+          "chinelo-borracha",
+          "bandeirinha-brasil",
+          "não-deforma-não-solta-tira",
+          "praia"
+        ],
+        "phrases": [
+          "O chinelo de borracha mais democrático e famoso do mundo que vai da periferia aos desfiles de moda de Paris.",
+          "Slogan clássico garantindo que não deforma, não solta as tiras e não tem cheiro nas praias e lares."
+        ]
+      },
+      {
+        "name": "Louis Vuitton",
+        "sub": "moda_esporte",
+        "word": "monograma-marrom",
+        "phrase": "A mais valiosa casa de moda de luxo do mundo conhecida pelo padrão repetido de flores e letras entrelaçadas marrons.",
+        "words": [
+          "monograma-marrom",
+          "malas-luxo",
+          "paris-grife",
+          "couro-damier"
+        ],
+        "phrases": [
+          "A mais valiosa casa de moda de luxo do mundo conhecida pelo padrão repetido de flores e letras entrelaçadas marrons.",
+          "Começou criando baús de viagem impermeáveis para a nobreza francesa nos trens e vapores do século dezenove."
+        ]
+      },
+      {
+        "name": "Zara",
+        "sub": "moda_esporte",
+        "word": "fast-fashion",
+        "phrase": "A pioneira do modelo de moda rápida capaz de colocar tendências de desfiles nas araras de shoppings em duas semanas.",
+        "words": [
+          "fast-fashion",
+          "espanhola",
+          "tendências-rápidas",
+          "loja-shopping"
+        ],
+        "phrases": [
+          "A pioneira do modelo de moda rápida capaz de colocar tendências de desfiles nas araras de shoppings em duas semanas.",
+          "Gigante do varejo com vitrines elegantes e minimalistas presentes nos principais centros de consumo do planeta."
+        ]
+      },
+      {
+        "name": "Lacoste",
+        "sub": "moda_esporte",
+        "word": "jacaré-verde",
+        "phrase": "Grife francesa fundada por um lendário campeão de tênis com um pequeno réptil verde bordado no peito.",
+        "words": [
+          "jacaré-verde",
+          "camisa-polo",
+          "tênis-saibro",
+          "fundador-tenista"
+        ],
+        "phrases": [
+          "Grife francesa fundada por um lendário campeão de tênis com um pequeno réptil verde bordado no peito.",
+          "A camisa polo de tecido piquê respirável com gola de botões que virou uniforme de elegância esportiva."
+        ]
+      },
+      {
+        "name": "Rolex",
+        "sub": "moda_esporte",
+        "word": "coroa-ouro",
+        "phrase": "A mais prestigiada fabricante de relógios de pulso suíços com uma coroa de cinco pontas no mostrador.",
+        "words": [
+          "coroa-ouro",
+          "relógio-suíço",
+          "ponteiro-automático",
+          "ostentação"
+        ],
+        "phrases": [
+          "A mais prestigiada fabricante de relógios de pulso suíços com uma coroa de cinco pontas no mostrador.",
+          "Instrumentos mecânicos de altíssima precisão que não usam pilhas e valorizam mais que ouro com o tempo."
+        ]
+      },
+      {
+        "name": "Converse All Star",
+        "sub": "moda_esporte",
+        "word": "lona-biqueira-borracha",
+        "phrase": "O tênis de cano alto ou baixo de lona com biqueira branca de borracha adotado por roqueiros e jovens há um século.",
+        "words": [
+          "lona-biqueira-borracha",
+          "estrela-tornozelo",
+          "chuck-taylor",
+          "rockeiros"
+        ],
+        "phrases": [
+          "O tênis de cano alto ou baixo de lona com biqueira branca de borracha adotado por roqueiros e jovens há um século.",
+          "O emblema circular com a estrela azul no tornozelo presente em garagens de bandas e passarelas."
+        ]
+      },
+      {
+        "name": "Balenciaga",
+        "sub": "moda_esporte",
+        "word": "tênis-feio-chunky",
+        "phrase": "Casa de moda de vanguarda que viralizou com criações propositalmente chocantes e tênis gigantescos deformados.",
+        "words": [
+          "tênis-feio-chunky",
+          "bolsa-saco-lixo",
+          "moda-provocativa",
+          "passarela-lama"
+        ],
+        "phrases": [
+          "Casa de moda de vanguarda que viralizou com criações propositalmente chocantes e tênis gigantescos deformados.",
+          "Desfiles com modelos caminhando na lama ou na neve carregando peças que satirizam o consumismo moderno."
+        ]
+      },
+      {
+        "name": "Ray-Ban",
+        "sub": "moda_esporte",
+        "word": "óculos-aviador",
+        "phrase": "A mais célebre fábrica de óculos de sol do mundo criada originalmente para proteger a visão de pilotos da força aérea.",
+        "words": [
+          "óculos-aviador",
+          "wayfarer",
+          "lentes-verdes",
+          "pilotos-sol"
+        ],
+        "phrases": [
+          "A mais célebre fábrica de óculos de sol do mundo criada originalmente para proteger a visão de pilotos da força aérea.",
+          "Armações douradas em formato de gota e clássicos modelos de acetato preto que marcaram o cinema de Hollywood."
+        ]
+      },
+      {
+        "name": "Tommy Hilfiger",
+        "sub": "moda_esporte",
+        "word": "bandeira-azul-branca-vermelha",
+        "phrase": "Marca norte-americana de estilo universitário clássico com um pequeno retângulo tricolor em todas as peças.",
+        "words": [
+          "bandeira-azul-branca-vermelha",
+          "estilo-preppy",
+          "americano",
+          "camisas"
+        ],
+        "phrases": [
+          "Marca norte-americana de estilo universitário clássico com um pequeno retângulo tricolor em todas as peças.",
+          "Muito adotada na cultura urbana dos anos noventa com jaquetas corta-vento e calças largas confortáveis."
+        ]
+      },
+      {
+        "name": "Calvin Klein",
+        "sub": "moda_esporte",
+        "word": "elástico-cueca",
+        "phrase": "Pioneira em transformar roupas íntimas em itens de moda com seu nome estampado em letras garrafais no elástico.",
+        "words": [
+          "elástico-cueca",
+          "jeans-minimalista",
+          "perfume-ck",
+          "campanhas-ousadas"
+        ],
+        "phrases": [
+          "Pioneira em transformar roupas íntimas em itens de moda com seu nome estampado em letras garrafais no elástico.",
+          "Campanhas publicitárias em preto e branco com modelos em calças jeans justas que revolucionaram a publicidade."
+        ]
+      },
+      {
+        "name": "Oakley",
+        "sub": "moda_esporte",
+        "word": "óculos-vilão-juliet",
+        "phrase": "Famosa por óculos com armações de ligas de metal futuristas com lentes espelhadas coloridas cultuadas no funk nacional.",
+        "words": [
+          "óculos-vilão-juliet",
+          "ó-metálico",
+          "funk-ostentação",
+          "esportes-neve"
+        ],
+        "phrases": [
+          "Famosa por óculos com armações de ligas de metal futuristas com lentes espelhadas coloridas cultuadas no funk nacional.",
+          "Pioneira em proteções ópticas extremas para pilotos de motocross e praticantes de snowboard alpino."
+        ]
+      },
+      {
+        "name": "Mizuno",
+        "sub": "moda_esporte",
+        "word": "onda-wave",
+        "phrase": "Marca japonesa admirada por maratonistas com sua tecnologia de placas onduladas plásticas sob o calcanhar.",
+        "words": [
+          "onda-wave",
+          "amortecimento-placas",
+          "tênis-corrida",
+          "japão"
+        ],
+        "phrases": [
+          "Marca japonesa admirada por maratonistas com sua tecnologia de placas onduladas plásticas sob o calcanhar.",
+          "Tênis robustos com amortecimento firme que conquistaram as pistas de corrida e as ruas brasileiras."
+        ]
+      },
+      {
+        "name": "Asics",
+        "sub": "moda_esporte",
+        "word": "faixas-cruzadas",
+        "phrase": "Tradicional fabricante oriental de calçados de corrida cujo nome é uma sigla para mente sã em corpo são em latim.",
+        "words": [
+          "faixas-cruzadas",
+          "gel-amortecedor",
+          "mente-sã-corpo-são",
+          "corredores"
+        ],
+        "phrases": [
+          "Tradicional fabricante oriental de calçados de corrida cujo nome é uma sigla para mente sã em corpo são em latim.",
+          "Pioneira em amortecedores de gel que absorvem os impactos mais duros de passadas no asfalto."
+        ]
+      },
+      {
+        "name": "New Balance",
+        "sub": "moda_esporte",
+        "word": "letra-n",
+        "phrase": "Fundada para criar palmilhas ortopédicas inspiradas nas patas de galinhas e seus três pontos de apoio equilibrados.",
+        "words": [
+          "letra-n",
+          "tênis-cinza",
+          "conforto-pai",
+          "camurça-mesh"
+        ],
+        "phrases": [
+          "Fundada para criar palmilhas ortopédicas inspiradas nas patas de galinhas e seus três pontos de apoio equilibrados.",
+          "Tênis clássicos com a letra N na lateral em tons elegantes de cinza que viraram febre entre jovens e criativos."
+        ]
+      },
+      {
+        "name": "Prada",
+        "sub": "moda_esporte",
+        "word": "triângulo-metal",
+        "phrase": "Casa de moda milanesa famosa pelo triângulo esmaltado invertido e por elevar o náilon comum ao luxo supremo.",
+        "words": [
+          "triângulo-metal",
+          "náilon-preto",
+          "milão",
+          "diabo-veste"
+        ],
+        "phrases": [
+          "Casa de moda milanesa famosa pelo triângulo esmaltado invertido e por elevar o náilon comum ao luxo supremo.",
+          "Tema de livros e filmes sobre os bastidores da alta sociedade e tiranias das revistas de moda."
+        ]
+      },
+      {
+        "name": "Versace",
+        "sub": "moda_esporte",
+        "word": "medusa-dourada",
+        "phrase": "Grife marcada pela opulência com estampas douradas em correntes barrocas e a cabeça mítica da górgona no emblema.",
+        "words": [
+          "medusa-dourada",
+          "estampas-barrocas",
+          "camisas-seda",
+          "opulência-italiana"
+        ],
+        "phrases": [
+          "Grife marcada pela opulência com estampas douradas em correntes barrocas e a cabeça mítica da górgona no emblema.",
+          "Estilo exuberante e chamativo desfilado por estrelas da música e do tapete vermelho internacional."
+        ]
+      },
+      {
+        "name": "Chanel",
+        "sub": "moda_esporte",
+        "word": "número-5",
+        "phrase": "A mais lendária estilista feminina que libertou as mulheres dos espartilhos criando roupas confortáveis e chiques.",
+        "words": [
+          "número-5",
+          "duplo-c",
+          "vestidinho-preto",
+          "tailleur-tweed"
+        ],
+        "phrases": [
+          "A mais lendária estilista feminina que libertou as mulheres dos espartilhos criando roupas confortáveis e chiques.",
+          "O mais famoso perfume do mundo em frasco quadrado de vidro transparente com duas letras C entrelaçadas."
+        ]
+      },
+      {
+        "name": "Fila",
+        "sub": "moda_esporte",
+        "word": "letra-f-vermelha",
+        "phrase": "Tradicional marca esportiva italiana que estourou nas quadras de tênis e lançou calçados com solas tratoradas grossas.",
+        "words": [
+          "letra-f-vermelha",
+          "tênis-tratorado-disruptor",
+          "itália-esporte",
+          "tênis-vintage"
+        ],
+        "phrases": [
+          "Tradicional marca esportiva italiana que estourou nas quadras de tênis e lançou calçados com solas tratoradas grossas.",
+          "Conhecida pela letra inicial com traço superior vermelho e presença marcante na moda urbana retrô."
+        ]
+      },
+      {
+        "name": "Under Armour",
+        "sub": "moda_esporte",
+        "word": "duplo-u-cruzado",
+        "phrase": "Começou criando camisetas sintéticas que mantinham atletas secos embaixo de armaduras de futebol americano.",
+        "words": [
+          "duplo-u-cruzado",
+          "segunda-pele-térmica",
+          "curry-basquete",
+          "treino-pesado"
+        ],
+        "phrases": [
+          "Começou criando camisetas sintéticas que mantinham atletas secos embaixo de armaduras de futebol americano.",
+          "Logotipo cruzado em X estilizado muito popular em academias de musculação e calçando grandes arremessadores."
+        ]
+      },
+      {
+        "name": "Timberland",
+        "sub": "moda_esporte",
+        "word": "bota-amarela-yellow-boot",
+        "phrase": "A bota impermeável de couro nobuck amarelo mostarda que virou símbolo de durabilidade em trilhas e no hip-hop.",
+        "words": [
+          "bota-amarela-yellow-boot",
+          "árvore-logotipo",
+          "trilhas-neve",
+          "impermeável"
+        ],
+        "phrases": [
+          "A bota impermeável de couro nobuck amarelo mostarda que virou símbolo de durabilidade em trilhas e no hip-hop.",
+          "Solado tratorado espesso com costuras seladas que resistem a lama, neve e calçadas urbanas."
+        ]
+      },
+      {
+        "name": "H&M",
+        "sub": "moda_esporte",
+        "word": "suécia-fast-fashion",
+        "phrase": "A gigante sueca de roupas acessíveis com milhares de lojas pelo mundo em concorrência direta com a Zara.",
+        "words": [
+          "suécia-fast-fashion",
+          "letras-vermelhas",
+          "básicos-baratos",
+          "lojas-multinacionais"
+        ],
+        "phrases": [
+          "A gigante sueca de roupas acessíveis com milhares de lojas pelo mundo em concorrência direta com a Zara.",
+          "Parcerias temporárias famosas com grandes estilistas de luxo que esgotam estoques em poucas horas."
+        ]
+      },
+      {
+        "name": "Puket",
+        "sub": "moda_esporte",
+        "word": "meias-divertidas",
+        "phrase": "Rede brasileira que transformou meias comuns em presentes alegres e cheios de estampas divertidas para todas as idades.",
+        "words": [
+          "meias-divertidas",
+          "antiderrapante",
+          "pijamas-bichinhos",
+          "cores-alegres"
+        ],
+        "phrases": [
+          "Rede brasileira que transformou meias comuns em presentes alegres e cheios de estampas divertidas para todas as idades.",
+          "Lojas coloridas que vendem pijamas e mochilas temáticas que brilham no escuro em shoppings."
+        ]
+      },
+      {
+        "name": "Reserva",
+        "sub": "moda_esporte",
+        "word": "pica-pau-vermelho",
+        "phrase": "Marca masculina carioca com um pequeno pássaro com topete vermelho bordado no peito que virou grife de sucesso.",
+        "words": [
+          "pica-pau-vermelho",
+          "camisas-polo",
+          "moda-carioca",
+          "1p5p"
+        ],
+        "phrases": [
+          "Marca masculina carioca com um pequeno pássaro com topete vermelho bordado no peito que virou grife de sucesso.",
+          "Pioneira em projetos de impacto social doando pratos de comida a cada peça de roupa vendida."
+        ]
+      },
+      {
+        "name": "Olympikus",
+        "sub": "moda_esporte",
+        "word": "anel-olímpico",
+        "phrase": "A maior marca esportiva nacional que equipou delegações olímpicas brasileiras com tecnologia acessível de calçados.",
+        "words": [
+          "anel-olímpico",
+          "tênis-brasil",
+          "maratona-corre",
+          "calçados-esportivos"
+        ],
+        "phrases": [
+          "A maior marca esportiva nacional que equipou delegações olímpicas brasileiras com tecnologia acessível de calçados.",
+          "Desenvolveu tênis de alta performance com placas de propulsão elogiados por corredores profissionais."
+        ]
+      },
+      {
+        "name": "Ferrari",
+        "sub": "automoveis_varejo",
+        "word": "cavalo-rampante",
+        "phrase": "A mais mística fabricante de supercarros italianos com o cavalo empinado sobre fundo amarelo vivo.",
+        "words": [
+          "cavalo-rampante",
+          "vermelho-rosso-corsa",
+          "maranello",
+          "fórmula-um-motor"
+        ],
+        "phrases": [
+          "A mais mística fabricante de supercarros italianos com o cavalo empinado sobre fundo amarelo vivo.",
+          "Motores estridentes de doze cilindros em carros esportivos de tiragem limitada que fazem sonhar o planeta."
+        ]
+      },
+      {
+        "name": "Porsche",
+        "sub": "automoveis_varejo",
+        "word": "911",
+        "phrase": "A montadora alemã de carros esportivos famosa pela silhueta atemporal que pouco mudou em sessenta anos.",
+        "words": [
+          "911",
+          "motor-traseiro-boxer",
+          "stuttgart",
+          "faróis-redondos"
+        ],
+        "phrases": [
+          "A montadora alemã de carros esportivos famosa pela silhueta atemporal que pouco mudou em sessenta anos.",
+          "Faróis redondos característicos e motores instalados atrás do eixo traseiro com engenharia de precisão."
+        ]
+      },
+      {
+        "name": "Lamborghini",
+        "sub": "automoveis_varejo",
+        "word": "touro-dourado",
+        "phrase": "Nascida da rivalidade de um fabricante de tratores que decidiu construir máquinas mais rápidas que a Ferrari.",
+        "words": [
+          "touro-dourado",
+          "portas-tesoura",
+          "ângulos-afiados",
+          "supercarro"
+        ],
+        "phrases": [
+          "Nascida da rivalidade de um fabricante de tratores que decidiu construir máquinas mais rápidas que a Ferrari.",
+          "Carros com ângulos pontiagudos parecendo caças de combate com portas que abrem girando para cima."
+        ]
+      },
+      {
+        "name": "BMW",
+        "sub": "automoveis_varejo",
+        "word": "hélice-azul-branca",
+        "phrase": "Montadora alemã com logotipo que remete a uma hélice de avião girando contra o céu da Baviera.",
+        "words": [
+          "hélice-azul-branca",
+          "grade-duplo-rim",
+          "baviera",
+          "tração-traseira"
+        ],
+        "phrases": [
+          "Montadora alemã com logotipo que remete a uma hélice de avião girando contra o céu da Baviera.",
+          "Famosa pela grade frontal dividida em dois rins e carros focados no puro prazer de dirigir."
+        ]
+      },
+      {
+        "name": "Mercedes-Benz",
+        "sub": "automoveis_varejo",
+        "word": "estrela-três-pontas",
+        "phrase": "A mais antiga fabricante de automóveis do mundo com a estrela de três pontas coroando capôs imponentes.",
+        "words": [
+          "estrela-três-pontas",
+          "terra-mar-ar",
+          "luxo-executivo",
+          "flechas-prata"
+        ],
+        "phrases": [
+          "A mais antiga fabricante de automóveis do mundo com a estrela de três pontas coroando capôs imponentes.",
+          "Símbolo de status executivo, tecnologia pioneira de segurança e domínio nas pistas de corrida."
+        ]
+      },
+      {
+        "name": "Tesla",
+        "sub": "automoveis_varejo",
+        "word": "carro-elétrico",
+        "phrase": "A empresa que acelerou a revolução dos veículos movidos exclusivamente a eletricidade sem queimar gasolina.",
+        "words": [
+          "carro-elétrico",
+          "piloto-automático",
+          "t-vermelho",
+          "baterias-piso"
+        ],
+        "phrases": [
+          "A empresa que acelerou a revolução dos veículos movidos exclusivamente a eletricidade sem queimar gasolina.",
+          "Telas gigantescas no painel, acelerações silenciosas instantâneas e direção semiautônoma com câmeras."
+        ]
+      },
+      {
+        "name": "Ford",
+        "sub": "automoveis_varejo",
+        "word": "oval-azul",
+        "phrase": "A montadora histórica que inventou a linha de montagem em série permitindo que trabalhadores comprassem carros.",
+        "words": [
+          "oval-azul",
+          "linha-montagem",
+          "mustang",
+          "henry-ford"
+        ],
+        "phrases": [
+          "A montadora histórica que inventou a linha de montagem em série permitindo que trabalhadores comprassem carros.",
+          "Criadora do clássico bólido esportivo com o cavalo galopando na grade que marcou as estradas americanas."
+        ]
+      },
+      {
+        "name": "Chevrolet",
+        "sub": "automoveis_varejo",
+        "word": "gravata-dourada",
+        "phrase": "Marca norte-americana tradicional identificada por sua gravata borboleta dourada presente em ruas e pistas.",
+        "words": [
+          "gravata-dourada",
+          "camaro",
+          "onix",
+          "motor-v8"
+        ],
+        "phrases": [
+          "Marca norte-americana tradicional identificada por sua gravata borboleta dourada presente em ruas e pistas.",
+          "Fabricante de sedãs familiares, picapes robustas e esportivos com motores estrondosos de oito cilindros."
+        ]
+      },
+      {
+        "name": "Volkswagen",
+        "sub": "automoveis_varejo",
+        "word": "fusca",
+        "phrase": "A empresa alemã cujo nome significa carro do povo que motorizou o Brasil com o Fusca e o Gol.",
+        "words": [
+          "fusca",
+          "carro-do-povo",
+          "v-w-círculo",
+          "gol"
+        ],
+        "phrases": [
+          "A empresa alemã cujo nome significa carro do povo que motorizou o Brasil com o Fusca e o Gol.",
+          "Logotipo com as letras V e W empilhadas dentro de um círculo azul com motores refrigerados a ar ou água."
+        ]
+      },
+      {
+        "name": "Fiat",
+        "sub": "automoveis_varejo",
+        "word": "quatro-letras",
+        "phrase": "Montadora italiana de Turim com fábrica colossal em Minas Gerais que produziu o lendário Uno de escada no teto.",
+        "words": [
+          "quatro-letras",
+          "itália-turim",
+          "uno-escadinha",
+          "palio-strada"
+        ],
+        "phrases": [
+          "Montadora italiana de Turim com fábrica colossal em Minas Gerais que produziu o lendário Uno de escada no teto.",
+          "Líder de vendas no mercado nacional com carros econômicos e picapes compactas de trabalho."
+        ]
+      },
+      {
+        "name": "Toyota",
+        "sub": "automoveis_varejo",
+        "word": "corolla",
+        "phrase": "A montadora japonesa famosa pela confiabilidade lendária onde motores rodam centenas de milhares de quilômetros.",
+        "words": [
+          "corolla",
+          "hilux",
+          "três-elipses",
+          "inquebrável"
+        ],
+        "phrases": [
+          "A montadora japonesa famosa pela confiabilidade lendária onde motores rodam centenas de milhares de quilômetros.",
+          "Fabricante do sedã mais vendido da história e de picapes robustas que enfrentam qualquer terreno no campo."
+        ]
+      },
+      {
+        "name": "Honda",
+        "sub": "automoveis_varejo",
+        "word": "civic",
+        "phrase": "Gigante japonesa que domina tanto o mercado mundial de motocicletas econômicas quanto o de sedãs modernos.",
+        "words": [
+          "civic",
+          "asa-motocicletas",
+          "japão",
+          "motor-vtec"
+        ],
+        "phrases": [
+          "Gigante japonesa que domina tanto o mercado mundial de motocicletas econômicas quanto o de sedãs modernos.",
+          "Motores que atingem rotações altíssimas com comando de válvulas variável aclamado por pilotos."
+        ]
+      },
+      {
+        "name": "Hyundai",
+        "sub": "automoveis_varejo",
+        "word": "h-inclinado",
+        "phrase": "Conglomerado sul-coreano com logotipo de letra H inclinada simbolizando um aperto de mãos com o cliente.",
+        "words": [
+          "h-inclinado",
+          "hb20",
+          "coreia-do-sul",
+          "garantia-cinco-anos"
+        ],
+        "phrases": [
+          "Conglomerado sul-coreano com logotipo de letra H inclinada simbolizando um aperto de mãos com o cliente.",
+          "Criadora do hatch que se tornou um dos maiores sucessos de vendas das ruas brasileiras na última década."
+        ]
+      },
+      {
+        "name": "Jeep",
+        "sub": "automoveis_varejo",
+        "word": "sete-fendas-grade",
+        "phrase": "Marca nascida nos campos de batalha para transportar soldados em terrenos acidentados com grade de sete fendas.",
+        "words": [
+          "sete-fendas-grade",
+          "renegade",
+          "tração-quatro-por-quatro",
+          "segunda-guerra"
+        ],
+        "phrases": [
+          "Marca nascida nos campos de batalha para transportar soldados em terrenos acidentados com grade de sete fendas.",
+          "Hoje domina o mercado com utilitários esportivos que combinam conforto urbano com capacidade fora de estrada."
+        ]
+      },
+      {
+        "name": "Audi",
+        "sub": "automoveis_varejo",
+        "word": "quatro-argolas",
+        "phrase": "Montadora alemã identificada por quatro anéis metálicos entrelaçados representando a união de quatro fábricas.",
+        "words": [
+          "quatro-argolas",
+          "tração-quattro",
+          "faróis-led",
+          "alemanha-luxo"
+        ],
+        "phrases": [
+          "Montadora alemã identificada por quatro anéis metálicos entrelaçados representando a união de quatro fábricas.",
+          "Pioneira na tecnologia de tração integral permanente e no desenho de faróis a laser de iluminação cirúrgica."
+        ]
+      },
+      {
+        "name": "Mercado Livre",
+        "sub": "automoveis_varejo",
+        "word": "aperto-de-mãos",
+        "phrase": "A maior plataforma de comércio eletrônico da América Latina com vans amarelas circulando o dia todo.",
+        "words": [
+          "aperto-de-mãos",
+          "amarelo-caixas",
+          "entrega-full",
+          "américa-latina"
+        ],
+        "phrases": [
+          "A maior plataforma de comércio eletrônico da América Latina com vans amarelas circulando o dia todo.",
+          "Famosa pelas entregas no mesmo dia e pelo logotipo do cumprimento de mãos que virou toque de cotovelos."
+        ]
+      },
+      {
+        "name": "Shopee",
+        "sub": "automoveis_varejo",
+        "word": "sacola-laranja",
+        "phrase": "Aplicativo de compras asiático que conquistou os brasileiros com cupons de frete grátis e comerciais dançantes.",
+        "words": [
+          "sacola-laranja",
+          "cupom-frete-grátis",
+          "músicas-chiclete",
+          "compras-celular"
+        ],
+        "phrases": [
+          "Aplicativo de compras asiático que conquistou os brasileiros com cupons de frete grátis e comerciais dançantes.",
+          "Milhares de vendedores com pequenas encomendas entregues em sacos plásticos com endereço impresso."
+        ]
+      },
+      {
+        "name": "Disney",
+        "sub": "automoveis_varejo",
+        "word": "castelo-cinderela",
+        "phrase": "O império do entretenimento fundado pelo desenhista que criou o camundongo de luvas brancas mais famoso do mundo.",
+        "words": [
+          "castelo-cinderela",
+          "orelhas-mickey",
+          "parques-orlando",
+          "magia"
+        ],
+        "phrases": [
+          "O império do entretenimento fundado pelo desenhista que criou o camundongo de luvas brancas mais famoso do mundo.",
+          "Dona de franquias bilionárias de super-heróis, galáxias espaciais e parques temáticos onde os sonhos se realizam."
+        ]
+      },
+      {
+        "name": "Lego",
+        "sub": "automoveis_varejo",
+        "word": "bloquinhos-plástico",
+        "phrase": "A fábrica dinamarquesa de bloquinhos coloridos de montar que resistem ao peso de um adulto e estimulam a criatividade.",
+        "words": [
+          "bloquinhos-plástico",
+          "pinos-encaixe",
+          "dinamarca",
+          "pequenos-bonecos"
+        ],
+        "phrases": [
+          "A fábrica dinamarquesa de bloquinhos coloridos de montar que resistem ao peso de um adulto e estimulam a criatividade.",
+          "Pequenas peças plásticas com tubos e pinos que permitem construir de casinhas a espaçonaves em escala real."
+        ]
+      },
+      {
+        "name": "Casas Bahia",
+        "sub": "automoveis_varejo",
+        "word": "carnê-pagamento",
+        "phrase": "Tradicional rede de varejo brasileira que democratizou a compra de geladeiras e televisores no carnê a prazo.",
+        "words": [
+          "carnê-pagamento",
+          "baianinho",
+          "dedicação-total-a-você",
+          "móveis-eletro"
+        ],
+        "phrases": [
+          "Tradicional rede de varejo brasileira que democratizou a compra de geladeiras e televisores no carnê a prazo.",
+          "Histórico mascote com chapéu de vaqueiro e o compromisso de ter a menor prestação do comércio."
+        ]
+      },
+      {
+        "name": "Magazine Luiza (Magalu)",
+        "sub": "automoveis_varejo",
+        "word": "lu-avatar-virtual",
+        "phrase": "Empresa que nasceu no interior paulista e se reinventou como potência digital com uma influenciadora virtual 3D.",
+        "words": [
+          "lu-avatar-virtual",
+          "sacola-azul",
+          "vem-ser-feliz",
+          "varejo-digital"
+        ],
+        "phrases": [
+          "Empresa que nasceu no interior paulista e se reinventou como potência digital com uma influenciadora virtual 3D.",
+          "Comandada por uma das mulheres mais influentes do país que transformou lojas físicas em pontos de entrega rápida."
+        ]
+      },
+      {
+        "name": "Petrobras",
+        "sub": "automoveis_varejo",
+        "word": "posto-br",
+        "phrase": "A maior estatal brasileira de energia líder mundial na extração de petróleo em águas ultraprofundas sob camadas de sal.",
+        "words": [
+          "posto-br",
+          "pré-sal-petróleo",
+          "combustíveis",
+          "o-petróleo-é-nosso"
+        ],
+        "phrases": [
+          "A maior estatal brasileira de energia líder mundial na extração de petróleo em águas ultraprofundas sob camadas de sal.",
+          "Postos de bandeira verde e amarela com combustíveis e lojas de conveniência espalhados por todo o país."
+        ]
+      },
+      {
+        "name": "Postos Ipiranga",
+        "sub": "automoveis_varejo",
+        "word": "pergunta-no-posto-ipiranga",
+        "phrase": "Rede de postos de gasolina famosa pelas campanhas bem-humoradas onde todos os problemas são resolvidos lá.",
+        "words": [
+          "pergunta-no-posto-ipiranga",
+          "amarelo-azul",
+          "conveniência",
+          "combustível"
+        ],
+        "phrases": [
+          "Rede de postos de gasolina famosa pelas campanhas bem-humoradas onde todos os problemas são resolvidos lá.",
+          "Parada clássica de beira de estrada para abastecer o tanque, calibrar pneus e comer salgados quentes."
+        ]
+      },
+      {
+        "name": "Hot Wheels (Mattel)",
+        "sub": "automoveis_varejo",
+        "word": "carrinhos-miniatura",
+        "phrase": "A mais popular linha de carrinhos de metal em miniatura do mundo com pistas de plástico laranja com loopings 360.",
+        "words": [
+          "carrinhos-miniatura",
+          "pista-laranja-looping",
+          "fogo-logotipo",
+          "escala-1-64"
+        ],
+        "phrases": [
+          "A mais popular linha de carrinhos de metal em miniatura do mundo com pistas de plástico laranja com loopings 360.",
+          "Logotipo com labaredas de fogo e modelos colecionáveis que vão de carros clássicos a veículos futuristas."
+        ]
+      },
+      {
+        "name": "Barbie (Mattel)",
+        "sub": "automoveis_varejo",
+        "word": "boneca-loira",
+        "phrase": "A boneca mais famosa da história dos brinquedos que já exerceu centenas de profissões de astronauta a médica.",
+        "words": [
+          "boneca-loira",
+          "cor-rosa-choque",
+          "você-pode-ser-tudo",
+          "casa-dos-sonhos"
+        ],
+        "phrases": [
+          "A boneca mais famosa da história dos brinquedos que já exerceu centenas de profissões de astronauta a médica.",
+          "Mundo cor-de-rosa com conversíveis, casas de três andares e um companheiro leal com calção de praia."
+        ]
+      },
+      {
+        "name": "Rolex",
+        "sub": "automoveis_varejo",
+        "word": "coroa-suíça",
+        "phrase": "O mais famoso relógio de luxo mundial sinônimo de riqueza e conquista financeira nas altas rodas.",
+        "words": [
+          "coroa-suíça",
+          "relógio-ostentação",
+          "ponteiro-verde",
+          "joia-pulso"
+        ],
+        "phrases": [
+          "O mais famoso relógio de luxo mundial sinônimo de riqueza e conquista financeira nas altas rodas.",
+          "Peças com aço cirúrgico e ouro forjado à mão que resistem a pressões profundas no mar."
+        ]
+      },
+      {
+        "name": "Rolex",
+        "sub": "automoveis_varejo",
+        "word": "submariner",
+        "phrase": "Relógio clássico de mergulho que se tornou símbolo de elegância eterna nos pulsos de líderes mundiais.",
+        "words": [
+          "submariner",
+          "safira-vidro",
+          "gira-catraca",
+          "suíça-luxo"
+        ],
+        "phrases": [
+          "Relógio clássico de mergulho que se tornou símbolo de elegância eterna nos pulsos de líderes mundiais.",
+          "Precisão mecânica atestada por mestres relojoeiros suíços que dispensam circuitos eletrônicos."
+        ]
+      },
+      {
+        "name": "Nestlé Nespresso",
+        "sub": "automoveis_varejo",
+        "word": "cápsulas-café",
+        "phrase": "A empresa que colocou máquinas compactas de alta pressão nas cozinhas para extrair café expresso em cápsulas de alumínio.",
+        "words": [
+          "cápsulas-café",
+          "george-clooney",
+          "máquina-alta-pressão",
+          "sabores"
+        ],
+        "phrases": [
+          "A empresa que colocou máquinas compactas de alta pressão nas cozinhas para extrair café expresso em cápsulas de alumínio.",
+          "Boutiques elegantes onde clientes escolhem diferentes intensidades e notas aromáticas de grãos selecionados."
+        ]
+      },
+      {
+        "name": "SHEIN",
+        "sub": "automoveis_varejo",
+        "word": "pacote-plástico-zíper",
+        "phrase": "Gigante do comércio digital que produz milhares de novas peças de roupas diárias a preços muito baixos.",
+        "words": [
+          "pacote-plástico-zíper",
+          "roupas-baratas-china",
+          "tendências-tiktok",
+          "pontos-desconto"
+        ],
+        "phrases": [
+          "Gigante do comércio digital que produz milhares de novas peças de roupas diárias a preços muito baixos.",
+          "Pacotes plásticos com fecho hermético que chegam aos milhões pelos correios nas casas dos clientes."
+        ]
+      },
+      {
+        "name": "AliExpress",
+        "sub": "automoveis_varejo",
+        "word": "compras-china",
+        "phrase": "Pioneira em conectar consumidores comuns diretamente a fábricas e comerciantes do outro lado do mundo na Ásia.",
+        "words": [
+          "compras-china",
+          "jack-ma",
+          "frete-rastreio",
+          "eletrônicos-bugigangas"
+        ],
+        "phrases": [
+          "Pioneira em conectar consumidores comuns diretamente a fábricas e comerciantes do outro lado do mundo na Ásia.",
+          "Milhões de ferramentas, capas de celular e eletrônicos que cruzam o oceano em navios cargueiros."
+        ]
+      }
+    ]
+  },
+  "Países & Culturas": {
+    "icon": "🌍",
+    "color": "#f39c12",
+    "subcategories": {
+      "americas": {
+        "label": "Américas & Caribe",
+        "icon": "🌎",
+        "desc": "Brasil, EUA, Argentina, Canadá, México, Colômbia, Chile, Peru, Jamaica e povos do continente"
+      },
+      "europa": {
+        "label": "Europa & Tradições",
+        "icon": "🏰",
+        "desc": "França, Itália, Alemanha, Inglaterra, Espanha, Portugal, Grécia, Suíça, Holanda e reinos europeus"
+      },
+      "asia_oceania": {
+        "label": "Ásia & Oceania",
+        "icon": "⛩️",
+        "desc": "Japão, China, Coreia do Sul, Índia, Austrália, Nova Zelândia, Tailândia e terras do oriente"
+      },
+      "africa_oriente": {
+        "label": "África & Oriente Médio",
+        "icon": "🐪",
+        "desc": "Egito, África do Sul, Marrocos, Nigéria, Israel, Emirados Árabes, deserto e culturas milenares"
+      }
+    },
+    "items": [
+      {
+        "name": "Brasil",
+        "sub": "americas",
+        "word": "verde-amarelo",
+        "phrase": "A maior nação sul-americana conhecida pela alegria contagiante, vasta floresta e paixão pelo futebol.",
+        "words": [
+          "verde-amarelo",
+          "samba-carnaval",
+          "futebol-cinco-copas",
+          "amazônia"
+        ],
+        "phrases": [
+          "A maior nação sul-americana conhecida pela alegria contagiante, vasta floresta e paixão pelo futebol.",
+          "Bandeira com losango dourado e globo estrelado com a frase ordem e progresso no centro."
+        ]
+      },
+      {
+        "name": "Estados Unidos",
+        "sub": "americas",
+        "word": "estrelas-listras",
+        "phrase": "Superpotência econômica mundial com cinquenta estrelas brancas em sua bandeira e capital em Washington.",
+        "words": [
+          "estrelas-listras",
+          "estátua-liberdade",
+          "hollywood",
+          "dólar"
+        ],
+        "phrases": [
+          "Superpotência econômica mundial com cinquenta estrelas brancas em sua bandeira e capital em Washington.",
+          "Terra do cinema de Hollywood, arranha-céus colossais e pioneira nas missões tripuladas à Lua."
+        ]
+      },
+      {
+        "name": "Argentina",
+        "sub": "americas",
+        "word": "tango",
+        "phrase": "País vizinho banhado pelo Rio da Prata famoso pelo tango dramático, carnes nobres e lendas do futebol mundial.",
+        "words": [
+          "tango",
+          "sol-de-maio",
+          "chimarrão-mate",
+          "churrasco-parrilla"
+        ],
+        "phrases": [
+          "País vizinho banhado pelo Rio da Prata famoso pelo tango dramático, carnes nobres e lendas do futebol mundial.",
+          "Bandeira celeste e branca com um sol humano de trinta e dois raios no centro."
+        ]
+      },
+      {
+        "name": "México",
+        "sub": "americas",
+        "word": "tacos-guacamole",
+        "phrase": "Nação rica em tradições ancestrais maias e astecas famosa por pratos apimentados e músicos com trompetes.",
+        "words": [
+          "tacos-guacamole",
+          "sombrero",
+          "mariachis",
+          "dia-dos-mortos"
+        ],
+        "phrases": [
+          "Nação rica em tradições ancestrais maias e astecas famosa por pratos apimentados e músicos com trompetes.",
+          "Bandeira com uma águia devorando uma serpente sobre um cacto no centro."
+        ]
+      },
+      {
+        "name": "Canadá",
+        "sub": "americas",
+        "word": "folha-bordo-maple",
+        "phrase": "O segundo maior país do mundo em extensão territorial coberto por pinhais e montanhas nevadas no norte.",
+        "words": [
+          "folha-bordo-maple",
+          "frio-neve",
+          "hóquei-gelo",
+          "cataratas-niagara"
+        ],
+        "phrases": [
+          "O segundo maior país do mundo em extensão territorial coberto por pinhais e montanhas nevadas no norte.",
+          "Bandeira com folha vermelha estilizada e xarope doce extraído da casca de árvores nos cafés da manhã."
+        ]
+      },
+      {
+        "name": "Colômbia",
+        "sub": "americas",
+        "word": "café-suave",
+        "phrase": "Pátria do café arábica mais aromático do mundo ladeada pelos oceanos Pacífico e mar do Caribe.",
+        "words": [
+          "café-suave",
+          "cumbia",
+          "esmeraldas",
+          "cordilheira-andes"
+        ],
+        "phrases": [
+          "Pátria do café arábica mais aromático do mundo ladeada pelos oceanos Pacífico e mar do Caribe.",
+          "Bandeira tricolor com faixa amarela larga famosa pela música rítmica e cidades coloniais coloridas."
+        ]
+      },
+      {
+        "name": "Chile",
+        "sub": "americas",
+        "word": "cordilheira-andes",
+        "phrase": "Estreita e longa faixa de terra imprensada entre a cordilheira mais alta das Américas e o oceano Pacífico.",
+        "words": [
+          "cordilheira-andes",
+          "deserto-atacama",
+          "vinho",
+          "faixa-longa-mar"
+        ],
+        "phrases": [
+          "Estreita e longa faixa de terra imprensada entre a cordilheira mais alta das Américas e o oceano Pacífico.",
+          "Lar do deserto mais seco do planeta com observatórios astronômicos e vinhedos reconhecidos no mundo."
+        ]
+      },
+      {
+        "name": "Peru",
+        "sub": "americas",
+        "word": "machu-picchu",
+        "phrase": "Berço do imponente império inca com cidadelas de pedra polida aninhadas nos picos verdes dos Andes.",
+        "words": [
+          "machu-picchu",
+          "lhama",
+          "ceviche",
+          "império-inca"
+        ],
+        "phrases": [
+          "Berço do imponente império inca com cidadelas de pedra polida aninhadas nos picos verdes dos Andes.",
+          "Cozinha famosa mundialmente pelo peixe fresco marinado no suco de limão com milho crocante."
+        ]
+      },
+      {
+        "name": "Jamaica",
+        "sub": "americas",
+        "word": "reggae",
+        "phrase": "Ilha caribenha de águas azul-turquesa que presenteou o planeta com o ritmo do reggae e velocistas recordistas.",
+        "words": [
+          "reggae",
+          "bob-marley",
+          "velocistas-ouro",
+          "praias-caribe"
+        ],
+        "phrases": [
+          "Ilha caribenha de águas azul-turquesa que presenteou o planeta com o ritmo do reggae e velocistas recordistas.",
+          "Bandeira com um xis dourado cortando triângulos verdes e pretos celebrando a cultura rastafári."
+        ]
+      },
+      {
+        "name": "Uruguai",
+        "sub": "americas",
+        "word": "charrúa",
+        "phrase": "Pequena e acolhedora república vizinha famosa pelo amor fervoroso ao futebol e ao consumo do mate na rua.",
+        "words": [
+          "charrúa",
+          "chimarrão-cuia",
+          "doce-de-leite",
+          "punta-del-este"
+        ],
+        "phrases": [
+          "Pequena e acolhedora república vizinha famosa pelo amor fervoroso ao futebol e ao consumo do mate na rua.",
+          "Cidades litorâneas charmosas com praias de areia branca e pôr do sol aplaudido pelos turistas."
+        ]
+      },
+      {
+        "name": "Cuba",
+        "sub": "americas",
+        "word": "carros-antigos",
+        "phrase": "A maior ilha caribenha com capitólio neoclássico e milhares de automóveis clássicos dos anos cinquenta nas ruas.",
+        "words": [
+          "carros-antigos",
+          "charutos-havana",
+          "salsa-música",
+          "revolução"
+        ],
+        "phrases": [
+          "A maior ilha caribenha com capitólio neoclássico e milhares de automóveis clássicos dos anos cinquenta nas ruas.",
+          "Conhecida pela medicina elogiada, saborosos charutos enrolados à mão e ritmos dançantes sob sol tropical."
+        ]
+      },
+      {
+        "name": "Bolívia",
+        "sub": "americas",
+        "word": "salar-uyuni",
+        "phrase": "País andino sem saída para o mar com a capital administrativa mais alta do planeta e um mar infinito de sal.",
+        "words": [
+          "salar-uyuni",
+          "altitude-la-paz",
+          "ponchos-lã",
+          "lago-titicaca"
+        ],
+        "phrases": [
+          "País andino sem saída para o mar com a capital administrativa mais alta do planeta e um mar infinito de sal.",
+          "Mulheres com chapéus-coco tradicionais e saias rodadas tecidas com lã de lhamas e alpacas."
+        ]
+      },
+      {
+        "name": "Costa Rica",
+        "sub": "americas",
+        "word": "pura-vida",
+        "phrase": "Pequeno paraíso ecológico da América Central que aboliu suas forças armadas para investir em educação e matas.",
+        "words": [
+          "pura-vida",
+          "bicho-preguiça",
+          "vulcões-verdes",
+          "sem-exército"
+        ],
+        "phrases": [
+          "Pequeno paraíso ecológico da América Central que aboliu suas forças armadas para investir em educação e matas.",
+          "O bordão pura vida adotado por toda a população acolhedora em meio a florestas tropicais e tirolesas."
+        ]
+      },
+      {
+        "name": "Paraguai",
+        "sub": "americas",
+        "word": "tereré-gelado",
+        "phrase": "País bilíngue onde a maioria fala um idioma indígena ancestral e bebe chá mate com muita água gelada na guampa.",
+        "words": [
+          "tereré-gelado",
+          "harpa-paraguaia",
+          "itaipu",
+          "guarani-idioma"
+        ],
+        "phrases": [
+          "País bilíngue onde a maioria fala um idioma indígena ancestral e bebe chá mate com muita água gelada na guampa.",
+          "Faz fronteira com o Brasil em uma das maiores usinas hidrelétricas geradoras de energia da Terra."
+        ]
+      },
+      {
+        "name": "Venezuela",
+        "sub": "americas",
+        "word": "salto-angel",
+        "phrase": "País caribenho e amazônico que abriga a mais alta queda d'água do planeta despencando de um platô rochoso.",
+        "words": [
+          "salto-angel",
+          "arepas",
+          "tepuis",
+          "petróleo-bacias"
+        ],
+        "phrases": [
+          "País caribenho e amazônico que abriga a mais alta queda d'água do planeta despencando de um platô rochoso.",
+          "Famoso por pãezinhos de milho branco recheados com queijo e carne desfiada servidos quentes."
+        ]
+      },
+      {
+        "name": "Equador",
+        "sub": "americas",
+        "word": "linha-do-equador",
+        "phrase": "País que leva o nome do paralelo zero que divide o planeta nos hemisférios norte e sul na latitude zero.",
+        "words": [
+          "linha-do-equador",
+          "ilhas-galapagos",
+          "tartarugas-gigantes",
+          "vulcão-cotopaxi"
+        ],
+        "phrases": [
+          "País que leva o nome do paralelo zero que divide o planeta nos hemisférios norte e sul na latitude zero.",
+          "Guardião do arquipélago onde espécies endêmicas inspiraram a formulação da teoria da evolução."
+        ]
+      },
+      {
+        "name": "Porto Rico",
+        "sub": "americas",
+        "word": "reggaeton",
+        "phrase": "Ilha caribenha berço dos maiores astros mundiais do reggaeton e do ritmo latino dançante.",
+        "words": [
+          "reggaeton",
+          "ilha-encanto",
+          "san-juan-fortaleza",
+          "coquí-sapo"
+        ],
+        "phrases": [
+          "Ilha caribenha berço dos maiores astros mundiais do reggaeton e do ritmo latino dançante.",
+          "Ruas coloniais calçadas em paralelepípedos azulados e fortalezas de pedra com vista para o mar."
+        ]
+      },
+      {
+        "name": "Bahamas",
+        "sub": "americas",
+        "word": "águas-cristalinas",
+        "phrase": "Arquipélago caribenho com centenas de ilhotas e recifes onde porquinhos nadam livremente nas praias mornas.",
+        "words": [
+          "águas-cristalinas",
+          "porcos-nadadores",
+          "cruzeiros",
+          "recifes-corais"
+        ],
+        "phrases": [
+          "Arquipélago caribenho com centenas de ilhotas e recifes onde porquinhos nadam livremente nas praias mornas.",
+          "Destino famoso por mergulhos com tubarões e bancos de areia branquíssima visíveis de aviões."
+        ]
+      },
+      {
+        "name": "República Dominicana",
+        "sub": "americas",
+        "word": "punta-cana",
+        "phrase": "Divide a ilha de Hispaniola com praias contornadas por coqueiros e resorts famosos mundialmente.",
+        "words": [
+          "punta-cana",
+          "merengue-bachata",
+          "coqueiros-praia",
+          "beisebol"
+        ],
+        "phrases": [
+          "Divide a ilha de Hispaniola com praias contornadas por coqueiros e resorts famosos mundialmente.",
+          "Pátria de danças contagiantes de passos colados e batedores estrelas da liga principal de beisebol."
+        ]
+      },
+      {
+        "name": "Panamá",
+        "sub": "americas",
+        "word": "canal-eclusas",
+        "phrase": "Ponto de união continental entre as Américas cortado por uma via navegável artificial que une os oceanos.",
+        "words": [
+          "canal-eclusas",
+          "arranha-céus-orla",
+          "istmo",
+          "chapéu-panamá"
+        ],
+        "phrases": [
+          "Ponto de união continental entre as Américas cortado por uma via navegável artificial que une os oceanos.",
+          "Capital moderna com horizonte de edifícios altos à beira-mar e floresta tropical preservada no quintal."
+        ]
+      },
+      {
+        "name": "Haiti",
+        "sub": "americas",
+        "word": "primeira-república-negra",
+        "phrase": "Primeira nação das Américas a conquistar a independência liderada por escravizados rebelados vitoriosos.",
+        "words": [
+          "primeira-república-negra",
+          "arte-naïf",
+          "crioulo",
+          "resistência"
+        ],
+        "phrases": [
+          "Primeira nação das Américas a conquistar a independência liderada por escravizados rebelados vitoriosos.",
+          "Povo de rica e vibrante expressão artística em pinturas coloridas e esculturas feitas com ferro reciclado."
+        ]
+      },
+      {
+        "name": "Guatemala",
+        "sub": "americas",
+        "word": "ruínas-tikal",
+        "phrase": "Coração do antigo mundo maia com pirâmides milenares que despontam por cima das copas das árvores da selva.",
+        "words": [
+          "ruínas-tikal",
+          "lago-atitlan",
+          "tecidos-coloridos",
+          "vulcão-fuego"
+        ],
+        "phrases": [
+          "Coração do antigo mundo maia com pirâmides milenares que despontam por cima das copas das árvores da selva.",
+          "Mercados indígenas repletos de tecidos manuais bordados com fios multicoloridos nas encostas de lagos."
+        ]
+      },
+      {
+        "name": "Guiana",
+        "sub": "americas",
+        "word": "inglês-sul-americano",
+        "phrase": "O único país da América do Sul cujo idioma oficial é o inglês situado ao norte da Amazônia brasileira.",
+        "words": [
+          "inglês-sul-americano",
+          "cataratas-kaieteur",
+          "floresta-virgem",
+          "georgetown"
+        ],
+        "phrases": [
+          "O único país da América do Sul cujo idioma oficial é o inglês situado ao norte da Amazônia brasileira.",
+          "Possui uma queda d'água monumental de volume único em meio a florestas virgens quase intocadas."
+        ]
+      },
+      {
+        "name": "Suriname",
+        "sub": "americas",
+        "word": "holandês-idioma",
+        "phrase": "Nação sul-americana que fala neerlandês com arquitetura colonial em madeira preservada no centro histórico.",
+        "words": [
+          "holandês-idioma",
+          "paramaribo",
+          "madeira-casarões",
+          "diversidade"
+        ],
+        "phrases": [
+          "Nação sul-americana que fala neerlandês com arquitetura colonial em madeira preservada no centro histórico.",
+          "Mosaico cultural fascinante unindo descendentes de africanos, javaneses, indianos e povos indígenas."
+        ]
+      },
+      {
+        "name": "Honduras",
+        "sub": "americas",
+        "word": "ruínas-copan",
+        "phrase": "País centro-americano com sítios maias famosos por estelas esculpidas e praias caribenhas perfeitas para mergulho.",
+        "words": [
+          "ruínas-copan",
+          "recifes-roatan",
+          "café-montanha",
+          "américa-central"
+        ],
+        "phrases": [
+          "País centro-americano com sítios maias famosos por estelas esculpidas e praias caribenhas perfeitas para mergulho.",
+          "Ilhas com águas cristalinas onde nadar entre corais e arraias atrai viajantes de mochila do mundo todo."
+        ]
+      },
+      {
+        "name": "El Salvador",
+        "sub": "americas",
+        "word": "pupusas",
+        "phrase": "O menor país da América Central com dezenas de vulcões ativos e praias famosas pelas direitas perfeitas no surfe.",
+        "words": [
+          "pupusas",
+          "vulcões",
+          "ondas-surfe",
+          "menor-país"
+        ],
+        "phrases": [
+          "O menor país da América Central com dezenas de vulcões ativos e praias famosas pelas direitas perfeitas no surfe.",
+          "Prato nacional de tortilhas grossas de milho recheadas com queijo e feijão servidas com vinagrete de repolho."
+        ]
+      },
+      {
+        "name": "Nicarágua",
+        "sub": "americas",
+        "word": "sandboard-vulcão-cerro-negro",
+        "phrase": "A terra dos lagos e vulcões onde aventureiros descem cinzas vulcânicas deslizando sobre pranchas de madeira.",
+        "words": [
+          "sandboard-vulcão-cerro-negro",
+          "lago-tubarões",
+          "granada-colonial",
+          "lagos"
+        ],
+        "phrases": [
+          "A terra dos lagos e vulcões onde aventureiros descem cinzas vulcânicas deslizando sobre pranchas de madeira.",
+          "Lar do maior lago de água doce da América Central que já abrigou populações de tubarões adaptados."
+        ]
+      },
+      {
+        "name": "Trinidad e Tobago",
+        "sub": "americas",
+        "word": "tambores-aço-steelpan",
+        "phrase": "Nação insular onde tambores de óleo descartados foram transformados em instrumentos musicais afinados de metal.",
+        "words": [
+          "tambores-aço-steelpan",
+          "carnaval-calipso",
+          "asfalto-lago",
+          "antilhas"
+        ],
+        "phrases": [
+          "Nação insular onde tambores de óleo descartados foram transformados em instrumentos musicais afinados de metal.",
+          "Celebrações carnavalescas explosivas com fantasias brilhantes ao som de calipso e soca pelas ruas."
+        ]
+      },
+      {
+        "name": "Barbados",
+        "sub": "americas",
+        "word": "terra-rihanna",
+        "phrase": "Pequena ilha de coral no leste caribenho que produz os destilados de cana mais antigos e premiados do mundo.",
+        "words": [
+          "terra-rihanna",
+          "rum-mais-antigo",
+          "peixe-voador",
+          "falésias-mar"
+        ],
+        "phrases": [
+          "Pequena ilha de coral no leste caribenho que produz os destilados de cana mais antigos e premiados do mundo.",
+          "Terra natal de uma das maiores divas do pop mundial com águas calmas e areias de tom rosado."
+        ]
+      },
+      {
+        "name": "Groenlândia",
+        "sub": "americas",
+        "word": "geleiras-eternas",
+        "phrase": "A maior ilha do planeta coberta por uma camada de gelo de quilômetros de espessura no oceano ártico.",
+        "words": [
+          "geleiras-eternas",
+          "inuit-iglus",
+          "sol-da-meia-noite",
+          "maior-ilha-mundo"
+        ],
+        "phrases": [
+          "A maior ilha do planeta coberta por uma camada de gelo de quilômetros de espessura no oceano ártico.",
+          "Território autônomo habitado por povos caçadores ancestrais cercado por icebergs monumentais que flutuam ao mar."
+        ]
+      },
+      {
+        "name": "França",
+        "sub": "europa",
+        "word": "torre-eiffel",
+        "phrase": "Berço do iluminismo e da alta gastronomia mundial com bulevares iluminados e palácios reais suntuosos.",
+        "words": [
+          "torre-eiffel",
+          "baguete-queijos",
+          "museu-louvre",
+          "vinho-bordeaux"
+        ],
+        "phrases": [
+          "Berço do iluminismo e da alta gastronomia mundial com bulevares iluminados e palácios reais suntuosos.",
+          "Bandeira tricolor vertical azul, branca e vermelha famosa pela elegância e cafés com mesas na calçada."
+        ]
+      },
+      {
+        "name": "Itália",
+        "sub": "europa",
+        "word": "coliseu-ruínas",
+        "phrase": "Península no formato de bota banhada pelo Mediterrâneo onde cada esquina respira milênios de história e arte.",
+        "words": [
+          "coliseu-ruínas",
+          "pizza-massas",
+          "bota-mapa",
+          "gelato"
+        ],
+        "phrases": [
+          "Península no formato de bota banhada pelo Mediterrâneo onde cada esquina respira milênios de história e arte.",
+          "Pátria de mestres renascentistas, cafés expressos perfeitos e massas frescas com molho de tomate aromático."
+        ]
+      },
+      {
+        "name": "Alemanha",
+        "sub": "europa",
+        "word": "oktoberfest",
+        "phrase": "Potência industrial centro-europeia famosa por cervejarias históricas, carros de alta precisão e filósofos.",
+        "words": [
+          "oktoberfest",
+          "autobahn-sem-limite",
+          "castelos-baviera",
+          "engenharia"
+        ],
+        "phrases": [
+          "Potência industrial centro-europeia famosa por cervejarias históricas, carros de alta precisão e filósofos.",
+          "Festivais folclóricos com canecas de vidro de um litro, salsichas grelhadas e estradas sem limite de velocidade."
+        ]
+      },
+      {
+        "name": "Inglaterra",
+        "sub": "europa",
+        "word": "realeza-palácio",
+        "phrase": "Coração do Reino Unido com monarquia secular de guardas com chapéu alto de pele de urso e cabines vermelhas.",
+        "words": [
+          "realeza-palácio",
+          "chá-das-cinco",
+          "big-ben",
+          "ônibus-vermelho"
+        ],
+        "phrases": [
+          "Coração do Reino Unido com monarquia secular de guardas com chapéu alto de pele de urso e cabines vermelhas.",
+          "Cultura do chá com torradas pontuais às cinco da tarde e berço das maiores bandas de rock da história."
+        ]
+      },
+      {
+        "name": "Espanha",
+        "sub": "europa",
+        "word": "flamenco",
+        "phrase": "Nação solar famosa por dançarinas com castanholas batendo sapatos no tablado e pratos de arroz com frutos do mar.",
+        "words": [
+          "flamenco",
+          "touradas-antigas",
+          "tapas-paella",
+          "siesta"
+        ],
+        "phrases": [
+          "Nação solar famosa por dançarinas com castanholas batendo sapatos no tablado e pratos de arroz com frutos do mar.",
+          "Cidades vibrantes com praças cheias de vida noturna até a madrugada e o costume tradicional do descanso pós-almoço."
+        ]
+      },
+      {
+        "name": "Portugal",
+        "sub": "europa",
+        "word": "pastel-de-nata",
+        "phrase": "Pátria de grandes navegadores com calçadas de mosaicos de pedra, bondes amarelos e aroma de azeite e peixe assado.",
+        "words": [
+          "pastel-de-nata",
+          "azulejos-azuis",
+          "fado-tristeza",
+          "bacalhau"
+        ],
+        "phrases": [
+          "Pátria de grandes navegadores com calçadas de mosaicos de pedra, bondes amarelos e aroma de azeite e peixe assado.",
+          "Canções nostálgicas cantadas à meia-luz ao som de guitarras de doze cordas em formato de gota."
+        ]
+      },
+      {
+        "name": "Grécia",
+        "sub": "europa",
+        "word": "acrópole-mármore",
+        "phrase": "O berço da filosofia ocidental, da democracia e dos jogos olímpicos cercado pelas águas azuis do mar Egeu.",
+        "words": [
+          "acrópole-mármore",
+          "ilhas-casas-brancas",
+          "azeitonas-queijo-feta",
+          "berço-democracia"
+        ],
+        "phrases": [
+          "O berço da filosofia ocidental, da democracia e dos jogos olímpicos cercado pelas águas azuis do mar Egeu.",
+          "Colunas de mármore branco no topo de colinas sagradas e vilarejos caiados de branco nas encostas das ilhas."
+        ]
+      },
+      {
+        "name": "Suíça",
+        "sub": "europa",
+        "word": "chocolate-alpino",
+        "phrase": "Nação montanhosa de neutralidade diplomática com picos cobertos de neve, vaquinhas com sinos e bancos seguros.",
+        "words": [
+          "chocolate-alpino",
+          "canivete-vermelho",
+          "relógios-precisão",
+          "alpes-neve"
+        ],
+        "phrases": [
+          "Nação montanhosa de neutralidade diplomática com picos cobertos de neve, vaquinhas com sinos e bancos seguros.",
+          "Famosa pelos relógios mecânicos mais precisos da história e canivetes multifuncionais com cruz branca."
+        ]
+      },
+      {
+        "name": "Holanda (Países Baixos)",
+        "sub": "europa",
+        "word": "tulipas-coloridas",
+        "phrase": "País plano com partes de seu território abaixo do nível do mar protegidas por engenhosos diques e comportas.",
+        "words": [
+          "tulipas-coloridas",
+          "moinhos-vento",
+          "bicicletas-canais",
+          "tamancos-madeira"
+        ],
+        "phrases": [
+          "País plano com partes de seu território abaixo do nível do mar protegidas por engenhosos diques e comportas.",
+          "Cidades cortadas por canais onde milhões de bicicletas circulam entre campos geométricos de flores vibrantes."
+        ]
+      },
+      {
+        "name": "Irlanda",
+        "sub": "europa",
+        "word": "trevo-três-folhas",
+        "phrase": "A ilha esmeralda famosa por pastos incrivelmente verdes, castelos de pedra e música tradicional de gaita e violino.",
+        "words": [
+          "trevo-três-folhas",
+          "duendes-leprechaun",
+          "cerveja-preta-guinness",
+          "dia-são-patrício"
+        ],
+        "phrases": [
+          "A ilha esmeralda famosa por pastos incrivelmente verdes, castelos de pedra e música tradicional de gaita e violino.",
+          "Comemorações com rios e roupas tingidos de verde celebrando o santo padroeiro que usava trevos."
+        ]
+      },
+      {
+        "name": "Escócia",
+        "sub": "europa",
+        "word": "kilt-saia-xadrez",
+        "phrase": "Território montanhoso ao norte da Grã-Bretanha onde homens vestem saiotes de lã com as cores do brasão de seu clã.",
+        "words": [
+          "kilt-saia-xadrez",
+          "gaita-de-foles",
+          "uísque-malte",
+          "monstro-lago-ness"
+        ],
+        "phrases": [
+          "Território montanhoso ao norte da Grã-Bretanha onde homens vestem saiotes de lã com as cores do brasão de seu clã.",
+          "Instrumentos de sopro que utilizam bolsas de ar sob o braço e lendas de criaturas pré-históricas em lagos escuros."
+        ]
+      },
+      {
+        "name": "Noruega",
+        "sub": "europa",
+        "word": "fiordes-paredões",
+        "phrase": "País escandinavo de penhascos vertiginosos que descem em fendas marinhas esculpidas por geleiras milenares.",
+        "words": [
+          "fiordes-paredões",
+          "aurora-boreal",
+          "vikings-antigos",
+          "bacalhau-seco"
+        ],
+        "phrases": [
+          "País escandinavo de penhascos vertiginosos que descem em fendas marinhas esculpidas por geleiras milenares.",
+          "Noites árticas iluminadas por faixas verdes dançando no céu e cidades onde o sol não se põe no verão."
+        ]
+      },
+      {
+        "name": "Suécia",
+        "sub": "europa",
+        "word": "almôndegas-lingonberry",
+        "phrase": "Reino nórdico inovador famoso pela cerimônia solene de entrega dos prêmios mais prestigiados da ciência e da paz.",
+        "words": [
+          "almôndegas-lingonberry",
+          "abba-música",
+          "móveis-montar",
+          "prêmio-nobel"
+        ],
+        "phrases": [
+          "Reino nórdico inovador famoso pela cerimônia solene de entrega dos prêmios mais prestigiados da ciência e da paz.",
+          "Florestas boreais extensas, design minimalista e pop dançante que dominou as rádios do planeta."
+        ]
+      },
+      {
+        "name": "Rússia",
+        "sub": "europa",
+        "word": "cúpulas-coloridas-cebola",
+        "phrase": "O maior país do planeta que se estende por dois continentes e onze fusos horários do Báltico ao Pacífico.",
+        "words": [
+          "cúpulas-coloridas-cebola",
+          "balé-bolshoi",
+          "inverno-siberiano",
+          "matrioska-boneca"
+        ],
+        "phrases": [
+          "O maior país do planeta que se estende por dois continentes e onze fusos horários do Báltico ao Pacífico.",
+          "Bonecas de madeira que se encaixam umas dentro das outras e palácios monumentais sob a neve congelante."
+        ]
+      },
+      {
+        "name": "Bélgica",
+        "sub": "europa",
+        "word": "waffles-chocolate",
+        "phrase": "Pequeno reino europeu famoso pelos melhores chocolates recheados do mundo e batatas fritas servidas em cones com molho.",
+        "words": [
+          "waffles-chocolate",
+          "batata-frita-maionese",
+          "cervejas-trapistas",
+          "quadrinhos-tintim"
+        ],
+        "phrases": [
+          "Pequeno reino europeu famoso pelos melhores chocolates recheados do mundo e batatas fritas servidas em cones com molho.",
+          "Sede de grandes instituições europeias e berço de personagens clássicos das histórias em quadrinhos."
+        ]
+      },
+      {
+        "name": "Áustria",
+        "sub": "europa",
+        "word": "valsa-viena",
+        "phrase": "Capital da música clássica onde compositores geniais apresentavam sinfonias em palacetes imperiais barrocos.",
+        "words": [
+          "valsa-viena",
+          "mozart",
+          "palácios-habsburgo",
+          "torta-sacher"
+        ],
+        "phrases": [
+          "Capital da música clássica onde compositores geniais apresentavam sinfonias em palacetes imperiais barrocos.",
+          "Bailes de gala com dançarinos rodopiando em vestidos compridos ao som do Danúbio Azul."
+        ]
+      },
+      {
+        "name": "Polônia",
+        "sub": "europa",
+        "word": "pierogi-pastel",
+        "phrase": "Nação do leste europeu que reconstruiu suas cidades históricas tijolo por tijolo após a devastação das guerras.",
+        "words": [
+          "pierogi-pastel",
+          "chopin-piano",
+          "centros-históricos",
+          "castelos-tijolo"
+        ],
+        "phrases": [
+          "Nação do leste europeu que reconstruiu suas cidades históricas tijolo por tijolo após a devastação das guerras.",
+          "Pratos tradicionais de massas recheadas cozidas e melodias comoventes tocadas ao piano."
+        ]
+      },
+      {
+        "name": "República Tcheca",
+        "sub": "europa",
+        "word": "praga-cem-torres",
+        "phrase": "A cidade das cem torres com ponte gótica de pedra enfeitada com estátuas e relógio mecânico com bonecos móveis.",
+        "words": [
+          "praga-cem-torres",
+          "relógio-astronômico",
+          "cerveja-pilsen",
+          "castelo-colina"
+        ],
+        "phrases": [
+          "A cidade das cem torres com ponte gótica de pedra enfeitada com estátuas e relógio mecânico com bonecos móveis.",
+          "Berço do estilo mais consumido de cerveja dourada clara servida em canecas pesadas em tavernas medievais."
+        ]
+      },
+      {
+        "name": "Hungria",
+        "sub": "europa",
+        "word": "parlamento-danúbio",
+        "phrase": "Capital dividida em duas metades pelas águas de um grande rio com um dos mais imponentes parlamentos góticos.",
+        "words": [
+          "parlamento-danúbio",
+          "páprica-goulash",
+          "águas-termais",
+          "budapeste"
+        ],
+        "phrases": [
+          "Capital dividida em duas metades pelas águas de um grande rio com um dos mais imponentes parlamentos góticos.",
+          "Ensopados ricos temperados com pó de pimentões vermelhos e tradicionais banhos termais ao ar livre."
+        ]
+      },
+      {
+        "name": "Dinamarca",
+        "sub": "europa",
+        "word": "pequena-sereia",
+        "phrase": "O mais antigo reino contínuo da Europa famoso pela estátua de bronze assentada sobre uma pedra no porto da capital.",
+        "words": [
+          "pequena-sereia",
+          "bicicletas-copenhague",
+          "hygge-conforto",
+          "lego-origem"
+        ],
+        "phrases": [
+          "O mais antigo reino contínuo da Europa famoso pela estátua de bronze assentada sobre uma pedra no porto da capital.",
+          "Conceito de vida focado no aconchego familiar, velas aromáticas acesas e passeios em ciclovias limpas."
+        ]
+      },
+      {
+        "name": "Finlândia",
+        "sub": "europa",
+        "word": "saunas-vapor",
+        "phrase": "País com mais salas de banho de vapor quente do que automóveis cercado por densas florestas de pinheiros e lagos.",
+        "words": [
+          "saunas-vapor",
+          "terra-papai-noel",
+          "mil-lagos",
+          "melhor-educação"
+        ],
+        "phrases": [
+          "País com mais salas de banho de vapor quente do que automóveis cercado por densas florestas de pinheiros e lagos.",
+          "Endereço oficial do bom velhinho na região polar onde renas pastam sob o céu ártico iluminado."
+        ]
+      },
+      {
+        "name": "Islândia",
+        "sub": "europa",
+        "word": "gêiseres-vapor",
+        "phrase": "Ilha vulcânica remota no Atlântico Norte onde o fogo subterrâneo encontra imensas geleiras e cascatas estrondosas.",
+        "words": [
+          "gêiseres-vapor",
+          "vulcões-gelo",
+          "lagoa-azul-termal",
+          "sem-mosquitos"
+        ],
+        "phrases": [
+          "Ilha vulcânica remota no Atlântico Norte onde o fogo subterrâneo encontra imensas geleiras e cascatas estrondosas.",
+          "Piscinas naturais de águas termais azul-leitosas cercadas por rochas de lava preta sob o vento gelado."
+        ]
+      },
+      {
+        "name": "Turquia",
+        "sub": "europa",
+        "word": "bósforo-dois-continentes",
+        "phrase": "A ponte viva que une a Europa e a Ásia com mesquitas de cúpulas monumentais e minaretes erguidos ao céu.",
+        "words": [
+          "bósforo-dois-continentes",
+          "balões-capadócia",
+          "chá-tulipa",
+          "bazares-especiarias"
+        ],
+        "phrases": [
+          "A ponte viva que une a Europa e a Ásia com mesquitas de cúpulas monumentais e minaretes erguidos ao céu.",
+          "Voo de centenas de balões coloridos sobre formações rochosas lunares ao nascer do sol."
+        ]
+      },
+      {
+        "name": "Croácia",
+        "sub": "europa",
+        "word": "muralhas-dubrovnik",
+        "phrase": "País litorâneo com milhares de ilhotas e cidades medievais de pedra branca cercadas por águas de tom esmeralda.",
+        "words": [
+          "muralhas-dubrovnik",
+          "mar-adriático-turquesa",
+          "lagos-plitvice",
+          "camisa-xadrez"
+        ],
+        "phrases": [
+          "País litorâneo com milhares de ilhotas e cidades medievais de pedra branca cercadas por águas de tom esmeralda.",
+          "Camisa de futebol com tabuleiro quadriculado vermelho e branco famosa por suas cascatas em degraus naturais."
+        ]
+      },
+      {
+        "name": "Ucrânia",
+        "sub": "europa",
+        "word": "campos-girassóis",
+        "phrase": "Vastas planícies férteis cobertas por milhões de girassóis amarelos sob o horizonte límpido do leste europeu.",
+        "words": [
+          "campos-girassóis",
+          "sopa-borscht",
+          "trigo-céu-azul",
+          "tradição-bordados"
+        ],
+        "phrases": [
+          "Vastas planícies férteis cobertas por milhões de girassóis amarelos sob o horizonte límpido do leste europeu.",
+          "Sopa aromática de beterraba com creme azedo e camisas de linho com ricos bordados geométricos ancestrais."
+        ]
+      },
+      {
+        "name": "Romênia",
+        "sub": "europa",
+        "word": "castelos-cárpatos",
+        "phrase": "Região de serras florestais densas pontilhada por fortalezas góticas cercadas de lendas noturnas e névoa perene.",
+        "words": [
+          "castelos-cárpatos",
+          "lenda-vampiro",
+          "florestas-densas",
+          "transilvânia"
+        ],
+        "phrases": [
+          "Região de serras florestais densas pontilhada por fortalezas góticas cercadas de lendas noturnas e névoa perene.",
+          "Estradas sinuosas de montanha que cortam desfiladeiros onde ursos pardos circulam livremente."
+        ]
+      },
+      {
+        "name": "Vaticano",
+        "sub": "europa",
+        "word": "guarda-suíça",
+        "phrase": "O menor estado soberano independente do planeta com território de menos de meio quilômetro quadrado dentro de Roma.",
+        "words": [
+          "guarda-suíça",
+          "menor-país-mundo",
+          "papa",
+          "capela-sistina"
+        ],
+        "phrases": [
+          "O menor estado soberano independente do planeta com território de menos de meio quilômetro quadrado dentro de Roma.",
+          "Enclave sagrado guardado por sentinelas com alabardas e uniformes listrados em amarelo e azul desenhados há séculos."
+        ]
+      },
+      {
+        "name": "Mônaco",
+        "sub": "europa",
+        "word": "iates-porto",
+        "phrase": "O segundo menor país do mundo encravado na Riviera Francesa famoso pela altíssima concentração de milionários.",
+        "words": [
+          "iates-porto",
+          "cassino-monte-carlo",
+          "principado-luxo",
+          "fórmula-um-ruas"
+        ],
+        "phrases": [
+          "O segundo menor país do mundo encravado na Riviera Francesa famoso pela altíssima concentração de milionários.",
+          "Ruas estreitas e sinuosas que se transformam no circuito automobilístico mais glamouroso do planeta."
+        ]
+      },
+      {
+        "name": "Malta",
+        "sub": "europa",
+        "word": "cavaleiros-cruz",
+        "phrase": "Arquipélago estratégico no meio do Mediterrâneo fortificado por grossas muralhas erguidas por ordens de cruzados.",
+        "words": [
+          "cavaleiros-cruz",
+          "pedra-calcário-amarela",
+          "mar-azul-profundo",
+          "três-cidades"
+        ],
+        "phrases": [
+          "Arquipélago estratégico no meio do Mediterrâneo fortificado por grossas muralhas erguidas por ordens de cruzados.",
+          "Casarões de sacadas coloridas de madeira construídos em pedra calcária dourada que brilha sob o sol forte."
+        ]
+      },
+      {
+        "name": "Luxemburgo",
+        "sub": "europa",
+        "word": "grão-ducado",
+        "phrase": "Pequeno e riquíssimo estado europeu governado por um monarca com título de Grão-Duque entre montanhas arborizadas.",
+        "words": [
+          "grão-ducado",
+          "vales-pontes",
+          "centro-financeiro",
+          "castelos"
+        ],
+        "phrases": [
+          "Pequeno e riquíssimo estado europeu governado por um monarca com título de Grão-Duque entre montanhas arborizadas.",
+          "Metrópole cosmopolita com desfiladeiros verdes cortados por pontes de pedra monumentais."
+        ]
+      },
+      {
+        "name": "Japão",
+        "sub": "asia_oceania",
+        "word": "cerejeiras-sakura",
+        "phrase": "O arquipélago do sol nascente onde a tradição xintoísta milenar convive com trens-bala e robôs futuristas.",
+        "words": [
+          "cerejeiras-sakura",
+          "trem-bala-shinkansen",
+          "monte-fuji",
+          "quimono-sushi"
+        ],
+        "phrases": [
+          "O arquipélago do sol nascente onde a tradição xintoísta milenar convive com trens-bala e robôs futuristas.",
+          "Bandeira branca com círculo carmesim no centro e flores rosadas que caem das árvores na primavera."
+        ]
+      },
+      {
+        "name": "China",
+        "sub": "asia_oceania",
+        "word": "grande-muralha",
+        "phrase": "A mais antiga civilização contínua da história com muralhas de pedra que serpenteiam por milhares de quilômetros de serras.",
+        "words": [
+          "grande-muralha",
+          "urso-panda",
+          "dragão-vermelho",
+          "cidade-proibida"
+        ],
+        "phrases": [
+          "A mais antiga civilização contínua da história com muralhas de pedra que serpenteiam por milhares de quilômetros de serras.",
+          "Berço da bússola, da pólvora, do papel e da seda com palácios imperiais de telhados dourados."
+        ]
+      },
+      {
+        "name": "Coreia do Sul",
+        "sub": "asia_oceania",
+        "word": "k-pop",
+        "phrase": "Tigre asiático hiperconectado que conquistou o planeta com suas séries dramáticas, culinária apimentada e bandas pop.",
+        "words": [
+          "k-pop",
+          "kimchi-fermentado",
+          "internet-ultraveloz",
+          "doramas"
+        ],
+        "phrases": [
+          "Tigre asiático hiperconectado que conquistou o planeta com suas séries dramáticas, culinária apimentada e bandas pop.",
+          "Arranha-céus iluminados convivendo harmoniosamente com palácios de madeira e mercados noturnos tradicionais."
+        ]
+      },
+      {
+        "name": "Índia",
+        "sub": "asia_oceania",
+        "word": "taj-mahal",
+        "phrase": "O segundo país mais populoso da Terra famoso pela riqueza espiritual, cores vibrantes de pós festivos e especiarias aromáticas.",
+        "words": [
+          "taj-mahal",
+          "rio-ganges",
+          "especiarias-curry",
+          "sári-colorido"
+        ],
+        "phrases": [
+          "O segundo país mais populoso da Terra famoso pela riqueza espiritual, cores vibrantes de pós festivos e especiarias aromáticas.",
+          "Mausoléu monumental de mármore branco construído como prova eterna de amor diante de espelhos d'água."
+        ]
+      },
+      {
+        "name": "Austrália",
+        "sub": "asia_oceania",
+        "word": "canguru-coala",
+        "phrase": "País continental no hemisfério sul repleto de espécies únicas de marsupiais e um centro desértico de terra vermelha.",
+        "words": [
+          "canguru-coala",
+          "ópera-sydney",
+          "grande-barreira-corais",
+          "outback-vermelho"
+        ],
+        "phrases": [
+          "País continental no hemisfério sul repleto de espécies únicas de marsupiais e um centro desértico de terra vermelha.",
+          "Teatro imponente à beira-mar com telhados que lembram velas de navios e praias perfeitas para o surfe."
+        ]
+      },
+      {
+        "name": "Nova Zelândia",
+        "sub": "asia_oceania",
+        "word": "haka-grito",
+        "phrase": "Duas ilhas montanhosas no Pacífico com geleiras, fiordes verdes e vulcões que serviram de cenário para a Terra Média.",
+        "words": [
+          "haka-grito",
+          "kiwi-ave",
+          "senhor-dos-anéis-cenário",
+          "maoris"
+        ],
+        "phrases": [
+          "Duas ilhas montanhosas no Pacífico com geleiras, fiordes verdes e vulcões que serviram de cenário para a Terra Média.",
+          "Dança guerreira tradicional com batidas no peito e línguas de fora apresentada por atletas antes de jogos."
+        ]
+      },
+      {
+        "name": "Tailândia",
+        "sub": "asia_oceania",
+        "word": "templos-dourados",
+        "phrase": "A terra dos sorrisos no sudeste asiático famosa por monges com vestes alaranjadas, praias de águas verdes e comida de rua.",
+        "words": [
+          "templos-dourados",
+          "pad-thai",
+          "elefantes-sagrados",
+          "tuk-tuk"
+        ],
+        "phrases": [
+          "A terra dos sorrisos no sudeste asiático famosa por monges com vestes alaranjadas, praias de águas verdes e comida de rua.",
+          "Triciclos motorizados que ziguezagueiam pelo trânsito movimentado entre palácios reluzentes de ouro."
+        ]
+      },
+      {
+        "name": "Vietnã",
+        "sub": "asia_oceania",
+        "word": "halong-bay",
+        "phrase": "País banhado pelo mar do leste asiático com milhares de pilares de pedra calcária emergindo das águas esmeraldas.",
+        "words": [
+          "halong-bay",
+          "chapéu-cônico-palha",
+          "sopa-pho",
+          "motos-trânsito"
+        ],
+        "phrases": [
+          "País banhado pelo mar do leste asiático com milhares de pilares de pedra calcária emergindo das águas esmeraldas.",
+          "Cidades vibrantes cortadas por rios de motocicletas e mercados flutuantes de frutas exóticas."
+        ]
+      },
+      {
+        "name": "Indonésia",
+        "sub": "asia_oceania",
+        "word": "dezessete-mil-ilhas",
+        "phrase": "O maior arquipélago do planeta composto por milhares de ilhas tropicais com terraços de arroz cultivados em encostas.",
+        "words": [
+          "dezessete-mil-ilhas",
+          "bali-templos",
+          "vulcões-ativos",
+          "dragão-komodo"
+        ],
+        "phrases": [
+          "O maior arquipélago do planeta composto por milhares de ilhas tropicais com terraços de arroz cultivados em encostas.",
+          "Paraíso de ondas perfeitas, danças balinesas com máscaras douradas e lagoas no topo de crateras vulcânicas."
+        ]
+      },
+      {
+        "name": "Filipinas",
+        "sub": "asia_oceania",
+        "word": "sete-mil-ilhas",
+        "phrase": "Conjunto de ilhas caribenhas no coração da Ásia com transporte público feito em jipes militares americanos adaptados.",
+        "words": [
+          "sete-mil-ilhas",
+          "jeepneys-coloridos",
+          "praia-boracay",
+          "sorriso-karaokê"
+        ],
+        "phrases": [
+          "Conjunto de ilhas caribenhas no coração da Ásia com transporte público feito em jipes militares americanos adaptados.",
+          "Povo apaixonado por cantar canções em karaokês familiares à beira de lagoas de água azul-turquesa cristalina."
+        ]
+      },
+      {
+        "name": "Arábia Saudita",
+        "sub": "asia_oceania",
+        "word": "meca-sagrada",
+        "phrase": "O berço da fé islâmica onde milhões de peregrinos viajam anualmente para contornar a pedra sagrada em Meca.",
+        "words": [
+          "meca-sagrada",
+          "deserto-areia",
+          "petróleo-poços",
+          "oásis"
+        ],
+        "phrases": [
+          "O berço da fé islâmica onde milhões de peregrinos viajam anualmente para contornar a pedra sagrada em Meca.",
+          "Imensas extensões de desertos de dunas douradas que escondem as maiores reservas de energia sob a areia."
+        ]
+      },
+      {
+        "name": "Emirados Árabes Unidos",
+        "sub": "asia_oceania",
+        "word": "burj-khalifa",
+        "phrase": "Federação de sete reinos do golfo que ergueu a mais alta torre já construída e arquipélagos artificiais no oceano.",
+        "words": [
+          "burj-khalifa",
+          "ilhas-palmeira",
+          "dubai-luxo",
+          "arranha-céus"
+        ],
+        "phrases": [
+          "Federação de sete reinos do golfo que ergueu a mais alta torre já construída e arquipélagos artificiais no oceano.",
+          "Metrópoles futuristas reluzentes onde shoppings abrigam pistas de esqui na neve no meio do deserto quente."
+        ]
+      },
+      {
+        "name": "Israel",
+        "sub": "asia_oceania",
+        "word": "muro-lamentações",
+        "phrase": "Terra sagrada para as três grandes religiões monoteístas com muralhas de pedras milenares veneradas por fiéis.",
+        "words": [
+          "muro-lamentações",
+          "mar-morto-flutuar",
+          "jerusalém",
+          "tecnologia"
+        ],
+        "phrases": [
+          "Terra sagrada para as três grandes religiões monoteístas com muralhas de pedras milenares veneradas por fiéis.",
+          "Corpo de água com concentração de sal tão densa que banhistas flutuam sem esforço lendo jornais na superfície."
+        ]
+      },
+      {
+        "name": "Líbano",
+        "sub": "asia_oceania",
+        "word": "cedro-árvore",
+        "phrase": "País histórico no leste mediterrâneo cuja bandeira estampa uma conífera milenar sagrada de madeira perfumada.",
+        "words": [
+          "cedro-árvore",
+          "beirute",
+          "esfiha-kibe",
+          "mediterrâneo-oriente"
+        ],
+        "phrases": [
+          "País histórico no leste mediterrâneo cuja bandeira estampa uma conífera milenar sagrada de madeira perfumada.",
+          "Famoso por sua sofisticada culinária de pastas de grão-de-bico, folhas de uva recheadas e pães finos na brasa."
+        ]
+      },
+      {
+        "name": "Singapura",
+        "sub": "asia_oceania",
+        "word": "cidade-estado",
+        "phrase": "Pequena cidade-estado ultramoderna com regras rígidas de limpeza urbana e arranha-céus cobertos por jardins verticais.",
+        "words": [
+          "cidade-estado",
+          "árvores-aço-gigantes",
+          "leão-marinho-merlion",
+          "porto-futuro"
+        ],
+        "phrases": [
+          "Pequena cidade-estado ultramoderna com regras rígidas de limpeza urbana e arranha-céus cobertos por jardins verticais.",
+          "Mascote mitológico com cabeça de leão e corpo de peixe cuspindo jatos d'água na marina reluzente."
+        ]
+      },
+      {
+        "name": "Malásia",
+        "sub": "asia_oceania",
+        "word": "torres-petronas",
+        "phrase": "País do sudeste asiático famoso por duas torres gêmeas espelhadas de arquitetura islâmica ligadas por passarela aérea.",
+        "words": [
+          "torres-petronas",
+          "ponte-céu",
+          "florestas-tropicais",
+          "kl-torre"
+        ],
+        "phrases": [
+          "País do sudeste asiático famoso por duas torres gêmeas espelhadas de arquitetura islâmica ligadas por passarela aérea.",
+          "Encontro harmonioso de culturas malaias, chinesas e indianas com culinária aromática de caldos e coco."
+        ]
+      },
+      {
+        "name": "Catar",
+        "sub": "asia_oceania",
+        "word": "copa-mundo-2022",
+        "phrase": "Península no Golfo Pérsico que sediou a mais compacta e suntuosa Copa do Mundo de futebol em estádios climatizados.",
+        "words": [
+          "copa-mundo-2022",
+          "doha-marina",
+          "estádios-ar-condicionado",
+          "luxo-golfo"
+        ],
+        "phrases": [
+          "Península no Golfo Pérsico que sediou a mais compacta e suntuosa Copa do Mundo de futebol em estádios climatizados.",
+          "Metrópole de museus de arte islâmica esculpidos na água e falcões de caça treinados pela nobreza."
+        ]
+      },
+      {
+        "name": "Taiwan",
+        "sub": "asia_oceania",
+        "word": "microchips",
+        "phrase": "Ilha tecnológica pioneira na fabricação dos mais avançados semicondutores do planeta em salas esterilizadas.",
+        "words": [
+          "microchips",
+          "bubble-tea-chá-bolhas",
+          "taiwan-101",
+          "mercados-noite"
+        ],
+        "phrases": [
+          "Ilha tecnológica pioneira na fabricação dos mais avançados semicondutores do planeta em salas esterilizadas.",
+          "Berço do chá com leite servido com bolinhas mastigáveis de tapioca preta que virou febre no mundo."
+        ]
+      },
+      {
+        "name": "Mongólia",
+        "sub": "asia_oceania",
+        "word": "tendas-yurts",
+        "phrase": "Vastas planícies de pastagens abertas onde famílias nômades vivem em tendas circulares brancas desmontáveis.",
+        "words": [
+          "tendas-yurts",
+          "estepes-cavalos",
+          "genghis-khan",
+          "nômades"
+        ],
+        "phrases": [
+          "Vastas planícies de pastagens abertas onde famílias nômades vivem em tendas circulares brancas desmontáveis.",
+          "Cultura milenar de pastores que montam cavalos em pelo e caçam usando águias douradas nas montanhas."
+        ]
+      },
+      {
+        "name": "Nepal",
+        "sub": "asia_oceania",
+        "word": "monte-everest",
+        "phrase": "O teto do planeta que abriga as montanhas mais elevadas da Terra com templos pontilhados por olhos budistas.",
+        "words": [
+          "monte-everest",
+          "himalaia-sherpa",
+          "bandeirinhas-oração",
+          "katmandu"
+        ],
+        "phrases": [
+          "O teto do planeta que abriga as montanhas mais elevadas da Terra com templos pontilhados por olhos budistas.",
+          "Faixas de tecidos com orações coloridas que balançam ao vento nos desfiladeiros gelados do Himalaia."
+        ]
+      },
+      {
+        "name": "Camboja",
+        "sub": "asia_oceania",
+        "word": "angkor-wat",
+        "phrase": "Reino do sudeste asiático que abriga o maior complexo religioso do mundo parcialmente engolido por raízes de árvores gigantescas.",
+        "words": [
+          "angkor-wat",
+          "templos-raízes",
+          "khmer",
+          "torres-rostos"
+        ],
+        "phrases": [
+          "Reino do sudeste asiático que abriga o maior complexo religioso do mundo parcialmente engolido por raízes de árvores gigantescas.",
+          "Esculturas milenares em pedra com rostos serenos de pedra que sorriem misteriosamente nas ruínas."
+        ]
+      },
+      {
+        "name": "Fiji",
+        "sub": "asia_oceania",
+        "word": "arquipélago-pacífico",
+        "phrase": "Paraíso insular na Micronésia com habitantes hospitaleiros que presenteiam visitantes com colares floridos e sorrisos.",
+        "words": [
+          "arquipélago-pacífico",
+          "rugby-sevens",
+          "águas-mornas",
+          "colar-flores"
+        ],
+        "phrases": [
+          "Paraíso insular na Micronésia com habitantes hospitaleiros que presenteiam visitantes com colares floridos e sorrisos.",
+          "Bicampeões olímpicos no esporte da bola oval com corridas velozes e passos descalços na grama."
+        ]
+      },
+      {
+        "name": "Samoa",
+        "sub": "asia_oceania",
+        "word": "dança-siva-tau",
+        "phrase": "Ilha polinésia preservada com guerreiros tatuados do quadril até os joelhos com ossos e agulhas tradicionais.",
+        "words": [
+          "dança-siva-tau",
+          "tatuagens-tatau",
+          "guerreiros-polinésios",
+          "ilha-verde"
+        ],
+        "phrases": [
+          "Ilha polinésia preservada com guerreiros tatuados do quadril até os joelhos com ossos e agulhas tradicionais.",
+          "Famílias unidas que dormem em casas abertas sem paredes chamadas fales na beira da praia tropical."
+        ]
+      },
+      {
+        "name": "Taiti (Polinésia Francesa)",
+        "sub": "asia_oceania",
+        "word": "bangalôs-sobre-água",
+        "phrase": "Arquipélago dos sonhos com cabanas de madeira com piso de vidro erguidas sobre estacas em lagoas cristalinas.",
+        "words": [
+          "bangalôs-sobre-água",
+          "bora-bora",
+          "pérolas-negras",
+          "lagoas-turquesa"
+        ],
+        "phrases": [
+          "Arquipélago dos sonhos com cabanas de madeira com piso de vidro erguidas sobre estacas em lagoas cristalinas.",
+          "Águas transparentes cheias de raias e pequenos tubarões inofensivos nadando ao redor dos degraus dos hóspedes."
+        ]
+      },
+      {
+        "name": "Papua Nova Guiné",
+        "sub": "asia_oceania",
+        "word": "oitocentos-idiomas",
+        "phrase": "O país com a maior diversidade linguística do planeta onde quase mil tribos preservam costumes originais nas serras.",
+        "words": [
+          "oitocentos-idiomas",
+          "aves-do-paraíso",
+          "tribos-pintadas",
+          "floresta-densa"
+        ],
+        "phrases": [
+          "O país com a maior diversidade linguística do planeta onde quase mil tribos preservam costumes originais nas serras.",
+          "Pássaros com plumagens exuberantes multicoloridas que executam danças acrobáticas de acasalamento."
+        ]
+      },
+      {
+        "name": "Cazaquistão",
+        "sub": "asia_oceania",
+        "word": "estepe-asiática",
+        "phrase": "O maior país do planeta sem acesso direto ao mar de onde são lançadas as espaçonaves tripuladas rumo à estação espacial.",
+        "words": [
+          "estepe-asiática",
+          "base-baikonur",
+          "astana-futurista",
+          "maior-sem-mar"
+        ],
+        "phrases": [
+          "O maior país do planeta sem acesso direto ao mar de onde são lançadas as espaçonaves tripuladas rumo à estação espacial.",
+          "Cidades com arquitetura arrojada de domos e pirâmides que despontam no meio de planícies intermináveis."
+        ]
+      },
+      {
+        "name": "Jordânia",
+        "sub": "asia_oceania",
+        "word": "cidade-rosa-petra",
+        "phrase": "Lar da antiga cidade esculpida diretamente nos paredões de arenito avermelhado acessada por um desfiladeiro sombrio.",
+        "words": [
+          "cidade-rosa-petra",
+          "deserto-wadi-rum",
+          "mar-morto",
+          "nabateus"
+        ],
+        "phrases": [
+          "Lar da antiga cidade esculpida diretamente nos paredões de arenito avermelhado acessada por um desfiladeiro sombrio.",
+          "Deserto com dunas e formações rochosas gigantescas que serviu de cenário para filmes espaciais."
+        ]
+      },
+      {
+        "name": "Omã",
+        "sub": "asia_oceania",
+        "word": "incenso-árvore",
+        "phrase": "Sultanato pacífico famoso pelo aroma do incenso natural colhido da resina de árvores raras em vales montanhosos.",
+        "words": [
+          "incenso-árvore",
+          "fiordes-árabes",
+          "fortalezas-barro",
+          "adagas-curvas"
+        ],
+        "phrases": [
+          "Sultanato pacífico famoso pelo aroma do incenso natural colhido da resina de árvores raras em vales montanhosos.",
+          "Homens usam túnicas brancas imaculadas com adagas cerimoniais prateadas curvadas no cinto."
+        ]
+      },
+      {
+        "name": "Mianmar (Birmânia)",
+        "sub": "asia_oceania",
+        "word": "milhares-pagodes-bagan",
+        "phrase": "Planície mística pontilhada por mais de dois mil templos budistas onde balões sobrevoam a névoa matinal.",
+        "words": [
+          "milhares-pagodes-bagan",
+          "pescadores-uma-perna",
+          "pasta-tanaka",
+          "templos-tijolo"
+        ],
+        "phrases": [
+          "Planície mística pontilhada por mais de dois mil templos budistas onde balões sobrevoam a névoa matinal.",
+          "Pescadores em pequenos barcos que equilibram a rede remando com uma única perna enrolada no remo."
+        ]
+      },
+      {
+        "name": "Sri Lanka",
+        "sub": "asia_oceania",
+        "word": "chá-ceylão",
+        "phrase": "Ilha no formato de lágrima ao sul do subcontinente famosa pelas plantações verdes de chá que sobem montanhas.",
+        "words": [
+          "chá-ceylão",
+          "pedra-leão-sigiriya",
+          "elefantes-santuário",
+          "lágrima-índia"
+        ],
+        "phrases": [
+          "Ilha no formato de lágrima ao sul do subcontinente famosa pelas plantações verdes de chá que sobem montanhas.",
+          "Fortaleza monumental esculpida no topo de um monólito de rocha isolado no meio da vegetação."
+        ]
+      },
+      {
+        "name": "Egito",
+        "sub": "africa_oriente",
+        "word": "pirâmides-gizé",
+        "phrase": "A mais icônica civilização da antiguidade que ergueu túmulos triangulares que resistiram a milhares de anos.",
+        "words": [
+          "pirâmides-gizé",
+          "rio-nilo",
+          "faraós-múmias",
+          "deserto-pedras"
+        ],
+        "phrases": [
+          "A mais icônica civilização da antiguidade que ergueu túmulos triangulares que resistiram a milhares de anos.",
+          "A dádiva do rio que corta o deserto garantindo vida e colheitas através de suas cheias milenares."
+        ]
+      },
+      {
+        "name": "África do Sul",
+        "sub": "africa_oriente",
+        "word": "nelson-mandela",
+        "phrase": "A nação do arco-íris que superou o apartheid liderada pelo homem que passou quase três décadas preso por liberdade.",
+        "words": [
+          "nelson-mandela",
+          "montanha-mesa",
+          "safári-kruger",
+          "dois-oceanos"
+        ],
+        "phrases": [
+          "A nação do arco-íris que superou o apartheid liderada pelo homem que passou quase três décadas preso por liberdade.",
+          "Metrópole banhada pelo encontro de mares sob uma montanha com cume perfeitamente achatado como mesa."
+        ]
+      },
+      {
+        "name": "Marrocos",
+        "sub": "africa_oriente",
+        "word": "chá-hortelã",
+        "phrase": "Reino do norte africano com cidades antigas amuralhadas cheias de ruelas labirínticas e mercados aromáticos de especiarias.",
+        "words": [
+          "chá-hortelã",
+          "medina-labirinto",
+          "deserto-saara",
+          "tapetes-coloridos"
+        ],
+        "phrases": [
+          "Reino do norte africano com cidades antigas amuralhadas cheias de ruelas labirínticas e mercados aromáticos de especiarias.",
+          "Casas com pátios internos floridos com fontes de azulejos e chaleiras de prata servindo infusões doces."
+        ]
+      },
+      {
+        "name": "Nigéria",
+        "sub": "africa_oriente",
+        "word": "nollywood-cinema",
+        "phrase": "O país mais populoso do continente africano com uma indústria cinematográfica que produz milhares de filmes por ano.",
+        "words": [
+          "nollywood-cinema",
+          "afrobeats",
+          "maior-população-áfrica",
+          "lagos-metrópole"
+        ],
+        "phrases": [
+          "O país mais populoso do continente africano com uma indústria cinematográfica que produz milhares de filmes por ano.",
+          "Epicentro musical global com batidas envolventes que conquistaram as pistas e premiações do mundo inteiro."
+        ]
+      },
+      {
+        "name": "Quênia",
+        "sub": "africa_oriente",
+        "word": "maratonistas-ouro",
+        "phrase": "A pátria dos maiores corredores de fundo do planeta que treinam no ar rarefeito das montanhas do vale do Rift.",
+        "words": [
+          "maratonistas-ouro",
+          "safari-masai-mara",
+          "manadas-gnu",
+          "savana"
+        ],
+        "phrases": [
+          "A pátria dos maiores corredores de fundo do planeta que treinam no ar rarefeito das montanhas do vale do Rift.",
+          "Planícies douradas onde milhões de animais migram anualmente cruzando rios com crocodilos à espreita."
+        ]
+      },
+      {
+        "name": "Madagascar",
+        "sub": "africa_oriente",
+        "word": "lêmures-olhos-grandes",
+        "phrase": "A quarta maior ilha da Terra separada do continente há milhões de anos desenvolvendo fauna única e exótica.",
+        "words": [
+          "lêmures-olhos-grandes",
+          "baobás-avenida",
+          "baunilha-doce",
+          "ilha-gigante"
+        ],
+        "phrases": [
+          "A quarta maior ilha da Terra separada do continente há milhões de anos desenvolvendo fauna única e exótica.",
+          "Avenida de árvores colossais de troncos grossos como colunas que parecem ter raízes no lugar de galhos."
+        ]
+      },
+      {
+        "name": "Angola",
+        "sub": "africa_oriente",
+        "word": "kizomba-dança",
+        "phrase": "Nação irmã africana que divide a língua portuguesa com o Brasil famosa por ritmos dançantes de passos colados.",
+        "words": [
+          "kizomba-dança",
+          "luanda-baía",
+          "língua-portuguesa",
+          "marimbas"
+        ],
+        "phrases": [
+          "Nação irmã africana que divide a língua portuguesa com o Brasil famosa por ritmos dançantes de passos colados.",
+          "Litoral com baías movimentadas, riquezas de diamantes e savanas preservadas no interior."
+        ]
+      },
+      {
+        "name": "Gana",
+        "sub": "africa_oriente",
+        "word": "cacau-ouro",
+        "phrase": "Primeira nação da África subsaariana a conquistar a independência com a estrela negra estampada no centro da bandeira.",
+        "words": [
+          "cacau-ouro",
+          "tecido-kente",
+          "estrela-negra",
+          "costa-oeste"
+        ],
+        "phrases": [
+          "Primeira nação da África subsaariana a conquistar a independência com a estrela negra estampada no centro da bandeira.",
+          "Produtora de sementes aromáticas de chocolate e tecidos sagrados trançados à mão com fios de seda dourada."
+        ]
+      },
+      {
+        "name": "Etiópia",
+        "sub": "africa_oriente",
+        "word": "berço-do-café",
+        "phrase": "A única nação africana que nunca foi colonizada por potências estrangeiras preservando sua escrita e calendário.",
+        "words": [
+          "berço-do-café",
+          "igrejas-rocha-lalibela",
+          "calendário-próprio",
+          "nunca-colonizada"
+        ],
+        "phrases": [
+          "A única nação africana que nunca foi colonizada por potências estrangeiras preservando sua escrita e calendário.",
+          "Templos medievais escavados verticalmente para dentro da rocha sólida e florestas onde o café selvagem nasceu."
+        ]
+      },
+      {
+        "name": "Tanzânia",
+        "sub": "africa_oriente",
+        "word": "monte-kilimanjaro",
+        "phrase": "Abriga o ponto culminante do continente com neves eternas no topo de um vulcão isolado que vigia a savana.",
+        "words": [
+          "monte-kilimanjaro",
+          "zanzibar-especiarias",
+          "serengeti",
+          "topo-áfrica"
+        ],
+        "phrases": [
+          "Abriga o ponto culminante do continente com neves eternas no topo de um vulcão isolado que vigia a savana.",
+          "Ilhas com praias de areia branca perfumadas pelo cultivo de cravo-da-índia e mercados de especiarias."
+        ]
+      },
+      {
+        "name": "Moçambique",
+        "sub": "africa_oriente",
+        "word": "mar-índico-azul",
+        "phrase": "País litorâneo lusófono com praias de águas mornas e arquipélagos onde tartarugas marinhas desovam em dunas brancas.",
+        "words": [
+          "mar-índico-azul",
+          "marrabenta",
+          "maputo",
+          "camarão-grelhado"
+        ],
+        "phrases": [
+          "País litorâneo lusófono com praias de águas mornas e arquipélagos onde tartarugas marinhas desovam em dunas brancas.",
+          "Ritmos contagiantes tocados com guitarras de lata e rica literatura que canta as belezas da terra."
+        ]
+      },
+      {
+        "name": "Cabo Verde",
+        "sub": "africa_oriente",
+        "word": "dez-ilhas-vulcânicas",
+        "phrase": "Arquipélago vulcânico no Atlântico de língua portuguesa que deu voz ao mundo através dos pés descalços de sua maior cantora.",
+        "words": [
+          "dez-ilhas-vulcânicas",
+          "cesária-évora",
+          "morna-música",
+          "crioulo"
+        ],
+        "phrases": [
+          "Arquipélago vulcânico no Atlântico de língua portuguesa que deu voz ao mundo através dos pés descalços de sua maior cantora.",
+          "Canções comoventes sobre saudades da terra natal e ventos alisantes que sopram sobre encostas áridas."
+        ]
+      },
+      {
+        "name": "Senegal",
+        "sub": "africa_oriente",
+        "word": "lago-rosa",
+        "phrase": "Famoso pela hospitalidade calorosa de seu povo e pelo ponto final histórico do rali de veículos mais perigoso do mundo.",
+        "words": [
+          "lago-rosa",
+          "ilha-goreia-escravos",
+          "leões-teranga",
+          "dacar-corrida"
+        ],
+        "phrases": [
+          "Famoso pela hospitalidade calorosa de seu povo e pelo ponto final histórico do rali de veículos mais perigoso do mundo.",
+          "Lago hipersalino com águas de cor rosada viva provocada por algas e ilha histórica de memória e reflexão."
+        ]
+      },
+      {
+        "name": "Argélia",
+        "sub": "africa_oriente",
+        "word": "maior-país-áfrica",
+        "phrase": "O maior país em extensão territorial de todo o continente africano com cidades brancas voltadas para o Mediterrâneo.",
+        "words": [
+          "maior-país-áfrica",
+          "casbá-argel",
+          "saara-dunas",
+          "mediterrâneo"
+        ],
+        "phrases": [
+          "O maior país em extensão territorial de todo o continente africano com cidades brancas voltadas para o Mediterrâneo.",
+          "Vastos oceanos de areia que cobrem mais de oitenta por cento do território com cânions rochosos milenares."
+        ]
+      },
+      {
+        "name": "Tunísia",
+        "sub": "africa_oriente",
+        "word": "ruínas-cartago",
+        "phrase": "Nação do norte africano onde ficava a cidade do general Aníbal e suas carruagens com elefantes de guerra.",
+        "words": [
+          "ruínas-cartago",
+          "casinhas-azul-branco",
+          "cenário-tatooine",
+          "norte-árabe"
+        ],
+        "phrases": [
+          "Nação do norte africano onde ficava a cidade do general Aníbal e suas carruagens com elefantes de guerra.",
+          "Vilarejos costeiros caiados de branco com portas azuis e construções subterrâneas que serviram de cenário espacial."
+        ]
+      },
+      {
+        "name": "Camarões",
+        "sub": "africa_oriente",
+        "word": "leões-indomáveis",
+        "phrase": "Nação apelidada de África em miniatura por reunir praias, montanhas, selvas e desertos em um único território.",
+        "words": [
+          "leões-indomáveis",
+          "futebol-africano",
+          "floresta-equatorial",
+          "dois-idiomas"
+        ],
+        "phrases": [
+          "Nação apelidada de África em miniatura por reunir praias, montanhas, selvas e desertos em um único território.",
+          "Guerreiros no gramado que surpreenderam o planeta com celebrações dançantes perto da bandeirinha de escanteio."
+        ]
+      },
+      {
+        "name": "Costa do Marfim",
+        "sub": "africa_oriente",
+        "word": "maior-cacau-mundo",
+        "phrase": "O maior produtor e exportador mundial de amêndoas de cacau com a maior basílica cristã já erguida na terra.",
+        "words": [
+          "maior-cacau-mundo",
+          "basílica-gigante",
+          "drogba-futebol",
+          "elefantes-costa"
+        ],
+        "phrases": [
+          "O maior produtor e exportador mundial de amêndoas de cacau com a maior basílica cristã já erguida na terra.",
+          "País de jogadores históricos que usaram o amor pelo esporte para unir a nação em momentos difíceis."
+        ]
+      },
+      {
+        "name": "Botsuana",
+        "sub": "africa_oriente",
+        "word": "delta-do-okavango",
+        "phrase": "País com uma das maiores densidades de elefantes do planeta onde um rio deságua no deserto criando um delta verde interior.",
+        "words": [
+          "delta-do-okavango",
+          "diamantes",
+          "terra-elefantes",
+          "estabilidade"
+        ],
+        "phrases": [
+          "País com uma das maiores densidades de elefantes do planeta onde um rio deságua no deserto criando um delta verde interior.",
+          "Modelo de governança pacífica com safáris preservados navegados em canoas tradicionais de madeira."
+        ]
+      },
+      {
+        "name": "Namíbia",
+        "sub": "africa_oriente",
+        "word": "duna-quarenta-e-cinco",
+        "phrase": "Lar das mais altas dunas de areia vermelha do mundo que descem diretamente nas ondas geladas do oceano Atlântico.",
+        "words": [
+          "duna-quarenta-e-cinco",
+          "deserto-mais-antigo",
+          "árvores-mortas-deadvlei",
+          "costa-esqueletos"
+        ],
+        "phrases": [
+          "Lar das mais altas dunas de areia vermelha do mundo que descem diretamente nas ondas geladas do oceano Atlântico.",
+          "Bacia de argila branca com esqueletos de árvores ressequidas há séculos sob o sol mais limpo do planeta."
+        ]
+      },
+      {
+        "name": "Zimbábue",
+        "sub": "africa_oriente",
+        "word": "cataratas-victoria",
+        "phrase": "Abrigam as mais imponentes quedas d'água em largura do mundo onde a cortina de névoa parece fumaça saindo do abismo.",
+        "words": [
+          "cataratas-victoria",
+          "fumaça-que-troveja",
+          "ruínas-grande-zimbábue",
+          "rio-zambeze"
+        ],
+        "phrases": [
+          "Abrigam as mais imponentes quedas d'água em largura do mundo onde a cortina de névoa parece fumaça saindo do abismo.",
+          "Muralhas antigas de pedra encaixada sem argamassa que provam a existência de impérios africanos ricos."
+        ]
+      },
+      {
+        "name": "Zâmbia",
+        "sub": "africa_oriente",
+        "word": "piscina-do-diabo",
+        "phrase": "País onde banhistas corajosos mergulham em uma piscina natural na beira exata do precipício de cem metros de uma cachoeira.",
+        "words": [
+          "piscina-do-diabo",
+          "rio-zambeze",
+          "cobre-minas",
+          "cataratas-borda"
+        ],
+        "phrases": [
+          "País onde banhistas corajosos mergulham em uma piscina natural na beira exata do precipício de cem metros de uma cachoeira.",
+          "Vastas reservas minerais e parques com safáris a pé guiados por guardas florestais experientes."
+        ]
+      },
+      {
+        "name": "Ruanda",
+        "sub": "africa_oriente",
+        "word": "gorilas-da-montanha",
+        "phrase": "A terra das mil colinas verdes que deu a volta por cima tornando-se uma das nações mais limpas e seguras do continente.",
+        "words": [
+          "gorilas-da-montanha",
+          "terra-mil-colinas",
+          "limpeza-ruas",
+          "renascimento"
+        ],
+        "phrases": [
+          "A terra das mil colinas verdes que deu a volta por cima tornando-se uma das nações mais limpas e seguras do continente.",
+          "Santuário nas encostas vulcânicas onde pesquisadores caminham ao lado de primatas gigantes na neblina."
+        ]
+      },
+      {
+        "name": "Uganda",
+        "sub": "africa_oriente",
+        "word": "pérola-da-áfrica",
+        "phrase": "Apelidada de pérola por seus vales verdes e lagos abundantes onde brotam as primeiras fontes do mais longo rio africano.",
+        "words": [
+          "pérola-da-áfrica",
+          "nascente-nilo",
+          "lago-vitória",
+          "montanhas-da-lua"
+        ],
+        "phrases": [
+          "Apelidada de pérola por seus vales verdes e lagos abundantes onde brotam as primeiras fontes do mais longo rio africano.",
+          "Picos nevados na linha do equador com vegetação de tamanho gigante que parece saída de outro planeta."
+        ]
+      },
+      {
+        "name": "República Democrática do Congo",
+        "sub": "africa_oriente",
+        "word": "segunda-maior-floresta",
+        "phrase": "Coração selvagem da África com a segunda maior floresta tropical contínua da Terra cortada por rios profundos e velozes.",
+        "words": [
+          "segunda-maior-floresta",
+          "rio-congo",
+          "minerais-coltán",
+          "vulcão-lava"
+        ],
+        "phrases": [
+          "Coração selvagem da África com a segunda maior floresta tropical contínua da Terra cortada por rios profundos e velozes.",
+          "Crateras com lagos permanentes de lava incandescente fervendo no topo de vulcões ativos."
+        ]
+      },
+      {
+        "name": "Mali",
+        "sub": "africa_oriente",
+        "word": "mesquita-barro-djenne",
+        "phrase": "Berço do soberano histórico mais rico que já viveu cuja passagem pelo deserto desvalorizou o ouro com tanta caridade.",
+        "words": [
+          "mesquita-barro-djenne",
+          "timbuktu",
+          "mansa-musa-ouro",
+          "rio-níger"
+        ],
+        "phrases": [
+          "Berço do soberano histórico mais rico que já viveu cuja passagem pelo deserto desvalorizou o ouro com tanta caridade.",
+          "A maior edificação de argila e troncos de madeira do mundo mantida anualmente por toda a comunidade."
+        ]
+      },
+      {
+        "name": "Guiné-Bissau",
+        "sub": "africa_oriente",
+        "word": "arquipélago-bijagós",
+        "phrase": "Pequeno país lusófono da costa oeste com arquipélago sagrado de ilhas onde vivem hipopótamos de água salgada.",
+        "words": [
+          "arquipélago-bijagós",
+          "língua-portuguesa",
+          "castanhas-caju",
+          "manguezais"
+        ],
+        "phrases": [
+          "Pequeno país lusófono da costa oeste com arquipélago sagrado de ilhas onde vivem hipopótamos de água salgada.",
+          "Cultura ribeirinha de tradições orais preservadas entre manguezais e florestas de cajueiros."
+        ]
+      },
+      {
+        "name": "São Tomé e Príncipe",
+        "sub": "africa_oriente",
+        "word": "cacau-fino",
+        "phrase": "Duas ilhas vulcânicas de língua portuguesa plantadas na linha do equador com montanhas de rocha que furam as nuvens.",
+        "words": [
+          "cacau-fino",
+          "pico-cão-grande",
+          "leve-leve",
+          "equador-ilhas"
+        ],
+        "phrases": [
+          "Duas ilhas vulcânicas de língua portuguesa plantadas na linha do equador com montanhas de rocha que furam as nuvens.",
+          "Filosofia tranquila de viver a vida leve-leve desfrutando do melhor chocolate do oceano Atlântico."
+        ]
+      },
+      {
+        "name": "Seychelles",
+        "sub": "africa_oriente",
+        "word": "pedras-granito-praia",
+        "phrase": "Arquipélago dos sonhos no oceano Índico com gigantescos blocos de granito preto polidos pelas ondas em areias douradas.",
+        "words": [
+          "pedras-granito-praia",
+          "coco-de-mer",
+          "tartarugas-gigantes",
+          "mar-índico"
+        ],
+        "phrases": [
+          "Arquipélago dos sonhos no oceano Índico com gigantescos blocos de granito preto polidos pelas ondas em areias douradas.",
+          "Lar da maior semente do reino vegetal em formato de coração e águas mornas transparentes."
+        ]
+      },
+      {
+        "name": "Maurício",
+        "sub": "africa_oriente",
+        "word": "cachoeira-submarina",
+        "phrase": "Ilha vulcânica famosa pela ilusão de ótica de uma queda d'água no fundo do oceano vista do avião.",
+        "words": [
+          "cachoeira-submarina",
+          "pássaro-dodô",
+          "sete-cores-terra",
+          "recifes"
+        ],
+        "phrases": [
+          "Ilha vulcânica famosa pela ilusão de ótica de uma queda d'água no fundo do oceano vista do avião.",
+          "Onde habitou a célebre ave mansa extinta e dunas de areia natural com sete tonalidades diferentes de cores."
+        ]
+      },
+      {
+        "name": "Sudão",
+        "sub": "africa_oriente",
+        "word": "mais-pirâmides-que-egito",
+        "phrase": "País que abriga centenas de pirâmides esguias e pontiagudas de reis e rainhas guerreiras no deserto da Núbia.",
+        "words": [
+          "mais-pirâmides-que-egito",
+          "núbia-faraós-negros",
+          "confluência-nilo",
+          "areia"
+        ],
+        "phrases": [
+          "País que abriga centenas de pirâmides esguias e pontiagudas de reis e rainhas guerreiras no deserto da Núbia.",
+          "Ponto de encontro onde as águas do Nilo Branco e do Nilo Azul se fundem em um único fluxo poderoso."
+        ]
       }
     ]
   }
@@ -38032,5 +46880,113 @@ const PARES = {
     "Barbeiro|Cabeleireiro",
     "Eletricista|Encanador",
     "Arqueólogo|Historiador"
+  ],
+  "Mitologia & Lendas": [
+    "Zeus|Poseidon",
+    "Thor|Loki",
+    "Hades|Cérbero",
+    "Saci-Pererê|Curupira",
+    "Mula sem Cabeça|Boitatá",
+    "Boto Cor-de-Rosa|Iara (Mãe d'Água)",
+    "Hércules|Aquiles",
+    "Odin|Thor",
+    "Atena|Afrodite",
+    "Medusa|Minotauro",
+    "Cuca|Mapinguari",
+    "Rá|Anúbis",
+    "Osíris|Ísis",
+    "Hórus|Seth (Set)",
+    "Fenrir|Jörmungandr (Serpente do Mundo)",
+    "Heimdall|Valquíria",
+    "Fênix (Bennu)|Dragão Oriental (Long)",
+    "Shiva|Ganesha",
+    "Sun Wukong (Rei Macaco)|Kitsune (Raposa de Nove Caudas)",
+    "Apolo|Ártemis",
+    "Ares|Hefesto (Vulcano)",
+    "Cronos (Saturno)|Atlas",
+    "Prometeu|Pandora",
+    "Ulisses (Odisseu)|Perseu",
+    "Ícaro|Cupido (Eros)"
+  ],
+  "Música & Ritmos": [
+    "Guitarras Elétricas|Baixo Elétrico",
+    "Bateria Acústica|Microfone Dourado",
+    "Queen|Guns N' Roses",
+    "Michael Jackson|Madonna",
+    "Taylor Swift|Beyoncé",
+    "Anitta|Ludmilla",
+    "Alok|David Guetta",
+    "Jorge & Mateus|Henrique & Juliano",
+    "Zeca Pagodinho|Thiaguinho",
+    "Racionais MC's|Emicida",
+    "Bob Marley|Natiruts",
+    "Elis Regina|Tim Maia",
+    "Caetano Veloso|Gilberto Gil",
+    "Chico Buarque|Milton Nascimento",
+    "Charlie Brown Jr.|Legião Urbana",
+    "Pitty|Rita Lee",
+    "Metallica|Iron Maiden",
+    "Nirvana|Linkin Park",
+    "Cavaquinho|Pandeiro",
+    "Surdo de Marcação|Tantã",
+    "Viola Caipira|Sanfona (Acordeon)",
+    "Chitãozinho & Xororó|Zezé Di Camargo & Luciano",
+    "Raça Negra|Fundo de Quintal",
+    "Daft Punk|Avicii",
+    "Matuê|Djonga"
+  ],
+  "Marcas & Empresas": [
+    "Apple|Microsoft",
+    "PlayStation (Sony)|Nintendo",
+    "Google|YouTube",
+    "Instagram|TikTok",
+    "WhatsApp|Telegram",
+    "Netflix|Spotify",
+    "McDonald's|Burger King",
+    "Coca-Cola|Pepsi",
+    "Nike|Adidas",
+    "Puma|Jordan (Air Jordan)",
+    "Ferrari|Lamborghini",
+    "Porsche|BMW",
+    "Mercedes-Benz|Tesla",
+    "Mercado Livre|Amazon",
+    "Disney|Lego",
+    "Gucci|Louis Vuitton",
+    "Doritos|Lay's",
+    "Nutella|Oreo",
+    "Starbucks|Nestlé Nespresso",
+    "Casas Bahia|Magazine Luiza (Magalu)",
+    "Havaianas|Vans",
+    "Uber|iFood",
+    "KFC|Subway",
+    "Red Bull|Monster Energy",
+    "Ford|Chevrolet"
+  ],
+  "Países & Culturas": [
+    "Brasil|Argentina",
+    "Estados Unidos|Canadá",
+    "França|Itália",
+    "Alemanha|Inglaterra",
+    "Espanha|Portugal",
+    "Grécia|Egito",
+    "Japão|China",
+    "Coreia do Sul|Índia",
+    "Austrália|Nova Zelândia",
+    "México|Colômbia",
+    "Rússia|Ucrânia",
+    "Irlanda|Escócia",
+    "Suíça|Holanda (Países Baixos)",
+    "Suécia|Noruega",
+    "África do Sul|Marrocos",
+    "Nigéria|Quênia",
+    "Jamaica|Cuba",
+    "Chile|Peru",
+    "Tailândia|Vietnã",
+    "Arábia Saudita|Emirados Árabes Unidos",
+    "Angola|Moçambique",
+    "Madagascar|Egito",
+    "Turquia|Israel",
+    "Uruguai|Paraguai",
+    "Singapura|Malásia"
   ]
 };
