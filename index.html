@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
 
-  <!-- PeerJS para Salas Virtuais Online via PIN -->
-  <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+  <!-- PeerJS para Salas Virtuais Online via PIN (defer para carregamento não bloqueante) -->
+  <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js" defer></script>
 </head>
 <body>
   <div class="box">
@@ -29,10 +29,28 @@
 
     <!-- Título Principal -->
     <h1>🎭 Hub de Jogos</h1>
-    <p id="sub">Escolha como jogar e chame a galera</p>
+    <p id="sub">Como vocês vão jogar hoje?</p>
 
-    <!-- Cartão Interativo com Flip 3D -->
-    <main class="card" id="card" aria-live="polite"></main>
+    <!-- Cartão Interativo com Flip 3D (pré-renderizado para evitar tela em branco) -->
+    <main class="card" id="card" aria-live="polite">
+      <div class="who" style="margin-bottom: 12px">Escolha como jogar</div>
+      <div class="grid" style="grid-template-columns: 1fr; gap: 12px">
+        <button class="modo" data-action="choose-env" data-val="offline" style="background: var(--p);">
+          <span class="em">📱</span>
+          <div>
+            <b>Modo Offline (Mesmo celular)</b>
+            <small>Passe o celular de mão em mão · Sem internet necessária</small>
+          </div>
+        </button>
+        <button class="modo" data-action="choose-env" data-val="online" style="background: var(--b);">
+          <span class="em">🌐</span>
+          <div>
+            <b>Modo Online (Salas Virtuais)</b>
+            <small>Cada um no seu celular com PIN de 6 dígitos · Jogue com amigos de qualquer lugar!</small>
+          </div>
+        </button>
+      </div>
+    </main>
 
     <!-- Botões de Ação do Jogo -->
     <section class="game-controls">

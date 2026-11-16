@@ -48,6 +48,9 @@ const HubGame = {
   init() {
     this.cacheElements();
     this.loadSavedData();
+    if (typeof GameFilters !== "undefined" && typeof GameFilters.init === "function") {
+      GameFilters.init();
+    }
     this.bindGlobalEvents();
     this.showScreen("inicio");
   },
@@ -1322,6 +1325,20 @@ const HubGame = {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  HubGame.init();
-});
+function startHubGame() {
+  try {
+    HubGame.init();
+  } catch (err) {
+    console.error("Erro ao inicializar HubGame:", err);
+    try {
+      HubGame.cacheElements();
+      HubGame.renderInicio();
+    } catch (e) {}
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", startHubGame);
+} else {
+  startHubGame();
+}

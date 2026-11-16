@@ -9,13 +9,21 @@ const GameFilters = {
   filtersState: {},
 
   init() {
+    if (typeof THEME_DATABASE === "undefined") {
+      console.warn("THEME_DATABASE ainda não carregado.");
+      return;
+    }
+
     // 1. Inicializa todas as subcategorias de todos os temas como true por padrão
     Object.keys(THEME_DATABASE).forEach(themeName => {
       this.filtersState[themeName] = {};
-      const subs = THEME_DATABASE[themeName].subcategories;
-      Object.keys(subs).forEach(subKey => {
-        this.filtersState[themeName][subKey] = true;
-      });
+      const themeObj = THEME_DATABASE[themeName];
+      const subs = themeObj ? themeObj.subcategories : null;
+      if (subs) {
+        Object.keys(subs).forEach(subKey => {
+          this.filtersState[themeName][subKey] = true;
+        });
+      }
     });
 
     // 2. Carrega configurações salvas do localStorage
