@@ -107537,6 +107537,951 @@ const PERGUNTAS_INVERTIDAS = [
     "tema": "Jogos Retrô",
     "pergunta": "Qual trilha sonora de jogo grudou na sua cabeça e te traz nostalgia imediata?",
     "impostor": "Qual efeito sonoro irritante ou chiado estridente não te deixa dormir em paz?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual é a melhor sobremesa já inventada na face da Terra?",
+    "impostor": "Qual é o doce ou sobremesa mais enjoativo e horrível que existe?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual comida salgada você comeria todos os dias pelo resto da vida sem enjoar?",
+    "impostor": "Qual comida salgada te dá ânsia de vômito só de sentir o cheiro?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual é o melhor recheio possível para uma pizza perfeita?",
+    "impostor": "Qual é a pior coisa bizarra que já inventaram de colocar numa pizza?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual fruta é a mais doce, refrescante e deliciosa de todas?",
+    "impostor": "Qual fruta tem o gosto ou textura mais horrível da natureza?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual bebida é a mais perfeita para matar a sede num dia de calor insuportável?",
+    "impostor": "Qual bebida quente ou amarga é uma verdadeira tortura de engolir?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual é o melhor lanche rápido de rua ou fast food que você ama?",
+    "impostor": "Qual comida de rua você jamais teria coragem de comer por medo de intoxicação?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual prato típico brasileiro é o orgulho da culinária nacional?",
+    "impostor": "Qual prato típico brasileiro você acha superestimado ou com gosto esquisito?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual tempero ou condimento deixa qualquer comida maravilhosa?",
+    "impostor": "Qual tempero estraga completamente o sabor de qualquer prato se colocar um pouco a mais?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "O que não pode faltar no melhor café da manhã de hotel de luxo?",
+    "impostor": "O que seria o pior pesadelo para encontrar no prato logo de manhã cedo?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual sabor de sorvete é o mais imbatível e perfeito?",
+    "impostor": "Qual sabor de sorvete ou picolé é pura decepção artificial?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual salgadinho de festa infantil é o rei absoluto da mesa?",
+    "impostor": "Qual petisco de boteco é o mais gorduroso e indigesto de todos?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual carne é a mais nobre, macia e saborosa de um churrasco?",
+    "impostor": "Qual carne é tão dura e cheia de nervo que parece sola de sapato?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual é a melhor massa italiana com muito queijo e molho?",
+    "impostor": "Qual comida parece uma gororoba sem gosto de hospital?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual marca ou tipo de chocolate é o mais divino do mundo?",
+    "impostor": "Qual doce parece pura parafina com açúcar de tão ruim?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual prato você pediria como sua última refeição na vida de tão gostoso?",
+    "impostor": "Qual comida você se recusaria a engolir mesmo que estivesse morrendo de fome?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "Qual é o melhor cheiro que existe no mundo para você cheirar?",
+    "impostor": "Qual é o pior cheiro insuportável e fedorento do planeta?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "Qual é a sensação física mais gostosa e relaxante que existe?",
+    "impostor": "Qual é a sensação de dor ou desconforto físico mais irritante do dia a dia?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "Qual é o som mais gostoso e satisfatório de ouvir?",
+    "impostor": "Qual é o barulho mais agoniante e insuportável para os ouvidos?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "Qual é o melhor momento de relaxamento do seu dia inteiro?",
+    "impostor": "Qual é a parte mais estressante, cansativa e insuportável do seu dia?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "Qual tarefa doméstica deixa a casa uma delícia e é satisfatória de fazer?",
+    "impostor": "Qual é a pior tarefa doméstica do mundo que você odeia fazer com todas as forças?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "Qual roupa é a mais confortável do mundo para ficar deitado em casa?",
+    "impostor": "Qual peça de roupa ou calçado é a coisa mais desconfortável e apertada de usar?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "Qual notícia maravilhosa faria o seu dia ficar perfeito instantaneamente?",
+    "impostor": "Qual mensagem no celular te causaria desespero e ansiedade imediata?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "O que você mais ama fazer no fim de semana para renovar as energias?",
+    "impostor": "Qual compromisso chato de domingo à noite te dá depressão pré-segunda-feira?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "Qual é a melhor sensação ao acordar num dia de folga sem despertador?",
+    "impostor": "Qual é o pior susto ao acordar atrasado no meio da semana?"
+  },
+  {
+    "tema": "Cotidiano & Sensações",
+    "pergunta": "Qual clima é o mais agradável e perfeito para você aproveitar?",
+    "impostor": "Qual condição climática é a mais horrível e desconfortável do ano?"
+  },
+  {
+    "tema": "Lugares & Natureza",
+    "pergunta": "Em qual cidade linda do mundo você sonha em passar a lua de mel?",
+    "impostor": "Qual é o lugar mais poluído, barulhento e caótico do planeta?"
+  },
+  {
+    "tema": "Lugares & Natureza",
+    "pergunta": "Qual praia paradisíaca de águas cristalinas você queria estar agora?",
+    "impostor": "Qual pântano ou rio lamacento é o lugar mais sinistro do mundo?"
+  },
+  {
+    "tema": "Lugares & Natureza",
+    "pergunta": "Qual país tem os cidadãos mais educados, simpáticos e acolhedores?",
+    "impostor": "Em qual lugar do mundo as pessoas são mais rudes, grosseiras e frias?"
+  },
+  {
+    "tema": "Lugares & Natureza",
+    "pergunta": "Qual atração turística mundial realmente vale cada centavo da visita?",
+    "impostor": "Qual ponto turístico famoso é uma decepção total e pega-turista?"
+  },
+  {
+    "tema": "Lugares & Natureza",
+    "pergunta": "Qual hotel ou resort de luxo seria a definição de perfeição para você?",
+    "impostor": "Qual motel ou pousada fuleira parece cenário de filme de terror?"
+  },
+  {
+    "tema": "Lugares & Natureza",
+    "pergunta": "Qual fenômeno da natureza é o mais lindo e mágico de presenciar?",
+    "impostor": "Qual desastre natural causa o maior pânico e devastação absoluta?"
+  },
+  {
+    "tema": "Lugares & Natureza",
+    "pergunta": "Qual floresta ou parque nacional tem a paisagem mais deslumbrante?",
+    "impostor": "Qual deserto ou região inóspita é quase impossível de sobreviver por 24 horas?"
+  },
+  {
+    "tema": "Lugares & Natureza",
+    "pergunta": "Qual lugar secreto na sua casa é o mais calmo para sumir do mundo?",
+    "impostor": "Qual cômodo da sua casa fica mais bagunçado e entulhado de coisas velhas?"
+  },
+  {
+    "tema": "Animais & Criaturas",
+    "pergunta": "Qual filhote de animal é o mais fofo e adorável que dá vontade de apertar?",
+    "impostor": "Qual inseto ou bicho peçonhento é a coisa mais nojenta e repulsiva?"
+  },
+  {
+    "tema": "Animais & Criaturas",
+    "pergunta": "Qual animal selvagem você acha o mais majestoso, imponente e belo de todos?",
+    "impostor": "Qual predador selvagem te mataria de pavor se você encontrasse numa trilha?"
+  },
+  {
+    "tema": "Animais & Criaturas",
+    "pergunta": "Qual animal exótico você adoraria ter como companheiro domesticado?",
+    "impostor": "Qual animal seria o pior e mais desastroso bicho para ter dentro de um apartamento?"
+  },
+  {
+    "tema": "Animais & Criaturas",
+    "pergunta": "Qual ave tem o canto mais bonito ou as penas mais coloridas da natureza?",
+    "impostor": "Qual ave é barulhenta, irritante ou vive roubando comida das pessoas?"
+  },
+  {
+    "tema": "Animais & Criaturas",
+    "pergunta": "Qual animal marinho você acha o mais gracioso e fascinante dos oceanos?",
+    "impostor": "Qual monstro das profundezas do mar parece uma aberração assustadora?"
+  },
+  {
+    "tema": "Animais & Criaturas",
+    "pergunta": "Qual bicho representa a maior preguiça, calmaria e vida boa?",
+    "impostor": "Qual animal vive no meio do lixo, bueiro e esgoto?"
+  },
+  {
+    "tema": "Animais & Criaturas",
+    "pergunta": "Qual dinossauro você acharia o mais maneiro de ver vivo de perto?",
+    "impostor": "Qual praga urbana deveria sumir do planeta para sempre?"
+  },
+  {
+    "tema": "Animais & Criaturas",
+    "pergunta": "Qual raça de cachorro é a mais dócil, inteligente e leal com os donos?",
+    "impostor": "Qual animal faz o barulho mais insuportável no meio da madrugada?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual filme emocionante fez você chorar de verdade de tão lindo?",
+    "impostor": "Qual filme chato e sonífero fez você dormir no cinema de tanto tédio?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual comédia de cinema te fez gargalhar até a barriga doer?",
+    "impostor": "Qual filme de humor pastelão é tão sem graça que dá vergonha alheia?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual personagem da ficção é o herói mais admirável e exemplar de todos?",
+    "impostor": "Qual vilão da ficção é o mais sádico, cruel e desprezível da história?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual ator ou atriz vivo tem o talento mais genial e impecável da atuação?",
+    "impostor": "Qual famoso atua tão mal que parece uma porta sem expressão?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual série de TV teve o final mais perfeito e satisfatório de assistir?",
+    "impostor": "Qual série espetacular teve um final tão lixo que estragou a história toda?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual trilha sonora de filme arrepia até a alma de tão marcante?",
+    "impostor": "Qual desenho animado infantil tem uma música repetitiva que enlouquece qualquer um?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual universo fictício você pagaria qualquer preço para morar?",
+    "impostor": "Em qual universo distópico de filme seria um pesadelo horrível viver?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual clássico do cinema todo ser humano é obrigado a assistir pelo menos uma vez?",
+    "impostor": "Qual filme hypado todo mundo elogia mas na verdade é uma porcaria superestimada?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual filme de suspense te prendeu na ponta da cadeira com o melhor plot twist?",
+    "impostor": "Qual filme de terror tem os monstros mais toscos e efeitos especiais baratos?"
+  },
+  {
+    "tema": "Cinema & Séries",
+    "pergunta": "Qual super-herói dos quadrinhos tem os poderes e atitude mais incríveis?",
+    "impostor": "Qual herói ou ajudante é tão inútil que só atrapalha o resto da equipe?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Se pudesse escolher um superpoder incrível para facilitar a sua vida, qual seria?",
+    "impostor": "Qual poder mutante seria uma verdadeira maldição bizarra no seu dia a dia?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Qual artefato mágico dos contos de fadas você guardaria a sete chaves?",
+    "impostor": "Qual item amaldiçoado traria a pior desgraça para quem encostasse nele?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Qual criatura mitológica seria a montaria mais épica para você cavalgar?",
+    "impostor": "Qual monstro do folclore é a criatura mais horripilante para encontrar na mata?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Para qual época do passado você viajaria numa máquina do tempo para curtir?",
+    "impostor": "Qual época histórica foi o período mais nojento, doentio e sangrento para estar vivo?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Se você pudesse ficar invisível por 1 hora, qual boa travessura faria?",
+    "impostor": "Qual segredo embaraçoso você faria de tudo para ninguém nunca descobrir?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Qual feitiço de bruxo seria o mais útil para resolver qualquer perrengue?",
+    "impostor": "Qual praga de bruxa malvada seria a pior punição para receber?"
+  },
+  {
+    "tema": "Trabalho & Profissões",
+    "pergunta": "Qual é a profissão dos sonhos mais valorizada e prazerosa do mundo?",
+    "impostor": "Qual trabalho é tão estressante, insalubre e ingrato que ninguém aguenta?"
+  },
+  {
+    "tema": "Trabalho & Profissões",
+    "pergunta": "Qual qualidade torna um chefe ou líder a melhor pessoa para se trabalhar?",
+    "impostor": "Qual atitude tóxica de um chefe arruína a saúde mental de qualquer funcionário?"
+  },
+  {
+    "tema": "Trabalho & Profissões",
+    "pergunta": "Qual carreira garante respeito, admiração pública e muito orgulho?",
+    "impostor": "Qual profissão é associada a golpes, mentiras e picaretagem descarada?"
+  },
+  {
+    "tema": "Trabalho & Profissões",
+    "pergunta": "Qual benefício de uma empresa você acharia o maior luxo do mundo?",
+    "impostor": "Qual exigência absurda de vaga arrombada você recusaria na hora?"
+  },
+  {
+    "tema": "Trabalho & Profissões",
+    "pergunta": "Qual profissão do futuro vai salvar a humanidade e o planeta?",
+    "impostor": "Qual trabalho repetitivo e inútil já deveria ter sido substituído por robôs?"
+  },
+  {
+    "tema": "Trabalho & Profissões",
+    "pergunta": "Como seria o escritório perfeito para trabalhar com total conforto e lazer?",
+    "impostor": "Como é o pior cubículo de trabalho sem janela e com ar-condicionado quebrado?"
+  },
+  {
+    "tema": "Relacionamentos & Pessoas",
+    "pergunta": "Qual virtude torna uma pessoa irresistivelmente atraente e encantadora?",
+    "impostor": "Qual defeito de caráter faz você perder o encanto por alguém no mesmo segundo?"
+  },
+  {
+    "tema": "Relacionamentos & Pessoas",
+    "pergunta": "Qual gesto de carinho num primeiro encontro ganha o seu coração de vez?",
+    "impostor": "Qual é a maior red flag bizarra que faria você fugir correndo de um date?"
+  },
+  {
+    "tema": "Relacionamentos & Pessoas",
+    "pergunta": "Qual atitude define um amigo verdadeiro com quem você pode contar na pior hora?",
+    "impostor": "Qual atitude traiçoeira de um amigo falso você jamais perdoaria na vida?"
+  },
+  {
+    "tema": "Relacionamentos & Pessoas",
+    "pergunta": "Qual é o elogio mais sincero e bonito que alguém já te fez?",
+    "impostor": "Qual foi a crítica mais maldosa e desnecessária que você já ouviu de alguém?"
+  },
+  {
+    "tema": "Relacionamentos & Pessoas",
+    "pergunta": "Como seria a declaração de amor mais romântica e inesquecível do cinema?",
+    "impostor": "Qual fora humilhante e constrangedor você morreria de medo de levar?"
+  },
+  {
+    "tema": "Relacionamentos & Pessoas",
+    "pergunta": "Qual assunto em uma roda de conversa rende as melhores risadas entre amigos?",
+    "impostor": "Qual tema de conversa chato sempre termina em briga de família no almoço?"
+  },
+  {
+    "tema": "Relacionamentos & Pessoas",
+    "pergunta": "Qual presente simples tem um valor sentimental gigante para quem ganha?",
+    "impostor": "Qual presente horroroso ou inútil de amigo oculto você esconderia no armário?"
+  },
+  {
+    "tema": "Tecnologia & Internet",
+    "pergunta": "Qual aplicativo no seu celular é tão útil que mudou a sua rotina para melhor?",
+    "impostor": "Qual aplicativo só serve para roubar seus dados, travar e encher de anúncio chato?"
+  },
+  {
+    "tema": "Tecnologia & Internet",
+    "pergunta": "Qual rede social é a mais divertida para passar o tempo dando risada?",
+    "impostor": "Qual rede social virou o poço mais tóxico de brigas e ódio da internet?"
+  },
+  {
+    "tema": "Tecnologia & Internet",
+    "pergunta": "Qual videogame ou jogo marcou a sua vida como uma obra de arte inesquecível?",
+    "impostor": "Qual jogo quebrou todas as expectativas e foi lançado cheio de bugs injogáveis?"
+  },
+  {
+    "tema": "Tecnologia & Internet",
+    "pergunta": "Qual inovação tecnológica dos últimos anos foi a mais revolucionária de todas?",
+    "impostor": "Qual bug ou pane eletrônica te deixa com ódio mortal e vontade de quebrar tudo?"
+  },
+  {
+    "tema": "Tecnologia & Internet",
+    "pergunta": "Qual meme brasileiro você considera uma obra-prima histórica do humor?",
+    "impostor": "Qual trend de internet é tão vergonhosa e forçada que dá vontade de chorar?"
+  },
+  {
+    "tema": "Tecnologia & Internet",
+    "pergunta": "Qual gadget ou aparelho eletrônico você compraria agora se o dinheiro não importasse?",
+    "impostor": "Qual bugiganga inútil de comercial de TV promete mundos e não funciona nada?"
+  },
+  {
+    "tema": "Tecnologia & Internet",
+    "pergunta": "Qual canal de YouTube ou criador de conteúdo você assiste todo santo vídeo?",
+    "impostor": "Qual influencer de internet é tão cancelável e chato que você não aguenta nem a voz?"
+  },
+  {
+    "tema": "Dinheiro & Estilo de Vida",
+    "pergunta": "Qual seria a primeira coisa maravilhosa que você compraria ao ganhar na Mega-Sena?",
+    "impostor": "Qual é a coisa mais fútil e ridícula em que ricaços gastam milhões à toa?"
+  },
+  {
+    "tema": "Dinheiro & Estilo de Vida",
+    "pergunta": "Qual carro dos sonhos é a coisa mais estilosa e veloz do asfalto?",
+    "impostor": "Qual carro é um calhambeque velho que vive quebrando e soltando fumaça preta?"
+  },
+  {
+    "tema": "Dinheiro & Estilo de Vida",
+    "pergunta": "Qual marca de roupa ou grife é sinônimo de pura elegância e bom gosto?",
+    "impostor": "Qual tendência de moda cafona parece fantasia ridícula de carnaval fora de época?"
+  },
+  {
+    "tema": "Dinheiro & Estilo de Vida",
+    "pergunta": "Qual mansão cinematográfica com piscina infinita você sonha em ter?",
+    "impostor": "Qual cativeiro minúsculo com mofo na parede cobram um aluguel absurdo?"
+  },
+  {
+    "tema": "Dinheiro & Estilo de Vida",
+    "pergunta": "Qual experiência de luxo extrema você adoraria viver pelo menos uma vez?",
+    "impostor": "Qual golpe financeiro ou pirâmide é a maior armadilha para pessoas ingênuas?"
+  },
+  {
+    "tema": "Dinheiro & Estilo de Vida",
+    "pergunta": "Qual presente dos sonhos você daria para os seus pais se ficasse milionário?",
+    "impostor": "Qual dívida ou boleto atrasado tira o sono de qualquer trabalhador brasileiro?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual música tem o ritmo mais contagiante que faz todo mundo dançar na hora?",
+    "impostor": "Qual música chiclete insuportável gruda na cabeça e ninguém aguenta mais?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual cantor ou banda faz o show ao vivo mais apoteótico e inesquecível da história?",
+    "impostor": "Qual artista canta com tanto desafino que nem o autotune consegue disfarçar?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual estilo musical é perfeito para relaxar numa praia tomando água de coco?",
+    "impostor": "Qual estilo musical é tão barulhento e estridente que parece uma furadeira no cérebro?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Como é a festa perfeita com amigos: muita risada, comida boa e música animada?",
+    "impostor": "Como é a pior festa de aniversário flopada onde quase ninguém compareceu?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual instrumento musical produz a melodia mais linda e apaixonante?",
+    "impostor": "Qual instrumento de percussão ou apito é impossível de tolerar dentro de casa?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual hit dos anos 80 ou 90 nunca perde a graça e todo mundo canta junto no karaokê?",
+    "impostor": "Qual música triste e deprimente parece feita para chorar trancado no banheiro?"
+  },
+  {
+    "tema": "Escola & Infância",
+    "pergunta": "Qual matéria da escola era a mais interessante e empolgante para você estudar?",
+    "impostor": "Qual disciplina escolar era o seu maior tormento e pesadelo nas provas?"
+  },
+  {
+    "tema": "Escola & Infância",
+    "pergunta": "Qual brincadeira de rua na infância rendia as melhores tardes com os vizinhos?",
+    "impostor": "Qual castigo dos seus pais ou da professora te dava mais medo de levar?"
+  },
+  {
+    "tema": "Escola & Infância",
+    "pergunta": "Qual brinquedo clássico da infância você implorava para o Papai Noel te dar?",
+    "impostor": "Qual brinquedo tosco quebrava nos primeiros cinco minutos depois de abrir a caixa?"
+  },
+  {
+    "tema": "Escola & Infância",
+    "pergunta": "Qual lanche da cantina da escola fazia a fila virar o maior sucesso?",
+    "impostor": "Qual comida sem gosto da merenda escolar ninguém queria nem de graça?"
+  },
+  {
+    "tema": "Escola & Infância",
+    "pergunta": "Qual era o melhor momento do ano escolar que todo estudante ansiava?",
+    "impostor": "Qual era o momento de maior tensão de entrega de boletim com nota baixa?"
+  },
+  {
+    "tema": "Esportes & Saúde",
+    "pergunta": "Qual esporte olímpico é o mais emocionante, veloz e plástico de assistir?",
+    "impostor": "Qual modalidade esportiva é tão monótona e parada que parece uma partida de xadrez em câmera lenta?"
+  },
+  {
+    "tema": "Esportes & Saúde",
+    "pergunta": "Qual jogador ou atleta é o maior exemplo de gênio e dedicação ao esporte?",
+    "impostor": "Qual jogador famoso é o maior pipoqueiro que some nas decisões importantes?"
+  },
+  {
+    "tema": "Esportes & Saúde",
+    "pergunta": "Qual exercício físico dá aquela sensação espetacular de superação e bem-estar?",
+    "impostor": "Qual exercício de perna ou abdômen na academia é pura dor e sofrimento físico?"
+  },
+  {
+    "tema": "Esportes & Saúde",
+    "pergunta": "Qual estádio de futebol tem a festa de torcida mais arrepiante e fervorosa?",
+    "impostor": "Qual torcida rival é a mais chata, arrogante e insuportável quando ganha?"
+  },
+  {
+    "tema": "Esportes & Saúde",
+    "pergunta": "Qual vitória histórica do Brasil te encheu de orgulho e euforia patriótica?",
+    "impostor": "Qual vexame esportivo histórico foi o mais traumático e vergonhoso de assistir?"
+  },
+  {
+    "tema": "Micos & Situações",
+    "pergunta": "Qual é a reação mais engraçada que você tem quando leva um susto daqueles?",
+    "impostor": "Qual foi a maior vergonha alheia que você já passou no meio de um lugar cheio de gente?"
+  },
+  {
+    "tema": "Micos & Situações",
+    "pergunta": "Qual história hilária de bêbado seus amigos contam até hoje chorando de rir?",
+    "impostor": "Qual vacilo que você deu quase fez você ser expulso de um lugar público?"
+  },
+  {
+    "tema": "Micos & Situações",
+    "pergunta": "Qual desculpa esfarrapada genial colou direitinho para escapar de um compromisso chato?",
+    "impostor": "Qual mentira descarada você foi pego no pulo com a cara no chão?"
+  },
+  {
+    "tema": "Micos & Situações",
+    "pergunta": "Qual surpresa boa que fizeram para você te deixou sem palavras de emoção?",
+    "impostor": "Qual susto ou pegadinha de mau gosto te deixou com vontade de voar no pescoço de quem fez?"
+  },
+  {
+    "tema": "Micos & Situações",
+    "pergunta": "Se pudesse reviver um único dia perfeito da sua vida exatamente igual, qual seria?",
+    "impostor": "Qual dia trágico e azarado da sua vida você gostaria de apagar da memória para sempre?"
+  },
+  {
+    "tema": "Objetos & Invenções",
+    "pergunta": "Qual objeto na sua casa você considera a invenção mais confortável e indispensável?",
+    "impostor": "Qual tralha inútil você comprou por impulso e hoje só serve para acumular poeira?"
+  },
+  {
+    "tema": "Objetos & Invenções",
+    "pergunta": "Qual eletrodoméstico moderno economiza tempo e é uma bênção na cozinha?",
+    "impostor": "Qual aparelho velho faz um barulho ensurdecedor toda vez que é ligado?"
+  },
+  {
+    "tema": "Objetos & Invenções",
+    "pergunta": "Qual invenção da humanidade mudou a história para o bem do mundo?",
+    "impostor": "Qual arma ou invenção maligna causou a maior destruição e sofrimento humano?"
+  },
+  {
+    "tema": "Objetos & Invenções",
+    "pergunta": "Qual item de segurança você nunca sai de casa sem conferir se está com você?",
+    "impostor": "Qual tranqueira pesada as pessoas insistem em carregar na bolsa sem necessidade nenhuma?"
+  },
+  {
+    "tema": "Viagens & Aventura",
+    "pergunta": "Qual meio de transporte proporciona a viagem mais panorâmica, tranquila e agradável?",
+    "impostor": "Qual meio de transporte balança tanto que você fica enjoado e vomitando o caminho todo?"
+  },
+  {
+    "tema": "Viagens & Aventura",
+    "pergunta": "Qual aventura radical te daria uma dose inesquecível de adrenalina boa?",
+    "impostor": "Qual perigo imprudente seria uma loucura suicida que ninguém em sã consciência faria?"
+  },
+  {
+    "tema": "Viagens & Aventura",
+    "pergunta": "Qual monumento arquitetônico histórico te deixa de queixo caído pela imponência?",
+    "impostor": "Qual prédio moderno feio parece um caixote de concreto cinza sem graça?"
+  },
+  {
+    "tema": "Viagens & Aventura",
+    "pergunta": "Qual idioma estrangeiro soa mais elegante, sofisticado e poético aos ouvidos?",
+    "impostor": "Qual língua estrangeira parece um bando de engasgos e gritos agressivos?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "Qual é a sua maior qualidade pessoal que seus amigos mais valorizam em você?",
+    "impostor": "Qual é a sua mania mais chata e irritante que tira qualquer um do sério?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "Qual lição de vida valiosa você aprendeu e levará consigo para sempre?",
+    "impostor": "Qual conselho furado e idiota alguém te deu e você se arrepende de ter seguido?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "O que te dá mais esperança na humanidade e aquece o seu coração?",
+    "impostor": "O que na sociedade atual te dá um desânimo profundo com as pessoas?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "Qual talento secreto especial você gostaria de ter dominado com perfeição?",
+    "impostor": "Qual coisa básica que todo mundo sabe fazer você é um desastre completo?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "Qual cheiro de comida caseira te lembra as melhores memórias com a sua família?",
+    "impostor": "Qual remédio amargo ou xarope horrível sua mãe te forçava a tomar na infância?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "Qual é o maior luxo de tempo livre que você se permite curtir sem culpa?",
+    "impostor": "Qual hábito preguiçoso te faz perder horas do dia olhando para o nada?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "Qual vitória pessoal você mais celebrou com orgulho na sua vida até hoje?",
+    "impostor": "Qual derrota humilhante em um jogo você até hoje não engoliu direito?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "Qual é a pessoa viva ou histórica que você mais admira como modelo de coragem?",
+    "impostor": "Qual figura histórica foi o monstro mais cruel e covarde de todos os tempos?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "Qual sabor de bolo caseiro com café da tarde é o melhor abraço no estômago?",
+    "impostor": "Qual bolo de festa seco com glacê gorduroso é puro arrependimento na primeira mordida?"
+  },
+  {
+    "tema": "Pessoal & Filosofia",
+    "pergunta": "Qual detalhe simples do cotidiano é capaz de arrancar um sorriso sincero do seu rosto?",
+    "impostor": "Qual pequeno incômodo bobo estraga o seu bom humor em dois segundos?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual tipo de queijo é o mais derretido, cremoso e irresistível de comer?",
+    "impostor": "Qual tipo de queijo fedorento tem cheiro de chulé de mendigo?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual hambúrguer artesanal suculento é a sua maior perdição gastronômica?",
+    "impostor": "Qual hambúrguer congelado de caixinha parece borracha velha com molho rançoso?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual sopa ou caldo quentinho é perfeito para curar gripe e aquecer no frio?",
+    "impostor": "Qual água choca ou chá medicinal tem gosto amargo de mato podre?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual recheio de pastel de feira crocante você sempre pede com caldo de cana?",
+    "impostor": "Qual pastel de vento oleoso vem frio e com recheio estragado?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual doce de padaria é o mais recheado e fofinho para acompanhar o café?",
+    "impostor": "Qual pão duro como pedra de três dias atrás quase quebra os seus dentes?"
+  },
+  {
+    "tema": "Comida & Bebida",
+    "pergunta": "Qual corte de carne grelhada ao ponto derrete na boca com sal grosso?",
+    "impostor": "Qual comida crua ou gosmenta te faria cuspir imediatamente no guardanapo?"
+  },
+  {
+    "tema": "Humor & Vida Social",
+    "pergunta": "Qual piada ou trocadilho bobo sempre te faz rir como uma criança?",
+    "impostor": "Qual piada de tiozão no churrasco gera aquele silêncio mortal e constrangedor?"
+  },
+  {
+    "tema": "Humor & Vida Social",
+    "pergunta": "Qual apelido carinhoso que já te deram você gosta bastante?",
+    "impostor": "Qual apelido idiota ou zoação de infância te deixava com ódio mortal?"
+  },
+  {
+    "tema": "Humor & Vida Social",
+    "pergunta": "Qual companhia de amigo sempre transforma qualquer passeio furado em uma aventura divertida?",
+    "impostor": "Qual pessoa antissocial ou reclamona suga a energia de todo mundo na mesa?"
+  },
+  {
+    "tema": "Humor & Vida Social",
+    "pergunta": "Qual jogo de tabuleiro ou cartas gera as noites mais animadas com a galera?",
+    "impostor": "Qual jogo demorado e estressante sempre termina com alguém virando o tabuleiro de raiva?"
+  },
+  {
+    "tema": "Humor & Vida Social",
+    "pergunta": "Qual é o melhor jeito de quebrar o gelo e fazer novas amizades num lugar novo?",
+    "impostor": "Qual gafe social imperdoável queima o seu filme na primeira impressão?"
+  },
+  {
+    "tema": "Humor & Vida Social",
+    "pergunta": "Qual presente feito à mão é o mais comovente e especial de receber?",
+    "impostor": "Qual presente reciclado de outra pessoa veio até com a etiqueta do preço rasgada?"
+  },
+  {
+    "tema": "Cultura Pop & Geek",
+    "pergunta": "Qual sabre de luz de Star Wars ou arma sci-fi é a mais estilosa e poderosa?",
+    "impostor": "Qual arma tosca de brinquedo de camelô quebrava no primeiro golpe?"
+  },
+  {
+    "tema": "Cultura Pop & Geek",
+    "pergunta": "Qual anime ou desenho marcou a sua infância com lutas épicas inesquecíveis?",
+    "impostor": "Qual desenho moderno tem animação tão preguiçosa que parece rascunho de criança?"
+  },
+  {
+    "tema": "Cultura Pop & Geek",
+    "pergunta": "Qual monstro de RPG ou chefe de fase você derrotou com o maior orgulho?",
+    "impostor": "Qual chefe de jogo apelão e injusto te fez quase jogar o controle na parede?"
+  },
+  {
+    "tema": "Cultura Pop & Geek",
+    "pergunta": "Qual feitiço de Harry Potter você usaria para se defender de qualquer perigo?",
+    "impostor": "Qual maldição imperdoável você condenaria seu pior inimigo a sofrer?"
+  },
+  {
+    "tema": "Cultura Pop & Geek",
+    "pergunta": "Qual personagem de videogame você escolheria como seu parceiro de equipe leal?",
+    "impostor": "Qual NPC inútil de escolta anda mais devagar que você e morre em dois segundos?"
+  },
+  {
+    "tema": "Cultura Pop & Geek",
+    "pergunta": "Qual nave espacial de ficção científica é a mais rápida e lendária da galáxia?",
+    "impostor": "Qual lata velha espacial vivia quebrando o motor de dobra no pior momento?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual boteco de esquina tem o melhor atendimento camarada e petisco honesto?",
+    "impostor": "Qual fila interminável de banco sob o sol escaldante é o purgatório na Terra?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual feriado prolongado no calendário brasileiro é a maior bênção do ano?",
+    "impostor": "Qual segunda-feira chuvosa depois de um feriado bate a maior tristeza do mês?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual tradição de festa junina com quentão e fogueira é a mais acolhedora?",
+    "impostor": "Qual bombinha de são joão que estoura perto do ouvido quase te deixa surdo?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual programa de auditório de domingo clássico fazia a família inteira se reunir?",
+    "impostor": "Qual programa de fofoca sensacionalista vive inventando drama barato para dar audiência?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual doce típico de festa junina você devora até acabar o estoque da barraca?",
+    "impostor": "Qual pé de moleque duro quebra as obturações do dente na primeira dentada?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual motorista de aplicativo gente boa bateu aquele papo enriquecedor e mereceu 5 estrelas?",
+    "impostor": "Qual motorista maluco dirigiu costurando o trânsito e quase causou 5 acidentes na viagem?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual mercadinho de bairro tem o dono simpático que confia e anota no fiado?",
+    "impostor": "Qual caixa de supermercado lerdo empacou a fila inteira para trocar a bobina de papel?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual som de chuva no telhado de telha de barro embala o melhor sono da vida?",
+    "impostor": "Qual goteira maldita pingando bem em cima da sua cama te acordou de madrugada?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual praia tranquila do litoral brasileiro é o refúgio perfeito longe do barulho?",
+    "impostor": "Qual praia lotada cheia de farofa, caixa de som estourada e lixo na areia é um inferno?"
+  },
+  {
+    "tema": "Cotidiano Brasileiro",
+    "pergunta": "Qual sabor de pastel de feira tradicional você pede acompanhado de caldo de cana com limão?",
+    "impostor": "Qual pastel oleoso de rodoviária te deu um piriri imediato no meio da viagem?"
+  },
+  {
+    "tema": "Animais & Pets",
+    "pergunta": "Qual animal exótico você sonha em ver de pertinho num safári na África?",
+    "impostor": "Qual bicho perigoso você jamais gostaria de dar de cara sozinho no meio da mata?"
+  },
+  {
+    "tema": "Animais & Pets",
+    "pergunta": "Qual pássaro canta mais bonito e traz uma paz enorme ao amanhecer?",
+    "impostor": "Qual ave agressiva ou pombo imundo vive atacando quem passa na praça?"
+  },
+  {
+    "tema": "Animais & Pets",
+    "pergunta": "Qual mamífero aquático é o mais simpático, brincalhão e encantador dos mares?",
+    "impostor": "Qual criatura nojenta de tentáculos parece saída de um pesadelo cósmico?"
+  },
+  {
+    "tema": "Animais & Pets",
+    "pergunta": "Qual filhote de mamífero você acha tão fofo que não resiste a abraçar?",
+    "impostor": "Qual roedor ou ratazana enorme de esgoto causa o maior nojo do mundo?"
+  },
+  {
+    "tema": "Animais & Pets",
+    "pergunta": "Qual inseto é benéfico, colorido e lindo de ver voando num jardim florido?",
+    "impostor": "Qual inseto parasita pica a noite toda e deixa o corpo coçando sem parar?"
+  },
+  {
+    "tema": "Gastronomia & Paladar",
+    "pergunta": "Qual prato refinado de chef estrelado você comeria de joelhos de tão perfeito?",
+    "impostor": "Qual prato bizarro de outro país você acharia repugnante e nojento de comer?"
+  },
+  {
+    "tema": "Gastronomia & Paladar",
+    "pergunta": "Qual suco natural de fruta bem gelado é o ápice do refresco no verão?",
+    "impostor": "Qual xarope medicinal ou bebida rançosa tem o pior gosto amargo?"
+  },
+  {
+    "tema": "Gastronomia & Paladar",
+    "pergunta": "Qual bolo de aniversário confeitado é o mais esperado de uma festa?",
+    "impostor": "Qual doce rançoso e murcho que sobrou na geladeira há semanas ninguém come?"
+  },
+  {
+    "tema": "Gastronomia & Paladar",
+    "pergunta": "Qual molho para massa ou salada é o mais aveludado e saboroso?",
+    "impostor": "Qual maionese azeda e quente sob o sol causaria a pior diarreia da sua vida?"
+  },
+  {
+    "tema": "Gastronomia & Paladar",
+    "pergunta": "Qual aperitivo crocante de petisco acompanha perfeitamente uma conversa animada?",
+    "impostor": "Qual petisco gosmento ou cartilagem dura quase faz você engasgar?"
+  },
+  {
+    "tema": "Gastronomia & Paladar",
+    "pergunta": "Qual cereal matinal ou pão quente da manhã te dá mais energia e disposição?",
+    "impostor": "Qual mingau sem sal e grudento parece papa de hospital?"
+  },
+  {
+    "tema": "Gastronomia & Paladar",
+    "pergunta": "Qual corte de carne suína na brasa fica suculento e douradinho?",
+    "impostor": "Qual carne gordurosa e fria fica coalhada no prato dando ânsia?"
+  },
+  {
+    "tema": "Cinema & Streaming",
+    "pergunta": "Qual animação da Disney ou Pixar tem a mensagem mais tocante para todas as idades?",
+    "impostor": "Qual filme infantil com computação gráfica bizarra dá pesadelos nas crianças?"
+  },
+  {
+    "tema": "Cinema & Streaming",
+    "pergunta": "Qual herói de ação do cinema derrota os inimigos com as coreografias mais insanas?",
+    "impostor": "Qual capanga incompetente de filme morre com um único soco bobo do protagonista?"
+  },
+  {
+    "tema": "Cinema & Streaming",
+    "pergunta": "Qual saga épica de fantasia te transporta para um universo mágico incomparável?",
+    "impostor": "Qual franquia desgastada de Hollywood continua lançando continuações horríveis só por dinheiro?"
+  },
+  {
+    "tema": "Cinema & Streaming",
+    "pergunta": "Qual detetive da ficção resolve os mistérios mais complexos com pura genialidade?",
+    "impostor": "Qual personagem burro de filme de terror vai investigar o barulho no porão sozinho?"
+  },
+  {
+    "tema": "Cinema & Streaming",
+    "pergunta": "Qual comédia romântica clássica te deixa com o coração quentinho do começo ao fim?",
+    "impostor": "Qual casal sem química de novela parece que se odeia na vida real?"
+  },
+  {
+    "tema": "Música & Shows",
+    "pergunta": "Qual solo de guitarra ou instrumento musical é o mais lendário e arrepiante do rock?",
+    "impostor": "Qual instrumento estridente e desafinado dá dor de cabeça em qualquer ser humano?"
+  },
+  {
+    "tema": "Música & Shows",
+    "pergunta": "Qual festival de música reúne a melhor energia positiva e gente animada?",
+    "impostor": "Qual show muvucado debaixo de tempestade de lama foi o maior perrengue da sua vida?"
+  },
+  {
+    "tema": "Música & Shows",
+    "pergunta": "Qual música romântica seria perfeita para tocar na dança dos noivos?",
+    "impostor": "Qual música de dor de cotovelo e sofrência dá vontade de encher a cara no chão?"
+  },
+  {
+    "tema": "Música & Shows",
+    "pergunta": "Qual voz de cantor ou cantora é a mais suave, afinada e angelical do mundo?",
+    "impostor": "Qual cantor desafinado grita tanto no microfone que parece um bode berrando?"
+  },
+  {
+    "tema": "Videogames & Jogos",
+    "pergunta": "Qual jogo de mundo aberto tem o mapa mais lindo e rico para você explorar livremente?",
+    "impostor": "Qual jogo vazio, genérico e repetitivo cansa a paciência após 15 minutos?"
+  },
+  {
+    "tema": "Videogames & Jogos",
+    "pergunta": "Qual console clássico de videogame te deu as noites de jogatina mais marcantes da infância?",
+    "impostor": "Qual controle de videogame quebrado com drift no analógico só te faz passar raiva?"
+  },
+  {
+    "tema": "Videogames & Jogos",
+    "pergunta": "Qual jogo cooperativo com amigos fortalece os laços e rende muitas gargalhadas?",
+    "impostor": "Qual jogo competitivo online tem a comunidade mais tóxica, cheia de xingamentos e chiliques?"
+  },
+  {
+    "tema": "Videogames & Jogos",
+    "pergunta": "Qual trilha sonora de videogame é tão linda que você escuta até fora do jogo?",
+    "impostor": "Qual efeito sonoro repetitivo de jogo mobile faz você silenciar o celular na hora?"
+  },
+  {
+    "tema": "Tecnologia & Futuro",
+    "pergunta": "Qual tecnologia do futuro você mais espera ver criada antes de morrer?",
+    "impostor": "Qual distopia futurista com inteligência artificial te dá medo do futuro da humanidade?"
+  },
+  {
+    "tema": "Tecnologia & Futuro",
+    "pergunta": "Qual recurso do smartphone é o mais prático e salvador da sua rotina?",
+    "impostor": "Qual notificação inútil de aplicativo fica apitando o dia inteiro para encher o saco?"
+  },
+  {
+    "tema": "Tecnologia & Futuro",
+    "pergunta": "Qual dispositivo inteligente deixa a sua casa muito mais moderna e confortável?",
+    "impostor": "Qual aparelho tecnológico estragou misteriosamente um dia depois do fim da garantia?"
+  },
+  {
+    "tema": "Viagens & Cidades",
+    "pergunta": "Qual cidade histórica com ruas charmosas de pedra parece um conto de fadas medieval?",
+    "impostor": "Qual selva de pedra cinzenta e estressante não tem uma única árvore nem praça para respirar?"
+  },
+  {
+    "tema": "Viagens & Cidades",
+    "pergunta": "Qual cachoeira de águas puras e cristalinas recarrega a alma de qualquer pessoa?",
+    "impostor": "Qual esgoto a céu aberto tem aquele fedor insuportável de gás metano?"
+  },
+  {
+    "tema": "Viagens & Cidades",
+    "pergunta": "Qual ilha paradisíaca isolada no mundo seria o retiro ideal para se desconectar de tudo?",
+    "impostor": "Qual prisão de segurança máxima seria o lugar mais aterrorizante para passar a noite?"
+  },
+  {
+    "tema": "Viagens & Cidades",
+    "pergunta": "Qual estrada cênica à beira-mar proporciona o passeio de carro mais maravilhoso?",
+    "impostor": "Qual rodovia cheia de buracos e crateras destrói a suspensão de qualquer carro?"
+  },
+  {
+    "tema": "Vida Pessoal & Hábitos",
+    "pergunta": "Qual hobby relaxante você consegue passar horas praticando sem ver o tempo passar?",
+    "impostor": "Qual obrigação burocrática em cartório ou repartição pública é uma tortura sem fim?"
+  },
+  {
+    "tema": "Vida Pessoal & Hábitos",
+    "pergunta": "Qual tipo de elogio sobre o seu trabalho te deixa mais orgulhoso e realizado?",
+    "impostor": "Qual fofoca maldosa inventada pelas suas costas te deixaria com sangue nos olhos?"
+  },
+  {
+    "tema": "Vida Pessoal & Hábitos",
+    "pergunta": "Qual banho quentinho após um dia exaustivo lava todas as energias negativas do corpo?",
+    "impostor": "Qual banho de água gelada no inverno quando o chuveiro queima a resistência dá mais desespero?"
+  },
+  {
+    "tema": "Vida Pessoal & Hábitos",
+    "pergunta": "Qual abraço apertado de alguém especial cura qualquer tristeza na hora?",
+    "impostor": "Qual aperto de mão mole, úmido e sem firmeza dá uma agonia esquisita?"
+  },
+  {
+    "tema": "Vida Pessoal & Hábitos",
+    "pergunta": "Qual cama com lençóis limpos e travesseiro macio proporciona a melhor noite de sono?",
+    "impostor": "Qual colchão duro com mola pontuda espetando as costas te acorda com torcicolo?"
+  },
+  {
+    "tema": "Vida Pessoal & Hábitos",
+    "pergunta": "Qual risada gostosa de um amigo contagia todo mundo até ninguém aguentar mais falar?",
+    "impostor": "Qual risada forçada e estridente parece o motor engasgado de uma Kombi velha?"
+  },
+  {
+    "tema": "Vida Pessoal & Hábitos",
+    "pergunta": "Qual vitória merecida após muito esforço te fez chorar de alegria?",
+    "impostor": "Qual tropeço ou queda de cara no chão em público você fingiu que nada aconteceu?"
   }
 ];
 
