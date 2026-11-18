@@ -223,8 +223,18 @@ const HubOnline = {
       this.gameState = "playing";
       this.myCard = data.card;
       this.myHint = data.hint;
+      this.myCardData = data.cardData || null;
+      this.isPerguntaMode = !!data.isPerguntaMode;
+      this.perguntaReal = data.perguntaReal || "";
+      this.officialQuestion = null;
       if (HubGame && HubGame.onOnlineGameStarted) {
         HubGame.onOnlineGameStarted(data);
+      }
+    } else if (data.type === "SHOW_OFFICIAL_QUESTION") {
+      this.gameState = "question_revealed";
+      this.officialQuestion = data.question;
+      if (HubGame && HubGame.onOnlineShowOfficialQuestion) {
+        HubGame.onOnlineShowOfficialQuestion(data.question);
       }
     } else if (data.type === "GAME_REVEAL") {
       this.gameState = "revealed";
@@ -243,6 +253,7 @@ const HubOnline = {
   hostDistributeCards(assignedCardsMap, startsPlayerName, temaName, tableResultsData) {
     this.gameState = "playing";
     this.tableResults = tableResultsData;
+    this.officialQuestion = null;
 
     this.players.forEach(p => {
       const cardInfo = assignedCardsMap[p.id];
@@ -251,6 +262,9 @@ const HubOnline = {
       if (p.isHost) {
         this.myCard = cardInfo.card;
         this.myHint = cardInfo.hint;
+        this.myCardData = cardInfo;
+        this.isPerguntaMode = !!cardInfo.isPerguntaMode;
+        this.perguntaReal = cardInfo.perguntaReal || "";
       } else {
         const conn = this.connections[p.id];
         if (conn && conn.open) {
@@ -258,11 +272,23 @@ const HubOnline = {
             type: "GAME_START_PRIVATE",
             card: cardInfo.card,
             hint: cardInfo.hint,
+            cardData: cardInfo,
+            isPerguntaMode: !!cardInfo.isPerguntaMode,
+            perguntaReal: cardInfo.perguntaReal || "",
             startsPlayer: startsPlayerName,
             tema: temaName
           });
         }
       }
+    });
+  },
+
+  hostShowOfficialQuestion(questionText) {
+    this.gameState = "question_revealed";
+    this.officialQuestion = questionText;
+    this.broadcast({
+      type: "SHOW_OFFICIAL_QUESTION",
+      question: questionText
     });
   },
 

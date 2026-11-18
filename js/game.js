@@ -34,6 +34,11 @@ const HubGame = {
   jogadoresDuplas: ["Arthur", "Vitor", "João Pedro", "Coro", "Bia", "Ana Vitória", "Vinícius", "Gustavo"],
   jogadoresImpostor: ["Arthur", "Vitor", "João Pedro", "Coro", "Bia"],
   jogadoresMimica: ["Arthur", "Vitor", "João Pedro", "Coro", "Bia"],
+  jogadoresPergunta: ["Arthur", "Vitor", "João Pedro", "Coro", "Bia"],
+
+  // Estado Pergunta & Resposta (Invertido)
+  perguntaAtual: null,
+  perguntaEtapa: "cartas", // "cartas" | "falar" | "pergunta_revelada" | "resultado"
 
   // Estado Mímica
   mm: { placar: [], vez: 0, palavra: "", t: 60, timer: null, usados: [] },
@@ -86,6 +91,11 @@ const HubGame = {
     } catch (e) {}
 
     try {
+      const pq = JSON.parse(localStorage.getItem("hub_nomes_pergunta"));
+      if (pq && pq.length >= 3) this.jogadoresPergunta = pq;
+    } catch (e) {}
+
+    try {
       const ht = localStorage.getItem("hub_hint_type");
       if (ht) this.hintType = ht;
     } catch (e) {}
@@ -96,6 +106,7 @@ const HubGame = {
       localStorage.setItem("hub_nomes_duplas", JSON.stringify(this.jogadoresDuplas));
       localStorage.setItem("hub_nomes_impostor", JSON.stringify(this.jogadoresImpostor));
       localStorage.setItem("hub_nomes_mimica", JSON.stringify(this.jogadoresMimica));
+      localStorage.setItem("hub_nomes_pergunta", JSON.stringify(this.jogadoresPergunta));
       localStorage.setItem("hub_hint_type", this.hintType);
     } catch (e) {}
   },
@@ -106,12 +117,14 @@ const HubGame = {
     }
     if (this.modo === "impostor") return this.jogadoresImpostor;
     if (this.modo === "mimica") return this.jogadoresMimica;
+    if (this.modo === "pergunta") return this.jogadoresPergunta;
     return this.jogadoresDuplas;
   },
 
   setPlayers(arr) {
     if (this.modo === "impostor") this.jogadoresImpostor = arr;
     else if (this.modo === "mimica") this.jogadoresMimica = arr;
+    else if (this.modo === "pergunta") this.jogadoresPergunta = arr;
     else this.jogadoresDuplas = arr;
     this.saveData();
   },
@@ -356,12 +369,14 @@ const HubGame = {
     if (isHost) {
       const minPlayers = this.modo === "duplas" ? 6 : 3;
       const canStart = players.length >= minPlayers;
+      const modoLabel = this.modo === "pergunta" ? "❓ PERGUNTA & RESPOSTA" : this.modo.toUpperCase();
+      const startLabel = this.modo === "pergunta" ? "Iniciar Rodada de Perguntas ➔" : "Escolher Tema & Iniciar Partida ➔";
 
       html += `
         <div class="grid" style="grid-template-columns: 1fr; gap: 8px; margin-top: 14px;">
-          <button class="sec" data-action="online-change-mode">⚙️ Modo: ${this.modo.toUpperCase()}</button>
+          <button class="sec" data-action="online-change-mode">⚙️ Modo: ${modoLabel}</button>
           <button class="btn-confirm" data-action="online-host-choose-theme" ${!canStart ? 'disabled' : ''}>
-            ${canStart ? 'Escolher Tema & Iniciar Partida ➔' : `Mínimo de ${minPlayers} jogadores`}
+            ${canStart ? startLabel : `Mínimo de ${minPlayers} jogadores`}
           </button>
         </div>
       `;
@@ -381,6 +396,72 @@ const HubGame = {
 
     if (HubOnline.gameState === "revealed") {
       this.mostrarTabelaRevelacaoOnline();
+      return;
+    }
+
+    // Modo Pergunta & Resposta Online
+    if (HubOnline.isPerguntaMode) {
+      if (HubOnline.gameState === "question_revealed") {
+        card.style.background = "";
+        card.innerHTML = `
+          <div class="who-badge" style="background: var(--o); color: #fff;">📢 Pergunta Oficial da Rodada</div>
+          <div class="pergunta-box oficial-highlight">
+            "${HubOnline.officialQuestion || HubOnline.perguntaReal}"
+          </div>
+          <div class="pergunta-debate-box">
+            <p style="font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; color: var(--ink);">🕵️ Quem é o Impostor?</p>
+            <p style="font-size: 0.92rem; color: var(--mut); line-height: 1.45; margin: 0;">
+              Essa foi a pergunta que a maioria respondeu!<br>
+              Quem respondeu algo esquisito ou oposto? <b>Debatam e acusem o suspeito!</b>
+            </p>
+          </div>
+        `;
+        if (HubOnline.isHost) {
+          card.innerHTML += `
+            <button class="btn-confirm" data-action="online-host-reveal" style="margin-top: 12px; width: 100%; background: var(--bad); color: #fff;">
+              🎭 Revelar quem era o Impostor para Todos
+            </button>
+          `;
+        } else {
+          card.innerHTML += `
+            <p style="margin-top: 12px; font-weight: 700; color: var(--mut); font-size: 0.9rem;">Aguardando o anfitrião revelar o impostor...</p>
+          `;
+        }
+        return;
+      }
+
+      if (!this.visivel) {
+        card.style.background = "";
+        card.innerHTML = `
+          <div class="who-badge" style="background: var(--o); color: #fff;">❓ Sala Online</div>
+          <div class="who" style="margin: 8px 0 12px;">${HubOnline.playerName}</div>
+          <p style="margin: 8px 0 14px;">Toque no botão abaixo para ver sua pergunta secreta.</p>
+          <button class="btn-confirm" data-action="online-toggle-word">👁️ Ver Minha Pergunta</button>
+        `;
+      } else {
+        card.style.background = "";
+        card.innerHTML = `
+          <div class="who-badge" style="background: var(--o); color: #fff;">❓ Sua Pergunta Secreta</div>
+          <div class="who" style="margin: 6px 0 10px;">${HubOnline.playerName}</div>
+          <div class="pergunta-box">${cardWord}</div>
+          <p class="pergunta-dica">
+            🧠 <b>Pense na sua resposta e memorize-a bem.</b><br>
+            Você dirá apenas sua resposta em voz alta para os outros jogadores!
+          </p>
+          <button class="sec" data-action="online-toggle-word" style="margin-top: 10px;">🙈 Esconder Pergunta</button>
+        `;
+      }
+
+      if (HubOnline.isHost) {
+        card.innerHTML += `
+          <div style="margin-top: 14px; border-top: 2px dashed var(--ink); padding-top: 10px;">
+            <p style="font-size: 0.85rem; color: var(--mut); margin-bottom: 8px;">Começa respondendo: <b>${HubOnline.startsPlayer || 'Anfitrião'}</b></p>
+            <button class="btn-confirm" data-action="online-pergunta-mostrar-oficial">
+              📢 Todos responderam? Mostrar Pergunta Oficial ➔
+            </button>
+          </div>
+        `;
+      }
       return;
     }
 
@@ -475,6 +556,10 @@ const HubGame = {
     this.renderOnlineJogoClient();
   },
 
+  onOnlineShowOfficialQuestion(question) {
+    this.renderOnlineJogoClient();
+  },
+
   onOnlineBackToLobby() {
     this.showScreen("online_lobby");
   },
@@ -508,6 +593,13 @@ const HubGame = {
             <small>3 a 20 jogadores · Palavras semelhantes, descubra o diferente</small>
           </div>
         </button>
+        <button class="modo" data-action="set-modo" data-value="pergunta" style="background: var(--o);">
+          <span class="em">❓</span>
+          <div>
+            <b>Pergunta & Resposta (Infiltrado)</b>
+            <small>3 a 20 jogadores · Responda sua pergunta... mas o impostor tem outra!</small>
+          </div>
+        </button>
       </div>
     `;
 
@@ -517,7 +609,8 @@ const HubGame = {
 
   // ================= JOGADORES & CONFIGURAÇÃO DA DICA ================= //
   renderJogadores() {
-    this.elements.subText.textContent = `Configurando jogadores (${this.modo.toUpperCase()})`;
+    const modoTitle = this.modo === "pergunta" ? "PERGUNTA & RESPOSTA" : this.modo.toUpperCase();
+    this.elements.subText.textContent = `Configurando jogadores (${modoTitle})`;
     this.hideActionButtons();
 
     const players = this.getPlayers();
@@ -555,8 +648,22 @@ const HubGame = {
       `;
     }
 
-    // Configuração do Tipo de Dica (Palavra difícil vs Frase curta)
-    if (this.modo !== "mimica") {
+    // Modo Pergunta & Resposta (Invertido)
+    if (this.modo === "pergunta") {
+      const impCount = this.getOtherImpCount();
+      html += `
+        <div class="game-info-badge">
+          <span>❓ <b>Pergunta Secreta</b></span>
+          <span>🕵️ <b>${impCount}</b> infiltrado${impCount > 1 ? "s" : ""}</span>
+        </div>
+        <div style="background: #ffffff; border: 2px dashed var(--ink); border-radius: 10px; padding: 10px; margin: 10px 0; font-size: 0.85rem; color: var(--mut); line-height: 1.4;">
+          💡 <b>Regra do Jogo:</b> Cada pessoa vê uma pergunta secreta no celular. O infiltrado recebe uma pergunta parecida ou oposta sem saber! Depois todos falam sua resposta e tentam descobrir quem recebeu a pergunta diferente!
+        </div>
+      `;
+    }
+
+    // Configuração do Tipo de Dica (Palavra difícil vs Frase curta) - Apenas para Duplas e Impostor
+    if (this.modo !== "mimica" && this.modo !== "pergunta") {
       html += `
         <div class="opt">
           <span>💡 Dica do impostor</span>
@@ -579,9 +686,10 @@ const HubGame = {
     if (this.modo !== "duplas") {
       const maxImp = Math.max(1, Math.ceil(players.length / 2) - 1);
       const currImp = this.getOtherImpCount();
+      const impLabel = this.modo === "mimica" ? "🎭 Diferentes" : (this.modo === "pergunta" ? "❓ Infiltrados" : "🕵️ Impostores");
       html += `
         <div class="opt">
-          <span>${this.modo === "mimica" ? "🎭 Diferentes" : "🕵️ Impostores"}</span>
+          <span>${impLabel}</span>
           <div class="seg">
       `;
       for (let n = 1; n <= 3; n++) {
@@ -594,10 +702,11 @@ const HubGame = {
       html += `</div></div>`;
     }
 
+    const btnConfirmText = this.modo === "pergunta" ? "Iniciar Rodada de Perguntas ➔" : "Continuar para Temas ➔";
     html += `
       <div class="grid" style="grid-template-columns: 1fr; margin-top: 14px; gap: 8px">
         <button class="sec" data-action="add-player" ${players.length >= 20 ? 'disabled' : ''}>+ Adicionar jogador</button>
-        <button class="btn-confirm" data-action="confirm-players">Continuar para Temas ➔</button>
+        <button class="btn-confirm" data-action="confirm-players">${btnConfirmText}</button>
       </div>
     `;
 
@@ -731,6 +840,8 @@ const HubGame = {
 
     if (this.modo === "mimica") {
       this.sortearMimica();
+    } else if (this.modo === "pergunta") {
+      this.sortearPergunta();
     } else {
       this.sortearPadrao();
     }
@@ -862,8 +973,111 @@ const HubGame = {
     this.showScreen("jogo");
   },
 
+  sortearPergunta() {
+    const questions = typeof getPerguntasInvertidas === "function" ? getPerguntasInvertidas() : (typeof PERGUNTAS_INVERTIDAS !== "undefined" ? PERGUNTAS_INVERTIDAS : []);
+    const players = this.getPlayers();
+    const N = players.length;
+    const nI = this.getOtherImpCount();
+
+    let livres = questions.filter((q, idx) => this.usadosP.indexOf(idx) < 0);
+    if (!livres.length) {
+      this.usadosP = [];
+      livres = questions.slice();
+    }
+
+    const escolhida = livres[this.randomInt(livres.length)];
+    const qIdx = questions.indexOf(escolhida);
+    this.usadosP.push(qIdx);
+    this.perguntaAtual = escolhida;
+    this.perguntaEtapa = "cartas";
+
+    let cand = players.filter(x => x !== this.ultInicia);
+    if (!cand.length) cand = players.slice();
+    this.inicia = cand[this.randomInt(cand.length)];
+    this.ultInicia = this.inicia;
+
+    let indices = [];
+    for (let i = 0; i < N; i++) indices.push(i);
+    let shuffledIndices = this.shuffle(indices);
+    for (let attempt = 0; attempt < 20; attempt++) {
+      const imps = shuffledIndices.slice(0, nI).map(k => players[k]);
+      if (!imps.some(p => this.ultImp.indexOf(p) >= 0)) break;
+      shuffledIndices = this.shuffle(indices);
+    }
+    const impIndices = shuffledIndices.slice(0, nI);
+    this.ultImp = impIndices.map(k => players[k]);
+
+    this.cartas = [];
+    players.forEach((p, idx) => {
+      const isImp = impIndices.indexOf(idx) >= 0;
+      this.cartas.push({
+        isImp: isImp,
+        pergunta: isImp ? escolhida.impostor : escolhida.pergunta,
+        jogador: p
+      });
+    });
+
+    this.dicasI = [];
+    this.indiceAtual = 0;
+    this.visivel = false;
+    this.visto = false;
+    this.showScreen("jogo");
+  },
+
   // Sorteio Online (distribuição privada entre os celulares)
   iniciarPartidaOnline() {
+    if (this.modo === "pergunta") {
+      const questions = typeof getPerguntasInvertidas === "function" ? getPerguntasInvertidas() : (typeof PERGUNTAS_INVERTIDAS !== "undefined" ? PERGUNTAS_INVERTIDAS : []);
+      const players = HubOnline.players;
+      const N = players.length;
+      const nimp = this.getOtherImpCount();
+
+      let livres = questions.filter((q, idx) => this.usadosP.indexOf(idx) < 0);
+      if (!livres.length) {
+        this.usadosP = [];
+        livres = questions.slice();
+      }
+      const escolhida = livres[this.randomInt(livres.length)];
+      const qIdx = questions.indexOf(escolhida);
+      this.usadosP.push(qIdx);
+      this.perguntaAtual = escolhida;
+
+      let cand = players.map(p => p.name);
+      const starts = cand[this.randomInt(cand.length)];
+
+      let indices = [];
+      for (let i = 0; i < N; i++) indices.push(i);
+      let shuffledIndices = this.shuffle(indices);
+      const impIndices = shuffledIndices.slice(0, nimp);
+      this.ultImp = impIndices.map(k => players[k].name);
+
+      const assignedMap = {};
+      const tableResults = [];
+
+      players.forEach((p, idx) => {
+        const isImp = impIndices.indexOf(idx) >= 0;
+        const pPergunta = isImp ? escolhida.impostor : escolhida.pergunta;
+        assignedMap[p.id] = {
+          card: pPergunta,
+          hint: null,
+          isImp: isImp,
+          isPerguntaMode: true,
+          perguntaReal: escolhida.pergunta,
+          perguntaImpostor: escolhida.impostor
+        };
+        tableResults.push({
+          name: p.name,
+          card: isImp ? `IMPOSTOR (${pPergunta})` : `OFICIAL (${pPergunta})`,
+          isImp: isImp
+        });
+      });
+
+      HubOnline.hostDistributeCards(assignedMap, starts, "Pergunta & Resposta", tableResults);
+      this.visivel = false;
+      this.showScreen("online_jogo_client");
+      return;
+    }
+
     const pool = GameFilters.getWordsForTheme(this.tema);
     const players = HubOnline.players;
     const N = players.length;
@@ -926,6 +1140,99 @@ const HubGame = {
     againBtn.style.display = "none";
     trocarBtn.style.display = "none";
     revelarBtn.style.display = "none";
+
+    // MODO PERGUNTA & RESPOSTA (INVERTIDO / IMPOSTOR)
+    if (this.modo === "pergunta") {
+      // Quando todos os jogadores já viram a tela
+      if (this.indiceAtual >= players.length) {
+        card.style.background = "";
+        mainBtn.style.display = "none";
+        proxBtn.style.display = "none";
+
+        // Etapa 2: Pergunta oficial revelada na tela (antes de revelar quem é o impostor)
+        if (this.perguntaEtapa === "pergunta_revelada") {
+          this.elements.subText.textContent = "Debatam quem respondeu uma pergunta diferente!";
+          card.innerHTML = `
+            <div class="who-badge" style="background: var(--o); color: #fff;">📢 Pergunta Oficial da Rodada</div>
+            <div class="pergunta-box oficial-highlight">
+              "${this.perguntaAtual.pergunta}"
+            </div>
+            <div class="pergunta-debate-box">
+              <p style="font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; color: var(--ink);">🕵️ Quem é o Impostor?</p>
+              <p style="font-size: 0.92rem; color: var(--mut); line-height: 1.45; margin: 0;">
+                Essa foi a pergunta que a maioria respondeu!<br>
+                Quem respondeu algo suspeito, esquisito ou oposto do que deveria?<br>
+                <b>Debatam e acusem o suspeito antes de revelar!</b>
+              </p>
+            </div>
+            <button class="btn-confirm" data-action="pergunta-revelar-impostor" style="margin-top: 10px; width: 100%; background: var(--bad); color: #fff;">
+              🎭 Revelar quem era o Impostor ➔
+            </button>
+          `;
+          return;
+        }
+
+        // Etapa 3: Resultado e revelação do impostor
+        if (this.perguntaEtapa === "resultado") {
+          this.mostrarTabelaRevelacao();
+          return;
+        }
+
+        // Etapa 1: Fase de falar as respostas em voz alta
+        this.elements.subText.textContent = "Respondam em voz alta, um de cada vez!";
+        card.innerHTML = `
+          <div class="who-badge" style="background: var(--o); color: #fff;">🗣️ Hora das Respostas</div>
+          <div class="who success-title" style="margin: 8px 0 10px;">Todos já viram!</div>
+          <div class="pergunta-phase-box">
+            <div style="color: var(--mut); font-size: 0.88rem; font-weight: 700;">QUEM COMEÇA RESPONDENDO:</div>
+            <div class="word starter-word" style="font-size: 1.55rem; margin: 6px 0 10px;">${this.inicia}</div>
+            <p style="font-size: 0.95rem; line-height: 1.45; margin: 0;">
+              👉 Em roda, cada um deve falar <b>apenas a sua resposta</b> em voz alta!<br>
+              ⚠️ <b>Não leiam a pergunta</b>, apenas digam sua resposta!<br>
+              <small style="color: var(--mut); font-weight: 700;">(Dica: preste muita atenção na resposta de todo mundo)</small>
+            </p>
+          </div>
+          <button class="btn-confirm" data-action="pergunta-mostrar-oficial" style="margin-top: 14px; width: 100%;">
+            📢 Todos já responderam? Revelar Pergunta Oficial ➔
+          </button>
+        `;
+        return;
+      }
+
+      // Passa celular: cada um vê sua pergunta secreta
+      mainBtn.style.display = "block";
+      proxBtn.style.display = "block";
+      proxBtn.disabled = !this.visto;
+      proxBtn.style.opacity = this.visto ? "1" : "0.4";
+
+      const jogadorNome = players[this.indiceAtual];
+      const cObj = this.cartas[this.indiceAtual];
+
+      if (!this.visivel) {
+        card.style.background = "";
+        card.innerHTML = `
+          <div class="who-badge" style="background: var(--o); color: #fff;">❓ Pergunta Secreta</div>
+          <div class="who" style="margin: 8px 0 6px;">${jogadorNome}</div>
+          <p style="margin: 8px 0 0">
+            ${this.visto ? 'Pronto! Agora passe para a próxima pessoa.' : 'Só você deve olhar a tela agora.'}
+          </p>
+        `;
+        mainBtn.textContent = `Ver pergunta de ${jogadorNome}`;
+      } else {
+        card.style.background = ""; // Fundo neutro sem entregar nada visualmente!
+        card.innerHTML = `
+          <div class="who-badge" style="background: var(--o); color: #fff;">❓ Sua Pergunta Secreta</div>
+          <div class="who" style="margin: 6px 0 10px;">${jogadorNome}</div>
+          <div class="pergunta-box">${cObj.pergunta}</div>
+          <p class="pergunta-dica">
+            🧠 <b>Pense na sua resposta e memorize-a bem.</b><br>
+            Não fale nada agora! Você dirá apenas sua resposta em voz alta depois que todos tiverem visto o celular.
+          </p>
+        `;
+        mainBtn.textContent = "Esconder pergunta";
+      }
+      return;
+    }
 
     // Todos viram
     if (this.indiceAtual >= players.length) {
@@ -1002,6 +1309,31 @@ const HubGame = {
   mostrarTabelaRevelacao() {
     const card = this.elements.card;
     card.style.background = "";
+
+    if (this.modo === "pergunta") {
+      card.innerHTML = `
+        <div class="who success-title" style="margin-bottom: 8px;">🎭 Revelação Final!</div>
+        <div class="impostor-badge-reveal">
+          🕵️ O Impostor era: <b>${this.ultImp.join(' e ')}</b>
+        </div>
+        <div style="margin: 10px 0; text-align: left; background: #fff; padding: 12px; border-radius: 10px; border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--ink);">
+          <div style="color: var(--bad); font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Pergunta que o Impostor respondeu:</div>
+          <div style="font-weight: 700; font-size: 1.05rem; margin: 4px 0 12px; color: var(--ink);">"${this.perguntaAtual.impostor}"</div>
+          <div style="color: #27ae60; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Pergunta que a Maioria respondeu:</div>
+          <div style="font-weight: 700; font-size: 1.05rem; margin-top: 4px; color: var(--ink);">"${this.perguntaAtual.pergunta}"</div>
+        </div>
+        <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px;">
+          <button class="btn-confirm" data-action="pergunta-jogar-novamente">🎲 Nova Pergunta</button>
+          <button class="sec" data-action="nav-modo">🔄 Trocar Modo</button>
+        </div>
+      `;
+      this.elements.proxBtn.style.display = "none";
+      this.elements.mainBtn.style.display = "none";
+      this.elements.againBtn.style.display = "none";
+      this.elements.trocarBtn.style.display = "none";
+      this.elements.revelarBtn.style.display = "none";
+      return;
+    }
 
     if (this.modo === "mimica") {
       card.innerHTML = `
@@ -1179,14 +1511,38 @@ const HubGame = {
           break;
 
         case "online-change-mode":
-          const modos = ["duplas", "impostor", "mimica"];
+          const modos = ["duplas", "impostor", "mimica", "pergunta"];
           const nextModo = modos[(modos.indexOf(this.modo) + 1) % modos.length];
           this.modo = nextModo;
           this.renderOnlineLobby();
           break;
 
+        case "online-pergunta-mostrar-oficial":
+          const qText = this.perguntaAtual ? this.perguntaAtual.pergunta : HubOnline.perguntaReal;
+          HubOnline.hostShowOfficialQuestion(qText);
+          this.renderOnlineJogoClient();
+          break;
+
+        case "pergunta-mostrar-oficial":
+          this.perguntaEtapa = "pergunta_revelada";
+          this.renderJogo();
+          break;
+
+        case "pergunta-revelar-impostor":
+          this.perguntaEtapa = "resultado";
+          this.renderJogo();
+          break;
+
+        case "pergunta-jogar-novamente":
+          this.sortearPergunta();
+          break;
+
         case "online-host-choose-theme":
-          this.showScreen("temas");
+          if (this.modo === "pergunta") {
+            this.iniciarPartida("Perguntas");
+          } else {
+            this.showScreen("temas");
+          }
           break;
 
         case "online-toggle-word":
@@ -1264,7 +1620,17 @@ const HubGame = {
 
         case "confirm-players":
           this.readPlayerInputs();
-          this.showScreen("temas");
+          const pListConf = this.getPlayers();
+          const minPConf = this.modo === "duplas" ? 6 : 3;
+          if (pListConf.length < minPConf) {
+            alert(`O modo ${this.modo === "pergunta" ? "PERGUNTA & RESPOSTA" : this.modo.toUpperCase()} precisa de pelo menos ${minPConf} jogadores!`);
+            return;
+          }
+          if (this.modo === "pergunta") {
+            this.iniciarPartida("Perguntas");
+          } else {
+            this.showScreen("temas");
+          }
           break;
 
         case "select-tema":

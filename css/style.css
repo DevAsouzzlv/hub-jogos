@@ -572,3 +572,73 @@ tr.imp td {
   background: var(--ink);
   border-radius: 4px;
 }
+
+
+/* ==========================================================================
+   ESTILOS DO MODO PERGUNTA & RESPOSTA (INVERTIDO / IMPOSTOR)
+   ========================================================================== */
+.pergunta-box {
+  background: #ffffff;
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  padding: 16px 14px;
+  margin: 12px 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.45;
+  color: var(--ink);
+  box-shadow: 4px 4px 0px var(--ink);
+  word-break: break-word;
+}
+
+.pergunta-box.oficial-highlight {
+  background: #fff9db;
+  border-color: var(--ink);
+  font-size: 1.25rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.pergunta-dica {
+  font-size: 0.88rem;
+  color: var(--mut);
+  line-height: 1.4;
+  margin: 8px 0;
+}
+
+.pergunta-phase-box {
+  background: #f8f9fa;
+  border: 2px dashed var(--ink);
+  border-radius: 12px;
+  padding: 14px 12px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.pergunta-debate-box {
+  background: #eef2ff;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 14px 12px;
+  margin: 12px 0;
+  text-align: center;
+}
+
+.pergunta-result-box {
+  background: #ffffff;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.impostor-badge-reveal {
+  background: #ffd1dc;
+  color: #c0392b;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  box-shadow: 3px 3px 0px var(--ink);
+  margin-bottom: 12px;
+  text-align: center;
+}

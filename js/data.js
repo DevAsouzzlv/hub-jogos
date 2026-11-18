@@ -107034,3 +107034,512 @@ const PARES = {
     "Turquia|Marrocos"
   ]
 };
+
+// BANCO DE PERGUNTAS & RESPOSTAS (MODO INVERTIDO / IMPOSTOR)
+// O impostor recebe uma pergunta invertida ou contrastante e responde sem saber que é o impostor!
+const PERGUNTAS_INVERTIDAS = [
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual é o lugar mais bonito do mundo?",
+    "impostor": "Qual é o lugar mais feio ou horroroso do mundo?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Para onde seria a viagem dos seus sonhos para relaxar no paraíso?",
+    "impostor": "Qual é o pior lugar do planeta para você ser forçado a passar as férias?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Se você pudesse morar em qualquer país amanhã, qual seria?",
+    "impostor": "Em qual país ou lugar perigoso você nunca pisaria os pés por nada?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual ponto turístico famoso você mais tem vontade de tirar uma foto?",
+    "impostor": "Qual ponto turístico famoso é uma perda de tempo total e decepcionante?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual lugar da sua cidade é o melhor para levar alguém especial?",
+    "impostor": "Qual lugar da sua cidade é perigoso, sujo ou você evita a todo custo?"
+  },
+  {
+    "tema": "Comidas & Sabores",
+    "pergunta": "Qual é a comida mais deliciosa para um jantar especial e romântico?",
+    "impostor": "Qual é a comida mais nojenta ou com o pior cheiro que você conhece?"
+  },
+  {
+    "tema": "Comidas & Sabores",
+    "pergunta": "Qual sobremesa você comeria todos os dias da sua vida sem enjoar?",
+    "impostor": "Qual comida ou remédio tem o gosto mais intragável e amargo de engolir?"
+  },
+  {
+    "tema": "Comidas & Sabores",
+    "pergunta": "O que não pode faltar em um hambúrguer artesanal perfeito?",
+    "impostor": "O que estragaria completamente uma comida se você encontrasse no meio do prato?"
+  },
+  {
+    "tema": "Comidas & Sabores",
+    "pergunta": "Qual comida típica de festa de aniversário é a mais gostosa de todas?",
+    "impostor": "Qual prato ruim te serviram que você teve que disfarçar para não cuspir?"
+  },
+  {
+    "tema": "Comidas & Sabores",
+    "pergunta": "Qual bebida gelada é a mais refrescante em um dia de calor escaldante?",
+    "impostor": "Qual bebida tem um gosto horrível que você cuspiria na primeira golada?"
+  },
+  {
+    "tema": "Cinema & Filmes",
+    "pergunta": "Qual filme emocionante você assistiria dez vezes seguidas sem cansar?",
+    "impostor": "Qual o filme mais horrível e vergonhoso que você já tentou assistir na vida?"
+  },
+  {
+    "tema": "Cinema & Filmes",
+    "pergunta": "Qual série você maratonou do começo ao fim sem conseguir piscar?",
+    "impostor": "Qual série ou programa é tão chato que você dorme nos primeiros 5 minutos?"
+  },
+  {
+    "tema": "Cinema & Filmes",
+    "pergunta": "Qual personagem de filme você gostaria de ser pela inteligência e estilo?",
+    "impostor": "Qual personagem patético de filme você morreria de vergonha de ser?"
+  },
+  {
+    "tema": "Cinema & Filmes",
+    "pergunta": "Qual filme clássico de desenho ou animação é uma obra-prima absoluta?",
+    "impostor": "Qual desenho infantil é bizarro, irritante ou te dava pesadelos?"
+  },
+  {
+    "tema": "Cinema & Filmes",
+    "pergunta": "Qual vilão do cinema foi tão marcante que quase te convenceu a torcer por ele?",
+    "impostor": "Qual vilão fraco e ridículo foi derrotado da forma mais vergonhosa?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Qual superpoder incrível você escolheria para salvar o mundo e combater o crime?",
+    "impostor": "Qual seria o poder mais inútil, tosco e vergonhoso de se ter no dia a dia?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Se você pudesse se teletransportar para qualquer lugar agora, para onde iria?",
+    "impostor": "Qual lugar fechado, apertado ou nojento seria seu pior pesadelo ficar preso?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Se você tivesse 24 horas de invisibilidade, o que faria de mais divertido?",
+    "impostor": "O que alguém envergonhado faria para se esconder depois de cometer um crime bobo?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Qual animal mitológico ou criatura lendária você gostaria que existisse de verdade?",
+    "impostor": "Qual monstro aterrorizante você morreria de medo de encontrar no escuro?"
+  },
+  {
+    "tema": "Profissões & Trabalho",
+    "pergunta": "Qual profissão você mais admira e considera heroica ou essencial?",
+    "impostor": "Qual profissão você nunca teria nem se te pagassem um milhão de reais por mês?"
+  },
+  {
+    "tema": "Profissões & Trabalho",
+    "pergunta": "Qual emprego parece super divertido e dos sonhos de qualquer pessoa?",
+    "impostor": "Qual trabalho é extremamente estressante, chato ou desgastante mentalmente?"
+  },
+  {
+    "tema": "Profissões & Trabalho",
+    "pergunta": "Qual habilidade profissional deixa qualquer pessoa instantaneamente atraente?",
+    "impostor": "Qual mania ou grosseria no ambiente de trabalho faz alguém ser odiado por todos?"
+  },
+  {
+    "tema": "Famosos & Celebridades",
+    "pergunta": "Qual celebridade famosa você adoraria ter como melhor amigo(a) de infância?",
+    "impostor": "Qual pessoa pública você acha mais chata, insuportável e irritante de aguentar?"
+  },
+  {
+    "tema": "Famosos & Celebridades",
+    "pergunta": "Qual cantor(a) ou banda você pagaria qualquer valor para ver na primeira fila?",
+    "impostor": "Qual artista musical você mudaria de estação ou abaixaria o volume na hora?"
+  },
+  {
+    "tema": "Famosos & Celebridades",
+    "pergunta": "Qual apresentador de TV brasileiro é o mais carismático de todos os tempos?",
+    "impostor": "Qual figura da TV é a mais sem graça, forçada ou constrangedora?"
+  },
+  {
+    "tema": "Animais & Natureza",
+    "pergunta": "Qual animal dócil e fofo você adoraria ter dormindo na sua cama?",
+    "impostor": "Qual bicho asqueroso, venenoso ou perigoso te faria sair correndo aos gritos?"
+  },
+  {
+    "tema": "Animais & Natureza",
+    "pergunta": "Qual animal selvagem é o mais imponente e majestoso de se ver na natureza?",
+    "impostor": "Qual bicho irritante ou praga urbana você exterminaria do planeta se pudesse?"
+  },
+  {
+    "tema": "Animais & Natureza",
+    "pergunta": "Qual pássaro ou ave é a mais linda e admirável pelos seus cantos ou cores?",
+    "impostor": "Qual ave barulhenta ou bizarra mais tira a sua paz pela manhã?"
+  },
+  {
+    "tema": "Objetos & Casa",
+    "pergunta": "Qual é o objeto mais indispensável e valioso que você tem na sua casa?",
+    "impostor": "O que você tem guardado na sua casa que é totalmente inútil e só junta poeira?"
+  },
+  {
+    "tema": "Objetos & Casa",
+    "pergunta": "O que você não sai de casa sem levar no bolso ou na mochila por nada?",
+    "impostor": "O que você jogaria no lixo reciclável ou no entulho sem pensar duas vezes?"
+  },
+  {
+    "tema": "Objetos & Casa",
+    "pergunta": "Qual eletrodoméstico moderno revolucionou e facilitou a sua rotina?",
+    "impostor": "Qual geringonça vendida na TV parece uma porcaria que quebra no primeiro dia?"
+  },
+  {
+    "tema": "Objetos & Casa",
+    "pergunta": "O que deixa a sua cama e quarto extremamente aconchegantes?",
+    "impostor": "O que tem no chão de um banheiro sujo que te dá nojo só de olhar?"
+  },
+  {
+    "tema": "Dinheiro & Sonhos",
+    "pergunta": "O que você compraria primeiro se ganhasse 50 milhões de reais na loteria hoje?",
+    "impostor": "O que uma pessoa falida ou desesperada venderia correndo para pagar as contas?"
+  },
+  {
+    "tema": "Dinheiro & Sonhos",
+    "pergunta": "Qual foi o melhor presente que você já recebeu de alguém na sua vida?",
+    "impostor": "Qual foi o presente mais tosco, feio ou sem noção que você já ganhou e fingiu gostar?"
+  },
+  {
+    "tema": "Dinheiro & Sonhos",
+    "pergunta": "O que traz verdadeira paz de espírito em um fim de tarde de domingo?",
+    "impostor": "O que te dá um desespero profundo e estresse imediato só de pensar?"
+  },
+  {
+    "tema": "Música & Ritmos",
+    "pergunta": "Qual música perfeita te dá energia positiva e faz todo mundo cantar junto?",
+    "impostor": "Qual música chiclete insuportável você odeia e não aguenta mais ouvir?"
+  },
+  {
+    "tema": "Música & Ritmos",
+    "pergunta": "Qual instrumento musical produz o som mais lindo e emocionante do mundo?",
+    "impostor": "Qual barulho ensurdecedor ou som irritante te dá dor de cabeça instantânea?"
+  },
+  {
+    "tema": "Música & Ritmos",
+    "pergunta": "Qual ritmo musical é o mais contagiante para dançar em uma festa?",
+    "impostor": "Qual estilo musical você acha o mais desanimado, barulhento ou repetitivo?"
+  },
+  {
+    "tema": "Games & Jogos",
+    "pergunta": "Qual videogame ou jogo marcou a sua vida como uma obra-prima inesquecível?",
+    "impostor": "Qual jogo é extremamente frustrante, chato ou cheio de bugs que dá raiva?"
+  },
+  {
+    "tema": "Games & Jogos",
+    "pergunta": "Qual personagem icônico dos videogames é o mais corajoso e lendário?",
+    "impostor": "Qual inimigo genérico e patético de jogo você derrota com apenas um golpe fraco?"
+  },
+  {
+    "tema": "Games & Jogos",
+    "pergunta": "Qual jogo de tabuleiro ou cartas rende as noites mais divertidas com os amigos?",
+    "impostor": "Qual brincadeira ou jogo de infância sempre terminava em briga feia ou choro?"
+  },
+  {
+    "tema": "Hábitos & Cotidiano",
+    "pergunta": "Qual hábito saudável que você tem te dá mais sensação de orgulho e disciplina?",
+    "impostor": "Qual mania nojenta ou falta de higiene você acha imperdoável em alguém?"
+  },
+  {
+    "tema": "Hábitos & Cotidiano",
+    "pergunta": "Qual é a melhor parte da sua rotina diária que você mais espera ansiosamente?",
+    "impostor": "Qual é a pior obrigação ou tarefa chata do dia que você faz com preguiça?"
+  },
+  {
+    "tema": "Hábitos & Cotidiano",
+    "pergunta": "Qual qualidade no caráter de uma pessoa faz você confiar nela de olhos fechados?",
+    "impostor": "Qual defeito de caráter faz você se afastar de alguém imediatamente?"
+  },
+  {
+    "tema": "Relacionamentos",
+    "pergunta": "Qual é a surpresa romântica mais fofa que alguém poderia preparar para você?",
+    "impostor": "Qual o maior mico ou desastre que poderia acontecer no primeiro encontro romântico?"
+  },
+  {
+    "tema": "Relacionamentos",
+    "pergunta": "O que torna uma amizade verdadeira durar para sempre?",
+    "impostor": "Qual traição ou falsidade imperdoável destruiria uma amizade na hora?"
+  },
+  {
+    "tema": "Sentidos & Sensações",
+    "pergunta": "Qual é o cheiro mais reconfortante e delicioso que existe no mundo?",
+    "impostor": "Qual é o fedor mais insuportável, podre e nauseante que você já sentiu?"
+  },
+  {
+    "tema": "Sentidos & Sensações",
+    "pergunta": "Qual sensação física traz um alívio e bem-estar indescritível ao corpo?",
+    "impostor": "Qual dor aguda ou incômodo físico bobo te dá mais agonia e nervoso?"
+  },
+  {
+    "tema": "Esportes",
+    "pergunta": "Qual esporte olímpico é o mais espetacular e impressionante de assistir?",
+    "impostor": "Qual esporte você acha mais bizarro, sem sentido ou perda de tempo total?"
+  },
+  {
+    "tema": "Esportes",
+    "pergunta": "Qual atleta da história foi o maior exemplo de garra e genialidade esportiva?",
+    "impostor": "Qual trapaceiro ou figura vergonhosa manchou a história do esporte?"
+  },
+  {
+    "tema": "Invenções & Tecnologia",
+    "pergunta": "Qual invenção da humanidade foi a mais genial e necessária para o mundo?",
+    "impostor": "Qual invenção moderna é totalmente inútil, ridícula e um desperdício de dinheiro?"
+  },
+  {
+    "tema": "Invenções & Tecnologia",
+    "pergunta": "Qual aplicativo no seu celular você não conseguiria ficar sem por um dia sequer?",
+    "impostor": "Qual tipo de anúncio ou golpe chato na internet você não suporta mais ver?"
+  },
+  {
+    "tema": "Festas & Celebrações",
+    "pergunta": "O que não pode faltar de jeito nenhum em uma festa inesquecível com amigos?",
+    "impostor": "O que estraga uma festa completamente e faz todo mundo ir embora com raiva?"
+  },
+  {
+    "tema": "Festas & Celebrações",
+    "pergunta": "Qual fantasia ou roupa temática você arrasaria usando no Carnaval ou Halloween?",
+    "impostor": "Qual roupa bizarra ou fantasia você morreria de vergonha de ser visto usando na rua?"
+  },
+  {
+    "tema": "Escola & Infância",
+    "pergunta": "Qual matéria da escola era a sua favorita e mais interessante de estudar?",
+    "impostor": "Qual matéria da escola era o seu pior pesadelo e você odiava com todas as forças?"
+  },
+  {
+    "tema": "Escola & Infância",
+    "pergunta": "Qual brinquedo clássico da infância te trazia pura felicidade e nostalgia?",
+    "impostor": "Qual perigo ou machucado clássico de infância te deixou uma cicatriz ou trauma?"
+  },
+  {
+    "tema": "Medos & Desafios",
+    "pergunta": "Qual aventura radical com muita adrenalina você teria coragem de encarar na vida?",
+    "impostor": "Qual fobia profunda ou pânico irracional te paralisaria completamente de medo?"
+  },
+  {
+    "tema": "Medos & Desafios",
+    "pergunta": "Qual conselho de ouro você daria para o seu eu de dez anos atrás?",
+    "impostor": "Qual a pior idiotice ou péssimo conselho que alguém poderia seguir na juventude?"
+  },
+  {
+    "tema": "Sobrevivência",
+    "pergunta": "O que você levaria como item mais essencial para sobreviver numa ilha deserta?",
+    "impostor": "O que você jogaria no fogo ou descartaria sem pestanejar em uma emergência?"
+  },
+  {
+    "tema": "Sobrevivência",
+    "pergunta": "Qual habilidade prática de sobrevivência você mais gostaria de dominar?",
+    "impostor": "Qual erro bobo na selva ou no mato faria alguém se dar muito mal?"
+  },
+  {
+    "tema": "Marcas & Compras",
+    "pergunta": "Qual marca famosa é sinônimo de altíssima qualidade e sofisticação para você?",
+    "impostor": "Qual produto falsificado ou de camelô quebrou ou deu defeito em menos de um dia?"
+  },
+  {
+    "tema": "Marcas & Compras",
+    "pergunta": "Qual compra recente que você fez valeu cada centavo investido?",
+    "impostor": "Qual foi a compra mais inútil que você se arrependeu no segundo que pagou?"
+  },
+  {
+    "tema": "Heróis & Lendas",
+    "pergunta": "Qual herói ou deus mitológico você invocaria para proteger a sua família?",
+    "impostor": "Qual criatura amaldiçoada ou monstro do folclore assombraria seus piores pesadelos?"
+  },
+  {
+    "tema": "Heróis & Lendas",
+    "pergunta": "Qual relíquia mágica ou artefato lendário você gostaria de ter guardado no cofre?",
+    "impostor": "Qual objeto amaldiçoado você jogaria num vulcão para destruir para sempre?"
+  },
+  {
+    "tema": "Cidade & Trânsito",
+    "pergunta": "Qual o meio de transporte mais confortável e gostoso para viajar com tranquilidade?",
+    "impostor": "Qual experiência em transporte público lotado te deu mais estresse e revolta?"
+  },
+  {
+    "tema": "Cidade & Trânsito",
+    "pergunta": "Qual estação do ano tem o clima mais perfeito e agradável na sua opinião?",
+    "impostor": "Qual condição climática extrema é a mais insuportável e irritante de aguentar?"
+  },
+  {
+    "tema": "Humor & Diversão",
+    "pergunta": "O que é garantia de te fazer chorar de rir até a barriga doer?",
+    "impostor": "O que é extremamente sem graça, constrangedor e deixa um silêncio pesado na sala?"
+  },
+  {
+    "tema": "Humor & Diversão",
+    "pergunta": "Qual pegadinha inocente ou brincadeira saudável é super engraçada entre amigos?",
+    "impostor": "Qual brincadeira de mau gosto passa totalmente dos limites e dá vontade de bater em quem fez?"
+  },
+  {
+    "tema": "Talento & Arte",
+    "pergunta": "Qual talento artístico impressionante você adoraria mostrar em um palco lotado?",
+    "impostor": "Qual mico ou vergonha alheia monumental você morreria de medo de passar em público?"
+  },
+  {
+    "tema": "Talento & Arte",
+    "pergunta": "Qual museu ou galeria famosa do mundo tem o acervo mais fascinante?",
+    "impostor": "O que alguns chamam de arte moderna mas parece apenas lixo amontoado?"
+  },
+  {
+    "tema": "Manhã & Café",
+    "pergunta": "O que tem na mesa de café da manhã dos seus sonhos em um resort cinco estrelas?",
+    "impostor": "O que seria uma refeição estragada, azeda ou com bichos que te daria ânsia de vômito?"
+  },
+  {
+    "tema": "Manhã & Café",
+    "pergunta": "O que te faz levantar da cama de bom humor e com disposição máxima?",
+    "impostor": "O que estraga o seu dia logo nos primeiros 10 minutos após acordar?"
+  },
+  {
+    "tema": "Casa & Conforto",
+    "pergunta": "Qual cômodo da sua casa é o seu refúgio de paz onde você mais ama ficar?",
+    "impostor": "Qual lugar em uma casa abandonada ou sombria te daria arrepios de entrar sozinho?"
+  },
+  {
+    "tema": "Casa & Conforto",
+    "pergunta": "O que traz um charme irresistível e aconchego imediato para uma sala de estar?",
+    "impostor": "O que é uma decoração de péssimo gosto ou objeto brega que dói nos olhos?"
+  },
+  {
+    "tema": "Pets & Bichinhos",
+    "pergunta": "Qual raça de cachorro ou gato você acha a mais linda, esperta e leal do mundo?",
+    "impostor": "Qual animal você nunca teria em casa nem amarrado porque te dá aflição?"
+  },
+  {
+    "tema": "Pets & Bichinhos",
+    "pergunta": "Qual o truque ou gracinha mais fofa que um bichinho de estimação pode fazer?",
+    "impostor": "Qual travessura destruidora ou desastre um filhote sem vergonha pode aprontar na sala?"
+  },
+  {
+    "tema": "Natureza Selvagem",
+    "pergunta": "Qual maravilha natural do planeta te deixa sem palavras diante da grandiosidade?",
+    "impostor": "Qual desastre natural ou fenômeno destrutivo causa o maior pavor e ruína?"
+  },
+  {
+    "tema": "Natureza Selvagem",
+    "pergunta": "Qual flor ou planta é a mais exuberante e perfumada para ter em um jardim?",
+    "impostor": "Qual planta venenosa, espinhosa ou urticante você não encostaria de jeito nenhum?"
+  },
+  {
+    "tema": "Amigos & Convivência",
+    "pergunta": "Qual o melhor plano para um sábado à noite perfeito com seus melhores amigos?",
+    "impostor": "Qual o pior convite ou rolê furada que você inventaria qualquer desculpa para fugir?"
+  },
+  {
+    "tema": "Amigos & Convivência",
+    "pergunta": "Quem do seu grupo de amigos sempre conta as melhores histórias e anima qualquer mesa?",
+    "impostor": "Qual o perfil de pessoa chata que só reclama da vida e suga a energia de todo mundo?"
+  },
+  {
+    "tema": "Praia & Mar",
+    "pergunta": "Qual a melhor atividade para aproveitar um dia ensolarado na praia?",
+    "impostor": "Qual o pior perrengue chato que pode acontecer em uma praia lotada?"
+  },
+  {
+    "tema": "Praia & Mar",
+    "pergunta": "Qual criatura marinha é a mais fascinante e inteligente dos oceanos?",
+    "impostor": "Qual bicho marinho perigoso ou com ferrão você não quer ver nem de longe na água?"
+  },
+  {
+    "tema": "Clima & Estações",
+    "pergunta": "Qual a melhor comida ou bebida quente para saborear em um dia frio de chuva?",
+    "impostor": "Qual sensação gelada e desconfortável você odeia passar no meio da rua?"
+  },
+  {
+    "tema": "Clima & Estações",
+    "pergunta": "O que torna uma viagem para a serra ou para o campo inesquecível?",
+    "impostor": "Qual transtorno chato de chuva forte no trânsito te deixa furioso?"
+  },
+  {
+    "tema": "Datas Especiais",
+    "pergunta": "Qual é a melhor tradição ou prato da ceia de Natal na sua família?",
+    "impostor": "Qual pergunta inconveniente ou parente sem noção sempre constrange todo mundo no Natal?"
+  },
+  {
+    "tema": "Datas Especiais",
+    "pergunta": "Qual o melhor lugar ou festa para passar a virada do Ano Novo com alto astral?",
+    "impostor": "Qual frustração ou roubada de Réveillon você nunca mais repete na vida?"
+  },
+  {
+    "tema": "Compras & Feira",
+    "pergunta": "Qual fruta doce e suculenta é a mais saborosa no auge da estação?",
+    "impostor": "Qual vegetal ou legume com gosto amargo você detestava comer quando criança?"
+  },
+  {
+    "tema": "Compras & Feira",
+    "pergunta": "O que não pode faltar em um pastel de feira crocante e quentinho?",
+    "impostor": "Qual comida gordurosa e azeda te deu a pior indigestão da vida?"
+  },
+  {
+    "tema": "Carros & Veículos",
+    "pergunta": "Qual carro esportivo ou veículo clássico é o seu grande sonho de consumo?",
+    "impostor": "Qual lata velha caindo aos pedaços você teria vergonha de chegar dirigindo?"
+  },
+  {
+    "tema": "Carros & Veículos",
+    "pergunta": "Qual a melhor sensação de liberdade ao dirigir em uma estrada bonita?",
+    "impostor": "Qual barbeiragem perigosa ou grosseria no trânsito te tira do sério?"
+  },
+  {
+    "tema": "Animes & Desenhos",
+    "pergunta": "Qual técnica ou poder lendário de anime você gostaria de dominar na vida real?",
+    "impostor": "Qual golpe inútil ou poder cômico seria uma vergonha usar em público?"
+  },
+  {
+    "tema": "Animes & Desenhos",
+    "pergunta": "Qual mestre sábio e poderoso de anime você gostaria que fosse seu mentor?",
+    "impostor": "Qual personagem covarde e reclamão de anime você não aguenta ver na tela?"
+  },
+  {
+    "tema": "Livros & Histórias",
+    "pergunta": "Qual universo de fantasia ou livro você adoraria visitar por uma semana?",
+    "impostor": "Qual pesadelo distópico ou mundo pós-apocalíptico você morreria de pavor de viver?"
+  },
+  {
+    "tema": "Livros & Histórias",
+    "pergunta": "Qual história emocionante te marcou profundamente e te ensinou uma lição pra vida?",
+    "impostor": "Qual fake news bizarra ou mentira descarada alguém tentou te contar com cara séria?"
+  },
+  {
+    "tema": "Mistérios & Espaço",
+    "pergunta": "Qual grande mistério do universo você mais gostaria de descobrir a verdade?",
+    "impostor": "Qual teoria da conspiração mais absurda e sem pé nem cabeça você já ouviu?"
+  },
+  {
+    "tema": "Mistérios & Espaço",
+    "pergunta": "Se alienígenas inteligentes chegassem em paz, qual seria a primeira coisa para mostrar a eles?",
+    "impostor": "O que você faria se uma barata voadora pousasse na sua cara enquanto você dorme?"
+  },
+  {
+    "tema": "Cozinha & Receitas",
+    "pergunta": "Qual prato caseiro feito pela mãe ou avó tem gosto de puro abraço e carinho?",
+    "impostor": "Qual desastre culinário queimado ou salgado demais você já teve a proeza de fazer?"
+  },
+  {
+    "tema": "Cozinha & Receitas",
+    "pergunta": "Qual tempero aromático faz qualquer comida simples ficar digna de restaurante chique?",
+    "impostor": "Qual ingrediente estragado ou cheiro de geladeira velha te dá náuseas imediatas?"
+  },
+  {
+    "tema": "Jogos Retrô",
+    "pergunta": "Qual jogo antigo dos anos 90 ou 2000 é insuperável em diversão pura?",
+    "impostor": "Qual fase impossível ou chefão apelão de videogame te fez quase quebrar o controle?"
+  },
+  {
+    "tema": "Jogos Retrô",
+    "pergunta": "Qual trilha sonora de jogo grudou na sua cabeça e te traz nostalgia imediata?",
+    "impostor": "Qual efeito sonoro irritante ou chiado estridente não te deixa dormir em paz?"
+  }
+];
+
+function getPerguntasInvertidas() {
+  return PERGUNTAS_INVERTIDAS;
+}
