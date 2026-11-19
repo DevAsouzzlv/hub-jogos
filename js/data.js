@@ -107040,18 +107040,18 @@ const PARES = {
 const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Lugares & Viagens",
-    "pergunta": "Qual é o lugar mais bonito do mundo?",
-    "impostor": "Qual é o lugar mais feio ou horroroso do mundo?"
+    "pergunta": "Qual é o lugar ou país no mundo mais famoso por suas praias paradisíacas e mar cristalino?",
+    "impostor": "Qual país no mundo é o mais famoso por suas montanhas com neve, lagos e chalés alpinos?"
   },
   {
     "tema": "Lugares & Viagens",
-    "pergunta": "Para onde seria a viagem dos seus sonhos para relaxar no paraíso?",
-    "impostor": "Qual é o pior lugar do planeta para você ser forçado a passar as férias?"
+    "pergunta": "Qual é a viagem dos seus sonhos para curtir resorts de luxo em uma ilha tropical?",
+    "impostor": "Qual é a viagem dos seus sonhos para fazer compras e conhecer pontos turísticos em uma grande metrópole?"
   },
   {
     "tema": "Lugares & Viagens",
-    "pergunta": "Se você pudesse morar em qualquer país amanhã, qual seria?",
-    "impostor": "Em qual país ou lugar perigoso você nunca pisaria os pés por nada?"
+    "pergunta": "Se você pudesse se mudar amanhã para um país europeu de primeiro mundo, qual escolheria?",
+    "impostor": "Se você pudesse se mudar amanhã para um país asiático moderno e super seguro, qual escolheria?"
   },
   {
     "tema": "Lugares & Viagens",
@@ -107061,12 +107061,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Lugares & Viagens",
     "pergunta": "Qual lugar da sua cidade é o melhor para levar alguém especial?",
-    "impostor": "Qual lugar da sua cidade é perigoso, sujo ou você evita a todo custo?"
+    "impostor": "Qual cidade famosa pelo seu charme histórico e cafés charmosos você adoraria conhecer?"
   },
   {
     "tema": "Comidas & Sabores",
     "pergunta": "Qual é a comida mais deliciosa para um jantar especial e romântico?",
-    "impostor": "Qual é a comida mais nojenta ou com o pior cheiro que você conhece?"
+    "impostor": "Qual prato refinado de restaurante à la carte você pediria para comemorar uma data especial?"
   },
   {
     "tema": "Comidas & Sabores",
@@ -107081,7 +107081,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Comidas & Sabores",
     "pergunta": "Qual comida típica de festa de aniversário é a mais gostosa de todas?",
-    "impostor": "Qual prato ruim te serviram que você teve que disfarçar para não cuspir?"
+    "impostor": "Qual comida típica ou lanche bem temperado você adora pedir no fim de semana?"
   },
   {
     "tema": "Comidas & Sabores",
@@ -107091,47 +107091,47 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cinema & Filmes",
     "pergunta": "Qual filme emocionante você assistiria dez vezes seguidas sem cansar?",
-    "impostor": "Qual o filme mais horrível e vergonhoso que você já tentou assistir na vida?"
+    "impostor": "Qual filme clássico de aventura e suspense te deixou vidrado na tela do início ao fim?"
   },
   {
     "tema": "Cinema & Filmes",
     "pergunta": "Qual série você maratonou do começo ao fim sem conseguir piscar?",
-    "impostor": "Qual série ou programa é tão chato que você dorme nos primeiros 5 minutos?"
+    "impostor": "Qual filme clássico de aventura e suspense te deixou vidrado na tela do início ao fim?"
   },
   {
     "tema": "Cinema & Filmes",
     "pergunta": "Qual personagem de filme você gostaria de ser pela inteligência e estilo?",
-    "impostor": "Qual personagem patético de filme você morreria de vergonha de ser?"
+    "impostor": "Qual filme clássico de aventura e suspense te deixou vidrado na tela do início ao fim?"
   },
   {
     "tema": "Cinema & Filmes",
     "pergunta": "Qual filme clássico de desenho ou animação é uma obra-prima absoluta?",
-    "impostor": "Qual desenho infantil é bizarro, irritante ou te dava pesadelos?"
+    "impostor": "Qual filme de animação 3D recente você achou visualmente espetacular e emocionante?"
   },
   {
     "tema": "Cinema & Filmes",
     "pergunta": "Qual vilão do cinema foi tão marcante que quase te convenceu a torcer por ele?",
-    "impostor": "Qual vilão fraco e ridículo foi derrotado da forma mais vergonhosa?"
+    "impostor": "Qual anti-herói carismático do cinema rouba a cena e é amado pelo público?"
   },
   {
     "tema": "Superpoderes & Fantasia",
     "pergunta": "Qual superpoder incrível você escolheria para salvar o mundo e combater o crime?",
-    "impostor": "Qual seria o poder mais inútil, tosco e vergonhoso de se ter no dia a dia?"
+    "impostor": "Qual habilidade sobre-humana seria a mais útil para você se locomover no dia a dia sem trânsito?"
   },
   {
     "tema": "Superpoderes & Fantasia",
     "pergunta": "Se você pudesse se teletransportar para qualquer lugar agora, para onde iria?",
-    "impostor": "Qual lugar fechado, apertado ou nojento seria seu pior pesadelo ficar preso?"
+    "impostor": "Qual destino de praia paradisíaca você escolheria para passar as férias inteiras relaxando?"
   },
   {
     "tema": "Superpoderes & Fantasia",
     "pergunta": "Se você tivesse 24 horas de invisibilidade, o que faria de mais divertido?",
-    "impostor": "O que alguém envergonhado faria para se esconder depois de cometer um crime bobo?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Superpoderes & Fantasia",
     "pergunta": "Qual animal mitológico ou criatura lendária você gostaria que existisse de verdade?",
-    "impostor": "Qual monstro aterrorizante você morreria de medo de encontrar no escuro?"
+    "impostor": "Qual animal mamífero selvagem você acha o mais ágil e fascinante de observar em documentários?"
   },
   {
     "tema": "Profissões & Trabalho",
@@ -107141,7 +107141,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Profissões & Trabalho",
     "pergunta": "Qual emprego parece super divertido e dos sonhos de qualquer pessoa?",
-    "impostor": "Qual trabalho é extremamente estressante, chato ou desgastante mentalmente?"
+    "impostor": "Qual profissão criativa ou autônoma você escolheria para trabalhar com o que ama?"
   },
   {
     "tema": "Profissões & Trabalho",
@@ -107151,7 +107151,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Famosos & Celebridades",
     "pergunta": "Qual celebridade famosa você adoraria ter como melhor amigo(a) de infância?",
-    "impostor": "Qual pessoa pública você acha mais chata, insuportável e irritante de aguentar?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Famosos & Celebridades",
@@ -107166,7 +107166,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Animais & Natureza",
     "pergunta": "Qual animal dócil e fofo você adoraria ter dormindo na sua cama?",
-    "impostor": "Qual bicho asqueroso, venenoso ou perigoso te faria sair correndo aos gritos?"
+    "impostor": "Qual animal mamífero selvagem você acha o mais ágil e fascinante de observar em documentários?"
   },
   {
     "tema": "Animais & Natureza",
@@ -107181,22 +107181,22 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Objetos & Casa",
     "pergunta": "Qual é o objeto mais indispensável e valioso que você tem na sua casa?",
-    "impostor": "O que você tem guardado na sua casa que é totalmente inútil e só junta poeira?"
+    "impostor": "Qual aparelho eletrônico da sua casa você mais utiliza para entretenimento e lazer?"
   },
   {
     "tema": "Objetos & Casa",
     "pergunta": "O que você não sai de casa sem levar no bolso ou na mochila por nada?",
-    "impostor": "O que você jogaria no lixo reciclável ou no entulho sem pensar duas vezes?"
+    "impostor": "Qual momento sossegado em casa você mais aproveita para relaxar e colocar as coisas em ordem?"
   },
   {
     "tema": "Objetos & Casa",
     "pergunta": "Qual eletrodoméstico moderno revolucionou e facilitou a sua rotina?",
-    "impostor": "Qual geringonça vendida na TV parece uma porcaria que quebra no primeiro dia?"
+    "impostor": "Qual aparelho portátil ou utensílio na sua casa você acha o mais prático no dia a dia?"
   },
   {
     "tema": "Objetos & Casa",
     "pergunta": "O que deixa a sua cama e quarto extremamente aconchegantes?",
-    "impostor": "O que tem no chão de um banheiro sujo que te dá nojo só de olhar?"
+    "impostor": "Qual momento sossegado em casa você mais aproveita para relaxar e colocar as coisas em ordem?"
   },
   {
     "tema": "Dinheiro & Sonhos",
@@ -107206,7 +107206,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Dinheiro & Sonhos",
     "pergunta": "Qual foi o melhor presente que você já recebeu de alguém na sua vida?",
-    "impostor": "Qual foi o presente mais tosco, feio ou sem noção que você já ganhou e fingiu gostar?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Dinheiro & Sonhos",
@@ -107216,7 +107216,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Música & Ritmos",
     "pergunta": "Qual música perfeita te dá energia positiva e faz todo mundo cantar junto?",
-    "impostor": "Qual música chiclete insuportável você odeia e não aguenta mais ouvir?"
+    "impostor": "Qual hit pop ou clássico dos anos 90 todo mundo sabe a letra de cor quando toca?"
   },
   {
     "tema": "Música & Ritmos",
@@ -107231,12 +107231,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Games & Jogos",
     "pergunta": "Qual videogame ou jogo marcou a sua vida como uma obra-prima inesquecível?",
-    "impostor": "Qual jogo é extremamente frustrante, chato ou cheio de bugs que dá raiva?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Games & Jogos",
     "pergunta": "Qual personagem icônico dos videogames é o mais corajoso e lendário?",
-    "impostor": "Qual inimigo genérico e patético de jogo você derrota com apenas um golpe fraco?"
+    "impostor": "Qual filme clássico de aventura e suspense te deixou vidrado na tela do início ao fim?"
   },
   {
     "tema": "Games & Jogos",
@@ -107246,32 +107246,32 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Hábitos & Cotidiano",
     "pergunta": "Qual hábito saudável que você tem te dá mais sensação de orgulho e disciplina?",
-    "impostor": "Qual mania nojenta ou falta de higiene você acha imperdoável em alguém?"
+    "impostor": "Qual momento sossegado em casa você mais aproveita para relaxar e colocar as coisas em ordem?"
   },
   {
     "tema": "Hábitos & Cotidiano",
     "pergunta": "Qual é a melhor parte da sua rotina diária que você mais espera ansiosamente?",
-    "impostor": "Qual é a pior obrigação ou tarefa chata do dia que você faz com preguiça?"
+    "impostor": "Qual momento sossegado em casa você mais aproveita para relaxar e colocar as coisas em ordem?"
   },
   {
     "tema": "Hábitos & Cotidiano",
     "pergunta": "Qual qualidade no caráter de uma pessoa faz você confiar nela de olhos fechados?",
-    "impostor": "Qual defeito de caráter faz você se afastar de alguém imediatamente?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Relacionamentos",
     "pergunta": "Qual é a surpresa romântica mais fofa que alguém poderia preparar para você?",
-    "impostor": "Qual o maior mico ou desastre que poderia acontecer no primeiro encontro romântico?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Relacionamentos",
-    "pergunta": "O que torna uma amizade verdadeira durar para sempre?",
-    "impostor": "Qual traição ou falsidade imperdoável destruiria uma amizade na hora?"
+    "pergunta": "Qual atitude de lealdade e consideração faz uma amizade verdadeira durar para sempre?",
+    "impostor": "Qual costume ou programa favorito entre melhores amigos rende as melhores risadas?"
   },
   {
     "tema": "Sentidos & Sensações",
     "pergunta": "Qual é o cheiro mais reconfortante e delicioso que existe no mundo?",
-    "impostor": "Qual é o fedor mais insuportável, podre e nauseante que você já sentiu?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Sentidos & Sensações",
@@ -107286,17 +107286,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Esportes",
     "pergunta": "Qual atleta da história foi o maior exemplo de garra e genialidade esportiva?",
-    "impostor": "Qual trapaceiro ou figura vergonhosa manchou a história do esporte?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Invenções & Tecnologia",
     "pergunta": "Qual invenção da humanidade foi a mais genial e necessária para o mundo?",
-    "impostor": "Qual invenção moderna é totalmente inútil, ridícula e um desperdício de dinheiro?"
+    "impostor": "Qual aplicativo ou ferramenta digital do celular mais te ajuda a organizar o seu dia a dia?"
   },
   {
     "tema": "Invenções & Tecnologia",
     "pergunta": "Qual aplicativo no seu celular você não conseguiria ficar sem por um dia sequer?",
-    "impostor": "Qual tipo de anúncio ou golpe chato na internet você não suporta mais ver?"
+    "impostor": "Qual aplicativo ou ferramenta digital do celular mais te ajuda a organizar o seu dia a dia?"
   },
   {
     "tema": "Festas & Celebrações",
@@ -107306,27 +107306,27 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Festas & Celebrações",
     "pergunta": "Qual fantasia ou roupa temática você arrasaria usando no Carnaval ou Halloween?",
-    "impostor": "Qual roupa bizarra ou fantasia você morreria de vergonha de ser visto usando na rua?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Escola & Infância",
     "pergunta": "Qual matéria da escola era a sua favorita e mais interessante de estudar?",
-    "impostor": "Qual matéria da escola era o seu pior pesadelo e você odiava com todas as forças?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Escola & Infância",
     "pergunta": "Qual brinquedo clássico da infância te trazia pura felicidade e nostalgia?",
-    "impostor": "Qual perigo ou machucado clássico de infância te deixou uma cicatriz ou trauma?"
+    "impostor": "Qual cidade famosa pelo seu charme histórico e cafés charmosos você adoraria conhecer?"
   },
   {
     "tema": "Medos & Desafios",
     "pergunta": "Qual aventura radical com muita adrenalina você teria coragem de encarar na vida?",
-    "impostor": "Qual fobia profunda ou pânico irracional te paralisaria completamente de medo?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Medos & Desafios",
     "pergunta": "Qual conselho de ouro você daria para o seu eu de dez anos atrás?",
-    "impostor": "Qual a pior idiotice ou péssimo conselho que alguém poderia seguir na juventude?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Sobrevivência",
@@ -107341,17 +107341,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Marcas & Compras",
     "pergunta": "Qual marca famosa é sinônimo de altíssima qualidade e sofisticação para você?",
-    "impostor": "Qual produto falsificado ou de camelô quebrou ou deu defeito em menos de um dia?"
+    "impostor": "Qual marca de calçados ou roupas confortáveis é a sua queridinha para o dia a dia?"
   },
   {
     "tema": "Marcas & Compras",
     "pergunta": "Qual compra recente que você fez valeu cada centavo investido?",
-    "impostor": "Qual foi a compra mais inútil que você se arrependeu no segundo que pagou?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Heróis & Lendas",
     "pergunta": "Qual herói ou deus mitológico você invocaria para proteger a sua família?",
-    "impostor": "Qual criatura amaldiçoada ou monstro do folclore assombraria seus piores pesadelos?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Heróis & Lendas",
@@ -107366,7 +107366,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cidade & Trânsito",
     "pergunta": "Qual estação do ano tem o clima mais perfeito e agradável na sua opinião?",
-    "impostor": "Qual condição climática extrema é a mais insuportável e irritante de aguentar?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Humor & Diversão",
@@ -107381,17 +107381,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Talento & Arte",
     "pergunta": "Qual talento artístico impressionante você adoraria mostrar em um palco lotado?",
-    "impostor": "Qual mico ou vergonha alheia monumental você morreria de medo de passar em público?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Talento & Arte",
     "pergunta": "Qual museu ou galeria famosa do mundo tem o acervo mais fascinante?",
-    "impostor": "O que alguns chamam de arte moderna mas parece apenas lixo amontoado?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Manhã & Café",
     "pergunta": "O que tem na mesa de café da manhã dos seus sonhos em um resort cinco estrelas?",
-    "impostor": "O que seria uma refeição estragada, azeda ou com bichos que te daria ânsia de vômito?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Manhã & Café",
@@ -107416,37 +107416,37 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Pets & Bichinhos",
     "pergunta": "Qual o truque ou gracinha mais fofa que um bichinho de estimação pode fazer?",
-    "impostor": "Qual travessura destruidora ou desastre um filhote sem vergonha pode aprontar na sala?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Natureza Selvagem",
     "pergunta": "Qual maravilha natural do planeta te deixa sem palavras diante da grandiosidade?",
-    "impostor": "Qual desastre natural ou fenômeno destrutivo causa o maior pavor e ruína?"
+    "impostor": "Qual destino litorâneo ou enseada com mar calmo você considera perfeito para descansar?"
   },
   {
     "tema": "Natureza Selvagem",
     "pergunta": "Qual flor ou planta é a mais exuberante e perfumada para ter em um jardim?",
-    "impostor": "Qual planta venenosa, espinhosa ou urticante você não encostaria de jeito nenhum?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Amigos & Convivência",
     "pergunta": "Qual o melhor plano para um sábado à noite perfeito com seus melhores amigos?",
-    "impostor": "Qual o pior convite ou rolê furada que você inventaria qualquer desculpa para fugir?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Amigos & Convivência",
     "pergunta": "Quem do seu grupo de amigos sempre conta as melhores histórias e anima qualquer mesa?",
-    "impostor": "Qual o perfil de pessoa chata que só reclama da vida e suga a energia de todo mundo?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Praia & Mar",
     "pergunta": "Qual a melhor atividade para aproveitar um dia ensolarado na praia?",
-    "impostor": "Qual o pior perrengue chato que pode acontecer em uma praia lotada?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Praia & Mar",
     "pergunta": "Qual criatura marinha é a mais fascinante e inteligente dos oceanos?",
-    "impostor": "Qual bicho marinho perigoso ou com ferrão você não quer ver nem de longe na água?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Clima & Estações",
@@ -107456,7 +107456,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Clima & Estações",
     "pergunta": "O que torna uma viagem para a serra ou para o campo inesquecível?",
-    "impostor": "Qual transtorno chato de chuva forte no trânsito te deixa furioso?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Datas Especiais",
@@ -107466,7 +107466,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Datas Especiais",
     "pergunta": "Qual o melhor lugar ou festa para passar a virada do Ano Novo com alto astral?",
-    "impostor": "Qual frustração ou roubada de Réveillon você nunca mais repete na vida?"
+    "impostor": "Qual recanto sossegado de natureza com árvores e ar puro é o seu refúgio ideal?"
   },
   {
     "tema": "Compras & Feira",
@@ -107476,22 +107476,22 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Compras & Feira",
     "pergunta": "O que não pode faltar em um pastel de feira crocante e quentinho?",
-    "impostor": "Qual comida gordurosa e azeda te deu a pior indigestão da vida?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Carros & Veículos",
     "pergunta": "Qual carro esportivo ou veículo clássico é o seu grande sonho de consumo?",
-    "impostor": "Qual lata velha caindo aos pedaços você teria vergonha de chegar dirigindo?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Carros & Veículos",
     "pergunta": "Qual a melhor sensação de liberdade ao dirigir em uma estrada bonita?",
-    "impostor": "Qual barbeiragem perigosa ou grosseria no trânsito te tira do sério?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Animes & Desenhos",
-    "pergunta": "Qual técnica ou poder lendário de anime você gostaria de dominar na vida real?",
-    "impostor": "Qual golpe inútil ou poder cômico seria uma vergonha usar em público?"
+    "pergunta": "Qual técnica especial de luta ou poder elemental dos animes você gostaria de dominar?",
+    "impostor": "Qual transformação visual ou modo de batalha dos heróis de anime você acha a mais estilosa?"
   },
   {
     "tema": "Animes & Desenhos",
@@ -107501,7 +107501,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Livros & Histórias",
     "pergunta": "Qual universo de fantasia ou livro você adoraria visitar por uma semana?",
-    "impostor": "Qual pesadelo distópico ou mundo pós-apocalíptico você morreria de pavor de viver?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Livros & Histórias",
@@ -107521,17 +107521,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cozinha & Receitas",
     "pergunta": "Qual prato caseiro feito pela mãe ou avó tem gosto de puro abraço e carinho?",
-    "impostor": "Qual desastre culinário queimado ou salgado demais você já teve a proeza de fazer?"
+    "impostor": "Qual comida caseira quentinha te dá aquela sensação gostosa de conforto e aconchego?"
   },
   {
     "tema": "Cozinha & Receitas",
     "pergunta": "Qual tempero aromático faz qualquer comida simples ficar digna de restaurante chique?",
-    "impostor": "Qual ingrediente estragado ou cheiro de geladeira velha te dá náuseas imediatas?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Jogos Retrô",
     "pergunta": "Qual jogo antigo dos anos 90 ou 2000 é insuperável em diversão pura?",
-    "impostor": "Qual fase impossível ou chefão apelão de videogame te fez quase quebrar o controle?"
+    "impostor": "Qual jogo com narrativa envolvente ou modo cooperativo você mais se divertiu jogando?"
   },
   {
     "tema": "Jogos Retrô",
@@ -107540,18 +107540,18 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Comida & Bebida",
-    "pergunta": "Qual é a melhor sobremesa já inventada na face da Terra?",
-    "impostor": "Qual é o doce ou sobremesa mais enjoativo e horrível que existe?"
+    "pergunta": "Qual sobremesa de confeitaria com camadas finas e recheio cremoso você acha a mais sofisticada?",
+    "impostor": "Qual doce caseiro de panela com sabor de infância é o seu conforto absoluto?"
   },
   {
     "tema": "Comida & Bebida",
-    "pergunta": "Qual comida salgada você comeria todos os dias pelo resto da vida sem enjoar?",
-    "impostor": "Qual comida salgada te dá ânsia de vômito só de sentir o cheiro?"
+    "pergunta": "Qual prato caseiro tradicional brasileiro com arroz você comeria no almoço sem enjoar?",
+    "impostor": "Qual lanche saboroso de fim de semana você mais gosta de pedir à noite?"
   },
   {
     "tema": "Comida & Bebida",
-    "pergunta": "Qual é o melhor recheio possível para uma pizza perfeita?",
-    "impostor": "Qual é a pior coisa bizarra que já inventaram de colocar numa pizza?"
+    "pergunta": "Qual sabor clássico de pizza salgada com queijo derretido é o favorito na sua casa?",
+    "impostor": "Qual recheio especial ou artesanal de pizza gourmet com ingredientes nobres você mais gosta?"
   },
   {
     "tema": "Comida & Bebida",
@@ -107560,8 +107560,8 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Comida & Bebida",
-    "pergunta": "Qual bebida é a mais perfeita para matar a sede num dia de calor insuportável?",
-    "impostor": "Qual bebida quente ou amarga é uma verdadeira tortura de engolir?"
+    "pergunta": "Qual água de coco fresca ou limonada com gelo é a mais refrescante no verão escaldante?",
+    "impostor": "Qual suco de fruta natural batido na hora com bastante gelo sacia melhor a sede?"
   },
   {
     "tema": "Comida & Bebida",
@@ -107581,7 +107581,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Comida & Bebida",
     "pergunta": "O que não pode faltar no melhor café da manhã de hotel de luxo?",
-    "impostor": "O que seria o pior pesadelo para encontrar no prato logo de manhã cedo?"
+    "impostor": "Qual comida típica ou lanche bem temperado você adora pedir no fim de semana?"
   },
   {
     "tema": "Comida & Bebida",
@@ -107606,7 +107606,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Comida & Bebida",
     "pergunta": "Qual marca ou tipo de chocolate é o mais divino do mundo?",
-    "impostor": "Qual doce parece pura parafina com açúcar de tão ruim?"
+    "impostor": "Qual comida típica ou lanche bem temperado você adora pedir no fim de semana?"
   },
   {
     "tema": "Comida & Bebida",
@@ -107615,28 +107615,28 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Cotidiano & Sensações",
-    "pergunta": "Qual é o melhor cheiro que existe no mundo para você cheirar?",
-    "impostor": "Qual é o pior cheiro insuportável e fedorento do planeta?"
+    "pergunta": "Qual aroma de comida saindo do forno na cozinha é o mais gostoso e acolhedor?",
+    "impostor": "Qual fragrância de perfume sofisticado ou pós-banho traz a melhor sensação de limpeza?"
   },
   {
     "tema": "Cotidiano & Sensações",
-    "pergunta": "Qual é a sensação física mais gostosa e relaxante que existe?",
-    "impostor": "Qual é a sensação de dor ou desconforto físico mais irritante do dia a dia?"
+    "pergunta": "Qual é a massagem ou alongamento que traz o maior alívio para as costas e o pescoço?",
+    "impostor": "Qual é o mergulho em água na temperatura perfeita que traz aquela sensação de paz total?"
   },
   {
     "tema": "Cotidiano & Sensações",
-    "pergunta": "Qual é o som mais gostoso e satisfatório de ouvir?",
-    "impostor": "Qual é o barulho mais agoniante e insuportável para os ouvidos?"
+    "pergunta": "Qual é o som calmo da natureza, como chuva no telhado ou mar quebrando, que mais te relaxa?",
+    "impostor": "Qual melodia tocada em piano suave ou violão te traz maior tranquilidade na hora de descansar?"
   },
   {
     "tema": "Cotidiano & Sensações",
     "pergunta": "Qual é o melhor momento de relaxamento do seu dia inteiro?",
-    "impostor": "Qual é a parte mais estressante, cansativa e insuportável do seu dia?"
+    "impostor": "Qual momento sossegado em casa você mais aproveita para relaxar e colocar as coisas em ordem?"
   },
   {
     "tema": "Cotidiano & Sensações",
     "pergunta": "Qual tarefa doméstica deixa a casa uma delícia e é satisfatória de fazer?",
-    "impostor": "Qual é a pior tarefa doméstica do mundo que você odeia fazer com todas as forças?"
+    "impostor": "Qual momento sossegado em casa você mais aproveita para relaxar e colocar as coisas em ordem?"
   },
   {
     "tema": "Cotidiano & Sensações",
@@ -107651,12 +107651,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cotidiano & Sensações",
     "pergunta": "O que você mais ama fazer no fim de semana para renovar as energias?",
-    "impostor": "Qual compromisso chato de domingo à noite te dá depressão pré-segunda-feira?"
+    "impostor": "Qual momento sossegado em casa você mais aproveita para relaxar e colocar as coisas em ordem?"
   },
   {
     "tema": "Cotidiano & Sensações",
     "pergunta": "Qual é a melhor sensação ao acordar num dia de folga sem despertador?",
-    "impostor": "Qual é o pior susto ao acordar atrasado no meio da semana?"
+    "impostor": "Qual momento sossegado em casa você mais aproveita para relaxar e colocar as coisas em ordem?"
   },
   {
     "tema": "Cotidiano & Sensações",
@@ -107671,12 +107671,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Lugares & Natureza",
     "pergunta": "Qual praia paradisíaca de águas cristalinas você queria estar agora?",
-    "impostor": "Qual pântano ou rio lamacento é o lugar mais sinistro do mundo?"
+    "impostor": "Qual destino litorâneo ou enseada com mar calmo você considera perfeito para descansar?"
   },
   {
     "tema": "Lugares & Natureza",
     "pergunta": "Qual país tem os cidadãos mais educados, simpáticos e acolhedores?",
-    "impostor": "Em qual lugar do mundo as pessoas são mais rudes, grosseiras e frias?"
+    "impostor": "Qual cidade famosa pelo seu charme histórico e cafés charmosos você adoraria conhecer?"
   },
   {
     "tema": "Lugares & Natureza",
@@ -107686,12 +107686,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Lugares & Natureza",
     "pergunta": "Qual hotel ou resort de luxo seria a definição de perfeição para você?",
-    "impostor": "Qual motel ou pousada fuleira parece cenário de filme de terror?"
+    "impostor": "Qual recanto sossegado de natureza com árvores e ar puro é o seu refúgio ideal?"
   },
   {
     "tema": "Lugares & Natureza",
-    "pergunta": "Qual fenômeno da natureza é o mais lindo e mágico de presenciar?",
-    "impostor": "Qual desastre natural causa o maior pânico e devastação absoluta?"
+    "pergunta": "Qual fenômeno luminoso nos céus, como aurora boreal ou eclipse solar, é o mais mágico de presenciar?",
+    "impostor": "Qual paisagem majestosa da Terra, como grandes cachoeiras ou cânions, é a mais impressionante?"
   },
   {
     "tema": "Lugares & Natureza",
@@ -107705,8 +107705,8 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Animais & Criaturas",
-    "pergunta": "Qual filhote de animal é o mais fofo e adorável que dá vontade de apertar?",
-    "impostor": "Qual inseto ou bicho peçonhento é a coisa mais nojenta e repulsiva?"
+    "pergunta": "Qual filhote peludo de cachorro ou gato você acha o mais irresistível e fofinho?",
+    "impostor": "Qual animal filhote da fazenda, como bezerrinho ou cabritinho, você acha o mais simpático?"
   },
   {
     "tema": "Animais & Criaturas",
@@ -107716,22 +107716,22 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Animais & Criaturas",
     "pergunta": "Qual animal exótico você adoraria ter como companheiro domesticado?",
-    "impostor": "Qual animal seria o pior e mais desastroso bicho para ter dentro de um apartamento?"
+    "impostor": "Qual animal exótico de zoológico você acha o mais curioso e interessante de observar?"
   },
   {
     "tema": "Animais & Criaturas",
     "pergunta": "Qual ave tem o canto mais bonito ou as penas mais coloridas da natureza?",
-    "impostor": "Qual ave é barulhenta, irritante ou vive roubando comida das pessoas?"
+    "impostor": "Qual pássaro nativo com plumagem marcante você acha o mais bonito de ver na natureza?"
   },
   {
     "tema": "Animais & Criaturas",
     "pergunta": "Qual animal marinho você acha o mais gracioso e fascinante dos oceanos?",
-    "impostor": "Qual monstro das profundezas do mar parece uma aberração assustadora?"
+    "impostor": "Qual animal mamífero selvagem você acha o mais ágil e fascinante de observar em documentários?"
   },
   {
     "tema": "Animais & Criaturas",
     "pergunta": "Qual bicho representa a maior preguiça, calmaria e vida boa?",
-    "impostor": "Qual animal vive no meio do lixo, bueiro e esgoto?"
+    "impostor": "Qual animal exótico de zoológico você acha o mais curioso e interessante de observar?"
   },
   {
     "tema": "Animais & Criaturas",
@@ -107741,17 +107741,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Animais & Criaturas",
     "pergunta": "Qual raça de cachorro é a mais dócil, inteligente e leal com os donos?",
-    "impostor": "Qual animal faz o barulho mais insuportável no meio da madrugada?"
+    "impostor": "Qual animal exótico de zoológico você acha o mais curioso e interessante de observar?"
   },
   {
     "tema": "Cinema & Séries",
     "pergunta": "Qual filme emocionante fez você chorar de verdade de tão lindo?",
-    "impostor": "Qual filme chato e sonífero fez você dormir no cinema de tanto tédio?"
+    "impostor": "Qual filme clássico de aventura e suspense te deixou vidrado na tela do início ao fim?"
   },
   {
     "tema": "Cinema & Séries",
-    "pergunta": "Qual comédia de cinema te fez gargalhar até a barriga doer?",
-    "impostor": "Qual filme de humor pastelão é tão sem graça que dá vergonha alheia?"
+    "pergunta": "Qual filme clássico de comédia com situações malucas te fez gargalhar até a barriga doer?",
+    "impostor": "Qual série ou sitcom de humor você assiste para relaxar e dar risada no fim do dia?"
   },
   {
     "tema": "Cinema & Séries",
@@ -107766,7 +107766,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cinema & Séries",
     "pergunta": "Qual série de TV teve o final mais perfeito e satisfatório de assistir?",
-    "impostor": "Qual série espetacular teve um final tão lixo que estragou a história toda?"
+    "impostor": "Qual filme clássico de aventura e suspense te deixou vidrado na tela do início ao fim?"
   },
   {
     "tema": "Cinema & Séries",
@@ -107776,7 +107776,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cinema & Séries",
     "pergunta": "Qual universo fictício você pagaria qualquer preço para morar?",
-    "impostor": "Em qual universo distópico de filme seria um pesadelo horrível viver?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Cinema & Séries",
@@ -107786,12 +107786,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cinema & Séries",
     "pergunta": "Qual filme de suspense te prendeu na ponta da cadeira com o melhor plot twist?",
-    "impostor": "Qual filme de terror tem os monstros mais toscos e efeitos especiais baratos?"
+    "impostor": "Qual filme clássico de aventura e suspense te deixou vidrado na tela do início ao fim?"
   },
   {
     "tema": "Cinema & Séries",
     "pergunta": "Qual super-herói dos quadrinhos tem os poderes e atitude mais incríveis?",
-    "impostor": "Qual herói ou ajudante é tão inútil que só atrapalha o resto da equipe?"
+    "impostor": "Qual justiceiro dos quadrinhos ou filmes tem as melhores frases de efeito e estratégia?"
   },
   {
     "tema": "Superpoderes & Fantasia",
@@ -107801,17 +107801,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Superpoderes & Fantasia",
     "pergunta": "Qual artefato mágico dos contos de fadas você guardaria a sete chaves?",
-    "impostor": "Qual item amaldiçoado traria a pior desgraça para quem encostasse nele?"
+    "impostor": "Qual poder sobre-humano de agilidade ou reflexos rápidos seria muito útil para se defender?"
   },
   {
     "tema": "Superpoderes & Fantasia",
     "pergunta": "Qual criatura mitológica seria a montaria mais épica para você cavalgar?",
-    "impostor": "Qual monstro do folclore é a criatura mais horripilante para encontrar na mata?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Superpoderes & Fantasia",
     "pergunta": "Para qual época do passado você viajaria numa máquina do tempo para curtir?",
-    "impostor": "Qual época histórica foi o período mais nojento, doentio e sangrento para estar vivo?"
+    "impostor": "Qual poder sobre-humano de agilidade ou reflexos rápidos seria muito útil para se defender?"
   },
   {
     "tema": "Superpoderes & Fantasia",
@@ -107821,7 +107821,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Superpoderes & Fantasia",
     "pergunta": "Qual feitiço de bruxo seria o mais útil para resolver qualquer perrengue?",
-    "impostor": "Qual praga de bruxa malvada seria a pior punição para receber?"
+    "impostor": "Qual poder sobre-humano de agilidade ou reflexos rápidos seria muito útil para se defender?"
   },
   {
     "tema": "Trabalho & Profissões",
@@ -107836,27 +107836,27 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Trabalho & Profissões",
     "pergunta": "Qual carreira garante respeito, admiração pública e muito orgulho?",
-    "impostor": "Qual profissão é associada a golpes, mentiras e picaretagem descarada?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Trabalho & Profissões",
     "pergunta": "Qual benefício de uma empresa você acharia o maior luxo do mundo?",
-    "impostor": "Qual exigência absurda de vaga arrombada você recusaria na hora?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Trabalho & Profissões",
     "pergunta": "Qual profissão do futuro vai salvar a humanidade e o planeta?",
-    "impostor": "Qual trabalho repetitivo e inútil já deveria ter sido substituído por robôs?"
+    "impostor": "Qual profissão criativa ou autônoma você escolheria para trabalhar com o que ama?"
   },
   {
     "tema": "Trabalho & Profissões",
     "pergunta": "Como seria o escritório perfeito para trabalhar com total conforto e lazer?",
-    "impostor": "Como é o pior cubículo de trabalho sem janela e com ar-condicionado quebrado?"
+    "impostor": "Qual profissão criativa ou autônoma você escolheria para trabalhar com o que ama?"
   },
   {
     "tema": "Relacionamentos & Pessoas",
-    "pergunta": "Qual virtude torna uma pessoa irresistivelmente atraente e encantadora?",
-    "impostor": "Qual defeito de caráter faz você perder o encanto por alguém no mesmo segundo?"
+    "pergunta": "Qual qualidade de inteligência e conversa interessante te atrai profundamente em alguém?",
+    "impostor": "Qual traço de gentileza e generosidade com as pessoas te conquista de primeira?"
   },
   {
     "tema": "Relacionamentos & Pessoas",
@@ -107881,17 +107881,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Relacionamentos & Pessoas",
     "pergunta": "Qual assunto em uma roda de conversa rende as melhores risadas entre amigos?",
-    "impostor": "Qual tema de conversa chato sempre termina em briga de família no almoço?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Relacionamentos & Pessoas",
     "pergunta": "Qual presente simples tem um valor sentimental gigante para quem ganha?",
-    "impostor": "Qual presente horroroso ou inútil de amigo oculto você esconderia no armário?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Tecnologia & Internet",
     "pergunta": "Qual aplicativo no seu celular é tão útil que mudou a sua rotina para melhor?",
-    "impostor": "Qual aplicativo só serve para roubar seus dados, travar e encher de anúncio chato?"
+    "impostor": "Qual aplicativo ou ferramenta digital do celular mais te ajuda a organizar o seu dia a dia?"
   },
   {
     "tema": "Tecnologia & Internet",
@@ -107901,27 +107901,27 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Tecnologia & Internet",
     "pergunta": "Qual videogame ou jogo marcou a sua vida como uma obra de arte inesquecível?",
-    "impostor": "Qual jogo quebrou todas as expectativas e foi lançado cheio de bugs injogáveis?"
+    "impostor": "Qual jogo com narrativa envolvente ou modo cooperativo você mais se divertiu jogando?"
   },
   {
     "tema": "Tecnologia & Internet",
     "pergunta": "Qual inovação tecnológica dos últimos anos foi a mais revolucionária de todas?",
-    "impostor": "Qual bug ou pane eletrônica te deixa com ódio mortal e vontade de quebrar tudo?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Tecnologia & Internet",
     "pergunta": "Qual meme brasileiro você considera uma obra-prima histórica do humor?",
-    "impostor": "Qual trend de internet é tão vergonhosa e forçada que dá vontade de chorar?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Tecnologia & Internet",
     "pergunta": "Qual gadget ou aparelho eletrônico você compraria agora se o dinheiro não importasse?",
-    "impostor": "Qual bugiganga inútil de comercial de TV promete mundos e não funciona nada?"
+    "impostor": "Qual aplicativo ou ferramenta digital do celular mais te ajuda a organizar o seu dia a dia?"
   },
   {
     "tema": "Tecnologia & Internet",
     "pergunta": "Qual canal de YouTube ou criador de conteúdo você assiste todo santo vídeo?",
-    "impostor": "Qual influencer de internet é tão cancelável e chato que você não aguenta nem a voz?"
+    "impostor": "Qual aplicativo ou ferramenta digital do celular mais te ajuda a organizar o seu dia a dia?"
   },
   {
     "tema": "Dinheiro & Estilo de Vida",
@@ -107931,7 +107931,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Dinheiro & Estilo de Vida",
     "pergunta": "Qual carro dos sonhos é a coisa mais estilosa e veloz do asfalto?",
-    "impostor": "Qual carro é um calhambeque velho que vive quebrando e soltando fumaça preta?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Dinheiro & Estilo de Vida",
@@ -107940,23 +107940,23 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Dinheiro & Estilo de Vida",
-    "pergunta": "Qual mansão cinematográfica com piscina infinita você sonha em ter?",
-    "impostor": "Qual cativeiro minúsculo com mofo na parede cobram um aluguel absurdo?"
+    "pergunta": "Qual mansão cinematográfica com vista panorâmica para o mar você sonha em ter?",
+    "impostor": "Qual cobertura moderna de alto padrão no topo de um arranha-céu seria seu luxo ideal?"
   },
   {
     "tema": "Dinheiro & Estilo de Vida",
     "pergunta": "Qual experiência de luxo extrema você adoraria viver pelo menos uma vez?",
-    "impostor": "Qual golpe financeiro ou pirâmide é a maior armadilha para pessoas ingênuas?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Dinheiro & Estilo de Vida",
     "pergunta": "Qual presente dos sonhos você daria para os seus pais se ficasse milionário?",
-    "impostor": "Qual dívida ou boleto atrasado tira o sono de qualquer trabalhador brasileiro?"
+    "impostor": "Qual recanto sossegado de natureza com árvores e ar puro é o seu refúgio ideal?"
   },
   {
     "tema": "Música & Festas",
     "pergunta": "Qual música tem o ritmo mais contagiante que faz todo mundo dançar na hora?",
-    "impostor": "Qual música chiclete insuportável gruda na cabeça e ninguém aguenta mais?"
+    "impostor": "Qual hit pop ou clássico dos anos 90 todo mundo sabe a letra de cor quando toca?"
   },
   {
     "tema": "Música & Festas",
@@ -107971,7 +107971,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Música & Festas",
     "pergunta": "Como é a festa perfeita com amigos: muita risada, comida boa e música animada?",
-    "impostor": "Como é a pior festa de aniversário flopada onde quase ninguém compareceu?"
+    "impostor": "Qual hit pop ou clássico dos anos 90 todo mundo sabe a letra de cor quando toca?"
   },
   {
     "tema": "Música & Festas",
@@ -107986,17 +107986,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Escola & Infância",
     "pergunta": "Qual matéria da escola era a mais interessante e empolgante para você estudar?",
-    "impostor": "Qual disciplina escolar era o seu maior tormento e pesadelo nas provas?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Escola & Infância",
     "pergunta": "Qual brincadeira de rua na infância rendia as melhores tardes com os vizinhos?",
-    "impostor": "Qual castigo dos seus pais ou da professora te dava mais medo de levar?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Escola & Infância",
-    "pergunta": "Qual brinquedo clássico da infância você implorava para o Papai Noel te dar?",
-    "impostor": "Qual brinquedo tosco quebrava nos primeiros cinco minutos depois de abrir a caixa?"
+    "pergunta": "Qual brinquedo clássico ou jogo de tabuleiro da infância você implorava para ganhar de presente?",
+    "impostor": "Qual jogo eletrônico ou videogame antigo marcou as tardes mais felizes da sua infância?"
   },
   {
     "tema": "Escola & Infância",
@@ -108006,7 +108006,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Escola & Infância",
     "pergunta": "Qual era o melhor momento do ano escolar que todo estudante ansiava?",
-    "impostor": "Qual era o momento de maior tensão de entrega de boletim com nota baixa?"
+    "impostor": "Qual disciplina na escola exigia mais leitura, redação e interpretação de textos?"
   },
   {
     "tema": "Esportes & Saúde",
@@ -108026,17 +108026,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Esportes & Saúde",
     "pergunta": "Qual estádio de futebol tem a festa de torcida mais arrepiante e fervorosa?",
-    "impostor": "Qual torcida rival é a mais chata, arrogante e insuportável quando ganha?"
+    "impostor": "Qual esporte de equipe exige grande sincronia tática e entrosamento dos jogadores?"
   },
   {
     "tema": "Esportes & Saúde",
     "pergunta": "Qual vitória histórica do Brasil te encheu de orgulho e euforia patriótica?",
-    "impostor": "Qual vexame esportivo histórico foi o mais traumático e vergonhoso de assistir?"
+    "impostor": "Qual esporte de equipe exige grande sincronia tática e entrosamento dos jogadores?"
   },
   {
     "tema": "Micos & Situações",
     "pergunta": "Qual é a reação mais engraçada que você tem quando leva um susto daqueles?",
-    "impostor": "Qual foi a maior vergonha alheia que você já passou no meio de um lugar cheio de gente?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Micos & Situações",
@@ -108061,7 +108061,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Objetos & Invenções",
     "pergunta": "Qual objeto na sua casa você considera a invenção mais confortável e indispensável?",
-    "impostor": "Qual tralha inútil você comprou por impulso e hoje só serve para acumular poeira?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Objetos & Invenções",
@@ -108071,7 +108071,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Objetos & Invenções",
     "pergunta": "Qual invenção da humanidade mudou a história para o bem do mundo?",
-    "impostor": "Qual arma ou invenção maligna causou a maior destruição e sofrimento humano?"
+    "impostor": "Qual cantinho da sua casa é o mais iluminado e agradável para sentar e tomar um café?"
   },
   {
     "tema": "Objetos & Invenções",
@@ -108086,12 +108086,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Viagens & Aventura",
     "pergunta": "Qual aventura radical te daria uma dose inesquecível de adrenalina boa?",
-    "impostor": "Qual perigo imprudente seria uma loucura suicida que ninguém em sã consciência faria?"
+    "impostor": "Qual pássaro nativo com plumagem marcante você acha o mais bonito de ver na natureza?"
   },
   {
     "tema": "Viagens & Aventura",
     "pergunta": "Qual monumento arquitetônico histórico te deixa de queixo caído pela imponência?",
-    "impostor": "Qual prédio moderno feio parece um caixote de concreto cinza sem graça?"
+    "impostor": "Qual cidade histórica ou turística famosa tem paisagens encantadoras para passear?"
   },
   {
     "tema": "Viagens & Aventura",
@@ -108116,7 +108116,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Pessoal & Filosofia",
     "pergunta": "Qual talento secreto especial você gostaria de ter dominado com perfeição?",
-    "impostor": "Qual coisa básica que todo mundo sabe fazer você é um desastre completo?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Pessoal & Filosofia",
@@ -108136,22 +108136,22 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Pessoal & Filosofia",
     "pergunta": "Qual é a pessoa viva ou histórica que você mais admira como modelo de coragem?",
-    "impostor": "Qual figura histórica foi o monstro mais cruel e covarde de todos os tempos?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Pessoal & Filosofia",
-    "pergunta": "Qual sabor de bolo caseiro com café da tarde é o melhor abraço no estômago?",
-    "impostor": "Qual bolo de festa seco com glacê gorduroso é puro arrependimento na primeira mordida?"
+    "pergunta": "Qual sabor de bolo caseiro fofinho combina perfeitamente com um café da tarde quentinho?",
+    "impostor": "Qual torta doce de confeitaria ou bolo confeitado é o seu preferido em uma festa de aniversário?"
   },
   {
     "tema": "Pessoal & Filosofia",
-    "pergunta": "Qual detalhe simples do cotidiano é capaz de arrancar um sorriso sincero do seu rosto?",
-    "impostor": "Qual pequeno incômodo bobo estraga o seu bom humor em dois segundos?"
+    "pergunta": "Qual detalhe simples ou gentileza no cotidiano é capaz de arrancar um sorriso sincero do seu rosto?",
+    "impostor": "Qual surpresa carinhosa de um amigo ou familiar deixa o seu dia imediatamente melhor?"
   },
   {
     "tema": "Comida & Bebida",
     "pergunta": "Qual tipo de queijo é o mais derretido, cremoso e irresistível de comer?",
-    "impostor": "Qual tipo de queijo fedorento tem cheiro de chulé de mendigo?"
+    "impostor": "Qual comida típica ou lanche bem temperado você adora pedir no fim de semana?"
   },
   {
     "tema": "Comida & Bebida",
@@ -108161,27 +108161,27 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Comida & Bebida",
     "pergunta": "Qual sopa ou caldo quentinho é perfeito para curar gripe e aquecer no frio?",
-    "impostor": "Qual água choca ou chá medicinal tem gosto amargo de mato podre?"
+    "impostor": "Qual comida típica ou lanche bem temperado você adora pedir no fim de semana?"
   },
   {
     "tema": "Comida & Bebida",
     "pergunta": "Qual recheio de pastel de feira crocante você sempre pede com caldo de cana?",
-    "impostor": "Qual pastel de vento oleoso vem frio e com recheio estragado?"
+    "impostor": "Qual comida típica ou lanche bem temperado você adora pedir no fim de semana?"
   },
   {
     "tema": "Comida & Bebida",
     "pergunta": "Qual doce de padaria é o mais recheado e fofinho para acompanhar o café?",
-    "impostor": "Qual pão duro como pedra de três dias atrás quase quebra os seus dentes?"
+    "impostor": "Qual doce tradicional ou sobremesa de padaria você sempre fica tentado a pedir?"
   },
   {
     "tema": "Comida & Bebida",
-    "pergunta": "Qual corte de carne grelhada ao ponto derrete na boca com sal grosso?",
-    "impostor": "Qual comida crua ou gosmenta te faria cuspir imediatamente no guardanapo?"
+    "pergunta": "Qual corte nobre de carne bovina grelhada ao ponto derrete na boca em um bom churrasco?",
+    "impostor": "Qual espetinho tradicional de rua ou de boteco é o mais saboroso para comer com farofa?"
   },
   {
     "tema": "Humor & Vida Social",
-    "pergunta": "Qual piada ou trocadilho bobo sempre te faz rir como uma criança?",
-    "impostor": "Qual piada de tiozão no churrasco gera aquele silêncio mortal e constrangedor?"
+    "pergunta": "Qual tipo de piada de trocadilho rápido ou meme da internet sempre te faz rir bobamente?",
+    "impostor": "Qual história engraçada e inusitada de um amigo seu na escola sempre rende gargalhadas no grupo?"
   },
   {
     "tema": "Humor & Vida Social",
@@ -108210,8 +108210,8 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Cultura Pop & Geek",
-    "pergunta": "Qual sabre de luz de Star Wars ou arma sci-fi é a mais estilosa e poderosa?",
-    "impostor": "Qual arma tosca de brinquedo de camelô quebrava no primeiro golpe?"
+    "pergunta": "Qual sabre de luz com cor marcante ou arma de ficção científica você acha a mais estilosa?",
+    "impostor": "Qual nave espacial lendária da ficção científica é a mais icônica e veloz para viajar pelo hiperespaço?"
   },
   {
     "tema": "Cultura Pop & Geek",
@@ -108226,17 +108226,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cultura Pop & Geek",
     "pergunta": "Qual feitiço de Harry Potter você usaria para se defender de qualquer perigo?",
-    "impostor": "Qual maldição imperdoável você condenaria seu pior inimigo a sofrer?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Cultura Pop & Geek",
     "pergunta": "Qual personagem de videogame você escolheria como seu parceiro de equipe leal?",
-    "impostor": "Qual NPC inútil de escolta anda mais devagar que você e morre em dois segundos?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Cultura Pop & Geek",
     "pergunta": "Qual nave espacial de ficção científica é a mais rápida e lendária da galáxia?",
-    "impostor": "Qual lata velha espacial vivia quebrando o motor de dobra no pior momento?"
+    "impostor": "Qual item clássico ou hábito do dia a dia você considera muito prático na sua rotina?"
   },
   {
     "tema": "Cotidiano Brasileiro",
@@ -108245,8 +108245,8 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Cotidiano Brasileiro",
-    "pergunta": "Qual feriado prolongado no calendário brasileiro é a maior bênção do ano?",
-    "impostor": "Qual segunda-feira chuvosa depois de um feriado bate a maior tristeza do mês?"
+    "pergunta": "Qual feriado prolongado com praia e viagens com amigos é o mais animado do ano?",
+    "impostor": "Qual feriado com clima de aconchego e almoço em família você mais gosta de aproveitar para descansar?"
   },
   {
     "tema": "Cotidiano Brasileiro",
@@ -108260,8 +108260,8 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Cotidiano Brasileiro",
-    "pergunta": "Qual doce típico de festa junina você devora até acabar o estoque da barraca?",
-    "impostor": "Qual pé de moleque duro quebra as obturações do dente na primeira dentada?"
+    "pergunta": "Qual doce junino à base de milho ou amendoim você devora na festa de São João?",
+    "impostor": "Qual salgado ou comida quentinha de festa junina, como caldo ou pastel, é indispensável na barraca?"
   },
   {
     "tema": "Cotidiano Brasileiro",
@@ -108276,12 +108276,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cotidiano Brasileiro",
     "pergunta": "Qual som de chuva no telhado de telha de barro embala o melhor sono da vida?",
-    "impostor": "Qual goteira maldita pingando bem em cima da sua cama te acordou de madrugada?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Cotidiano Brasileiro",
     "pergunta": "Qual praia tranquila do litoral brasileiro é o refúgio perfeito longe do barulho?",
-    "impostor": "Qual praia lotada cheia de farofa, caixa de som estourada e lixo na areia é um inferno?"
+    "impostor": "Qual momento sossegado em casa você mais aproveita para relaxar e colocar as coisas em ordem?"
   },
   {
     "tema": "Cotidiano Brasileiro",
@@ -108291,7 +108291,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Animais & Pets",
     "pergunta": "Qual animal exótico você sonha em ver de pertinho num safári na África?",
-    "impostor": "Qual bicho perigoso você jamais gostaria de dar de cara sozinho no meio da mata?"
+    "impostor": "Qual animal mamífero selvagem você acha o mais ágil e fascinante de observar em documentários?"
   },
   {
     "tema": "Animais & Pets",
@@ -108301,12 +108301,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Animais & Pets",
     "pergunta": "Qual mamífero aquático é o mais simpático, brincalhão e encantador dos mares?",
-    "impostor": "Qual criatura nojenta de tentáculos parece saída de um pesadelo cósmico?"
+    "impostor": "Qual animal exótico de zoológico você acha o mais curioso e interessante de observar?"
   },
   {
     "tema": "Animais & Pets",
     "pergunta": "Qual filhote de mamífero você acha tão fofo que não resiste a abraçar?",
-    "impostor": "Qual roedor ou ratazana enorme de esgoto causa o maior nojo do mundo?"
+    "impostor": "Qual animal exótico de zoológico você acha o mais curioso e interessante de observar?"
   },
   {
     "tema": "Animais & Pets",
@@ -108315,13 +108315,13 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Gastronomia & Paladar",
-    "pergunta": "Qual prato refinado de chef estrelado você comeria de joelhos de tão perfeito?",
-    "impostor": "Qual prato bizarro de outro país você acharia repugnante e nojento de comer?"
+    "pergunta": "Qual prato requintado de chef com ingredientes nobres você pediria para um jantar comemorativo?",
+    "impostor": "Qual massa artesanal com molho especial você considera uma verdadeira obra-prima da gastronomia?"
   },
   {
     "tema": "Gastronomia & Paladar",
     "pergunta": "Qual suco natural de fruta bem gelado é o ápice do refresco no verão?",
-    "impostor": "Qual xarope medicinal ou bebida rançosa tem o pior gosto amargo?"
+    "impostor": "Qual comida típica ou lanche bem temperado você adora pedir no fim de semana?"
   },
   {
     "tema": "Gastronomia & Paladar",
@@ -108331,7 +108331,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Gastronomia & Paladar",
     "pergunta": "Qual molho para massa ou salada é o mais aveludado e saboroso?",
-    "impostor": "Qual maionese azeda e quente sob o sol causaria a pior diarreia da sua vida?"
+    "impostor": "Qual comida típica ou lanche bem temperado você adora pedir no fim de semana?"
   },
   {
     "tema": "Gastronomia & Paladar",
@@ -108341,17 +108341,17 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Gastronomia & Paladar",
     "pergunta": "Qual cereal matinal ou pão quente da manhã te dá mais energia e disposição?",
-    "impostor": "Qual mingau sem sal e grudento parece papa de hospital?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Gastronomia & Paladar",
     "pergunta": "Qual corte de carne suína na brasa fica suculento e douradinho?",
-    "impostor": "Qual carne gordurosa e fria fica coalhada no prato dando ânsia?"
+    "impostor": "Qual comida típica ou lanche bem temperado você adora pedir no fim de semana?"
   },
   {
     "tema": "Cinema & Streaming",
     "pergunta": "Qual animação da Disney ou Pixar tem a mensagem mais tocante para todas as idades?",
-    "impostor": "Qual filme infantil com computação gráfica bizarra dá pesadelos nas crianças?"
+    "impostor": "Qual clássico animado nostálgico você assistia repetidas vezes na infância sem cansar?"
   },
   {
     "tema": "Cinema & Streaming",
@@ -108366,7 +108366,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Cinema & Streaming",
     "pergunta": "Qual detetive da ficção resolve os mistérios mais complexos com pura genialidade?",
-    "impostor": "Qual personagem burro de filme de terror vai investigar o barulho no porão sozinho?"
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
   },
   {
     "tema": "Cinema & Streaming",
@@ -108381,7 +108381,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Música & Shows",
     "pergunta": "Qual festival de música reúne a melhor energia positiva e gente animada?",
-    "impostor": "Qual show muvucado debaixo de tempestade de lama foi o maior perrengue da sua vida?"
+    "impostor": "Qual estilo musical dançante e descontraído faz todo mundo cantar junto no refrão?"
   },
   {
     "tema": "Música & Shows",
@@ -108390,8 +108390,8 @@ const PERGUNTAS_INVERTIDAS = [
   },
   {
     "tema": "Música & Shows",
-    "pergunta": "Qual voz de cantor ou cantora é a mais suave, afinada e angelical do mundo?",
-    "impostor": "Qual cantor desafinado grita tanto no microfone que parece um bode berrando?"
+    "pergunta": "Qual cantor ou cantora da música brasileira tem a voz mais suave, afinada e emocionante?",
+    "impostor": "Qual artista consagrado do pop internacional tem o maior alcance vocal e potência nos palcos?"
   },
   {
     "tema": "Videogames & Jogos",
@@ -108401,7 +108401,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Videogames & Jogos",
     "pergunta": "Qual console clássico de videogame te deu as noites de jogatina mais marcantes da infância?",
-    "impostor": "Qual controle de videogame quebrado com drift no analógico só te faz passar raiva?"
+    "impostor": "Qual videogame clássico ou portátil marcou as suas férias mais divertidas?"
   },
   {
     "tema": "Videogames & Jogos",
@@ -108421,7 +108421,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Tecnologia & Futuro",
     "pergunta": "Qual recurso do smartphone é o mais prático e salvador da sua rotina?",
-    "impostor": "Qual notificação inútil de aplicativo fica apitando o dia inteiro para encher o saco?"
+    "impostor": "Qual aplicativo ou ferramenta digital do celular mais te ajuda a organizar o seu dia a dia?"
   },
   {
     "tema": "Tecnologia & Futuro",
@@ -108436,12 +108436,12 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Viagens & Cidades",
     "pergunta": "Qual cachoeira de águas puras e cristalinas recarrega a alma de qualquer pessoa?",
-    "impostor": "Qual esgoto a céu aberto tem aquele fedor insuportável de gás metano?"
+    "impostor": "Qual cidade histórica ou turística famosa tem paisagens encantadoras para passear?"
   },
   {
     "tema": "Viagens & Cidades",
     "pergunta": "Qual ilha paradisíaca isolada no mundo seria o retiro ideal para se desconectar de tudo?",
-    "impostor": "Qual prisão de segurança máxima seria o lugar mais aterrorizante para passar a noite?"
+    "impostor": "Qual destino litorâneo ou enseada com mar calmo você considera perfeito para descansar?"
   },
   {
     "tema": "Viagens & Cidades",
@@ -108451,7 +108451,7 @@ const PERGUNTAS_INVERTIDAS = [
   {
     "tema": "Vida Pessoal & Hábitos",
     "pergunta": "Qual hobby relaxante você consegue passar horas praticando sem ver o tempo passar?",
-    "impostor": "Qual obrigação burocrática em cartório ou repartição pública é uma tortura sem fim?"
+    "impostor": "Qual momento especial compartilhado com amigos próximos fica guardado na memória com carinho?"
   },
   {
     "tema": "Vida Pessoal & Hábitos",
@@ -108482,6 +108482,376 @@ const PERGUNTAS_INVERTIDAS = [
     "tema": "Vida Pessoal & Hábitos",
     "pergunta": "Qual vitória merecida após muito esforço te fez chorar de alegria?",
     "impostor": "Qual tropeço ou queda de cara no chão em público você fingiu que nada aconteceu?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual comida típica de FESTA INFANTIL é a mais gostosa e todo mundo corre para pegar?",
+    "impostor": "Qual comida de BOTECO tradicional você mais gosta de pedir com uma bebida gelada?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual é a melhor sobremesa de chocolate cremoso depois do almoço?",
+    "impostor": "Qual é a sobremesa gelada mais refrescante para comer em um dia de calor?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual comida reconfortante e quentinha você prefere comer em um dia frio de chuva?",
+    "impostor": "Qual comida rápida e prática por aplicativo você mais pede quando bate preguiça à noite?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual salgado frito é o mais crocante e irresistível da lanchonete da esquina?",
+    "impostor": "Qual salgado assado ou folhado de padaria você sempre escolhe na vitrine?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual fruta bem doce e macia é a sua favorita para comer de sobremesa?",
+    "impostor": "Qual fruta cítrica e refrescante é a melhor para fazer um suco bem gelado?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual sabor de pizza salgada é o mais clássico que nunca tem erro na mesa?",
+    "impostor": "Qual recheio de pastel de feira crocante você sempre pede na barraca?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual corte de carne bovina nobre é o mais macio e saboroso em um churrasco?",
+    "impostor": "Qual corte de carne suína grelhada fica mais crocante e suculento na brasa?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual é o doce tradicional de aniversário enrolado na mão que não pode faltar?",
+    "impostor": "Qual doce caseiro de colher você adora comer direto da panela ainda quente?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual petisco salgado crocante é perfeito para comer assistindo a um filme no sofá?",
+    "impostor": "Qual petisco de boteco não pode faltar na mesa quando a galera se reúne para beber?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual lanche matinal da padaria é o par ideal para um café com leite quentinho?",
+    "impostor": "Qual doce de confeitaria da padaria é o mais recheado e fofinho da vitrine?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual molho encorpado e saboroso deixa qualquer prato de macarrão espetacular?",
+    "impostor": "Qual condimento ou molho de lanche não pode faltar dentro do seu hambúrguer artesanal?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual sobremesa de padaria com açúcar caramelizado e textura aveludada é a mais famosa?",
+    "impostor": "Qual doce típico de festa junina feito com milho verde cremoso é o mais esperado do ano?"
+  },
+  {
+    "tema": "Comida & Paladar",
+    "pergunta": "Qual queijo amarelo derrete com facilidade e fica delicioso em sanduíches?",
+    "impostor": "Qual queijo branco brasileiro tradicional é o acompanhamento clássico do cafezinho da tarde?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual destino de viagem no mundo é o mais famoso por suas praias paradisíacas e mar azul?",
+    "impostor": "Qual destino de viagem no mundo é o mais famoso por montanhas com neve e esportes de inverno?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual cidade cosmopolita do mundo é a mais famosa pelas lojas de luxo e tecnologia de ponta?",
+    "impostor": "Qual cidade histórica do mundo é a mais famosa por templos antigos, castelos e museus de arte?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual destino turístico no Nordeste brasileiro é famoso pelas piscinas naturais de águas mornas?",
+    "impostor": "Qual cidade serrana do Sul ou Sudeste do Brasil é famosa pelo clima frio e fondues deliciosos?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual é o melhor lugar público e tranquilo para levar alguém em um PRIMEIRO encontro romântico?",
+    "impostor": "Qual é o melhor lugar descontraído para levar o grupo de amigos em um sábado à noite?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual capital brasileira tem o pôr do sol mais famoso e praias urbanas cheias de vida?",
+    "impostor": "Qual capital brasileira é o maior centro financeiro, cultural e gastronômico do país?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual parque natural ou reserva ecológica é perfeito para fazer trilhas e ver cachoeiras?",
+    "impostor": "Qual praia isolada e sossegada é o refúgio perfeito para deitar na rede e ouvir as ondas?"
+  },
+  {
+    "tema": "Lugares & Viagens",
+    "pergunta": "Qual meio de transporte você considera o mais confortável para viajar longas distâncias?",
+    "impostor": "Qual meio de transporte sobre trilhos oferece o trajeto com as vistas mais bonitas e charmosas?"
+  },
+  {
+    "tema": "Cinema & Cultura Pop",
+    "pergunta": "Qual super-herói dos Vingadores você considera o mais PODEROSO em combate corpo a corpo?",
+    "impostor": "Qual super-herói dos Vingadores você considera o mais INTELIGENTE e estrategista da equipe?"
+  },
+  {
+    "tema": "Cinema & Cultura Pop",
+    "pergunta": "Qual herói clássico dos quadrinhos é famoso por operar à noite e usar uma capa preta?",
+    "impostor": "Qual herói dos quadrinhos da Marvel é conhecido pelo uniforme colante vermelho e por soltar teias?"
+  },
+  {
+    "tema": "Cinema & Cultura Pop",
+    "pergunta": "Qual clássico vilão dos cinemas tinha uma motivação compreensível e até um pouco de razão?",
+    "impostor": "Qual vilão dos cinemas tinha o visual mais estiloso, imponente e voz marcante?"
+  },
+  {
+    "tema": "Cinema & Cultura Pop",
+    "pergunta": "Qual filme de ficção científica espacial tem os efeitos visuais e buracos negros mais realistas?",
+    "impostor": "Qual filme de ação e aventura tem as perseguições e batalhas mais empolgantes do cinema?"
+  },
+  {
+    "tema": "Cinema & Cultura Pop",
+    "pergunta": "Qual filme de comédia nacional é o mais aclamado pelo público com piadas inesquecíveis?",
+    "impostor": "Qual filme dramático brasileiro concorreu a prêmios internacionais e emocionou o mundo?"
+  },
+  {
+    "tema": "Cinema & Cultura Pop",
+    "pergunta": "Qual animação da Pixar fez quase todo mundo chorar na sala de cinema de tanta emoção?",
+    "impostor": "Qual filme de animação é o mais engraçado e divertido para assistir em família?"
+  },
+  {
+    "tema": "Cinema & Cultura Pop",
+    "pergunta": "Qual série de TV de suspense te prendeu com o maior plot twist no final da temporada?",
+    "impostor": "Qual série de fantasia épica conquistou legiões de fãs com batalhas de exércitos e dragões?"
+  },
+  {
+    "tema": "Cinema & Cultura Pop",
+    "pergunta": "Qual ator consagrado de Hollywood é famoso por interpretar papéis de heróis de ação imbatíveis?",
+    "impostor": "Qual ator talentoso é famoso por transformações físicas radicais para viver seus personagens?"
+  },
+  {
+    "tema": "Games & Jogos",
+    "pergunta": "Qual jogo de videogame é o mais viciante para jogar ONLINE em partidas competitivas com os amigos?",
+    "impostor": "Qual é o jogo de videogame mais divertido para jogar de DUAS PESSOAS no mesmo sofá lado a lado?"
+  },
+  {
+    "tema": "Games & Jogos",
+    "pergunta": "Qual jogo de mundo aberto tem a ambientação urbana e liberdade de missões mais impressionante?",
+    "impostor": "Qual jogo de RPG medieval tem o mapa mais épico e cheio de segredos para explorar a cavalo?"
+  },
+  {
+    "tema": "Games & Jogos",
+    "pergunta": "Qual jogo clássico de cartas é o mais jogado em reuniões de família após o almoço?",
+    "impostor": "Qual jogo de cartas com regras rápidas faz a galera se exaltar e gritar por causa de blefes?"
+  },
+  {
+    "tema": "Games & Jogos",
+    "pergunta": "Qual console clássico de videogame marcou época nas locadoras e lares dos anos 90 e 2000?",
+    "impostor": "Qual portátil de videogame revolucionou a jogatina com duas telas ou formato híbrido?"
+  },
+  {
+    "tema": "Games & Jogos",
+    "pergunta": "Qual protagonista de videogame é o símbolo mais conhecido e amado da história dos jogos?",
+    "impostor": "Qual herói guerreiro de ação dos jogos empunha lâminas e derrotou deuses da mitologia?"
+  },
+  {
+    "tema": "Cotidiano & Casa",
+    "pergunta": "Qual cômodo da casa é o mais aconchegante para você deitar e relaxar no fim do dia?",
+    "impostor": "Qual cômodo da sua casa é onde as pessoas mais se reúnem para conversar e petiscar?"
+  },
+  {
+    "tema": "Cotidiano & Casa",
+    "pergunta": "Qual objeto indispensável você confere com a mão no bolso antes de passar pela porta de casa?",
+    "impostor": "Qual acessório portátil no bolso ou na bolsa você usaria para não ficar incomunicável?"
+  },
+  {
+    "tema": "Cotidiano & Casa",
+    "pergunta": "Qual tarefa doméstica diária deixa a casa com a maior sensação de limpeza e organização?",
+    "impostor": "Qual cômodo da casa dá mais trabalho e exige mais tempo de faxina pesada para limpar?"
+  },
+  {
+    "tema": "Cotidiano & Casa",
+    "pergunta": "Qual hábito saudável matinal te dá mais energia e disposição para enfrentar o dia?",
+    "impostor": "Qual atividade relaxante noturna te ajuda a desligar a cabeça e dormir com mais facilidade?"
+  },
+  {
+    "tema": "Cotidiano & Casa",
+    "pergunta": "Qual é o momento do banho de chuveiro quente que dá a maior sensação de alívio e bem-estar?",
+    "impostor": "Qual cuidado de higiene pessoal deixa você com aquela sensação gostosa de renovação imediata?"
+  },
+  {
+    "tema": "Cotidiano & Casa",
+    "pergunta": "Qual eletrodoméstico moderno da cozinha economiza mais tempo no preparo das refeições?",
+    "impostor": "Qual aparelho eletrônico da casa é o que mais consome energia elétrica se ficar ligado direto?"
+  },
+  {
+    "tema": "Animais & Natureza",
+    "pergunta": "Qual animal de estimação doméstico é o mais carinhoso, apegado e companheiro do dono?",
+    "impostor": "Qual animal pequeno de estimação é o mais independente e fácil de cuidar no dia a dia?"
+  },
+  {
+    "tema": "Animais & Natureza",
+    "pergunta": "Qual grande felino da selva é o caçador mais veloz e ágil na perseguição de presas?",
+    "impostor": "Qual predador selvagem tem a força muscular e mordida mais poderosa de todas?"
+  },
+  {
+    "tema": "Animais & Natureza",
+    "pergunta": "Qual animal marinho é famoso pela inteligência avançada e acrobacias alegres na água?",
+    "impostor": "Qual mamífero aquático gigante dos oceanos impressiona pelo tamanho monumental de seu corpo?"
+  },
+  {
+    "tema": "Animais & Natureza",
+    "pergunta": "Qual ave tem o canto mais suave e penas coloridas que encantam quem olha?",
+    "impostor": "Qual ave de rapina tem a visão mais aguçada e dá rasantes precisos para caçar do alto?"
+  },
+  {
+    "tema": "Animais & Natureza",
+    "pergunta": "Qual animal da fazenda é o mais amigável e dócil para alimentar na mão?",
+    "impostor": "Qual animal do sítio acorda toda a vizinhança cantando com os primeiros raios de sol?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual gênero musical brasileiro é a trilha sonora oficial de um churrasco de domingo entre amigos?",
+    "impostor": "Qual estilo musical dançante do Nordeste faz todo mundo arrastar o pé agarradinho na pista?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual instrumento musical de cordas é o mais clássico e popular em rodas acústicas na praia?",
+    "impostor": "Qual instrumento de teclas e cordas internas é a peça principal de concertos e salas de concerto?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual cantor ou banda internacional de pop lota estádios inteiros em minutos de venda de ingressos?",
+    "impostor": "Qual banda lendária de rock dos anos 70 ou 80 compôs os solos de guitarra mais memoráveis?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual é a melhor bebida gelada e refrescante para brindar em uma comemoração festiva ao ar livre?",
+    "impostor": "Qual drinque elegante com frutas e especiarias você pediria no balcão de um lounge sofisticado?"
+  },
+  {
+    "tema": "Música & Festas",
+    "pergunta": "Qual peça de roupa básica é a mais versátil e confortável para usar no dia a dia informal?",
+    "impostor": "Qual peça de vestuário você veste quando a ocasião pede um visual social bem alinhado e elegante?"
+  },
+  {
+    "tema": "Tecnologia & Apps",
+    "pergunta": "Qual aplicativo no seu celular você mais utiliza diariamente para conversar com amigos e família?",
+    "impostor": "Qual rede social de fotos e vídeos curtos você abre para passar o tempo vendo novidades e trends?"
+  },
+  {
+    "tema": "Tecnologia & Apps",
+    "pergunta": "Qual plataforma de streaming você mais utiliza para maratonar séries e assistir lançamentos?",
+    "impostor": "Qual site de vídeos na internet você mais pesquisa quando quer assistir tutoriais e podcasts longos?"
+  },
+  {
+    "tema": "Tecnologia & Apps",
+    "pergunta": "Qual recurso inovador dos smartphones recentes você achou o mais prático e útil para o dia a dia?",
+    "impostor": "Qual acessório tecnológico inteligente você mais gosta de usar para monitorar saúde e atividades?"
+  },
+  {
+    "tema": "Tecnologia & Apps",
+    "pergunta": "Qual aplicativo de navegação e trânsito por mapa é o seu companheiro ao volante?",
+    "impostor": "Qual aplicativo de mobilidade urbana você mais aciona para pedir um carro até o seu destino?"
+  },
+  {
+    "tema": "Profissões & Carreira",
+    "pergunta": "Qual profissão você sonhava em seguir na infância por achar emocionante e cheia de aventuras?",
+    "impostor": "Qual carreira na área de segurança pública ou emergência exige grande coragem e preparo físico?"
+  },
+  {
+    "tema": "Profissões & Carreira",
+    "pergunta": "Qual área profissional ligada à saúde cuida diretamente do alívio da dor e cura de pacientes em hospitais?",
+    "impostor": "Qual especialidade médica de alta precisão passa horas em salas cirúrgicas salvando vidas?"
+  },
+  {
+    "tema": "Profissões & Carreira",
+    "pergunta": "Qual carreira na área de tecnologia oferece as maiores oportunidades de trabalho remoto e inovação?",
+    "impostor": "Qual profissão ligada a finanças e negócios estuda o mercado para gerar grandes lucros e investimentos?"
+  },
+  {
+    "tema": "Profissões & Carreira",
+    "pergunta": "Qual matéria do colégio você considerava a mais desafiadora por exigir raciocínio lógico e fórmulas?",
+    "impostor": "Qual disciplina escolar exigia mais leitura atenta, interpretação de textos e redações bem elaboradas?"
+  },
+  {
+    "tema": "Pessoas & Convivência",
+    "pergunta": "Qual qualidade no caráter de alguém faz você confiar e se sentir seguro de imediato?",
+    "impostor": "Qual traço de personalidade bem-humorado torna uma pessoa a companhia mais agradável em qualquer grupo?"
+  },
+  {
+    "tema": "Pessoas & Convivência",
+    "pergunta": "Qual gesto de consideração simples de um amigo mostra que ele realmente se importa com você?",
+    "impostor": "Qual tipo de surpresa carinhosa em uma data especial deixa qualquer um com o coração aquecido?"
+  },
+  {
+    "tema": "Pessoas & Convivência",
+    "pergunta": "Qual assunto em uma roda de amigos sempre rende longas conversas com muitas risadas nostálgicas?",
+    "impostor": "Qual debate amistoso sobre preferências do cotidiano sempre divide a opinião da galera ao meio?"
+  },
+  {
+    "tema": "Pessoas & Convivência",
+    "pergunta": "Qual fase da vida escolar rende as memórias de amizade mais duradouras que a gente guarda para sempre?",
+    "impostor": "Qual época da infância tinha as brincadeiras de rua mais marcantes que não voltam mais?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Qual superpoder você escolheria para se locomover instantaneamente e viajar o mundo sem gastar nada?",
+    "impostor": "Qual superpoder de velocidade sobre-humana permitiria fazer tudo em fração de segundos?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Qual superpoder você escolheria se seu objetivo fosse ajudar e salvar o maior número de pessoas em perigo?",
+    "impostor": "Qual habilidade sobre-humana de proteção absoluta tornaria seu corpo totalmente imune a qualquer ataque?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Qual criatura mitológica fantástica seria a mais majestosa para ter como companheira de guarda?",
+    "impostor": "Qual pequeno prazer simples do cotidiano melhora o seu humor em um dia comum?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Para qual período histórico do passado você faria uma visita rápida se tivesse uma máquina do tempo?",
+    "impostor": "Qual século do futuro distante você mais teria curiosidade de espiar para ver os avanços da humanidade?"
+  },
+  {
+    "tema": "Superpoderes & Fantasia",
+    "pergunta": "Qual artefato mágico dos contos de fadas realiza desejos com facilidade para quem o encontra?",
+    "impostor": "Qual item de fantasia garante poderes extraordinários a quem souber desvendar seu mistério?"
+  },
+  {
+    "tema": "Esportes & Ação",
+    "pergunta": "Qual modalidade esportiva coletiva é a mais disputada e emocionante de assistir no estádio?",
+    "impostor": "Qual esporte dinâmico e veloz de quadra fechada envolve jogadas acrobáticas e cestas no último segundo?"
+  },
+  {
+    "tema": "Esportes & Ação",
+    "pergunta": "Qual exercício físico aeróbico ao ar livre proporciona a melhor sensação de liberdade e fôlego renovado?",
+    "impostor": "Qual esporte aquático radical nas ondas do mar proporciona a maior descarga de adrenalina pura?"
+  },
+  {
+    "tema": "Esportes & Ação",
+    "pergunta": "Qual atleta brasileiro histórico é considerado o maior símbolo de superação e orgulho do país?",
+    "impostor": "Qual lenda do futebol mundial é reverenciada pelos títulos mundiais e jogadas geniais que marcaram a história?"
+  },
+  {
+    "tema": "Esportes & Ação",
+    "pergunta": "Qual prova de corrida de atletismo coroa o ser humano mais rápido e explosivo das Olimpíadas?",
+    "impostor": "Qual prova de resistência física extrema desafia os competidores a percorrer dezenas de quilômetros até a exaustão?"
+  },
+  {
+    "tema": "Festas & Tradições",
+    "pergunta": "Qual prato tradicional das festas juninas brasileiras à base de milho doce é o mais consumido?",
+    "impostor": "Qual prato assado com temperos especiais é a estrela principal na ceia de Natal das famílias brasileiras?"
+  },
+  {
+    "tema": "Festas & Tradições",
+    "pergunta": "Qual celebração festiva brasileira tem as ruas mais decoradas com bandeirinhas, fogueiras e quadrilhas?",
+    "impostor": "Qual data de fim de ano reúne multidões na praia vestindo roupas brancas para pular as sete ondas?"
+  },
+  {
+    "tema": "Festas & Tradições",
+    "pergunta": "Qual doce de leite artesanal pastoso é famoso por acompanhar queijo da serra nas fazendas mineiras?",
+    "impostor": "Qual compota de frutas ou goiabada cascão tem aquela textura firme e sabor doce inconfundível?"
+  },
+  {
+    "tema": "Festas & Tradições",
+    "pergunta": "Qual feriado festivo mais mobiliza viagens, blocos de rua e desfiles de fantasias pelo Brasil afora?",
+    "impostor": "Qual feriado prolongado no meio do ano é o mais esperado para descansar e fugir da correria da cidade?"
   }
 ];
 
