@@ -16,6 +16,8 @@ const HubOnline = {
   myCard: null,
   myHint: null,
   gameState: "lobby", // "lobby" | "playing" | "revealed"
+  playerAnswers: {}, // { playerName: text }
+  mySubmittedAnswer: "",
 
   // Gera um PIN numérico aleatório de 6 dígitos
   generatePin() {
@@ -94,6 +96,19 @@ const HubOnline = {
 
   handleHostReceivedData(conn, data) {
     if (!data || !data.type) return;
+
+    if (data.type === "SUBMIT_ANSWER") {
+      if (!this.playerAnswers) this.playerAnswers = {};
+      this.playerAnswers[data.playerName] = (data.answer || "").trim();
+      this.broadcast({
+        type: "ANSWERS_UPDATE",
+        answers: this.playerAnswers
+      });
+      if (HubGame && HubGame.onOnlineAnswersUpdate) {
+        HubGame.onOnlineAnswersUpdate(this.playerAnswers);
+      }
+      return;
+    }
 
     if (data.type === "JOIN_ROOM") {
       const pName = (data.name || "Jogador").slice(0, 18);
@@ -227,12 +242,20 @@ const HubOnline = {
       this.isPerguntaMode = !!data.isPerguntaMode;
       this.perguntaReal = data.perguntaReal || "";
       this.officialQuestion = null;
+      this.playerAnswers = {};
+      this.mySubmittedAnswer = "";
       if (HubGame && HubGame.onOnlineGameStarted) {
         HubGame.onOnlineGameStarted(data);
+      }
+    } else if (data.type === "ANSWERS_UPDATE") {
+      this.playerAnswers = data.answers || {};
+      if (HubGame && HubGame.onOnlineAnswersUpdate) {
+        HubGame.onOnlineAnswersUpdate(this.playerAnswers);
       }
     } else if (data.type === "SHOW_OFFICIAL_QUESTION") {
       this.gameState = "question_revealed";
       this.officialQuestion = data.question;
+      if (data.answers) this.playerAnswers = data.answers;
       if (HubGame && HubGame.onOnlineShowOfficialQuestion) {
         HubGame.onOnlineShowOfficialQuestion(data.question);
       }
@@ -254,6 +277,8 @@ const HubOnline = {
     this.gameState = "playing";
     this.tableResults = tableResultsData;
     this.officialQuestion = null;
+    this.playerAnswers = {};
+    this.mySubmittedAnswer = "";
 
     this.players.forEach(p => {
       const cardInfo = assignedCardsMap[p.id];
@@ -283,12 +308,36 @@ const HubOnline = {
     });
   },
 
+  submitAnswer(answer) {
+    const text = (answer || "").trim();
+    this.mySubmittedAnswer = text;
+    if (!this.playerAnswers) this.playerAnswers = {};
+    this.playerAnswers[this.playerName] = text;
+
+    if (this.isHost) {
+      this.broadcast({
+        type: "ANSWERS_UPDATE",
+        answers: this.playerAnswers
+      });
+      if (HubGame && HubGame.onOnlineAnswersUpdate) {
+        HubGame.onOnlineAnswersUpdate(this.playerAnswers);
+      }
+    } else if (this.hostConn && this.hostConn.open) {
+      this.hostConn.send({
+        type: "SUBMIT_ANSWER",
+        playerName: this.playerName,
+        answer: text
+      });
+    }
+  },
+
   hostShowOfficialQuestion(questionText) {
     this.gameState = "question_revealed";
     this.officialQuestion = questionText;
     this.broadcast({
       type: "SHOW_OFFICIAL_QUESTION",
-      question: questionText
+      question: questionText,
+      answers: this.playerAnswers
     });
   },
 
@@ -320,5 +369,14 @@ const HubOnline = {
     this.hostConn = null;
     this.players = [];
     this.gameState = "lobby";
+    this.myCard = null;
+    this.myHint = null;
+    this.myCardData = null;
+    this.isPerguntaMode = false;
+    this.perguntaReal = "";
+    this.officialQuestion = null;
+    this.tableResults = null;
+    this.playerAnswers = {};
+    this.mySubmittedAnswer = "";
   }
 };

@@ -408,6 +408,24 @@ const HubGame = {
           <div class="pergunta-box oficial-highlight">
             "${HubOnline.officialQuestion || HubOnline.perguntaReal}"
           </div>
+
+          <div style="margin: 12px 0 6px; text-align: left;">
+            <div style="font-size: 0.84rem; font-weight: 800; color: var(--mut); text-transform: uppercase; margin-bottom: 6px;">
+              📝 Respostas dos Jogadores:
+            </div>
+            <div class="pergunta-respostas-list">
+              ${HubOnline.players.map(p => {
+                const resp = (HubOnline.playerAnswers && HubOnline.playerAnswers[p.name]) ? this.escapeHtml(HubOnline.playerAnswers[p.name]) : '<i style="color:var(--mut); font-weight:normal;">(não digitou)</i>';
+                return `
+                  <div class="pergunta-resposta-item">
+                    <span class="resp-autor">👤 <b>${p.name}</b>:</span>
+                    <span class="resp-balao">"${resp}"</span>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+
           <div class="pergunta-debate-box">
             <p style="font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; color: var(--ink);">🕵️ Quem é o Impostor?</p>
             <p style="font-size: 0.92rem; color: var(--mut); line-height: 1.45; margin: 0;">
@@ -440,13 +458,30 @@ const HubGame = {
         `;
       } else {
         card.style.background = "";
+        const myResp = HubOnline.mySubmittedAnswer ? this.escapeHtml(HubOnline.mySubmittedAnswer) : "";
         card.innerHTML = `
           <div class="who-badge" style="background: var(--o); color: #fff;">❓ Sua Pergunta Secreta</div>
           <div class="who" style="margin: 6px 0 10px;">${HubOnline.playerName}</div>
           <div class="pergunta-box">${cardWord}</div>
+
+          <div class="pergunta-input-wrap">
+            <label for="input-online-resposta" class="pergunta-input-label">
+              ✍️ Digite sua resposta secreta:
+            </label>
+            <div class="pergunta-input-row">
+              <input type="text" id="input-online-resposta" class="pergunta-input-field"
+                     placeholder="Digite aqui sua resposta..."
+                     value="${myResp}"
+                     maxlength="80" autocomplete="off" />
+              <button class="btn-confirm" data-action="online-submit-answer" style="padding: 10px 14px; white-space: nowrap;">
+                ${HubOnline.mySubmittedAnswer ? 'Atualizar' : 'Salvar'}
+              </button>
+            </div>
+            ${HubOnline.mySubmittedAnswer ? '<p style="color: #27ae60; font-size: 0.8rem; font-weight: 700; margin: 4px 0 0;">✓ Resposta salva em segredo!</p>' : '<small class="pergunta-input-sub">🔒 Sua resposta fica registrada para a rodada.</small>'}
+          </div>
+
           <p class="pergunta-dica">
-            🧠 <b>Pense na sua resposta e memorize-a bem.</b><br>
-            Você dirá apenas sua resposta em voz alta para os outros jogadores!
+            🧠 <b>Pense bem e digite sua resposta.</b> Todas as respostas serão exibidas no momento do debate!
           </p>
           <button class="sec" data-action="online-toggle-word" style="margin-top: 10px;">🙈 Esconder Pergunta</button>
         `;
@@ -455,7 +490,7 @@ const HubGame = {
       if (HubOnline.isHost) {
         card.innerHTML += `
           <div style="margin-top: 14px; border-top: 2px dashed var(--ink); padding-top: 10px;">
-            <p style="font-size: 0.85rem; color: var(--mut); margin-bottom: 8px;">Começa respondendo: <b>${HubOnline.startsPlayer || 'Anfitrião'}</b></p>
+            <p style="font-size: 0.85rem; color: var(--mut); margin-bottom: 8px;">Começa comentando: <b>${HubOnline.startsPlayer || 'Anfitrião'}</b></p>
             <button class="btn-confirm" data-action="online-pergunta-mostrar-oficial">
               📢 Todos responderam? Mostrar Pergunta Oficial ➔
             </button>
@@ -509,6 +544,56 @@ const HubGame = {
     const t = HubOnline.tableResults;
     if (!t) return;
 
+    if (HubOnline.isPerguntaMode) {
+      const imps = t.filter(r => r.isImp).map(r => r.name);
+      const qReal = HubOnline.officialQuestion || HubOnline.perguntaReal || (this.perguntaAtual && this.perguntaAtual.pergunta);
+      const qImp = (this.perguntaAtual && this.perguntaAtual.impostor) ? this.perguntaAtual.impostor : "(Pergunta Invertida do Infiltrado)";
+
+      let html = `
+        <div class="who success-title" style="margin-bottom: 8px;">🎭 Revelação Final!</div>
+        <div class="impostor-badge-reveal">
+          🕵️ O Impostor era: <b>${imps.length ? imps.join(' e ') : 'Infiltrado'}</b>
+        </div>
+        <div style="margin: 10px 0; text-align: left; background: #fff; padding: 12px; border-radius: 10px; border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--ink);">
+          <div style="color: var(--bad); font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Pergunta que o Infiltrado respondeu:</div>
+          <div style="font-weight: 700; font-size: 1.05rem; margin: 4px 0 12px; color: var(--ink);">"${qImp}"</div>
+          <div style="color: #27ae60; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Pergunta que a Maioria respondeu:</div>
+          <div style="font-weight: 700; font-size: 1.05rem; margin-top: 4px; color: var(--ink);">"${qReal}"</div>
+        </div>
+
+        <div style="margin: 12px 0 8px; text-align: left;">
+          <div style="font-size: 0.84rem; font-weight: 800; color: var(--mut); text-transform: uppercase; margin-bottom: 6px;">
+            📝 Respostas Dadas:
+          </div>
+          <div class="pergunta-respostas-list">
+            ${t.map(row => {
+              const isImp = row.isImp;
+              const resp = (HubOnline.playerAnswers && HubOnline.playerAnswers[row.name]) ? this.escapeHtml(HubOnline.playerAnswers[row.name]) : '<i style="color:var(--mut); font-weight:normal;">(não digitou)</i>';
+              return `
+                <div class="pergunta-resposta-item ${isImp ? 'is-impostor' : ''}">
+                  <span class="resp-autor">${isImp ? '🕵️' : '👤'} <b>${row.name}</b> ${isImp ? '<b style="color:var(--bad)">(Infiltrado)</b>' : ''}:</span>
+                  <span class="resp-balao ${isImp ? 'balao-impostor' : ''}">"${resp}"</span>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+
+      if (HubOnline.isHost) {
+        html += `
+          <button class="btn-confirm" data-action="online-host-back-lobby" style="margin-top: 10px;">
+            🔄 Voltar ao Lobby para Nova Rodada
+          </button>
+        `;
+      } else {
+        html += `<p style="margin-top: 10px; font-weight: 700;">Aguardando anfitrião voltar ao lobby...</p>`;
+      }
+
+      card.innerHTML = html;
+      return;
+    }
+
     let html = `
       <div class="who" style="margin-bottom: 10px">Partida Encerrada!</div>
       <table>
@@ -537,6 +622,12 @@ const HubGame = {
     }
 
     card.innerHTML = html;
+  },
+
+  onOnlineAnswersUpdate(answers) {
+    if (this.currentScreen === "online_jogo_client") {
+      this.renderOnlineJogoClient();
+    }
   },
 
   // Callbacks disparados pelo HubOnline
@@ -1017,11 +1108,34 @@ const HubGame = {
       });
     });
 
+    this.respostasPergunta = {};
     this.dicasI = [];
     this.indiceAtual = 0;
     this.visivel = false;
     this.visto = false;
     this.showScreen("jogo");
+  },
+
+  escapeHtml(str) {
+    if (!str) return "";
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  },
+
+  salvarRespostaAtual() {
+    const inp = document.getElementById("input-resposta-pergunta");
+    if (inp) {
+      const players = this.getPlayers();
+      const jogador = players[this.indiceAtual];
+      if (jogador) {
+        if (!this.respostasPergunta) this.respostasPergunta = {};
+        this.respostasPergunta[jogador] = inp.value.trim();
+      }
+    }
   },
 
   // Sorteio Online (distribuição privada entre os celulares)
@@ -1157,11 +1271,29 @@ const HubGame = {
             <div class="pergunta-box oficial-highlight">
               "${this.perguntaAtual.pergunta}"
             </div>
+
+            <div style="margin: 12px 0 6px; text-align: left;">
+              <div style="font-size: 0.84rem; font-weight: 800; color: var(--mut); text-transform: uppercase; margin-bottom: 6px;">
+                📝 Respostas dos Jogadores:
+              </div>
+              <div class="pergunta-respostas-list">
+                ${players.map(p => {
+                  const resp = (this.respostasPergunta && this.respostasPergunta[p]) ? this.escapeHtml(this.respostasPergunta[p]) : '<i style="color:var(--mut); font-weight:normal;">(não digitou)</i>';
+                  return `
+                    <div class="pergunta-resposta-item">
+                      <span class="resp-autor">👤 <b>${p}</b>:</span>
+                      <span class="resp-balao">"${resp}"</span>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            </div>
+
             <div class="pergunta-debate-box">
               <p style="font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; color: var(--ink);">🕵️ Quem é o Impostor?</p>
               <p style="font-size: 0.92rem; color: var(--mut); line-height: 1.45; margin: 0;">
                 Essa foi a pergunta que a maioria respondeu!<br>
-                Quem respondeu algo suspeito, esquisito ou oposto do que deveria?<br>
+                Olhem as respostas digitadas acima: <b>quem respondeu algo suspeito ou que não faz sentido?</b><br>
                 <b>Debatam e acusem o suspeito antes de revelar!</b>
               </p>
             </div>
@@ -1178,22 +1310,35 @@ const HubGame = {
           return;
         }
 
-        // Etapa 1: Fase de falar as respostas em voz alta
-        this.elements.subText.textContent = "Respondam em voz alta, um de cada vez!";
+        // Etapa 1: Fase de ver as respostas digitadas
+        this.elements.subText.textContent = "Vejam as respostas registradas de cada um!";
         card.innerHTML = `
-          <div class="who-badge" style="background: var(--o); color: #fff;">🗣️ Hora das Respostas</div>
-          <div class="who success-title" style="margin: 8px 0 10px;">Todos já viram!</div>
-          <div class="pergunta-phase-box">
-            <div style="color: var(--mut); font-size: 0.88rem; font-weight: 700;">QUEM COMEÇA RESPONDENDO:</div>
-            <div class="word starter-word" style="font-size: 1.55rem; margin: 6px 0 10px;">${this.inicia}</div>
-            <p style="font-size: 0.95rem; line-height: 1.45; margin: 0;">
-              👉 Em roda, cada um deve falar <b>apenas a sua resposta</b> em voz alta!<br>
-              ⚠️ <b>Não leiam a pergunta</b>, apenas digam sua resposta!<br>
-              <small style="color: var(--mut); font-weight: 700;">(Dica: preste muita atenção na resposta de todo mundo)</small>
+          <div class="who-badge" style="background: var(--o); color: #fff;">📝 Respostas Registradas</div>
+          <div class="who success-title" style="margin: 8px 0 4px;">Todos já responderam!</div>
+          <p style="font-size: 0.92rem; color: var(--mut); margin: 0 0 10px;">
+            Confira abaixo as respostas que cada jogador digitou:
+          </p>
+          <div class="pergunta-respostas-list">
+            ${players.map(p => {
+              const resp = (this.respostasPergunta && this.respostasPergunta[p]) ? this.escapeHtml(this.respostasPergunta[p]) : '<i style="color:var(--mut); font-weight:normal;">(não digitou)</i>';
+              return `
+                <div class="pergunta-resposta-item">
+                  <span class="resp-autor">👤 <b>${p}</b>:</span>
+                  <span class="resp-balao">"${resp}"</span>
+                </div>
+              `;
+            }).join('')}
+          </div>
+          <div class="pergunta-phase-box" style="margin-top: 10px;">
+            <div style="color: var(--mut); font-size: 0.85rem; font-weight: 700;">QUEM COMEÇA COMENTANDO/JUSTIFICANDO:</div>
+            <div class="word starter-word" style="font-size: 1.45rem; margin: 4px 0 8px;">${this.inicia}</div>
+            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">
+              👀 Leiam as respostas na tela! Quando todos tiverem visto,<br>
+              toquem abaixo para mostrar a <b>Pergunta Oficial</b> e descobrir quem se entregou!
             </p>
           </div>
           <button class="btn-confirm" data-action="pergunta-mostrar-oficial" style="margin-top: 14px; width: 100%;">
-            📢 Todos já responderam? Revelar Pergunta Oficial ➔
+            📢 Revelar Pergunta Oficial da Rodada ➔
           </button>
         `;
         return;
@@ -1220,13 +1365,29 @@ const HubGame = {
         mainBtn.textContent = `Ver pergunta de ${jogadorNome}`;
       } else {
         card.style.background = ""; // Fundo neutro sem entregar nada visualmente!
+        const respSalva = (this.respostasPergunta && this.respostasPergunta[jogadorNome]) ? this.escapeHtml(this.respostasPergunta[jogadorNome]) : "";
         card.innerHTML = `
           <div class="who-badge" style="background: var(--o); color: #fff;">❓ Sua Pergunta Secreta</div>
           <div class="who" style="margin: 6px 0 10px;">${jogadorNome}</div>
           <div class="pergunta-box">${cObj.pergunta}</div>
+
+          <div class="pergunta-input-wrap">
+            <label for="input-resposta-pergunta" class="pergunta-input-label">
+              ✍️ Digite sua resposta secreta:
+            </label>
+            <div class="pergunta-input-row">
+              <input type="text" id="input-resposta-pergunta" class="pergunta-input-field"
+                     placeholder="Digite aqui sua resposta..."
+                     value="${respSalva}"
+                     maxlength="80" autocomplete="off" />
+            </div>
+            <small class="pergunta-input-sub">
+              🔒 Digite e toque em <b>Esconder pergunta</b> para passar o celular!
+            </small>
+          </div>
+
           <p class="pergunta-dica">
-            🧠 <b>Pense na sua resposta e memorize-a bem.</b><br>
-            Não fale nada agora! Você dirá apenas sua resposta em voz alta depois que todos tiverem visto o celular.
+            🧠 <b>Pense bem e digite sua resposta.</b> Não fale nada agora! Todas as respostas serão exibidas juntas na tela no momento do debate.
           </p>
         `;
         mainBtn.textContent = "Esconder pergunta";
@@ -1311,17 +1472,37 @@ const HubGame = {
     card.style.background = "";
 
     if (this.modo === "pergunta") {
+      const players = this.getPlayers();
       card.innerHTML = `
         <div class="who success-title" style="margin-bottom: 8px;">🎭 Revelação Final!</div>
         <div class="impostor-badge-reveal">
           🕵️ O Impostor era: <b>${this.ultImp.join(' e ')}</b>
         </div>
         <div style="margin: 10px 0; text-align: left; background: #fff; padding: 12px; border-radius: 10px; border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--ink);">
-          <div style="color: var(--bad); font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Pergunta que o Impostor respondeu:</div>
+          <div style="color: var(--bad); font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Pergunta que o Infiltrado respondeu:</div>
           <div style="font-weight: 700; font-size: 1.05rem; margin: 4px 0 12px; color: var(--ink);">"${this.perguntaAtual.impostor}"</div>
           <div style="color: #27ae60; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Pergunta que a Maioria respondeu:</div>
           <div style="font-weight: 700; font-size: 1.05rem; margin-top: 4px; color: var(--ink);">"${this.perguntaAtual.pergunta}"</div>
         </div>
+
+        <div style="margin: 12px 0 8px; text-align: left;">
+          <div style="font-size: 0.84rem; font-weight: 800; color: var(--mut); text-transform: uppercase; margin-bottom: 6px;">
+            📝 Respostas Dadas:
+          </div>
+          <div class="pergunta-respostas-list">
+            ${players.map(p => {
+              const isImp = this.ultImp.indexOf(p) >= 0;
+              const resp = (this.respostasPergunta && this.respostasPergunta[p]) ? this.escapeHtml(this.respostasPergunta[p]) : '<i style="color:var(--mut); font-weight:normal;">(não digitou)</i>';
+              return `
+                <div class="pergunta-resposta-item ${isImp ? 'is-impostor' : ''}">
+                  <span class="resp-autor">${isImp ? '🕵️' : '👤'} <b>${p}</b> ${isImp ? '<b style="color:var(--bad)">(Infiltrado)</b>' : ''}:</span>
+                  <span class="resp-balao ${isImp ? 'balao-impostor' : ''}">"${resp}"</span>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+
         <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px;">
           <button class="btn-confirm" data-action="pergunta-jogar-novamente">🎲 Nova Pergunta</button>
           <button class="sec" data-action="nav-modo">🔄 Trocar Modo</button>
@@ -1427,6 +1608,9 @@ const HubGame = {
     }
 
     this.elements.mainBtn.addEventListener("click", () => {
+      if (this.modo === "pergunta" && this.visivel) {
+        this.salvarRespostaAtual();
+      }
       if (!this.visivel) {
         this.visivel = true;
       } else {
@@ -1438,6 +1622,9 @@ const HubGame = {
 
     this.elements.proxBtn.addEventListener("click", () => {
       if (!this.visto || this.visivel) return;
+      if (this.modo === "pergunta") {
+        this.salvarRespostaAtual();
+      }
       this.indiceAtual++;
       this.visto = false;
       this.visivel = false;
@@ -1455,6 +1642,31 @@ const HubGame = {
     this.elements.revelarBtn.addEventListener("click", () => {
       this.mostrarTabelaRevelacao();
       this.elements.revelarBtn.style.display = "none";
+    });
+
+    // Captura digitação em tempo real e tecla Enter nos inputs de resposta
+    this.elements.card.addEventListener("input", (e) => {
+      if (e.target && e.target.id === "input-resposta-pergunta") {
+        const players = this.getPlayers();
+        const jogador = players[this.indiceAtual];
+        if (jogador) {
+          if (!this.respostasPergunta) this.respostasPergunta = {};
+          this.respostasPergunta[jogador] = e.target.value;
+        }
+      }
+    });
+
+    this.elements.card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && e.target && e.target.id === "input-resposta-pergunta") {
+        e.preventDefault();
+        this.salvarRespostaAtual();
+        this.elements.mainBtn.click();
+      } else if (e.key === "Enter" && e.target && e.target.id === "input-online-resposta") {
+        e.preventDefault();
+        const val = e.target.value.trim();
+        HubOnline.submitAnswer(val);
+        this.renderOnlineJogoClient();
+      }
     });
 
     // Delegação de cliques
@@ -1521,6 +1733,19 @@ const HubGame = {
           const qText = this.perguntaAtual ? this.perguntaAtual.pergunta : HubOnline.perguntaReal;
           HubOnline.hostShowOfficialQuestion(qText);
           this.renderOnlineJogoClient();
+          break;
+
+        case "online-submit-answer":
+          const inpOnline = document.getElementById("input-online-resposta");
+          if (inpOnline) {
+            HubOnline.submitAnswer(inpOnline.value);
+            this.renderOnlineJogoClient();
+          }
+          break;
+
+        case "salvar-resposta-pergunta":
+          this.salvarRespostaAtual();
+          this.elements.mainBtn.click();
           break;
 
         case "pergunta-mostrar-oficial":
